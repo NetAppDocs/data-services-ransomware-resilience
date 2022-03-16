@@ -43,11 +43,11 @@ These are the currently tracked alerts and suggested remediations.
 
 | High data encryption rates detected
 | An abnormal increase in the percentage of encrypted files, or corrupted files, in the data source has occurred. This means that there was a greater than 20% increase in the percentage of encrypted files in the past 7 days. For example, if 50% of your files are encrypted, then a day later this number increases to 60%, you would see this alert.
-| Click the link to launch the link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page[Data Sense Investigation page]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
+| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html[Data Sense Investigation page^]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
 
 | Sensitive data with wide permissions found
 | Sensitive data is found in files and the access permissions level is too high in a data source.
-| Click the link to launch the link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page[Data Sense Investigation page]. There you can select the filters for the specific _Working Environment_, _Sensitivity Level (Sensitive Personal)_, and _Open Permissions_ to view the list of the files that have this issue.
+| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html[Data Sense Investigation page^]. There you can select the filters for the specific _Working Environment_, _Sensitivity Level (Sensitive Personal)_, and _Open Permissions_ to view the list of the files that have this issue.
 
 | One or more volumes are not backed up using Cloud Backup
 | Some volumes in the working environment aren't being protected using https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^].
