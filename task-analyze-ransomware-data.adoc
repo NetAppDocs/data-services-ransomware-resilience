@@ -50,11 +50,11 @@ These are the currently tracked alerts and suggested remediations.
 | Click the link to launch the link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page[Data Sense Investigation page]. There you can select the filters for the specific _Working Environment_, _Sensitivity Level (Sensitive Personal)_, and _Open Permissions_ to view the list of the files that have this issue.
 
 | One or more volumes are not backed up using Cloud Backup
-| Some volumes in the working environment aren't being protected using link:concept-backup-to-cloud.html[Cloud Backup].
+| Some volumes in the working environment aren't being protected using https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^].
 | Click the link to launch Cloud Backup and then you can identify the volumes that aren't being backed up in the working environment, and then decide if you want to enable backups on those volumes.
 
 | One or more repositories (volumes, buckets, etc.) in your data sources are not being scanned by Data Sense
-| Some data in your data sources isn't being scanned using link:concept-cloud-compliance.html[Cloud Data Sense] to identify compliance and privacy concerns and find optimization opportunities.
+| Some data in your data sources isn't being scanned using https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^] to identify compliance and privacy concerns and find optimization opportunities.
 | Click the link to launch Data Sense and enable scanning and mapping for the items that are not being scanned.
 
 |===
@@ -75,7 +75,7 @@ Click each area to view the filtered results in the Data Sense Investigation pag
 
 == Domain Administrator Group control
 
-The _Domain Administrator Group control_ area shows the most recent five users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have link:task-add-active-directory-datasense.html[integrated a global Active Directory] into Cloud Data Sense for this panel to be active.
+The _Domain Administrator Group control_ area shows the most recent five users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[integrated a global Active Directory^] into Cloud Data Sense for this panel to be active.
 
 image:screenshot_ransomware_domain_admin.png[A screenshot of the users who have been added as domain admins on the Ransomware Protection dashboard.]
 

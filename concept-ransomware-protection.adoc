@@ -24,8 +24,8 @@ TIP: The Ransomware Protection service is currently a Beta offering.
 
 Ransomware Protection currently provides several features that can help you with your cyberstorage protection efforts. Additional features will be added in the future. Current features identify when:
 
-* Volumes in your working environments aren't being protected using link:concept-backup-to-cloud.html[Cloud Backup].
-* Data in your working environments and data sources aren't being scanned using link:concept-cloud-compliance.html[Cloud Data Sense] to identify compliance and privacy concerns, and find optimization opportunities.
+* Volumes in your working environments aren't being protected using https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^].
+* Data in your working environments and data sources aren't being scanned using https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^] to identify compliance and privacy concerns, and find optimization opportunities.
 * An abnormal increase in the percentage of encrypted files in a working environment or data source has occurred.
 +
 This can be an indicator that a ransomware attack has commenced on your network.
@@ -34,11 +34,11 @@ This can be an indicator that a ransomware attack has commenced on your network.
 
 link:task-analyze-ransomware-data.html[See how to view these potential issues in the Ransomware Protection dashboard.]
 
-When using Cloud Volumes ONTAP systems, there are some additional ransomware protections you can deploy directly from the working environment. link:task-protecting-ransomware.html[See how to add additional protection against ransomware].
+When using Cloud Volumes ONTAP systems, there are some additional ransomware protections you can deploy directly from the working environment. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html[See how to add additional protection against ransomware^].
 
 == Supported working environments and data sources
 
-link:concept-cloud-compliance.html[Cloud Data Sense] is a prerequisite to using the Ransomware Protection service. After Data Sense is installed and activated, you can use Ransomware Protection to see how resilient your data is to a cyber attack on the following types of working environments and data sources:
+https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^] is a prerequisite to using the Ransomware Protection service. After Data Sense is installed and activated, you can use Ransomware Protection to see how resilient your data is to a cyber attack on the following types of working environments and data sources:
 
 *Working environments:*
 
@@ -56,7 +56,7 @@ link:concept-cloud-compliance.html[Cloud Data Sense] is a prerequisite to using 
 * OneDrive accounts
 * SharePoint accounts
 
-Ransomware Protection also monitors your global Active Directory configuration if you have link:task-add-active-directory-datasense.html[configured this in Cloud Data Sense].
+Ransomware Protection also monitors your global Active Directory configuration if you have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[configured this in Cloud Data Sense^].
 
 == How Ransomware Protection works
 
