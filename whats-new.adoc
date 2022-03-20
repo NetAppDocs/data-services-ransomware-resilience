@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
-summary: Learn what's new in <service>.
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection
+summary: Learn what's new in Ransomware Protection.
 ---
 
-= What's new with <service>
+= What's new with Ransomware Protection
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,46 +13,32 @@ summary: Learn what's new in <service>.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in <service>.
+Learn what's new in Ransomware Protection.
 
-tag::whats-new[]
-== <date of release in the format dd month year like 28 Nov 2021>
+// tag::whats-new[]
+== 3 Apr 2021
 
-=== <feature title>
+=== New panel for "Harden your ONTAP environments".
 
-<description>
+A new panel "Harden your ONTAP environments" provides the status of certain settings in your ONTAP systems that track how secure your deployment is according to the https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf[NetApp Security Hardening Guide for ONTAP Systems^] and to the https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[ONTAP anti-ransomware feature^] that proactively detects and warns about abnormal activity.
++
+You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. link:task-analyze-ransomware-data.html#status-of-ontap-systems-hardening[Go here for details].
 
-=== <feature title>
+== 15 Mar 2022
 
-<description>
+=== New panel for "Business critical data permissions analysis"
 
-== <date of release in the format dd month year like 28 Nov 2021>
+A new panel "Business critical data permissions analysis" shows the permissions status of data that is critical for your business. That way you can quickly assess how well you are protecting your business-critical data. link:task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data[Go here for details].
 
-=== <feature title>
+=== Open Permissions area now includes OneDrive and SharePoint accounts
 
-<description>
+The Open Permissions area in the Ransomware Protection Dashboard now includes the permissions that exist for files that are being scanned in OneDrive accounts and SharePoint accounts.
 
-=== <feature title>
+== 9 Feb 2022
 
-<description>
+=== New Ransomware Protection service
 
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
-end::whats-new[]
-
-== <date of release in the format dd month year like 28 Nov 2021>
-
-=== <feature title>
-
-<description>
-
-=== <feature title>
-
-<description>
+The new Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
++
+link:concept-ransomware-protection.html[Learn more about this new service].
+// end::whats-new[]

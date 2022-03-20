@@ -1,5 +1,6 @@
 settings:
   name: Ransomware Protection
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
@@ -28,24 +29,27 @@ sidebar:
           url: /task-get-help.html
     - title: Legal notices
       url: /legal-notices.html
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
 homepage:
   tiles:
     - title: Get started
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-    - title: tile name
+        - title: Learn about Ransomware Protection
+          url: concept-ransomware-protection.html
+        - title: What’s New
+          url: whats-new.html
+    - title: Manage cyber security recommendations
       links:
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
-        - title: title
-          url: page.html
+        - title: View top data repositories by data sensitivity
+          url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
+        - title: View users who have been added to domain administrator groups
+          url: task-analyze-ransomware-data.html#domain-administrator-group-control
+        - title: View data listed by open permissions
+          url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
+        - title: View data listed by encrypted files
+          url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
     - title: Blogs & community
       links:
         - title: NetApp Community
