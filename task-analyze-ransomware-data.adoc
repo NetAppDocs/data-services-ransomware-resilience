@@ -112,7 +112,7 @@ Click a line for one of the data sources to view the filtered results in the Dat
 
 The _Harden your ONTAP environment_ panel provides the status of certain settings in your ONTAP systems that track how secure your deployment is according to the https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf[NetApp Security Hardening Guide for ONTAP Systems] and to the https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[ONTAP anti-ransomware feature] that proactively detects and warns about abnormal activity.
 
-You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion.
+You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. This panel supports on-prem ONTAP and Cloud Volumes ONTAP systems at this time.
 
 image:screenshot_ransomware_harden_ontap.png[A screenshot of the status for ONTAP hardening on the Ransomware Protection dashboard.]
 
