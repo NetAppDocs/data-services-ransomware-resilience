@@ -1,7 +1,60 @@
 settings:
-  name: "Product Name"
+  name: Ransomware Protection
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-sidebar: 
+sidebar:
+  entries:
+    - title: All Cloud Manager documentation
+      url: https://docs.netapp.com/us-en/cloud-manager-family
+    - title: Ransomware Protection docs
+      url: /index.html
+    - title: Release notes
+      url: /whats-new.html
+    - title: Get started
+      entries:
+        - title: Learn about Ransomware Protection
+          url: /concept-ransomware-protection.html
+    - title: Use Ransomware Protection
+      entries:
+        - title: Manage cyber security recommendations for your data
+          url: /task-analyze-ransomware-data.html
+    - title: Knowledge and support
+      entries:
+        - title: Register for support
+          url: /task-support-registration.html
+        - title: Get help
+          url: /task-get-help.html
+    - title: Legal notices
+      url: /legal-notices.html
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about Ransomware Protection
+          url: concept-ransomware-protection.html
+        - title: What’s New
+          url: whats-new.html
+    - title: Manage cyber security recommendations
+      links:
+        - title: View top data repositories by data sensitivity
+          url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
+        - title: View users who have been added to domain administrator groups
+          url: task-analyze-ransomware-data.html#domain-administrator-group-control
+        - title: View data listed by open permissions
+          url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
+        - title: View data listed by encrypted files
+          url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+    - title: Blogs & community
+      links:
+        - title: NetApp Community
+          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+        - title: Cloud Central blog
+          url: https://cloud.netapp.com/blog
+        - title: Cloud webinars
+          url: https://cloud.netapp.com/events
