@@ -129,11 +129,11 @@ The settings that are being tracked include:
 | The percentage of volumes that have on-box anti-ransomware activated. Valid for on-prem ONTAP systems only.
 A green status icon indicates > 85% of volumes are enabled. Yellow indicates 40-85% are enabled. Red indicates < 40% are enabled.
 | https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html#system-manager-procedure[See how to enable anti-ransomware on your volumes] using System Manager.
-
-| NAS Auditing
-| The number of storage VMs that have file system auditing enabled.
-A green status icon indicates > 85% of SVMs have NAS file system auditing enabled. Yellow indicates 40-85% are enabled. Red indicates < 40% are enabled.
-| https://docs.netapp.com/us-en/ontap/nas-audit/auditing-events-concept.html[See how to enable NAS auditing on SVMs] using the CLI.
+//
+// | NAS Auditing
+// | The number of storage VMs that have file system auditing enabled.
+// A green status icon indicates > 85% of SVMs have NAS file system auditing enabled. Yellow indicates 40-85% are enabled. Red indicates < 40% are enabled.
+// | https://docs.netapp.com/us-en/ontap/nas-audit/auditing-events-concept.html[See how to enable NAS auditing on SVMs] using the CLI.
 
 | ONTAP Version
 | The version of ONTAP software installed on your clusters.
@@ -147,7 +147,8 @@ A green status icon indicates > 85% of volumes have snapshots enabled. Yellow in
 
 |===
 
-For clusters that have low numbers for certain categories, you can click the System Manager button at the end of each row to correct the issue. You can also click the Cloud Backup button to activate backups for the volumes, or the Data Sense button to scan the volumes on the clusters to investigate compliance and governance conformance.
+You can click the Cloud Backup button to activate backups for the volumes, or the Data Sense button to scan the volumes on the clusters to investigate compliance and governance conformance.
+// For clusters that have low numbers for certain categories, you can click the System Manager button at the end of each row to correct the issue. You can also click the Cloud Backup button to activate backups for the volumes, or the Data Sense button to scan the volumes on the clusters to investigate compliance and governance conformance.
 
 == Status of permissions on your critical business data
 
@@ -162,6 +163,6 @@ After you have added up to 2 policies to this panel, the graph shows a permissio
 * Open to public permissions – the items which Data Sense considers as open to public
 * Open to organization permissions – the items which Data Sense considers as open to organization
 * No open permissions – the items which Data Sense considers as no open permissions
-* Unknown permissions– the items which Data Sense considers as unknown permissions
+* Unknown permissions – the items which Data Sense considers as unknown permissions
 
 Hover over each bar in the charts to view the number of results in each category. Click a bar and the Data Sense Investigation page is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
