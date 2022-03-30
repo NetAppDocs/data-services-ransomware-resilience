@@ -32,9 +32,9 @@ This can be an indicator that a ransomware attack has commenced on your network.
 * Sensitive data is found in files and the access permissions level is too high in a working environment or data source.
 * Users have been added to your Active Directory Domain Administrator Groups.
 * The ONTAP software version on your clusters is old and should be updated to provide the best protection and security features.
-* NAS file system auditing is not enabled on your ONTAP systems.
-+
-Enabling CIFS auditing generates auditing events for your system admins that track information such as folder permission changes, failed attempts to read or write files, and when files have been created, modified, or deleted.
+// * NAS file system auditing is not enabled on your ONTAP systems.
+// +
+// Enabling CIFS auditing generates auditing events for your system admins that track information such as folder permission changes, failed attempts to read or write files, and when files have been created, modified, or deleted.
 * On-box anti-ransomware features are not enabled on your ONTAP systems.
 +
 The ONTAP anti-ransomware features proactively detect and warn about abnormal activity that might indicate a ransomware attack.
@@ -69,8 +69,8 @@ Ransomware Protection also monitors your global Active Directory configuration i
 
 At a high-level, Ransomware Protection works like this:
 
-. Ransomware Protection gathers information from Data Sense, Cloud Backup, and from other Cloud Manager resources, to populate the Ransomware Protection Dashboard.
-. You use the Ransomware Protection dashboard to gather an overview of how well protected your systems are.
+. Ransomware Protection gathers information from Cloud Data Sense, Cloud Backup, and from other Cloud Manager resources, to populate the Ransomware Protection Dashboard.
+. You use the Ransomware Protection dashboard to get an overview of how well protected your systems are.
 . You use the provided reporting tools to help in your cyberstorage protection efforts.
 
 == Cost

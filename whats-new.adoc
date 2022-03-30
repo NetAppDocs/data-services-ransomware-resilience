@@ -26,7 +26,7 @@ You can review the recommendations and then decide how you want to address the p
 
 === New panel to show how different categories of data are being protected using Cloud Backup.
 
-This new "Backup Status" panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup.
+This new "Backup Status" panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. link:task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
 
 == 15 Mar 2022
 
