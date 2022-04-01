@@ -182,8 +182,8 @@ Only on-prem ONTAP and Cloud Volumes ONTAP working environments that are already
 
 image:screenshot_ransomware_backups.png[A screenshot of the backup status for the data you are managing on the Ransomware Protection dashboard.]
 
-Initially this panel has no data because the data gets populated only after you select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories[categories] that are available for your working environments. You can select up to 4 categories.
+Initially this panel has no data because the data gets populated only after you select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories[categories] that are available from Cloud Data Sense for your working environments. Then select up to 4 categories.
 
-After the data is populated, hover over each square in the charts to view the number of files that are backed up out of all files in the same category in the working environment. Click a bar and the Data Sense Investigation page is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
+After the data is populated, hover over each square in the charts to view the number of files that are backed up out of all files in the same category in the working environment. A green square means 85% or greater of your files are being backed up. A yellow square means between 40% and 85% of your files are being backed up. And a red square means 40% or fewer files are being backed up.
 
 You can click the Cloud Backup button at the end of the row to go to the Cloud Backup interface to enable backup on more volumes in each working environment.

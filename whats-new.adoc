@@ -16,7 +16,7 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 5 Apr 2021
+== 5 April 2022
 
 === New panel to track the security hardening of your ONTAP environments.
 
@@ -28,7 +28,7 @@ You can review the recommendations and then decide how you want to address the p
 
 This new "Backup Status" panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. link:task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
 
-== 15 Mar 2022
+== 15 March 2022
 
 === New panel to track the permissions status of your business critical data
 
@@ -38,7 +38,7 @@ A new panel "Business critical data permissions analysis" shows the permissions 
 
 The Open Permissions area in the Ransomware Protection Dashboard now includes the permissions that exist for files that are being scanned in OneDrive accounts and SharePoint accounts.
 
-== 9 Feb 2022
+== 9 February 2022
 
 === New Ransomware Protection service
 
