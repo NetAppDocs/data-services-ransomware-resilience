@@ -16,6 +16,18 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
+== 8 May 2022
+
+=== New panel to track the security hardening of your ONTAP environments.
+
+A new panel "Harden your ONTAP environments" provides the status of certain settings in your ONTAP systems that track how secure your deployment is according to the https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf[NetApp Security Hardening Guide for ONTAP Systems^] and to the https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[ONTAP anti-ransomware feature^] that proactively detects and warns about abnormal activity.
+
+You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening[Go here for details].
+
+=== New panel to show how different categories of data are being protected using Cloud Backup.
+
+This new "Backup Status" panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
+
 == 15 March 2022
 
 === New panel to track the permissions status of your business critical data
@@ -34,15 +46,3 @@ The new Ransomware Protection service enables you to view relevant information a
 
 https://docs.netapp.com/us-en/cloud-manager-ransomware/concept-ransomware-protection.html[Learn more about this new service].
 // end::whats-new[]
-
-// == 5 May 2022
-//
-// === New panel to track the security hardening of your ONTAP environments.
-//
-// A new panel "Harden your ONTAP environments" provides the status of certain settings in your ONTAP systems that track how secure your deployment is according to the https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf[NetApp Security Hardening Guide for ONTAP Systems^] and to the https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[ONTAP anti-ransomware feature^] that proactively detects and warns about abnormal activity.
-//
-// You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening[Go here for details].
-//
-// === New panel to show how different categories of data are being protected using Cloud Backup.
-//
-// This new "Backup Status" panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
