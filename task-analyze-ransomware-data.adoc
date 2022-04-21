@@ -165,9 +165,9 @@ The _Business critical data permissions analysis_ panel shows the permissions st
 
 image:screenshot_ransomware_critical_permissions.png[A screenshot of the permissions status for the data you are managing on the Ransomware Protection dashboard.]
 
-Initially this panel has no data because the data gets populated only after you select the Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
+Initially this panel shows data based on default policies that we have selected. But you can select the important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
 
-After you have added up to 2 policies to this panel, the graph shows a permission analysis of all the data that meets the criteria from your policy. It lists the number of items that are:
+The graph shows permission analysis of all the data that meets the criteria from your policies. It lists the number of items that are:
 
 * Open to public permissions – the items which Data Sense considers as open to public
 * Open to organization permissions – the items which Data Sense considers as open to organization
@@ -184,7 +184,7 @@ Only on-prem ONTAP and Cloud Volumes ONTAP working environments that are already
 
 image:screenshot_ransomware_backups.png[A screenshot of the backup status for the data you are managing on the Ransomware Protection dashboard.]
 
-Initially this panel has no data because the data gets populated only after you select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories[categories] that are available from Cloud Data Sense for your working environments. Then select up to 4 categories.
+Initially this panel shows data based on default categories that we have selected. But you can select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories[categories] that are available from Cloud Data Sense for your working environments. Then select up to 4 categories.
 
 After the data is populated, hover over each square in the charts to view the number of files that are backed up out of all files in the same category in the working environment. A green square means 85% or greater of your files are being backed up. A yellow square means between 40% and 85% of your files are being backed up. And a red square means 40% or fewer files are being backed up.
 
