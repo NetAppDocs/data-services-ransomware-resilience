@@ -165,7 +165,7 @@ The _Business critical data permissions analysis_ panel shows the permissions st
 
 image:screenshot_ransomware_critical_permissions.png[A screenshot of the permissions status for the data you are managing on the Ransomware Protection dashboard.]
 
-Initially this panel shows data based on default policies that we have selected. But you can select the important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
+Initially this panel shows data based on default policies that we have selected. But you can select the 2 most important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
 
 The graph shows permission analysis of all the data that meets the criteria from your policies. It lists the number of items that are:
 
