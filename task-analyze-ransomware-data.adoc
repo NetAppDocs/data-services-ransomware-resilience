@@ -148,12 +148,12 @@ A green status icon indicates > 85% of volumes are enabled. Yellow indicates 40-
 | ONTAP Version
 | The version of ONTAP software installed on your clusters.
 A green status icon indicates that the version is current. A yellow icon indicates that the cluster is behind by 1 or 2 patch versions or 1 minor version for on-prem systems, or behind by 1 major version for Cloud Volumes ONTAP. A red icon indicates that the cluster is behind by 3 patch versions, or 2 minor versions, or 1 major version for on-prem systems, or behind by 2 major versions for Cloud Volumes ONTAP.
-| https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html[See the best way to upgrade your on-prem clusters^] or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_updating_ontap_cloud.html[your Cloud Volumes ONTAP systems^].
+| https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html[See the best way to upgrade your on-prem clusters^] or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html[your Cloud Volumes ONTAP systems^].
 
 | Snapshots
 | Is the snapshot capability activated on data volumes, and what percentage of volumes have Snapshot copies.
 A green status icon indicates > 85% of volumes have snapshots enabled. Yellow indicates 40-85% are enabled. Red indicates < 40% are enabled.
-| https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html[See how to enable volume snapshots on your on-prem clusters^] or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task_managing_storage.html#managing-existing-volumes[on your Cloud Volumes ONTAP systems^].
+| https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html[See how to enable volume snapshots on your on-prem clusters^], or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html#manage-volumes[on your Cloud Volumes ONTAP systems^], or https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-snapshot-copies[on your FSx for ONTAP systems^].
 
 |===
 
