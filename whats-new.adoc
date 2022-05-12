@@ -16,7 +16,7 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 9 May 2022
+== 11 May 2022
 
 === New panel to track the security hardening of your ONTAP environments.
 
