@@ -69,6 +69,10 @@ These are the currently tracked alerts and suggested remediations.
 | Some volumes in the working environment aren't being protected by creating volume snapshots.
 | Click the link and you are redirected to the <<Status of ONTAP systems hardening,Harden your ONTAP environment panel>> and to the working environment with the issue. There you can investigate how best to fix the issue.
 
+| File operations auditing is not turned on for all SVMs
+| Some storage VMs in the working environment don't have file system auditing enabled. It is recommended so you can keep track of users actions on your files.
+| Click the link and you are redirected to the <<Status of ONTAP systems hardening,Harden your ONTAP environment panel>> and to the working environment with the issue. There you can investigate whether you need to enable NAS auditing on your SVMs.
+
 |===
 
 == Top data repositories by data sensitivity
