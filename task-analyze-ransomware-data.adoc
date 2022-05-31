@@ -13,7 +13,7 @@ summary: Use the Ransomware Protection dashboard to view an overview of the cybe
 :imagesdir: ./media/
 
 [.lead]
-Use the Ransomware Protection dashboard to view an overview of the cyber resilience of all your working environments and data sources. You can drill down in each area to find more details and possible remediations.
+Use the Cloud Manager Ransomware Protection Dashboard to view an overview of the cyber resilience of all your working environments and data sources. You can drill down in each area to find more details and possible remediations.
 
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 

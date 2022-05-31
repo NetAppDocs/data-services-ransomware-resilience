@@ -51,6 +51,8 @@ homepage:
           url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
         - title: View data listed by encrypted files
           url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
+        - title: View how securely your ONTAP systems are protected against ransomware
+          url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
     - title: Blogs & community
       links:
         - title: NetApp Community
