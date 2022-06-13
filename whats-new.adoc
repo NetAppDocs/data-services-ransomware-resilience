@@ -16,19 +16,19 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 6 June 2022
+== 12 June 2022
 
 === NAS file system auditing status is now tracked for your ONTAP storage VMs
 
-An alert is added to the _Cyber Resilience Map_ if less than 85% of the storage VMs in the working environment have file system auditing enabled. You can view the exact number of SVMs that are not tracking and logging SMB and NFS events into an audit log in the _Harden your ONTAP environment_ panel. Then you can decide whether to enable auditing on those SVMs.
-
-=== FSx for ONTAP systems are now tracked for enabling volume snapshots
-
-The _Harden your ONTAP environments_ panel now provides the status of Snapshot copies for volumes on your FSx for ONTAP systems. When less than 85% of the volumes are being protected by snapshots, you will also get an alert in the _Cyber Resilience Map_.
+An alert is added to the _Cyber Resilience Map_ if less than 40% of the storage VMs in the working environment have file system auditing enabled. You can view the exact number of SVMs that are not tracking and logging SMB and NFS events into an audit log in the _Harden your ONTAP environment_ panel. Then you can decide whether to enable auditing on those SVMs.
 
 === Alerts are now displayed when on-box anti-ransomware is not active for your volumes
 
-This information was being reported for on-prem ONTAP systems in the _Harden your ONTAP environments_ panel previously, but now an alert is reported in the _Cyber Resilience Map_ so you can view this information in the Dashboard.
+This information was being reported for on-prem ONTAP systems in the _Harden your ONTAP environments_ panel previously, but now an alert is reported in the _Cyber Resilience Map_ when the on-box anti-ransomware feature is turned on in less than 40% of volumes so you can view this information in the Dashboard.
+
+=== FSx for ONTAP systems are now tracked for enabling volume snapshots
+
+The _Harden your ONTAP environments_ panel now provides the status of Snapshot copies for volumes on your FSx for ONTAP systems. When less than 40% of the volumes are being protected by snapshots, you will also get an alert in the _Cyber Resilience Map_.
 
 == 11 May 2022
 
