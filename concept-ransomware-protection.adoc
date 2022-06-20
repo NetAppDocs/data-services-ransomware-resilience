@@ -32,15 +32,18 @@ This capability is also important from a ransomware protection perspective becau
 * An abnormal increase in the percentage of encrypted files in a working environment or data source has occurred.
 +
 This can be an indicator that a ransomware attack has commenced on your network.
-* Sensitive data is found in files and the access permissions level is too high in a working environment or data source.
+* Sensitive data is found in files in a working environment or data source and the access permissions level is too high.
 * Users have been added to your Active Directory Domain Administrator Groups.
-* The ONTAP software version on your clusters is old and should be updated to provide the best protection and security features.
+* The ONTAP software version on your clusters is old and should be updated to provide the best protection and security features, and the newest features.
 * NAS file system auditing is not enabled on your ONTAP systems.
 +
 Enabling CIFS auditing generates auditing events for your system admins that track information such as folder permission changes, failed attempts to read or write files, and when files have been created, modified, or deleted.
 * On-box anti-ransomware features are not enabled on your ONTAP systems.
 +
 The ONTAP anti-ransomware features proactively detect and warn about abnormal activity that might indicate a ransomware attack.
+* The number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on your ONTAP clusters.
++
+You can view the vulnerability and then follow the recommended action to resolve the issue.
 
 link:task-analyze-ransomware-data.html[See how to view these potential issues in the Ransomware Protection dashboard.]
 

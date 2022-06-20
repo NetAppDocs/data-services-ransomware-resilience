@@ -192,4 +192,14 @@ Initially this panel shows data based on default categories that we have selecte
 
 After the data is populated, hover over each square in the charts to view the number of files that are backed up out of all files in the same category in the working environment. A green square means 85% or greater of your files are being backed up. A yellow square means between 40% and 85% of your files are being backed up. And a red square means 40% or fewer files are being backed up.
 
-You can click the Cloud Backup button at the end of the row to go to the Cloud Backup interface to enable backup on more volumes in each working environment.
+You can click the *Cloud Backup* button at the end of the row to go to the Cloud Backup interface to enable backup on more volumes in each working environment.
+
+== Storage system vulnerabilities
+
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
+
+You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI. You can view the Active IQ Digital Advisor directly by selecting the *Active IQ* service from Cloud Manager.
+
+image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
+
+Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
