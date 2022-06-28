@@ -198,8 +198,14 @@ You can click the *Cloud Backup* button at the end of the row to go to the Cloud
 
 The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
 
-You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI. You can view the Active IQ Digital Advisor directly by selecting the *Active IQ* service from Cloud Manager.
+.Prerequisites
+
+* You must have on-premises ONTAP cluster
+* The cluster is configured in Active IQ
+* You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI.
+
+Note that you can view the Active IQ Digital Advisor directly by selecting the *Active IQ* service from Cloud Manager.
 
 image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
 
-Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
+Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. (More about this page can be found in the https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Active IQ Digital Advisor documentation].) You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
