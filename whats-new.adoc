@@ -16,6 +16,12 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
+== 1 August 2022
+
+=== new stuff
+
+details
+
 == 12 June 2022
 
 === NAS file system auditing status is now tracked for your ONTAP storage VMs
@@ -41,6 +47,7 @@ You can review the recommendations and then decide how you want to address the p
 === New panel to show how different categories of data are being protected using Cloud Backup.
 
 This new _Backup Status_ panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
+// end::whats-new[]
 
 == 15 March 2022
 
@@ -51,7 +58,6 @@ A new panel _Business critical data permissions analysis_ shows the permissions 
 === Open Permissions area now includes OneDrive and SharePoint accounts
 
 The Open Permissions area in the Ransomware Protection Dashboard now includes the permissions that exist for files that are being scanned in OneDrive accounts and SharePoint accounts.
-// end::whats-new[]
 
 == 9 February 2022
 
