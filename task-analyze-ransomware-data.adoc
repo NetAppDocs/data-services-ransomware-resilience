@@ -209,3 +209,14 @@ Note that you can view the Active IQ Digital Advisor directly by selecting the *
 image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
 
 Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. (More about this page can be found in the https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Active IQ Digital Advisor documentation].) You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
+
+== Data that is protected using SnapLock so that it can't be changed or deleted......
+
+As a user, I to know how much of my important data has an immutable copy, so I can better understand my backup and recovery plan against ransomware
+
+Snaplock is a NetApp product allowing you to lock files under a dedicated volume. It is an essential piece in NetApps anti ransomware portfolio.
+
+image:screenshot_ransomware_data_snaplocked.png[A screenshot of ]
+
+* The amount of business critical files (files which answer the policies filters) in all the users scanned environments (except for snaplocked files)
+* The amount of files business critical files (files which answer the policies filters) in all the users scanned SnapLocked volumes (files must be locked as well)

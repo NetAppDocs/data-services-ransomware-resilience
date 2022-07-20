@@ -18,7 +18,11 @@ Learn what's new in Ransomware Protection.
 // tag::whats-new[]
 == 1 August 2022
 
-=== new stuff
+=== Security vulnerabilities
+
+details
+
+=== Immutable scanned files
 
 details
 
