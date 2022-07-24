@@ -18,13 +18,13 @@ Learn what's new in Ransomware Protection.
 // tag::whats-new[]
 == 1 August 2022
 
-=== Security vulnerabilities
+=== New panel to show security vulnerabilities on your clusters
 
-details
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
 
-=== Immutable scanned files
+=== New panel to show immutable scanned files
 
-details
+The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware.
 
 == 12 June 2022
 
@@ -42,13 +42,13 @@ The _Harden your ONTAP environments_ panel now provides the status of Snapshot c
 
 == 11 May 2022
 
-=== New panel to track the security hardening of your ONTAP environments.
+=== New panel to track the security hardening of your ONTAP environments
 
 A new panel _Harden your ONTAP environments_ provides the status of certain settings in your ONTAP systems that track how secure your deployment is according to the https://www.netapp.com/pdf.html?item=/media/10674-tr4569.pdf[NetApp Security Hardening Guide for ONTAP Systems^] and to the https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[ONTAP anti-ransomware feature^] that proactively detects and warns about abnormal activity.
 
 You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening[Go here for details].
 
-=== New panel to show how different categories of data are being protected using Cloud Backup.
+=== New panel to show how different categories of data are being protected using Cloud Backup
 
 This new _Backup Status_ panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
 // end::whats-new[]

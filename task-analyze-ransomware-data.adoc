@@ -200,7 +200,7 @@ The _Storage system vulnerabilities_ panel shows the total number of high, mediu
 
 .Prerequisites
 
-* You must have on-premises ONTAP cluster
+* You must have an on-premises ONTAP cluster
 * The cluster is configured in Active IQ
 * You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI.
 
@@ -210,13 +210,29 @@ image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the numb
 
 Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. (More about this page can be found in the https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Active IQ Digital Advisor documentation].) You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
 
-== Data that is protected using SnapLock so that it can't be changed or deleted......
+== Data in your volumes that are being protected using SnapLock
 
-As a user, I to know how much of my important data has an immutable copy, so I can better understand my backup and recovery plan against ransomware
+You can use NetApp SnapLock technology to retain files in unmodified form for regulatory and governance purposes. You can commit files and Snapshot copies to "write once, read many" (WORM) storage, and set retention periods for this WORM-protected data.  https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock].
 
-Snaplock is a NetApp product allowing you to lock files under a dedicated volume. It is an essential piece in NetApps anti ransomware portfolio.
+The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware.
 
-image:screenshot_ransomware_data_snaplocked.png[A screenshot of ]
+.Prerequisites
 
-* The amount of business critical files (files which answer the policies filters) in all the users scanned environments (except for snaplocked files)
-* The amount of files business critical files (files which answer the policies filters) in all the users scanned SnapLocked volumes (files must be locked as well)
+* You must have an on-premises ONTAP cluster
+* You must have installed a SnapLock license on each node in the cluster
+
+image:screenshot_ransomware_data_snaplocked.png[A screenshot of the Critical data immutability panel for your ONTAP storage systems.]
+
+Initially this panel shows data based on default policies that we have selected. But you can select the 2 most important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
+
+The panel shows the following information for the data that matches the selected policies:
+
+* The number of business critical files in all of your scanned working environments that are configured to use SnapLock
+* The number of business critical files in all of your scanned working environments that aren't configured to use SnapLock
+
+Note that policies that include the following filters are not available in the dropdown for selected policies because they rule out important search areas:
+
+* Working environment name
+* Working environment type
+* Storage repository
+* File path
