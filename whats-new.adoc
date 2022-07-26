@@ -20,11 +20,11 @@ Learn what's new in Ransomware Protection.
 
 === New panel to show security vulnerabilities on your clusters
 
-The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities[Go here for details].
 
 === New panel to show immutable scanned files
 
-The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware.
+The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock[Go here for details].
 
 == 12 June 2022
 
