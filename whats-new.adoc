@@ -16,7 +16,7 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 1 August 2022
+== 3 August 2022
 
 === New panel to show security vulnerabilities on your clusters
 

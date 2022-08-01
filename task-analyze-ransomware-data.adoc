@@ -212,14 +212,14 @@ Click the type of vulnerability (High, Medium, Low) you want to view for one of 
 
 == Data in your volumes that are being protected using SnapLock
 
-You can use NetApp SnapLock technology to retain files in unmodified form for regulatory and governance purposes. You can commit files and Snapshot copies to "write once, read many" (WORM) storage, and set retention periods for this WORM-protected data.  https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock].
+You can use NetApp SnapLock technology on your ONTAP volumes to retain files in unmodified form for regulatory and governance purposes. You can commit files and Snapshot copies to "write once, read many" (WORM) storage, and set retention periods for this WORM-protected data. https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock].
 
 The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware.
 
 .Prerequisites
 
 * You must have an on-premises ONTAP cluster
-* You must have installed a SnapLock license on each node in the cluster
+* You must have a SnapLock license installed on at least one node in the cluster
 
 image:screenshot_ransomware_data_snaplocked.png[A screenshot of the Critical data immutability panel for your ONTAP storage systems.]
 
@@ -227,12 +227,14 @@ Initially this panel shows data based on default policies that we have selected.
 
 The panel shows the following information for the data that matches the selected policies:
 
-* The number of business critical files in all of your scanned working environments that are configured to use SnapLock
-* The number of business critical files in all of your scanned working environments that aren't configured to use SnapLock
+* The number of business critical files in all of your scanned working environments that are configured to use SnapLock.
+* The number of business critical files in all of your scanned working environments, excluding those that are configured for SnapLock. Note that some of these files could be protected using a mechanism other than SnapLock.
 
-Note that policies that include the following filters are not available in the dropdown for selected policies because they rule out important search areas:
+Data Sense policies that include the following filters are not available in the dropdown for selected policies because they rule out important search areas:
 
 * Working environment name
 * Working environment type
 * Storage repository
 * File path
+
+So when creating the policies to view your critical business data in the _Critical data immutability_ panel, make sure you keep this in mind.
