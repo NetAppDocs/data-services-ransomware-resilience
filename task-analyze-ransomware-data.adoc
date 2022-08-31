@@ -219,7 +219,7 @@ The _Critical data immutability_ panel shows the number of items in your working
 .Prerequisites
 
 * You must have an on-premises ONTAP cluster
-* You must have a SnapLock license installed on at least one node in the cluster
+* You must have a *SnapLock* license installed on at least one node in the cluster
 
 image:screenshot_ransomware_data_snaplocked.png[A screenshot of the Critical data immutability panel for your ONTAP storage systems.]
 
@@ -238,3 +238,18 @@ Data Sense policies that include the following filters are not available in the 
 * File path
 
 So when creating the policies to view your critical business data in the _Critical data immutability_ panel, make sure you keep this in mind.
+
+== Ransomware incidents detected on your systems
+
+Ransomware incidents for your managed systems will appear as alerts in the _Ransomware incidents_ panel.
+
+image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
+
+Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more here^].
+
+.Prerequisites
+
+* You must have an on-premises ONTAP cluster running ONTAP 9.10.1 or greater
+* You must have a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster
+* To analyze the incidents, you'll need to have installed and configured NetApp Cloud Secure. https://docs.netapp.com/us-en/cloudinsights/cs_intro.html[Learn more about Cloud Secure)^].
+

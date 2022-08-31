@@ -42,6 +42,7 @@ Enabling CIFS auditing generates auditing events for your system admins that tra
 * On-box anti-ransomware features are not enabled on your ONTAP systems.
 +
 The ONTAP anti-ransomware features proactively detect and warn about abnormal activity that might indicate a ransomware attack.
+* When ONTAP anti-ransomware is enabled on your systems, the number of type of ransomware incidents will appear as alerts.
 * The number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on your ONTAP clusters.
 +
 You can view the vulnerability and then follow the recommended action to resolve the issue.
