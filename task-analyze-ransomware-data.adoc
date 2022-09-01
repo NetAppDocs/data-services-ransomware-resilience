@@ -200,6 +200,7 @@ The _Storage system vulnerabilities_ panel shows the total number of high, mediu
 
 .Prerequisites
 
+* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster
 * The cluster is configured in Active IQ
 * You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI.
@@ -218,6 +219,7 @@ The _Critical data immutability_ panel shows the number of items in your working
 
 .Prerequisites
 
+* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster
 * You must have a *SnapLock* license installed on at least one node in the cluster
 
@@ -241,15 +243,18 @@ So when creating the policies to view your critical business data in the _Critic
 
 == Ransomware incidents detected on your systems
 
-Ransomware incidents for your managed systems will appear as alerts in the _Ransomware incidents_ panel.
+Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes data corruption/encryption, data deletion, and data exfiltration events. The panel will display the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
 
 image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
 
 Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more here^].
 
+To analyze the incidents, you'll need to have installed and configured NetApp Cloud Secure. https://docs.netapp.com/us-en/cloudinsights/cs_intro.html[Learn more about Cloud Secure^]. Then you can click the *Analyze* button to get recommendations for your next steps in resolving the issue.
+
 .Prerequisites
 
+* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster running ONTAP 9.10.1 or greater
 * You must have a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster
-* To analyze the incidents, you'll need to have installed and configured NetApp Cloud Secure. https://docs.netapp.com/us-en/cloudinsights/cs_intro.html[Learn more about Cloud Secure)^].
+* NetApp ARP must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching it over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
 

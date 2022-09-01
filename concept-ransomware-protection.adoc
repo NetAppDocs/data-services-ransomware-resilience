@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-ransomware-protection.html
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity
-summary: Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+summary: Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 ---
 
 = Learn about Ransomware Protection
@@ -13,7 +13,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 :imagesdir: ./media/
 
 [.lead]
-Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 
 https://cloud.netapp.com/cyberstorage[Learn about the use cases for Ransomware Protection^].
 
@@ -25,7 +25,7 @@ Ransomware Protection provides a single point of visibility and control to manag
 
 * Volumes in your working environments aren't being protected by making periodic Snapshot copies.
 * Volumes in your working environments aren't being protected by creating backups to the cloud using https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^].
-* Volumes in your working environments are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock].
+* Volumes in your working environments are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock^].
 * Data in your working environments and data sources aren't being scanned using https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^] to identify compliance and privacy concerns, and find optimization opportunities.
 +
 This capability is also important from a ransomware protection perspective because it allows you to better understand where your important (sensitive, business critical) data is located so you can make sure you're focusing your protection effort there.
@@ -69,7 +69,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 * Object storage (that uses S3 protocol)
 * Databases (Amazon RDS, MongoDB, MySQL, Oracle, PostgreSQL, SAP HANA, SQL Server)
 * OneDrive accounts
-* SharePoint accounts
+* SharePoint Online and On-Premises accounts
 * Google Drive accounts
 
 Ransomware Protection also monitors your global Active Directory configuration if you have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[configured this in Cloud Data Sense^].
@@ -78,7 +78,7 @@ Ransomware Protection also monitors your global Active Directory configuration i
 
 At a high-level, Ransomware Protection works like this:
 
-. Ransomware Protection gathers information from your storage systems, Cloud Data Sense, Cloud Backup, and from other Cloud Manager resources, to populate the Ransomware Protection Dashboard.
+. Ransomware Protection gathers information from your storage systems, Cloud Data Sense, Cloud Backup, and from other Cloud Manager and NetApp resources, to populate the Ransomware Protection Dashboard.
 . You use the Ransomware Protection dashboard to get an overview of how well protected your systems are.
 . You use the provided reporting tools to help in your cyberstorage protection efforts.
 
