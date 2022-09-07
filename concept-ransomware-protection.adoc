@@ -69,7 +69,8 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.
 * Object storage (that uses S3 protocol)
 * Databases (Amazon RDS, MongoDB, MySQL, Oracle, PostgreSQL, SAP HANA, SQL Server)
 * OneDrive accounts
-* SharePoint Online and On-Premises accounts
+* SharePoint Online accounts
+//* SharePoint Online and On-Premises accounts
 * Google Drive accounts
 
 Ransomware Protection also monitors your global Active Directory configuration if you have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[configured this in Cloud Data Sense^].
