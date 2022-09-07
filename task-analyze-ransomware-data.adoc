@@ -243,7 +243,8 @@ So when creating the policies to view your critical business data in the _Critic
 
 == Ransomware incidents detected on your systems
 
-Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes data corruption/encryption, data deletion, and data exfiltration events. The panel will display the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
+Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes data corruption and encryption events. The panel will display the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
+//add exfiltration or deletion at some point.
 
 image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
 
