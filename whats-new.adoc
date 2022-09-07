@@ -16,15 +16,21 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
+== 6 September 2022
+
+=== New panel to display ransomware incidents detected on your clusters
+
+The _Ransomware incidents_ panel shows ransomware attacks that have occurred on your systems. Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems[Learn more here^].
+
 == 7 August 2022
 
 === New panel to show security vulnerabilities on your clusters
 
-The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities[Go here for details].
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities[Go here for details^].
 
 === New panel to show immutable scanned files
 
-The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock[Go here for details].
+The _Critical data immutability_ panel shows the number of items in your working environments that are being protected from modification and deletion on WORM storage by using ONTAP SnapLock technology. This allows you to view how much of your data has an immutable copy so you can better understand your backup and recovery plans against ransomware. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#data-in-your-volumes-that-are-being-protected-using-snaplock[Go here for details^].
 
 == 12 June 2022
 
@@ -39,6 +45,7 @@ This information was being reported for on-prem ONTAP systems in the _Harden you
 === FSx for ONTAP systems are now tracked for enabling volume snapshots
 
 The _Harden your ONTAP environments_ panel now provides the status of Snapshot copies for volumes on your FSx for ONTAP systems. When less than 40% of the volumes are being protected by snapshots, you will also get an alert in the _Cyber Resilience Map_.
+// end::whats-new[]
 
 == 11 May 2022
 
@@ -51,7 +58,6 @@ You can review the recommendations and then decide how you want to address the p
 === New panel to show how different categories of data are being protected using Cloud Backup
 
 This new _Backup Status_ panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
-// end::whats-new[]
 
 == 15 March 2022
 
