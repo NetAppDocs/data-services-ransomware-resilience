@@ -17,6 +17,22 @@ Use the Cloud Manager Ransomware Protection Dashboard to view an overview of the
 
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 
+== Ransomware Protection Score and Recommended Actions pane
+
+Moving sensitive data from one data source to another.  How does an Admin figure out whether they can do this?  Users are accessing the files on OneDrive, and now the Admin moves the file??  How tdo they notify the users that they are moving the files?
+
+
+Say less-secure data sources - not unprotected, and not specific data sources types
+
+IT has policies that sensitive data will be moved.  Can tell user to move file as well.
+Can dismiss, or dismiss and tell user to move it
+
+image:screenshot_ransomware_protection_score1.png[]
+
+
+image:screenshot_ransomware_protection_score2.png[]
+
+
 == Cyber Resilience Map
 
 The Cyber Resilience Map is the main area in the dashboard. It enables you to see all your working environments and data sources in a visual manner and be able to view relevant cyber-resilience information.
