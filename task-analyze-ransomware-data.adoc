@@ -15,6 +15,8 @@ summary: Use the Ransomware Protection dashboard to view an overview of the cybe
 [.lead]
 Use the Ransomware Protection Dashboard to view an overview of the cyber resilience of all your BlueXP (formerly Cloud Manager) working environments and data sources. You can drill down in each area to find more details and possible remediations.
 
+From the BlueXP left navigation menu, select *Protection > Ransomware protection*.
+
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 
 == Cyber Resilience Map
