@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: concept-ransomware-protection.html
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity
-summary: Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+summary: Ransomware attacks can cost a business time, resources, and reputation. The BlueXP Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 ---
 
 = Learn about Ransomware Protection
@@ -13,7 +13,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 :imagesdir: ./media/
 
 [.lead]
-Ransomware attacks can cost a business time, resources, and reputation. The Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+Ransomware attacks can cost a business time, resources, and reputation. The BlueXP Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 
 https://cloud.netapp.com/cyberstorage[Learn about the use cases for Ransomware Protection^].
 
@@ -79,7 +79,7 @@ Ransomware Protection also monitors your global Active Directory configuration i
 
 At a high-level, Ransomware Protection works like this:
 
-. Ransomware Protection gathers information from your storage systems, Cloud Data Sense, Cloud Backup, and from other Cloud Manager and NetApp resources, to populate the Ransomware Protection Dashboard.
+. Ransomware Protection gathers information from your storage systems, Cloud Data Sense, Cloud Backup, and from other BlueXP and NetApp resources, to populate the Ransomware Protection Dashboard.
 . You use the Ransomware Protection dashboard to get an overview of how well protected your systems are.
 . You use the provided reporting tools to help in your cyberstorage protection efforts.
 
