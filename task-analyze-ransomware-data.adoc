@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-analyze-ransomware-data.html
 keywords: personal data, personal information, sensitive, personal sensitive data, governance, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, permissions
-summary: Use the Ransomware Protection dashboard to view an overview of the cyber resilience of all your working environments and data sources. You can drill down in each area to find more details and possible remediations.
+summary: Use the Ransomware Protection dashboard to view an overview of the cyber resilience of all your BlueXP working environments and data sources. You can drill down in each area to find more details and possible remediations.
 ---
 
 = Managing cyber security recommendations for your data sources
@@ -13,7 +13,9 @@ summary: Use the Ransomware Protection dashboard to view an overview of the cybe
 :imagesdir: ./media/
 
 [.lead]
-Use the Cloud Manager Ransomware Protection Dashboard to view an overview of the cyber resilience of all your working environments and data sources. You can drill down in each area to find more details and possible remediations.
+Use the Ransomware Protection Dashboard to view an overview of the cyber resilience of all your BlueXP (formerly Cloud Manager) working environments and data sources. You can drill down in each area to find more details and possible remediations.
+
+From the BlueXP left navigation menu, select *Protection > Ransomware protection*.
 
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 
@@ -30,7 +32,7 @@ Shows a list of alerts for which the service is monitoring across all of your da
 Center panel::
 Shows all of your data sources, services, and Active Directory in a graphical format. Healthy environments have a green indicator and environments that have alerts have a red indicator.
 Right panel::
-After you click on a data source that has a red indicator, this panel shows the alerts for that data source and provides recommendations to resolve the alert. Alerts are sorted so that the most recent alerts are listed first. Many recommendations lead you to another Cloud Manager service where you can resolve the issue.
+After you click on a data source that has a red indicator, this panel shows the alerts for that data source and provides recommendations to resolve the alert. Alerts are sorted so that the most recent alerts are listed first. Many recommendations lead you to another BlueXP service where you can resolve the issue.
 
 These are the currently tracked alerts and suggested remediations.
 
@@ -200,12 +202,12 @@ The _Storage system vulnerabilities_ panel shows the total number of high, mediu
 
 .Prerequisites
 
-* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
+* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster
 * The cluster is configured in Active IQ
-* You must have registered an existing NSS account in Cloud Manager to view your clusters, and to view the Active IQ Digital Advisor UI.
+* You must have registered an existing NSS account in BlueXP to view your clusters, and to view the Active IQ Digital Advisor UI.
 
-Note that you can view the Active IQ Digital Advisor directly by selecting the *Active IQ* service from Cloud Manager.
+Note that you can view the Active IQ Digital Advisor directly by selecting *Health > Digital advisor* from the BlueXP menu.
 
 image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
 
@@ -219,7 +221,7 @@ The _Critical data immutability_ panel shows the number of items in your working
 
 .Prerequisites
 
-* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
+* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster
 * You must have a *SnapLock* license installed on at least one node in the cluster
 
@@ -254,7 +256,7 @@ To analyze the incidents, you'll need to have installed and configured NetApp Cl
 
 .Prerequisites
 
-* The Cloud Manager Connector must be installed on your premises - not deployed with a cloud provider.
+* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster running ONTAP 9.10.1 or greater
 * You must have a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster
 * NetApp ARP must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching it over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
