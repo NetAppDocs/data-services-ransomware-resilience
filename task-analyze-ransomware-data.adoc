@@ -19,6 +19,45 @@ From the BlueXP left navigation menu, select *Protection > Ransomware protection
 
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 
+== Ransomware Protection Score and Recommended Actions
+
+The Ransomware Protection Score panel provides a simple way to see how resilient your data is to a ransomware attack. This panel works in conjunction with the Recommended Actions panel. There are two parts to the Ransomware Protection Score panel: 
+
+* The overall protection score for your data (0-100% protected).
++
+The score is based on a weighted calculation of all the possible recommendations.
+* How many recommended actions are available to elevate your protection to 100% - if you implement the recommendations. 
++
+The three types of recommended actions are in accordance with the https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/nist-framework[NIST framework for cyber security^]: 
+
+** Protect
+** Detect
+** Recover
+
+image:screenshot_ransomware_protection_score1.png[A screenshot showing the Ransomware Protection Score panel and Recommended Actions panel.]
+
+In this example page, there is only a single recommendation type for the "Protect" category. And this recommendation is relevant for 258 files.
+
+This panel supports data sources that have been added to Cloud Data Sense.
+
+Note that recommendations are applicable per data source. So if the same recommendation is relevant to 3 data sources, it will be counted as 3 recommendations. 
+
+You can click the image:button_down_caret.png[] to expand each Recommended Action, as shown below.
+
+image:screenshot_ransomware_rec_actions_expanded.png[A screenshot showing the Recommended Actions panel expanded to show total actions per data source.]
+
+To see the detailed list of data that has been identified as having a recommended actions, click the *Investigate* button and you'll be redirected to the Cloud Data Sense Investigation page with the list of all the files that meet the criteria for the recommended action.
+
+Then you can decide whether you want to apply the recommended action on all those files, or on just some of them.
+
+After you fix the recommended action, the next refresh of the Ransomware Protection Score panel (every 5 minutes) will adjust the number for the score.
+
+=== List of Recommended Actions
+
+Currently, the only criteria that is being evaluated for a recommended action is whether you have sensitive data stored on unprotected data sources - locations where ransomware protection software is not able to protect the data. You can use Data Sense to quickly move these files to a better protected data source. You'll be using the Data Sense capability to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
+
+Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *CAN* be stored.
+
 == Cyber Resilience Map
 
 The Cyber Resilience Map is the main area in the dashboard. It enables you to see all your working environments and data sources in a visual manner and be able to view relevant cyber-resilience information.
