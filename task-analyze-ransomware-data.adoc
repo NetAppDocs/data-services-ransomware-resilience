@@ -23,17 +23,16 @@ image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protect
 
 The Ransomware Protection Score panel provides a simple way to see how resilient your data is to a ransomware attack. This panel works in conjunction with the Recommended Actions panel. There are two parts to the Ransomware Protection Score panel: 
 
-* The overall protection score for your data (0-100% protection).
+* The overall protection score for your data (0-100% protected).
 +
 The score is based on a weighted calculation of all the possible recommendations.
-* How many recommended actions are available to elevate your protection to 100% - if you implement the recommendation. 
+* How many recommended actions are available to elevate your protection to 100% - if you implement the recommendations. 
 +
-The four types of recommended actions are in accordance with the https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/nist-framework[NIST framework for cyber security^]: 
+The three types of recommended actions are in accordance with the https://www.ftc.gov/business-guidance/small-businesses/cybersecurity/nist-framework[NIST framework for cyber security^]: 
 
-** Protect 
-** Detect 
-** Respond  
-** Recover  
+** Protect
+** Detect
+** Recover
 
 image:screenshot_ransomware_protection_score1.png[A screenshot showing the Ransomware Protection Score panel and Recommended Actions panel.]
 
@@ -57,7 +56,7 @@ After you fix the recommended action, the next refresh of the Ransomware Protect
 
 Currently, the only criteria that is being evaluated for a recommended action is whether you have sensitive data stored on unprotected data sources - locations where ransomware protection software is not able to protect the data. You can use Data Sense to quickly move these files to a better protected data source. You'll be using the Data Sense capability to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
 
-Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify these files that have sensitive data, and move them to a safer data source - where sensitive *CAN* be stored.
+Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *CAN* be stored.
 
 == Cyber Resilience Map
 
