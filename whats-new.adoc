@@ -16,11 +16,11 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 7 November 2022
+== 13 November 2022
 
 === New panels to display your overall Ransomware Protection Score and Recommended Actions
 
-These two new panels work together to identify how resilient your data is to a ransomware attack, and what you can do to improve your score. The Ransomware Protection Score panel shows the overall score and the areas of cybersecurity where potential issues exist. The Recommended Actions panel lists the potential actions you can take to improve your resilience to a ransomware attack, and provides a link to investigate the issue so you can apply the actions where necessary. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions[Learn more here^].
+These two new panels work together to identify how resilient your data is to a ransomware attack, and what you can do to improve your score. The _Ransomware Protection Score_ panel shows the overall score and the areas of cybersecurity where potential issues exist. The _Recommended Actions_ panel lists the potential actions you can take to improve your resilience to a ransomware attack, and provides a link to investigate the issues so you can apply the actions where necessary. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions[Learn more here^].
 
 == 6 September 2022
 
@@ -79,6 +79,6 @@ The Open Permissions area in the Ransomware Protection Dashboard now includes th
 
 === New Ransomware Protection service
 
-The new Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+The new Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 
 link:concept-ransomware-protection.html[Learn more about this new service].

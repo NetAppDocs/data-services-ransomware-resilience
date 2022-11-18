@@ -21,7 +21,7 @@ image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protect
 
 == Ransomware Protection Score and Recommended Actions
 
-The Ransomware Protection Score panel provides a simple way to see how resilient your data is to a ransomware attack. This panel works in conjunction with the Recommended Actions panel. There are two parts to the Ransomware Protection Score panel: 
+The Ransomware Protection Score panel provides a simple way to see how resilient your data is to a ransomware attack. It is an aggregation of all the actions that are recommended to be taken in order to improve your data security posture and cyber resiliency. This panel works in conjunction with the Recommended Actions panel. There are two parts to the Ransomware Protection Score panel: 
 
 * The overall protection score for your data (0-100% protected).
 +
@@ -38,7 +38,7 @@ image:screenshot_ransomware_protection_score1.png[A screenshot showing the Ranso
 
 In this example page, there is only a single recommendation type for the "Protect" category. And this recommendation is relevant for 258 files.
 
-This panel supports data sources that have been added to Cloud Data Sense.
+This panel supports working environments and data sources that have been added to Cloud Data Sense.
 
 Note that recommendations are applicable per data source. So if the same recommendation is relevant to 3 data sources, it will be counted as 3 recommendations. 
 
@@ -50,7 +50,7 @@ To see the detailed list of data that has been identified as having a recommende
 
 Then you can decide whether you want to apply the recommended action on all those files, or on just some of them.
 
-After you fix the recommended action, the next refresh of the Ransomware Protection Score panel (every 5 minutes) will adjust the number for the score.
+After you fix the recommended action, the next refresh of the Ransomware Protection Score panel (every 5 minutes) will adjust the number for the score. You can also click the *Refresh* button to update the page now.
 
 === List of Recommended Actions
 
