@@ -36,7 +36,7 @@ The three types of recommended actions are in accordance with the https://www.ft
 
 image:screenshot_ransomware_protection_score1.png[A screenshot showing the Ransomware Protection Score panel and Recommended Actions panel.]
 
-In this example page, there is only a single recommendation type for the "Protect" category. And this recommendation is relevant for 258 files.
+In this example page, there are seven recommendations for the "Protect" category. The first recommendation is relevant for 258 files.
 
 This panel supports working environments and data sources that have been added to Cloud Data Sense.
 
@@ -54,9 +54,28 @@ After you fix the recommended action, the next refresh of the Ransomware Protect
 
 === List of Recommended Actions
 
-Currently, the only criteria that is being evaluated for a recommended action is whether you have sensitive data stored on unprotected data sources - locations where ransomware protection software is not able to protect the data. You can use Data Sense to quickly move these files to a better protected data source. You'll be using the Data Sense capability to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
+These are the currently tracked recommended actions and suggested solutions.
 
-Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *CAN* be stored.
+[cols=3*,options="header",cols="33,33,33",width="100%"]
+
+|===
+| Recommended Action
+| Description
+| Possible Solution
+
+| Reduce permissions for X sensitive items with broad permissions
+| Sensitive files that have open permissions have been found in your data sources. This includes all sensitive data (personal data and sensitive personal data) that have "open to organization" or "open to public" permissions.
+| Click the *Investigate* button for each data sources and you'll be redirected to the Cloud Data Sense Investigation page with the list of all the files that meet the criteria for the recommended action in this data source.
+
+| Move X sensitive items from Y unprotected data sources to safe locations
+| Sensitive data has been found on unprotected data sources - locations where ransomware protection software is not able to protect the data. Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *CAN* be stored.
+| You can use Data Sense to quickly move these files to a better protected data source. You'll be using the Data Sense capability to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
+
+| Patch X open CVEs across Y data sources
+| Unpatched CVEs (Common Vulnerabilities and Exposures) have been found on your on-premises ONTAP systems and/or Cloud Volumes ONTAP systems. This issues are identified only if the Digital Advisor product (formerly Active IQ Digital Advisor) is integrated with your storage systems. These are known vulnerabilities on NetApp storage systems that have fixes available to resolve the CVE. NetApp CVEs are listed on the https://security.netapp.com/advisory/[Product Security page^].
+| Click the *Digital Advisor* button for each data sources and you'll be redirected to the Security Vulnerabilities page in the Digital Advisor. There you can see the details about the open CVEs and the recommended action to resolve the CVE. https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Learn more about the Security Vulnerabilities page].
+
+|===
 
 == Cyber Resilience Map
 
