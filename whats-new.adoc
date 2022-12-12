@@ -16,14 +16,14 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 7 December 2022
+== 11 December 2022
 
 === New Recommended Actions have been added to the Ransomware Protection Score panel
 
 Two new Recommended Actions are now displayed for the following ransomware protection issues found on your storage systems:
 
-* Reduce permissions for X sensitive items with broad permissions - Sensitive files that have open permissions have been found in your data sources
-* Patch X open CVEs across Y data sources - Unpatched CVEs have been found on your ONTAP systems
+* _Reduce permissions for X sensitive items with broad permissions_ - Sensitive files that have open permissions have been found in your data sources
+* _Patch X open CVEs across Y data sources_ - Unpatched CVEs have been found on your ONTAP systems
 
 You can select these actions in the UI and then follow the workflow to resolve the underlying issues. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions[See the list of all recommended actions].
 
