@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-analyze-ransomware-data.html
 keywords: personal data, personal information, sensitive, personal sensitive data, governance, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, permissions
-summary: Use the Ransomware Protection dashboard to view an overview of the cyber resilience of all your BlueXP working environments and data sources. You can drill down in each area to find more details and possible remediations.
+summary: Use the Ransomware Protection dashboard to get a high-level overview of the cyber resilience of all your BlueXP working environments and additional data sources. You can drill down in each area to find more details and possible remediations.
 ---
 
 = Managing cyber security recommendations for your data sources
@@ -13,7 +13,7 @@ summary: Use the Ransomware Protection dashboard to view an overview of the cybe
 :imagesdir: ./media/
 
 [.lead]
-Use the Ransomware Protection Dashboard to view an overview of the cyber resilience of all your BlueXP (formerly Cloud Manager) working environments and data sources. You can drill down in each area to find more details and possible remediations.
+Use the Ransomware Protection Dashboard to to get a high-level overview of the cyber resilience of all your BlueXP (formerly Cloud Manager) working environments and additional data sources. You can drill down in each area to find more details and possible remediations.
 
 From the BlueXP left navigation menu, select *Protection > Ransomware protection*.
 
@@ -65,7 +65,7 @@ These are the currently tracked recommended actions and suggested solutions.
 
 | Reduce permissions for X sensitive items with broad permissions
 | Sensitive files that have open permissions have been found in your data sources by Cloud Data Sense. This includes all sensitive data (personal data and sensitive personal data) that have "open to organization" or "open to public" permissions.
-| Click the *Investigate* button for each data source and you'll be redirected to the Data Sense Investigation page with the list of all the files that meet the criteria for the recommended action in this data source. Then you can decide how to reduce the broad permissions on those files.
+| Click the *Investigate* button for each data source and you'll be redirected to the Data Sense Investigation page where you can view all the sensitive files at risk and take further action to reduce that risk. This includes how to reduce the broad permissions on those files.
 
 | Move X sensitive items from Y unprotected data sources to safe locations
 | Sensitive data has been found on unprotected data sources by Cloud Data Sense; these are locations where ransomware protection software is not able to protect the data. Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *IS* allowed to be stored.
@@ -233,10 +233,10 @@ Initially this panel shows data based on default policies that we have selected.
 
 The graph shows permission analysis of all the data that meets the criteria from your policies. It lists the number of items that are:
 
-* Open to public permissions – the items which Data Sense considers as open to public
-* Open to organization permissions – the items which Data Sense considers as open to organization
-* No open permissions – the items which Data Sense considers as no open permissions
-* Unknown permissions – the items which Data Sense considers as unknown permissions
+* Open to public permissions - the items which Data Sense considers as open to public
+* Open to organization permissions - the items which Data Sense considers as open to organization
+* No open permissions - the items which Data Sense considers as no open permissions
+* Unknown permissions - the items which Data Sense considers as unknown permissions
 
 Hover over each bar in the charts to view the number of results in each category. Click a bar and the Data Sense Investigation page is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
 
