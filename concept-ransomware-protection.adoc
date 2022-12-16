@@ -13,7 +13,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 :imagesdir: ./media/
 
 [.lead]
-Ransomware attacks can cost a business time, resources, and reputation. The BlueXP Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+Ransomware attacks can cost a business time, resources, and reputation. The BlueXP (formerly Cloud Manager) Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 
 https://cloud.netapp.com/cyberstorage[Learn about the use cases for Ransomware Protection^].
 
