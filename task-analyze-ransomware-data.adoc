@@ -303,21 +303,22 @@ So when creating the policies to view your critical business data in the _Critic
 
 == Ransomware incidents detected on your systems
 
-Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes data corruption and encryption events. The panel will display the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
-//add exfiltration or deletion at some point.
+Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes encryption events, suspicious file extensions, ransomware activity, and malicious activity. The panel will display the type of incident and whether any automatic actions have been run to try to resolve the issue. For example, a volume Snapshot copy could be been generated and sent to the cloud.
 
 image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
 
 Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more here^].
 
-Then you can click the *Analyze* button to get recommendations for your next steps in resolving the issue.
+You can click the image:button_down_caret.png[] to expand an incident to view the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
 
-//To analyze the incidents, you'll need to have installed and configured NetApp Cloud Secure. https://docs.netapp.com/us-en/cloudinsights/cs_intro.html[Learn more about Cloud Secure^]. 
+image:screenshot_ransomware_incidents_expanded.png[A screenshot showing the Ransomware incidents panel expanded to show automatic actions for your volumes.]
+
+You can click the *Resolve* button to remove the incident from the UI. A dialog box pops up to see if the reported incident was a real ransomware incident or not. Click *Yes* if the issue was a real ransomware incident. Click *No* if the issue was not a real ransomware incident.
 
 .Prerequisites
 
 * The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster running ONTAP 9.10.1 or greater
 * You must have a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster
-* NetApp ARP must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
+* NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
 

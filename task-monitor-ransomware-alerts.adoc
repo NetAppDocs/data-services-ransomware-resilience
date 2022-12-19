@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: task-monitor-ransomware-alerts.html
+keywords: ransomware, status, monitor, alert, notification
+summary: You can view the status of ransomware alerts in the BlueXP Notification Center. You can also configure notifications to be sent by email so you can be informed of important system activity even when you're not logged into the system.
+---
+
+= Monitoring the status of ransomware alerts
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+You can view the status of ransomware alerts in the BlueXP Notification Center. You can also configure notifications to be sent by email so you can be informed of important system activity even when you're not logged into the system.
+
+The Notification Center tracks the progress of ransomware incidents so you can verify whether they have been resolved or not. You can display the notifications by clicking the (image:button_bell_icon.png[notification bell]) in the BlueXP menu bar. You can also configure BlueXP to send notifications by email as alerts.
+
+At this time, there is one event that will trigger email alerts:
+
+* Potential Ransomware attack detected on your system
+
+By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" alerts. All other users and recipients are configured, by default, not to receive any notification emails. Emails can be sent to any BlueXP users who are part of your NetApp Cloud Account, or to any other recipients who need to be aware of ransomware protection incidents. 
+
+You'll need to select the notification type "Critical" to receive the Ransomware Protection email alerts.
+
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html[Learn more about the Notification Center and how to send alert emails for ransomware protection incidents^].
+

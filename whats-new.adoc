@@ -16,6 +16,12 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
+== 5 January 2023
+
+=== Support has been added to receive Ransomware Protection alerts in email and in the Notification Center
+
+Ransomware Protection has been integrated into the BlueXP Notification service. You can display Ransomware Protection notifications by clicking the notification bell in the BlueXP menu bar. You can also configure BlueXP to send notifications by email as alerts so you can be informed of important system activity even when you're not logged into the system. The email can be sent to any recipients who need to be aware of ransomware alerts. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html[Learn how].
+
 == 11 December 2022
 
 === New Recommended Actions have been added to the Ransomware Protection Score panel
@@ -32,13 +38,13 @@ You can select these actions in the UI and then follow the workflow to resolve t
 === New panels to display your overall Ransomware Protection Score and Recommended Actions
 
 The _Ransomware Protection Score_ panel shows the overall score and the areas of cybersecurity where potential issues exist. The _Recommended Actions_ panel lists the potential actions you can take to improve your resilience to a ransomware attack, and provides a link to investigate the issues so you can apply the actions where necessary. These two new panels work together to identify how resilient your data is to a ransomware attack, and what you can do to improve your score. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions[Learn more here^].
+// end::whats-new[]
 
 == 6 September 2022
 
 === New panel to display ransomware incidents detected on your clusters
 
 The _Ransomware incidents_ panel shows ransomware attacks that have occurred on your systems. Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-incidents-detected-on-your-systems[Learn more here^].
-// end::whats-new[]
 
 == 7 August 2022
 
