@@ -39,7 +39,7 @@ To see where your internal Product IDs are mentioned in all of your files, enter
 [source,cli]
 [user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
 
- [+] Adding Custom Regex to Data Sense
+ Adding Custom Regex to Data Sense
  log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Uses [source,cli] syntax with "----" above and below code block
@@ -52,6 +52,6 @@ To see where your internal Product IDs are mentioned in all of your files, enter
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Uses "----" above and below code block without [source,cli] syntax for output from commands
 
 ----
- [+] Adding Custom Regex to Data Sense
+ Adding Custom Regex to Data Sense
  log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
 ----
