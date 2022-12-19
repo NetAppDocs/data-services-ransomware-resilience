@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: task-test-formatting.html
+keywords: ransomware, status, monitor, alert, notification
+summary: Test.
+---
+
+= Test out code sample formatting
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Test.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Listing block for input, space at beginning of line for output.
+
+* Syntax uses a blank space at the beginning of the line for formatting.
+* User entered command uses a "listing block" - code block with highlight and *Copy* button.  Uses [source,cli] syntax
+* Output uses blank space at the beginning of the line for formatting.
+
+== Command syntax to add the regex
+
+The command syntax to add a custom regex is:
+
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>"
+
+* <pattern_name> = This is the name that will appear in the Data Sense UI.
+* <regular_expression> = This can be any legal regular expression.
+
+=== Example
+
+The Product ID is a 12-digit number that starts with 201; so the regular expression is *\b201\d{9}\b*. And you want to the text in the Data Sense UI to identify this pattern as *Internal Product ID*. 
+
+To see where your internal Product IDs are mentioned in all of your files, enter the following commands.
+
+[source,cli]
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
+
+ [+] Adding Custom Regex to Data Sense
+ log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Uses [source,cli] syntax with "----" above and below code block
+
+[source,cli]
+----
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
+----
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Uses "----" above and below code block without [source,cli] syntax for output from commands
+
+----
+ [+] Adding Custom Regex to Data Sense
+ log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
+----
