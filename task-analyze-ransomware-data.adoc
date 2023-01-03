@@ -317,8 +317,8 @@ You can click the *Resolve* button to remove the incident from the UI. A dialog 
 
 .Prerequisites
 
-* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
-* You must have an on-premises ONTAP cluster running ONTAP 9.10.1 or greater
-* You must have a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster
+//* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
+* You must have an on-premises ONTAP cluster running ONTAP 9.11 or greater.
+* You must have the *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster.
 * NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
-
+//a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or 
