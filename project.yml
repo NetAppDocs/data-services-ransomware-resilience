@@ -17,6 +17,8 @@ sidebar:
       entries:
         - title: Learn about Ransomware Protection
           url: /concept-ransomware-protection.html
+        - title: Monitor Ransomware alerts in the Notification Center
+          url: /task-monitor-ransomware-alerts.html
     - title: Use Ransomware Protection
       entries:
         - title: Manage cyber security recommendations for your data
