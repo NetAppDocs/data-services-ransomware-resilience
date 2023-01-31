@@ -15,7 +15,7 @@ summary: Use the Ransomware Protection dashboard to get a high-level overview of
 [.lead]
 Use the Ransomware Protection Dashboard to to get a high-level overview of the cyber resilience of all your BlueXP (formerly Cloud Manager) working environments and additional data sources. You can drill down in each area to find more details and possible remediations.
 
-From the BlueXP left navigation menu, select *Protection > Ransomware protection*.
+From the BlueXP left navigation menu, select *Governance > Ransomware protection*.
 
 image:screenshot_ransomware_dashboard.png[A screenshot of the Ransomware Protection dashboard.]
 
@@ -42,7 +42,7 @@ This panel supports working environments and data sources that have been added t
 
 Note that recommendations are applicable per data source. So if the same recommendation is relevant to 3 data sources, it will be counted as 3 recommendations. 
 
-You can click the image:button_down_caret.png[] to expand each Recommended Action, as shown below.
+You can click the image:button_down_caret.png[down-arrow button] to expand each Recommended Action, as shown below.
 
 image:screenshot_ransomware_rec_actions_expanded.png[A screenshot showing the Recommended Actions panel expanded to show total actions per data source.]
 
@@ -74,6 +74,10 @@ These are the currently tracked recommended actions and suggested solutions.
 | Patch X open CVEs across Y data sources
 | Unpatched CVEs (Common Vulnerabilities and Exposures) have been found on your on-premises ONTAP systems and/or Cloud Volumes ONTAP systems. These issues are identified only if the Digital Advisor product (formerly Active IQ Digital Advisor) is integrated with your storage systems. These are known vulnerabilities on NetApp storage systems that have fixes available to resolve the CVE. NetApp CVEs are listed on the https://security.netapp.com/advisory/[Product Security page^].
 | Click the *Digital Advisor* button for each data sources and you'll be redirected to the _Security Vulnerabilities_ page in the Digital Advisor. There you can see the details about the open CVEs, and the recommended action to resolve each CVE. Often the resolution is to upgrade the ONTAP software on the system. https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Learn more about the Security Vulnerabilities page].
+
+| Configure your business critical data
+| You have not defined your business critical data policies in the Business Critical Data Configuration page. It is important for you to identify what you consider as business critical data so that possible ransomware issues with this data are brought to your attention.
+| Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the link to open the Business Critical Data Configuration page. Then you can define your business critical data.
 
 |===
 
@@ -135,6 +139,36 @@ These are the currently tracked alerts and suggested remediations.
 
 |===
 
+== Ransomware incidents detected on your systems
+
+Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes encryption events, suspicious file extensions, ransomware activity, and malicious activity. The panel will display the type of incident and whether any automatic actions have been run to try to resolve the issue. For example, a volume Snapshot copy could be been generated and sent to the cloud.
+
+image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
+
+Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more about ONTAP Autonomous Ransomware Protection^].
+
+You can click the image:button_down_caret.png[down-arrow button] to expand an incident to view the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
+
+image:screenshot_ransomware_incidents_expanded.png[A screenshot showing the Ransomware incidents panel expanded to show automatic actions for your volumes.]
+
+You can click the *Resolve* button to remove the incident from the UI. A dialog box pops up to see if the reported incident was a real ransomware incident or not. Click *Yes* if the issue was a real ransomware incident. Click *No* if the issue was not a real ransomware incident. This help ARP understand real incidents from false positives in your volumes. 
+
+.Prerequisites
+
+//* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
+* You must have an on-premises ONTAP cluster running ONTAP 9.11 or greater.
+* You must have the *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster.
+* NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as "dry run") for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
+* Each volume that you want to protect must have ARP enabled. https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html[See how to enable Autonomous Ransomware Protection^].
+
+== Data listed by encrypted files
+
+The _Encrypted Files_ panel shows the top 4 data sources with the highest percentage of files that are encrypted, over time. These are typically items that have been password protected. It does this by comparing the encryption rates over the past 7 days to see which data sources have a greater than 20% increase. An increase of this amount could mean that ransomware is already attacked your system.
+
+image:screenshot_ransomware_encrypt_files.png[A screenshot of the encrypted file chart on the Ransomware Protection dashboard.]
+
+Click a line for one of the data sources to view the filtered results in the Data Sense Investigation page so that you can investigate further.
+
 == Top data repositories by data sensitivity
 
 The _Top Data Repositories by Sensitivity Level_ panel lists up to the top four data repositories (working environments and data sources) that contain the most sensitive items. The bar chart for each working environment is divided into:
@@ -149,9 +183,9 @@ You can hover over each section to see the total number of items in each categor
 
 Click each area to view the filtered results in the Data Sense Investigation page so that you can investigate further.
 
-== Domain Administrator Group control
+== Domain Administrative Group control
 
-The _Domain Administrator Group control_ panel shows the most recent users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[integrated a global Active Directory^] into Cloud Data Sense for this panel to be active.
+The _Domain Administrative Group control_ panel shows the most recent users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[integrated a global Active Directory^] into Cloud Data Sense for this panel to be active.
 
 image:screenshot_ransomware_domain_admin.png[A screenshot of the users who have been added as domain admins on the Ransomware Protection dashboard.]
 
@@ -172,13 +206,22 @@ You can hover over each section to see the percentage and total number of files 
 
 Click each area to view the filtered results in the Data Sense Investigation page so that you can investigate further.
 
-== Data listed by encrypted files
+== Storage system vulnerabilities
 
-The _Encrypted Files_ panel shows the top 4 data sources with the highest percentage of files that are encrypted, over time. These are typically items that have been password protected. It does this by comparing the encryption rates over the past 7 days to see which data sources have a greater than 20% increase. An increase of this amount could mean that ransomware is already attacked your system.
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
 
-image:screenshot_ransomware_encrypt_files.png[A screenshot of the encrypted file chart on the Ransomware Protection dashboard.]
+.Prerequisites
 
-Click a line for one of the data sources to view the filtered results in the Data Sense Investigation page so that you can investigate further.
+* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
+* You must have an on-premises ONTAP cluster
+* The cluster is configured in Active IQ
+* You must have registered an existing NSS account in BlueXP to view your clusters, and to view the Active IQ Digital Advisor UI.
+
+Note that you can view the Active IQ Digital Advisor directly by selecting *Health > Digital advisor* from the BlueXP menu.
+
+image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
+
+Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. (More about this page can be found in the https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Active IQ Digital Advisor documentation].) You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
 
 == Status of ONTAP systems hardening
 
@@ -254,23 +297,6 @@ After the data is populated, hover over each square in the charts to view the nu
 
 You can click the *Cloud Backup* button at the end of the row to go to the Cloud Backup interface to enable backup on more volumes in each working environment.
 
-== Storage system vulnerabilities
-
-The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack.
-
-.Prerequisites
-
-* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
-* You must have an on-premises ONTAP cluster
-* The cluster is configured in Active IQ
-* You must have registered an existing NSS account in BlueXP to view your clusters, and to view the Active IQ Digital Advisor UI.
-
-Note that you can view the Active IQ Digital Advisor directly by selecting *Health > Digital advisor* from the BlueXP menu.
-
-image:screenshot_ransomware_vulnerabilities.png[A screenshot that shows the number of security vulnerabilities in your ONTAP storage systems.]
-
-Click the type of vulnerability (High, Medium, Low) you want to view for one of your clusters and you are redirected to the Security Vulnerabilities page in Active IQ Digital Advisor. (More about this page can be found in the https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Active IQ Digital Advisor documentation].) You can view the vulnerabilities and then follow the recommended action to resolve the issue. Oftentimes the resolution is to upgrade your ONTAP software with a point release, or full release, that resolves the vulnerability.
-
 == Data in your volumes that are being protected using SnapLock
 
 You can use NetApp SnapLock technology on your ONTAP volumes to retain files in unmodified form for regulatory and governance purposes. You can commit files and Snapshot copies to "write once, read many" (WORM) storage, and set retention periods for this WORM-protected data. https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock].
@@ -300,25 +326,3 @@ Data Sense policies that include the following filters are not available in the 
 * File path
 
 So when creating the policies to view your critical business data in the _Critical data immutability_ panel, make sure you keep this in mind.
-
-== Ransomware incidents detected on your systems
-
-Ransomware incidents detected on your managed systems will appear as alerts in the _Ransomware incidents_ panel. This includes encryption events, suspicious file extensions, ransomware activity, and malicious activity. The panel will display the type of incident and whether any automatic actions have been run to try to resolve the issue. For example, a volume Snapshot copy could be been generated and sent to the cloud.
-
-image:screenshot_ransomware_incidents.png[A screenshot of the Ransomware Incidents panel.]
-
-Current support is for on-premises ONTAP clusters that are running Autonomous Ransomware Protection (ARP). ARP uses workload analysis in NAS (NFS and SMB) environments to proactively detect and warn about abnormal activity that might indicate a ransomware attack. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more here^].
-
-You can click the image:button_down_caret.png[] to expand an incident to view the number of encrypted files identified in the suspect volume, the types of file extensions, and the time the attack occurred.
-
-image:screenshot_ransomware_incidents_expanded.png[A screenshot showing the Ransomware incidents panel expanded to show automatic actions for your volumes.]
-
-You can click the *Resolve* button to remove the incident from the UI. A dialog box pops up to see if the reported incident was a real ransomware incident or not. Click *Yes* if the issue was a real ransomware incident. Click *No* if the issue was not a real ransomware incident.
-
-.Prerequisites
-
-//* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
-* You must have an on-premises ONTAP cluster running ONTAP 9.11 or greater.
-* You must have the *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster.
-* NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as “dry run”) for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
-//a *MT_EK_MGMT* (Multi-Tenant Key Management) license (ONTAP 9.10) or 

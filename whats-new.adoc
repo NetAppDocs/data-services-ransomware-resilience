@@ -16,6 +16,12 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
+== 5 February 2023
+
+=== new feature
+
+great new feature
+
 == 9 January 2023
 
 === Support has been added to receive Ransomware Protection alerts by email and in the Notification Center
@@ -32,13 +38,13 @@ Two new Recommended Actions are now displayed for the following ransomware prote
 * _Patch X open CVEs across Y data sources_ - Unpatched CVEs have been found on your ONTAP systems
 
 You can select these actions in the UI and then follow the workflow to resolve the underlying issues. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#list-of-recommended-actions[See the list of all recommended actions].
+// end::whats-new[]
 
 == 13 November 2022
 
 === New panels to display your overall Ransomware Protection Score and Recommended Actions
 
 The _Ransomware Protection Score_ panel shows the overall score and the areas of cybersecurity where potential issues exist. The _Recommended Actions_ panel lists the potential actions you can take to improve your resilience to a ransomware attack, and provides a link to investigate the issues so you can apply the actions where necessary. These two new panels work together to identify how resilient your data is to a ransomware attack, and what you can do to improve your score. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#ransomware-protection-score-and-recommended-actions[Learn more here^].
-// end::whats-new[]
 
 == 6 September 2022
 
