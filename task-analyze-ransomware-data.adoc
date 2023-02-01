@@ -77,7 +77,7 @@ These are the currently tracked recommended actions and suggested solutions.
 
 | Configure your business critical data
 | You have not defined your business critical data policies in the Business Critical Data Configuration page. It is important for you to identify what you consider as business critical data so that possible ransomware issues with this data are brought to your attention.
-| Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the link to open the Business Critical Data Configuration page. Then you can define your business critical data.
+| Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the link to open the Business Critical Data Configuration page. Then you can select the policies that define your business critical data. link:task-select-business-critical-policies.html[Learn more about configuring and selecting business critical data policies].
 
 |===
 
@@ -272,7 +272,7 @@ The _Business critical data permissions analysis_ panel shows the permissions st
 
 image:screenshot_ransomware_critical_permissions.png[A screenshot of the permissions status for the data you are managing on the Ransomware Protection dashboard.]
 
-Initially this panel shows data based on default policies that we have selected. But you can select the 2 most important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
+This panel shows data based on the policies you have selected in the Business Critical Data Configuration page. It shows data from the two business critical policies which have the most total files. Click the link to view or define additional policies. link:task-select-business-critical-policies.html[Learn more about configuring and selecting business critical data policies]. 
 
 The graph shows permission analysis of all the data that meets the criteria from your policies. It lists the number of items that are:
 
@@ -311,7 +311,7 @@ The _Critical data immutability_ panel shows the number of items in your working
 
 image:screenshot_ransomware_data_snaplocked.png[A screenshot of the Critical data immutability panel for your ONTAP storage systems.]
 
-Initially this panel shows data based on default policies that we have selected. But you can select the 2 most important Data Sense _Policies_ that you have created to view your most critical business data. See how to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[create your policies using Data Sense^].
+This panel shows data based on the policies you have selected in the Business Critical Data Configuration page. Click the link to view or define additional policies. link:task-select-business-critical-policies.html[Learn more about configuring and selecting business critical data policies]. 
 
 The panel shows the following information for the data that matches the selected policies:
 
