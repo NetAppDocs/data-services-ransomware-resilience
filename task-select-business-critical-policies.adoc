@@ -15,26 +15,33 @@ summary: Business critical data policies identify the data that you consider as 
 [.lead]
 Business critical data policies identify the data that you consider as business critical for your company. Once you have defined these policies and activated them in Ransomware protection, the dashboard and other ransomware panels reflect potential issues based on your most important data.
 
-You can display the _Business Critical Data Policies_ page by clicking on the *Business critical data* tab. You can also display this page from a link if you receive a Recommended Action for "Configure your business critical data".
-
-image:screenshot_critical_data_policies.png[A screenshot showing the Business Critical Data page with one policy selected as business critical.]
-
-Policy selection and changed selections affect the information showing in the dashboard, in the following panels: 
+The other panels that use the policies you define as critical include: 
 
 * Recommended actions 
 * Business critical data immutability panel 
 * Business critical data permission analysis panel 
 
-== Select policies that identify your business critical data
+You can display the _Business Critical Data Policies_ page by clicking on the *Business critical data* tab. You can also display this page from a link on the other panels listed above.
+
+image:screenshot_critical_data_policies.png[A screenshot showing the Business Critical Data page with one policy selected as business critical.]
 
 The Business critical data page displays all of the policies that have been defined in Cloud Data Sense. This includes all of the predefined BlueXP policies and all of the custom policies that your organization has created. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#controlling-your-data-using-policies[Learn more about Data Sense policies^].
 
-If you know that one of the existing policies provides results that identify data that is critical for your business, you can select that policy. Just move the slider in the "Is critical" column to the right.
+== Select policies that identify your business critical data
 
-If you are unsure if the existing policy returns results that identify critical data, you can click the *Investigate* button to display the filters that are being used and the results of the policy in the Data Sense Investigation page.
+If you know that one of the existing policies provides results that identify data that is critical for your business, you can select that policy. Just move the slider in the "Is critical" column to the right - as shown for the last policy in the figure above. This action tells the Ransomware protection service to use the data returned from this policy in certain ransomware panels.
 
-Click *Create policy* to create a new policy
+You can remove policies from being considered as "business critical" by moving the slider to the Off position. This doesn't delete the policy, it just removes it from being used by the Ransomware protection service.
 
-Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit* if you want to edit the policy. The Data Sense Investigation page open so that you can customize the results using additional filters for the policy.
+If you are unsure if an existing Data Sense policy returns results that identify critical data for your organization, you can click the *Investigate* button to display the filters that are being used to query your data, and see the results of the policy in the Data Sense Investigation page.
 
+If you are looking for a specific policy, or for specific types of policies, you can sort, filter, and search on this page.
+
+== Manage policies 
+
+Click *Create policy* to create new policies that identify business critical data. This action brings you to the Data Sense Investigation page so you can create the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[Learn more about creating policies^].
+
+Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit* for an existing policy if you want to edit the policy. The Data Sense Investigation page open so that you can customize the results using additional filters for the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies[Learn more about editing policies^].
+
+image:screenshot_add_edit_critical_data_policies.png[A screenshot showing the create policy button and edit policy button so you can create and edit policies.]
 
