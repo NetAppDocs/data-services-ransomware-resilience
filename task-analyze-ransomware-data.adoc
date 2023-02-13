@@ -151,15 +151,16 @@ You can click the image:button_down_caret.png[down-arrow button] to expand an in
 
 image:screenshot_ransomware_incidents_expanded.png[A screenshot showing the Ransomware incidents panel expanded to show automatic actions for your volumes.]
 
-You can click the *Resolve* button to remove the incident from the UI. A dialog box pops up to see if the reported incident was a real ransomware incident or not. Click *Yes* if the issue was a real ransomware incident. Click *No* if the issue was not a real ransomware incident. This help ARP understand real incidents from false positives in your volumes. 
+You can click the *Recover* button if you want to attempt to recover from the ransomware attack. This brings you to the Ransomware Protection Recovery dashboard where you can replace the volume with an older Snapshot copy that has not been affected by ransomware. link:task-ransomware-recovery.html[See how to use the Recovery dashboard].
+//You can click the *Resolve* button to remove the incident from the UI. A dialog box pops up to see if the reported incident was a real ransomware incident or not. Click *Yes* if the issue was a real ransomware incident. Click *No* if the issue was not a real ransomware incident. This help ARP understand real incidents from false positives in your volumes. 
 
 .Prerequisites
 
 //* The BlueXP Connector must be installed on your premises - not deployed with a cloud provider.
 * You must have an on-premises ONTAP cluster running ONTAP 9.11 or greater.
 * You must have the *Anti_ransomware* license (ONTAP 9.11.1 +) installed on at least one node in the cluster.
-* NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as "dry run") for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
 * Each volume that you want to protect must have ARP enabled. https://docs.netapp.com/us-en/ontap/anti-ransomware/enable-task.html[See how to enable Autonomous Ransomware Protection^].
+* NetApp Autonomous Ransomware Protection (ARP) must have been enabled for an initial learning period (also known as "dry run") for 30 days before being switching over to "active mode" so that it has enough time to assess workload characteristics and properly report suspected ransomware attacks.
 
 == Data listed by encrypted files
 

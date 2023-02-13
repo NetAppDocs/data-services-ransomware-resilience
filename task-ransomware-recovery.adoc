@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: task-ransomware-recovery.html
+keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery
+summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+---
+
+= Recovering from a ransomware attack
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+
+If the Ransomware Incidents panel in the Ransomware Protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. At this time, the Ransomware Recovery dashboard enables you to replace the volume with a Snapshot copy that has not been affected by ransomware.
+
+.Steps
+
+. From the Ransomware Incidents panel, click *Recover* for a volume that has been infected by ransomware.
++
+The Ransomware Recovery dashboard displays the volume name.
++
+image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the Ransomware Protection Recovery dashboard.]
+
+. Click *Display snapshots* to view the list of available snapshots for that volume.
++
+image:screenshot_ransomware_recovery_select_snap.png[A screenshot of the available Snapshot copies available to recover the corrupted volume.]
+
+. Select a snapshot that has 100% clean data (no identifiable encrypted data), and click *Recover*.
+
+. In the "Recover data from selected snapshot" dialog, click *Yes* to recover the data from the snapshot.
++
+You can see the recovery status for the snapshot, and you can see when the snapshot has restored the corrupted volume.
++
+image:screenshot_ransomware_recovery_snap_complete.png[A screenshot showing that the snapshot has recovered the corrupted volume.]
+
+.Result
+
+The corrupted volume has been recovered by using a snapshot that was created in the past. 
+
+If the restore operation was done from a snapshot that was not the most recent snapshot, after restoration, all more recent snapshots will be deleted from the ONTAP system because they are suspected of being corrupted as well. 
