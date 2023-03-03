@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-ransomware-recovery.html
 keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery
-summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly. You should use this dashboard only after you have stopped any attack on your systems.
 ---
 
 = Recovering from a ransomware attack
@@ -13,9 +13,11 @@ summary: The Ransomware Recovery Dashboard provides options for recovering data 
 :imagesdir: ./media/
 
 [.lead]
-The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly. You should use this dashboard only after you have stopped any attack on your systems.
 
-If the Ransomware Incidents panel in the Ransomware Protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. At this time, the Ransomware Recovery dashboard enables you to replace the volume with a Snapshot copy that has not been affected by ransomware.
+If the Ransomware Incidents panel in the Ransomware Protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. 
+
+At this time, the Ransomware Recovery dashboard enables you to replace the infected volume with a Snapshot copy that has not been affected by ransomware.
 
 .Steps
 
@@ -29,7 +31,9 @@ image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the Ransomwar
 +
 image:screenshot_ransomware_recovery_select_snap.png[A screenshot of the available Snapshot copies available to recover the corrupted volume.]
 
-. Select a snapshot that has 100% clean data (no identifiable encrypted data), and click *Recover*.
+. Select a snapshot that has no encrypted data, and click *Recover*.
+//. Select a snapshot that has 100% clean data (no identifiable encrypted data), and click *Recover*.
+//Add back 2 screenshots later too
 
 . In the "Recover data from selected snapshot" dialog, click *Yes* to recover the data from the snapshot.
 +
