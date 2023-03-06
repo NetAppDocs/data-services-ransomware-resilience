@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-ransomware-recovery.html
 keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery
-summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly. You should use this dashboard only after you have stopped any attack on your systems.
+summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 ---
 
 = Recovering from a ransomware attack
@@ -13,7 +13,7 @@ summary: The Ransomware Recovery Dashboard provides options for recovering data 
 :imagesdir: ./media/
 
 [.lead]
-The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly. You should use this dashboard only after you have stopped any attack on your systems.
+The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 
 If the Ransomware Incidents panel in the Ransomware Protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. 
 
@@ -45,4 +45,4 @@ image:screenshot_ransomware_recovery_snap_complete.png[A screenshot showing that
 
 The corrupted volume has been recovered by using a snapshot that was created in the past. 
 
-If the restore operation was done from a snapshot that was not the most recent snapshot, after restoration, all more recent snapshots will be deleted from the ONTAP system because they are suspected of being corrupted as well. 
+If the restore operation was done from a snapshot that was not the most recent snapshot, after restoration, all more recent snapshots will be deleted from the ONTAP system because they are suspected of being corrupted as well (as shown in the screenshot above). 
