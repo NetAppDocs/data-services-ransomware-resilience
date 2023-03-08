@@ -25,6 +25,8 @@ sidebar:
           url: /task-analyze-ransomware-data.html
         - title: Manage your business critical data policies
           url: /task-select-business-critical-policies.html
+        - title: Recover from a ransomware attack
+          url: /task-ransomware-recovery.html
     - title: Knowledge and support
       entries:
         - title: Register for support
@@ -59,6 +61,8 @@ homepage:
           url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
         - title: Select your business critical data policies
           url: task-select-business-critical-policies.html
+        - title: Recover from a ransomware attack
+          url: task-ransomware-recovery.html
     - title: Blogs & community
       links:
         - title: NetApp Community

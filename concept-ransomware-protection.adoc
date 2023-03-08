@@ -81,6 +81,7 @@ At a high-level, Ransomware Protection works like this:
 . Ransomware Protection gathers information from your storage systems, Cloud Data Sense, Cloud Backup, and from other BlueXP and NetApp resources, to populate the Ransomware Protection Dashboard.
 . You use the Ransomware Protection dashboard to get an overview of how well protected your systems are.
 . You use the provided reporting tools to help in your cyberstorage protection efforts.
+. After an attack, you use the Ransomware Recovery Dashboard to restore data to a safe state.
 
 == Cost
 
