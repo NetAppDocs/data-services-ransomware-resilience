@@ -18,7 +18,7 @@ Learn what's new in Ransomware Protection.
 // tag::whats-new[]
 == 2 April 2023
 
-=== Two Recommended Actions have been added to help protect your data from ransomware attacks
+=== New Recommended Actions to help protect your data from ransomware attacks
 
 * A new Recommended Action to "Back up business critical files in data sources" identifies how to protect your most important categories of data by backing up volumes using Cloud Backup. This is important in case you need to recover any data because of a ransomware attack. The recommendation redirects you to the Cloud Backup interface so you can enable backup on the necessary volumes.
 
