@@ -80,7 +80,7 @@ These are the currently tracked recommended actions and suggested solutions.
 | Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the link to open the Business Critical Data Configuration page. Then you can select the policies that define your business critical data. link:task-select-business-critical-policies.html[Learn more about configuring and selecting business critical data policies].
 
 | Back up X business critical files in Y data sources
-| This identifies how comprehensively your most important categories of data are backed up to the public or private cloud using Cloud Backup. This is important in case you need to recover any data because of a ransomware attack. Only on-prem ONTAP and Cloud Volumes ONTAP working environments are identified in this recommendation.
+| This identifies how comprehensively your most important categories of data are backed up to the public or private cloud using Cloud Backup. The recommendation displays recommendations only if you have defined your business critical data. This is important in case you need to recover any data because of a ransomware attack. Only on-prem ONTAP and Cloud Volumes ONTAP working environments are identified in this recommendation.
 | Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the *Backup* button for each data source and you'll be redirected to the Cloud Backup service. There you can enable backup on the necessary volumes.
 
 | Turn on cyberstorage configurations for X data sources

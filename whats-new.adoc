@@ -16,7 +16,7 @@ summary: Learn what's new in Ransomware Protection.
 Learn what's new in Ransomware Protection.
 
 // tag::whats-new[]
-== 2 April 2023
+== 4 April 2023
 
 === New Recommended Actions to help protect your data from ransomware attacks
 
