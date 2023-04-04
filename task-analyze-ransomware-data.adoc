@@ -56,7 +56,7 @@ After you fix the recommended action, the next refresh of the Ransomware Protect
 
 These are the currently tracked recommended actions and suggested solutions.
 
-[cols=3*,options="header",cols="33,33,33",width="100%"]
+[cols=3*,options="header",cols="25,40,35",width="100%"]
 
 |===
 | Recommended Action
@@ -79,6 +79,21 @@ These are the currently tracked recommended actions and suggested solutions.
 | You have not defined your business critical data policies in the Business Critical Data Configuration page. It is important for you to identify what you consider as business critical data so that possible ransomware issues with this data are brought to your attention.
 | Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the link to open the Business Critical Data Configuration page. Then you can select the policies that define your business critical data. link:task-select-business-critical-policies.html[Learn more about configuring and selecting business critical data policies].
 
+| Back up X business critical files in Y data sources
+| This identifies how comprehensively your most important categories of data are backed up to the public or private cloud using Cloud Backup. The recommendation displays recommendations only if you have defined your business critical data. This is important in case you need to recover any data because of a ransomware attack. Only on-prem ONTAP and Cloud Volumes ONTAP working environments are identified in this recommendation.
+| Click the image:button_down_caret.png[down-arrow button] to expand the recommendation, and then click the *Backup* button for each data source and you'll be redirected to the Cloud Backup service. There you can enable backup on the necessary volumes.
+
+| Turn on cyberstorage configurations for X data sources
+a| This recommendation identifies whether six ONTAP capabilities that help to secure data are enabled or disabled. All the items should be enabled. The items are: 
+
+* Snapshots - You should be creating Snapshot copies of your volumes so you can restore volume data if needed. https://docs.netapp.com/us-en/ontap/concepts/snapshot-copies-concept.html[Learn more^].
+* FPolicy - You should be capturing data so you can monitor file operations in case you need to find out who made changes to files. https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[Learn more^].
+* SnapMirror - You should be creating copies of your volumes on secondary storage so you can restore volume data if needed. https://docs.netapp.com/us-en/ontap/task_dp_configure_mirror.html[Learn more^].
+* MAV - You should have multi-admin verification enabled so that certain operations, such as deleting volumes, can be run only after approvals from administrators. https://docs.netapp.com/us-en/ontap/multi-admin-verify/index.html[Learn more^].
+* ARP - You should have Autonomous Ransomware Protection (Onbox anti-ransomware) enabled so the system can detect ransomware attempts and automatically respond to them. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more^].
+* Version - You should be running the most current release of ONTAP software for the best performance and security. Learn more for https://docs.netapp.com/us-en/ontap/upgrade/index.html[on-premises ONTAP systems^] and for https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html[Cloud Volumes ONTAP systems^].
+| See the links in the previous column for details on how to enable these six ONTAP capabilities.
+
 |===
 
 == Cyber Resilience Map
@@ -98,7 +113,7 @@ After you click on a data source that has a red indicator, this panel shows the 
 
 These are the currently tracked alerts and suggested remediations.
 
-[cols=3*,options="header",cols="33,33,33",width="100%"]
+[cols=3*,options="header",cols="25,40,35",width="100%"]
 
 |===
 | Alert
@@ -236,7 +251,7 @@ image:screenshot_ransomware_harden_ontap.png[A screenshot of the status for ONTA
 
 The settings that are being tracked include:
 
-[cols=3*,options="header",cols="33,33,33",width="100%"]
+[cols=3*,options="header",cols="25,40,35",width="100%"]
 
 |===
 | Hardening Objective

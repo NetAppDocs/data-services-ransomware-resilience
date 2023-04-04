@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-ransomware-recovery.html
 keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, recovery
-summary: The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+summary: The Ransomware Recover Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 ---
 
 = Recovering from a ransomware attack
@@ -13,21 +13,21 @@ summary: The Ransomware Recovery Dashboard provides options for recovering data 
 :imagesdir: ./media/
 
 [.lead]
-The Ransomware Recovery Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+The Ransomware Recover Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 
 If the Ransomware Incidents panel in the Ransomware Protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. 
 
-At this time, the Ransomware Recovery dashboard enables you to replace the infected volume with a Snapshot copy that has not been affected by ransomware.
+At this time, the Ransomware Recover dashboard enables you to replace the infected volume with a Snapshot copy that has not been affected by ransomware.
 
 .Steps
 
 . From the Ransomware Incidents panel, click *Recover* for a volume that has been infected by ransomware.
 +
-The Ransomware Recovery dashboard displays the volume name.
+The Ransomware Recover dashboard displays the volume name.
 +
-image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the Ransomware Protection Recovery dashboard.]
+image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the Ransomware Protection Recover dashboard.]
 
-. Click *Display snapshots* to view the list of available snapshots for that volume.
+. Click *Display Snapshots* to view the list of available snapshots for that volume.
 +
 image:screenshot_ransomware_recovery_select_snap.png[A screenshot of the available Snapshot copies available to recover the corrupted volume.]
 
