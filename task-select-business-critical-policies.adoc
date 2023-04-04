@@ -25,7 +25,7 @@ You can display the _Business Critical Data Policies_ page by clicking on the *B
 
 image:screenshot_critical_data_policies.png[A screenshot showing the Business Critical Data page with one policy selected as business critical.]
 
-The Business critical data page displays all of the policies that have been defined in Cloud Data Sense. This includes all of the predefined BlueXP policies and all of the custom policies that your organization has created. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#controlling-your-data-using-policies[Learn more about Data Sense policies^].
+The Business critical data page displays all of the policies that have been defined in Cloud Data Sense. This includes all of the predefined policies and all of the custom policies that your organization has created. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#controlling-your-data-using-policies[Learn more about Data Sense policies^].
 
 == Select policies that identify your business critical data
 
@@ -41,7 +41,8 @@ If you are looking for a specific policy, or for specific types of policies, you
 
 Click *Create policy* to create new policies that identify business critical data. This action brings you to the Data Sense Investigation page so you can create the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[Learn more about creating policies^].
 
-Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit* for an existing policy if you want to edit the policy. The Data Sense Investigation page open so that you can customize the results using additional filters for the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies[Learn more about editing policies^].
+Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit query* for an existing policy if you want to edit the policy. The Data Sense Investigation page opens so that you can customize the results using additional filters for the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies[Learn more about editing policies^].
 
 image:screenshot_add_edit_critical_data_policies.png[A screenshot showing the create policy button and edit policy button so you can create and edit policies.]
 
+Note that you can only modify custom policies - you can't edit the predefined policies provided by Data Sense.

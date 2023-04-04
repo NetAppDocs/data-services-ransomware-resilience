@@ -61,7 +61,9 @@ homepage:
           url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
         - title: Select your business critical data policies
           url: task-select-business-critical-policies.html
-        - title: Recover from a ransomware attack
+    - title: Recover from a ransomware attack
+      links:
+        - title: Recover data after a ransomware attack
           url: task-ransomware-recovery.html
     - title: Blogs & community
       links:
