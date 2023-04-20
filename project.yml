@@ -1,5 +1,5 @@
 settings:
-  name: Ransomware Protection
+  name: BlueXP ransomware protection
   platform: cloud
   internal:
     pdf_enabled: true
@@ -9,17 +9,17 @@ settings:
   rss_page: "whats-new.html"
 sidebar:
   entries:
-    - title: Ransomware Protection docs
+    - title: BlueXP ransomware protection docs
       url: /index.html
     - title: Release notes
       url: /whats-new.html
     - title: Get started
       entries:
-        - title: Learn about Ransomware Protection
+        - title: Learn about BlueXP ransomware protection
           url: /concept-ransomware-protection.html
         - title: Monitor Ransomware alerts in the Notification Center
           url: /task-monitor-ransomware-alerts.html
-    - title: Use Ransomware Protection
+    - title: Use BlueXP ransomware protection
       entries:
         - title: Manage cyber security recommendations for your data
           url: /task-analyze-ransomware-data.html
@@ -43,7 +43,7 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: Learn about Ransomware Protection
+        - title: Learn about BlueXP ransomware protection
           url: concept-ransomware-protection.html
         - title: What's New
           url: whats-new.html
@@ -69,7 +69,7 @@ homepage:
       links:
         - title: NetApp Community
           url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-        - title: Ransomware protection use cases
+        - title: BlueXP ransomware protection use cases
           url: https://bluexp.netapp.com/ransomware-protection
         - title: BlueXP blog
           url: https://bluexp.netapp.com/blog
