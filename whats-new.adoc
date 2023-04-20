@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection
-summary: Learn what's new in Ransomware Protection.
+summary: Learn what's new in BlueXP ransomware protection.
 ---
 
-= What's new with Ransomware Protection
+= What's new with BlueXP ransomware protection
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,14 +13,14 @@ summary: Learn what's new in Ransomware Protection.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in Ransomware Protection.
+Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 == 3 April 2023
 
 === New Recommended Actions to help protect your data from ransomware attacks
 
-* A new Recommended Action to "Back up business critical files in data sources" identifies how to protect your most important categories of data by backing up volumes using Cloud Backup. This is important in case you need to recover any data because of a ransomware attack. The recommendation redirects you to the Cloud Backup interface so you can enable backup on the necessary volumes.
+* A new Recommended Action to "Back up business critical files in data sources" identifies how to protect your most important categories of data by backing up volumes using BlueXP backup and recovery. This is important in case you need to recover any data because of a ransomware attack. The recommendation redirects you to the BlueXP backup and recovery interface so you can enable backup on the necessary volumes.
 
 * A new Recommended Action to "Turn on cyberstorage configurations for data sources" identifies whether six ONTAP capabilities that help to secure data are enabled or disabled. You should enable these capabilities on all on-premises ONTAP and Cloud Volumes ONTAP systems.
 
@@ -36,22 +36,22 @@ The Ransomware Recovery Dashboard provides options for recovering data that may 
 
 === Ability to define the policies that identify the data that you consider as business critical 
 
-A new page for Business Critical Data has been added to Ransomware Protection. This page enables you to view all of the policies that have been defined in Cloud Data Sense. You can select the policies that identify data that is critical for your business so that the Ransomware protection dashboard and other ransomware panels reflect potential issues based on your most important data.
+A new page for Business Critical Data has been added to BlueXP ransomware protection. This page enables you to view all of the policies that have been defined in BlueXP classification. You can select the policies that identify data that is critical for your business so that the BlueXP ransomware protection dashboard and other ransomware panels reflect potential issues based on your most important data.
 
-A new Recommended Action called "Configure your business critical data" will appear in the Recommended Actions panel if you have not activated any of these policies for the Ransomware Protection service.
+A new Recommended Action called "Configure your business critical data" will appear in the Recommended Actions panel if you have not activated any of these policies for the BlueXP ransomware protection service.
 
 https://docs.netapp.com/us-en/cloud-manager-ransomware/task-select-business-critical-policies.html[Learn more about the Business Critical Data page^].
 
-=== Ransomware protection has moved from the Protection category to the Governance category
+=== BlueXP ransomware protection has moved from the Protection category to the Governance category
 
 Now you access this service from the BlueXP left navigation menu by selecting *Governance > Ransomware protection*.
 // end::whats-new[]
 
 == 9 January 2023
 
-=== Support has been added to receive Ransomware Protection alerts by email and in the Notification Center
+=== Support has been added to receive BlueXP ransomware protection alerts by email and in the Notification Center
 
-Ransomware Protection has been integrated into the BlueXP Notification service. You can display Ransomware Protection notifications by clicking the notification bell in the BlueXP menu bar. You can also configure BlueXP to send notifications by email as alerts so you can be informed of important system activity even when you're not logged into the system. The email can be sent to any recipients who need to be aware of ransomware alerts. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html[Learn how].
+BlueXP ransomware protection has been integrated into the BlueXP Notification service. You can display BlueXP ransomware protection notifications by clicking the notification bell in the BlueXP menu bar. You can also configure BlueXP to send notifications by email as alerts so you can be informed of important system activity even when you're not logged into the system. The email can be sent to any recipients who need to be aware of ransomware alerts. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-monitor-ransomware-alerts.html[Learn how].
 
 == 11 December 2022
 
@@ -80,7 +80,7 @@ The _Ransomware incidents_ panel shows ransomware attacks that have occurred on 
 
 === New panel to show security vulnerabilities on your clusters
 
-The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the Active IQ Digital Advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities[Go here for details^].
+The _Storage system vulnerabilities_ panel shows the total number of high, medium, and low security vulnerabilities that the BlueXP digital advisor tool has found on each of your ONTAP clusters. High vulnerabilities should be looked at immediately to make sure your systems are not open for attack. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#storage-system-vulnerabilities[Go here for details^].
 
 === New panel to show immutable scanned files
 
@@ -108,24 +108,6 @@ A new panel _Harden your ONTAP environments_ provides the status of certain sett
 
 You can review the recommendations and then decide how you want to address the potential issues. You can follow the steps to change the settings on your clusters, defer the changes to another time, or ignore the suggestion. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-ontap-systems-hardening[Go here for details].
 
-=== New panel to show how different categories of data are being protected using Cloud Backup
+=== New panel to show how different categories of data are being protected using BlueXP backup and recovery
 
-This new _Backup Status_ panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by Cloud Backup. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
-
-== 15 March 2022
-
-=== New panel to track the permissions status of your business critical data
-
-A new panel _Business critical data permissions analysis_ shows the permissions status of data that is critical for your business. That way you can quickly assess how well you are protecting your business-critical data. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#status-of-permissions-on-your-critical-business-data[Go here for details].
-
-=== Open Permissions area now includes OneDrive and SharePoint accounts
-
-The Open Permissions area in the Ransomware Protection Dashboard now includes the permissions that exist for files that are being scanned in OneDrive accounts and SharePoint accounts.
-
-== 9 February 2022
-
-=== New Ransomware Protection service
-
-The new Ransomware Protection service enables you to view relevant information about cybersecurity and assess how resilient your data is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
-
-link:concept-ransomware-protection.html[Learn more about this new service].
+This new _Backup Status_ panel shows how comprehensively your most important categories of data are backed up in case you need to recover because of a ransomware attack. This data is a visual representation of how many items of a specific category in an environment are backed up by BlueXP backup and recovery. https://docs.netapp.com/us-en/cloud-manager-ransomware/task-analyze-ransomware-data.html#backup-status-of-your-critical-business-data[Go here for details].
