@@ -81,7 +81,7 @@ At a high-level, BlueXP ransomware protection works like this:
 . BlueXP ransomware protection gathers information from your storage systems, BlueXP classification, BlueXP backup and recovery, and from other BlueXP and NetApp resources, to populate the BlueXP ransomware protection Dashboard.
 . You use the BlueXP ransomware protection dashboard to get an overview of how well protected your systems are.
 . You use the provided reporting tools to help in your cyberstorage protection efforts.
-. After an attack, you use the Ransomware Recovery Dashboard to restore data to a safe state.
+. After an attack, you use the BlueXP ransomware protection Recovery Dashboard to restore data to a safe state.
 
 == Cost
 

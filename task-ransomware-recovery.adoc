@@ -13,7 +13,7 @@ summary: The Ransomware Recover Dashboard provides options for recovering data t
 :imagesdir: ./media/
 
 [.lead]
-The Ransomware Recover Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
+The BlueXP ransomware protection Recover Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 
 If the Ransomware Incidents panel in the BlueXP ransomware protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. 
 

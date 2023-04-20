@@ -73,7 +73,7 @@ These are the currently tracked recommended actions and suggested solutions.
 
 | Patch X open CVEs across Y data sources
 | Unpatched CVEs (Common Vulnerabilities and Exposures) have been found on your on-premises ONTAP systems and/or Cloud Volumes ONTAP systems. These issues are identified only if the BlueXP digital advisor product (formerly Active IQ Digital Advisor) is integrated with your storage systems. These are known vulnerabilities on NetApp storage systems that have fixes available to resolve the CVE. NetApp CVEs are listed on the https://security.netapp.com/advisory/[Product Security page^].
-| Click the *Digital Advisor* button for each data sources and you'll be redirected to the _Security Vulnerabilities_ page in the Digital Advisor. There you can see the details about the open CVEs, and the recommended action to resolve each CVE. Often the resolution is to upgrade the ONTAP software on the system. https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Learn more about the Security Vulnerabilities page].
+| Click the *Digital Advisor* button for each data sources and you'll be redirected to the _Security Vulnerabilities_ page in the BlueXP digital advisor. There you can see the details about the open CVEs, and the recommended action to resolve each CVE. Often the resolution is to upgrade the ONTAP software on the system. https://docs.netapp.com/us-en/active-iq/task_increase_protection_against_hackers_and_Ransomware_attacks.html[Learn more about the Security Vulnerabilities page].
 
 | Configure your business critical data
 | You have not defined your business critical data policies in the Business Critical Data Configuration page. It is important for you to identify what you consider as business critical data so that possible ransomware issues with this data are brought to your attention.
@@ -122,7 +122,7 @@ These are the currently tracked alerts and suggested remediations.
 
 | High data encryption rates detected
 | An abnormal increase in the percentage of encrypted files, or corrupted files, in the data source has occurred. This means that there was a greater than 20% increase in the percentage of encrypted files in the past 7 days. For example, if 50% of your files are encrypted, then a day later this number increases to 60%, you would see this alert.
-| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
+| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
 
 | Sensitive data with wide permissions found
 | Sensitive data is found in files and the access permissions level is too high in a data source.
@@ -183,7 +183,7 @@ The _Encrypted Files_ panel shows the top 4 data sources with the highest percen
 
 image:screenshot_ransomware_encrypt_files.png[A screenshot of the encrypted file chart on the BlueXP ransomware protection dashboard.]
 
-Click a line for one of the data sources to view the filtered results in the BlueXP classification Investigation page so that you can investigate further.
+Click a line for one of the data sources to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Top data repositories by data sensitivity
 
@@ -197,7 +197,7 @@ image:screenshot_ransomware_sensitivity.png[A screenshot of the data sensitivity
 
 You can hover over each section to see the total number of items in each category.
 
-Click each area to view the filtered results in the BlueXP classification Investigation page so that you can investigate further.
+Click each area to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Domain Administrative Group control
 
@@ -220,7 +220,7 @@ image:screenshot_ransomware_permissions.png[A screenshot of the encrypted file c
 
 You can hover over each section to see the percentage and total number of files in each category.
 
-Click each area to view the filtered results in the BlueXP classification Investigation page so that you can investigate further.
+Click each area to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Storage system vulnerabilities
 
@@ -297,7 +297,7 @@ The graph shows permission analysis of all the data that meets the criteria from
 * No open permissions - the items which BlueXP classification considers as no open permissions
 * Unknown permissions - the items which BlueXP classification considers as unknown permissions
 
-Hover over each bar in the charts to view the number of results in each category. Click a bar and the BlueXP classification Investigation page is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
+Hover over each bar in the charts to view the number of results in each category. Click a bar and the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
 
 == Backup status of your critical business data
 
