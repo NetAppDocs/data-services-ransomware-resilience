@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-select-business-critical-policies.html
 keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, business critical data, policies
-summary: Business critical data policies identify the data that you consider as business critical for your company. Once you have defined these policies and activated them in Ransomware protection, the dashboard and other ransomware panels reflect potential issues based on your most important data.
+summary: Business critical data policies identify the data that you consider as business critical for your company. Once you have defined these policies and activated them in BlueXP ransomware protection, the dashboard and other ransomware panels reflect potential issues based on your most important data.
 ---
 
 = Manage your business critical data policies
@@ -13,7 +13,7 @@ summary: Business critical data policies identify the data that you consider as 
 :imagesdir: ./media/
 
 [.lead]
-Business critical data policies identify the data that you consider as business critical for your company. Once you have defined these policies and activated them in Ransomware protection, the dashboard and other ransomware panels reflect potential issues based on your most important data.
+Business critical data policies identify the data that you consider as business critical for your company. Once you have defined these policies and activated them in BlueXP ransomware protection, the dashboard and other ransomware panels reflect potential issues based on your most important data.
 
 The other panels that use the policies you define as critical include: 
 
@@ -25,24 +25,24 @@ You can display the _Business Critical Data Policies_ page by clicking on the *B
 
 image:screenshot_critical_data_policies.png[A screenshot showing the Business Critical Data page with one policy selected as business critical.]
 
-The Business critical data page displays all of the policies that have been defined in Cloud Data Sense. This includes all of the predefined policies and all of the custom policies that your organization has created. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#controlling-your-data-using-policies[Learn more about Data Sense policies^].
+The Business critical data page displays all of the policies that have been defined in BlueXP classification. This includes all of the predefined policies and all of the custom policies that your organization has created. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html[Learn more about BlueXP classification policies^].
 
 == Select policies that identify your business critical data
 
-If you know that one of the existing policies provides results that identify data that is critical for your business, you can select that policy. Just move the slider in the "Is critical" column to the right - as shown for the last policy in the figure above. This action tells the Ransomware protection service to use the data returned from this policy in certain ransomware panels.
+If you know that one of the existing policies provides results that identify data that is critical for your business, you can select that policy. Just move the slider in the "Is critical" column to the right - as shown for the last policy in the figure above. This action tells the BlueXP ransomware protection service to use the data returned from this policy in certain ransomware panels.
 
-You can remove policies from being considered as "business critical" by moving the slider to the Off position. This doesn't delete the policy, it just removes it from being used by the Ransomware protection service.
+You can remove policies from being considered as "business critical" by moving the slider to the Off position. This doesn't delete the policy, it just removes it from being used by the BlueXP ransomware protection service.
 
-If you are unsure if an existing Data Sense policy returns results that identify critical data for your organization, you can click the *Investigate* button to display the filters that are being used to query your data, and see the results of the policy in the Data Sense Investigation page.
+If you are unsure if an existing BlueXP classification policy returns results that identify critical data for your organization, you can click the *Investigate* button to display the filters that are being used to query your data, and see the results of the policy in the BlueXP classification Investigation page.
 
 If you are looking for a specific policy, or for specific types of policies, you can sort, filter, and search on this page.
 
 == Manage policies 
 
-Click *Create policy* to create new policies that identify business critical data. This action brings you to the Data Sense Investigation page so you can create the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies[Learn more about creating policies^].
+Click *Create policy* to create new policies that identify business critical data. This action brings you to the BlueXP classification Investigation page so you can create the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#creating-custom-policies[Learn more about creating policies^].
 
-Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit query* for an existing policy if you want to edit the policy. The Data Sense Investigation page opens so that you can customize the results using additional filters for the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies[Learn more about editing policies^].
+Click image:screenshot_horizontal_more_button.gif[three dots button]> *Edit query* for an existing policy if you want to edit the policy. The BlueXP classification Investigation page opens so that you can customize the results using additional filters for the policy. https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#editing-policies[Learn more about editing policies^].
 
 image:screenshot_add_edit_critical_data_policies.png[A screenshot showing the create policy button and edit policy button so you can create and edit policies.]
 
-Note that you can only modify custom policies - you can't edit the predefined policies provided by Data Sense.
+Note that you can only modify custom policies - you can't edit the predefined policies provided by BlueXP classification.
