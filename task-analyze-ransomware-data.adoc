@@ -69,7 +69,7 @@ These are the currently tracked recommended actions and suggested solutions.
 
 | Move X sensitive items from Y unprotected data sources to safe locations
 | Sensitive data has been found on unprotected data sources by BlueXP classification; these are locations where ransomware protection software is not able to protect the data. Typically, your IT organization has policies that restrict sensitive data from certain corporate locations. This recommended action allows you to identify the files that have sensitive data, and move them to a safer data source - where sensitive *IS* allowed to be stored.
-| You can use BlueXP classification to quickly move these files to a better protected data source. You'll be using the BlueXP classification capability to https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
+| You can use BlueXP classification to quickly move these files to a better protected data source. You'll be using the BlueXP classification capability to https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share[move source files to an NFS share^].
 
 | Patch X open CVEs across Y data sources
 | Unpatched CVEs (Common Vulnerabilities and Exposures) have been found on your on-premises ONTAP systems and/or Cloud Volumes ONTAP systems. These issues are identified only if the BlueXP digital advisor product (formerly Active IQ Digital Advisor) is integrated with your storage systems. These are known vulnerabilities on NetApp storage systems that have fixes available to resolve the CVE. NetApp CVEs are listed on the https://security.netapp.com/advisory/[Product Security page^].
@@ -91,7 +91,7 @@ a| This recommendation identifies whether six ONTAP capabilities that help to se
 * SnapMirror - You should be creating copies of your volumes on secondary storage so you can restore volume data if needed. https://docs.netapp.com/us-en/ontap/task_dp_configure_mirror.html[Learn more^].
 * MAV - You should have multi-admin verification enabled so that certain operations, such as deleting volumes, can be run only after approvals from administrators. https://docs.netapp.com/us-en/ontap/multi-admin-verify/index.html[Learn more^].
 * ARP - You should have Autonomous Ransomware Protection (Onbox anti-ransomware) enabled so the system can detect ransomware attempts and automatically respond to them. https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Learn more^].
-* Version - You should be running the most current release of ONTAP software for the best performance and security. Learn more for https://docs.netapp.com/us-en/ontap/upgrade/index.html[on-premises ONTAP systems^] and for https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html[Cloud Volumes ONTAP systems^].
+* Version - You should be running the most current release of ONTAP software for the best performance and security. Learn more for https://docs.netapp.com/us-en/ontap/upgrade/index.html[on-premises ONTAP systems^] and for https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Cloud Volumes ONTAP systems^].
 | See the links in the previous column for details on how to enable these six ONTAP capabilities.
 
 |===
@@ -122,18 +122,18 @@ These are the currently tracked alerts and suggested remediations.
 
 | High data encryption rates detected
 | An abnormal increase in the percentage of encrypted files, or corrupted files, in the data source has occurred. This means that there was a greater than 20% increase in the percentage of encrypted files in the past 7 days. For example, if 50% of your files are encrypted, then a day later this number increases to 60%, you would see this alert.
-| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
+| Click the link to launch the https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_ and _Category (Encrypted and Corrupted)_ to view the list of all encrypted and corrupted files.
 
 | Sensitive data with wide permissions found
 | Sensitive data is found in files and the access permissions level is too high in a data source.
-| Click the link to launch the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_, _Sensitivity Level (Sensitive Personal)_, and _Open Permissions_ to view the list of the files that have this issue.
+| Click the link to launch the https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html[BlueXP classification Investigation page^]. There you can select the filters for the specific _Working Environment_, _Sensitivity Level (Sensitive Personal)_, and _Open Permissions_ to view the list of the files that have this issue.
 
 | One or more volumes are not backed up using BlueXP backup and recovery
-| Some volumes in the working environment aren't being protected using https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html[BlueXP backup and recovery^].
+| Some volumes in the working environment aren't being protected using https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html[BlueXP backup and recovery^].
 | Click the link to launch BlueXP backup and recovery and then you can identify the volumes that aren't being backed up in the working environment, and then decide if you want to enable backups on those volumes.
 
 | One or more repositories (volumes, buckets, etc.) in your data sources are not being scanned by BlueXP classification
-| Some data in your data sources isn't being scanned using https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[BlueXP classification^] to identify compliance and privacy concerns and find optimization opportunities.
+| Some data in your data sources isn't being scanned using https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[BlueXP classification^] to identify compliance and privacy concerns and find optimization opportunities.
 | Click the link to launch BlueXP classification and enable scanning and mapping for the items that are not being scanned.
 
 | On-box anti-ransomware is not active for all volumes
@@ -183,7 +183,7 @@ The _Encrypted Files_ panel shows the top 4 data sources with the highest percen
 
 image:screenshot_ransomware_encrypt_files.png[A screenshot of the encrypted file chart on the BlueXP ransomware protection dashboard.]
 
-Click a line for one of the data sources to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
+Click a line for one of the data sources to view the filtered results in the https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Top data repositories by data sensitivity
 
@@ -197,11 +197,11 @@ image:screenshot_ransomware_sensitivity.png[A screenshot of the data sensitivity
 
 You can hover over each section to see the total number of items in each category.
 
-Click each area to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
+Click each area to view the filtered results in the https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Domain Administrative Group control
 
-The _Domain Administrative Group control_ panel shows the most recent users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html[integrated a global Active Directory^] into BlueXP classification for this panel to be active.
+The _Domain Administrative Group control_ panel shows the most recent users who have been added into your domain administrator groups so that you can see if all the users should be allowed in those groups. You must have https://docs.netapp.com/us-en/bluexp-classification/task-add-active-directory-datasense.html[integrated a global Active Directory^] into BlueXP classification for this panel to be active.
 
 image:screenshot_ransomware_domain_admin.png[A screenshot of the users who have been added as domain admins on the BlueXP ransomware protection dashboard.]
 
@@ -220,7 +220,7 @@ image:screenshot_ransomware_permissions.png[A screenshot of the encrypted file c
 
 You can hover over each section to see the percentage and total number of files in each category.
 
-Click each area to view the filtered results in the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
+Click each area to view the filtered results in the https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[BlueXP classification Investigation page^] so that you can investigate further.
 
 == Storage system vulnerabilities
 
@@ -271,15 +271,15 @@ A green status icon indicates > 85% of SVMs have NAS file system auditing enable
 | ONTAP Version
 | The version of ONTAP software installed on your clusters.
 A green status icon indicates that the version is current. A yellow icon indicates that the cluster is behind by 1 or 2 patch versions or 1 minor version for on-prem systems, or behind by 1 major version for Cloud Volumes ONTAP. A red icon indicates that the cluster is behind by 3 patch versions, or 2 minor versions, or 1 major version for on-prem systems, or behind by 2 major versions for Cloud Volumes ONTAP.
-| https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html[See the best way to upgrade your on-prem clusters^] or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html[your Cloud Volumes ONTAP systems^].
+| https://docs.netapp.com/us-en/ontap/setup-upgrade/index.html[See the best way to upgrade your on-prem clusters^] or https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[your Cloud Volumes ONTAP systems^].
 
 | Snapshots
 | Is the snapshot capability activated on data volumes, and what percentage of volumes have Snapshot copies.
 A green status icon indicates > 85% of volumes have snapshots enabled. Yellow indicates 40-85% are enabled. Red indicates < 40% are enabled.
-| https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html[See how to enable volume snapshots on your on-prem clusters^], or https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-volumes.html#manage-volumes[on your Cloud Volumes ONTAP systems^], or https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-manage-fsx-volumes.html#manage-snapshot-copies[on your FSx for ONTAP systems^].
+| https://docs.netapp.com/us-en/ontap/task_dp_configure_snapshot.html[See how to enable volume snapshots on your on-prem clusters^], or https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-volumes.html#manage-volumes[on your Cloud Volumes ONTAP systems^], or https://docs.netapp.com/us-en/bluexp-fsx-ontap/use/task-manage-fsx-volumes.html#manage-snapshot-copies[on your FSx for ONTAP systems^].
 
 |===
-// , or https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-volumes.html#manage-snapshot-copies[on your Azure NetApp Files systems^]
+// , or https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-manage-volumes.html#manage-snapshot-copies[on your Azure NetApp Files systems^]
 // For clusters that have low numbers for certain categories, you can click the System Manager button at the end of each row to correct the issue. You can also click the Backup button to activate backups for the volumes, or the Classification button to scan the volumes on the clusters to investigate compliance and governance conformance.
 
 == Status of permissions on your critical business data
@@ -297,7 +297,7 @@ The graph shows permission analysis of all the data that meets the criteria from
 * No open permissions - the items which BlueXP classification considers as no open permissions
 * Unknown permissions - the items which BlueXP classification considers as unknown permissions
 
-Hover over each bar in the charts to view the number of results in each category. Click a bar and the https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html[BlueXP classification Investigation page^] is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
+Hover over each bar in the charts to view the number of results in each category. Click a bar and the https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[BlueXP classification Investigation page^] is displayed so you can investigate further about which items have open permissions and whether you should make any adjustments to file permissions.
 
 == Backup status of your critical business data
 
@@ -307,7 +307,7 @@ Only on-prem ONTAP and Cloud Volumes ONTAP working environments that are already
 
 image:screenshot_ransomware_backups.png[A screenshot of the backup status for the data you are managing on the BlueXP ransomware protection dashboard.]
 
-Initially this panel shows data based on default categories that we have selected. But you can select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories[categories] that are available from BlueXP classification for your working environments. Then select up to 4 categories.
+Initially this panel shows data based on default categories that we have selected. But you can select the categories of data that you want to track; for example, codes files, contracts, etc. See the full list of https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories[categories] that are available from BlueXP classification for your working environments. Then select up to 4 categories.
 
 After the data is populated, hover over each square in the charts to view the number of files that are backed up out of all files in the same category in the working environment. A green square means 85% or greater of your files are being backed up. A yellow square means between 40% and 85% of your files are being backed up. And a red square means 40% or fewer files are being backed up.
 
