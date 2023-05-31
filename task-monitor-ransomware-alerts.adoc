@@ -25,5 +25,5 @@ By default, BlueXP Account Admins will receive emails for all "Critical" and "Re
 
 You'll need to select the notification type "Critical" to receive the BlueXP ransomware protection email alerts.
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-monitor-cm-operations.html[Learn more about the Notification Center^] and how to send alert emails for ransomware protection incidents.
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html[Learn more about the Notification Center^] and how to send alert emails for ransomware protection incidents.
 

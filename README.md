@@ -1,1 +1,1 @@
-# cloud-manager-ransomware
+# bluexp-ransomware-protection
