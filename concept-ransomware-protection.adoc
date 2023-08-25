@@ -49,7 +49,7 @@ You can view the vulnerability and then follow the recommended action to resolve
 
 link:task-analyze-ransomware-data.html[See how to view these potential issues in the BlueXP ransomware protection dashboard.]
 
-When using Cloud Volumes ONTAP systems, there are some additional ransomware protections you can deploy directly from the working environment. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html[See how to add additional protection against ransomware^].
+When using Cloud Volumes ONTAP systems, you can deploy some additional ransomware protections directly from the working environment. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-protecting-ransomware.html[See how to add additional protection against ransomware^].
 
 == Supported working environments and data sources
 

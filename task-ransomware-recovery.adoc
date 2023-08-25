@@ -5,7 +5,7 @@ keywords: ransomware, ransomware protection, cyberstorage, cyber attack, cyberse
 summary: The Ransomware Recover Dashboard provides options for recovering data that may have been infected by ransomware. This helps you get your systems back up and running very quickly.
 ---
 
-= Recovering from a ransomware attack
+= Recover from a ransomware attack
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -17,32 +17,32 @@ The BlueXP ransomware protection Recover Dashboard provides options for recoveri
 
 If the Ransomware Incidents panel in the BlueXP ransomware protection dashboard indicates that a volume, or volumes, have been infected by ransomware, you can click the *Recover* button to attempt to resolve the issue. 
 
-At this time, the Ransomware Recover dashboard enables you to replace the infected volume with a Snapshot copy that has not been affected by ransomware.
+At this time, the Ransomware Recover Dashboard enables you to replace the infected volume with a Snapshot copy that has not been affected by ransomware.
 
 .Steps
 
 . From the Ransomware Incidents panel, click *Recover* for a volume that has been infected by ransomware.
 +
-The Ransomware Recover dashboard displays the volume name.
+The Ransomware Recover Dashboard displays the volume name.
 +
-image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the BlueXP ransomware protection Recover dashboard.]
+image:screenshot_ransomware_recovery_dashboard.png[A screenshot of the BlueXP ransomware protection Recover Dashboard.]
 
-. Click *Display Snapshots* to view the list of available snapshots for that volume.
+. Click *Display Snapshots* to view the list of available Snapshot copies for that volume.
 +
 image:screenshot_ransomware_recovery_select_snap.png[A screenshot of the available Snapshot copies available to recover the corrupted volume.]
 
-. Select a snapshot that has no encrypted data, and click *Recover*.
-//. Select a snapshot that has 100% clean data (no identifiable encrypted data), and click *Recover*.
+. Select a Snapshot that has no encrypted data, and click *Recover*.
+//. Select a Snapshot that has 100% clean data (no identifiable encrypted data), and click *Recover*.
 //Add back 2 screenshots later too
 
-. In the "Recover data from selected snapshot" dialog, click *Yes* to recover the data from the snapshot.
+. In the "Recover data from selected Snapshot" dialog, click *Yes* to recover the data from the Snapshot.
 +
-You can see the recovery status for the snapshot, and you can see when the snapshot has restored the corrupted volume.
+You can see the recovery status for the Snapshot, and you can see when the Snapshot has restored the corrupted volume.
 +
-image:screenshot_ransomware_recovery_snap_complete.png[A screenshot showing that the snapshot has recovered the corrupted volume.]
+image:screenshot_ransomware_recovery_snap_complete.png[A screenshot showing that the Snapshot has recovered the corrupted volume.]
 
 .Result
 
-The corrupted volume has been recovered by using a snapshot that was created in the past. 
+The corrupted volume has been recovered by using a Snapshot that was created in the past. 
 
-If the restore operation was done from a snapshot that was not the most recent snapshot, after restoration, all more recent snapshots will be deleted from the ONTAP system because they are suspected of being corrupted as well (as shown in the screenshot above). 
+If the restore operation was done from a Snapshot that was not the most recent Snapshot, after restoration, all more recent Snapshot copies will be deleted from the ONTAP system because they are suspected of being corrupted as well (as shown in the screenshot above). 
