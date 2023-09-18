@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: /rp-start-quick-start.html
+permalink: rp-start-quick-start.html
 keywords: how to get started with bluexp ransomware protection, ransomware protection quick start
 summary: Get started with the NetApp BlueXP ransomware protection service in a few steps.
 ---
@@ -8,7 +8,7 @@ summary: Get started with the NetApp BlueXP ransomware protection service in a f
 = Quick start for BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/get-started/
+:imagesdir: ./media
 
 [.lead]
 Here's an overview of the steps needed to get started with BlueXP ransomware protection. The links within each step take you to a page that provides more details.

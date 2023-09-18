@@ -8,7 +8,7 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 = Protect workloads
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media
 
 [.lead]
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 

@@ -8,7 +8,7 @@ summary: You can manage workloads by changing the workload name rather than usin
 = Manage workloads
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 You can manage workloads by changing the workload name. Using a default name is a risk for ransomware attacks. 

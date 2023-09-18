@@ -8,7 +8,7 @@ summary: Using BlueXP ransomware protection, you can view workload health and pr
 = Use BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 Using BlueXP ransomware protection, you can view workload health and protect workloads.

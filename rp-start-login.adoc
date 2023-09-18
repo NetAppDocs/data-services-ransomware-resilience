@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: /rp-start-login.html
+permalink: rp-start-login.html
 keywords: bluexp login, ransomware protection log in
 summary: Get started with BlueXP ransomware protection by accessing the service in BlueXP.
 ---
@@ -8,7 +8,7 @@ summary: Get started with BlueXP ransomware protection by accessing the service 
 = Access BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/get-started/
+:imagesdir: ./media
 
 [.lead]
 You use NetApp BlueXP to log in to the BlueXP ransomware protection service. 

@@ -8,7 +8,7 @@ summary: The BlueXP ransomware protection Dashboard provides information about t
 = View workload health at a glance using the Dashboard
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 The BlueXP ransomware protection Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  

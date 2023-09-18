@@ -8,7 +8,7 @@ summary: Get started with BlueXP ransomware protection by verifying support for 
 = BlueXP ransomware protection prerequisites
 :hardbreaks:
 :icons: font
-:imagesdir: ../media/get-started/
+:imagesdir: ./media/get-started/
 
 [.lead]
 Get started by verifying the readiness of your operational environment, login, network access, and web browser.
