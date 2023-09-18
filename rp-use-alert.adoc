@@ -36,11 +36,12 @@ An alert can have one of the following statuses:
 == View alerts
 
 You can access alerts from one of these: 
-* Alert email 
-* BlueXP Notifications 
+
+* Alert email sent to you
+* BlueXP Notifications in the BlueXP UI
 * BlueXP ransomware protection Dashboard 
 
-=== Respond from the alert email
+=== Respond from an alert email
 
 . View the email. 
 . In the email, select *View alert* and log in to BlueXP ransomware protection. 
@@ -56,6 +57,7 @@ The Alerts tab appears.
 * Dismiss incidents that are not attacks. 
 
 === Respond from the BlueXP Notifications 
+
 . In BlueXP, select the Notification icon at the top right. 
 . In the Notifications, look for the “Potential ransomware attack” notification.
 

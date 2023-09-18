@@ -18,7 +18,6 @@ Learn what's new in BlueXP ransomware protection preview.
 // tag::whats-new[]
 == 6 October 2023 
 
-=== 
 The BlueXP ransomware protection service has been redesigned as an orchestration service for ransomware protection, detection, and recovery. 
 
 For the preview version, the service protects application-based workloads on on-premises NAS storage across all BlueXP accounts and working environments and backs up data to Amazon Web Services (AWS) or Microsoft Azure cloud storage. 

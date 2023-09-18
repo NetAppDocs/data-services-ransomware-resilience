@@ -18,7 +18,7 @@ Here's an overview of the steps needed to get started with BlueXP ransomware pro
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review prerequisites 
 
 [role="quick-margin-para"]
-link:/rp-start-prerequisites.html[Ensure your environment meets these requirements].
+link:rp-start-prerequisites.html[Ensure your environment meets these requirements].
  
 
 
@@ -26,7 +26,7 @@ link:/rp-start-prerequisites.html[Ensure your environment meets these requiremen
 
 
 [role="quick-margin-para"]
-link:/rp-start-setup.html[Complete steps to set up the service].
+link:rp-start-setup.html[Complete steps to set up the service].
 
 
 
@@ -37,12 +37,12 @@ link:/rp-start-setup.html[Complete steps to set up the service].
 After you set up the service, here's what you might do next. 
 
 [role="quick-margin-list"]
-* link:/sites-add.html[Add vCenter sites].
-* link:/drplan-create.html[Create a ransomware protection plan].
-* link:/replicate.html[Replicate applications to another site].
-* link:/failover.html[Fail over applications to a remote site].
-* link:/failback.html[Fail back applications to the original source site].
-* link:/manage.html[Manage sites, plans, datastores, and virtual machines information].
-* link:/monitor-jobs.html[Monitor ransomware protection operations].
+* link:sites-add.html[Add vCenter sites].
+* link:drplan-create.html[Create a ransomware protection plan].
+* link:replicate.html[Replicate applications to another site].
+* link:failover.html[Fail over applications to a remote site].
+* link:failback.html[Fail back applications to the original source site].
+* link:manage.html[Manage sites, plans, datastores, and virtual machines information].
+* link:monitor-jobs.html[Monitor ransomware protection operations].
 
 

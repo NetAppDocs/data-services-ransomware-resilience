@@ -15,6 +15,8 @@ The BlueXP ransomware protection Dashboard provides at-a-glance information abou
 
 You can also use the Dashboard to review and act on protection recommendations. 
 
+== Review workload health using the Dashboard
+
 .Steps
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 

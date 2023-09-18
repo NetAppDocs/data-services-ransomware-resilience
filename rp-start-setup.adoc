@@ -14,7 +14,7 @@ summary: To use BlueXP ransomware protection, perform a few steps to set it up.
 To use BlueXP ransomware protection, perform a few steps to set it up.  
 
 
-Before you begin, review link:/rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
+Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
 == Set up AWS
  
@@ -56,10 +56,10 @@ The service assesses the existing protection level including the current backup 
 
 . Do one of the following: 
 
-* Select Discover workloads from the initial landing page, or 
-* From the BlueXP ransomware protection menu, select Discover data. 
+* Select *Discover workloads* from the initial landing page, or 
+* From the BlueXP ransomware protection menu, select *Discover data*. 
 +
-The service discovers workload data and shows the health of data protection in the Dashboard:
+The service discovers workload data and shows the health of data protection in the Dashboard.
 
 
 //== Set up email notifications 

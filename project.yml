@@ -34,7 +34,7 @@ sidebar:
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html
         - title: Recover from a ransomware attack
-          url: /task-ransomware-recovery.html
+          url: /rp-use-recover.html
         - title: Protect workloads
           url: /rp-use-protect.html
         - title: Respond to a detected alert 
