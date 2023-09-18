@@ -1,0 +1,26 @@
+---
+sidebar: sidebar
+permalink: rp-use-overview.html
+keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack
+summary: Using BlueXP ransomware protection, you can view workload health and protect workloads.
+---
+
+= Use BlueXP ransomware protection
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+Using BlueXP ransomware protection, you can view workload health and protect workloads.
+
+* View protection and workload health from the Dashboard.
+* Protect workloads:
+** Assign a ransomware protection policy to workloads. 
+** Review and act on ransomware protection recommendations.
+** Increase application protection to prevent future ransomware attacks.
+** Change the protection for a workload that was previously protected.
+** Edit policies (only the ones that you created). 
+* Respond to detection of potential ransomware attacks.
+* Recover from an attack (after incidents are neutralized).
+* Manage workloads by editing the workload name. 
+

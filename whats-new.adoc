@@ -5,7 +5,7 @@ keywords: what's new, features, new, release notes, bugs, limitations, known iss
 summary: Learn what's new in BlueXP ransomware protection.
 ---
 
-= What's new with BlueXP ransomware protection
+= What's new with BlueXP ransomware protection preview
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,20 @@ summary: Learn what's new in BlueXP ransomware protection.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in BlueXP ransomware protection.
+Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
+== 6 October 2023 
+
+=== 
+The BlueXP ransomware protection service has been redesigned as an orchestration service for ransomware protection, detection, and recovery. 
+
+For the preview version, the service protects application-based workloads on on-premises NAS storage across all BlueXP accounts and working environments and backs up data to Amazon Web Services (AWS) or Microsoft Azure cloud storage. 
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+
+// end::whats-new[] 
+
 == 3 April 2023
 
 === New Recommended Actions to help protect your data from ransomware attacks
@@ -45,7 +56,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/task-select-business-
 === BlueXP ransomware protection has moved from the Protection category to the Governance category
 
 Now you access this service from the BlueXP left navigation menu by selecting *Governance > Ransomware protection*.
-// end::whats-new[]
+
 
 == 9 January 2023
 

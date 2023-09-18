@@ -1,0 +1,75 @@
+---
+sidebar: sidebar
+permalink: rp-use-recover.html
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
+summary: After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+---
+
+= Recover from a ransomware attack (after incidents are neutralized)
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+
+A workload can have one of the following recovery statuses: 
+
+* Ready for recovery
+* Waiting to recover
+* Recovery in progress 
+* Recovery failed 
+
+=== View workloads that are in a recovery state
+
+
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Dashboard, review the Workload data incidents pane and select *View all*. 
+* From the menu, select *Recovery*.
+
+
+. Review the workload information in the *Recovery* tab.  
+
+=== Recover a workload 
+
+The storage administrator can now determine how best to recover the workload data. 
+
+You can restore data at different levels: 
+
+* Recover an application at the application level, volume level, and or file level. 
+* Recover a file share or datastore at the volume level.
+
+The process differs slightly depending on the workload type. 
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Recovery*.
+
+. Review the workload information in the *Recovery* tab.  
+
+. Select a workload that is in the “Ready for recovery” state. 
+
+. To see the protection details before you recover the workload, select the *Actions* ... icon on the right and select *View protection details*.  
+
+. To restore, select *Restore*.
+
+. Select the type of restore you want to complete: application level, volume level, or file level.  
+
+. *Source*: Select the down arrow next to Source to see details: 
+
+.. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point and shows a “Recommended” indication. [How is this recommendation made? Based on what?]
+.. If you chose to restore files, specify a single folder or the files you want to restore.
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Choose where to restore the data: original source location or a different location that you can specify. 
+
+. Select *Restore*. 

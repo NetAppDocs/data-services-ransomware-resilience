@@ -1,0 +1,97 @@
+---
+sidebar: sidebar
+permalink: rp-use-protect.html
+keywords: ransomware protection faq, ransomware protection frequently asked questions
+summary: You can protect workloads against ransomware attacks by assigning policies to a workload, changing protection and more in BlueXP ransomware protection.
+---
+
+= Protect workloads
+:hardbreaks:
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
+
+* View existing workload protection. 
+* Create a ransomware protection policy.
+* Assign a policy to a workload.
+* Change protection.
+** Increase application protection to prevent future RW attacks.
+** Change the protection for a workload that was previously protected in the RW service.
+* Manage policies (only the ones that you created).
+
+A workload can have one of the following importance priorities:
+
+* Critical
+* Medium
+* Standard
+
+A workload can have one of the following protection statuses:
+
+* At risk
+* Protected
+
+A workload can have one of the following protection health statuses: 
+
+* *Healthy*: The workload has protection enabled and backups and Snapshots have been completed. 
+* *In progress*: Backups or Snapshots are in progress. 
+* *Warning*: Protection is not enabled or sufficient on the workload. 
+* *Failed*: Backups or Snapshots have not completed successfully. 
+
+== View workload protection 
+
+One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
+
+* Application workloads 
+* VM workloads
+* File share workloads. Review the volume or datastore information. 
+
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Dashboard Data Protection pane, select *View all*. 
+* From the menu, select *Protection*.
+
+. View different workloads: 
++
+* To see application workloads, select the *Application workloads* tab. 
+* To see VM workloads, select the *VM workloads* tab. 
+* To see file share workloads, select the *File share workloads* tab. 
+
+. From this page, you can do any of the following: 
++
+* Assign a policy to a workload.
+* Manage policies for all workloads.
+
+== Assign a protection policy to workloads 
+
+To help protect your data, you can assign an existing ransomware protection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
+
+BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
+
+* Critical workload policy 
+* Important workload policy
+* Workload policy
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Dashboard Data Protection pane, select *View all*. 
+* From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
+* From the menu, select *Protection*.
+
+. From the Protect page, review the workloads and select *Assign policy*. 
+
+. Review the existing policies. To see details, click on the down arrow on that policy.
+
+. Select *Assign*. 
+
+. Review the Dashboard Recommended actions pane, which shows the action as “Completed."
