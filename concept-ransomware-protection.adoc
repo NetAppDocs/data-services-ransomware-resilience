@@ -17,9 +17,11 @@ Ransomware attacks can block access to your systems and data and attackers can a
 
 BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads on on-premises NAS storage across all BlueXP accounts and working environments and backs up data to Amazon Web Services (AWS) or Microsoft Azure cloud storage. 
 
+The preview version of this service protects application-based workloads of Oracle, MySQL, VM data stores, and file shares. 
+
 BlueXP ransomware protection encompasses the following strategies:
 
-* *Identify* all application-based workloads, such as Oracle, VMware datastores and file-shares in NetApp on-premises, NAS working environments in BlueXP, across all BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+* *Identify* all application-based workloads in NetApp on-premises, NAS working environments in BlueXP, across all BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
 
 * *Protect* high priority data by creating an immutable backup in AWS or Azure Blob cloud storage. 
 
@@ -95,7 +97,7 @@ BlueXP ransomware protection uses the NetApp Autonomous Ransomware Protection te
 
 At a high-level, BlueXP ransomware protection works like this:
 
-* *Identify*: The preview version of this service discovers data in Oracle, VMware datastores and file-share workloads. The service discovers all customer data in NetApp on-premises, NAS working environments across all BlueXP accounts, workspaces, and BlueXP Connectors, beyond just the BlueXP Connector currently shown in the UI. Then, the service identifies the top application workloads as business Critical, Important, or Standard priority. With this service, you can drill into each workload to see associated volumes. 
+* *Identify*: The preview version of this service discovers data in Oracle, MySQL, VMware datastores and file-share workloads. The service discovers all customer data in NetApp on-premises, NAS working environments across all BlueXP accounts, workspaces, and BlueXP Connectors, beyond just the BlueXP Connector currently shown in the UI. Then, the service identifies the top application workloads as business Critical, Important, or Standard priority. With this service, you can drill into each workload to see associated volumes. 
 +
 This activity employs BlueXP digital advisor (formerly Active IQ), Active IQ Unified Manager, and NetApp Cloud Data Sense technologies. 
 
@@ -125,5 +127,5 @@ For the preview version, BlueXP ransomware protection supports the following wor
 
 * Non-NetApp file shares
 * VMware datastores
-* Databases (For the preview version, Oracle)
+* Databases (For the preview version, Oracle and MySQL)
 
