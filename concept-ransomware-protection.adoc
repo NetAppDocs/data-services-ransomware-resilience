@@ -31,6 +31,8 @@ For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-clou
 
 * *Recover* data in the event of an attack to accelerate application uptime by orchestrating several NetApp technologies. 
 
+image:diagram-rp-features.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
+
 == What you can do with BlueXP ransomware protection 
 
 The BlueXP ransomware protection service provides you with full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
