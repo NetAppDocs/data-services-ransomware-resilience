@@ -26,9 +26,9 @@ After discovery, the Dashboard shows you the health of workload data protection.
 
 . From the Dashboard, you can view and do any of the following in each of the panes: 
 
-* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protect page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:/rp-use-protect.html[Protect workloads].  
+* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protect page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
 
-* *Workload data incidents*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:/rp-use-alert.html[Respond to a detected alert]. 
+* *Workload data incidents*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
 An incident is categorized in one of the following states: 
 +
@@ -41,7 +41,7 @@ An incident is categorized in one of the following states:
 
 * *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
 +
-Refer to link:/rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection recommendations on the Dashboard] or link:/rp-use-protect.html[Protect workloads]. 
+Refer to link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection recommendations on the Dashboard] or link:/rp-use-protect.html[Protect workloads]. 
 +
 Any recommendations that were added since you last visited the Dashboard are indicated with “New” for at least 24 hours. Actions are listed in priority order with the most important at the top. You can review and act on each one or dismiss it. 
 +
@@ -66,16 +66,16 @@ Here is a sampling of the recommendations that the service offers.
 | How to resolve
 
 | Add a ransomware protection policy | The workload is currently not protected.  | Choose an existing policy or create a new one and assign it to the workload. 
-Refer to link:/rp-use-protect.html[Protect workloads against ransomware attacks].
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Create a policy and assign it or assign an existing policy to these workloads. 
-Refer to link:/rp-use-protect.html[Protect workloads against ransomware attacks].
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or important file share workloads against ransomware. |The Protect page displays critical or important workloads of the type File Share or Datastore that are not protected. | Create a policy and assign it or assign an existing policy to each of the workloads.
-Refer to link:/rp-use-protect.html[Protect workloads against ransomware attacks].
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
-Refer to link:/rp-use-manage.html[Manage workloads].
+Refer to link:rp-use-manage.html[Manage workloads].
 |Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
-Refer to link:/rp-use-protect.html[Protect workloads against ransomware attacks].
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |===
 
 .Steps

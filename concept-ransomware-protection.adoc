@@ -107,7 +107,7 @@ https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more ab
 
 * *Detect*: The service uses AI-based anomaly detection to detect potential ransomware incidents quickly by volume.
 
-* *Respond*:* In response to potential ransomware attacks, the service initiates a tamperproof Snapshot with Object Lock features enabled. 
+* *Respond*: In response to potential ransomware attacks, the service initiates a tamperproof Snapshot with Object Lock features enabled. 
 
 * *Recover*: The BlueXP ransomware protection service orchestrates the rapid recovery of data to accelerate application uptime, orchestrating several NetApp technologies such as BlueXP backup and recovery, SnapCenter, SnapRestore, and Snapshot copies.  
 
