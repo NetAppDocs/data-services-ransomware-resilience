@@ -21,11 +21,14 @@ You can protect workloads against ransomware attacks by completing the following
 ** Change the protection for a workload that was previously protected in the RW service.
 * Manage policies (only the ones that you created).
 
-A workload can have one of the following importance priorities:
 
-* Critical
-* Medium
-* Standard
+
+BlueXP ransomware protection assigns a priority to each workload during discovery. The workload priority is determined by the following Snapshot frequencies: 
+
+* *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
+* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *Standard*: Snapshot copies taken more than 1 per day 
+
 
 A workload can have one of the following protection statuses:
 

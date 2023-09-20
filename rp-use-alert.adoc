@@ -53,8 +53,8 @@ The Alerts tab appears.
 
 . Continue with one of the following: 
 
-* Mark incidents as ready for recovery <link>
-* Dismiss incidents that are not attacks. 
+* <<Mark ransomware incidents as ready for recovery>>.
+* <<Dismiss incidents that are not potential attacks>>. 
 
 === Respond from the BlueXP Notifications 
 
@@ -70,8 +70,8 @@ The Alerts tab appears.
 
 . Continue with one of the following: 
 
-* Mark incidents as ready for recovery <link>
-* Dismiss incidents that are not attacks. 
+* <<Mark ransomware incidents as ready for recovery>>.
+* <<Dismiss incidents that are not potential attacks>>.
 
 === Respond from data incidents on the Dashboard
 
@@ -86,8 +86,8 @@ You can monitor data incidents and their statuses from the Dashboard.
 
 . Continue with one of the following: 
 
-* Mark incidents as ready for recovery <link>
-* Dismiss incidents that are not attacks. 
+* <<Mark ransomware incidents as ready for recovery>>.
+* <<Dismiss incidents that are not potential attacks>>.
 
 == Mark ransomware incidents as ready for recovery 
 

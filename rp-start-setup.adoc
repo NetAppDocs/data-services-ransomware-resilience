@@ -21,6 +21,8 @@ Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensu
 * Set up an account in AWS.
 * Configure permissions in AWS.  
 
+Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list] for details. 
+
 
 == Set up BlueXP
 The next step is to set up ransomware protection in BlueXP. 
@@ -46,7 +48,7 @@ For details about managing your AWS storage in BlueXP, refer to https://docs.net
 
 To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts. 
 
-NOTE: For the review version, BlueXP ransomware protection assesses Oracle applications, VMware datastores, and file shares. 
+NOTE: For the preview version, BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
 The service assesses the existing protection level including the current backup protection, Snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
 

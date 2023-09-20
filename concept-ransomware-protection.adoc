@@ -58,7 +58,7 @@ BlueXP ransomware protection offers the following benefits:
 * Discovers workloads and datasets, classifies them, and ranks their relative importance
 * Evaluates your ransomware protection posture and displays it in an easy-to-understand dashboard
 * Applies AI/ML-driven data protection recommendations with one-click access
-* Protects data in top application-based workloads, such as Oracle, VMware datastores and file-shares (later next quarter: VMware VMs, Oracle, MS SQL or MySQL and SAP HANA)
+* Protects data in top application-based workloads, such as MySQL, Oracle, VMware datastores and file-shares 
 * Detects ransomware attacks on data in real time on primary and secondary storage using AI technology.
 * Initiates automated actions in response to detected potential attacks by creating tamperproof Snapshot copies and initiating alerts about abnormal activity.
 * Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup), SnapCenter, SnapRestore, and AIQ. 
@@ -85,7 +85,7 @@ BlueXP ransomware protection provides specific recommendations based on your dat
 
 == Cost 
 
-NetApp doesn’t charge you for using the Preview version of BlueXP ransomware protection.
+NetApp doesn’t charge you for using the preview version of BlueXP ransomware protection.
 
 == Licensing 
 
@@ -99,7 +99,7 @@ At a high-level, BlueXP ransomware protection works like this:
 
 * *Identify*: The preview version of this service discovers data in Oracle, MySQL, VMware datastores and file-share workloads. The service discovers all customer data in NetApp on-premises, NAS working environments across all BlueXP accounts, workspaces, and BlueXP Connectors, beyond just the BlueXP Connector currently shown in the UI. Then, the service identifies the top application workloads as business Critical, Important, or Standard priority. With this service, you can drill into each workload to see associated volumes. 
 +
-This activity employs BlueXP digital advisor (formerly Active IQ), Active IQ Unified Manager, and NetApp Cloud Data Sense technologies. 
+This activity employs BlueXP digital advisor (formerly Active IQ), Active IQ Unified Manager, and BlueXP classification (formerly Cloud Data Sense) technologies. 
 
 * *Protect*: Using BlueXP ransomware protection, you can quickly determine which workloads are at risk or protected. Using the service and NetApp SnapLock technology orchestrated by this service, a data security admin can initiate protection of top workload data to make an immutable backup, with a secure configuration and in a different security domain. 
 + 
