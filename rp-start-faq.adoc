@@ -19,10 +19,12 @@ This FAQ can help if you're just looking for a quick answer to a question.
 For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
 
 *Do you need a license to use BlueXP ransomware protection?*
-A NetApp License File (NLF) is not required. The BlueXP ransomware protection preview does not require any special licensing.  All preview licenses will be Evaluation licenses. 
+A NetApp License File (NLF) is not required. The BlueXP ransomware protection preview does not require any special licensing.  All preview licenses are Evaluation licenses. 
 
 *How do you enable BlueXP ransomware protection?* 
-BlueXP ransomware protection does not require any enablement. The ransomware protection option is automatically enabled on the BlueXP left navigation.  
+BlueXP ransomware protection does not require any enablement. The ransomware protection option is automatically enabled on the BlueXP left navigation. 
+
+For the preview version, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
 
 *Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
 Yes, BlueXP ransomware protection discovers backup options and Snapshot schedules set in ONTAP. 
@@ -41,6 +43,6 @@ The workload priority is determined by the following Snapshot frequencies:
 
 
 *Do BlueXP ransomware policies co-exist with the other kinds of workload policies?*
-At this time, BlueXP backup and recovery (Cloud Backup) supports one backup policy per volume. So, BlueXP backup and recovery and BlueXP ransomware protection share.
+At this time, BlueXP backup and recovery (Cloud Backup) supports one backup policy per volume. So, BlueXP backup and recovery and BlueXP ransomware protection share backup policies.
 
 Snapshot copies are not limited and can be added separately from each service.

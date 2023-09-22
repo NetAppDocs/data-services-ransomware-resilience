@@ -65,11 +65,11 @@ Here is a sampling of the recommendations that the service offers.
 | Description
 | How to resolve
 
-| Add a ransomware protection policy | The workload is currently not protected.  | Choose an existing policy or create a new one and assign it to the workload. 
+| Add a ransomware protection policy | The workload is currently not protected.  | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Create a policy and assign it or assign an existing policy to these workloads. 
+| Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or important file share workloads against ransomware. |The Protect page displays critical or important workloads of the type File Share or Datastore that are not protected. | Create a policy and assign it or assign an existing policy to each of the workloads.
+| Protect critical or important file share workloads against ransomware. |The Protect page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].

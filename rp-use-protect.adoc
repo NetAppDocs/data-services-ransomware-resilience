@@ -14,7 +14,6 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
 
 * View existing workload protection. 
-* Create a ransomware protection policy.
 * Assign a policy to a workload.
 * Change protection.
 ** Increase application protection to prevent future RW attacks.
@@ -48,7 +47,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 
 * Application workloads 
 * VM workloads
-* File share workloads. Review the volume or datastore information. 
+* File share workloads. 
 
 
 .Steps 
