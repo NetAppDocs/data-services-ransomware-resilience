@@ -65,7 +65,8 @@ The process differs slightly depending on the workload type.
 
 .. Select the restore point that you want to use to restore the data. 
 +
-TIP: BlueXP ransomware protection identifies the best restore point and shows a “Recommended” indication. [How is this recommendation made? Based on what?]
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
 .. If you chose to restore files, specify a single folder or the files you want to restore.
 
 . *Destination*: Select the down arrow next to Destination to see details.
