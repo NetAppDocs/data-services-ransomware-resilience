@@ -56,7 +56,7 @@ The service assesses the existing protection level including the current backup 
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-* Select *Discover workloads* from the initial landing page. 
+. Select *Discover workloads* from the initial landing page. 
 +
 The service discovers workload data and shows the health of data protection in the Dashboard.
 
