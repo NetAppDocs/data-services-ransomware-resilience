@@ -92,19 +92,19 @@ BlueXP ransomware protection includes the following predefined policies that are
  | Hourly | Every 4 hours | 7 | 42 | 432 | 30 min
  | Daily  | Every 6 hours | 14 | 56 | 432 | 30 min
  | Weekly | Every 1 day | 42 | 42 | 432 | 30 min
- | Monthly | Every 30 days | 91 | 4 | 432 | 30 min
+ | Monthly | Every 30 days | 91 | - | 432 | 30 min
 .5+| *High workload policy* | Minutes | Every 20 mins | 2 | 144 | 260 | 60 min
  | Hourly | Every 6 hours | 7 | 28 | 260 | 60 min
  | Daily | Every 8 hours | 14 | 42 | 260 | 60 min
  | Weekly | Every 1 day | 42 | 42 | 260 | 60 min
- | Monthly | Every 30 days | 91 | 4 | 260 | 60 min
+ | Monthly | Every 30 days | 91 | - | 260 | 60 min
 
 
 .5+| *Standard workload policy* | Minutes | Every 60 min | 2| 48 | 93 | 4 hours
  | Hourly | Every 12 hours | 7 | 14 | 93 | 4 hours 
  | Daily | Every 24 hours | 14 | 14 | 93 | 4 hours  
- | Weekly | Every 7 days | 42 | 13  | 93 | 4 hours
- | Monthly | Every 30 days | 91 | 4 | 93 | 4 hours
+ | Weekly | Every 7 days | 42 | -  | 93 | 4 hours
+ | Monthly | Every 30 days | 91 | - | 93 | 4 hours
 
 
 |===
