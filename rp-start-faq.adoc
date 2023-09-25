@@ -38,7 +38,7 @@ Data priority for the Preview version is determined by the Snapshot copies made 
 The workload priority is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 

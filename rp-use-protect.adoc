@@ -77,7 +77,7 @@ To help protect your data, you can assign an existing ransomware protection poli
 BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
 
 * Critical workload policy 
-* Important workload policy
+* High workload policy
 * Workload policy
 
 .Steps 
