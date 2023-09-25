@@ -27,7 +27,7 @@ BlueXP ransomware protection encompasses the following strategies:
 
 * *Detect* data anomalies using AI technologies in secondary cloud storage that might result in ransomware attacks. 
 
-* *Respond* to potential ransomware attacks by automatically initiating a tamperproof NetApp Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously (with cloud-based DataLock features enabled). With cloud-based NetApp DataLock enabled, your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
+* *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously (with cloud-based DataLock features enabled). With cloud-based NetApp DataLock enabled, your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
 +
 For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
@@ -139,7 +139,7 @@ Use BlueXP ransomware protection preview to see how resilient your data is to a 
 For the preview version, BlueXP ransomware protection supports the following working environments: 
 
 * Amazon Web Services 
-* Microsoft Azure 
+* Microsoft Azure Blob
 
 *Data sources*
 
@@ -152,4 +152,4 @@ For the preview version, BlueXP ransomware protection supports the following wor
 You might benefit by understanding some terminology related to ransomware protection. 
 
 * *Protection*: Protection in BlueXP ransomware protection means ensuring that Snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
-* *Workload*: A workload in BlueXP ransomware protection preview can include MySQL Oracle applications, VMware datastores, or file shares. 
+* *Workload*: A workload in BlueXP ransomware protection preview can include MySQL or Oracle applications, VMware datastores, or file shares. 
