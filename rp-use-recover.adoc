@@ -73,3 +73,5 @@ TIP: BlueXP ransomware protection identifies the best restore point and shows a 
 .. Choose where to restore the data: original source location or a different location that you can specify. 
 
 . Select *Restore*. 
+
+. From the menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states of Queued, In Progress, Failed or Complete.
