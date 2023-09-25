@@ -41,6 +41,6 @@ After you set up the service, here's what you might do next.
 * link:rp-use-protect.html[Protect workloads].
 * link:rp-use-alert.html[Respond to detection of potential ransomware attacks].
 * link:rp-use-recover.html[Recover from an attack (after incidents are neutralized)].
-* link:rp-use-manage.html[Manage workloads].
+//* link:rp-use-manage.html[Manage workloads].
 
 

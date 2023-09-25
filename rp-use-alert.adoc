@@ -93,7 +93,7 @@ You can monitor data incidents and their statuses from the Dashboard.
 
 After you review incidents and determine that the Snapshots have been taken, you need to determine whether the incidents are potential attacks. If not, they can be dismissed. If they are potential attacks, you should communicate with your storage team that the data is ready for recovery so that they can start the recovery process. 
 
-After the alert is marked for recovery, the storage team is notified and the alert moves from the Alerts tab to the Recovery tab. 
+After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab. You should the storage team to perform the recovery.  
 
 .Steps
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.

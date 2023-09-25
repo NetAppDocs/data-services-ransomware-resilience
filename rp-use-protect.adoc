@@ -18,7 +18,7 @@ You can protect workloads against ransomware attacks by completing the following
 * Change protection.
 ** Increase application protection to prevent future RW attacks.
 ** Change the protection for a workload that was previously protected in the RW service.
-* Manage policies (only the ones that you created).
+//* Manage policies (only the ones that you created).
 
 
 

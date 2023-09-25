@@ -32,8 +32,8 @@ indexpage:
       url: /rp-use-alert.html
     - title: Recover from an attack
       url: /rp-use-recover.html
-    - title: Manage workloads 
-      url: /rp-use-manage.html
+#    - title: Manage workloads 
+#     url: /rp-use-manage.html
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
   - title: Blogs & community
