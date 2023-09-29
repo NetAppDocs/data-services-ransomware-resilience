@@ -29,10 +29,10 @@ A workload can have one of the following recovery statuses:
 . Do one of the following: 
 +
 * From the Dashboard, review the Workload data incidents pane and select *View all*. 
-* From the menu, select *Recovery*.
+* From the menu, select *Recover*.
 
 
-. Review the workload information in the *Recovery* tab.  
+. Review the workload information in the *Recover* page.  
 
 === Recover a workload 
 
@@ -49,9 +49,9 @@ The process differs slightly depending on the workload type.
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the menu, select *Recovery*.
+. From the menu, select *Recover*.
 
-. Review the workload information in the *Recovery* tab.  
+. Review the workload information in the *Recovery* page.  
 
 . Select a workload that is in the “Ready for recovery” state. 
 
@@ -75,4 +75,4 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 
 . Select *Restore*. 
 
-. From the menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states of Queued, In Progress, Failed or Complete.
+. From the menu, select *Recover* to review the workload on the Recovery page where the status of the operation moves through the states of Queued, In Progress, Failed or Complete.

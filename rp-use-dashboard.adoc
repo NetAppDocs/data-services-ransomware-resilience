@@ -33,10 +33,10 @@ After discovery, the Dashboard shows you the health of workload data protection.
 An incident is categorized in one of the following states: 
 +
 ** Impacted (shows on Alerts page) 
-** Ready for recovery (shows on Recovery page) 
-** Recovering (shows on Recovery page)
-** Recovery failed (shows on Recovery page)
-** Recovered (shows on Recovery page)
+** Ready for recovery (shows on Recover page) 
+** Recovering (shows on Recover page)
+** Recovery failed (shows on Recover page)
+** Recovered (shows on Recover page)
 
 
 * *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 

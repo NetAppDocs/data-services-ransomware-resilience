@@ -47,7 +47,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 
 * Application workloads 
 * VM workloads
-* File share workloads. 
+* File share workloads
 
 
 .Steps 
@@ -57,7 +57,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 . Do one of the following: 
 +
 * From the Dashboard Data Protection pane, select *View all*. 
-* From the menu, select *Protection*.
+* From the menu, select *Protect*.
 
 . View different workloads: 
 +
@@ -118,7 +118,7 @@ BlueXP ransomware protection includes the following predefined policies that are
 +
 * From the Dashboard Data Protection pane, select *View all*. 
 * From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
-* From the menu, select *Protection*.
+* From the menu, select *Protect*.
 
 . From the Protect page, review the workloads and select *Assign policy*. 
 

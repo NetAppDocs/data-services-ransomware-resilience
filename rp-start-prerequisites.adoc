@@ -18,7 +18,7 @@ Get started with BlueXP ransomware protection by verifying the readiness of your
 +
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list] for details. 
 
-* ONTAP 9.11 and later
+* ONTAP 9.11.1 and later
 ** Cluster admin ONTAP permissions
 ** NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, requires an ONTAP license, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview].
 

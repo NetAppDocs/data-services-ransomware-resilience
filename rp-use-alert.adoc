@@ -46,7 +46,7 @@ You can access alerts from one of these:
 . View the email. 
 . In the email, select *View alert* and log in to BlueXP ransomware protection. 
 +
-The Alerts tab appears.
+The Alerts page appears.
 
 . Review all incidents on each volume for each alert. 
 . To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
@@ -63,7 +63,7 @@ The Alerts tab appears.
 
 . In the notification, select *View alert* and access BlueXP ransomware protection. 
 +
-The Alerts tab appears.
+The Alerts page appears.
 
 . Review all incidents on each volume for each alert. 
 . To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
@@ -99,13 +99,13 @@ After the alert is marked for recovery, the alert moves from the Alerts tab to t
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
 . From the menu, select *Alerts*. 
-. In the Alerts tab, select the alert. 
+. In the Alerts page, select the alert. 
 
 . If you determine that the alert is a threat and the incidents are ready for recovery, select *Mark workload ready for recovery*. 
 
 . Confirm the action and select *Mark ready for recovery*. 
 
-. To initiate the workload recovery, select *Recover* workload in the message or select the *Recovery* tab. 
+. To initiate the workload recovery, select *Recover* workload in the message or select the *Recover* tab. 
 
 == Dismiss incidents that are not potential attacks
 
@@ -121,7 +121,7 @@ NOTE: If you dismiss an alert, you cannot change that status back to any other s
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
 . From the menu, select *Alerts*. 
-. In the Alerts tab, select the alert.
+. In the Alerts page, select the alert.
 
 . Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
