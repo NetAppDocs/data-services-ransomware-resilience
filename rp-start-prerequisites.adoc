@@ -16,19 +16,19 @@ Get started with BlueXP ransomware protection by verifying the readiness of your
 
 * For the preview version, you’ll need an account in AWS S3 for backup targets and AWS permissions set up.
 +
-Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list] for details. 
+Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
 
 * ONTAP 9.11.1 and later
 ** Cluster admin ONTAP permissions
-** NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, requires an ONTAP license, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview].
+** NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, license required on the ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 
 * In BlueXP: 
 
-** A BlueXP Connector must be set up in NetApp BlueXP. All source and target clusters must be on the same BlueXP Connector. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector].
+** A BlueXP Connector must be set up in NetApp BlueXP. All source and target clusters must be on the same BlueXP Connector. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
 +
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
 ** The BlueXP working environment with NetApp NAS on-premises storage should be set up. 
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[Standard BlueXP requirements]
+** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[Standard BlueXP requirements^]
 
 

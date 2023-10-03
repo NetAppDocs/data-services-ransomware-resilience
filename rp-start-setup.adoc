@@ -21,13 +21,13 @@ Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensu
 * Set up an account in AWS.
 * Configure permissions in AWS.  
 
-Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list] for details. 
+Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
 
 
 == Set up BlueXP
 The next step is to set up ransomware protection in BlueXP. 
 
-Review https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard BlueXP requirements].
+Review https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard BlueXP requirements^].
 
 
 === Create a Connector in BlueXP
@@ -42,7 +42,7 @@ NOTE: If you have multiple BlueXP Connectors, the service will scan data across 
 === Set up the working environment in BlueXP
 Set up the BlueXP working environment with NetApp NAS on-premises storage. 
 
-For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets].
+For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 === Discover workloads in BlueXP
 
@@ -69,4 +69,4 @@ The service discovers workload data and shows the health of data protection in t
 
 //By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in BlueXP^]
