@@ -13,6 +13,7 @@ summary: Get started with BlueXP ransomware protection by verifying support for 
 [.lead]
 Get started with BlueXP ransomware protection by verifying the readiness of your operational environment, login, network access, and web browser.
 
+To use BlueXP ransomware protection, you'll need these prerequisites: 
 
 * For the preview version, you’ll need an account in AWS S3 for backup targets and AWS permissions set up.
 +
@@ -20,7 +21,7 @@ Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissi
 
 * ONTAP 9.11.1 and later
 ** Cluster admin ONTAP permissions
-** NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, license required on the ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
+** A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, on the ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 
 * In BlueXP: 
