@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rp-start-prerequisites.html
-keywords: what are bluexp ransomware protection requirements, ransomware protection prerequisites
+keywords: what are bluexp ransomware protection requirements, bluexp ransomware protection, ransomware protection prerequisites
 summary: Get started with BlueXP ransomware protection by verifying support for your environment, network access, login and web browser.
 ---
 
@@ -15,7 +15,7 @@ Get started with BlueXP ransomware protection by verifying the readiness of your
 
 To use BlueXP ransomware protection, you'll need these prerequisites: 
 
-* For the preview version, you’ll need an account in AWS S3 for backup targets and AWS permissions set up.
+* For the preview version, you’ll need an account in AWS S3 for backup targets and the AWS permissions set.
 +
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
 

@@ -33,7 +33,7 @@ For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-clou
 
 * *Recover* data in the event of an attack to accelerate application uptime by orchestrating several NetApp technologies. 
 
-image:diagram-rp-features.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
+image:diagram-rp-features-phases.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
 
 == What you can do with BlueXP ransomware protection 
 
@@ -97,7 +97,9 @@ BlueXP ransomware protection uses the NetApp Autonomous Ransomware Protection te
 
 == How BlueXP ransomware protection works
 
-At a high-level, BlueXP ransomware protection works like this:
+At a high-level, BlueXP ransomware protection works like this.
+
+image:diagram-rp-architecture-preview.png[Diagram showing BlueXP ransomware protection architecture]
 
 
 [cols=2*,options="header",cols="15,65a",width="100%"]
