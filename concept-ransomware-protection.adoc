@@ -40,16 +40,12 @@ image:diagram-rp-features-phases.png[Diagram showing BlueXP ransomware protectio
 The BlueXP ransomware protection service provides full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
 
 * View ransomware protection on all your workloads at a glance.
-* Gain insight into ransomware protection recommendations and act on them.
-* Assign ransomware protection policies to protect your workloads.
-* Protect top workloads and high-risk data against ransomware attacks.
+* Gain insight into ransomware protection recommendations
+* Improve protection posture based on BlueXP ransomware protection recommendations.
+* Assign ransomware protection policies to protect your top workloads and high-risk data against ransomware attacks.
 * Monitor the health of your workloads against ransomware attacks looking for data anomalies.
 * Quickly assess the impact of ransomware incidents on your workload. 
-* Mark the data in ransomware incidents as ready for your storage administrator to recover. 
-
-Using BlueXP ransomware protection, your storage administrator can: 
-
-* Recover from ransomware incidents intelligently by restoring data and ensuring that reinfection from stored data does not occur. This involves the use of NetApp SnapMirror and Snapshot technologies and NetApp recovery services, such as BlueXP backup and recovery (Cloud Backup), SnapCenter, SnapRestore, and BlueXP digital advisor (formerly Active IQ). 
+* Recover from ransomware incidents intelligently by restoring data and ensuring that reinfection from stored data does not occur. 
 
 == Benefits of using BlueXP ransomware protection 
 
@@ -68,15 +64,11 @@ BlueXP ransomware protection offers the following benefits:
 BlueXP ransomware protection provides specific recommendations based on your data. Generally, you should follow these best practices to protect against ransomware attacks.
 
 * Use strong passwords in the admin accounts.
-* Enable multi-factor authentication in storage accounts.
 * Keep your software up to date. The service will check ONTAP versions on all nodes and recommend upgrading, when appropriate.
-* Ensure that backup services are enabled, and you have at least one policy configured for backups.
-* Identify policies that do not have enough protections configured, as in the following examples:
+* Ensure policies have enough protections, as in the following examples citing more is needed:
 ** Retention is too short based on the criticality of the data.
 ** No backups are configured against the policy.
 ** Backups do not have DataLock enabled.
-* Watch for an abnormal increase in the percentage of encrypted files in a data source.
-* Enable auditing so you can track information such as folder permission changes, failed attempts to read or write files, and file creations, modifications, and deletions. 
 * Protect volumes in your working environment against modification and deletion on WORM storage. 
 * Categorize data and protect workloads in a way that matches the data priority: critical, important, and standard data workloads.  
 * Respond to detections within 24 hours.
