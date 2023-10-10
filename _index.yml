@@ -1,5 +1,5 @@
 indexpage:
-  lead: BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads on on-premises NAS storage across all BlueXP accounts and working environments and backs up data to Amazon Web Services (AWS) or Microsoft Azure cloud storage. 
+  lead: BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across each of the BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage. 
   tiles:
   - title: Get started
     #image: ./media/outline_directions_run_black_18dp.png

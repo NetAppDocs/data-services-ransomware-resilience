@@ -41,7 +41,8 @@ The storage administrator can now determine how best to recover the workload dat
 You can restore data at different levels: 
 
 * Recover an application at the application level, volume level, and or file level. 
-* Recover a file share or datastore at the volume level.
+* Recover a file share at the volume level. 
+* Recover a datastore at the VM level.
 
 The process differs slightly depending on the workload type. 
 

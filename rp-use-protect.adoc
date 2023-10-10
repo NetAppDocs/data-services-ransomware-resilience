@@ -15,9 +15,9 @@ You can protect workloads against ransomware attacks by completing the following
 
 * View existing workload protection. 
 * Assign a policy to a workload.
-* Change protection.
-** Increase application protection to prevent future RW attacks.
-** Change the protection for a workload that was previously protected in the RW service.
+//* Change protection.
+//** Increase application protection to prevent future RW attacks.
+//** Change the protection for a workload that was previously protected in the RW service.
 //* Manage policies (only the ones that you created).
 
 
@@ -37,9 +37,9 @@ A workload can have one of the following protection statuses:
 A workload can have one of the following protection health statuses: 
 
 * *Healthy*: The workload has protection enabled and backups and Snapshots have been completed. 
-* *In progress*: Backups or Snapshots are in progress. 
+* *In progress*: Backups or Snapshot copies are in progress. 
 * *Warning*: Protection is not enabled or sufficient on the workload. 
-* *Failed*: Backups or Snapshots have not completed successfully. 
+//* *Failed*: Backups or Snapshot copies have not completed successfully. 
 
 == View workload ransomware protection 
 
@@ -62,13 +62,10 @@ One of the first steps in protecting workloads is viewing your current workloads
 . View different workloads: 
 +
 * To see application workloads, select the *Application workloads* tab. 
-* To see VM workloads, select the *VM workloads* tab. 
 * To see file share workloads, select the *File share workloads* tab. 
 
-. From this page, you can do any of the following: 
-+
-* Assign a policy to a workload.
-* Manage policies for all workloads.
+. From this page, you can assign a policy to a workload.
+
 
 == Assign a ransomware protection policy to workloads 
 

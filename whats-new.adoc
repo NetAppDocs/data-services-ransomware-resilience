@@ -18,19 +18,20 @@ Learn what's new in BlueXP ransomware protection preview.
 // tag::whats-new[]
 == 6 October 2023 
 
-The BlueXP ransomware protection service has been redesigned as an orchestration service for ransomware protection, detection, and recovery. 
+The BlueXP ransomware protection service is an orchestration service for ransomware protection, detection, and recovery. 
 
-For the preview version, the service protects application-based workloads on on-premises NAS storage across all BlueXP accounts and working environments and backs up data to Amazon Web Services (AWS) or Microsoft Azure cloud storage. 
+For the preview version, the service For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts individually and backs up data to Amazon Web Services (AWS) cloud storage. 
+
 
 BlueXP ransomware protection encompasses the following strategies:
 
-* *Identify* all application-based workloads in NetApp on-premises, NAS working environments in BlueXP, across all BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+* *Identify* all application-based workloads in NetApp on-premises, NAS working environments in BlueXP, across BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
 
-* *Protect* high priority data by creating an immutable backup in AWS or Azure Blob cloud storage. 
+* *Protect* high priority data by creating a backup in AWS S3 cloud storage. 
 
-* *Detect* data anomalies using AI technologies in secondary cloud storage that might result in ransomware attacks. 
+* *Detect* data anomalies that might result in ransomware attacks. 
 
-* *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously (with cloud-based DataLock features enabled). With cloud-based NetApp DataLock enabled, your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
+* *Respond* to potential ransomware attacks by automatically initiating a NetApp Snapshot. 
 
 * *Recover* data in the event of an attack to accelerate application uptime by orchestrating several NetApp technologies. 
 
