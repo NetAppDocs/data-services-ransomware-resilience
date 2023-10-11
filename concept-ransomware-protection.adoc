@@ -22,7 +22,7 @@ BlueXP ransomware protection encompasses the following strategies:
 
 * *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises, NAS with NFS working environments in BlueXP, across BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
 
-* *Protect* yur workloads by enabling backups, Snapshot copies, and on-device detection on all your data.  
+* *Protect* your workloads by enabling backups, Snapshot copies, and on-device detection on all your data.  
 
 * *Detect* anomalies that might result in ransomware attacks. 
 
