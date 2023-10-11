@@ -13,17 +13,20 @@ summary: After an attack, BlueXP ransomware protection verifies that the backup 
 [.lead]
 After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
 
-A workload can have one of the following recovery statuses: 
 
-* Ready for recovery
-* Waiting to recover
-* Recovery in progress 
-* Recovery failed 
+
 
 === View workloads that are in a recovery state
 
+Review the workloads that are in one of these recovery statuses: 
 
+* Restore needed
+* Queued
+* In progress 
+* Restored 
+* Failed 
 
+.Steps 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
 . Do one of the following: 

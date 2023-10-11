@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-protect.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies
-summary: You can protect workloads against ransomware attacks by assigning policies to a workload, changing protection and more in BlueXP ransomware protection.
+summary: You can protect workloads against ransomware attacks by assigning policies to a workload in BlueXP ransomware protection.
 ---
 
 = Protect workloads against ransomware attacks
@@ -29,17 +29,12 @@ BlueXP ransomware protection assigns a priority to each workload during discover
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 
-A workload can have one of the following protection statuses:
-
-* At risk
-* Protected
-
 A workload can have one of the following protection health statuses: 
 
-* *Healthy*: The workload has protection enabled and backups and Snapshots have been completed. 
+* *Protected*: The workload has protection enabled and backups and Snapshot copies have been completed. 
 * *In progress*: Backups or Snapshot copies are in progress. 
-* *Warning*: Protection is not enabled or sufficient on the workload. 
-//* *Failed*: Backups or Snapshot copies have not completed successfully. 
+* *At risk*: Protection is not enabled or sufficient on the workload. 
+* *Failed*: Backups or Snapshot copies have not completed successfully. 
 
 == View workload ransomware protection 
 
