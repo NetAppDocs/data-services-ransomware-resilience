@@ -22,18 +22,15 @@ The BlueXP ransomware protection service is an orchestration service for ransomw
 
 For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts individually and backs up data to Amazon Web Services (AWS) cloud storage. 
 
+The BlueXP ransomware protection service provides full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
 
-BlueXP ransomware protection encompasses the following strategies:
-
-* *Identify* all application-based workloads in NetApp on-premises, NAS working environments in BlueXP, across BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
-
-* *Protect* high priority data by creating a backup in AWS S3 cloud storage. 
-
-* *Detect* data anomalies that might result in ransomware attacks. 
-
-* *Respond* to potential ransomware attacks by automatically initiating a NetApp Snapshot. 
-
-* *Recover* data in the event of an attack to accelerate application uptime by orchestrating several NetApp technologies. 
+* View ransomware protection on all your workloads at a glance.
+* Gain insight into ransomware protection recommendations
+* Improve protection posture based on BlueXP ransomware protection recommendations.
+* Assign ransomware protection policies to protect your top workloads and high-risk data against ransomware attacks.
+* Monitor the health of your workloads against ransomware attacks looking for data anomalies.
+* Quickly assess the impact of ransomware incidents on your workload. 
+* Recover from ransomware incidents intelligently by restoring data and ensuring that reinfection from stored data does not occur. 
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
