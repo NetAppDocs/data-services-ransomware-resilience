@@ -23,6 +23,8 @@ A NetApp License File (NLF) is not required. The BlueXP ransomware protection pr
 
 The preview version of this service requires a BlueXP backup and recovery service license. 
 
+TIP: For the preview version, NetApp helps to set up the evaluation and any required licenses.
+
 *How do you enable BlueXP ransomware protection?* 
 BlueXP ransomware protection does not require any enablement. The ransomware protection option is automatically enabled on the BlueXP left navigation. 
 

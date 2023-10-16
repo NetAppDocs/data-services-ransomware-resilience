@@ -18,7 +18,9 @@ Ransomware attacks can block access to your systems and data and attackers can a
 BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage. 
 
 
-BlueXP ransomware protection encompasses the following strategies:
+== What you can do with BlueXP ransomware protection 
+
+The BlueXP ransomware protection service provides full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
 
 * *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises, NAS with NFS working environments in BlueXP, across BlueXP accounts, workspaces, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
 
@@ -30,23 +32,10 @@ BlueXP ransomware protection encompasses the following strategies:
 
 * *Respond* to potential ransomware attacks by automatically initiating a NetApp ONTAP Snapshot copy.
 
-//For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
 * *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. 
 
-image:diagram-rp-features-phases.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
-
-== What you can do with BlueXP ransomware protection 
-
-The BlueXP ransomware protection service provides full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
-
-* View ransomware protection on all your workloads at a glance.
-* Gain insight into ransomware protection recommendations.
-* Improve protection posture based on BlueXP ransomware protection recommendations.
-* Assign ransomware protection policies to protect your top workloads and high-risk data against ransomware attacks.
-* Monitor the health of your workloads against ransomware attacks looking for data anomalies.
-* Quickly assess the impact of ransomware incidents on your workload. 
-* Recover from ransomware incidents intelligently by restoring data and ensuring that reinfection from stored data does not occur. 
+image:diagram-rp-features-phases2.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
 
 == Benefits of using BlueXP ransomware protection 
 
@@ -62,20 +51,6 @@ BlueXP ransomware protection offers the following benefits:
 
 //* Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup), SnapCenter, SnapRestore, and AIQ.
 
-== Ransomware protection best practices
-
-BlueXP ransomware protection provides specific recommendations based on your data. Generally, you should follow these best practices to protect against ransomware attacks.
-
-* Keep your software up to date. The service will check ONTAP versions on all nodes and recommend upgrading, when appropriate.
-* Ensure policies have enough protections, as in the following examples citing more is needed:
-** Retention is too short based on the criticality of the data.
-** No backups are configured against the policy.
-* Ensure that the frequency of the Snapshot copy or backup meets your recovery point objective (RPO) requirements. 
-* Protect volumes in your working environment against modification and deletion on WORM storage. 
-* Categorize data and protect workloads in a way that matches the data priority: critical, important, and standard data workloads.  
-* Respond to detections within 24 hours.
-* Provide a descriptive name for your workload.
-* Investigate backup job failures. 
 
 == Cost 
 
@@ -85,11 +60,13 @@ NetApp doesn’t charge you for using the preview version of BlueXP ransomware p
 
 The BlueXP ransomware protection preview itself does not require any special licensing.  All preview licenses are Evaluation licenses.  
 
-TIP: For the preview version, NetApp helps to set up the evaluation licenses.
+TIP: For the preview version, NetApp helps to set up the evaluation and any required licenses.
 
-BlueXP ransomware protection uses the NetApp Autonomous Ransomware Protection technology, which requires an ONTAP license, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
+The BlueXP ransomware protection preview requires the following licenses: 
 
-The preview version of this service requires a BlueXP backup and recovery service license. 
+* ONTAP 
+* NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
+* BlueXP backup and recovery service
 
 
 
@@ -97,7 +74,7 @@ The preview version of this service requires a BlueXP backup and recovery servic
 
 At a high-level, BlueXP ransomware protection works like this.
 
-image:diagram-rp-architecture-preview.png[Diagram showing BlueXP ransomware protection architecture]
+image:diagram-rp-architecture-preview2.png[Diagram showing BlueXP ransomware protection architecture]
 
 
 [cols=2*,options="header",cols="15,65a",width="100%"]
@@ -130,6 +107,7 @@ image:diagram-rp-architecture-preview.png[Diagram showing BlueXP ransomware prot
 * Orchestrates the recovery of VMs, crash-consistent volumes, and files associated with a workload.
 |===
 
+//For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
 
 == Supported working environments and data sources

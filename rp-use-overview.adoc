@@ -13,6 +13,7 @@ summary: Using BlueXP ransomware protection, you can view workload health and pr
 [.lead]
 Using BlueXP ransomware protection, you can view workload health and protect workloads.
 
+* link:rp-use-discover.html[Discover workloads in BlueXP ransomware protection].
 * link:rp-use-dashboard.html[View protection and workload health from the Dashboard].
 * link:rp-use-protect.html[Protect workloads]:
 ** Assign a ransomware protection policy to workloads. 
