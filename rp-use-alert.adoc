@@ -103,9 +103,9 @@ After the alert is marked for recovery, the alert moves from the Alerts tab to t
 . From the menu, select *Alerts*. 
 . In the Alerts page, select the alert. 
 
-. If you determine that the alert is a threat and the incidents are ready for recovery, select *Mark workload ready for recovery*. 
+. If you determine that the alert is a threat and the incidents are ready for recovery, select *Mark restore needed*. 
 
-. Confirm the action and select *Mark ready for recovery*. 
+. Confirm the action and select *Mark restore needed*. 
 
 . To initiate the workload recovery, select *Recover* workload in the message or select the *Recover* tab. 
 
