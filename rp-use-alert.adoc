@@ -25,9 +25,11 @@ Each alert could have multiple incidents on different volumes with different sta
 
 The service provides information called _evidence_ about what caused the alert to be issued, such as the following: 
 
-* File extensions were created
+* File extensions were created or changed
 * File creation occurred and increased by a listed percentage 
 * File deletion occurred and increased by a listed percentage 
+
+Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 //An alert can have one of the following statuses: 
 
