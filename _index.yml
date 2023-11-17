@@ -1,0 +1,48 @@
+indexpage:
+  lead: BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across each of the BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage. 
+  tiles:
+  - title: Get started
+    #image: ./media/outline_directions_run_black_18dp.png
+    links:
+    - title: Learn about BlueXP ransomware protection
+      url: /concept-ransomware-protection.html
+    - title: What's new in BlueXP ransomware protection
+      url: /whats-new.html
+#   - title: Release notes
+#     url: /rp-rn_overview.html
+    - title: Prerequisites
+      url: /rp-start-prerequisites.html
+    - title: Quick start
+      url: /rp-start-quick-start.html
+    - title: Set up BlueXP ransomware protection
+      url: /rp-start-setup.html
+    - title: Access BlueXP ransomware protection 
+      url: /rp-start-login.html
+    - title: FAQ
+      url: /rp-start-faq.html 
+  - title: Use BlueXP ransomware protection
+    links:
+    - title: Use BlueXP ransomware protection overview 
+      url: /rp-use-overview.html
+    - title: Discover workloads
+      url: /rp-use-discover.html 
+    - title: View workload health using the Dashboard
+      url: /rp-use-dashboard.html
+    - title: Protect workloads
+      url: /rp-use-protect.html
+    - title: Respond to a detected alert 
+      url: /rp-use-alert.html
+    - title: Recover from an attack
+      url: /rp-use-recover.html
+#    - title: Manage workloads 
+#     url: /rp-use-manage.html
+#   - title: Monitor ransomware protection jobs
+#     url: /rp-use-monitor-jobs.html 
+  - title: Blogs & community
+    links:
+    - title: NetApp Community
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Cloud webinars
+      url: https://bluexp.netapp.com/events     
+    - title: BlueXP ransomware protection on NetApp.com 
+      url: https://www.netapp.com/cyber-resilience/ransomware-protection/

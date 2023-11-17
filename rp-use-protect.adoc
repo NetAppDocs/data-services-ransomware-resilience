@@ -1,0 +1,121 @@
+---
+sidebar: sidebar
+permalink: rp-use-protect.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies
+summary: You can protect workloads against ransomware attacks by assigning policies to a workload in BlueXP ransomware protection.
+---
+
+= Protect workloads against ransomware attacks
+:hardbreaks:
+:icons: font
+:imagesdir: ./media
+
+[.lead]
+You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
+
+* View existing workload protection. 
+* Assign a policy to a workload.
+//* Change protection.
+//** Increase application protection to prevent future RW attacks.
+//** Change the protection for a workload that was previously protected in the RW service.
+//* Manage policies (only the ones that you created).
+
+
+
+BlueXP ransomware protection assigns a priority to each workload during discovery. The workload priority is determined by the following Snapshot frequencies: 
+
+* *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
+* *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *Standard*: Snapshot copies taken more than 1 per day 
+
+
+A workload can have one of the following protection health statuses: 
+
+* *Protected*: The workload has protection enabled and backups and Snapshot copies have been completed. 
+* *In progress*: Backups or Snapshot copies are in progress. 
+* *At risk*: Protection is not enabled or sufficient on the workload. 
+* *Failed*: Backups or Snapshot copies have not completed successfully. 
+
+== View workload ransomware protection 
+
+One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
+
+* Application workloads 
+* VM workloads
+* File share workloads
+
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Dashboard Data Protection pane, select *View all*. 
+* From the menu, select *Protect*.
+
+. View different workloads: 
++
+* To see application workloads, select the *Application workloads* tab. 
+* To see file share workloads, select the *File share workloads* tab. 
+
+. From this page, you can assign a policy to a workload.
+
+
+== Assign a ransomware protection policy to workloads 
+
+To help protect your data, you can assign an existing ransomware protection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
+
+BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
+
+
+[cols=7*,options="header",cols="10,15a,15,10,10,15,15" width="100%"]
+|===
+| Policy level
+| Snapshot
+| Frequency
+| Retention (Days)
+| # of Snapshot copies
+| Total Max # of Snapshot copies
+| Backup Frequency
+
+
+.5+| *Critical workload policy* | Minutes | Every 10 min | 2 | 288 | 432 | 30 min
+ | Hourly | Every 4 hours | 7 | 42 | 432 | 30 min
+ | Daily  | Every 6 hours | 14 | 56 | 432 | 30 min
+ | Weekly | Every 1 day | 42 | 42 | 432 | 30 min
+ | Monthly | Every 30 days | 91 | - | 432 | 30 min
+.5+| *High workload policy* | Minutes | Every 20 mins | 2 | 144 | 260 | 60 min
+ | Hourly | Every 6 hours | 7 | 28 | 260 | 60 min
+ | Daily | Every 8 hours | 14 | 42 | 260 | 60 min
+ | Weekly | Every 1 day | 42 | 42 | 260 | 60 min
+ | Monthly | Every 30 days | 91 | - | 260 | 60 min
+
+
+.5+| *Standard workload policy* | Minutes | Every 60 min | 2| 48 | 93 | 4 hours
+ | Hourly | Every 12 hours | 7 | 14 | 93 | 4 hours 
+ | Daily | Every 24 hours | 14 | 14 | 93 | 4 hours  
+ | Weekly | Every 7 days | 42 | -  | 93 | 4 hours
+ | Monthly | Every 30 days | 91 | - | 93 | 4 hours
+
+
+|===
+
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Dashboard Data Protection pane, select *View all*. 
+* From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
+* From the menu, select *Protect*.
+
+. From the Protect page, review the workloads and select *Assign policy*. 
+
+. Review the existing policies. To see details, click on the down arrow on that policy.
+
+. Select *Assign*. 
+
+. Review the Dashboard Recommended actions pane, which shows the action as “Completed."
