@@ -32,14 +32,14 @@ Review the workloads that are in one of these recovery statuses:
 . Do one of the following: 
 +
 * From the Dashboard, review the Workload data incidents pane and select *View all*. 
-* From the menu, select *Recover*.
+* From the menu, select *Recovery*.
 
 
 . Review the workload information in the *Recover* page.  
 
 === Recover a workload 
 
-The storage administrator can now determine how best to recover the workload data. 
+Using BlueXP ransomware protection, the storage administrator can review the recommended restore point and determine how best to recover workload data. 
 
 You can restore data at different levels: 
 
@@ -53,17 +53,24 @@ The process differs slightly depending on the workload type.
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the menu, select *Recover*.
+. From the menu, select *Recovery*.
 
 . Review the workload information in the *Recovery* page.  
 
-. Select a workload that is in the “Ready for recovery” state. 
+. Select a workload that is in the “Restore needed” state. 
 
 . To see the protection details before you recover the workload, select the *Actions* ... icon on the right and select *View protection details*.  
 
 . To restore, select *Restore*.
 
-. Select the type of restore you want to complete: application level, volume level, or file level.  
+. *Restore scope*: Select the type of restore you want to complete: 
+** Application consistent
+** Volume level
+** File level: You can specify a folder or single files to restore. 
++
+TIP: You can select up to 100 files or a single folder. 
+
+. If you selected Volumes or Files, choose the volume that contains the files you want to restore or choose the files. 
 
 . *Source*: Select the down arrow next to Source to see details: 
 
@@ -75,8 +82,17 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 
 . *Destination*: Select the down arrow next to Destination to see details.
 
-.. Choose where to restore the data: original source location or a different location that you can specify. 
+.. Choose where to restore the data: original source location or an alternate location that you can specify. 
++ 
+TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
 
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Optionally, enter the path. 
++
+TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory. 
+
+. Review your selections. 
 . Select *Restore*. 
 
-. From the menu, select *Recover* to review the workload on the Recovery page where the status of the operation moves through the states of Queued, In Progress, Failed or Complete.
+. From the menu, select *Recover* to review the workload on the Recovery page where the status of the operation moves through the states.

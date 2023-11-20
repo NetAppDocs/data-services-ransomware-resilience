@@ -33,7 +33,7 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 * *Respond* to potential ransomware attacks by automatically initiating a NetApp ONTAP Snapshot copy.
 
 
-* *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. 
+* *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover volumes, folders, or specific files. The service provides recommendations on the best options. 
 
 image:diagram-rp-features-phases2.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
 
