@@ -68,7 +68,7 @@ TIP: You can select up to 100 files or a single folder.
 
 . Continue with one of the following procedures depending on whether you chose application, volume, or file. 
 
-//=== Restore an application workload at an application level
+//=== Restore an application workload at the application level
 
 //On the Recovery page, after you select an application to restore, continue with these steps. 
 
@@ -93,7 +93,7 @@ TIP: You can select up to 100 files or a single folder.
 
 //. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-=== Restore an application workload at an volume level
+=== Restore an application workload at the volume level
 
 On the Recovery page, after you select an application to restore, continue with these steps. 
 
@@ -161,7 +161,7 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 === Restore a file share or datastore at the volume or file level
 
 
-If you selected a file share or datastore to restore, continue with these steps. 
+On the Recovery page, after you selected a file share or datastore to restore, continue with these steps. 
 
 . On the Restore page, in the Restore scope, select *By volume* or *By file*. 
 
@@ -194,7 +194,7 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 
 === Restore a VM file share at the VM level
 
-If you selected a VM to restore, continue with these steps. 
+On the Recovery page after you selected a VM to restore, continue with these steps. 
 
 . *Source*: Select the down arrow next to Source to see details: 
 
