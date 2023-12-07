@@ -26,17 +26,17 @@ After discovery, the Dashboard shows you the health of workload data protection.
 
 . From the Dashboard, you can view and do any of the following in each of the panes: 
 
-* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protect page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
+* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
 
 * *Workload data incidents*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
 An incident is categorized in one of the following states: 
 +
 ** Impacted (shows on Alerts page) 
-** Ready for recovery (shows on Recover page) 
-** Recovering (shows on Recover page)
-** Recovery failed (shows on Recover page)
-** Recovered (shows on Recover page)
+** Ready for recovery (shows on Recovery page) 
+** Recovering (shows on Recovery page)
+** Recovery failed (shows on Recovery page)
+** Recovered (shows on Recovery page)
 
 
 * *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
@@ -71,7 +71,7 @@ Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or important file share workloads against ransomware. |The Protect page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
+| Protect critical or important file share workloads against ransomware. |The Protection page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].

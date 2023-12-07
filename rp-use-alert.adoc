@@ -109,7 +109,7 @@ After the alert is marked for recovery, the alert moves from the Alerts tab to t
 
 . Confirm the action and select *Mark restore needed*. 
 
-. To initiate the workload recovery, select *Recover* workload in the message or select the *Recover* tab. 
+. To initiate the workload recovery, select *Recover* workload in the message or select the *Recovery* tab. 
 
 //== Dismiss incidents that are not potential attacks
 
