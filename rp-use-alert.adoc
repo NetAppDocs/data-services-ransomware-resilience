@@ -93,9 +93,9 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 //* <<Mark ransomware incidents as ready for recovery>>.
 //* <<Dismiss incidents that are not potential attacks>>.
 
-== Mark ransomware incidents as ready for recovery 
+== Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
-After you review incidents and determine that the Snapshots have been taken, you need to determine whether the incidents are potential attacks. If they are potential attacks, you should communicate with your storage team that the data is ready for recovery so that they can start the recovery process. 
+After you have mitigated the attack and are ready to recovery workloads, you should communicate with your storage admin that the data is ready for recovery so that they can start the recovery process. 
 
 After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab. You should contact the storage team to perform the recovery.  
 

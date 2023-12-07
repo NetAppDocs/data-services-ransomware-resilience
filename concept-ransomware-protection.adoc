@@ -93,10 +93,11 @@ image:diagram-rp-architecture-preview2.png[Diagram showing BlueXP ransomware pro
 * Recommends protection policies for workloads based on their business priority.
 * Ransomware protection also learns the policy associations and recommends your custom policies to similar workloads.
 
-| *PROTECT* | * Orchestrates the use of BlueXP backup and recovery, SnapCenter service, and ONTAP APIs by applying policies to each of the volumes associated with the workload. 
+| *PROTECT* | * Orchestrates the use of BlueXP backup and recovery, SnapCenter service, and ONTAP APIs by applying policies to each of the identified workloads. 
 //https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock^].
 
 | *DETECT* | * Detects potential attacks with a machine learning (ML) model that detects potentially anomalous encryption and activity. Applies ransomware protection technology by using NetApp Advanced Ransomware Detection, a machine learning (ML) model that detects malicious file encryptions. 
+* Provides dual-layer detection that starts with detecting potential ransomware attacks in the primary storage and responding to abnormal activities by taking additional automated Snapshot copies to create the nearest data restore points. The service provides the ability to dig deeper to identify potential attacks with greater precision without impacting the performance of the primary workloads. 
 * Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection. 
 
 |*RESPOND* | * Shows relevant data, such as file activity, user activity, and entropy, to help you complete analyses about the attack.
