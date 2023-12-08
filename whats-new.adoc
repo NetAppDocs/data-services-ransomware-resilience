@@ -16,6 +16,16 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
+
+//== 31 January 2024
+//This release of the BlueXP ransomware protection includes the following updates: 
+
+//* Recovery process enhancements
+//* Protection policy management features were added for this release. 
+//* Automatic backup to NetApp StorageGRID
+//* Immutability on secondary storage using DataLock features
+//* Additional features to investigate potential attacks 
+
 == 6 October 2023 
 
 The BlueXP ransomware protection service is an orchestration service for ransomware protection, detection, and recovery. 
