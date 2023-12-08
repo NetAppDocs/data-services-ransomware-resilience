@@ -60,11 +60,13 @@ The process differs slightly depending on the workload type.
 
 . *Restore scope*: Select the type of restore you want to complete: 
 
+//** Application consistent
+** All volumes 
 ** Volume level
 ** File level: You can specify a folder or single files to restore. 
 +
 TIP: You can select up to 100 files or a single folder. 
-//** Application consistent
+
 
 . Continue with one of the following procedures depending on whether you chose application, volume, or file. 
 
