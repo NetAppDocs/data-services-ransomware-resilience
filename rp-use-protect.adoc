@@ -15,10 +15,9 @@ You can protect workloads against ransomware attacks by completing the following
 
 * View existing workload protection. 
 * Assign a policy to a workload.
-//* Change protection.
-//** Increase application protection to prevent future RW attacks.
-//** Change the protection for a workload that was previously protected in the RW service.
-//* Manage policies (only the ones that you created).
+** Increase application protection to prevent future RW attacks.
+** Change the protection for a workload that was previously protected in the RW service.
+* Manage policies (only the ones that you created).
 
 
 
@@ -28,13 +27,20 @@ BlueXP ransomware protection assigns a priority to each workload during discover
 * *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
 
+*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
-A workload can have one of the following protection health statuses: 
+* *At risk*: No policy is applied. 
+* *Protected*: A policy is applied. 
+* *Failed*: A policy is applied but is not working. 
+* *In progress*: A policy is being applied but not completed yet. 
 
-* *Protected*: The workload has protection enabled and backups and Snapshot copies have been completed. 
+*Protection health*: A workload can have one of the following protection health statuses: 
+
+* *Healthy*: The workload has protection enabled and backups and Snapshot copies have been completed. 
 * *In progress*: Backups or Snapshot copies are in progress. 
-* *At risk*: Protection is not enabled or sufficient on the workload. 
 * *Failed*: Backups or Snapshot copies have not completed successfully. 
+* *N/A*: Protection is not enabled or sufficient on the workload. 
+
 
 == View workload ransomware protection 
 
@@ -119,3 +125,189 @@ BlueXP ransomware protection includes the following predefined policies that are
 . Select *Assign*. 
 
 . Review the Dashboard Recommended actions pane, which shows the action as “Completed."
+
+== Create a protection policy 
+
+If the existing policies do not meet your business needs, you can create a new protection policy. You can create your own from scratch or use an existing policy and modify its settings. 
+
+You can create policies that govern primary and secondary storage and treat primary and secondary storage the same or differently. 
+
+You can create a policy when you are managing them or during the process of assigning a policy to a workload. 
+
+.Steps when managing policies
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Protection*.
++
+image:screen-protection.png[Protection page]
+
+. From the Protect page, select *Manage policies*. 
++
+image:screen-protection-policy-manage.png[Manage policies page]
+
+
+. From the Manage policies page, select *Add*. 
++
+image:screen-protection-policy-add.png[Add policy page]
+
+. Enter a new policy name, or enter an existing policy name to copy it. If you enter an existing policy name, choose which policy to copy.
++
+NOTE: If you choose to copy and modify an existing policy, you must change at least one setting to make it unique. 
+
+. For each item, select the Down arrow. 
+
+* Primary storage: 
+** *Snapshot copy schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
+** *Primary detection*: Enable the service to detect ransomware incidents on primary storage. 
+** *Lock Snapshot copies**: Enable this to have the service lock the Snapshot copies so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. 
++
+This option uses NetApp DataLock technology. The period of time that the backup file is locked (and retained) is called the DataLock Retention Period. It is based on the backup policy schedule and retention setting that you defined, plus a 14-day buffer. Any DataLock retention policy that is less than 30 days is rounded up to 30 days minimum.
+
+** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated Snapshot copies when Primary detection is enabled. 
+
+* Secondary storage: 
+** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
+** *Secondary detection*: Enable the service to detect ransomware incidents on secondary storage. 
+
+. Select *Add*. 
+
+.Steps when assigning a protection policy
+
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Protection*.
++
+image:screen-protection-Protect-button.png[Protection page]
+
+. From the Protection page, select *Protect*. 
+
+
+. From the Protect page, select *Add*. 
++
+image:screen-protection-policy-add.png[Add policy page]
+
+. Complete the process, which is the same as creating a policy from the Manage policies page. 
+
+
+
+
+== Assign a different protection policy 
+
+You can choose a different protection policy for a workload. 
+You might want to increase the protection to prevent future ransomware attacks by changing the protection policy. 
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Protection*.
+
+. From the Protect page, select a workload, and select *Protect*. 
+
+. In the Protect page, select a different policy for the workload.
+
+. To change any details for the policy, select the down arrow on the right and change the details. 
+
+. Select *Save* to finish the change. 
+
+
+
+
+
+== Edit an existing policy 
+
+You can change the details of a policy only when the policy is not associated with a workload.
+
+.Steps 
+
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Protection*.
+
+. From the Protection page, select *Manage policies*. 
+
+. In the Manage policies page, select the *Actions* option for the policy you want to change.
+
+. From the Actions menu, select *Edit policy*. 
+
+. Change the details. 
+
+. Select *Protect* to finish the change. 
+
+== Delete a policy
+
+You can delete a protection policy that is not currently associated with any workloads. 
+
+.Steps 
+
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the menu, select *Protection*.
+
+. From the Protection page, select *Manage policies*. 
+
+. In the Manage policies page, select the *Actions* option for the policy you want to delete.
+
+. From the Actions menu, select *Delete policy*. 
+
+
+== Add a backup destination from the Dashboard recommended actions
+
+BlueXP ransomware protection can identify workloads that do not have any backups yet and also workloads that do not have any backup destinations assigned yet. 
+
+To protect those workloads, you should add a backup destination. 
+
+.Steps
+
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Review the Dashboard's Recommended actions pane. 
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
+
+. From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
+
+. In the *Settings > Backup destinations* page, select *Add*. 
++
+image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
+
+. Select the Down arrow next to each setting and enter or select values: 
+
++
+For the Provider of AWS, enter the following: 
+
+* *Provider settings*:
+** Create a new bucket or bring your own bucket that will store the backups. 
+** AWS account, region, credentials, secret key
++ 
+https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
+
+* *Encryption*: If you are creating a new S3 bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
++ 
+Data in the bucket is encrypted with AWS-managed keys by default. You can continue to use AWS-managed keys, or you can manage the encryption of your data using your own keys. 
+
+* *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+** Optionally, choose whether you'll use an AWS private endpoint (PrivateLink) that you previously configured. 
++
+If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
+
+* *Lock backups*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
++
+CAUTION: If you configure the lock backup setting now, you cannot change the setting later after the backup destination is configured. 
+
+** *Governance mode*: Specific users (with `s3:BypassGovernanceRetention` permission) can overwrite or delete protected files during the retention period. 
+** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
+
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list.png[Backup destinations page the Settings option]

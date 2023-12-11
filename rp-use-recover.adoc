@@ -70,7 +70,7 @@ TIP: You can select up to 100 files or a single folder.
 
 . Continue with one of the following procedures depending on whether you chose application, volume, or file. 
 
-//=== Restore an application workload at the application level
+//=== Recover an application workload at the application level
 
 //On the Recovery page, after you select an application to restore, continue with these steps. 
 

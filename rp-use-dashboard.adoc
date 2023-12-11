@@ -22,6 +22,8 @@ You can also use the Dashboard to review and act on protection recommendations.
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
 After discovery, the Dashboard shows you the health of workload data protection. 
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
 
 
 . From the Dashboard, you can view and do any of the following in each of the panes: 
@@ -65,19 +67,22 @@ Here is a sampling of the recommendations that the service offers.
 | Description
 | How to resolve
 
-| Review new alerts | New alerts exist. | Review the new alerts. 
-Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
+
 | Add a ransomware protection policy | The workload is currently not protected.  | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
-Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or important file share workloads against ransomware. |The Protection page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
+| Configure backup destinations | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].
 |Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Protect critical or important file share workloads against ransomware. |The Protection page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Review new alerts | New alerts exist. | Review the new alerts. 
+Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 |===
 
 .Steps
