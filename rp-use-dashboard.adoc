@@ -71,7 +71,7 @@ Here is a sampling of the recommendations that the service offers.
 | Add a ransomware protection policy | The workload is currently not protected.  | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Configure backup destinations | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
-Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+Refer to link:rp-use-settings.html[Configure protection settings].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].
 |Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rp-use-discover.html
+permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, 
 summary: During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts.     
 ---

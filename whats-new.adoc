@@ -17,14 +17,18 @@ Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
 
-//== 31 January 2024
-//This release of the BlueXP ransomware protection includes the following updates: 
+== 31 January 2024
+This preview release of BlueXP ransomware protection includes the following updates: 
 
-//* Recovery process enhancements
-//* Protection policy management features were added for this release. 
-//* Automatic backup to NetApp StorageGRID
-//* Immutability on secondary storage using DataLock features
-//* Additional features to investigate potential attacks 
+* *Recovery process*. The recovery process was enhanced. You can specify to restore all volumes, specific volumes at the volume level, or specific files or folders.
+
+* *Protection policy management*: In addition to using predefined policies, you can now create, change, and delete policies.  link:rp-use-protect.html[Learn more about managing policies].
+
+* *Immutability on secondary storage*: You can now use NetApp DataLock technology to prevent users from modifying or deleting backups. link:rp-use-protect.html[Learn more about creating protection policies]. 
+
+* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options].
+* Automatic backup to NetApp StorageGRID
+* Additional features to investigate potential attacks 
 
 == 6 October 2023 
 
