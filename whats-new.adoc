@@ -20,15 +20,19 @@ Learn what's new in BlueXP ransomware protection preview.
 == 31 January 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
 
-* *Recovery process*. The recovery process was enhanced. You can specify to restore all volumes, specific volumes at the volume level, or specific files or folders.
 
 * *Protection policy management*: In addition to using predefined policies, you can now create, change, and delete policies.  link:rp-use-protect.html[Learn more about managing policies].
 
-* *Immutability on secondary storage*: You can now use NetApp DataLock technology to prevent users from modifying or deleting backups. link:rp-use-protect.html[Learn more about creating protection policies]. 
+* *Immutability on secondary storage*: You can now use NetApp DataLock technology to prevent users from modifying or deleting backups on secondary storage. link:rp-use-protect.html[Learn more about creating protection policies]. 
 
-* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options].
-* Automatic backup to NetApp StorageGRID
-* Additional features to investigate potential attacks 
+* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. You can choose one of the following backup destinations: 
+
+** AWS
+** NetApp StorageGRID
+
+* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination in the new Settings option. link:rp-use-settings.html[Learn more about configuring Settings options].
+* *Additional features to investigate potential attacks*: You can now view the details of each incident to get additional details on the potential attack. 
+* *Recovery process*. The recovery process was enhanced. You can specify to restore all volumes, specific volumes at the volume level, or specific files or folders.
 
 == 6 October 2023 
 

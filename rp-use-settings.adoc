@@ -11,20 +11,22 @@ summary: You can configure several options in the BlueXP ransomware protection S
 :imagesdir: ./media
 
 [.lead]
-You can configure several options in the BlueXP ransomware protection Settings: 
+You can configure the backup destination in the BlueXP ransomware protection Settings: 
 
-* Add a backup destination. 
-* Set up multi-admin verification. 
-* Classify <what>? 
-
-
+//* Add a backup destination. 
+//* Set up multi-admin verification. 
+//* Classify 
 
 
-== Add a backup destination from the Dashboard recommended actions
+== Add a backup destination
 
 BlueXP ransomware protection can identify workloads that do not have any backups yet and also workloads that do not have any backup destinations assigned yet. 
 
 To protect those workloads, you should add a backup destination. 
+You can choose one of the following backup destinations: 
+
+* AWS
+* NetApp StorageGRID
 
 You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option. 
 
@@ -101,10 +103,10 @@ image:screen-settings-backup-destinations.png[Backup destinations page the Setti
 
 . Continue with the same steps as by accessing the page from the Dashboard described previously on this page. 
 
-== Add multi-admin verification 
+//== Add multi-admin verification 
 
-TBD
 
-== Classify <what?>
 
-TBD
+//== Classify 
+
+//TBD
