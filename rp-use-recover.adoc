@@ -16,9 +16,9 @@ After workloads have been marked "Ready for recovery", BlueXP ransomware protect
 
 
 
-== View workloads that are in a recovery state
+== View workloads that are ready to be restored
 
-Review the workloads that are in the "Restore needed" recovery statuses. 
+Review the workloads that are in the "Restore needed" recovery status. 
 
 
 
@@ -59,14 +59,12 @@ The process differs slightly depending on the workload type.
 . To restore, select *Restore*.
 
 . *Restore scope*: Select the type of restore you want to complete: 
-
-//** Application consistent
++
 ** All volumes 
 ** Volume level
 ** File level: You can specify a folder or single files to restore. 
 +
 TIP: You can select up to 100 files or a single folder. 
-
 
 . Continue with one of the following procedures depending on whether you chose application, volume, or file. 
 
