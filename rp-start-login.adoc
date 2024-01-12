@@ -22,7 +22,7 @@ To log in to BlueXP, you can use your NetApp Support Site credentials or you can
 The NetApp BlueXP login page appears.
 
 . Log in to BlueXP. 
-. From the BlueXP left navigation, select *Protect* > *Ransomware protection*. 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
 If this is your first time logging in to this service, the landing page appears. 
 //+
