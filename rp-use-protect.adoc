@@ -83,17 +83,18 @@ BlueXP ransomware protection includes the following predefined policies that are
 | Total Max # of Snapshot copies
 
 
-.5+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+.4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
  | Daily  | Every 1 day | 14 | 14 | 309 
  | Weekly | Every 1 week | 35 | 5 | 309 
  | Monthly | Every 30 days | 60 | 2 | 309 
-.5+| *High workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
+
+.4+| *High workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
  | Daily | Every 1 day | 14 | 14 | 165 
  | Weekly | Every 1 week | 35 | 5 | 165 
  | Monthly | Every 30 days | 60 | 2 | 165 
 
 
-.5+| *Standard workload policy* | Quarter hourly | Every 60 min | 3| 72 | 93 
+.4+| *Standard workload policy* | Quarter hourly | Every 60 min | 3| 72 | 93 
  | Daily | Every 1 day | 14 | 14 | 93  
  | Weekly | Every 1 week | 35 | 5  | 93 
  | Monthly | Every 30 days | 60 | 2 | 93 
