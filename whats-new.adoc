@@ -17,7 +17,7 @@ Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
 
-== 31 January 2024
+== 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
 
 
@@ -27,10 +27,9 @@ This preview release of BlueXP ransomware protection includes the following upda
 
 * *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
 
-
 * *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination in the new Settings option. link:rp-use-settings.html[Learn more about configuring Settings options].
-* *Additional features to investigate potential attacks*: You can now view the details of each incident to get additional details on the potential attack. 
-* *Recovery process*. The recovery process was enhanced. You can specify to restore all volumes, specific volumes at the volume level, or specific files or folders.
+* *Additional features to investigate potential attacks*: You can now view the details of each incident to get additional details on the potential attack. link:rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
+* *Recovery process*. The recovery process was enhanced. You can restore all volumes, specific volumes at the volume level, or specific files or folders. link:rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
 
 == 6 October 2023 
 
