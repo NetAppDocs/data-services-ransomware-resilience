@@ -16,12 +16,25 @@ To use BlueXP ransomware protection, perform a few steps to set it up.
 
 Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
-== Set up AWS
+== Set up the backup target 
+
+Configure your backup target: 
+
+* Amazon Web Services 
+* NetApp StorageGRID
+
+=== Set up AWS as a backup target
  
 * Set up an account in AWS.
 * Configure permissions in AWS.  
 
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
+
+For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+
+
+=== Set up StorageGRID as a backup target
+Refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details. 
 
 
 == Set up BlueXP
@@ -31,18 +44,15 @@ Review https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checkli
 
 
 === Create a Connector in BlueXP
-You need to sign up for the preview or reach out to your NetApp Sales Rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the ransomware protection service. 
+You need to reach out to your NetApp Sales Rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the ransomware protection service. 
 
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
-
-All source and target clusters must be on the same BlueXP Connector. 
 
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
 
 === Set up the working environment in BlueXP
-Set up the BlueXP working environment with NetApp NAS on-premises storage. 
+Set up the BlueXP working environment. 
 
-For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 === Access BlueXP ransomware protection 
 

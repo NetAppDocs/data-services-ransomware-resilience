@@ -15,7 +15,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 [.lead]
 Ransomware attacks can block access to your systems and data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data between one day and several weeks. 
 
-BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage. 
+BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage or NetApp StorageGRID. 
 
 
 == What you can do with BlueXP ransomware protection 
@@ -111,22 +111,28 @@ image:diagram-rp-architecture-preview2.png[Diagram showing BlueXP ransomware pro
 //For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
 
-== Supported working environments and data sources
+== Supported backup targets, working environments, and data sources
 
-Use BlueXP ransomware protection preview to see how resilient your data is to a cyber attack on the following types of working environments and data sources:
+Use BlueXP ransomware protection preview to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and data sources:
 
-*Working environments*
-
-For the preview version, BlueXP ransomware protection supports the following working environments: 
+*Backup targets supported*
 
 * Amazon Web Services 
+* NetApp StorageGRID
 
+*Supported working environments* 
+
+* On-premises ONTAP NAS
+* ONTAP Select 
 
 *Data sources*
+
+For the preview version, the service protects the following application-based workloads:
 
 * NetApp file shares
 * VMware datastores
 * Databases (For the preview version, Oracle and MySQL)
+
 
 == Terms that might help you with ransomware protection
 
