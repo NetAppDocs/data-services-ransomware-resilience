@@ -16,32 +16,30 @@ To use BlueXP ransomware protection, perform a few steps to set it up.
 
 Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
-== Set up the backup target 
+== Prepare the backup target 
 
 Configure your backup target: 
 
 * Amazon Web Services 
 * NetApp StorageGRID
 
-=== Set up AWS as a backup target
+TIP: After you configure settings in the backup target itself, you will later configure that backup target in BlueXP ransomware protection. 
+
+=== Prepare AWS to become a backup target
  
 * Set up an account in AWS.
-* Configure permissions in AWS.  
-
-You can use the Settings option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options]. 
-
-Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for AWS details. 
+* Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions^] in AWS. 
+ 
 
 For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 
-=== Set up StorageGRID as a backup target
-Refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details. 
+=== Prepare StorageGRID as a backup target
+If you want to use StorageGRID as your backup target, refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details. 
 
-You can use the Settings option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
 
 == Set up BlueXP
-The next step is to set up ransomware protection in BlueXP. 
+The next step is to set up BlueXP and the BlueXP ransomware protection service. 
 
 Review https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard BlueXP requirements^].
 
@@ -52,9 +50,6 @@ You need to reach out to your NetApp Sales Rep to try out this service. Then, wh
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
 
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
-
-=== Set up the working environment in BlueXP
-Set up the BlueXP working environment. 
 
 
 === Access BlueXP ransomware protection 
@@ -85,23 +80,10 @@ Otherwise, the BlueXP ransomware protection Dashboard appears.
 * If you are a BlueXP user with an an existing Connector, when you select "*Ransomware protection*", a message appears about signing up. 
 * If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. 
 
+=== Configure backup targets in BlueXP ransomware protection
 
+Use the BlueXP ransomware protection *Settings* option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
 
-=== Discover workloads in BlueXP
-
-To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts. 
-
-NOTE: For the preview version, BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
-
-The service assesses the existing protection level including the current backup protection, Snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
-
-.Steps
-
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
-
-. Select *Discover workloads* from the initial landing page. 
-+
-The service discovers workload data and shows the health of data protection in the Dashboard.
 
 
 //== Set up email notifications 
