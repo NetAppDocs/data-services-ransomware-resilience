@@ -28,7 +28,9 @@ Configure your backup target:
 * Set up an account in AWS.
 * Configure permissions in AWS.  
 
-Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
+You can use the Settings option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options]. 
+
+Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for AWS details. 
 
 For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
@@ -36,6 +38,7 @@ For details about managing your AWS storage in BlueXP, refer to https://docs.net
 === Set up StorageGRID as a backup target
 Refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details. 
 
+You can use the Settings option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
 
 == Set up BlueXP
 The next step is to set up ransomware protection in BlueXP. 
