@@ -30,7 +30,7 @@ You can choose one of the following backup destinations:
 
 You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option. 
 
-=== Add a backup destination from the Dashboard recommended actions
+=== Add a backup destination from the Dashboard's recommended actions
 
 
 .Steps
@@ -43,6 +43,12 @@ You can add a backup destination based on a recommended action from the Dashboar
 image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
+
+. Continue with instructions on the Settings tab. 
+
+== Add a backup destination from the Settings tab
+
+You can access the Settings tab from the Dashboard or from the BlueXP ransomware protection menu. 
 
 . In the *Settings > Backup destinations* page, select *Add*. 
 +
@@ -85,7 +91,7 @@ The new backup destination is added to the list of backup destinations.
 image:screen-settings-backup-destinations-list.png[Backup destinations page the Settings option]
 
 
-=== Add a backup destination from the Settings option
+=== Edit a backup destination from the Settings option
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
@@ -97,11 +103,9 @@ image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings opt
 +
 image:screen-settings.png[Settings page]
 
-. In the *Settings > Backup destinations* page, select *Add*. 
-+
-image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
 
-. Continue with the same steps as by accessing the page from the Dashboard described previously on this page. 
+
+
 
 //== Add multi-admin verification 
 

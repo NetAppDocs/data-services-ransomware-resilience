@@ -18,12 +18,12 @@ Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensu
 
 == Prepare the backup target 
 
-Configure your backup target: 
+Configure a backup target: 
 
 * Amazon Web Services 
 * NetApp StorageGRID
 
-TIP: After you configure settings in the backup target itself, you will later configure that backup target in BlueXP ransomware protection. 
+TIP: After you configure options in the backup target itself, you will later configure it as a backup target in BlueXP ransomware protection. 
 
 === Prepare AWS to become a backup target
  

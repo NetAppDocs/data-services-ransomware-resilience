@@ -27,6 +27,8 @@ sidebar:
           url: /rp-start-login.html
         - title: Discover workloads
           url: /rp-start-discover.html  
+        - title: Configure backup targets in settings
+          url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html
     - title: Use BlueXP ransomware protection
