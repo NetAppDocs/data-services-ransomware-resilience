@@ -27,7 +27,7 @@ After you configure options in the backup destination itself, you will later con
 
 === Prepare StorageGRID to become a backup destination
 
-If you want to use StorageGRID as your backup destination, refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details. 
+If you want to use StorageGRID as your backup destination, refer to https://docs.netapp.com/us-en/storagegrid-117/index.html[StorageGRID documentation^] for details about StorageGRID. 
 
 
 === Prepare AWS to become a backup destination
