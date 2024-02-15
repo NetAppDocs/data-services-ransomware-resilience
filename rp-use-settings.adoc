@@ -25,8 +25,9 @@ BlueXP ransomware protection can identify workloads that do not have any backups
 To protect those workloads, you should add a backup destination. 
 You can choose one of the following backup destinations: 
 
-* AWS
 * NetApp StorageGRID
+* Amazon Web Services (AWS)
+
 
 
 You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option on the menu. 
@@ -57,23 +58,57 @@ You can easily access the Settings tab from the menu.
 
 
 
-== Add AWS as a backup destination 
+== Add StorageGRID as a backup destination
+To set up NetApp StorageGRID as a backup destination, enter the following information. 
+
+. In the *Settings > Backup destinations* page, select *Add*. 
+//+
+//image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
+
+. Provider: *StorageGRID*.
+. Select the Down arrow next to each setting and enter or select values: 
+
+* *Provider settings*:
+** Create a new bucket or bring your own bucket that will store the backups. 
+** StorageGRID gateway node fully qualified domain name, port, StorageGRID access key and secret key credentials.
 
 
-For the provider of AWS, enter the following information. 
+* *Networking*: Choose the IPspace. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+
+* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
++
+CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
+
+** *Governance mode*: Specific users (with `s3:BypassGovernanceRetention` permission) can overwrite or delete protected files during the retention period. 
+** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
+
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list-storagegrid.png[Backup destinations page the Settings option]
+
+== Add Amazon Web Services as a backup destination 
+
+
+To set up AWS as a backup destination, enter the following information. 
 
 For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 
 . In the *Settings > Backup destinations* page, select *Add*. 
-+
-image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
+//+
+//image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
 
+. Provider: *Amazon Web Services*.
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
 ** Create a new bucket or bring your own bucket that will store the backups. 
-** AWS account, region, credentials, secret key
+** AWS account, region, access key and secret key for AWS credentials
 + 
 https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
 
@@ -87,9 +122,9 @@ Data in the bucket is encrypted with AWS-managed keys by default. You can contin
 +
 If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
 
-* *Lock backups*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
 +
-CAUTION: If you configure the lock backup setting now, you cannot change the setting later after the backup destination is configured. 
+CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 
 ** *Governance mode*: Specific users (with `s3:BypassGovernanceRetention` permission) can overwrite or delete protected files during the retention period. 
 ** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
@@ -100,20 +135,20 @@ CAUTION: If you configure the lock backup setting now, you cannot change the set
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list-aws.png[Backup destinations page the Settings option]
 
 
 === Edit a backup destination from the Settings option
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the Dashboard, select the Actions option on the right and select *Edit settings*. 
+. From the Dashboard, select the Actions option on the upper right and select *Edit settings*. 
 +
 image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings option]
 
 . From the Settings page, select *Backup destinations* and select *Edit*.
-+
-image:screen-settings.png[Settings page]
+//+
+//image:screen-settings.png[Settings page]
 
 
 
