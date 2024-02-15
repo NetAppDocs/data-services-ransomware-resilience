@@ -17,6 +17,7 @@ Ransomware attacks can block access to your systems and data and attackers can a
 
 BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services (AWS) cloud storage or NetApp StorageGRID. 
 
+NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
 == What you can do with BlueXP ransomware protection 
 
