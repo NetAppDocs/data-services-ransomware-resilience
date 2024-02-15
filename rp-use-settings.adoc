@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
-summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection Settings option.
+summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection service.
 ---
 
 = Configure BlueXP ransomware protection settings
@@ -11,7 +11,9 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media
 
 [.lead]
-You can configure a backup destination by accessing the BlueXP ransomware protection *Settings* option.
+You can configure a backup destination by reviewing recommendations on the Dashboard. 
+
+// or by accessing the BlueXP ransomware protection *Settings* option.
 
 //* Add a backup destination. 
 //* Set up multi-admin verification. 
@@ -30,9 +32,11 @@ You can choose one of the following backup destinations:
 
 
 
-You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option on the menu. 
+You can add a backup destination based on a recommended action from the Dashboard.
 
-=== Access Backup Destination in Settings from the Dashboard's recommended actions
+// or from accessing the Settings option on the menu. 
+
+=== Access Backup Destination options from the Dashboard's recommended actions
 
 The Dashboard provides many recommendations. One recommendation might be to configure a backup destination. 
 
@@ -47,14 +51,14 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Das
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
 
-. Continue with instructions on the Settings tab. 
+. Continue with instructions either for the backup provider. 
 
-=== Access the Settings tab from the menu
+//=== Access the Settings tab from the menu
 
-You can easily access the Settings tab from the menu. 
+//You can easily access the Settings tab from the menu. 
 
-. From the BlueXP ransomware protection menu, select *Settings*.
-. To add a backup destination, select *Add*.  
+//. From the BlueXP ransomware protection menu, select *Settings*.
+//. To add a backup destination, select *Add*.  
 
 
 
@@ -138,15 +142,15 @@ The new backup destination is added to the list of backup destinations.
 image:screen-settings-backup-destinations-list-aws.png[Backup destinations page the Settings option]
 
 
-=== Edit a backup destination from the Settings option
+//=== Edit a backup destination from the Settings option
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+//. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the Dashboard, select the Actions option on the upper right and select *Edit settings*. 
-+
-image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings option]
+//. From the Dashboard, select the Actions option on the upper right and select *Edit settings*. 
+//+
+//image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings option]
 
-. From the Settings page, select *Backup destinations* and select *Edit*.
+//. From the Settings page, select *Backup destinations* and select *Edit*.
 //+
 //image:screen-settings.png[Settings page]
 
@@ -159,5 +163,3 @@ image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings opt
 
 
 //== Classify 
-
-//TBD

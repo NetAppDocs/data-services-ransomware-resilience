@@ -23,7 +23,7 @@ Prepare one of the following backup destinations:
 * NetApp StorageGRID
 * Amazon Web Services 
 
-After you configure options in the backup destination itself, you will later configure it as a backup destination in the BlueXP ransomware protection Settings option. 
+After you configure options in the backup destination itself, you will later configure it as a backup destination in the BlueXP ransomware protection service. 
 
 === Prepare StorageGRID to become a backup destination
 
@@ -84,7 +84,7 @@ Otherwise, the BlueXP ransomware protection Dashboard appears.
 
 === Configure backup destinations in BlueXP ransomware protection
 
-Use the BlueXP ransomware protection *Settings* option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
+Use the BlueXP ransomware protection backup destinations option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
 
 
 

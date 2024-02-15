@@ -25,9 +25,9 @@ This preview release of BlueXP ransomware protection includes the following upda
 
 * *Immutability on secondary storage (DataLock)*: You can now use NetApp DataLock technology to prevent users from modifying or deleting backups on secondary storage. link:rp-use-protect.html[Learn more about creating protection policies]. 
 
-* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
 
-* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination in the new Settings option. link:rp-use-settings.html[Learn more about configuring Settings options].
+* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination. link:rp-use-settings.html[Learn more about configuring backup destinations].
 * *Additional features to investigate potential attacks*: You can now view the details of each incident to get additional details on the potential attack. link:rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
 * *Recovery process*. The recovery process was enhanced. You can restore all volumes, specific volumes at the volume level, or specific files or folders. link:rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
 
