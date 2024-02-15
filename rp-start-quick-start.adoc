@@ -27,8 +27,9 @@ link:rp-start-prerequisites.html[Ensure your environment meets these requirement
 
 
 [role="quick-margin-list"]
-* link:rp-start-setup.html[Set up AWS or StorageGRID].
+* link:rp-start-setup.html[Prepare NetApp StorageGRID or Amazon Web Services as a backup destination].
 * link:rp-start-setup.html[Configure a Connector in BlueXP].
+* link:rp-start-setup.html[Configure backup destinations].
 * link:rp-start-discover.html[Discover workloads in BlueXP].
 
 

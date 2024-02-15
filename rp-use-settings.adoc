@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: rp-use-settings.html
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings
-summary: You can configure several options in the BlueXP ransomware protection Settings.
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
+summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection Settings option.
 ---
 
 = Configure BlueXP ransomware protection settings
@@ -11,7 +11,7 @@ summary: You can configure several options in the BlueXP ransomware protection S
 :imagesdir: ./media
 
 [.lead]
-You can configure the backup destination in the BlueXP ransomware protection Settings: 
+You can configure a backup destination by accessing the BlueXP ransomware protection *Settings* option.
 
 //* Add a backup destination. 
 //* Set up multi-admin verification. 
@@ -28,10 +28,12 @@ You can choose one of the following backup destinations:
 * AWS
 * NetApp StorageGRID
 
-You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option. 
 
-=== Add a backup destination from the Dashboard's recommended actions
+You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option on the menu. 
 
+=== Access Backup Destination in Settings from the Dashboard's recommended actions
+
+The Dashboard provides many recommendations. One recommendation might be to configure a backup destination. 
 
 .Steps
 
@@ -46,18 +48,28 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Das
 
 . Continue with instructions on the Settings tab. 
 
-== Add a backup destination from the Settings tab
+=== Access the Settings tab from the menu
 
-You can access the Settings tab from the Dashboard or from the BlueXP ransomware protection menu. 
+You can easily access the Settings tab from the menu. 
+
+. From the BlueXP ransomware protection menu, select *Settings*.
+. To add a backup destination, select *Add*.  
+
+
+
+== Add AWS as a backup destination 
+
+
+For the provider of AWS, enter the following information. 
+
+For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+
 
 . In the *Settings > Backup destinations* page, select *Add*. 
 +
 image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
 
 . Select the Down arrow next to each setting and enter or select values: 
-
-+
-For the Provider of AWS, enter the following: 
 
 * *Provider settings*:
 ** Create a new bucket or bring your own bucket that will store the backups. 

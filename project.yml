@@ -25,15 +25,15 @@ sidebar:
           url: /rp-start-setup.html
         - title: Access BlueXP ransomware protection
           url: /rp-start-login.html
+        - title: Configure backup destinations in Settings
+          url: /rp-use-settings.html 
         - title: Discover workloads
           url: /rp-start-discover.html  
-        - title: Configure backup targets in settings
-          url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html
     - title: Use BlueXP ransomware protection
       entries:
-        - title: Use BlueXP ransomware protection 
+        - title: Use BlueXP ransomware protection overview
           url: /rp-use-overview.html 
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html
