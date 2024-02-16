@@ -66,10 +66,11 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Das
 To set up NetApp StorageGRID as a backup destination, enter the following information. 
 
 . In the *Settings > Backup destinations* page, select *Add*. 
-//+
-//image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
+. Enter a name for the backup destination. 
++
+image:screen-settings-backup-destination-storagegrid.png[Backup destinations page]
 
-. Provider: *StorageGRID*.
+. Select *StorageGRID*.
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
@@ -104,10 +105,10 @@ For details about managing your AWS storage in BlueXP, refer to https://docs.net
 
 
 . In the *Settings > Backup destinations* page, select *Add*. 
-//+
-//image:screen-settings-backup-destinations.png[Backup destinations page the Settings option]
-
-. Provider: *Amazon Web Services*.
+. Enter a name for the backup destination. 
++
+image:screen-settings-backup-destination-storagegrid.png[Backup destinations page]
+. Select *Amazon Web Services*.
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
@@ -130,7 +131,7 @@ If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS
 +
 CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 
-** *Governance mode*: Specific users (with `s3:BypassGovernanceRetention` permission) can overwrite or delete protected files during the retention period. 
+** *Governance mode*: Specific users (with s3:BypassGovernanceRetention` permission) can overwrite or delete protected files during the retention period. 
 ** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
 
 . Select *Add*.

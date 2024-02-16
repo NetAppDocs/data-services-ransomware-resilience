@@ -85,11 +85,11 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 //=== Respond from data incidents on the Dashboard
 
 .Steps
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. In the Dashboard, review the Workload data incidents pane.
+. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
+. Select *View all* under one of the statues. 
 
-. Review all incidents on each volume for each alert. 
+. Click on an alert to review all incidents on each volume for each alert. 
 . To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
 
 . Review the alerts on the Alerts page. 
@@ -108,9 +108,8 @@ After you have mitigated the attack and are ready to recover workloads, you shou
  
 
 .Steps
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. From the menu, select *Alerts*. 
+. From the BlueXP ransomware protection menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -140,9 +139,8 @@ If you dismiss a workload, all Snapshot copies taken automatically in response t
 CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
 .Steps
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. From the menu, select *Alerts*. 
+. From the BlueXP ransomware protection menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -156,8 +154,8 @@ image:screen-alerts-incidents.png[Alert incidents page]
 +
 * If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
 * If you selected multiple incidents, select the *Edit status* button above the table. 
-+
-image:screen-alerts-status-edit.png[Alert Edit Status page]
+//+
+//image:screen-alerts-status-edit.png[Alert Edit Status page]
 
 . From the Edit status box, select the *“Dismissed”* status. 
 +

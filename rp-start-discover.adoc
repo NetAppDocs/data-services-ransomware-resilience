@@ -8,7 +8,7 @@ summary: During discovery, BlueXP ransomware protection analyzes all volumes and
 = Discover workloads in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 [.lead]
 To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts. 
@@ -24,7 +24,8 @@ The service assesses the existing protection level including the current backup 
 . Select *Discover workloads* from the initial landing page. 
 +
 The service discovers workload data and shows the health of data protection in the Dashboard.
-
++
+image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
 //== Set up email notifications 
 

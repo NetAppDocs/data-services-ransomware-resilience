@@ -29,6 +29,9 @@ If this is your first time logging in to this service, the landing page appears.
 //image:draas-landing.png[Landing page screenshot for BlueXP ransomware protection]
 + 
 Otherwise, the BlueXP ransomware protection Dashboard appears.
++
+image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+
 . Start using the service.
 +
 * If you don't have a BlueXP Connector or it's not the one for this preview, you might need to contact NetApp Support or follow messages to sign up for this preview. 

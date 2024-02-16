@@ -23,15 +23,17 @@ Review the workloads that are in the "Restore needed" recovery status.
 
 
 .Steps 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
 . Do one of the following: 
 +
-* From the Dashboard, review the Workload data incidents pane and select *View all*. 
+* From the Dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
+
 * From the menu, select *Recovery*.
 
 
-. Review the workload information in the *Recovery* page.  
+. Review the workload information in the *Recovery* page. 
+
+image:screen-recovery.png[Recovery page]
 
 == Recover a workload 
 
@@ -47,9 +49,8 @@ The process differs slightly depending on the workload type.
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the menu, select *Recovery*.
+. From the BlueXP ransomware protection menu, select *Recovery*.
 
 . Review the workload information in the *Recovery* page.  
 
@@ -61,8 +62,8 @@ The process differs slightly depending on the workload type.
 . *Restore scope*: Select the type of restore you want to complete: 
 +
 ** All volumes 
-** Volume level
-** File level: You can specify a folder or single files to restore. 
+** By volume
+** By file: You can specify a folder or single files to restore. 
 +
 TIP: You can select up to 100 files or a single folder. 
 
@@ -95,9 +96,10 @@ TIP: You can select up to 100 files or a single folder.
 
 === Restore an application workload at the volume level
 
-On the Recovery page, after you select an application to restore, continue with these steps. 
 
 . On the Restore page, in the Restore scope, select *By volume*. 
++
+image:screen-recovery-byvolume.png[Restore by volume page]
 
 . On the list of volumes, select the volume you want to restore. 
 
@@ -116,6 +118,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 +
 TIP: The new volume name appears as original volume name + backup name + backup date.
 
+. Select *Save*.
 . Select *Next*.
 . Review your selections. 
 . Select *Restore*. 
@@ -124,7 +127,6 @@ TIP: The new volume name appears as original volume name + backup name + backup 
 
 === Restore an application workload at the file level
 
-On the Recovery page, after you select an application to restore, continue with these steps. 
 
 . On the Restore page, in the Restore scope, select *By file*. 
 
@@ -151,6 +153,7 @@ TIP: While the original files or directory will be overwritten by the restored d
 TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 .. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
 
+. Select *Save*. 
 . Select *Next*.
 . Review your selections. 
 . Select *Restore*. 
@@ -161,10 +164,11 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 === Restore a file share or datastore at the volume or file level
 
 
-On the Recovery page, after you selected a file share or datastore to restore, continue with these steps. 
 
-. On the Restore page, in the Restore scope, select *By volume* or *By file*. 
+. After selecting a file share or datastore to restore, on the Restore page, in the Restore scope, select *By volume* or *By file*. 
 
++
+image:screen-recovery-fileshare.png[Recovery page showing file share recovery]
 . On the list of volumes, select the volume you want to restore. 
 
 . *Source*: Select the down arrow next to Source to see details: 
@@ -185,6 +189,7 @@ TIP: While the original files or directory will be overwritten by the restored d
 +
 TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 
+. Select *Save*. 
 . Review your selections. 
 . Select *Restore*. 
 
@@ -197,25 +202,27 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 On the Recovery page after you selected a VM to restore, continue with these steps. 
 
 . *Source*: Select the down arrow next to Source to see details: 
-
-.. Select the restore point that you want to use to restore the data. 
 +
-TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+image:screen-recovery-vm.png[Recovery page showing a VM being restored]
+. Select the restore point that you want to use to restore the data. 
+//+
+//TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
 
 
-. *Destination*: Select the down arrow next to Destination to see details.
+. *Destination*: To original location. 
 
-.. Choose where to restore the data: original source location or an alternate location that you can specify. 
-+ 
-TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
-
-.. Select the working environment. 
-.. Select the Storage VM. 
-.. Optionally, enter the path. 
-+
-TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory. 
-
+. Select *Next*. 
 . Review your selections. 
 . Select *Restore*. 
 
 . From the menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+//Select the down arrow next to Destination to see details.
+//.. Choose where to restore the data: original source location or an alternate location that you can specify. 
+//+ 
+//TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+//.. Select the working environment. 
+//.. Select the Storage VM. 
+//.. Optionally, enter the path. 
+//+
+//TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory. 
