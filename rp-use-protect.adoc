@@ -107,9 +107,8 @@ BlueXP ransomware protection includes the following predefined policies that are
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. Do one of the following: 
+. From BlueXP ransomware protection, do one of the following: 
 +
 * From the Dashboard Data Protection pane, select *View all*. 
 * From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
@@ -179,9 +178,7 @@ This option uses NetApp DataLock technology, which locks backups on secondary st
 .Steps to create a policy during protection policy assignment
 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
-
-. From the menu, select *Protection*.
+. From the BlueXP ransomware protection menu, select *Protection*.
 +
 image:screen-protection-Protect-button.png[Protection page]
 
