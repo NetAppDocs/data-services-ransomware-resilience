@@ -15,7 +15,7 @@ If BlueXP ransomware protection detects a possible attack, an alert appears on t
 
 //If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a Snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-You can dismiss false positives or decide to recover your data immediately.  
+//You can dismiss false positives or decide to recover your data immediately.  
 
 //* If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
 
@@ -31,16 +31,16 @@ The service provides information called _evidence_ about what caused the alert t
 
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
-The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
+//The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
 
-An alert can have one of the following statuses: 
+//An alert can have one of the following statuses: 
 
-* *New*: All incidents are marked "new" when they are first identified. You can also mark an incident as "new." 
-* *In progress*: If you are actively working on mitigating the alert, you might want to change the status to "In progress" to let your team know. 
-* *Completed*:If you have finished mitigating the alert, you might want to change the status to "Completed".
-* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed." 
-+
-CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
+//* *New*: All incidents are marked "new" when they are first identified. You can also mark an incident as "new." 
+//* *In progress*: If you are actively working on mitigating the alert, you might want to change the status to "In progress" to let your team know. 
+//* *Completed*: If you have finished mitigating the alert, you might want to change the status to "Completed".
+//* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed." 
+//+
+//CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
 
 == View alerts
 
@@ -128,39 +128,39 @@ image:screen-alerts-incidents.png[Alert incidents page]
 
 After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab.  
 
-== Dismiss incidents that are not potential attacks
+//== Dismiss incidents that are not potential attacks
 
-After you review incidents, you need to determine whether the incidents are potential attacks. If not, they can be dismissed.
+//After you review incidents, you need to determine whether the incidents are potential attacks. If not, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately.  If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
+//You can dismiss false positives or decide to recover your data immediately.  If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
 
-If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+//If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 
-CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
+//CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
-.Steps
+//.Steps
 
-. From the BlueXP ransomware protection menu, select *Alerts*. 
-+
-image:screen-alerts.png[Alerts page]
+//. From the BlueXP ransomware protection menu, select *Alerts*. 
+//+
+//image:screen-alerts.png[Alerts page]
 
-. In the Alerts page, select the alert.
-+
-image:screen-alerts-incidents.png[Alert incidents page]
+//. In the Alerts page, select the alert.
+//+
+//image:screen-alerts-incidents.png[Alert incidents page]
 
-. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
+//. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
-. If you determine that the incident is not a threat, dismiss it as a false positive:  
-+
-* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
-* If you selected multiple incidents, select the *Edit status* button above the table. 
+//. If you determine that the incident is not a threat, dismiss it as a false positive:  
+//+
+//* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
+//* If you selected multiple incidents, select the *Edit status* button above the table. 
 //+
 //image:screen-alerts-status-edit.png[Alert Edit Status page]
 
-. From the Edit status box, select the *“Dismissed”* status. 
-+
-Additional information about the workload and which Snapshot copies will be deleted appears.
+//. From the Edit status box, select the *“Dismissed”* status. 
+//+
+//Additional information about the workload and which Snapshot copies will be deleted appears.
 
-. Select *Save*.
-+
-The status on the incident or incidents changes to “Dismissed.” 
+//. Select *Save*.
+//+
+//The status on the incident or incidents changes to “Dismissed.” 
