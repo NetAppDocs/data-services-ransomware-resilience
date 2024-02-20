@@ -58,7 +58,7 @@ NOTE: If you have multiple BlueXP Connectors, the service will scan data across 
 
 You use NetApp BlueXP to log in to the BlueXP ransomware protection service. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-For details, refer to link:rp-start-login.html[Access BlueXP ransomware protection]
+For details, refer to link:rp-start-login.html[Access BlueXP ransomware protection].
 
 
 === Configure backup destinations in BlueXP ransomware protection
