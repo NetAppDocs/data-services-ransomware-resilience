@@ -56,35 +56,14 @@ NOTE: If you have multiple BlueXP Connectors, the service will scan data across 
 
 === Access BlueXP ransomware protection 
 
-You use NetApp BlueXP to log in to the BlueXP ransomware protection service. 
+You use NetApp BlueXP to log in to the BlueXP ransomware protection service. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-To log in to BlueXP, you can use your NetApp Support Site credentials or you can sign up for a NetApp cloud login using your email and a password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
+For details, refer to link:rp-start-login.html[Access BlueXP ransomware protection]
 
-.Steps
-
-. Open a web browser and go to the https://console.bluexp.netapp.com/[BlueXP console^].
-+ 
-The NetApp BlueXP login page appears.
-
-. Log in to BlueXP. 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
-+
-If this is your first time logging in to this service, the landing page appears. 
-//+
-//image:draas-landing.png[Landing page screenshot for BlueXP ransomware protection]
-+ 
-Otherwise, the BlueXP ransomware protection Dashboard appears.
-. Start using the service.
-+
-* If you don't have a BlueXP Connector or it's not the one for this preview, you might need to contact NetApp Support or follow messages to sign up for this preview. 
-
-* If you are new to BlueXP and haven't used any Connector, when you select "*Ransomware protection*", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your request. 
-* If you are a BlueXP user with an an existing Connector, when you select "*Ransomware protection*", a message appears about signing up. 
-* If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. 
 
 === Configure backup destinations in BlueXP ransomware protection
 
-Use the BlueXP ransomware protection backup destinations option to configure backup targets. For details, refer to link:rp-use-settings.html[Configure settings options].
+Use the BlueXP ransomware protection backup destinations option to configure backup destinations. For details, refer to link:rp-use-settings.html[Configure settings options].
 
 
 
