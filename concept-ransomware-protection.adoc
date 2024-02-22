@@ -42,8 +42,9 @@ image:diagram-rp-features-phases2.png[Diagram showing BlueXP ransomware protecti
 
 BlueXP ransomware protection offers the following benefits: 
 
-* Discovers workloads and datasets, classifies them, and ranks their relative importance.
+* Discovers workloads and datasets, analyzes the priority based on usage index, and ranks their relative importance.
 * Evaluates your ransomware protection posture and displays it in an easy-to-understand dashboard.
+* Provides recommendations on next steps based on discovery and protection posture analysis. 
 * Applies AI/ML-driven data protection recommendations with one-click access.
 * Protects data in top application-based workloads, such as MySQL, Oracle, VMware datastores and file-shares. 
 * Detects ransomware attacks on data in real time on primary storage using AI technology.
@@ -75,7 +76,7 @@ The BlueXP ransomware protection preview requires the following licenses:
 
 At a high-level, BlueXP ransomware protection works like this.
 
-image:diagram-rp-architecture-preview2.png[Diagram showing BlueXP ransomware protection architecture]
+image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware protection architecture]
 
 
 [cols=2*,options="header",cols="15,65a",width="100%"]
@@ -106,7 +107,7 @@ image:diagram-rp-architecture-preview2.png[Diagram showing BlueXP ransomware pro
 
 |*RECOVER* | //* Verifies that backup data on secondary storage is clean and scans for known ransomware signatures in the data.
 * Determines the best Snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Protection technologies and services. 
-* Orchestrates the recovery of VMs, crash-consistent volumes, and files associated with a workload.
+* Orchestrates the recovery of workloads including VMs, file shares, and databases with application consistency. 
 |===
 
 //For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
