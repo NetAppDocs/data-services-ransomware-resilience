@@ -24,8 +24,7 @@ You can configure a backup destination by reviewing recommendations on the Dashb
 
 BlueXP ransomware protection can identify workloads that do not have any backups yet and also workloads that do not have any backup destinations assigned yet. 
 
-To protect those workloads, you should add a backup destination. 
-You can choose one of the following backup destinations: 
+To protect those workloads, you should add a backup destination. You can choose one of the following backup destinations: 
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
@@ -112,7 +111,7 @@ image:screen-settings-backup-destination-storagegrid.png[Backup destinations pag
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
-** Create a new bucket or bring your own bucket that will store the backups. 
+** Create a new bucket, select an existing bucket if one already exists in BlueXP, or bring your own bucket that will store the backups. 
 ** AWS account, region, access key and secret key for AWS credentials
 + 
 https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 

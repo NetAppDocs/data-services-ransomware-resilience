@@ -96,10 +96,9 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 +
 image:screen-alerts.png[Alerts page]
 
-. Continue with one of the following: 
+. Continue with <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 
-* <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-* <<Dismiss incidents that are not potential attacks>>.
+//* <<Dismiss incidents that are not potential attacks>>.
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 

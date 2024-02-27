@@ -38,4 +38,4 @@ image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
 * If you are new to BlueXP and haven't used any Connector, when you select "*Ransomware protection*", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your evaluation request. 
 * If you are a BlueXP user with an an existing Connector, when you select "*Ransomware protection*", a message appears about signing up. 
-* If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. 
+* If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. If you haven't done so already, you should select the *Discover workloads* option. 
