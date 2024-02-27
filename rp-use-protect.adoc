@@ -141,16 +141,16 @@ You can create a policy when you are managing them or during the process of assi
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 +
-image:screen-protection.png[Protection page]
+image:screen-protection2.png[Protection page]
 
 . From the Protection page, select *Manage policies*. 
 +
-image:screen-protection-policy-manage.png[Manage policies page]
+image:screen-protection-policy-manage2.png[Manage policies page]
 
 
 . From the Manage policies page, select *Add*. 
 +
-image:screen-protection-policy-add.png[Add policy page]
+image:screen-protection-policy-add2.png[Add policy page]
 
 . Enter a new policy name, or enter an existing policy name to copy it. If you enter an existing policy name, choose which policy to copy.
 +
@@ -180,14 +180,14 @@ This option uses NetApp DataLock technology, which locks backups on secondary st
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 +
-image:screen-protection-Protect-button.png[Protection page]
+image:screen-protection2.png[Protection page]
 
 . From the Protection page, select *Protect*. 
 
 
 . From the Protect page, select *Add*. 
 +
-image:screen-protection-policy-add.png[Add policy page]
+image:screen-protection-policy-add2.png[Add policy page]
 
 . Complete the process, which is the same as creating a policy from the Manage policies page. 
 

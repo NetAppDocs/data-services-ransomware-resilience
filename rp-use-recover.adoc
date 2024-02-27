@@ -32,7 +32,7 @@ Review the workloads that are in the "Restore needed" recovery status.
 
 
 . Review the workload information in the *Recovery* page. 
-
++
 image:screen-recovery.png[Recovery page]
 
 == Recover a workload 
@@ -41,7 +41,8 @@ Using BlueXP ransomware protection, the security storage administrator can deter
 
 The security storage admin can recover data at different levels: 
 
-* Recover an application at the volume level  or file and folder level. 
+* Recovery an application and all volumes 
+* Recover an application at the volume level or file and folder level. 
 * Recover a file share at the volume level, directory, or file/folder level. 
 * Recover a datastore at the VM level.
 
@@ -93,6 +94,36 @@ TIP: You can select up to 100 files or a single folder.
 //. Select *Restore*. 
 
 //. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+=== Restore an application workload and all volumes
+
+
+. On the Restore page, in the Restore scope, select *All volumes*. 
++
+image:screen-recovery-all-volumes.png[Restore by all volumes page]
+
+
+. *Source*: Select the down arrow next to Source to see details: 
+
+.. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Safest for all volumes" indication. 
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Select the aggregate. 
+.. Change the volume prefix that will be prepended to all new volumes. 
++
+TIP: The new volume name appears as prefix + original volume name + backup name + backup date.
+
+. Select *Save*.
+. Select *Next*.
+. Review your selections. 
+. Select *Restore*. 
+
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
 === Restore an application workload at the volume level
 
