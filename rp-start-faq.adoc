@@ -31,7 +31,7 @@ BlueXP ransomware protection does not require any enablement. The ransomware pro
 For the preview version, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
 
 
-**Does BlueXP ransomware protection available in standard, restricted, and private modes?*
+**Does BlueXP ransomware protection available in standard, restricted, and private modes?**
 At this time, BlueXP ransomware protection is available only in standard mode. Stay tuned for more. 
 
 For an explanation about these modes across all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[BlueXP deployment modes^].
