@@ -13,7 +13,7 @@ summary: This FAQ can help if you're just looking for a quick answer to a questi
 [.lead]
 This FAQ can help if you're just looking for a quick answer to a question.
 
-
+== Access
 
 *What's the BlueXP ransomware protection URL?*
 For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
@@ -30,11 +30,27 @@ BlueXP ransomware protection does not require any enablement. The ransomware pro
 
 For the preview version, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
 
+
+**Does BlueXP ransomware protection available in standard, restricted, and private modes?*
+At this time, BlueXP ransomware protection is available only in standard mode. Stay tuned for more. 
+
+For an explanation about these modes across all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[BlueXP deployment modes^].
+
+**How are access permissions handled?**
+Only account admins have the ability to initiate the service and discover workloads (because this involves committing to usage of a resource). Subsequent interactions can be done by any role.
+
+== Interaction with other services
+
 *Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
 Yes, BlueXP ransomware protection discovers backup options and Snapshot schedules set in ONTAP. 
 
 *If you set a policy using BlueXP ransomware protection, do you have to make future changes only in this service?* 
 No, you can make policy changes from any service.
+
+== Workloads
+
+**What makes up a workload?**
+A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
 
 *How does BlueXP ransomware protection prioritize workload data?*
 Data priority for the Preview version is determined by the Snapshot copies made and backups that are scheduled. 
@@ -45,8 +61,12 @@ The workload priority is determined by the following Snapshot frequencies:
 * *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
 
+== Protection policies
 
 *Do BlueXP ransomware policies co-exist with the other kinds of workload policies?*
 At this time, BlueXP backup and recovery (Cloud Backup) supports one backup policy per volume. So, BlueXP backup and recovery and BlueXP ransomware protection share backup policies.
 
 Snapshot copies are not limited and can be added separately from each service.
+
+
+

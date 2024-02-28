@@ -29,6 +29,14 @@ The service provides information called _evidence_ about what caused the alert t
 * File creation occurred and increased by a listed percentage 
 * File deletion occurred and increased by a listed percentage 
 
+An alert is based on the following types of behavior: 
+
+* *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+* *Warning*: A warning occurs based on the following behaviors: 
+** Detection of a new extension has not been identified before and the same behavior does not repeat enough times to declare it as an attack. 
+** High entropy is observed. 
+** File read/write/rename/delete operations incurred a 100% surge in activity beyond the baseline. 
+
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 //The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
