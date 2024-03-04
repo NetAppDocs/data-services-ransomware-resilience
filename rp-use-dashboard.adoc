@@ -55,7 +55,7 @@ The total number of actions does not include dismissed actions.
 
 == Review protection recommendations on the Dashboard
 
-BlueXP ransomware protection uses AI technology to assess the protection on your workloads and recommend actions to improve that protection. 
+BlueXP ransomware protection assesses the protection on your workloads and recommends actions to improve that protection. 
 
 You can review a recommendation and act on it, which changes the recommendation status to Complete. Or, if you want to act on it later, you can dismiss it. Dismissing an action moves the recommendation to a list of dismissed actions, which you can review later. 
 
@@ -72,10 +72,10 @@ Here is a sampling of the recommendations that the service offers.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Configure backup destinations | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
 Refer to link:rp-use-settings.html[Configure protection settings].
-|Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
+//|Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].
-|Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
-|Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
+//|Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
+|Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].

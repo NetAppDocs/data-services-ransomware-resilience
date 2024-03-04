@@ -37,14 +37,14 @@ image:screen-recovery.png[Recovery page]
 
 == Recover a workload 
 
-Using BlueXP ransomware protection, the security storage administrator can determine how best to recover workloads either from the recommended restore point or their preferred restore point.  
+Using BlueXP ransomware protection, the storage administrator can determine how best to recover workloads either from the recommended restore point or their preferred restore point.  
 
 The security storage admin can recover data at different levels: 
 
-* Recovery an application and all volumes 
+* Recovery all volumes 
 * Recover an application at the volume level or file and folder level. 
 * Recover a file share at the volume level, directory, or file/folder level. 
-* Recover a datastore at the VM level.
+* Recover from a datastore at a VM level.
 
 The process differs slightly depending on the workload type. 
 
@@ -95,7 +95,7 @@ TIP: You can select up to 100 files or a single folder.
 
 //. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-=== Restore an application workload and all volumes
+=== Restore all volumes
 
 
 . On the Restore page, in the Restore scope, select *All volumes*. 

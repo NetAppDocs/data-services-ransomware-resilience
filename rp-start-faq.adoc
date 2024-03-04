@@ -39,10 +39,18 @@ For an explanation about these modes across all BlueXP services, refer to https:
 **How are access permissions handled?**
 Only account admins have the ability to initiate the service and discover workloads (because this involves committing to usage of a resource). Subsequent interactions can be done by any role.
 
+**What device resolution is best?**
+The recommended device resolution for BlueXP ransomware protection is 1920x1080 or better. 
+
+**Which browser should I use?**
+Any modern browser will work. 
+
+
+
 == Interaction with other services
 
 *Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
-Yes, BlueXP ransomware protection discovers backup options and Snapshot schedules set in ONTAP. 
+Yes, BlueXP ransomware protection discovers Snapshot schedules set in ONTAP. 
 
 *If you set a policy using BlueXP ransomware protection, do you have to make future changes only in this service?* 
 No, you can make policy changes from any service.
@@ -58,8 +66,14 @@ Data priority for the Preview version is determined by the Snapshot copies made 
 The workload priority is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
+
+**New volume added, but doesn't appear yet**
+If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 
+
+**The Dashboard doesn't show all my workloads. What might be wrong?**
+Currently, only NFS volumes are supported. iSCSI volumes, CIFS volumes and other non-supported configurations are filtered out and do not appear on the Dashboard. 
 
 == Protection policies
 
