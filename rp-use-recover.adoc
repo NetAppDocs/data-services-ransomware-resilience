@@ -107,7 +107,9 @@ image:screen-recovery-all-volumes.png[Restore by all volumes page]
 
 .. Select the restore point that you want to use to restore the data. 
 +
-TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Safest for all volumes" indication. 
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Safest for all volumes" indication. This means that all volumes will be restored to a copy prior to the first attack on the first volume detected. 
+
+//Latest clean: Each volume will be restored to the latest copy prior to the attack on that volume. 
 
 . *Destination*: Select the down arrow next to Destination to see details.
 
