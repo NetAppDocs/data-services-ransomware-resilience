@@ -103,12 +103,12 @@ TIP: You can select up to 100 files or a single folder.
 image:screen-recovery-all-volumes.png[Restore by all volumes page]
 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. *Source*: Select the down arrow next to Source to see details. 
 
 .. Select the restore point that you want to use to restore the data. 
 +
 TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Safest for all volumes" indication. This means that all volumes will be restored to a copy prior to the first attack on the first volume detected. 
-
++
 //Latest clean: Each volume will be restored to the latest copy prior to the attack on that volume. 
 
 . *Destination*: Select the down arrow next to Destination to see details.
@@ -136,7 +136,7 @@ image:screen-recovery-byvolume.png[Restore by volume page]
 
 . On the list of volumes, select the volume you want to restore. 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. *Source*: Select the down arrow next to Source to see details. 
 
 .. Select the restore point that you want to use to restore the data. 
 +
@@ -149,7 +149,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Select the aggregate. 
 .. Review the new volume name. 
 +
-TIP: The new volume name appears as original volume name + backup name + backup date.
+TIP: The new volume name appears as the original volume name + backup name + backup date.
 
 . Select *Save*.
 . Select *Next*.
@@ -165,7 +165,7 @@ TIP: The new volume name appears as original volume name + backup name + backup 
 
 . On the list of volumes, select the volume you want to restore. 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. *Source*: Select the down arrow next to Source to see details. 
 
 .. Select the restore point that you want to use to restore the data. 
 +
@@ -204,7 +204,7 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 image:screen-recovery-fileshare.png[Recovery page showing file share recovery]
 . On the list of volumes, select the volume you want to restore. 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. *Source*: Select the down arrow next to Source to see details.
 
 .. Select the restore point that you want to use to restore the data. 
 +
@@ -234,7 +234,7 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 
 On the Recovery page after you selected a VM to restore, continue with these steps. 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. *Source*: Select the down arrow next to Source to see details. 
 +
 image:screen-recovery-vm.png[Recovery page showing a VM being restored]
 . Select the restore point that you want to use to restore the data. 
