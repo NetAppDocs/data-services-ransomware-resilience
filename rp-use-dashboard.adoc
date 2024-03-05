@@ -1,0 +1,100 @@
+---
+sidebar: sidebar
+permalink: rp-use-dashboard.html
+keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack
+summary: The BlueXP ransomware protection Dashboard provides information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, impacted workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. You can also use the Dashboard to review and act on protection recommendations.
+---
+
+= View workload health at a glance using the Dashboard
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The BlueXP ransomware protection Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
+
+You can also use the Dashboard to review and act on protection recommendations. 
+
+== Review workload health using the Dashboard
+
+.Steps
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
++
+After discovery, the Dashboard shows you the health of workload data protection. 
++
+image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
+
+
+. From the Dashboard, you can view and do any of the following in each of the panes: 
+
+* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
+
+* *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
++
+An incident is categorized in one of the following states: 
++
+** Impacted (shows on Alerts page) 
+** Ready for recovery (shows on Recovery page) 
+** Recovering (shows on Recovery page)
+** Recovery failed (shows on Recovery page)
+** Recovered (shows on Recovery page)
+
+
+* *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
++
+Refer to link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection recommendations on the Dashboard] or link:/rp-use-protect.html[Protect workloads]. 
++
+Any recommendations that were added since you last visited the Dashboard are indicated with “New” for at least 24 hours. Actions are listed in priority order with the most important at the top. You can review and act on each one or dismiss it. 
++
+The total number of actions does not include dismissed actions. 
+
+* *Workload data*: Monitor changes in protection coverage over the last 7 days. 
+
+* *Workload backups*: Monitor changes in workload backups created by the service that failed or completed successfully in the last 7 days. 
+
+== Review protection recommendations on the Dashboard
+
+BlueXP ransomware protection assesses the protection on your workloads and recommends actions to improve that protection. 
+
+You can review a recommendation and act on it, which changes the recommendation status to Complete. Or, if you want to act on it later, you can dismiss it. Dismissing an action moves the recommendation to a list of dismissed actions, which you can review later. 
+
+Here is a sampling of the recommendations that the service offers.
+
+[cols=3*,options="header",cols="30,30,30",width="100%"]
+|===
+| Recommendation
+| Description
+| How to resolve
+
+
+| Add a ransomware protection policy | The workload is currently not protected.  | Assign a policy to the workload. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Configure backup destinations | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
+Refer to link:rp-use-settings.html[Configure protection settings].
+//|Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
+Refer to link:rp-use-manage.html[Manage workloads].
+//|Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
+|Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Protect critical or important application workloads against ransomware. | The Protect page displays critical or important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Protect critical or important file share workloads against ransomware. |The Protection page displays critical or important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Review new alerts | New alerts exist. | Review the new alerts. 
+Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
+|===
+
+.Steps
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. From the Recommended actions pane, select a recommendation and select *Review and fix*. 
+
+. To dismiss the action until later, select *Dismiss*. 
++
+The recommendation clears from the To Do list and appears on the Dismissed list. 
++
+TIP: You can later change a dismissed item to a To Do item. When you mark an item completed or you change a dismissed item to a To Do action, the Total actions increases by 1.
+
+. To review information on how to act on the recommendations, select the *information* icon.

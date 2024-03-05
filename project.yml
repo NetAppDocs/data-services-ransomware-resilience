@@ -17,16 +17,36 @@ sidebar:
       entries:
         - title: Learn about BlueXP ransomware protection
           url: /concept-ransomware-protection.html
-        - title: Monitor Ransomware alerts in the Notification Center
-          url: /task-monitor-ransomware-alerts.html
+        - title: Prerequisites
+          url: /rp-start-prerequisites.html
+        - title: Quick start
+          url: /rp-start-quick-start.html
+        - title: Set up BlueXP ransomware protection 
+          url: /rp-start-setup.html
+        - title: Access BlueXP ransomware protection
+          url: /rp-start-login.html
+        - title: Discover workloads
+          url: /rp-start-discover.html 
+        - title: Configure backup destinations
+          url: /rp-use-settings.html 
+        - title: FAQ
+          url: /rp-start-faq.html
     - title: Use BlueXP ransomware protection
       entries:
-        - title: Manage cyber security recommendations for your data
-          url: /task-analyze-ransomware-data.html
-        - title: Manage your business critical data policies
-          url: /task-select-business-critical-policies.html
+        - title: Use BlueXP ransomware protection overview
+          url: /rp-use-overview.html 
+        - title: View workload health using the Dashboard
+          url: /rp-use-dashboard.html
+        - title: Protect workloads
+          url: /rp-use-protect.html
+        - title: Respond to a detected alert 
+          url: /rp-use-alert.html
         - title: Recover from a ransomware attack
-          url: /task-ransomware-recovery.html
+          url: /rp-use-recover.html
+#        - title: Manage workloads 
+#          url: /rp-use-manage.html
+#   - title: Monitor ransomware protection jobs
+#     url: /rp-use-monitor-jobs.html 
     - title: Knowledge and support
       entries:
         - title: Register for support
@@ -38,40 +58,3 @@ sidebar:
 product-family:
   name: BlueXP
   repo: bluexp-family
-  sidebar_label: All BlueXP documentation
-homepage:
-  tiles:
-    - title: Get started
-      links:
-        - title: Learn about BlueXP ransomware protection
-          url: concept-ransomware-protection.html
-        - title: What's New
-          url: whats-new.html
-    - title: Manage cyber security recommendations
-      links:
-        - title: View top data repositories by data sensitivity
-          url: task-analyze-ransomware-data.html#top-data-repositories-by-data-sensitivity
-        - title: View users who have been added to domain administrator groups
-          url: task-analyze-ransomware-data.html#domain-administrator-group-control
-        - title: View data listed by open permissions
-          url: task-analyze-ransomware-data.html#data-listed-by-types-of-open-permissions
-        - title: View data listed by encrypted files
-          url: task-analyze-ransomware-data.html#data-listed-by-encrypted-files
-        - title: View how securely your ONTAP systems are protected against ransomware
-          url: task-analyze-ransomware-data.html#status-of-ontap-systems-hardening
-        - title: Select your business critical data policies
-          url: task-select-business-critical-policies.html
-    - title: Recover from a ransomware attack
-      links:
-        - title: Recover data after a ransomware attack
-          url: task-ransomware-recovery.html
-    - title: Blogs & community
-      links:
-        - title: NetApp Community
-          url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-        - title: BlueXP ransomware protection use cases
-          url: https://bluexp.netapp.com/ransomware-protection
-        - title: BlueXP blog
-          url: https://bluexp.netapp.com/blog
-        - title: Cloud webinars
-          url: https://bluexp.netapp.com/events
