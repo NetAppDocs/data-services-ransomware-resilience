@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack
 summary: Learn what's new in BlueXP ransomware protection.
 ---
 
@@ -16,11 +16,26 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
+
+== 5 March 2024
+This preview release of BlueXP ransomware protection includes the following updates: 
+
+
+* *Protection policy management*: In addition to using predefined policies, you can now create, change, and delete policies.  link:rp-use-protect.html[Learn more about managing policies].
+
+* *Immutability on secondary storage (DataLock)*: You can now make the backup immutable in secondary storage using NetApp DataLock technology in the object store. link:rp-use-protect.html[Learn more about creating protection policies]. 
+
+//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+
+* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination. link:rp-use-settings.html[Learn more about configuring backup destinations].
+* *Additional features to investigate potential attacks*: You can now view more forensic details to investigate the detected potential attack. link:rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
+* *Recovery process*. The recovery process was enhanced. Now, you can recovery volume by volume, all volumes for a workload, or even a few files from the volume all in a single workflow. link:rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
+
 == 6 October 2023 
 
-The BlueXP ransomware protection service is an orchestration service for ransomware protection, detection, and recovery. 
+The BlueXP ransomware protection service is a SaaS solution for protecting data, detecting potential attacks, and recovering data from a ransomware attack. 
 
-For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS protocol) across BlueXP accounts individually and backs up data to Amazon Web Services (AWS) cloud storage. 
+For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage as well as Cloud Volumes ONTAP on AWS (using the NFS protocol) across BlueXP accounts individually and backs up data to Amazon Web Services cloud storage. 
 
 The BlueXP ransomware protection service provides full use of several NetApp technologies so that your data security administrator or security operations engineer can accomplish the following goals:
 

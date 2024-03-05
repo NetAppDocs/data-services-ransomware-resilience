@@ -25,8 +25,13 @@ link:rp-start-prerequisites.html[Ensure your environment meets these requirement
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up the ransomware protection service
 
 
-[role="quick-margin-para"]
-link:rp-start-setup.html[Complete steps to set up the service].
+
+[role="quick-margin-list"]
+* link:rp-start-setup.html[Prepare NetApp StorageGRID or Amazon Web Services as a backup destination].
+* link:rp-start-setup.html[Configure a Connector in BlueXP].
+* link:rp-start-setup.html[Configure backup destinations].
+* link:rp-start-discover.html[Discover workloads in BlueXP].
+
 
 
 

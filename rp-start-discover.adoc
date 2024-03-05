@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rp-use-discover.html
+permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, 
 summary: During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts.     
 ---
@@ -8,10 +8,10 @@ summary: During discovery, BlueXP ransomware protection analyzes all volumes and
 = Discover workloads in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 [.lead]
-To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts. 
+To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and workspaces within an account. 
 
 NOTE: For the preview version, BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
@@ -24,7 +24,8 @@ The service assesses the existing protection level including the current backup 
 . Select *Discover workloads* from the initial landing page. 
 +
 The service discovers workload data and shows the health of data protection in the Dashboard.
-
++
+image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
 //== Set up email notifications 
 

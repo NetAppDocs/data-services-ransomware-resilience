@@ -11,7 +11,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 :imagesdir: ./media/
 
 [.lead]
-If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential ransomware attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
+If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard and in the BlueXP Notifications in the upper right indicating a potential ransomware attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
 //If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a Snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
@@ -29,14 +29,26 @@ The service provides information called _evidence_ about what caused the alert t
 * File creation occurred and increased by a listed percentage 
 * File deletion occurred and increased by a listed percentage 
 
+An alert is based on the following types of behavior: 
+
+* *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+* *Warning*: A warning occurs based on the following behaviors: 
+** Detection of a new extension has not been identified before and the same behavior does not repeat enough times to declare it as an attack. 
+** High entropy is observed. 
+** File read/write/rename/delete operations incurred a 100% surge in activity beyond the baseline. 
+
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
+
+//The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
 
 //An alert can have one of the following statuses: 
 
-//* New alert
-//* In progress alert
-//* Active alert: A workload is active when it contains one or more incidents that are new or in progress.
-//* Inactive alert: A workload is inactive when all incidents are marked ready for recovery or dismissed. 
+//* *New*: All incidents are marked "new" when they are first identified. You can also mark an incident as "new." 
+//* *In progress*: If you are actively working on mitigating the alert, you might want to change the status to "In progress" to let your team know. 
+//* *Completed*: If you have finished mitigating the alert, you might want to change the status to "Completed".
+//* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed." 
+//+
+//CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
 
 == View alerts
 
@@ -81,35 +93,47 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 //=== Respond from data incidents on the Dashboard
 
 .Steps
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. In the Dashboard, review the Workload data incidents pane.
+. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
+. Select *View all* under one of the statues. 
 
-. Review all incidents on each volume for each alert. 
+. Click on an alert to review all incidents on each volume for each alert. 
 . To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
 
-//. Continue with one of the following: 
+. Review the alerts on the Alerts page. 
++
+image:screen-alerts.png[Alerts page]
 
-//* <<Mark ransomware incidents as ready for recovery>>.
+. Continue with <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+
 //* <<Dismiss incidents that are not potential attacks>>.
 
-== Mark ransomware incidents as ready for recovery 
+== Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
-After you review incidents and determine that the Snapshots have been taken, you need to determine whether the incidents are potential attacks. If they are potential attacks, you should communicate with your storage team that the data is ready for recovery so that they can start the recovery process. 
+After you have mitigated the attack and are ready to recover workloads, you should communicate with your storage admin team that the data is ready for recovery so that they can start the recovery process. 
 
-After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab. You should contact the storage team to perform the recovery.  
+ 
 
 .Steps
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. From the menu, select *Alerts*. 
+. From the BlueXP ransomware protection menu, select *Alerts*. 
++
+image:screen-alerts.png[Alerts page]
+
 . In the Alerts page, select the alert. 
+. Review the incidents in the alert.
++
+image:screen-alerts-incidents.png[Alert incidents page]
 
-. If you determine that the alert is a threat and the incidents are ready for recovery, select *Mark restore needed*. 
+. If you determine that the incidents are ready for recovery, select *Mark restore needed*. 
 
 . Confirm the action and select *Mark restore needed*. 
 
-. To initiate the workload recovery, select *Recover* workload in the message or select the *Recover* tab. 
+. To initiate the workload recovery, select *Recover* workload in the message or select the *Recovery* tab. 
+
+.Result
+
+After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab.  
 
 //== Dismiss incidents that are not potential attacks
 
@@ -119,13 +143,17 @@ After the alert is marked for recovery, the alert moves from the Alerts tab to t
 
 //If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 
-//NOTE: If you dismiss an alert, you cannot change that status back to any other status. 
+//CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
 //.Steps
-//. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-//. From the menu, select *Alerts*. 
+//. From the BlueXP ransomware protection menu, select *Alerts*. 
+//+
+//image:screen-alerts.png[Alerts page]
+
 //. In the Alerts page, select the alert.
+//+
+//image:screen-alerts-incidents.png[Alert incidents page]
 
 //. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
@@ -133,8 +161,12 @@ After the alert is marked for recovery, the alert moves from the Alerts tab to t
 //+
 //* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
 //* If you selected multiple incidents, select the *Edit status* button above the table. 
+//+
+//image:screen-alerts-status-edit.png[Alert Edit Status page]
 
-//. From the Edit status box, select the *“Dismissed”* status. Additional information about the workload and which Snapshot copies will be deleted appears.
+//. From the Edit status box, select the *“Dismissed”* status. 
+//+
+//Additional information about the workload and which Snapshot copies will be deleted appears.
 
 //. Select *Save*.
 //+

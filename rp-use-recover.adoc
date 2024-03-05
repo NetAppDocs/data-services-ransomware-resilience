@@ -11,72 +11,251 @@ summary: After an attack, BlueXP ransomware protection verifies that the backup 
 :imagesdir: ./media
 
 [.lead]
-After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+After workloads have been marked "Ready for recovery", BlueXP ransomware protection recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
 
 
 
-=== View workloads that are in a recovery state
+== View workloads that are ready to be restored
 
-Review the workloads that are in one of these recovery statuses: 
+Review the workloads that are in the "Restore needed" recovery status. 
 
-* Restore needed
-* Queued
-* In progress 
-* Restored 
-* Failed 
+
 
 .Steps 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
 . Do one of the following: 
 +
-* From the Dashboard, review the Workload data incidents pane and select *View all*. 
-* From the menu, select *Recover*.
+* From the Dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
+
+* From the menu, select *Recovery*.
 
 
-. Review the workload information in the *Recover* page.  
+. Review the workload information in the *Recovery* page. 
++
+image:screen-recovery.png[Recovery page]
 
-=== Recover a workload 
+== Recover a workload 
 
-The storage administrator can now determine how best to recover the workload data. 
+Using BlueXP ransomware protection, the storage administrator can determine how best to recover workloads either from the recommended restore point or their preferred restore point.  
 
-You can restore data at different levels: 
+The security storage admin can recover data at different levels: 
 
-* Recover an application at the application level, volume level, and or file level. 
-* Recover a file share at the volume level. 
-* Recover a datastore at the VM level.
+* Recovery all volumes 
+* Recover an application at the volume level or file and folder level. 
+* Recover a file share at the volume level, directory, or file/folder level. 
+* Recover from a datastore at a VM level.
 
 The process differs slightly depending on the workload type. 
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the menu, select *Recover*.
+. From the BlueXP ransomware protection menu, select *Recovery*.
 
 . Review the workload information in the *Recovery* page.  
 
-. Select a workload that is in the “Ready for recovery” state. 
+. Select a workload that is in the “Restore needed” state. 
 
-. To see the protection details before you recover the workload, select the *Actions* ... icon on the right and select *View protection details*.  
 
 . To restore, select *Restore*.
 
-. Select the type of restore you want to complete: application level, volume level, or file level.  
+. *Restore scope*: Select the type of restore you want to complete: 
++
+** All volumes 
+** By volume
+** By file: You can specify a folder or single files to restore. 
++
+TIP: You can select up to 100 files or a single folder. 
 
-. *Source*: Select the down arrow next to Source to see details: 
+. Continue with one of the following procedures depending on whether you chose application, volume, or file. 
+
+//=== Recover an application workload at the application level
+
+//On the Recovery page, after you select an application to restore, continue with these steps. 
+
+//. *Source*: Select the down arrow next to Source to see details: 
+
+//.. Select the restore point that you want to use to restore the data. 
+//+
+//TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
+//. *Destination*: Select the down arrow next to Destination to see details.
+
+//.. Select the working environment. 
+//.. Select the Storage VM. 
+//.. Select the aggregate. 
+//.. Review the new volume name. 
+//+
+//TIP: The new volume name appears as original volume name + backup name + backup date.
+
+//. Select *Next*.
+//. Review your selections. 
+//. Select *Restore*. 
+
+//. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+=== Restore all volumes
+
+
+. On the Restore page, in the Restore scope, select *All volumes*. 
++
+image:screen-recovery-all-volumes.png[Restore by all volumes page]
+
+
+. *Source*: Select the down arrow next to Source to see details. 
+
+.. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Safest for all volumes" indication. This means that all volumes will be restored to a copy prior to the first attack on the first volume detected. 
++
+//Latest clean: Each volume will be restored to the latest copy prior to the attack on that volume. 
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Select the aggregate. 
+.. Change the volume prefix that will be prepended to all new volumes. 
++
+TIP: The new volume name appears as prefix + original volume name + backup name + backup date.
+
+. Select *Save*.
+. Select *Next*.
+. Review your selections. 
+. Select *Restore*. 
+
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+=== Restore an application workload at the volume level
+
+
+. On the Restore page, in the Restore scope, select *By volume*. 
++
+image:screen-recovery-byvolume.png[Restore by volume page]
+
+. On the list of volumes, select the volume you want to restore. 
+
+. *Source*: Select the down arrow next to Source to see details. 
 
 .. Select the restore point that you want to use to restore the data. 
 +
 TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
 
-.. If you chose to restore files, specify a single folder or the files you want to restore.
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Select the aggregate. 
+.. Review the new volume name. 
++
+TIP: The new volume name appears as the original volume name + backup name + backup date.
+
+. Select *Save*.
+. Select *Next*.
+. Review your selections. 
+. Select *Restore*. 
+
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+=== Restore an application workload at the file level
+
+
+. On the Restore page, in the Restore scope, select *By file*. 
+
+. On the list of volumes, select the volume you want to restore. 
+
+. *Source*: Select the down arrow next to Source to see details. 
+
+.. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
+.. Select up to 100 files or a single folder to restore. 
 
 . *Destination*: Select the down arrow next to Destination to see details.
 
-.. Choose where to restore the data: original source location or a different location that you can specify. 
+.. Choose where to restore the data: original source location or an alternate location that you can specify. 
++ 
+TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
 
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Optionally, enter the path. 
++
+TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
+.. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
+
+. Select *Save*. 
+. Select *Next*.
+. Review your selections. 
 . Select *Restore*. 
 
-. From the menu, select *Recover* to review the workload on the Recovery page where the status of the operation moves through the states of Queued, In Progress, Failed or Complete.
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+
+=== Restore a file share or datastore at the volume or file level
+
+
+
+. After selecting a file share or datastore to restore, on the Restore page, in the Restore scope, select *By volume* or *By file*. 
+
++
+image:screen-recovery-fileshare.png[Recovery page showing file share recovery]
+. On the list of volumes, select the volume you want to restore. 
+
+. *Source*: Select the down arrow next to Source to see details.
+
+.. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Choose where to restore the data: original source location or an alternate location that you can specify. 
++ 
+TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Optionally, enter the path. 
++
+TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
+
+. Select *Save*. 
+. Review your selections. 
+. Select *Restore*. 
+
+. From the menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+
+
+=== Restore a VM file share at the VM level
+
+On the Recovery page after you selected a VM to restore, continue with these steps. 
+
+. *Source*: Select the down arrow next to Source to see details. 
++
+image:screen-recovery-vm.png[Recovery page showing a VM being restored]
+. Select the restore point that you want to use to restore the data. 
+//+
+//TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
+
+. *Destination*: To original location. 
+
+. Select *Next*. 
+. Review your selections. 
+. Select *Restore*. 
+
+. From the menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+//Select the down arrow next to Destination to see details.
+//.. Choose where to restore the data: original source location or an alternate location that you can specify. 
+//+ 
+//TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+//.. Select the working environment. 
+//.. Select the Storage VM. 
+//.. Optionally, enter the path. 
+//+
+//TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory. 

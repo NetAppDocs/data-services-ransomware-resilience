@@ -22,17 +22,20 @@ To log in to BlueXP, you can use your NetApp Support Site credentials or you can
 The NetApp BlueXP login page appears.
 
 . Log in to BlueXP. 
-. From the BlueXP left navigation, select *Protect* > *Ransomware protection*. 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
 If this is your first time logging in to this service, the landing page appears. 
 //+
 //image:draas-landing.png[Landing page screenshot for BlueXP ransomware protection]
 + 
 Otherwise, the BlueXP ransomware protection Dashboard appears.
++
+image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+
 . Start using the service.
 +
 * If you don't have a BlueXP Connector or it's not the one for this preview, you might need to contact NetApp Support or follow messages to sign up for this preview. 
 
 * If you are new to BlueXP and haven't used any Connector, when you select "*Ransomware protection*", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your evaluation request. 
 * If you are a BlueXP user with an an existing Connector, when you select "*Ransomware protection*", a message appears about signing up. 
-* If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. 
+* If you are already participating in the preview, when you select "*Ransomware protection*", you can proceed with the service. If you haven't done so already, you should select the *Discover workloads* option. 

@@ -15,32 +15,38 @@ You can protect workloads against ransomware attacks by completing the following
 
 * View existing workload protection. 
 * Assign a policy to a workload.
-//* Change protection.
-//** Increase application protection to prevent future RW attacks.
-//** Change the protection for a workload that was previously protected in the RW service.
-//* Manage policies (only the ones that you created).
+** Increase application protection to prevent future RW attacks.
+** Change the protection for a workload that was previously protected in the RW service.
+* Manage policies (only the ones that you created).
 
 
 
 BlueXP ransomware protection assigns a priority to each workload during discovery. The workload priority is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
 
+*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
-A workload can have one of the following protection health statuses: 
+* *Protected*: A policy is applied. 
+* *At risk*: No policy is applied. 
+* *In progress*: A policy is being applied but not completed yet. 
+* *Failed*: A policy is applied but is not working. 
 
-* *Protected*: The workload has protection enabled and backups and Snapshot copies have been completed. 
+*Protection health*: A workload can have one of the following protection health statuses: 
+
+* *Healthy*: The workload has protection enabled and backups and Snapshot copies have been completed. 
 * *In progress*: Backups or Snapshot copies are in progress. 
-* *At risk*: Protection is not enabled or sufficient on the workload. 
 * *Failed*: Backups or Snapshot copies have not completed successfully. 
+* *N/A*: Protection is not enabled or sufficient on the workload. 
+
 
 == View workload ransomware protection 
 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
-* Application workloads 
+//* Application workloads 
 * VM workloads
 * File share workloads
 
@@ -52,24 +58,24 @@ One of the first steps in protecting workloads is viewing your current workloads
 . Do one of the following: 
 +
 * From the Dashboard Data Protection pane, select *View all*. 
-* From the menu, select *Protect*.
-
-. View different workloads: 
+* From the menu, select *Protection*.
 +
-* To see application workloads, select the *Application workloads* tab. 
-* To see file share workloads, select the *File share workloads* tab. 
-
+image:screen-protection.png[Protection page]
 . From this page, you can assign a policy to a workload.
 
+//. To see file share workloads, select the *File share workloads* tab. 
+// * To see application workloads, select the *Application workloads* tab. 
 
-== Assign a ransomware protection policy to workloads 
+
+
+== Assign a predefined protection policy to workloads
 
 To help protect your data, you can assign an existing ransomware protection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
 
 BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
 
 
-[cols=7*,options="header",cols="10,15a,15,10,10,15,15" width="100%"]
+[cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
 |===
 | Policy level
 | Snapshot
@@ -77,26 +83,23 @@ BlueXP ransomware protection includes the following predefined policies that are
 | Retention (Days)
 | # of Snapshot copies
 | Total Max # of Snapshot copies
-| Backup Frequency
 
 
-.5+| *Critical workload policy* | Minutes | Every 10 min | 2 | 288 | 432 | 30 min
- | Hourly | Every 4 hours | 7 | 42 | 432 | 30 min
- | Daily  | Every 6 hours | 14 | 56 | 432 | 30 min
- | Weekly | Every 1 day | 42 | 42 | 432 | 30 min
- | Monthly | Every 30 days | 91 | - | 432 | 30 min
-.5+| *High workload policy* | Minutes | Every 20 mins | 2 | 144 | 260 | 60 min
- | Hourly | Every 6 hours | 7 | 28 | 260 | 60 min
- | Daily | Every 8 hours | 14 | 42 | 260 | 60 min
- | Weekly | Every 1 day | 42 | 42 | 260 | 60 min
- | Monthly | Every 30 days | 91 | - | 260 | 60 min
+.4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+.4+| *Important workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
+ | Daily | Every 1 day | 14 | 14 | 165 
+ | Weekly | Every 1 week | 35 | 5 | 165 
+ | Monthly | Every 30 days | 60 | 2 | 165 
 
 
-.5+| *Standard workload policy* | Minutes | Every 60 min | 2| 48 | 93 | 4 hours
- | Hourly | Every 12 hours | 7 | 14 | 93 | 4 hours 
- | Daily | Every 24 hours | 14 | 14 | 93 | 4 hours  
- | Weekly | Every 7 days | 42 | -  | 93 | 4 hours
- | Monthly | Every 30 days | 91 | - | 93 | 4 hours
+.4+| *Standard workload policy* | Quarter hourly | Every 60 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93 
 
 
 |===
@@ -104,18 +107,147 @@ BlueXP ransomware protection includes the following predefined policies that are
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. Do one of the following: 
+. From BlueXP ransomware protection, do one of the following: 
 +
 * From the Dashboard Data Protection pane, select *View all*. 
 * From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
-* From the menu, select *Protect*.
+* From the menu, select *Protection*.
 
-. From the Protect page, review the workloads and select *Assign policy*. 
+. From the Protection page, review the workloads and select *Protect* next to the workload. 
++
+A list of policies appears. 
++
+image:screen-protect-policy-list.png[Protection policy list]
 
-. Review the existing policies. To see details, click on the down arrow on that policy.
+. To see details, click on the down arrow on a policy.
 
-. Select *Assign*. 
+. Select a policy to assign to the workload. 
+
+. Select *Protect*. 
 
 . Review the Dashboard Recommended actions pane, which shows the action as “Completed."
+
+== Create a protection policy 
+
+If the existing policies do not meet your business needs, you can create a new protection policy. You can create your own from scratch or use an existing policy and modify its settings. 
+
+You can create policies that govern primary and secondary storage and treat primary and secondary storage the same or differently. 
+
+You can create a policy when you are managing them or during the process of assigning a policy to a workload. 
+
+.Steps to create a policy during policy management
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
++
+image:screen-protection2.png[Protection page]
+
+. From the Protection page, select *Manage policies*. 
++
+image:screen-protection-policy-manage2.png[Manage policies page]
+
+
+. From the Manage policies page, select *Add*. 
++
+image:screen-protection-policy-add2.png[Add policy page]
+
+. Enter a new policy name, or enter an existing policy name to copy it. If you enter an existing policy name, choose which policy to copy.
++
+NOTE: If you choose to copy and modify an existing policy, you must change at least one setting to make it unique. 
+
+. For each item, select the Down arrow. 
+
+* *Primary storage*: 
+** *Snapshot copy schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
+** *Primary detection*: Enable the service to detect ransomware incidents on primary storage. 
+//** *Lock Snapshot copies**: Enable this to have the service lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. 
+
+** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated Snapshot copies when Primary detection is enabled. 
+
+* *Secondary storage*: 
+** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
+** *Secondary detection*: Enable the service to detect ransomware incidents on secondary storage. 
+
+** *Lock backups*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 
++
+This option uses NetApp DataLock technology, which locks backups on secondary storage. The period of time that the backup file is locked (and retained) is called the DataLock Retention Period. It is based on the backup policy schedule and retention setting that you defined, plus a 14-day buffer. Any DataLock retention policy that is less than 30 days is rounded up to 30 days minimum.
+
+. Select *Add*. 
+
+.Steps to create a policy during protection policy assignment
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
++
+image:screen-protection2.png[Protection page]
+
+. From the Protection page, select *Protect*. 
+
+
+. From the Protect page, select *Add*. 
++
+image:screen-protection-policy-add2.png[Add policy page]
+
+. Complete the process, which is the same as creating a policy from the Manage policies page. 
+
+
+
+
+== Assign a different protection policy 
+
+You can choose a different protection policy for a workload. 
+You might want to increase the protection to prevent future ransomware attacks by changing the protection policy. 
+
+.Steps 
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+
+. From the Protect page, select a workload, and select *Protect*. 
+
+. In the Protect page, select a different policy for the workload.
+
+. To change any details for the policy, select the down arrow on the right and change the details. 
+
+. Select *Save* to finish the change. 
+
+
+
+== Edit an existing policy 
+
+You can change the details of a policy only when the policy is not associated with a workload.
+
+.Steps 
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+. From the Protection page, select *Manage policies*. 
+
+. In the Manage policies page, select the *Actions* option for the policy you want to change.
+
+. From the Actions menu, select *Edit policy*. 
+
+. Change the details. 
+
+. Select *Save* to finish the change. 
+
+== Delete a policy
+
+You can delete a protection policy that is not currently associated with any workloads. 
+
+.Steps 
+
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+. From the Protection page, select *Manage policies*. 
+
+. In the Manage policies page, select the *Actions* option for the policy you want to delete.
+
+. From the Actions menu, select *Delete policy*. 
+
+
