@@ -21,15 +21,17 @@ Learn what's new in BlueXP ransomware protection preview.
 This preview release of BlueXP ransomware protection includes the following updates: 
 
 
-* *Protection policy management*: In addition to using predefined policies, you can now create, change, and delete policies.  link:rp-use-protect.html[Learn more about managing policies].
+* *Protection policy management*: In addition to using predefined policies, you can now create, change, and delete policies. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about managing policies].
 
-* *Immutability on secondary storage (DataLock)*: You can now make the backup immutable in secondary storage using NetApp DataLock technology in the object store. link:rp-use-protect.html[Learn more about creating protection policies]. 
+* *Immutability on secondary storage (DataLock)*: You can now make the backup immutable in secondary storage using NetApp DataLock technology in the object store. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about creating protection policies]. 
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
 
-* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination. link:rp-use-settings.html[Learn more about configuring backup destinations].
-* *Additional features to investigate potential attacks*: You can now view more forensic details to investigate the detected potential attack. link:rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
-* *Recovery process*. The recovery process was enhanced. Now, you can recovery volume by volume, all volumes for a workload, or even a few files from the volume all in a single workflow. link:rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
+* *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring backup destinations].
+* *Additional features to investigate potential attacks*: You can now view more forensic details to investigate the detected potential attack. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
+* *Recovery process*. The recovery process was enhanced. Now, you can recovery volume by volume, all volumes for a workload, or even a few files from the volume all in a single workflow. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
 == 6 October 2023 
 
