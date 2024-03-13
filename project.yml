@@ -47,12 +47,7 @@ sidebar:
 #          url: /rp-use-manage.html
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
-    - title: Knowledge and support
-      entries:
-        - title: Register for support
-          url: /task-support-registration.html
-        - title: Get help
-          url: /task-get-help.html
+    - section: support
     - title: Legal notices
       url: /legal-notices.html
 product-family:
