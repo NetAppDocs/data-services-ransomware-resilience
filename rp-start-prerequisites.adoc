@@ -22,11 +22,13 @@ Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissi
 * ONTAP 9.11.1 and later
 ** Cluster admin ONTAP permissions
 ** A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
++
+For more licensing details, refer to link:concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
 
 * In BlueXP: 
 
-** A BlueXP Connector per region in the cloud or on an on-premise region must be set up in NetApp BlueXP. All source and working environments must be on the same BlueXP account. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
+** A BlueXP Connector per each Virtual Private Cloud (VPC) or on an on-premise region must be set up in NetApp BlueXP. All source and working environments must be on the same BlueXP account. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
 +
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
 
