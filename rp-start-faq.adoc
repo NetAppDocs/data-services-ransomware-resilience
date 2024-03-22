@@ -53,7 +53,7 @@ Any modern browser will work.
 Yes, BlueXP ransomware protection discovers Snapshot schedules set in ONTAP. 
 
 *If you set a policy using BlueXP ransomware protection, do you have to make future changes only in this service?* 
-No, you can make policy changes from any service.
+We recommend that you make policy changes from the BlueXP ransomware protection service.
 
 == Workloads
 
