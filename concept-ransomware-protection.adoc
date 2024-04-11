@@ -15,9 +15,9 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 [.lead]
 Ransomware attacks can block access to your systems and data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data between one day and several weeks. 
 
-BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. For the preview version, the service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage as well as Cloud Volumes ONTAP in Amazon Web Services (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services cloud storage or NetApp StorageGRID. 
+BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage as well as Cloud Volumes ONTAP in Amazon Web Services (using the NFS protocol) across BlueXP accounts and backs up data to Amazon Web Services cloud storage or NetApp StorageGRID. 
 
-NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
+//NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
 == What you can do with BlueXP ransomware protection 
 
@@ -56,15 +56,13 @@ BlueXP ransomware protection offers the following benefits:
 
 == Cost 
 
-NetApp doesn’t charge you for using the preview version of BlueXP ransomware protection.
+NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or AWS subscription.
 
 == Licensing 
 
-The BlueXP ransomware protection preview itself does not require any special licensing.  All preview licenses are Evaluation licenses.  
+With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-TIP: For the preview version, NetApp helps to set up the evaluation and any required licenses.
-
-The BlueXP ransomware protection preview requires the following licenses: 
+The BlueXP ransomware protection requires the following additional licenses: 
 
 * ONTAP 
 * NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
@@ -121,7 +119,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 
 == Supported backup targets, working environments, and data sources
 
-Use BlueXP ransomware protection preview to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and data sources:
+Use BlueXP ransomware protection to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and data sources:
 
 *Backup targets supported*
 
@@ -136,7 +134,7 @@ Use BlueXP ransomware protection preview to see how resilient your data is to a 
 
 *Data sources*
 
-For the preview version, the service protects the following application-based workloads:
+The service protects the following application-based workloads:
 
 * NetApp file shares
 * VMware datastores

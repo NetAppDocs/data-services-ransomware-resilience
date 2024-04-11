@@ -25,6 +25,8 @@ sidebar:
           url: /rp-start-setup.html
         - title: Access BlueXP ransomware protection
           url: /rp-start-login.html
+        - title: Set up licensing
+          url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
         - title: Configure backup destinations

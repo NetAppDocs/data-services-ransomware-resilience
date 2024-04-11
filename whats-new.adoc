@@ -17,6 +17,13 @@ Learn what's new in BlueXP ransomware protection preview.
 
 // tag::whats-new[]
 
+== 15 May 2024
+
+This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
+
+* Licensing updates
+* tbd
+
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
 
