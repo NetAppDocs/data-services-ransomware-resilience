@@ -57,12 +57,12 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 
 . Review the free trial information and select *Let's go*. 
 
-=== After the trial ends, subscribe through AWS Marketplace or bring your own license
+*After the trial ends, obtain a subscription or license*
 
 After the free trial ends, you can either subscribe through AWS Marketplace or purchase a license from NetApp.  
 
 <<Subscribe through AWS Marketplace>>
-<<Bring your own BYOL license>>
+<<Bring your own license (BYOL)>>
 
 == Subscribe through AWS Marketplace
 
@@ -104,37 +104,14 @@ image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Li
 +
 A message appears indicating that a license has been added. 
 
-== Add a license to BlueXP digital wallet later
-
-Rather than use the BlueXP ransomware protection service to add your license or subscription, you can add the information directly to BlueXP digital wallet.  
-
-
-.Steps
-
-. Contact your NetApp Sales Rep to purchase a license. Or, click the *Chat* icon in the lower right of BlueXP to request a license.  
-. After you obtain the license, return to BlueXP ransomware protection. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
-
-
-. Select *Add license to BlueXP*. You will be directed to BlueXP digital wallet. 
-
-. In BlueXP digital wallet, from the *Data Services Licenses* tab, select *Add license*. 
-
-+
-image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
-
-. In the Add License page, enter the serial number and NetApp Support Site account information.
-
-
-. Select *Add License*. 
-
 
 
 == Bring your own license (BYOL)
 
-If you bring your own license (BYOL), the set up includes purchasing the license, getting the NetApp License File (NLF), and adding the license to BlueXP digital wallet. 
+If you want to bring your own license (BYOL), you'll need to purchase the license, get the NetApp License File (NLF), and add the license to BlueXP digital wallet. 
 
 
-=== Obtain your BlueXP ransomware protection license file
+=== Add your license file to BlueXP digital wallet
 
 After you've purchased your BlueXP ransomware protection license from your NetApp Sales Rep, you activate the license by entering the BlueXP ransomware protection serial number and NetApp Support Site (NSS) account information. 
 
@@ -161,29 +138,33 @@ You can find your BlueXP Account ID by selecting the *Account* drop-down from th
 //image:byol-nss-licenses-get.png[NetApp Support Site Software Licenses page]
 //. Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
 
-=== Add BlueXP ransomware protection license to BlueXP digital wallet
-
-After you purchase a BlueXP ransomware protection license for your BlueXP account, you need to add the license to the BlueXP digital wallet.
-
 .Steps
-. From the BlueXP menu, select *Governance* > *Digital wallet* > *Data Services Licenses*.
-+
-image:digital-wallet-data-services-licenses-tab2.png[The BlueXP digital wallet Data Services Licenses tab]
 
-. Select *Add License*.
+. After you obtain the license, return to BlueXP ransomware protection. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
+
+. Select *Add license to BlueXP*. 
 +
-image:byol-digital-wallet-license-add2.png[NetApp BlueXP digital wallet Add License page]
-. In the Add License page, enter the license information and select *Add License*:
+You will be directed to BlueXP digital wallet. 
+
+. In BlueXP digital wallet, from the *Data Services Licenses* tab, select *Add license*. 
+
++
+image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+
+. In the Add License page, enter the serial number and NetApp Support Site account information.
+
 +
 * If you have the BlueXP license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
 +
 If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
 * If you have the BlueXP license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
 
+. Select *Add License*. 
+
 .Result
 BlueXP digital wallet now shows BlueXP ransomware protection with a license. 
 
-image:byol-digital-wallet-licenses-added.png[NetApp BlueXP digital wallet]
+
 
 == Update your BlueXP license when it expires
 
