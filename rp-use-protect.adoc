@@ -13,13 +13,13 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 [.lead]
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
 
-* View existing workload protection. 
-* Change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
-* Assign a policy to a workload.
-* Change the priority or importance of the workload. 
+* Change existing workload protection. 
+** Change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
+** Change the priority or importance of the workload. 
+* Manage policies
+** Assign a policy to a workload.
 ** Increase application protection to prevent future ransomware attacks.
-** Change the protection for a workload that was previously protected in the service.
-* Manage policies (only the ones that you created).
+** Edit or delete policies (only the ones that you created).
 
 
 
@@ -44,7 +44,7 @@ BlueXP ransomware protection assigns a priority to each workload during discover
 * *N/A*: Protection is not enabled or sufficient on the workload. 
 
 
-== View workload ransomware protection 
+== View ransomware protection on a workload
 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
@@ -63,12 +63,12 @@ One of the first steps in protecting workloads is viewing your current workloads
 * From the menu, select *Protection*.
 +
 image:screen-protection-ga.png[Protection page]
-. From this page, you can view protection details for the workload.
+. From this page, you can view and change some protection details for the workload.
 
 //. To see file share workloads, select the *File share workloads* tab. 
 // * To see application workloads, select the *Application workloads* tab. 
 
-== View workload protection details
+== Change workload protection details
 
 Reviewing protection details helps you assess the protection status that you currently have along with the workload priority, current protection policy, information about the workload itself, and storage information. 
 
@@ -78,44 +78,53 @@ Reviewing protection details helps you assess the protection status that you cur
 . From the Protection page, select a workload. 
 +
 image:screen-protection-details.png[Workload details from the Protection page]
-. From the workload details page, you can assign a policy to a workload, change a workload name or priority, view alerts, view backup destinations, and view recovery information.
++
+From the workload details page, you can assign a policy to a workload, change a workload name or priority, view alerts, view backup destinations, and view recovery information.
 
+. To change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name and change the name. 
 
-== Change the workload name
+. Change the importance of the workload from the assigned priority, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority and change it. 
 
-You might want to change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
-
-.Steps 
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-. From the Protection page, select a workload. 
-. Click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name. 
-. Change the name. 
-
-
-== Change the workload priority
-
-If the importance of the workload changes or is different than the assigned priority, you can change it. 
-
-.Steps 
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-. From the Protection page, select a workload. 
-. Click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority. 
-. Change the priority. 
-
-== View workload backup destinations
-
-Within the workload details, you can quickly review the configured backup destinations.  
-
-.Steps 
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-. From the Protection page, select a workload. 
-. In the Protection pan, click the *View backup destination*.
+. To view workload backup destinations, in the Protection pane of the Workload details page, click the *View backup destination*.
 +
 A list of configured backup destinations appears. 
 For details, see link:rp-use-settings.html[Configure protection settings].
+
+== Enable application- or VM-consistent protection with SnapCenter
+
+Enabling application- or VM-consistent protection helps you protect your application or VM workloads in a consistent manner, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. 
+
+This process initiates installing SnapCenter Server for applications or SnapCenter for VMware for VMs. 
+
+To learn about SnapCenter, refer to the following information:  
+
+* https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^]
+* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere^]
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select a workload. 
++
+image:screen-protection-ga.png[Protection page]
+
+. On the Protection page, in the *Workload consistent* column, select *Enable* to enable SnapCenter. 
++
+image:screen-protection-enable-sc.png[Enable workload-consistent protection page]
+
+. In the Workload location field, select *Copy* to copy workload location information to the clipboard for use in the SnapCenter installation. Scroll down to see the remainder of the workload details. 
+
+. Select *Install SnapCenter*. 
++
+* If you selected an application-based workload, the SnapCenter Software information appears. 
+* If you selected a VM-based workload, the SnapCenter Plug-in for VMware vSphere information appears. 
+
+. Follow the information to install SnapCenter. 
+
+. Return to BlueXP ransomware protection. The Workload consistent column on the Protection page indicates that SnapCenter was enabled. 
+
+. Hover over the "Enabled" information to review a message indicating that the workload is managed by SnapCenter. 
+
 
 == Assign a predefined protection policy to workloads
 
