@@ -19,16 +19,18 @@ This FAQ can help if you're just looking for a quick answer to a question.
 For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
 
 *Do you need a license to use BlueXP ransomware protection?*
-A NetApp License File (NLF) is not required. The BlueXP ransomware protection preview itself does not require any special licensing.  All preview licenses are Evaluation licenses. 
 
-The preview version of this service requires a BlueXP backup and recovery service license. 
+You can use the following license types:
 
-TIP: For the preview version, NetApp helps to set up the evaluation and any required licenses.
+* Sign up for a 90-day free trial.
+* Purchase a pay-as-you-go (PAYGO) subscription for 1, 2 or 3 years with Amazon Web Services (AWS) Marketplace.
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
+
 
 *How do you enable BlueXP ransomware protection?* 
 BlueXP ransomware protection does not require any enablement. The ransomware protection option is automatically enabled on the BlueXP left navigation. 
 
-For the preview version, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
+To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
 
 
 **Does BlueXP ransomware protection available in standard, restricted, and private modes?**
@@ -73,7 +75,7 @@ The workload priority is determined by the following Snapshot frequencies:
 If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 
 
 **The Dashboard doesn't show all my workloads. What might be wrong?**
-Currently, only NFS volumes are supported. iSCSI volumes, CIFS volumes and other non-supported configurations are filtered out and do not appear on the Dashboard. 
+Currently, only NFS and CIFS volumes are supported. iSCSI volumes  and other non-supported configurations are filtered out and do not appear on the Dashboard. 
 
 == Protection policies
 

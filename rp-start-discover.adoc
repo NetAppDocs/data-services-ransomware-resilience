@@ -13,7 +13,7 @@ summary: During discovery, BlueXP ransomware protection analyzes all volumes and
 [.lead]
 To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and workspaces within an account. 
 
-NOTE: For the preview version, BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
+BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
 The service assesses the existing protection level including the current backup protection, Snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
 

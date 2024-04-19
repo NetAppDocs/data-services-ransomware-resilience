@@ -33,7 +33,7 @@ For more licensing details, refer to link:concept-ransomware-protection.html[Lea
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
 
 ** The BlueXP backup and recovery service with backup enabled on the working environment
-** A BlueXP working environment with NetApp NAS on-premises storage 
+** A BlueXP working environment with NetApp on-premises storage (using NAS or CIFS protocols)
 ** A BlueXP account with at least one active Connector connecting to on-premises ONTAP clusters. All source and working environments must be on the same BlueXP account. 
 ** A BlueXP user account with Account Admin privileges for discovering resources
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[Standard BlueXP requirements^]

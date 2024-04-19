@@ -14,9 +14,11 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
 
 * View existing workload protection. 
+* Change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
 * Assign a policy to a workload.
-** Increase application protection to prevent future RW attacks.
-** Change the protection for a workload that was previously protected in the RW service.
+* Change the priority or importance of the workload. 
+** Increase application protection to prevent future ransomware attacks.
+** Change the protection for a workload that was previously protected in the service.
 * Manage policies (only the ones that you created).
 
 
@@ -46,7 +48,7 @@ BlueXP ransomware protection assigns a priority to each workload during discover
 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
-//* Application workloads 
+* Application workloads 
 * VM workloads
 * File share workloads
 
@@ -57,16 +59,63 @@ One of the first steps in protecting workloads is viewing your current workloads
 
 . Do one of the following: 
 +
-* From the Dashboard Data Protection pane, select *View all*. 
+* From the Data Protection pane on the Dashboard, select *View all*. 
 * From the menu, select *Protection*.
 +
-image:screen-protection.png[Protection page]
-. From this page, you can assign a policy to a workload.
+image:screen-protection-ga.png[Protection page]
+. From this page, you can view protection details for the workload.
 
 //. To see file share workloads, select the *File share workloads* tab. 
 // * To see application workloads, select the *Application workloads* tab. 
 
+== View workload protection details
 
+Reviewing protection details helps you assess the protection status that you currently have along with the workload priority, current protection policy, information about the workload itself, and storage information. 
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select a workload. 
++
+image:screen-protection-details.png[Workload details from the Protection page]
+. From the workload details page, you can assign a policy to a workload, change a workload name or priority, view alerts, view backup destinations, and view recovery information.
+
+
+== Change the workload name
+
+You might want to change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select a workload. 
+. Click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name. 
+. Change the name. 
+
+
+== Change the workload priority
+
+If the importance of the workload changes or is different than the assigned priority, you can change it. 
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select a workload. 
+. Click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority. 
+. Change the priority. 
+
+== View workload backup destinations
+
+Within the workload details, you can quickly review the configured backup destinations.  
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select a workload. 
+. In the Protection pan, click the *View backup destination*.
++
+A list of configured backup destinations appears. 
+For details, see link:rp-use-settings.html[Configure protection settings].
 
 == Assign a predefined protection policy to workloads
 
@@ -110,21 +159,28 @@ BlueXP ransomware protection includes the following predefined policies that are
 
 . From BlueXP ransomware protection, do one of the following: 
 +
-* From the Dashboard Data Protection pane, select *View all*. 
-* From the Dashboard Recommendation pane, select a recommendation about assigning a policy and select *Review and fix*. 
+* From the Data Protection pane on the Dashboard, select *View all*. 
+* From the Recommendation pane on the Dashboard, select a recommendation about assigning a policy and select *Review and fix*. 
 * From the menu, select *Protection*.
 
-. From the Protection page, review the workloads and select *Protect* next to the workload. 
+. From the Protection page, review the workloads and select *Protect* (for VM-based or file share workloads, select *Edit protection*) next to the workload. 
 +
-A list of policies appears. 
+The workload details page appears. 
 +
-image:screen-protect-policy-list.png[Protection policy list]
+image:screen-protection-details.png[Workload details from the Protection page]
 
-. To see details, click on the down arrow on a policy.
+. From the workload details page, to assign a policy, click *Edit protection*. 
++
+A list of policies appears and opens to the currently assigned policy. 
+
+. To see details, click the *Down arrow* on a policy.
+
++
+image:screen-protection-policy-details.png[Protection policy details]
+
 
 . Select a policy to assign to the workload. 
 
-. Select *Protect*. 
 
 . Review the Dashboard Recommended actions pane, which shows the action as “Completed."
 
@@ -134,7 +190,7 @@ If the existing policies do not meet your business needs, you can create a new p
 
 You can create policies that govern primary and secondary storage and treat primary and secondary storage the same or differently. 
 
-You can create a policy when you are managing them or during the process of assigning a policy to a workload. 
+You can create a policy when you are managing all policies or during the process of reviewing a specific workload. 
 
 .Steps to create a policy during policy management
 
@@ -156,7 +212,7 @@ image:screen-protection-policy-add2.png[Add policy page]
 +
 NOTE: If you choose to copy and modify an existing policy, you must change at least one setting to make it unique. 
 
-. For each item, select the Down arrow. 
+. For each item, select the *Down arrow*. 
 
 * *Primary storage*: 
 ** *Snapshot copy schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
@@ -180,7 +236,7 @@ This option uses NetApp DataLock technology, which locks backups on secondary st
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 +
-image:screen-protection2.png[Protection page]
+image:screen-protection-ga.png[Protection page]
 
 . From the Protection page, select *Protect*. 
 
@@ -207,9 +263,9 @@ You might want to increase the protection to prevent future ransomware attacks b
 
 . From the Protect page, select a workload, and select *Protect*. 
 
-. In the Protect page, select a different policy for the workload.
+. In the workload details page, select a different policy for the workload.
 
-. To change any details for the policy, select the down arrow on the right and change the details. 
+. To change any details for the policy, select the *Down arrow* on the right and change the details. 
 
 . Select *Save* to finish the change. 
 
@@ -239,8 +295,6 @@ You can change the details of a policy only when the policy is not associated wi
 You can delete a protection policy that is not currently associated with any workloads. 
 
 .Steps 
-
-
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 

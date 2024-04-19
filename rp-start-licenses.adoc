@@ -110,8 +110,7 @@ A message appears indicating that a license has been added.
 
 If you want to bring your own license (BYOL), you'll need to purchase the license, get the NetApp License File (NLF), and add the license to BlueXP digital wallet. 
 
-
-=== Add your license file to BlueXP digital wallet
+*Add your license file to BlueXP digital wallet*
 
 After you've purchased your BlueXP ransomware protection license from your NetApp Sales Rep, you activate the license by entering the BlueXP ransomware protection serial number and NetApp Support Site (NSS) account information. 
 

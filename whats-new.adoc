@@ -21,8 +21,12 @@ Learn what's new in BlueXP ransomware protection preview.
 
 This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
 
-* Licensing updates
-* tbd
+* *Licensing updates*: You can sign up for a 90-day free trial, purchase a pay-as-you-go subscription for 1, 2, or 3 years with Amazon Web Services Marketplace, or bring your own NetApp license.  
+* *CIFS protocol*: The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
+* *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload name, change the workload importance, review the currently assigned policy, and review the configured backup destinations.   
+
+//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
@@ -32,7 +36,6 @@ This preview release of BlueXP ransomware protection includes the following upda
 
 * *Immutability on secondary storage (DataLock)*: You can now make the backup immutable in secondary storage using NetApp DataLock technology in the object store. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about creating protection policies]. 
 
-//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
 
 * *Automatic backup to NetApp StorageGRID*: In addition to using AWS, you can now choose StorageGRID as your backup destination. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring backup destinations].
 * *Additional features to investigate potential attacks*: You can now view more forensic details to investigate the detected potential attack. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 
