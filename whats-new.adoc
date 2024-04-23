@@ -42,6 +42,12 @@ link:rp-use-protect.html[Learn more about protecting workloads].
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
+* *Ransomware protection strategies*: If the existing policies do not meet your business needs, you can create a ransomware protection strategy, which can include the following policies: 
+
+** Detection policy governed by BlueXP ransomware protection
+** Snapshot policy governed by other NetApp products
+** Backup policy governed by other NetApp products
+
 * *Snapshot copy locking on the primary*: 
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 

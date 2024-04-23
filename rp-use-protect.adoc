@@ -146,7 +146,7 @@ With BlueXP ransomware protection, you can assign ransomware protection to workl
 
 Using BlueXP ransomware protection, you can accomplish the following goals: 
 
-* <<Assign a predefined protection policy to workloads>>
+* <<Assign a predefined detection policy to workloads>>
 * <<Assign a protection policy to workloads>>
 ** <<Assign a detection strategy in addition to policies managed in other services>>
 ** <<Assign a detection policy to workloads with policies managed with this service>>
@@ -154,9 +154,9 @@ Using BlueXP ransomware protection, you can accomplish the following goals:
 * <<Edit a protection policy>>
 * <<Delete a protection policy>>
 
-=== Assign a predefined protection policy to workloads
+=== Assign a predefined detection policy to workloads
 
-To help protect your data, you can assign an existing ransomware protection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
+To help protect your data, you can assign an existing ransomware protection detection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
 
 BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
 
@@ -310,6 +310,11 @@ NOTE: If you choose to copy and modify an existing strategy, the service appends
 
 . For each item, select the *Down arrow*. 
 
+* *Detection policy*: 
+** *Policy*: Choose one of the predesigned detection policies. 
+** *Primary detection*: Enable ransomware detection to have the service detect potential ransomware attacks. 
+** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated Snapshot copies when Primary detection is enabled. 
+
 * *Snapshot policy*: 
 ** *Snapshot policy name*: Enter a name for the Snapshot policy. 
 ** *Snapshot locking**: Enable this to have the service use DataLock to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. 
@@ -317,7 +322,7 @@ NOTE: If you choose to copy and modify an existing strategy, the service appends
 The period of time that the Snapshot is locked is called the DataLock Retention Period and is based on the policy schedule and retention setting that you define, plus a 14-day buffer. Any DataLock retention policy that is less than 30 days is rounded up to 30 days minimum.  
 ** *Snapshot schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
 
-** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated Snapshot copies when Primary detection is enabled. 
+
 
 +
 image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
