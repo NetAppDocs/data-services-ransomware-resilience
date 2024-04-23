@@ -218,14 +218,13 @@ image:screen-protection-policy-add2.png[Add policy page]
 
 == Manage ransomware detection policies
 
-You can edit or delete a ransomware detection policy. 
+You can assign, edit, or delete a ransomware detection policy. 
 
 Using BlueXP ransomware protection, you can accomplish the following goals: 
 
 * <<Assign a detection policy to workloads>>
-* <<Create a protection policy>>
-* <<Edit a protection policy>>
-* <<Delete a protection policy>>
+* <<Edit a detection policy>>
+* <<Delete a detection policy>>
 
 === Assign a detection policy to workloads
 
@@ -272,14 +271,19 @@ BlueXP ransomware protection includes the following predefined policies that are
 * From the Data Protection pane on the Dashboard, select *View all*. 
 * From the Recommendation pane on the Dashboard, select a recommendation about assigning a policy and select *Review and fix*. 
 * From the menu, select *Protection*.
++
+image:screen-protection-sc-columns.png[Protection page]
 
-. From the Protection page, review the workloads and select *Protect* (for VM-based or file share workloads, select *Edit protection*) next to the workload. 
+. From the Protection page, select a workload. 
+//. From the Protection page, review the workloads and select *Protect* (for VM-based or file share workloads, select *Edit protection*) next to the workload. 
 +
 The workload details page appears. 
 +
 image:screen-protection-details.png[Workload details from the Protection page]
 
-. From the workload details page, to assign a policy, click *Edit protection*. 
+. From the Workload details page, select *Protect*. 
++
+TIP: After the workload has been assigned a protection policy, the *Protect* option changes to *Edit protection*. 
 +
 A list of policies appears and opens to the currently assigned policy. 
 
@@ -297,17 +301,18 @@ image:screen-protection-policy-details.png[Protection policy details]
 
 === Assign a detection policy to workloads
 
-You can assign detection policies on workloads that have no previous policies or assign detection policies managed in other NetApp products. 
+You can assign detection policies on workloads that have no previous policies or assign detection policies in addition to Snapshot and Backup policies managed in other NetApp products. 
 
-==== Assign a policy to workloads with policies managed in other services
+==== Assign a detection policy to workloads managed in other services
+
+With BlueXP ransomware protection, you can assign a ransomware detection policy in addition to policies that are managed in other NetApp products. The detection policy will not change the policies managed in other products. 
 
 Other services, such as BlueXP backup and recovery and SnapCenter, use the following types of policies to govern workloads: 
 
-* Snapshot policies
-* Replication to secondary storage policies
-* Backup-to-object storage policies
+* Policies governing Snapshots
+* Policies governing replication to secondary storage
+* Policies governing backups to object storage
 
-With BlueXP ransomware protection, you can assign a ransomware detection policy in addition to policies managed by other NetApp products. The detection policy will not change the policies managed in other products. 
 
 .Steps
 
