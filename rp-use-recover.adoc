@@ -38,9 +38,9 @@ Review the workloads that are in the "Restore needed" recovery status.
 image:screen-recovery2.png[Recovery page]
 //April 2024 get new screen without Workload consistent column. 
 
-== Recover a workload managed by SnapCenter 
+== Restore a workload managed by SnapCenter 
 
-Using BlueXP ransomware protection, the storage administrator can determine how best to recover workloads either from the recommended restore point or the preferred restore point. 
+Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
 
 The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
 
@@ -58,9 +58,7 @@ The application state will change if required for the restore. The application w
 
 . *Restore scope*: Application-consistent 
 
-. *Source*: Select the down arrow next to Source to see details. 
-
-.. Select the restore point that you want to use to restore the data. 
+. *Source*: Select the down arrow next to Source to see details. Select the restore point that you want to use to restore the data. 
 +
 TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
 

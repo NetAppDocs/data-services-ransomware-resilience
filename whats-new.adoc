@@ -34,11 +34,11 @@ link:rp-start-licenses.html[Learn more about setting up licensing].
 +
 link:rp-use-protect.html[Learn more about viewing workload details].
 
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details]. 
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 
 * *Application-consistent and VM-consistent protection and recovery*: You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to its previous state and last transaction. 
 +
-link:rp-use-protect.html[Learn more about protecting workloads].
+link:rp-use-protect.html[Learn more about enabling workload-consistent protection with SnapCenter].
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
@@ -48,9 +48,28 @@ link:rp-use-protect.html[Learn more about protecting workloads].
 ** Snapshot policy governed by other NetApp products
 ** Backup policy governed by other NetApp products
 
-* *Snapshot copy locking on the primary*: 
++
+link:rp-use-protect.html[Learn more about protecting workloads and creating protection strategies].
+
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
+
+* *Snapshot copy locking on primary storage*: Enable this to use DataLock to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
+
++
+link:rp-use-protect.html[Learn more about protecting workloads].
+
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+
+* *Enable threat detection* using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
++
+link:rp-use-settings.html[Learn more about configuring Settings options].  
+
+* *Download reports* from the Dashboard, Protection, Alerts, and Recovery pages. 
++
+link:rp-use-dashboard.html[Learn more about downloading reports from the Dashboard and other pages].
+
 
 
 == 5 March 2024

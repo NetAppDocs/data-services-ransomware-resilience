@@ -11,7 +11,9 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media
 
 [.lead]
-You can configure a backup destination by reviewing recommendations on the Dashboard. 
+You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard. 
+
+Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
 // or by accessing the BlueXP ransomware protection *Settings* option.
 
@@ -46,7 +48,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 
 . Review the Dashboard's Recommended actions pane. 
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
+image:screen-dashboard2.png[Dashboard page]
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
 
@@ -61,7 +63,7 @@ image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Das
 
 
 
-== Add StorageGRID as a backup destination
+=== Add StorageGRID as a backup destination
 To set up NetApp StorageGRID as a backup destination, enter the following information. 
 
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -95,7 +97,7 @@ The new backup destination is added to the list of backup destinations.
 
 image:screen-settings-backup-destinations-list-storagegrid.png[Backup destinations page the Settings option]
 
-== Add Amazon Web Services as a backup destination 
+=== Add Amazon Web Services as a backup destination 
 
 
 To set up AWS as a backup destination, enter the following information. 
@@ -155,8 +157,29 @@ image:screen-settings-backup-destinations-list-aws.png[Backup destinations page 
 //image:screen-settings.png[Settings page]
 
 
+== Enable threat detection
+
+You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Review the Dashboard's Recommended actions pane. 
+
+. From the Dashboard, select *Review and fix* for the recommendation of "Enable threat detection." 
++
+The Settings page appears. 
++
+image:screen-settings-threat-detection.png[Settings page]
+. In the Settings page, select *Connect* in the Threat detection pane. 
++
+image:screen-settings-threat-detection-details.png[Enable threat detection details page]
+
+. Enter SIEM/XDR server details to enable threat detection. 
+
+. Select *Enable*. 
++
+The Threat detection pane on the Settings page shows "Connected."
 
 //== Add multi-admin verification 
 

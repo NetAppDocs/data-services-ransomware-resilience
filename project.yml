@@ -29,7 +29,7 @@ sidebar:
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-        - title: Configure backup destinations
+        - title: Configure backup destinations and enable threat detection
           url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html

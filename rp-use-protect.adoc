@@ -14,12 +14,13 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
 
 * Change existing workload protection details. 
-* Assign a predefined protection policy to a workload. 
-** Change the name of a workload for workloads (such as applications and VM datastores) not managed in SnapCenter.
+* Assign a protection policy to a workload. 
+** Change the name of a workload (such as applications and VM datastores) not managed in SnapCenter.
 ** Change the priority or importance of the workload. 
-* Enable workload-consistent protection
-* Create or manage ransomware protection strategies
+* Enable workload-consistent protection.
+* Create or manage ransomware protection strategies.
 ** Assign a ransomware protection strategy to a workload.
+** Import a strategy and adjust it. 
 ** Edit or delete protection strategies (only the ones that you created).
 
 *Workload priorities*
@@ -178,12 +179,16 @@ NOTE: If you choose to copy and modify an existing strategy, the service appends
 ** *Policy*: Choose one of the predesigned detection policies. 
 ** *Primary detection*: Enable ransomware detection to have the service detect potential ransomware attacks. 
 ** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated Snapshot copies when Primary detection is enabled. 
++
+If you want to change the blocked file extensions, edit them in System Manager. 
 
 * *Snapshot policy*: 
 ** *Snapshot policy name*: Enter a name for the Snapshot policy. 
-** *Snapshot locking*: Enable this to have the service use DataLock to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. 
+** *Snapshot locking*: Enable this to use DataLock to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. 
 +
 The period of time that the Snapshot is locked is called the DataLock Retention Period and is based on the policy schedule and retention setting that you define, plus a 14-day buffer. Any DataLock retention policy that is less than 30 days is rounded up to 30 days minimum.  
++
+Snapshot copy locking is available with ONTAP 9.13.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
 ** *Snapshot schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
 
 
@@ -228,7 +233,7 @@ Using BlueXP ransomware protection, you can accomplish the following goals:
 
 === Assign a detection policy to workloads
 
-To help protect your data, you can assign an existing ransomware protection detection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
+To help protect your data against ransomware attacks, you can assign an existing ransomware protection detection policy to one or more workloads. You can also assign a different policy to a workload that already has a policy.
 
 BlueXP ransomware protection includes the following predefined policies that are aligned with workload priority: 
 

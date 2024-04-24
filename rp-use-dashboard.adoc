@@ -13,7 +13,7 @@ summary: The BlueXP ransomware protection Dashboard provides information about t
 [.lead]
 The BlueXP ransomware protection Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
 
-You can also use the Dashboard to review and act on protection recommendations, access global settings, and access this technical documentation. 
+You can also use the Dashboard to review and act on protection recommendations, access global settings, download reports, and access this technical documentation. 
 
 == Review workload health using the Dashboard
 
@@ -23,7 +23,7 @@ You can also use the Dashboard to review and act on protection recommendations, 
 +
 After discovery, the Dashboard shows you the health of workload data protection. 
 +
-image:screen-dashboard-recommended-actions-configure-backup-destinations.png[Dashboard page]
+image:screen-dashboard2.png[Dashboard page]
 
 
 . From the Dashboard, you can view and do any of the following in each of the panes: 
@@ -75,6 +75,8 @@ Refer to link:rp-use-settings.html[Configure protection settings].
 |Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].
 //|Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
+|Enable threat detection | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+Refer to link:rp-use-settings.html[Configure protection settings].
 |Enable workload-consistent protection for applications or VMware | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
 Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
@@ -101,6 +103,39 @@ TIP: You can later change a dismissed item to a To Do item. When you mark an ite
 
 . To review information on how to act on the recommendations, select the *information* icon.
 
+== Review and download reports
+
+You can download reports and save them as .CSV files. 
+Before you download reports, you should refresh the data, which also refreshes data that will appear in the reports. 
+
+You can download reports from any of the main menu options: 
+
+* *Dashboard:* Report contains all summary information for all workloads. 
+* *Protection*: Report contains the status and details of all workloads, including the total number protected and at risk. 
+* *Alerts*: Report includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
+* *Recovery*: Report includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
+
+If you download reports from the Protection, Alerts, or Recovery page, the data in the report will show only the data on that page. 
+
+The reports include data for all workloads on all BlueXP working environments. 
+
+.Steps
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
++
+image:screen-dashboard2.png[Dashboard page]
+ 
+. From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
+
+. Do one of the following:
+* From the Dashboard or other page, select the *Download* image:button-download.png[Download option] option. 
+
+* From the BlueXP ransomware protection menu, select *Reports*. 
+
+. If you selected the *Reports* option, select one of the preconfigured reports and select *Download (CSV)*. 
+
+
+
 == Access technical documentation 
 
 You can access the technical documentation from docs.netapp.com or from inside the BlueXP ransomware protection service. 
@@ -109,6 +144,6 @@ You can access the technical documentation from docs.netapp.com or from inside t
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 
-. From the Dashboard, select the vertical Actions image:button-actions-vertical.png[Vertical Actions option] option.
+. From the Dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
 
 . Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page.  

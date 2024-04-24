@@ -65,7 +65,9 @@ For details, refer to link:rp-start-login.html[Access BlueXP ransomware protecti
 
 Use the BlueXP ransomware protection backup destinations option to configure backup destinations. For details, refer to link:rp-use-settings.html[Configure settings options].
 
+=== Enable threat detection (optional)
 
+Enable threat detection using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard shows a recommendation to "Enable threat detection". This can be configured on the Settings page. link:rp-use-settings.html[Learn more about configuring Settings options].  
 
 //== Set up email notifications 
 
