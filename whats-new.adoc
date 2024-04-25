@@ -42,22 +42,20 @@ link:rp-use-protect.html[Learn more about enabling workload-consistent protectio
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
-* *Ransomware protection strategies*: If the existing policies do not meet your business needs, you can create a ransomware protection strategy, which can include the following policies: 
+* *Ransomware protection strategies*: If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies:  
 
-** Detection policy governed by BlueXP ransomware protection
 ** Snapshot policy governed by other NetApp products
 ** Backup policy governed by other NetApp products
+** Detection policy governed by BlueXP ransomware protection
 
 +
 link:rp-use-protect.html[Learn more about protecting workloads and creating protection strategies].
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
-* *Snapshot copy locking on primary storage*: Enable this to use DataLock to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
-
-+
-link:rp-use-protect.html[Learn more about protecting workloads].
-
+//* *Snapshot copy locking on primary storage*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
+//+
+//link:rp-use-protect.html[Learn more about protecting workloads].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
@@ -70,9 +68,9 @@ link:rp-use-settings.html[Learn more about configuring Settings options].
 +
 link:rp-use-dashboard.html[Learn more about downloading reports from the Dashboard and other pages].
 
-* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
-+
-link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
+//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
+//+
+//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
