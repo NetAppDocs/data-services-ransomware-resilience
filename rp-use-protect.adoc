@@ -23,12 +23,12 @@ You can protect workloads against ransomware attacks by completing the following
 ** Import a strategy and adjust it. 
 ** Edit or delete protection strategies (only the ones that you created).
 
-*Workload priorities*
+*Workload importance*
 
-BlueXP ransomware protection assigns a priority to each workload during discovery. The workload priority is determined by the following Snapshot frequencies: 
+BlueXP ransomware protection assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *High*: Snapshot copies taken less than 1 per day but greater than 1 per hour
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 *Protection health statuses*
@@ -40,12 +40,29 @@ BlueXP ransomware protection assigns a priority to each workload during discover
 * *In progress*: A policy is being applied but not completed yet. 
 * *Failed*: A policy is applied but is not working. 
 
-*Protection health*: A workload can have one of the following protection health statuses: 
+//*Protection health*: A workload can have one of the following protection health statuses: 
 
-* *Healthy*: The workload has protection enabled and backups and Snapshot copies have been completed. 
-* *In progress*: Backups or Snapshot copies are in progress. 
-* *Failed*: Backups or Snapshot copies have not completed successfully. 
-* *N/A*: Protection is not enabled or sufficient on the workload. 
+//* *Healthy*: The workload has protection enabled and backups and Snapshot copies have been completed. 
+//* *In progress*: Backups or Snapshot copies are in progress. 
+//* *Failed*: Backups or Snapshot copies have not completed successfully. 
+//* *N/A*: Protection is not enabled or sufficient on the workload. 
+
+*Detection status*: A workload can have one of the following ransomware detection statuses: 
+
+* *Learning*: A ransomware detection policy was recently assigned to the workload and the service is scanning workloads. 
+* *Active*: A ransomware detection protection policy is assigned. 
+* *Not set*: A ransomware detection protection policy is not assigned. 
+* *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
+
+*Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. 
+
+*Snapshot and backup policies*: This column shows the Snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
+
+* Managed by SnapCenter
+* Managed by BlueXP backup and recovery
+* Name of ransomware protection policy that governs Snapshots and backups
+* None
+
 
 
 == View ransomware protection on a workload

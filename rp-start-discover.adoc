@@ -15,6 +15,8 @@ To use BlueXP ransomware protection, the service needs to first discover data. D
 
 BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
+NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. 
+
 The service assesses the existing protection level including the current backup protection, Snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
 
 .Steps

@@ -105,7 +105,8 @@ TIP: You can later change a dismissed item to a To Do item. When you mark an ite
 
 == Review and download reports
 
-You can download reports and save them as .CSV files. 
+You can download reports that show details of protection, alerts, and recovery and save them as .CSV files. 
+
 Before you download reports, you should refresh the data, which also refreshes data that will appear in the reports. 
 
 You can download reports from any of the main menu options: 

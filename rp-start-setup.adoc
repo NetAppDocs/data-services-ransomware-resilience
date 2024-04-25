@@ -54,20 +54,6 @@ To create a Connector in BlueXP before using the service, refer to the BlueXP do
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. This service discovers all workspaces and all Connectors associated with this account. 
 
 
-=== Access BlueXP ransomware protection 
-
-You use NetApp BlueXP to log in to the BlueXP ransomware protection service. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
-
-For details, refer to link:rp-start-login.html[Access BlueXP ransomware protection].
-
-
-=== Configure backup destinations in BlueXP ransomware protection
-
-Use the BlueXP ransomware protection backup destinations option to configure backup destinations. For details, refer to link:rp-use-settings.html[Configure settings options].
-
-=== Enable threat detection (optional)
-
-Enable threat detection using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard shows a recommendation to "Enable threat detection". This can be configured on the Settings page. link:rp-use-settings.html[Learn more about configuring Settings options].  
 
 //== Set up email notifications 
 

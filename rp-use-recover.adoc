@@ -206,7 +206,9 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 === Restore an application workload at the file level
 
+Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
 
+.Steps 
 . On the Restore page, in the Restore scope, select *By file*. 
 
 . On the list of volumes, select the volume you want to restore. 

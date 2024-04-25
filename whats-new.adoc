@@ -70,7 +70,9 @@ link:rp-use-settings.html[Learn more about configuring Settings options].
 +
 link:rp-use-dashboard.html[Learn more about downloading reports from the Dashboard and other pages].
 
-
+* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
++
+link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
