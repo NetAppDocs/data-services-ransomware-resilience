@@ -45,8 +45,10 @@ sidebar:
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
           url: /rp-use-recover.html
-#        - title: Manage workloads 
-#          url: /rp-use-manage.html
+#       - title: Manage workloads 
+#         url: /rp-use-manage.html
+        - title: View and download reports
+          url: /rp-use-reports.html 
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
