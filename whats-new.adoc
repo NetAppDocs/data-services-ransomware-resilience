@@ -42,11 +42,11 @@ link:rp-use-protect.html[Learn more about enabling workload-consistent protectio
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
-* *Ransomware protection strategies*: If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies:  
+* *Ransomware protection strategies*: If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in this service:  
 
-** Snapshot policy governed by other NetApp products
-** Backup policy governed by other NetApp products
-** Detection policy governed by BlueXP ransomware protection
+** Snapshot policy
+** Backup policy 
+** Detection policy 
 
 +
 link:rp-use-protect.html[Learn more about protecting workloads and creating protection strategies].

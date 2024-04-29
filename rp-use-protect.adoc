@@ -17,9 +17,9 @@ You can protect workloads against ransomware attacks by completing the following
 ** Change the name of a workload (such as applications and VM datastores) not managed in SnapCenter.
 ** Change the priority or importance of the workload. 
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
-* Create or manage ransomware protection strategies that include policies for Snapshots, backups, and ransomware detection.
+* Create or manage ransomware protection strategies that include policies that you create for Snapshots, backups, and ransomware detection.
 ** Import a strategy and adjust it. 
-** Edit or delete protection strategies (only the ones that you created).
+** Edit or delete detection strategies (only the ones that you created).
 
 
 
@@ -48,7 +48,7 @@ The Protection page shows the following information about workload protection:
 * *Not set*: A ransomware detection protection policy is not assigned. 
 * *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
 
-*Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. 
+*Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
 
 *Snapshot and backup policies*: This column shows the Snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
 
@@ -190,19 +190,13 @@ image:screen-protection-enable-sc.png[Enable workload-consistent protection page
 
 == Create a ransomware protection strategy (if you have no Snapshot or Backup policies)
 
-If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies: 
+If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in BlueXP ransomware protection: 
 
 * Snapshot policy 
 * Backup policy 
 * Ransomware detection policy
 
-With BlueXP ransomware protection, you can assign a ransomware protection strategy to workloads having policies that are managed by these other products and services: 
 
-* BlueXP backup and recovery manages policies governing Snapshots, replications to secondary storage, and backups to object storage. 
-
-* SnapCenter Software manages application-consistent Snapshots and backup protection policies. 
-
-* SnapCenter Plug-in for VMware vSphere manages VM-consistent protection policies. 
 
 .Steps to create a ransomware protection strategy 
 
@@ -293,21 +287,9 @@ image:screen-protect-br-policies.png[Protect page showing BlueXP backup and reco
 
 . On the Protection page, review the Detection policy column to see the Detection policy assigned. Also, the Snapshot and Backup policies column shows the name of the product or service managing the policies. 
 
-
-
-== Manage ransomware detection policies
-
-You can edit or delete a ransomware detection policy or assign a different policy to the workload.
-
-
-#*CAN YOU EDIT or DELETE a detection policy or a RP strategy?)*#
-
-
-
-
 === Assign a different policy 
 
-You can assign a different protection policy replacing current one.
+You can assign a different protection policy replacing the current one.
 
 .Steps 
 
@@ -325,38 +307,43 @@ You can assign a different protection policy replacing current one.
 
 . Select *Protect* to finish the change.
 
+== Manage ransomware protection strategies
 
-=== Edit a detection policy 
+You can edit or delete a ransomware strategy.
 
-You can change the details of a policy only when the policy is not associated with a workload.
+
+=== Edit a ransomware protection strategy 
+
+You can edit a protection strategy by selecting a different preconfigured detection policy strategy.
 
 .Steps 
 
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage policies*. 
+. From the Protection page, select *Manage ransomware strategies*. 
 
-. In the Manage policies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
 
-. From the Actions menu, select *Edit policy*. 
+. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
+
+. From the Actions menu, select *Edit strategy*. 
 
 . Change the details. 
 
 . Select *Save* to finish the change. 
 
-=== Delete a detection policy
+=== Delete a ransomware protection strategy
 
-You can delete a protection policy that is not currently associated with any workloads. 
+You can delete a protection strategy that is not currently associated with any workloads. 
 
 .Steps 
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage policies*. 
+. From the Protection page, select *Manage ransomware strategies*. 
 
-. In the Manage policies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to delete.
+. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
 
-. From the Actions menu, select *Delete policy*. 
+. From the Actions menu, select *Delete strategy*. 
 
 
