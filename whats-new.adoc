@@ -66,7 +66,7 @@ link:rp-use-settings.html[Learn more about configuring Settings options].
 
 * *Download reports* from the Dashboard, Protection, Alerts, and Recovery pages. 
 +
-link:rp-use-dashboard.html[Learn more about downloading reports from the Dashboard and other pages].
+link:rp-use-reports.html[Learn more about downloading reports from the Dashboard and other pages].
 
 //* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
 //+

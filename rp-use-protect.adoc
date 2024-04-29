@@ -297,9 +297,33 @@ image:screen-protect-br-policies.png[Protect page showing BlueXP backup and reco
 
 == Manage ransomware detection policies
 
-You can edit or delete a ransomware detection policy. 
+You can edit or delete a ransomware detection policy or assign a different policy to the workload.
+
+
 #*CAN YOU EDIT or DELETE a detection policy or a RP strategy?)*#
 
+
+
+
+=== Assign a different policy 
+
+You can assign a different protection policy replacing current one.
+
+.Steps 
+
+
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+. From the Protection page, select *Manage policies*. 
+
+. In the Manage policies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
+
+. From the Actions menu, select *Edit policy*. 
+
+
+. Select a different policy.  
+
+. Select *Protect* to finish the change.
 
 
 === Edit a detection policy 

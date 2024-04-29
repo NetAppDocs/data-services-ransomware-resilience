@@ -31,7 +31,7 @@ After the free trial ends or the license or AWS subscription expires, you can st
 * Run all scheduled operations that were created during the trial period or under the license. 
 
 == Try it out using a 90-day free trial
-You can try BlueXP ransomware protection out by using a 90-day free trial.
+You can try BlueXP ransomware protection out by using a 90-day free trial. You must be an account administrator to start the free trial. 
 
 NOTE: No capacity limits are enforced during the trial.  
 
