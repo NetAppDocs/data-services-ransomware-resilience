@@ -53,6 +53,7 @@ The Protection page shows the following information about workload protection:
 *Snapshot and backup policies*: This column shows the Snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
 
 * Managed by SnapCenter
+* Managed by SnapCenter Plug-in for VMware vSphere
 * Managed by BlueXP backup and recovery
 * Name of ransomware protection policy that governs Snapshots and backups
 * None

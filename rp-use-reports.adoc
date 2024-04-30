@@ -5,26 +5,26 @@ keywords: ransomware protection, ransomware protection dashboard, detect ransomw
 summary: Using BlueXP ransomware protection, you can download reports that show details of protection, alerts, and recovery and save them as .CSV files. 
 ---
 
-= View and download reports
+= Download reports
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-You can download reports that show details of protection, alerts, and recovery and save them as .CSV files. 
+You can download CSV files that show details of protection, alerts, and recovery and save them as .CSV files. 
 
-Before you download reports, you should refresh the data, which also refreshes data that will appear in the reports. 
+Before you download the CSV files, you should refresh the data, which also refreshes data that will appear in the files. 
 
-You can download reports from any of the main menu options: 
+You can download CSV files from any of the main menu options: 
 
-* *Dashboard:* Report contains all summary information for all workloads. 
-* *Protection*: Report contains the status and details of all workloads, including the total number protected and at risk. 
-* *Alerts*: Report includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
-* *Recovery*: Report includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
+* *Dashboard:* Contains all summary information for all workloads. 
+* *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
+* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
+* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 
-If you download reports from the Protection, Alerts, or Recovery page, the data in the report will show only the data on that page. 
+If you download CSV files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
-The reports include data for all workloads on all BlueXP working environments. 
+The CSV files include data for all workloads on all BlueXP working environments. 
 
 .Steps
 
@@ -39,5 +39,5 @@ image:screen-dashboard2.png[Dashboard page]
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured reports and select *Download (CSV)*. 
+. If you selected the *Reports* option, select one of the preconfigured CSV file names and select *Download (CSV)*. 
 

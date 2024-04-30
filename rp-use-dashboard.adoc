@@ -103,20 +103,20 @@ TIP: You can later change a dismissed item to a To Do item. When you mark an ite
 
 . To review information on how to act on the recommendations, select the *information* icon.
 
-== Review and download reports
+== Download CSV files
 
-You can download reports that show details of protection, alerts, and recovery and save them as .CSV files. 
+You can download CSV files that show details of protection, alerts, and recovery. 
 
-You can download reports from any of the main menu options: 
+You can download CSV files from any of the main menu options: 
 
-* *Dashboard:* Report contains all summary information for all workloads. 
-* *Protection*: Report contains the status and details of all workloads, including the total number protected and at risk. 
-* *Alerts*: Report includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
-* *Recovery*: Report includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
+* *Dashboard:* Contains all summary information for all workloads. 
+* *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
+* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
+* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 
-If you download reports from the Protection, Alerts, or Recovery page, the data in the report will show only the data on that page. 
+If you download CSV files from the Protection, Alerts, or Recovery page, only the data on that page is included in the CSV file. 
 
-The reports include data for all workloads on all BlueXP working environments. 
+The CSV files include data for all workloads on all BlueXP working environments. 
 
 .Steps
 
@@ -124,14 +124,14 @@ The reports include data for all workloads on all BlueXP working environments.
 +
 image:screen-dashboard2.png[Dashboard page]
  
-. From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
+. From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
 
 . Do one of the following:
 * From the Dashboard or other page, select the *Download* image:button-download.png[Download option] option. 
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured reports and select *Download (CSV)*. 
+. If you selected the *Reports* option, select one of the preconfigured named files and select *Download (CSV)*. 
 
 
 

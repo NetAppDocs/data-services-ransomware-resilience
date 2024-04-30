@@ -53,24 +53,33 @@ link:rp-use-protect.html[Learn more about protecting workloads and creating prot
 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
+* *Enable threat detection* is now available using a third-party security and event management (SIEM) system. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
+//* *Enable threat detection* using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
++
+link:rp-use-settings.html[Learn more about configuring Settings options].  
+
+* *New detection statuses* appear on the Protection page showing the status of the ransomware detection applied to the workload. 
++
+link:rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
+
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
+
+* *Download CSV files* from the Dashboard, Protection, Alerts, and Recovery pages. 
++
+link:rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
+
+* *View documentation* link is now included in the UI. You can access this documentation from the Dasbhoard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page.  
+
+//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
+//+
+//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
+
 //* *Snapshot copy locking on primary storage*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
 //+
 //link:rp-use-protect.html[Learn more about protecting workloads].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
-
-* *Enable threat detection* using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
-+
-link:rp-use-settings.html[Learn more about configuring Settings options].  
-
-* *Download reports* from the Dashboard, Protection, Alerts, and Recovery pages. 
-+
-link:rp-use-reports.html[Learn more about downloading reports from the Dashboard and other pages].
-
-//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
-//+
-//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 

@@ -13,7 +13,9 @@ summary: You can configure several options, including a backup destination, in t
 [.lead]
 You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard. 
 
-Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
+Enabling threat detection automatically sends data to a security and event management system (SIEM) for threat analysis and detection. 
+
+//Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
 // or by accessing the BlueXP ransomware protection *Settings* option.
 
@@ -159,7 +161,9 @@ image:screen-settings-backup-destinations-list-aws.png[Backup destinations page 
 
 == Enable threat detection
 
-You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
+You can automatically send data to a security and event management system (SIEM) for threat analysis and detection. 
+
+//You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
