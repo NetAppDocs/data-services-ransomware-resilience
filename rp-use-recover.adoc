@@ -56,7 +56,7 @@ The application state will change if required for the restore. The application w
 
 . To restore, select *Restore*.
 
-. *Restore scope*: Application-consistent 
+. *Restore scope*: Application-consistent (or for SnapCenter for VMs, the restore scope is "By VM")
 
 . *Source*: Select the down arrow next to Source to see details. Select the restore point that you want to use to restore the data. 
 +

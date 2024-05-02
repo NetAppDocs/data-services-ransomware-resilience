@@ -23,7 +23,7 @@ You can also use the Dashboard to review and act on protection recommendations, 
 +
 After discovery, the Dashboard shows you the health of workload data protection. 
 +
-image:screen-dashboard2.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
 
 
 . From the Dashboard, you can view and do any of the following in each of the panes: 
@@ -122,7 +122,7 @@ The CSV files include data for all workloads on all BlueXP working environments.
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 +
-image:screen-dashboard2.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
  
 . From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
 

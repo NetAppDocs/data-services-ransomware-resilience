@@ -50,7 +50,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 
 . Review the Dashboard's Recommended actions pane. 
 +
-image:screen-dashboard2.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
 

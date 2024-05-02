@@ -30,7 +30,7 @@ The CSV files include data for all workloads on all BlueXP working environments.
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 +
-image:screen-dashboard2.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
  
 . From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
 
@@ -39,5 +39,7 @@ image:screen-dashboard2.png[Dashboard page]
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured CSV file names and select *Download (CSV)*. 
+. If you selected the *Reports* option, select one of the preconfigured CSV file names and select *Download (CSV)* or *Download (JSON)*. 
++
+image:screen-reports.png[Reports page]
 

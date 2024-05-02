@@ -264,8 +264,8 @@ Other services, such as BlueXP backup and recovery and SnapCenter, use the follo
 . From the BlueXP ransomware protection menu, select *Protection*.
 +
 image:screen-protection-sc-columns.png[Protection page]
-. From the Protection page, select a workload, and select the *Actions* image:screenshot_horizontal_more_button.gif[Actions horizontal button] icon and select *Edit protection*. 
-#*OR DO YOU click PROTECT instead of Actions icon???*#
+. From the Protection page, select a workload, and select *Protect*. 
+
 
 +
 The Protect page shows the policies managed by SnapCenter Software, SnapCenter for VMware vSphere, and BlueXP backup and recovery. 
@@ -297,14 +297,12 @@ You can assign a different protection policy replacing the current one.
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage policies*. 
+. From the Protection page, on the workload row, select *Edit protection*. 
 
-. In the Manage policies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
+. In the Policies page, click the down arrow for the policy you want to assign to review the details. 
 
-. From the Actions menu, select *Edit policy*. 
+. Select the policy you want to assign.
 
-
-. Select a different policy.  
 
 . Select *Protect* to finish the change.
 
