@@ -135,7 +135,7 @@ You can change protection details such as the workload priority and name of the 
 . From the BlueXP ransomware protection menu, select *Protection*.
 . From the Protection page, select a workload. 
 +
-image:screen-protection-details.png[Workload details from the Protection page]
+image:screen-protection-details2.png[Workload details from the Protection page]
 +
 From the workload details page, you can assign a policy to a workload, change a workload name or priority, view alerts, view backup destinations, and view recovery information.
 
@@ -207,7 +207,7 @@ image:screen-protection-sc-columns.png[Protection page]
 
 . From the Protection page, select *Manage ransomware protection strategies*. 
 +
-image:screen-protection-strategy-manage.png[Manage strategy page]
+image:screen-protection-strategy-manage2.png[Manage strategy page]
 
 
 . From the Ransomware protection strategies page, select *Add*. 

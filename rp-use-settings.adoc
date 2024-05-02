@@ -174,7 +174,7 @@ You can automatically send data to a security and event management system (SIEM)
 +
 The Settings page appears. 
 +
-image:screen-settings-threat-detection.png[Settings page]
+image:screen-settings-threat-detection2.png[Settings page]
 . In the Settings page, select *Connect* in the Threat detection pane. 
 +
 image:screen-settings-threat-detection-details.png[Enable threat detection details page]
