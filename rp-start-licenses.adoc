@@ -127,7 +127,9 @@ You'll need to have the following information before you start:
 Locate this number from your Sales Order, or contact the account team for this information.
 * BlueXP Account ID
 +
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. For private mode site without internet access, use *account-DARKSITE1*.
+You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. 
+
+//For private mode site without internet access, use *account-DARKSITE1*.
 
 //.Steps to get an NLF license file from the Support Site
 
