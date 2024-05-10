@@ -23,8 +23,8 @@ You can protect workloads against ransomware attacks by completing the following
 
 BlueXP ransomware protection assigns a priority to each workload during discovery. The workload priority is determined by the following Snapshot frequencies: 
 
-* *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
+* *Critical*: Snapshot copies taken more than 1 per hour (highly aggressive protection schedule)
+* *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
