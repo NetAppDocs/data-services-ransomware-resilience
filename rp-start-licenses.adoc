@@ -201,7 +201,7 @@ You can stop the free trial at any time or you can wait until it expires.
 +
 image:screen-license-trial-end.png[End free trial page]
 
-. If you want to delete all data, check *Delete all data when my trial ends*. 
+. If you want to delete all data, check the *Delete data* after the free trial ends option. 
 +
 This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
 +

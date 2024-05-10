@@ -65,11 +65,9 @@ A workload includes all volumes that are used by a single application instance. 
 *How does BlueXP ransomware protection prioritize workload data?*
 Data priority is determined by the Snapshot copies made and backups that are scheduled. 
 
-The workload priority is determined by the following Snapshot frequencies: 
+The workload priority is determined by Snapshot frequencies. 
 
-* *Critical*: Snapshot copies taken less than 1 per hour (highly aggressive protection schedule)
-* *Important*: Snapshot copies taken less than 1 per day but greater than 1 per hour
-* *Standard*: Snapshot copies taken more than 1 per day 
+link:rp-use-protect.html[Learn about workload priority or importance].
 
 **New volume added, but doesn't appear yet**
 If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 

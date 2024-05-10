@@ -34,7 +34,7 @@ image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
 . Start using the service.
 +
-* If you don't have a BlueXP Connector or it's not the one for this preview, you might need to contact NetApp Support or follow messages to sign up for this preview. 
+* If you don't have a BlueXP Connector or it's not the one for this service, you might need to contact NetApp Support or follow messages to sign up. 
 
 * If you are new to BlueXP and haven't used any Connector, when you select "*Ransomware protection*", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your evaluation request. 
 * If you are a BlueXP user with an an existing Connector, when you select "*Ransomware protection*", a message appears about signing up. 
