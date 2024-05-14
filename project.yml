@@ -25,9 +25,11 @@ sidebar:
           url: /rp-start-setup.html
         - title: Access BlueXP ransomware protection
           url: /rp-start-login.html
+        - title: Set up licensing
+          url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-        - title: Configure backup destinations
+        - title: Configure backup destinations and enable threat detection
           url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html
@@ -43,8 +45,10 @@ sidebar:
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
           url: /rp-use-recover.html
-#        - title: Manage workloads 
-#          url: /rp-use-manage.html
+#       - title: Manage workloads 
+#         url: /rp-use-manage.html
+        - title: Download reports
+          url: /rp-use-reports.html 
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
