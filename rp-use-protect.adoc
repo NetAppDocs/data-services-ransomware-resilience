@@ -211,8 +211,8 @@ image:screen-protection-strategy-manage2.png[Manage strategy page]
 
 
 . From the Ransomware protection strategies page, select *Add*. 
-+
-image:screen-protection-strategy-add.png[Add strategy page showing the Snapshot section]
+//+
+//image:screen-protection-strategy-add.png[Add strategy page showing the Snapshot section]
 
 . Enter a new strategy name, or enter an existing name to copy it. If you enter an existing name, choose which one to copy and select *Copy*.
 +
@@ -235,10 +235,8 @@ If you want to change the blocked file extensions, edit them in System Manager.
 //+
 //Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
 ** *Snapshot schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
-
-
-+
-image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
+//+
+//image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
 * *Backup policy*: 
 ** *Backup policy name*: Enter a new or existing name. 
 ** *Backup locking*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 

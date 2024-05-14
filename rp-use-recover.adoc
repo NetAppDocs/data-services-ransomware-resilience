@@ -70,9 +70,8 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Select the Storage VM. 
  
 . If the original destination does not have enough space to restore the workload, a "Temporary storage" row appears. You can select the temporary storage to restore the workload data. The restored data will be copied from the temporary storage to the original location. Click on the *Down arrow* in the Temporary storage row and set the destination cluster, storage VM, and local tier. 
-
-+
-image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage details]
+//+
+//image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage details]
 
 . Select *Save*. 
 
@@ -82,9 +81,9 @@ image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage 
 
 . From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-== Recover a workload not managed by SnapCenter
+== Restore a workload not managed by SnapCenter
 
-Using BlueXP ransomware protection, the storage administrator can determine how best to recover workloads either from the recommended restore point or the preferred restore point.  
+Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
 The security storage admin can recover data at different levels: 
 

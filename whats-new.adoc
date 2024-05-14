@@ -17,56 +17,45 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
-== 15 May 2024
+== 14 May 2024
 
 This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
 
 * *Licensing updates*: You can sign up for a 90-day free trial, purchase a pay-as-you-go subscription for 1, 2, or 3 years with Amazon Web Services Marketplace, or bring your own NetApp license.  
 
 +
-link:rp-start-licenses.html[Learn more about setting up licensing].
-
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
 
 * *CIFS protocol*: The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
 
 * *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload name, change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
 +
-link:rp-use-protect.html[Learn more about viewing workload details].
-
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 
 * *Application-consistent and VM-consistent protection and recovery*: You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to its previous state and last transaction. 
 +
-link:rp-use-protect.html[Learn more about enabling workload-consistent protection with SnapCenter].
-
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 * *Ransomware protection strategies*: If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in this service:  
 
 ** Snapshot policy
 ** Backup policy 
 ** Detection policy 
-
 +
-link:rp-use-protect.html[Learn more about protecting workloads and creating protection strategies].
-
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 * *Enable threat detection* is now available using a third-party security and event management (SIEM) system. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
 //* *Enable threat detection* using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
 +
-link:rp-use-settings.html[Learn more about configuring Settings options].  
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options].  
 
 * *New detection statuses* appear on the Protection page showing the status of the ransomware detection applied to the workload. 
 +
-link:rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
-
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
 
 * *Download CSV files* from the Dashboard, Protection, Alerts, and Recovery pages. 
 +
-link:rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
 
 * *View documentation* link is now included in the UI. You can access this documentation from the Dasbhoard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page.  
 

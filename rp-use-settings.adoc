@@ -179,7 +179,8 @@ image:screen-settings-threat-detection2.png[Settings page]
 +
 image:screen-settings-threat-detection-details.png[Enable threat detection details page]
 
-. Enter SIEM/XDR server details to enable threat detection. 
+. Enter SIEM server details to enable threat detection. 
+//. Enter SIEM/XDR server details to enable threat detection.
 
 . Select *Enable*. 
 +
