@@ -27,6 +27,7 @@ You can protect workloads against ransomware attacks by completing the following
 
 The Protection page shows the following information about workload protection: 
 
+
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
 * *Protected*: A policy is applied. 
