@@ -13,8 +13,11 @@ summary: After an attack, BlueXP ransomware protection verifies that the backup 
 [.lead]
 After workloads have been marked "Ready for recovery", BlueXP ransomware protection recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
+* If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. 
 
+* If the application or VM is _not_ managed by SnapCenter, BlueXP ransomware protection restores the application or VM, you restore the workload by selecting all volumes, volumes, or files. 
 
+TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders. 
 
 == View workloads that are ready to be restored
 
@@ -33,11 +36,54 @@ Review the workloads that are in the "Restore needed" recovery status.
 
 . Review the workload information in the *Recovery* page. 
 +
-image:screen-recovery.png[Recovery page]
+image:screen-recovery2.png[Recovery page]
+//April 2024 get new screen without Workload consistent column. 
 
-== Recover a workload 
+== Restore a workload managed by SnapCenter 
 
-Using BlueXP ransomware protection, the storage administrator can determine how best to recover workloads either from the recommended restore point or their preferred restore point.  
+Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
+
+The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
+
+.Steps 
+
+
+. From the BlueXP ransomware protection menu, select *Recovery*.
+
+. Review the workload information in the *Recovery* page.  
+
+. Select a workload that is in the “Restore needed” state. 
+
+
+. To restore, select *Restore*.
+
+. *Restore scope*: Application-consistent (or for SnapCenter for VMs, the restore scope is "By VM")
+
+. *Source*: Select the down arrow next to Source to see details. Select the restore point that you want to use to restore the data. 
++
+TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Select the original or alternate location.
+.. Select the working environment. 
+.. Select the Storage VM. 
+ 
+. If the original destination does not have enough space to restore the workload, a "Temporary storage" row appears. You can select the temporary storage to restore the workload data. The restored data will be copied from the temporary storage to the original location. Click on the *Down arrow* in the Temporary storage row and set the destination cluster, storage VM, and local tier. 
+//+
+//image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage details]
+
+. Select *Save*. 
+
+. Select *Next*.
+. Review your selections. 
+. Select *Restore*. 
+
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+
+== Restore a workload not managed by SnapCenter
+
+Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
 The security storage admin can recover data at different levels: 
 
@@ -160,7 +206,9 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 === Restore an application workload at the file level
 
+Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
 
+.Steps 
 . On the Restore page, in the Restore scope, select *By file*. 
 
 . On the list of volumes, select the volume you want to restore. 
