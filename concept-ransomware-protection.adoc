@@ -60,7 +60,7 @@ NetApp doesn’t charge you for using the trial version of BlueXP ransomware pro
 
 With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-The BlueXP ransomware protection requires a NetApp ONTAP license. 
+The BlueXP ransomware protection service requires a NetApp ONTAP license. 
 
 NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
