@@ -190,22 +190,22 @@ After you pay for the license and it is registered with the NetApp Support Site,
 //+
 //image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
 
-== End the free trial
+//== End the free trial
 
-You can stop the free trial at any time or you can wait until it expires. 
+//You can stop the free trial at any time or you can wait until it expires. 
 
-.Steps
-. In BlueXP ransomware protection, at the top right, select *Free trial - View details*. 
+//.Steps
+//. In BlueXP ransomware protection, at the top right, select *Free trial - View details*. 
 
-. In the drop-down details, select *End free trial*. 
-+
-image:screen-license-trial-end.png[End free trial page]
+//. In the drop-down details, select *End free trial*. 
+//+
+//image:screen-license-trial-end.png[End free trial page]
 
-. If you want to delete all data, check the *Delete data* after the free trial ends option. 
-+
-This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
-+
-NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP ransomware protection deletes all of your data. 
+//. If you want to delete all data, check the *Delete data* after the free trial ends option. 
+//+
+//This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
+//+
+//NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP ransomware protection deletes all of your data. 
 
-. Type "end trial" in the text box. 
-. Select *End*. 
+//. Type "end trial" in the text box. 
+//. Select *End*. 

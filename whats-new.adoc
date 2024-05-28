@@ -28,7 +28,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.htm
 
 * *CIFS protocol*: The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
 
-* *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload name, change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
+* *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 

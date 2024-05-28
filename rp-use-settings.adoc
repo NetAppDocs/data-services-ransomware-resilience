@@ -168,23 +168,26 @@ You can automatically send data to a security and event management system (SIEM)
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. Review the Dashboard's Recommended actions pane. 
+//. Review the Dashboard's Recommended actions pane. 
 
-. From the Dashboard, select *Review and fix* for the recommendation of "Enable threat detection." 
+//. From the Dashboard, select *Review and fix* for the recommendation of "Enable threat detection." 
+
+. Click the vertical ... on the right side of the page. 
+. Select *Settings*. 
 +
 The Settings page appears. 
 +
-image:screen-settings-threat-detection2.png[Settings page]
-. In the Settings page, select *Connect* in the Threat detection pane. 
-+
-image:screen-settings-threat-detection-details.png[Enable threat detection details page]
+image:screen-settings-threat-detection3.png[Settings page]
+. In the Settings page, select *Connect* in the SIEM connection pane. 
+//+
+//image:screen-settings-threat-detection-details.png[Enable threat detection details page]
 
 . Enter SIEM server details to enable threat detection. 
 //. Enter SIEM/XDR server details to enable threat detection.
 
 . Select *Enable*. 
 +
-The Threat detection pane on the Settings page shows "Connected."
+The Settings page shows "Connected."
 
 //== Add multi-admin verification 
 
