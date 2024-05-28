@@ -32,6 +32,7 @@ To protect those workloads, you should add a backup destination. You can choose 
 
 * NetApp StorageGRID
 * Amazon Web Services (AWS)
+* Microsoft Azure 
 
 
 
@@ -56,12 +57,13 @@ image:screen-dashboard.png[Dashboard page]
 
 . Continue with instructions depending on the backup provider. 
 
-//=== Access the Settings tab from the menu
+=== Access the Settings page from the menu
 
-//You can easily access the Settings tab from the menu. 
+You can easily access the Settings page from the menu. 
 
-//. From the BlueXP ransomware protection menu, select *Settings*.
-//. To add a backup destination, select *Add*.  
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+. From the menu, select *Settings*.
+. To add a backup destination, select *Add*.  
 
 
 
@@ -71,7 +73,7 @@ To set up NetApp StorageGRID as a backup destination, enter the following inform
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
-image:screen-settings-backup-destination-storagegrid.png[Backup destinations page]
+image:screen-settings-backup-destination-azure.png[Backup destinations page]
 
 . Select *StorageGRID*.
 . Select the Down arrow next to each setting and enter or select values: 
@@ -97,7 +99,7 @@ CAUTION: If you configure the backup lock setting now, you cannot change the set
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-storagegrid.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
 
 === Add Amazon Web Services as a backup destination 
 
@@ -110,7 +112,7 @@ For details about managing your AWS storage in BlueXP, refer to https://docs.net
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
-image:screen-settings-backup-destination-storagegrid.png[Backup destinations page]
+image:screen-settings-backup-destination-azure.png[Backup destinations page]
 . Select *Amazon Web Services*.
 . Select the Down arrow next to each setting and enter or select values: 
 
@@ -143,7 +145,54 @@ CAUTION: If you configure the backup lock setting now, you cannot change the set
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-aws.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
+
+
+== Add Microsoft Azure as a backup destination 
+
+
+To set up Azure as a backup destination, enter the following information. 
+
+For details about managing your Azure credentials and marketplace subscriptions in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
+
+
+. In the *Settings > Backup destinations* page, select *Add*. 
+. Enter a name for the backup destination. 
++
+image:screen-settings-backup-destination-azure.png[Backup destinations page]
+. Select *Azure*.
+. Select the Down arrow next to each setting and enter or select values: 
+
+* *Provider settings*:
+** Create a new storage account, select an existing one if one already exists in BlueXP, or bring your own storage account that will store the backups. 
+** Azure subscription, region, and resource group for Azure credentials
++ 
+https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
+
+* *Encryption*: If you are creating a new storage account, enter encryption key information given to you from the provider. If you chose an existing account, encryption information is already available. 
++ 
+Data in the account is encrypted with Microsoft-managed keys by default. You can continue to use Microsoft-managed keys, or you can manage the encryption of your data using your own keys. 
+
+* *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+** Optionally, choose whether you'll use an Azure private endpoint that you previously configured. 
++
+If you want to use Azure PrivateLink, refer to https://azure.microsoft.com/en-us/products/private-link/[Azure PrivateLink^].
+
+* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
++
+CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
+
+** *Unlocked*: Specific users can overwrite or delete protected files during the retention period. 
+** *Locked*: Users cannot overwrite or delete protected backup files during the retention period. This option satisfies full regulatory compliance. 
+
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
 
 
 //=== Edit a backup destination from the Settings option

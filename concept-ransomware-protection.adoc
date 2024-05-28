@@ -15,7 +15,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 [.lead]
 Ransomware attacks can block access to your systems and data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data between one day and several weeks. 
 
-BlueXP ransomware protection is an orchestration service for ransomware protection, detection, and recovery. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) as well as Cloud Volumes ONTAP in Amazon Web Services across BlueXP accounts and backs up data to Amazon Web Services cloud storage and NetApp StorageGRID. 
+BlueXP ransomware protection is a service to protect your data from ransomware. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) as well as Cloud Volumes ONTAP for Amazon Web Services and for Microsoft Azure across BlueXP accounts and backs up data to Amazon Web Services, Microsoft Azure cloud storage, and NetApp StorageGRID. 
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
@@ -121,14 +121,16 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 *Backup targets supported*
 
 * Amazon Web Services (AWS) S3
+* Microsoft Azure Blob
 * NetApp StorageGRID
 
 *Supported working environments* 
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols)
-+
-FlexGroups are not supported. 
-* Cloud Volumes ONTAP in AWS (using NFS and CIFS protocols)
+* Cloud Volumes ONTAP for AWS (using NFS and CIFS protocols)
+* Cloud Volumes ONTAP for Azure (using NFS and CIFS protocols)
+
+NOTE: FlexGroups are not supported. 
 
 *Data sources*
 
@@ -137,6 +139,7 @@ The service protects the following application-based workloads on primary data v
 * NetApp file shares
 * VMware datastores
 * Databases (MySQL and Oracle)
+* More coming soon
 
 
 == Terms that might help you with ransomware protection

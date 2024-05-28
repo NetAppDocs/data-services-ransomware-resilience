@@ -74,7 +74,7 @@ This procedure provides a high level overview of how to subscribe directly in th
 * You see a message that the free trial is expiring. In the message, select *View payment methods*. 
 * Click on the *Free trial* notice at the top right and select *View payment methods*. 
 +
-image:screen-license-payment-methods.png[The BlueXP ransomware protection Payment methods page]
+image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
 . In the Payment methods page, select *Subscribe in AWS Marketplace*. 
 . In AWS Marketplace, select *View purchase options*. 
 . Use AWS Marketplace to subscribe to BlueXP ransomware protection.  
@@ -97,7 +97,52 @@ image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License pa
 
 . To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
 
-. To see subscription information, select *Subscriptions*. To see BYOL licenses, select *Data Services Licenses*.
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+
+
+. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
++
+A message appears indicating that a license has been added. 
+
+== Subscribe through Microsoft Azure Marketplace
+
+This procedure provides a high level overview of how to subscribe directly in the Azure Marketplace. 
+
+.Steps
+. In the BlueXP ransomware protection, do one of the following: 
++
+* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
+* Click on the *Free trial* notice at the top right and select *View payment methods*. 
++
+image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe in Azure Marketplace*. 
+. In Azure Marketplace, select *View purchase options*. 
+. Use Azure Marketplace to subscribe to BlueXP ransomware protection.  
+ 
+. When you return to BlueXP ransomware protection, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Azure Marketplace.  
+
+. Return to BlueXP ransomware protection Payment methods page.
+
+. Add the license to BlueXP by selecting *Add license to BlueXP*.
++
+The BlueXP digital wallet service shows the Add License page. 
+
++
+image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+
+. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+
+
+. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
 +
 image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
 
