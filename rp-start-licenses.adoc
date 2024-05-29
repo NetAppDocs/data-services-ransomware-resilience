@@ -53,9 +53,9 @@ image:screen-rp-landing.png[Landing page screenshot for BlueXP ransomware protec
 . If you haven't already added a Connector for other services, add one. 
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
-. After you set up a Connector, in the BlueXP ransomware protection landing page, the button to add a Connector changes to a button for starting a free trial. Select *Start free trial*. 
+. After you set up a Connector, in the BlueXP ransomware protection landing page, the button to add a Connector changes to a button for discovering workloads. Select *Start by discovering workloads*. 
 
-. Review the free trial information and select *Let's go*. 
+. To review the free trial information, select the drop-down option in the top right. 
 
 *After the trial ends, obtain a subscription or license*
 

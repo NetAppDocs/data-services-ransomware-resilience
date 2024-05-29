@@ -53,7 +53,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 +
 image:screen-dashboard.png[Dashboard page]
 
-. From the Dashboard, select *Review and fix* for the recommendation of "Configure backup destinations."
+. From the Dashboard, select *Review and fix* for the recommendation of "Prepare <backup provider> as a backup destination."
 
 . Continue with instructions depending on the backup provider. 
 

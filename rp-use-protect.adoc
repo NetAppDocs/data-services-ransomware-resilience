@@ -64,7 +64,7 @@ The Protection page shows the following information about workload protection:
 BlueXP ransomware protection assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken more than 1 per hour (highly aggressive protection schedule)
-* *High*: Snapshot copies taken less than 1 per hour but greater than 1 per day
+* *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 === Predefined ransomware detection policies based on workload importance
@@ -123,6 +123,8 @@ One of the first steps in protecting workloads is viewing your current workloads
 +
 image:screen-protection-sc-columns2.png[Protection page]
 . From this page, you can view and change protection details for the workload.
+
+NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and/or FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^] and https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 //. To see file share workloads, select the *File share workloads* tab. 
 // * To see application workloads, select the *Application workloads* tab. 
