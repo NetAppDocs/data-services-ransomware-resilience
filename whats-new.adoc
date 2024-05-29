@@ -30,7 +30,7 @@ link:rp-use-protect.html[Learn more about protecting workloads].
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
-* *BlueXP digital wallet support for Microsoft Azure Marketplace* You can now subscribe to BlueXP ransomware protection using Azure Marketplace. BlueXP digital wallet now shows Azure Marketplace as one of the payment methods. 
+//* *BlueXP digital wallet support for Microsoft Azure Marketplace* You can now subscribe to BlueXP ransomware protection using Azure Marketplace. BlueXP digital wallet now shows Azure Marketplace as one of the payment methods. 
 
 * *Microsoft Azure added as a backup destination*. You can now add Microsoft Azure as a backup destination along with AWS and NetApp StorageGRID. 
 +
