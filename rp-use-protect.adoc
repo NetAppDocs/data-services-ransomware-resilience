@@ -234,11 +234,11 @@ If you want to change the blocked file extensions, edit them in System Manager.
 
 * *Snapshot policy*: 
 ** *Snapshot policy name*: Enter a name for the Snapshot policy. 
-//** *Snapshot locking*: #*(AVAILABLE MAY 31, so hide this for MAY 15).*# Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
-//+
-//When a Snapshot is locked, the volume expiration time is set to the expiration time of the Snapshot copy. 
-//+
-//Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
+** *Snapshot locking*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
++
+When a Snapshot is locked, the volume expiration time is set to the expiration time of the Snapshot copy. 
++
+Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
 ** *Snapshot schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
 //+
 //image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
@@ -291,7 +291,7 @@ image:screen-protect-br-policies.png[Protect page showing BlueXP backup and reco
 
 . On the Protection page, review the Detection policy column to see the Detection policy assigned. Also, the Snapshot and Backup policies column shows the name of the product or service managing the policies. 
 
-=== Assign a different policy 
+== Assign a different policy 
 
 You can assign a different protection policy replacing the current one.
 
