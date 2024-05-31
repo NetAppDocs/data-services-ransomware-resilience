@@ -148,7 +148,7 @@ The new backup destination is added to the list of backup destinations.
 image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
 
 
-== Add Microsoft Azure as a backup destination 
+=== Add Microsoft Azure as a backup destination 
 
 
 To set up Azure as a backup destination, enter the following information. 

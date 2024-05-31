@@ -17,7 +17,7 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
-== 31 May 2024
+== 4 June 2024
 This release of BlueXP ransomware protection includes the following updates:
 
 
