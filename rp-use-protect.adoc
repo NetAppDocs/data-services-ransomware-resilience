@@ -25,6 +25,7 @@ You can protect workloads against ransomware attacks by completing the following
 
 == Protection information 
 
+
 The Protection page shows the following information about workload protection: 
 
 
