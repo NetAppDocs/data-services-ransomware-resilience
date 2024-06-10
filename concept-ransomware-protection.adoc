@@ -55,12 +55,15 @@ BlueXP ransomware protection offers the following benefits:
 
 
 == Cost 
+NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. 
 
-NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
+//NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
 
 == Licensing 
 
-With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription soon, or bring your own license soon.
+
+//With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
 The BlueXP ransomware protection service requires a NetApp ONTAP license. 
 

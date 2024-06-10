@@ -45,7 +45,7 @@ link:rp-use-settings.html[Refer to Configure protection settings].
 
 This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
 
-* *Licensing updates*: You can sign up for a 90-day free trial and soon will be able to purchase a pay-as-you-go subscription with Amazon Web Services Marketplace, or bring your own NetApp license.
+* *Licensing updates*: You can sign up for a 90-day free trial. Soon you be will be able to purchase a pay-as-you-go subscription with Amazon Web Services Marketplace or bring your own NetApp license.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
 

@@ -11,13 +11,13 @@ summary: Get started with BlueXP ransomware protection by setting up licensing.
 :imagesdir: ./media
 
 [.lead]
-With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+With BlueXP ransomware protection, you can use different licensing plans.
 
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.  This will be available soon. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. This will be available soon.
 
 //NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
