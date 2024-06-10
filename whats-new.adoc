@@ -81,7 +81,9 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[L
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
 
-* *View documentation* link is now included in the UI. You can access this documentation from the Dashboard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page.  
+* *View documentation* link is now included in the UI. You can access this documentation from the Dasbhoard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page. 
+
+* *BlueXP backup and recovery*: The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
 //* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
 //+
