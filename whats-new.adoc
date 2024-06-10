@@ -45,14 +45,14 @@ link:rp-use-settings.html[Refer to Configure protection settings].
 
 This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
 
-* *Licensing updates*: You can sign up for a 90-day free trial, purchase a pay-as-you-go subscription for 1, 2, or 3 years with Amazon Web Services Marketplace, or bring your own NetApp license.  
-
+* *Licensing updates*: You can sign up for a 90-day free trial and soon will be able to purchase a pay-as-you-go subscription with Amazon Web Services Marketplace, or bring your own NetApp license.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
 
 * *CIFS protocol*: The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
 
-* *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
+* *Workload details*: This release now provides more details in the workload information from the Protection and other pages for improved workload protection assessment. From the workload details, you can review the currently assigned policy and review the configured backup destinations. 
+//* *Workload details*: This release now provides more details in the workload information from the Protection and other pages for improved workload protection assessment. From the workload details, you can change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 
@@ -77,7 +77,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
 
-* *Download CSV files* from the Dashboard, Protection, Alerts, and Recovery pages. 
+* *Download CSV files* from the Protection, Alerts, and Recovery pages. 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
 

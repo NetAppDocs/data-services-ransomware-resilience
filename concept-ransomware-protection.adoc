@@ -40,7 +40,7 @@ image:diagram-rp-features-phases2.png[Diagram showing BlueXP ransomware protecti
 
 BlueXP ransomware protection offers the following benefits: 
 
-* Discovers workloads and datasets, analyzes the priority based on usage index, and ranks their relative importance.
+* Discovers workloads and their existing snapshot and backup schedules, and ranks their relative importance.
 * Evaluates your ransomware protection posture and displays it in an easy-to-understand dashboard.
 * Provides recommendations on next steps based on discovery and protection posture analysis. 
 * Applies AI/ML-driven data protection recommendations with one-click access.
@@ -62,9 +62,8 @@ With BlueXP ransomware protection, you can use different licensing plans includi
 
 The BlueXP ransomware protection service requires a NetApp ONTAP license. 
 
-NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
+//NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
-//BlueXP backup and recovery service
 
 For details, see link:rp-start-licenses.html[Set up licensing].
 
