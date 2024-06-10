@@ -34,7 +34,9 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 * *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover volumes, folders, or specific files. The service provides recommendations on the best options. 
 
-image:diagram-rp-features-phases2.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
+* *Govern*: Implement your ransomware protection strategy and monitor the outcomes. 
+
+image:diagram-rp-features-phases3.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
 
 == Benefits of using BlueXP ransomware protection 
 
@@ -80,11 +82,11 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols) data connected to BlueXP.
+| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols) and Cloud Volumes ONTAP data connected to BlueXP.
 * Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^] and https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^].
 
- * Discovers each volume's current protection level of NetApp Snapshot copies and backup policies as well as any on-box detection capabilities. The service then associates this protection posture with the workloads by using BlueXP backup and recovery, BlueXP Digital Advisor, and ONTAP services and NetApp technologies such as Autonomous Ransomware Protection, FPolicy, Backup policies, and Snapshot policies.
- Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^] and https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], https://docs.netapp.com/us-en/active-iq/index.html[BlueXP Digital Advisor^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+ * Discovers each volume's current protection level of NetApp Snapshot copies and backup policies as well as any on-box detection capabilities. The service then associates this protection posture with the workloads by using BlueXP backup and recovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection, FPolicy, Backup policies, and Snapshot policies.
+ Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^] and https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 * Assigns a business priority to each workload based on automatically discovered protection levels and recommends protection policies for workloads based on their business priority.
 //* Assigns a business priority to each workload based on discovered protection levels by using BlueXP classification (formerly Cloud Data Sense). 
 // Learn more about https://docs.netapp.com/us-en/bluexp-classification/index.html[BlueXP classification^].
@@ -108,6 +110,8 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 * Determines the best Snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection and FPolicy technologies and services. 
 //* Determines the best Snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
 * Orchestrates the recovery of workloads including VMs, file shares, and databases with application consistency. 
+|*GOVERN* | * Assigns the ransomware protection strategies
+* Helps you monitor the outcomes. 
 |===
 
 //For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
