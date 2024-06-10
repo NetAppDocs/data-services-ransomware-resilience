@@ -14,12 +14,12 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
 
 * Change existing workload protection details. 
-** Change the name of a workload (such as applications and VM datastores) not managed in SnapCenter.
-** Change the priority or importance of the workload. 
+//** Change the name of a workload (such as applications and VM datastores) not managed in SnapCenter.
+//** Change the priority or importance of the workload. 
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
 * Create or manage ransomware protection strategies that include policies that you create for Snapshots, backups, and ransomware detection.
 ** Import a strategy and adjust it. 
-** Edit or delete detection strategies (only the ones that you created).
+//** Edit or delete detection strategies (only the ones that you created).
 
 
 
@@ -65,7 +65,7 @@ The Protection page shows the following information about workload protection:
 BlueXP ransomware protection assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following Snapshot frequencies: 
 
 * *Critical*: Snapshot copies taken more than 1 per hour (highly aggressive protection schedule)
-* *High*: Snapshot copies taken less than 1 per hour but greater than 1 per day
+* *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
 === Predefined ransomware detection policies based on workload importance
@@ -88,13 +88,13 @@ You can choose one of the following BlueXP ransomware protection  predefined pol
  | Weekly | Every 1 week | 35 | 5 | 309 
  | Monthly | Every 30 days | 60 | 2 | 309 
 
-.4+| *High workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
+.4+| *Important workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
  | Daily | Every 1 day | 14 | 14 | 165 
  | Weekly | Every 1 week | 35 | 5 | 165 
  | Monthly | Every 30 days | 60 | 2 | 165 
 
 
-.4+| *Standard workload policy* | Quarter hourly | Every 60 min | 3| 72 | 93 
+.4+| *Standard workload policy* | Quarter hourly | Every 30 min | 3| 72 | 93 
  | Daily | Every 1 day | 14 | 14 | 93  
  | Weekly | Every 1 week | 35 | 5  | 93 
  | Monthly | Every 30 days | 60 | 2 | 93 
@@ -122,28 +122,32 @@ One of the first steps in protecting workloads is viewing your current workloads
 * From the Data Protection pane on the Dashboard, select *View all*. 
 * From the menu, select *Protection*.
 +
-image:screen-protection-sc-columns.png[Protection page]
+image:screen-protection-sc-columns2.png[Protection page]
 . From this page, you can view and change protection details for the workload.
+
+NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and/or FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^] and https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 //. To see file share workloads, select the *File share workloads* tab. 
 // * To see application workloads, select the *Application workloads* tab. 
 
-== Change workload protection details
+== Review workload protection details
 
-You can change protection details such as the workload priority and name of the workload, if that workload is not managed by SnapCenter or BlueXP backup and recovery. 
+You can review protection details such as the workload priority, protection policies, and storage information. 
+
+//You can change protection details such as the workload priority and name of the workload, if that workload is not managed by SnapCenter or BlueXP backup and recovery. 
 
 .Steps 
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 . From the Protection page, select a workload. 
 +
-image:screen-protection-details2.png[Workload details from the Protection page]
+image:screen-protection-details3.png[Workload details from the Protection page]
 +
-From the workload details page, you can assign a policy to a workload, change a workload name or priority, view alerts, view backup destinations, and view recovery information.
+From the workload details page, you can assign a policy to a workload, view alerts, view backup destinations, and view recovery information.
 
-. To change the name of a workload, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name and change the name. 
+//. To change the name of a workload, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name and change the name. 
 
-. To change the importance of the workload from the assigned priority, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority and change it. 
+//. To change the importance of the workload from the assigned priority, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority and change it. 
 
 . To view the policy associated with the workload, in the Protection pane of the Workload details page, click *View policy*. 
 
@@ -231,11 +235,11 @@ If you want to change the blocked file extensions, edit them in System Manager.
 
 * *Snapshot policy*: 
 ** *Snapshot policy name*: Enter a name for the Snapshot policy. 
-//** *Snapshot locking*: #*(AVAILABLE MAY 31, so hide this for MAY 15).*# Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
-//+
-//When a Snapshot is locked, the volume expiration time is set to the expiration time of the Snapshot copy. 
-//+
-//Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
+** *Snapshot locking*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
++
+When a Snapshot is locked, the volume expiration time is set to the expiration time of the Snapshot copy. 
++
+Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
 ** *Snapshot schedules*: Choose schedule options, the number of Snapshot copies to keep, and select to enable the schedule. 
 //+
 //image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
@@ -288,7 +292,7 @@ image:screen-protect-br-policies.png[Protect page showing BlueXP backup and reco
 
 . On the Protection page, review the Detection policy column to see the Detection policy assigned. Also, the Snapshot and Backup policies column shows the name of the product or service managing the policies. 
 
-=== Assign a different policy 
+== Assign a different policy 
 
 You can assign a different protection policy replacing the current one.
 
@@ -311,38 +315,38 @@ You can assign a different protection policy replacing the current one.
 You can edit or delete a ransomware strategy.
 
 
-=== Edit a ransomware protection strategy 
+//=== Edit a ransomware protection strategy 
 
-You can edit a protection strategy by selecting a different preconfigured detection policy strategy.
+//You can edit a protection strategy by selecting a different preconfigured detection policy strategy.
 
-.Steps 
-
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-
-. From the Protection page, select *Manage ransomware strategies*. 
+//.Steps 
 
 
-. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
+//. From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Actions menu, select *Edit strategy*. 
+//. From the Protection page, select *Manage ransomware strategies*. 
 
-. Change the details. 
 
-. Select *Save* to finish the change. 
+//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the policy you want to change.
 
-=== Delete a ransomware protection strategy
+//. From the Actions menu, select *Edit strategy*. 
 
-You can delete a protection strategy that is not currently associated with any workloads. 
+//. Change the details. 
 
-.Steps 
+//. Select *Save* to finish the change. 
 
-. From the BlueXP ransomware protection menu, select *Protection*.
+//=== Delete a ransomware protection strategy
 
-. From the Protection page, select *Manage ransomware strategies*. 
+//You can delete a protection strategy that is not currently associated with any workloads. 
 
-. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
+//.Steps 
 
-. From the Actions menu, select *Delete strategy*. 
+//. From the BlueXP ransomware protection menu, select *Protection*.
+
+//. From the Protection page, select *Manage ransomware strategies*. 
+
+//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
+
+//. From the Actions menu, select *Delete strategy*. 
 
 

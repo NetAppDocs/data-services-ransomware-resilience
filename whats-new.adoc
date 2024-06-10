@@ -17,22 +17,46 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
+== 10 June 2024
+This release of BlueXP ransomware protection includes the following updates:
+
+
+* *Snapshot copy locking on primary storage*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
++
+link:rp-use-protect.html[Learn more about protecting workloads  and enabling backup locking in a ransomware protection strategy].
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and enabling backup locking in a ransomware protection strategy].
+
+* *This release supports Cloud Volumes ONTAP for Microsoft Azure* as a working environment in addition to Cloud Volumes ONTAP for AWS and on-premises ONTAP NAS. 
++ 
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html[Quick start for Cloud Volumes ONTAP in Azure^]
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+
+//* *BlueXP digital wallet support for Microsoft Azure Marketplace* You can now subscribe to BlueXP ransomware protection using Azure Marketplace. BlueXP digital wallet now shows Azure Marketplace as one of the payment methods. 
+
+* *Microsoft Azure added as a backup destination*. You can now add Microsoft Azure as a backup destination along with AWS and NetApp StorageGRID. 
++
+link:rp-use-settings.html[Refer to Configure protection settings].
+
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Refer to Configure protection settings].
+
+
 == 14 May 2024
 
 This release is the general availability release of BlueXP ransomware protection. It includes the following updates: 
 
-* *Licensing updates*: You can sign up for a 90-day free trial, purchase a pay-as-you-go subscription for 1, 2, or 3 years with Amazon Web Services Marketplace, or bring your own NetApp license.  
-
+* *Licensing updates*: You can sign up for a 90-day free trial. Soon you be will be able to purchase a pay-as-you-go subscription with Amazon Web Services Marketplace or bring your own NetApp license.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
 
 * *CIFS protocol*: The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
 
-* *Workload details*: This release now provides more details in the workload information from the Protection pages for improved workload protection assessment. From the workload details, you can change the workload name, change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
+* *Workload details*: This release now provides more details in the workload information from the Protection and other pages for improved workload protection assessment. From the workload details, you can review the currently assigned policy and review the configured backup destinations. 
+//* *Workload details*: This release now provides more details in the workload information from the Protection and other pages for improved workload protection assessment. From the workload details, you can change the workload importance, review the currently assigned policy, and review the configured backup destinations.  
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 
-* *Application-consistent and VM-consistent protection and recovery*: You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to its previous state and last transaction. 
+* *Application-consistent and VM-consistent protection and recovery*: You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to any of the previously available states. 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
@@ -53,7 +77,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
 
-* *Download CSV files* from the Dashboard, Protection, Alerts, and Recovery pages. 
+* *Download CSV files* from the Protection, Alerts, and Recovery pages. 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[Learn more about downloading CSV files from the Dashboard and other pages].
 
@@ -65,10 +89,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[L
 //+
 //link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
-//* *Snapshot copy locking on primary storage*: Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
-//+
-//link:rp-use-protect.html[Learn more about protecting workloads].
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
+
 
 //* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
 
@@ -86,6 +107,8 @@ This preview release of BlueXP ransomware protection includes the following upda
 * *Recovery process*. The recovery process was enhanced. Now, you can recover volume by volume, all volumes for a workload, or even a few files from the volume all in a single workflow. https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+
+// end::whats-new[] 
 
 == 6 October 2023 
 
@@ -105,5 +128,5 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
-// end::whats-new[] 
+
 

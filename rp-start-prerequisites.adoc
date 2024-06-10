@@ -30,6 +30,7 @@ For more licensing details, refer to link:concept-ransomware-protection.html[Lea
 
 * In BlueXP: 
 
+** A BlueXP working environment with NetApp on-premises storage (using NAS or CIFS protocols)
 ** A BlueXP Connector per each Virtual Private Cloud (VPC) or on an on-premises region must be set up in BlueXP. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
 +
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
@@ -42,3 +43,4 @@ NOTE: If you have multiple BlueXP Connectors, the service will scan data across 
 ** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[Standard BlueXP requirements^]
 
 NOTE: The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+

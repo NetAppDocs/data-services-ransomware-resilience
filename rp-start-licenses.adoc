@@ -11,13 +11,13 @@ summary: Get started with BlueXP ransomware protection by setting up licensing.
 :imagesdir: ./media
 
 [.lead]
-With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+With BlueXP ransomware protection, you can use different licensing plans.
 
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.  This will be available soon. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. This will be available soon.
 
 //NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
@@ -53,9 +53,9 @@ image:screen-rp-landing.png[Landing page screenshot for BlueXP ransomware protec
 . If you haven't already added a Connector for other services, add one. 
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
-. After you set up a Connector, in the BlueXP ransomware protection landing page, the button to add a Connector changes to a button for starting a free trial. Select *Start free trial*. 
+. After you set up a Connector, in the BlueXP ransomware protection landing page, the button to add a Connector changes to a button for discovering workloads. Select *Start by discovering workloads*. 
 
-. Review the free trial information and select *Let's go*. 
+. To review the free trial information, select the drop-down option in the top right. 
 
 *After the trial ends, obtain a subscription or license*
 
@@ -74,7 +74,7 @@ This procedure provides a high level overview of how to subscribe directly in th
 * You see a message that the free trial is expiring. In the message, select *View payment methods*. 
 * Click on the *Free trial* notice at the top right and select *View payment methods*. 
 +
-image:screen-license-payment-methods.png[The BlueXP ransomware protection Payment methods page]
+image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
 . In the Payment methods page, select *Subscribe in AWS Marketplace*. 
 . In AWS Marketplace, select *View purchase options*. 
 . Use AWS Marketplace to subscribe to BlueXP ransomware protection.  
@@ -97,7 +97,52 @@ image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License pa
 
 . To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
 
-. To see subscription information, select *Subscriptions*. To see BYOL licenses, select *Data Services Licenses*.
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+
+
+. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
++
+A message appears indicating that a license has been added. 
+
+== Subscribe through Microsoft Azure Marketplace
+
+This procedure provides a high level overview of how to subscribe directly in the Azure Marketplace. 
+
+.Steps
+. In the BlueXP ransomware protection, do one of the following: 
++
+* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
+* Click on the *Free trial* notice at the top right and select *View payment methods*. 
++
+image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe in Azure Marketplace*. 
+. In Azure Marketplace, select *View purchase options*. 
+. Use Azure Marketplace to subscribe to BlueXP ransomware protection.  
+ 
+. When you return to BlueXP ransomware protection, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Azure Marketplace.  
+
+. Return to BlueXP ransomware protection Payment methods page.
+
+. Add the license to BlueXP by selecting *Add license to BlueXP*.
++
+The BlueXP digital wallet service shows the Add License page. 
+
++
+image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+
+. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+
+
+. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
 +
 image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
 
@@ -190,22 +235,22 @@ After you pay for the license and it is registered with the NetApp Support Site,
 //+
 //image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
 
-== End the free trial
+//== End the free trial
 
-You can stop the free trial at any time or you can wait until it expires. 
+//You can stop the free trial at any time or you can wait until it expires. 
 
-.Steps
-. In BlueXP ransomware protection, at the top right, select *Free trial - View details*. 
+//.Steps
+//. In BlueXP ransomware protection, at the top right, select *Free trial - View details*. 
 
-. In the drop-down details, select *End free trial*. 
-+
-image:screen-license-trial-end.png[End free trial page]
+//. In the drop-down details, select *End free trial*. 
+//+
+//image:screen-license-trial-end.png[End free trial page]
 
-. If you want to delete all data, check the *Delete data* after the free trial ends option. 
-+
-This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
-+
-NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP ransomware protection deletes all of your data. 
+//. If you want to delete all data, check the *Delete data* after the free trial ends option. 
+//+
+//This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
+//+
+//NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP ransomware protection deletes all of your data. 
 
-. Type "end trial" in the text box. 
-. Select *End*. 
+//. Type "end trial" in the text box. 
+//. Select *End*. 

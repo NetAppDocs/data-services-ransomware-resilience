@@ -68,18 +68,18 @@ Here is a sampling of the recommendations that the service offers.
 | How to resolve
 
 
-| Add a ransomware protection policy | The workload is currently not protected.  | Assign a policy to the workload. 
+| Add a ransomware protection policy. | The workload is currently not protected.  | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Configure backup destinations | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
+| Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
 Refer to link:rp-use-settings.html[Configure protection settings].
-|Edit workload name | Your workloads are using default names. | Give your workload a descriptive name.
+|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
 Refer to link:rp-use-manage.html[Manage workloads].
-//|Keep software up to date | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
-|Enable threat detection | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+//|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
+|Enable threat detection. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
-//|Enable threat detection | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+//|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
-|Enable workload-consistent protection for applications or VMware | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
+|Enable workload-consistent protection for applications or VMware. | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
 Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
@@ -87,7 +87,7 @@ Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Review new alerts | New alerts exist. | Review the new alerts. 
+| Review new alerts. | New alerts exist. | Review the new alerts. 
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 |===
 
