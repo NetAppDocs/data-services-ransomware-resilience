@@ -18,7 +18,7 @@ You can protect workloads against ransomware attacks by completing the following
 //** Change the priority or importance of the workload. 
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
 * Create or manage ransomware protection strategies that include policies that you create for Snapshots, backups, and ransomware detection.
-** Import a strategy and adjust it. 
+* Import a strategy and adjust it. 
 //** Edit or delete detection strategies (only the ones that you created).
 
 
@@ -310,9 +310,9 @@ You can assign a different protection policy replacing the current one.
 
 . Select *Protect* to finish the change.
 
-== Manage ransomware protection strategies
+//== Manage ransomware protection strategies
 
-You can edit or delete a ransomware strategy.
+//You can edit or delete a ransomware strategy.
 
 
 //=== Edit a ransomware protection strategy 

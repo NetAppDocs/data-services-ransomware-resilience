@@ -204,49 +204,49 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 . From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-=== Restore an application workload at the file level
+//=== Restore an application workload at the file level
 
-Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
+//Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
 
-.Steps 
-. On the Restore page, in the Restore scope, select *By file*. 
+//.Steps 
+//. On the Restore page, in the Restore scope, select *By file*. 
 
-. On the list of volumes, select the volume you want to restore. 
+//. On the list of volumes, select the volume you want to restore. 
 
-. *Source*: Select the down arrow next to Source to see details. 
+//. *Source*: Select the down arrow next to Source to see details. 
 
-.. Select the restore point that you want to use to restore the data. 
-+
-TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+//.. Select the restore point that you want to use to restore the data. 
+//+
+//TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
 
-.. Select up to 100 files or a single folder to restore. 
+//.. Select up to 100 files or a single folder to restore. 
 
-. *Destination*: Select the down arrow next to Destination to see details.
+//. *Destination*: Select the down arrow next to Destination to see details.
 
-.. Choose where to restore the data: original source location or an alternate location that you can specify. 
-+ 
-TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+//.. Choose where to restore the data: original source location or an alternate location that you can specify. 
+//+ 
+//TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
 
-.. Select the working environment. 
-.. Select the Storage VM. 
-.. Optionally, enter the path. 
-+
-TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
+//.. Select the working environment. 
+//.. Select the Storage VM. 
+//.. Optionally, enter the path. 
+//+
+//TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 .. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
 
-. Select *Save*. 
-. Select *Next*.
-. Review your selections. 
-. Select *Restore*. 
+//. Select *Save*. 
+//. Select *Next*.
+//. Review your selections. 
+//. Select *Restore*. 
 
-. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
-
-
-=== Restore a file share or datastore at the volume or file level
+//. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
 
+=== Restore a file share or datastore 
 
-. After selecting a file share or datastore to restore, on the Restore page, in the Restore scope, select *By volume* or *By file*. 
+
+
+. After selecting a file share or datastore to restore, on the Restore page, in the Restore scope, select *By volume*. 
 
 +
 image:screen-recovery-fileshare.png[Recovery page showing file share recovery]
