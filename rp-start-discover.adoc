@@ -22,12 +22,18 @@ The service assesses the existing protection level including the current backup 
 .Steps
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
++
+If this is your first time logging in to this service, the landing page appears. 
++
+image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
 
-. Select *Discover workloads* from the initial landing page. 
+. From the initial landing page, select *Start by discovering workloads*. 
 +
 The service discovers workload data and shows the health of data protection in the Dashboard.
 +
 image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
++
+link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
 //== Set up email notifications 
 
