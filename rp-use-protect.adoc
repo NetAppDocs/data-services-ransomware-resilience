@@ -50,6 +50,9 @@ The Protection page shows the following information about workload protection:
 * *Not set*: A ransomware detection protection policy is not assigned. 
 * *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
 
+
+
+
 *Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
 
 *Snapshot and backup policies*: This column shows the Snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
@@ -238,10 +241,12 @@ Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more ab
 //image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
 * *Backup policy*: 
 ** *Backup policy basename*: Enter a new or choose an existing name. 
-** *Backup locking*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 
+//** *Backup locking*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 
 
 ** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
 
++
+TIP: To enable backup locking on secondary storage, configure your backup destinations using the *Settings* option. For details, see link:rp-use-settings.html[Configure settings].
 
 . Select *Add*. 
 

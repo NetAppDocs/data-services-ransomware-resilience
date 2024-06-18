@@ -32,13 +32,25 @@ image:screen-dashboard.png[Dashboard page]
 
 * *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
-An incident is categorized in one of the following states: 
+** An incident is categorized in one of the following states: 
 +
-** Impacted (shows on Alerts page) 
-** Restore needed (shows on Recovery page) 
-** Restore in progress (shows on Recovery page)
-** Restore failed (shows on Recovery page)
-** Restored (shows on Recovery page)
+*** New
+*** Dismissed
+*** Dismissing
+*** Resolved
++ 
+** An alert can have one of the following statuses:
+
+*** New 
+*** Inactive
+
+** A workload can have one of the following restore statuses: 
+
+*** Restore needed
+*** In progress
+*** Restored
+*** Failed
+
 
 * *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
 +

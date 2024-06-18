@@ -50,6 +50,28 @@ Evidence is based on information from Autonomous Ransomware Protection in ONTAP.
 //+
 //CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
 
+An incident is categorized in one of the following states: 
+
+* *New*: All incidents are marked "new" when they are first identified. 
+* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed.
++
+CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+* *Dismissing*: The incident is in the process of being dismissed. 
+* *Resolved*: The incident has been mitigated. 
+
+An alert can have one of the following statuses:
+
+* *New* 
+* *Inactive*
+
+A workload can have one of the following restore statuses: 
+
+* *Restore needed*: The workload needs to be restored. 
+* *In progress*: The restore operation is currently underway. 
+* *Restored*: The workload has been restored. 
+* *Failed*: The workload restore process could not be completed. 
+
+
 == View alerts
 
 You can access alerts from BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
