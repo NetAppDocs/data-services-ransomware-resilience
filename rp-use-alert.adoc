@@ -15,9 +15,9 @@ If BlueXP ransomware protection detects a possible attack, an alert appears on t
 
 //If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a Snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-//You can dismiss false positives or decide to recover your data immediately.  
+You can dismiss false positives or decide to recover your data immediately.  
 
-//* If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
+TIP: If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
 
 To begin to recover your data, mark the alert as ready for recovery so that your storage administrator can begin the recovery process. 
 
@@ -50,26 +50,22 @@ Evidence is based on information from Autonomous Ransomware Protection in ONTAP.
 //+
 //CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
 
-An incident is categorized in one of the following states: 
-
-* *New*: All incidents are marked "new" when they are first identified. 
-* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed.
-+
-CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
-* *Dismissing*: The incident is in the process of being dismissed. 
-* *Resolved*: The incident has been mitigated. 
-
 An alert can have one of the following statuses:
 
 * *New* 
 * *Inactive*
 
-A workload can have one of the following restore statuses: 
+An alert incident is categorized in one of the following states: 
 
-* *Restore needed*: The workload needs to be restored. 
-* *In progress*: The restore operation is currently underway. 
-* *Restored*: The workload has been restored. 
-* *Failed*: The workload restore process could not be completed. 
+* *New*: All incidents are marked "new" when they are first identified. 
+* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
++
+CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+* *Dismissing*: The incident is in the process of being dismissed. 
+* *Resolved*: The incident has been mitigated. 
+
+
+
 
 
 == View alerts
@@ -126,9 +122,9 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 +
 image:screen-alerts.png[Alerts page]
 
-. Continue with <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-
-//* <<Dismiss incidents that are not potential attacks>>.
+. Continue: 
+** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+** <<Dismiss incidents that are not potential attacks>>.
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
@@ -145,7 +141,7 @@ image:screen-alerts.png[Alerts page]
 . In the Alerts page, select the alert. 
 . Review the incidents in the alert.
 +
-image:screen-alerts-incidents.png[Alert incidents page]
+image:screen-alerts-incidents2.png[Alert incidents page]
 
 . If you determine that the incidents are ready for recovery, select *Mark restore needed*. 
 
@@ -155,41 +151,61 @@ image:screen-alerts-incidents.png[Alert incidents page]
 
 .Result
 
-After the alert is marked for recovery, the alert moves from the Alerts tab to the Recovery tab.  
+After the alert is marked for restore, the alert moves from the Alerts tab to the Recovery tab.  
 
-//== Dismiss incidents that are not potential attacks
+== Dismiss incidents that are not potential attacks
 
-//After you review incidents, you need to determine whether the incidents are potential attacks. If not, they can be dismissed.
+After you review incidents, you need to determine whether the incidents are potential attacks. If not, they can be dismissed.
 
-//You can dismiss false positives or decide to recover your data immediately.  If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately.  If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
 
-//If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 
-//CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
+CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
-//.Steps
+.Steps
 
-//. From the BlueXP ransomware protection menu, select *Alerts*. 
-//+
-//image:screen-alerts.png[Alerts page]
+. From the BlueXP ransomware protection menu, select *Alerts*. 
++
+image:screen-alerts.png[Alerts page]
 
-//. In the Alerts page, select the alert.
-//+
-//image:screen-alerts-incidents.png[Alert incidents page]
+. In the Alerts page, select the alert.
++
+image:screen-alerts-incidents2.png[Alert incidents page]
 
-//. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
+. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
-//. If you determine that the incident is not a threat, dismiss it as a false positive:  
-//+
-//* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
-//* If you selected multiple incidents, select the *Edit status* button above the table. 
-//+
-//image:screen-alerts-status-edit.png[Alert Edit Status page]
+. If you determine that the incident is not a threat, dismiss it as a false positive:  
++
+* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
+* If you selected multiple incidents, select the *Edit status* button above the table. 
++
+image:screen-alerts-status-edit.png[Alert Edit Status page]
 
-//. From the Edit status box, select the *“Dismissed”* status. 
-//+
-//Additional information about the workload and which Snapshot copies will be deleted appears.
+. From the Edit status box, select the *“Dismissed”* status. 
++
+Additional information about the workload and which Snapshot copies will be deleted appears.
 
-//. Select *Save*.
-//+
-//The status on the incident or incidents changes to “Dismissed.” 
+. Select *Save*.
++
+The status on the incident or incidents changes to “Dismissed.” 
+
+== View a list of impacted files
+
+Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
+
+.Steps
+
+Use the Alerts page to retrieve the list of impacted files. 
+
+TIP: If a volume has multiple alerts, you might need to download the CSV list of impacted files for each alert. 
+
+//Alert tab -> Single alert -> Single incident -> Download file
+
+. From the BlueXP ransomware protection menu, select *Alerts*.
+. On the Alerts page, sort the results by workload to show the alerts for the application workload that you want to restore. 
+. From the list of alerts for that workload, select an alert. 
+. For that alert, select a single incident. 
++
+image:screen-alerts-incidents-impacted-files.png[list of impacted files for a specific alert]
+. For that incident, select the download icon and download the list of impacted files in CSV format. 

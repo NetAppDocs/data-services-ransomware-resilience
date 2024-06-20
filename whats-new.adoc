@@ -91,6 +91,10 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[L
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options].  
 
+* *Dismiss false positive alerts*: From the Alerts tab, you can now dismiss false positives or decide to recover your data immediately.  
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Learn more about responding to a ransomware alert].  
+
 * *New detection statuses* appear on the Protection page showing the status of the ransomware detection applied to the workload. 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
