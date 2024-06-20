@@ -16,8 +16,8 @@ After workloads have been marked "Restore needed", BlueXP ransomware protection 
 * If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
 
 * If the application or VM is _not_ managed by SnapCenter and is managed by BlueXP backup and recovery or BlueXP ransomware protection, BlueXP ransomware protection performs a crash-consistent or file restore, where all the data that was in the volume at the same point of time is restored. 
-
-//you restore the workload by selecting all volumes, volumes, or files. 
++
+You can restore the workload by selecting all volumes, specific volumes, or specific files. 
 
 TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders. 
 
@@ -152,6 +152,12 @@ TIP: You can select up to 100 files or a single folder.
 
 === Restore all volumes
 
+. From the BlueXP ransomware protection menu, select *Recovery*.
+
+. Select a workload that is in the “Restore needed” state. 
+
+
+. To restore, select *Restore*.
 
 . On the Restore page, in the Restore scope, select *All volumes*. 
 +
@@ -184,6 +190,12 @@ TIP: The new volume name appears as prefix + original volume name + backup name 
 
 === Restore an application workload at the volume level
 
+. From the BlueXP ransomware protection menu, select *Recovery*.
+
+. Select an application workload that is in the “Restore needed” state. 
+
+
+. To restore, select *Restore*.
 
 . On the Restore page, in the Restore scope, select *By volume*. 
 +
@@ -213,42 +225,69 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 . From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-//=== Restore an application workload at the file level
+=== Restore an application workload at the file level
 
-//Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
+Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
-//.Steps 
-//. On the Restore page, in the Restore scope, select *By file*. 
+.Steps to get the list of impacted files
 
-//. On the list of volumes, select the volume you want to restore. 
+Use the Alerts page to retrieve the list of impacted files. 
 
-//. *Source*: Select the down arrow next to Source to see details. 
+TIP: If a volume has multiple alerts, you will need to download the CSV list of impacted files for each alert. 
 
-//.. Select the restore point that you want to use to restore the data. 
-//+
-//TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+//Alert tab -> Single alert -> Single incident -> Download file
 
-//.. Select up to 100 files or a single folder to restore. 
+. From the BlueXP ransomware protection menu, select *Alerts*.
+. On the Alerts page, sort the results by workload to show the alerts for the application workload that you want to restore. 
+. From the list of alerts for that workload, select an alert. 
+. For that alert, select a single incident. 
++
+image:screen-alerts-incidents-impacted-files.png[list of impacted files for a specific alert]
+. For that incident, select the download icon and download the list of impacted files in CSV format. 
 
-//. *Destination*: Select the down arrow next to Destination to see details.
 
-//.. Choose where to restore the data: original source location or an alternate location that you can specify. 
-//+ 
-//TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+.Steps to restore those files
 
-//.. Select the working environment. 
-//.. Select the Storage VM. 
-//.. Optionally, enter the path. 
-//+
-//TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
+. From the BlueXP ransomware protection menu, select *Recovery*.
+
+. Select an application workload that is in the “Restore needed” state. 
+
+. To restore, select *Restore*.
+. On the Restore page, in the Restore scope, select *By file*. 
+
+. On the list of volumes, select the volume that contains the files that you want to restore. 
+
+. *Restore point*: Select the down arrow next to *Restore point* to see details. Select the restore point that you want to use to restore the data. 
+
+. *Files*: 
+** *Automatically select files*: Let BlueXP ransomware protection select the files to be restored.
+** *Upload list of files*: Upload the CSV file that contains the list of impacted files that you got from the Alerts page.  
++
+image:screen-recovery-app-by-file-upload-csv.png[Upload CSV file that lists the impacted files for the alert]
+** *Manually select files*: Select up to 10,000 files or a single folder to restore. 
++
+image:screen-recovery-app-by-file-select-files.png[Select files manually to restore]
++
+NOTE: If any files cannot be restored using the selected restore point, a message appears indicating the number of files that cannot be restored and lets you download the list of those files by selecting *Download list of impacted files*. 
+
+. *Destination*: Select the down arrow next to Destination to see details.
+
+.. Choose where to restore the data: original source location or an alternate location that you can specify. 
++ 
+TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+
+.. Select the working environment. 
+.. Select the Storage VM. 
+.. Optionally, enter the path. 
++
+TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 .. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
 
-//. Select *Save*. 
-//. Select *Next*.
-//. Review your selections. 
-//. Select *Restore*. 
+. Select *Next*.
+. Review your selections. 
+. Select *Restore*. 
 
-//. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
+. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
 
 === Restore a file share or datastore 
