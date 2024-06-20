@@ -19,7 +19,7 @@ You can protect workloads against ransomware attacks by completing the following
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
 * Create or manage ransomware protection strategies that include policies that you create for Snapshots, backups, and ransomware detection.
 * Import a strategy and adjust it. 
-
+* Delete a protection strategy.
 
 
 
@@ -334,18 +334,18 @@ You can assign a different protection policy replacing the current one.
 
 //. Select *Save* to finish the change. 
 
-//=== Delete a ransomware protection strategy
+=== Delete a ransomware protection strategy
 
-//You can delete a protection strategy that is not currently associated with any workloads. 
+You can delete a protection strategy that is not currently associated with any workloads. 
 
-//.Steps 
+.Steps 
 
-//. From the BlueXP ransomware protection menu, select *Protection*.
+. From the BlueXP ransomware protection menu, select *Protection*.
 
-//. From the Protection page, select *Manage ransomware strategies*. 
+. From the Protection page, select *Manage ransomware strategies*. 
 
-//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
+. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
 
-//. From the Actions menu, select *Delete strategy*. 
+. From the Actions menu, select *Delete strategy*. 
 
 

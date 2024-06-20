@@ -83,6 +83,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 * *Networking*: Choose the IPspace. 
 ** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
 //* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//June 20, 2024 we do not support Azure and StorageGrid backup locking
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 //+
@@ -172,7 +173,8 @@ Data in the account is encrypted with Microsoft-managed keys by default. You can
 ** Optionally, choose whether you'll use an Azure private endpoint that you previously configured. 
 +
 If you want to use Azure PrivateLink, refer to https://azure.microsoft.com/en-us/products/private-link/[Azure PrivateLink^].
-//* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//* *Backup lock*: Choose whether you want the service to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
+//June 20, 2024 we do not support Azure and StorageGrid backup locking 
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 //** *Unlocked*: Specific users can overwrite or delete protected files during the retention period. 

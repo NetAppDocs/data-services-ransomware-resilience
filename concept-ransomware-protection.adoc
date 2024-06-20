@@ -131,7 +131,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 
 *Working environments supported* 
 
-* On-premises ONTAP NAS (using NFS and CIFS protocols)
+* On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
 * Cloud Volumes ONTAP for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP for Azure (using NFS and CIFS protocols)
 

@@ -16,6 +16,16 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 30 June 2024
+
+* *Delete protection plan*: With this release, you can now delete a ransomware protection strategy. 
++
+//link:rp-use-protect.html[Learn more about protecting workloads and ransomware protection strategies].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and ransomware protection strategies].
+
+//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
+//+
+//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
 == 10 June 2024
 This release of BlueXP ransomware protection includes the following updates:
@@ -84,13 +94,12 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[L
 
 * *BlueXP backup and recovery*: The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
-//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
-//+
-//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
+* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. 
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options]. 
 
-
-//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+// end::whats-new[] 
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
@@ -107,7 +116,7 @@ This preview release of BlueXP ransomware protection includes the following upda
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
-// end::whats-new[] 
+
 
 == 6 October 2023 
 
