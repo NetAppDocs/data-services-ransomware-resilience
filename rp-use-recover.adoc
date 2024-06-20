@@ -13,9 +13,11 @@ summary: After an attack, BlueXP ransomware protection verifies that the backup 
 [.lead]
 After workloads have been marked "Restore needed", BlueXP ransomware protection recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
-* If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. 
+* If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
 
-* If the application or VM is _not_ managed by SnapCenter, BlueXP ransomware protection restores the application or VM, you restore the workload by selecting all volumes, volumes, or files. 
+* If the application or VM is _not_ managed by SnapCenter and is managed by BlueXP backup and recovery or BlueXP ransomware protection, BlueXP ransomware protection performs a crash-consistent or file restore, where all the data that was in the volume at the same point of time is restored. 
+
+//you restore the workload by selecting all volumes, volumes, or files. 
 
 TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders. 
 

@@ -18,6 +18,16 @@ Learn what's new in BlueXP ransomware protection.
 // tag::whats-new[]
 == 30 June 2024
 
+* *Bulk single file restore*: Before you restore files, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. 
++
+Currently, you can restore files to an alternate location or volume within the same working environment. With this release, you can restore to the original source volume and create a new path inside the volume if you want. 
++
+NOTE: With this release, if all BlueXP Connectors in an account are not using Podman, the single file restore feature is enabled. Otherwise, it is disabled for that account.
+
++
+link:rp-use-restore.html[Learn more about recovering from a ransomware attack].
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about recovering from a ransomware attack].
+
 * *Delete protection plan*: With this release, you can now delete a ransomware protection strategy. 
 +
 //link:rp-use-protect.html[Learn more about protecting workloads and ransomware protection strategies].
