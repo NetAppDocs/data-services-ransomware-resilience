@@ -15,7 +15,7 @@ After workloads have been marked "Restore needed", BlueXP ransomware protection 
 
 * If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
 
-* If the application or VM is _not_ managed by SnapCenter and is managed by BlueXP backup and recovery or BlueXP ransomware protection, BlueXP ransomware protection performs a crash-consistent or file restore, where all the data that was in the volume at the same point of time is restored. 
+* If the application or VM is _not_ managed by SnapCenter and is managed by BlueXP backup and recovery or BlueXP ransomware protection, BlueXP ransomware protection performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
 +
 You can restore the workload by selecting all volumes, specific volumes, or specific files. 
 
@@ -229,6 +229,8 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
+You can restore an application workload at the file level to the same or different working environment.
+
 .Steps to get the list of impacted files
 
 Use the Alerts page to retrieve the list of impacted files. 
@@ -261,7 +263,7 @@ image:screen-alerts-incidents-impacted-files.png[list of impacted files for a sp
 
 . *Files*: 
 ** *Automatically select files*: Let BlueXP ransomware protection select the files to be restored.
-** *Upload list of files*: Upload the CSV file that contains the list of impacted files that you got from the Alerts page.  
+** *Upload list of files*: Upload the CSV file that contains the list of impacted files that you got from the Alerts page. You can restore up to 10,000 files at a time. 
 +
 image:screen-recovery-app-by-file-upload-csv.png[Upload CSV file that lists the impacted files for the alert]
 ** *Manually select files*: Select up to 10,000 files or a single folder to restore. 

@@ -18,10 +18,6 @@ Learn what's new in BlueXP ransomware protection.
 // tag::whats-new[]
 == 30 June 2024
 
-* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files in a CSV file and then use the Recovery page to upload the CSV file. 
-+
-link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
-
 * *Bulk single file restore*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
 +
 NOTE: With this release, if all BlueXP Connectors in an account are not using Podman, the single file restore feature is enabled. Otherwise, it is disabled for that account.
@@ -29,7 +25,11 @@ NOTE: With this release, if all BlueXP Connectors in an account are not using Po
 link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
 //+
-//Currently, you can restore files to an alternate location or volume within the same working environment. With this release, you can restore to the original source volume and create a new path inside the volume if you want.
+//With this release, you can restore application workloads at the file level to the original source working environment and create a new path inside the volume if you want or to a different working environment.
+
+* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files in a CSV file and then use the Recovery page to upload the CSV file. 
++
+link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 * *Delete protection plan*: With this release, you can now delete a ransomware protection strategy. 
 +
 //link:rp-use-protect.html[Learn more about protecting workloads and ransomware protection strategies].
