@@ -245,6 +245,7 @@ TIP: If a volume has multiple alerts, you will need to download the CSV list of 
 . For that alert, select a single incident. 
 +
 image:screen-alerts-incidents-impacted-files.png[list of impacted files for a specific alert]
+. To see the full list of files, select *Click here* at the top of the Impacted files pane. 
 . For that incident, select the download icon and download the list of impacted files in CSV format. 
 
 
@@ -263,7 +264,7 @@ image:screen-alerts-incidents-impacted-files.png[list of impacted files for a sp
 
 . *Files*: 
 ** *Automatically select files*: Let BlueXP ransomware protection select the files to be restored.
-** *Upload list of files*: Upload the CSV file that contains the list of impacted files that you got from the Alerts page. You can restore up to 10,000 files at a time. 
+** *Upload list of files*: Upload a CSV file that contains the list of impacted files that you got from the Alerts page or that you have. You can restore up to 10,000 files at a time. 
 +
 image:screen-recovery-app-by-file-upload-csv.png[Upload CSV file that lists the impacted files for the alert]
 ** *Manually select files*: Select up to 10,000 files or a single folder to restore. 
