@@ -158,14 +158,14 @@ For details, see link:rp-use-settings.html[Configure protection settings].
 
 Enabling application- or VM-consistent protection helps you protect your application or VM workloads in a consistent manner, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. 
 
-This process initiates installing SnapCenter Software for applications or SnapCenter Plug-in for VMware vSphere for VMs. 
+This process initiates registering SnapCenter Software Server for applications or SnapCenter Plug-in for VMware vSphere for VMs using BlueXP backup and recovery. 
 
 After you enable workload-consistent protection, you can manage protection strategies in BlueXP ransomware protection. The protection strategy includes the Snapshot and Backup policies managed elsewhere along with a ransomware detection policy managed in BlueXP ransomware protection. 
 
-To learn about SnapCenter, refer to the following information:  
+To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere using BlueXP backup and recovery, refer to the following information:  
 
-* https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^]
-* https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html[Register SnapCenter Server Software^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html[Register SnapCenter Plug-in for VMware vSphere^]
 
 .Steps 
 
@@ -173,26 +173,28 @@ To learn about SnapCenter, refer to the following information:
 . From the Recommendations pane, locate one of the following recommendations and select *Review and fix*: 
 +
 * Register available SnapCenter Server with BlueXP
-* Register available SnapCenter Plugin for VMware vSphere (SCV) with BlueXP
+* Register available SnapCenter Plug-in for VMware vSphere (SCV) with BlueXP
 //. From the Protection page, select a workload. 
 //+
 //image:screen-protection-sc-columns.png[Protection page]
 //. On the Protection page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option, and in the drop-down menu, select *Enable workload-consistent protection* to enable SnapCenter. 
-+ 
-TIP: The Enable workload-consistent protection screen appears. If you choose the VM-based recommendation, the link to install SnapCenter Plug-in for VMware vSphere appears instead of "Install SnapCenter."
-+
-image:screen-protection-enable-sc.png[Enable workload-consistent protection page]
+//+ 
+//TIP: The Enable workload-consistent protection screen appears. If you choose the VM-based recommendation, the link to install SnapCenter Plug-in for VMware vSphere appears instead of "Install SnapCenter."
+//+
+//image:screen-protection-enable-sc.png[Enable workload-consistent protection page]
+//. In the Workload location field, select *Copy* to copy the workload location to the clipboard for use in the SnapCenter installation. Scroll down to see the remainder of the workload details. 
+//. Select *Install SnapCenter*. 
+//+
+//* If you selected an application-based workload, the SnapCenter Software information appears. 
+//* If you selected a VM-based workload, the SnapCenter Plug-in for VMware vSphere information appears. 
 
-. In the Workload location field, select *Copy* to copy the workload location to the clipboard for use in the SnapCenter installation. Scroll down to see the remainder of the workload details. 
+. Follow the information to register the SnapCenter or SnapCenter Plug-in for VMware vSphere host using BlueXP backup and recovery. 
 
-. Select *Install SnapCenter*. 
-+
-* If you selected an application-based workload, the SnapCenter Software information appears. 
-* If you selected a VM-based workload, the SnapCenter Plug-in for VMware vSphere information appears. 
+. Return to BlueXP ransomware protection. 
 
-. Follow the information to install SnapCenter. 
+. From BlueXP ransomware protection, go the Dashboard and initiate the discover process again. 
 
-. Return to BlueXP ransomware protection. Select *Protection* to view the Protection page. 
+. From BlueXP ransomware protection, select *Protection* to view the Protection page. 
 
 . Review details in the Snapshot and backup policies column on the Protection page to see that the policies are managed elsewhere. 
 
