@@ -97,6 +97,10 @@ Refer to link:rp-use-settings.html[Configure protection settings].| Protect crit
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Register available SnapCenter plugin for VMware vSphere (SCV) with BlueXP | A VM workload is not protected. | Assign  VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Register available SnapCenter Server with BlueXP | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Review new alerts. | New alerts exist. | Review the new alerts. 
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 |===

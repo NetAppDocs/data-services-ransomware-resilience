@@ -169,14 +169,17 @@ To learn about SnapCenter, refer to the following information:
 
 .Steps 
 
-. From the BlueXP ransomware protection menu, select *Protection*.
-. From the Protection page, select a workload. 
+. From the BlueXP ransomware protection menu, select *Dashboard*.
+. From the Recommendations pane, locate one of the following recommendations and select *Review and fix*: 
 +
-image:screen-protection-sc-columns.png[Protection page]
-
-. On the Protection page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option, and in the drop-down menu, select *Enable workload-consistent protection* to enable SnapCenter. 
+* Register available SnapCenter Server with BlueXP
+* Register available SnapCenter Plugin for VMware vSphere (SCV) with BlueXP
+//. From the Protection page, select a workload. 
+//+
+//image:screen-protection-sc-columns.png[Protection page]
+//. On the Protection page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option, and in the drop-down menu, select *Enable workload-consistent protection* to enable SnapCenter. 
 + 
-TIP: If you chose a VM-based workload, the link to install SnapCenter Plug-in for VMware vSphere appears instead of "Install SnapCenter."
+TIP: The Enable workload-consistent protection screen appears. If you choose the VM-based recommendation, the link to install SnapCenter Plug-in for VMware vSphere appears instead of "Install SnapCenter."
 +
 image:screen-protection-enable-sc.png[Enable workload-consistent protection page]
 
