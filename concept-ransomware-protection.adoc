@@ -27,9 +27,7 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 * *Protect* your workloads by enabling backups, Snapshot copies, and ransomware protection strategies on your data.  
 
-* *Detect* anomalies that might be ransomware attacks. 
-+
-NOTE: No ransomware detection or prevention system can completely guarantee safety from a ransomware attack. While it's possible an attack might go undetected, NetApp technology acts as an important additional layer of defense. 
+* *Detect* anomalies that might be ransomware attacks.footnote:[No ransomware detection or prevention system can completely guarantee safety from a ransomware attack. While it's possible an attack might go undetected, NetApp technology acts as an important additional layer of defense.] 
 
 * *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp ONTAP Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously. Your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
 
