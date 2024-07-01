@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, detection, ARP
 summary: Learn what's new in BlueXP ransomware protection.
 ---
 
@@ -16,6 +16,33 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 1 July 2024
+
+* *Bring your own license (BYOL)*: With this release, you can use a BYOL license, which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. 
++
+//link:rp-start-licenses.html[Learn more about setting up licensing].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
+
+* *Restore application workload at the file level*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
++
+NOTE: With this release, if all BlueXP Connectors in an account are not using Podman, the single file restore feature is enabled. Otherwise, it is disabled for that account.
++
+//link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
+//+
+//With this release, you can restore application workloads at the file level to the original source working environment and create a new path inside the volume if you want or to a different working environment.
+
+* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files in a CSV file and then use the Recovery page to upload the CSV file. 
++
+//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
+
+* *Delete protection plan*: With this release, you can now delete a ransomware protection strategy. 
++
+//link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
+
+
 
 == 10 June 2024
 This release of BlueXP ransomware protection includes the following updates:
@@ -71,6 +98,10 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[L
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options].  
 
+* *Dismiss false positive alerts*: From the Alerts tab, you can now dismiss false positives or decide to recover your data immediately.  
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Learn more about responding to a ransomware alert].  
+
 * *New detection statuses* appear on the Protection page showing the status of the ransomware detection applied to the workload. 
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and viewing protection statuses].
@@ -84,13 +115,12 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[L
 
 * *BlueXP backup and recovery*: The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
-//* *Download a list of impacted files* before restoring an application workload at the file level. You can now access the Alerts page to download a list of impacted files and then use the Recovery page to upload the list and choose which files to restore. 
-//+
-//link:rp-use-recover.html[Learn more about downloading impacted files before restoring an application].
 
+* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. 
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options]. 
 
-
-//* *Settings option*: You can now set up backup destinations in BlueXP ransomware protection Settings. link:rp-use-settings.html[Learn more about configuring Settings options]. 
+// end::whats-new[] 
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
@@ -107,7 +137,7 @@ This preview release of BlueXP ransomware protection includes the following upda
 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
-// end::whats-new[] 
+
 
 == 6 October 2023 
 

@@ -32,13 +32,24 @@ image:screen-dashboard.png[Dashboard page]
 
 * *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
-An incident is categorized in one of the following states: 
+** An incident is categorized in one of the following states: 
 +
-** Impacted (shows on Alerts page) 
-** Ready for recovery (shows on Recovery page) 
-** Recovering (shows on Recovery page)
-** Recovery failed (shows on Recovery page)
-** Recovered (shows on Recovery page)
+*** New
+*** Dismissed
+*** Dismissing
+*** Resolved
++ 
+** An alert can have one of the following statuses:
+
+*** New 
+*** Inactive
+
+** A workload can have one of the following restore statuses: 
+
+*** Restore needed
+*** In progress
+*** Restored
+*** Failed
 
 
 * *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
@@ -70,10 +81,8 @@ Here is a sampling of the recommendations that the service offers.
 
 | Add a ransomware protection policy. | The workload is currently not protected.  | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
-Refer to link:rp-use-settings.html[Configure protection settings].
 //|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
-Refer to link:rp-use-manage.html[Manage workloads].
+//Refer to link:rp-use-manage.html[Manage workloads].
 //|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
 |Enable threat detection. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
@@ -83,9 +92,14 @@ Refer to link:rp-use-settings.html[Configure protection settings].
 Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Protect critical or highly important application workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
+| Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
+Refer to link:rp-use-settings.html[Configure protection settings].| Protect critical or highly important application workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Register available SnapCenter plugin for VMware vSphere (SCV) with BlueXP | A VM workload is not protected. | Assign  VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
+Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+| Register available SnapCenter Server with BlueXP | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Review new alerts. | New alerts exist. | Review the new alerts. 
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
@@ -105,13 +119,13 @@ TIP: You can later change a dismissed item to a To Do item. When you mark an ite
 
 . To review information on how to act on the recommendations, select the *information* icon.
 
-== Download CSV files
+== Export protection data to CSV files
 
-You can download CSV files that show details of protection, alerts, and recovery. 
+You can export data and download CSV files that show details of protection, alerts, and recovery. 
 
 You can download CSV files from any of the main menu options: 
 
-* *Dashboard:* Contains all summary information for all workloads. 
+//* *Dashboard:* Contains all summary information for all workloads. 
 * *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
@@ -126,20 +140,20 @@ The CSV files include data for all workloads on all BlueXP working environments.
 +
 image:screen-dashboard.png[Dashboard page]
  
-. From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
+. From the page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
 
 . Do one of the following:
-* From the Dashboard or other page, select the *Download* image:button-download.png[Download option] option. 
+* From the page, select the *Download* image:button-download.png[Download option] option. 
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured named files and select *Download (CSV)*. 
+. If you selected the *Reports* option, select one of the preconfigured named files and select *Download (CSV)* or *Download (JSON)*. 
 
 
 
 == Access technical documentation 
 
-You can access the technical documentation from docs.netapp.com or from inside the BlueXP ransomware protection service. 
+You can access this technical documentation from docs.netapp.com or from inside the BlueXP ransomware protection service. 
 
 .Steps 
 
@@ -147,4 +161,6 @@ You can access the technical documentation from docs.netapp.com or from inside t
 
 . From the Dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
 
-. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page.  
+. Select one of these options: 
+** *What's new* to view information about the features in the current or previous releases in the Release Notes.
+** *Documentation* to view the BlueXP ransomware protection documentation Home page and this documentation.  
