@@ -27,7 +27,7 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 * *Protect* your workloads by enabling backups, Snapshot copies, and ransomware protection strategies on your data.  
 
-* *Detect* anomalies that might be ransomware attacks. 
+* *Detect* anomalies that might be ransomware attacks.footnote:[No ransomware detection or prevention system can completely guarantee safety from a ransomware attack. While it's possible an attack might go undetected, NetApp technology acts as an important additional layer of defense.] 
 
 * *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp ONTAP Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously. Your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
 
@@ -61,7 +61,7 @@ NetApp doesn’t charge you for using the trial version of BlueXP ransomware pro
 
 == Licensing 
 
-With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription soon, or bring your own license soon.
+With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription soon, or bring your own license.
 
 //With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
@@ -131,7 +131,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 
 *Working environments supported* 
 
-* On-premises ONTAP NAS (using NFS and CIFS protocols)
+* On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
 * Cloud Volumes ONTAP for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP for Azure (using NFS and CIFS protocols)
 

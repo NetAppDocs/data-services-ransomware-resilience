@@ -11,16 +11,17 @@ summary: Using BlueXP ransomware protection, you can download reports that show 
 :imagesdir: ./media/
 
 [.lead]
-You can download CSV files that show details of protection, alerts, and recovery and save them as .CSV files. 
+You can export protection data and download the CSV or JSON files that show details of protection, alerts, and recovery. 
 
-Before you download the CSV files, you should refresh the data, which also refreshes data that will appear in the files. 
+Before you download the CSV or JSON files, you should refresh the data, which also refreshes data that will appear in the files. 
 
-You can download CSV files from any of the main menu options: 
+You can download files from any of the main menu options: 
 
 //* *Dashboard:* Contains all summary information for all workloads. 
 * *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
+* *Reports*: You can export data from any of the pages and download the files. 
 
 If you download CSV files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
@@ -35,7 +36,7 @@ image:screen-dashboard.png[Dashboard page]
 . From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
 
 . Do one of the following:
-* From the Dashboard or other page, select the *Download* image:button-download.png[Download option] option. 
+* From the page, select the *Download* image:button-download.png[Download option] option. 
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
