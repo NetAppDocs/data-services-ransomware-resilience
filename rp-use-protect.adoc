@@ -22,8 +22,20 @@ You can protect workloads against ransomware attacks by completing the following
 * Delete a protection strategy.
 
 
+== Protection policies you can change based on existing coverage
 
-== Protection information 
+You can change protection policies based on the workload protection you have: 
+
+* *Workloads not protected by NetApp applications*: These workloads are not managed by SnapCenter, SnapCenter Plug-in for VMware vSphere, or BlueXP backup and recovery. These workloads might have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
+ 
+* *Workloads with existing protection by NetApp applications*: These workloads have backup or snapshot policies managed by SnapCenter, SnapCenter for VMWare vSphere, or BlueXP backup and recovery.
+
+** If Snapshot or backup policies are being managed by SnapCenter, SnapCenter for VMWare, or BlueXP backup and recovery, they will continue to be managed by these applications. Using BlueXP ransomware protection, you can also apply a ransomware detection policy to those workloads.
+
+** If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
+
+
+== Protection details on the Protection page
 
 
 The Protection page shows the following information about workload protection: 
@@ -62,6 +74,8 @@ The Protection page shows the following information about workload protection:
 * Managed by BlueXP backup and recovery
 * Name of ransomware protection policy that governs Snapshots and backups
 * None
+
+
 
 === Workload importance
 
