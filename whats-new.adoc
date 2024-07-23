@@ -16,7 +16,20 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 31 July 2024
+
+This release of BlueXP ransomware protection includes the following updates:
+
+* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
++
+link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
+
+
+
 == 1 July 2024
+
+This release of BlueXP ransomware protection includes the following updates: 
 
 * *Bring your own license (BYOL)*: With this release, you can use a BYOL license, which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. 
 +
@@ -65,6 +78,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-pr
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about how to Configure protection settings].
 
+// end::whats-new[] 
 
 == 14 May 2024
 
@@ -120,7 +134,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[L
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring Settings options]. 
 
-// end::whats-new[] 
+
 
 == 5 March 2024
 This preview release of BlueXP ransomware protection includes the following updates: 
