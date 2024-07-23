@@ -59,6 +59,14 @@ NetApp doesn’t charge you for using the trial version of BlueXP ransomware pro
 
 //NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
 
+
+If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only.
+
+
+After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by BlueXP ransomware protection), and at least one snapshot or backup policy, BlueXP ransomware protection classifies it “Protected” and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy (ARP) even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
+
+Protected workloads count against purchased capacity or the subscription after the 90-day trial period ends. BlueXP ransomware protection is charged on a per GB basis for the data associated with protected workloads before efficiencies. 
+
 == Licensing 
 
 With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription soon, or bring your own license.
@@ -69,12 +77,15 @@ The BlueXP ransomware protection service requires a NetApp ONTAP license.
 
 //NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
+The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
 
 For details, see link:rp-start-licenses.html[Set up licensing].
 
 == How BlueXP ransomware protection works
 
 At a high-level, BlueXP ransomware protection works like this.
+
+BlueXP ransomware protection uses BlueXP backup and recovery to discover and set snapshot and backup policies for file share workloads, and SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. In addition, BlueXP ransomware protection uses BlueXP backup and recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery.
 
 image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware protection architecture]
 
@@ -90,7 +101,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 
  * Discovers each volume's current protection level of NetApp Snapshot copies and backup policies as well as any on-box detection capabilities. The service then associates this protection posture with the workloads by using BlueXP backup and recovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection, FPolicy, Backup policies, and Snapshot policies.
  Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^] and https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
-* Assigns a business priority to each workload based on automatically discovered protection levels and recommends protection policies for workloads based on their business priority.
+* Assigns a business priority to each workload based on automatically discovered protection levels and recommends protection policies for workloads based on their business priority. Workload priority is based on Snapshot frequencies already applied to each volume associated with the workload. 
 //* Assigns a business priority to each workload based on discovered protection levels by using BlueXP classification (formerly Cloud Data Sense). 
 // Learn more about https://docs.netapp.com/us-en/bluexp-classification/index.html[BlueXP classification^].
 
@@ -146,6 +157,8 @@ The service protects the following application-based workloads on primary data v
 * Databases (MySQL and Oracle)
 * More coming soon
 
+In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection and BlueXP
+ransomware protection can protect and recover these in a workload-consistent manner. 
 
 == Terms that might help you with ransomware protection
 

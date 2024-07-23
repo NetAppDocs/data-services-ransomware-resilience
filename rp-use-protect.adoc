@@ -23,6 +23,7 @@ You can protect workloads against ransomware attacks by completing the following
 * Delete a protection strategy.
 
 
+
 == Protection policies you can change based on existing coverage
 
 You can change protection policies based on the workload protection you have: 
@@ -35,6 +36,14 @@ You can change protection policies based on the workload protection you have:
 
 ** If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
+== What policies are required in a ransomware protection strategy? 
+
+The following policies are required in ransomware protection strategy: 
+
+* Ransomware detection policy
+* Snapshot policy
+
+A backup policy is not required in the BlueXP ransomware protection strategy. 
 
 == Protection details on the Protection page
 
@@ -44,8 +53,8 @@ The Protection page shows the following information about workload protection:
 
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
-* *Protected*: A policy is applied. 
-* *At risk*: No policy is applied. 
+* *Protected*: A policy is applied. ARP is enabled on all volumes related to the workload. 
+* *At risk*: No policy is applied. If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled. 
 * *In progress*: A policy is being applied but not completed yet. 
 * *Failed*: A policy is applied but is not working. 
 

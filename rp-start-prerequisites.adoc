@@ -15,12 +15,13 @@ Get started with BlueXP ransomware protection by verifying the readiness of your
 
 To use BlueXP ransomware protection, you'll need these prerequisites: 
 
-* An account in NetApp StorageGRID or AWS S3 for backup targets and the access permissions set
+* An account in NetApp StorageGRID, AWS S3, or Azure Blob for backup targets and the access permissions set
 +
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
 
 * ONTAP 9.11.1 and later
 ** Cluster admin ONTAP permissions
+** ONTAP One license enabled on the on-premises ONTAP instance
 ** A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 +
 NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details.
