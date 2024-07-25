@@ -146,7 +146,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 * Cloud Volumes ONTAP for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP for Azure (using NFS and CIFS protocols)
 
-NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, and Data protection (DP) volumes. 
+NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
 *Data sources supported*
 
