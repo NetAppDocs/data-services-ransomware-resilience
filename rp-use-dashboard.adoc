@@ -26,9 +26,11 @@ After discovery, the Dashboard shows you the health of workload data protection.
 image:screen-dashboard.png[Dashboard page]
 
 
-. From the Dashboard, you can view and do any of the following in each of the panes: 
+. From the Dashboard, you can do the following actions in each of the panes: 
 
 * *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
++
+TIP: Click the i note to see tips on this data. To increase the workload limit, click *Increase workload limit* inside this i note. Clicking this takes you to the BlueXP Support page, where you can create a case ticket. 
 
 * *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +

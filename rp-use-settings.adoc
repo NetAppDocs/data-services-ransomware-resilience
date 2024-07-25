@@ -11,9 +11,9 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media
 
 [.lead]
-You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard. 
+You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. 
 
-Enabling threat detection automatically sends data to a security and event management system (SIEM) for threat analysis and detection. 
+Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
@@ -22,6 +22,17 @@ Enabling threat detection automatically sends data to a security and event manag
 //* Add a backup destination. 
 //* Set up multi-admin verification. 
 //* Classify 
+
+== Access the Settings page directly
+
+You can easily access the Settings page from the Actions option near the top menu. 
+
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+. From the drop-down menu, select *Settings*.
+. From the Settings page, you can do the following: 
+** Add a backup destination.
+** Connect your security and event management system (SIEM) for threat analysis and detection.   
+
 
 
 == Add a backup destination
@@ -57,14 +68,14 @@ image:screen-dashboard.png[Dashboard page]
 
 . Continue with instructions depending on the backup provider. 
 
-=== Access the Settings page from the menu
 
-You can easily access the Settings page from the menu. 
+=== Access Backup Destination options from the Actions drop-down menu
+
+You can easily access the Settings page from the Actions option near the top menu. 
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-. From the menu, select *Settings*.
+. From the drop-down menu, select *Settings*.
 . To add a backup destination, select *Add*.  
-
 
 
 === Add StorageGRID as a backup destination
