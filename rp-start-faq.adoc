@@ -138,25 +138,20 @@ The following policies are required in ransomware protection strategy:
 A backup policy is not required in the BlueXP ransomware protection strategy. 
 
 
-*Is BlueXP ransomware protection aware of protection settings made in NetApp
-ONTAP?*
+*Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
 
 Yes, BlueXP ransomware protection discovers snapshot schedules set in ONTAP and whether ARP and FPolicy are enabled across all volumes in a discovered workload. The info you see initially in the Dashboard is aggregated from other NetApp solutions and products. 
 
 
-*Is BlueXP ransomware protection aware of policies already made in BlueXP backup
-and recovery and SnapCenter?*
+*Is BlueXP ransomware protection aware of policies already made in BlueXP backup and recovery and SnapCenter?*
 
 Yes, if you have workloads managed in BlueXP backup and recovery or SnapCenter, the policies managed by those products are brought into BlueXP ransomware protection.
 
-*Can you modify policies carried over from BlueXP backup and recovery
-and/or SnapCenter?*
+*Can you modify policies carried over from BlueXP backup and recovery and/or SnapCenter?*
 
-No, you cannot modify policies managed by BlueXP backup
-and recovery or SnapCenter within BlueXP ransomware protection. You manage any changes to those policies in BlueXP backup and recovery or SnapCenter.
+No, you cannot modify policies managed by BlueXP backup and recovery or SnapCenter within BlueXP ransomware protection. You manage any changes to those policies in BlueXP backup and recovery or SnapCenter.
 
-*If policies exist from ONTAP (already enabled in System Manager
-such as ARP, FPolicy, and snapshots) are those changed in BlueXP ransomware protection?*
+*If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in BlueXP ransomware protection?*
 
 No. BlueXP ransomware protection does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
 
