@@ -419,7 +419,13 @@ You can assign a different protection policy replacing the current one.
 
 //. Select *Save* to finish the change. 
 
+== Disable protection policies
 
+If you want to stop using protection policies that are applied to workloads, you can disable them using System Manager, API calls, or CLI. 
+
+You can disable FPolicy and backup policies in BlueXP ransomware protection by applying a different policy that does not include them. 
+
+TIP: We recommend that you do not disable snapshot policies. 
 
 == Delete a ransomware protection strategy
 

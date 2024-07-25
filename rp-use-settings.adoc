@@ -213,9 +213,9 @@ Before you enable SIEM in BlueXP ransomware protection, you will need to configu
 Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need to do the following high level steps in AWS Security Hub: 
 
 * Set up permissions in AWS Security Hub.
-* Set up the access key and secret key in AWS Security Hub. (These steps are not provided here.)
+* Set up the authentication access key and secret key in AWS Security Hub. (These steps are not provided here.)
 
-.Steps to enable permissions in AWS Security Hub
+.Steps to set up permissions in AWS Security Hub
 
 . Go to *AWS IAM console*. 
 . Select *Policies*.
@@ -267,10 +267,10 @@ Before you enable Splunk in BlueXP ransomware protection, you'll need to do the 
 . Enter a Name for the token and select *Next*. 
 . Select a *Default Index* where events will be pushed, then select *Review*. 
 . Confirm that all settings for the endpoint are correct, then select *Submit*. 
-. Copy the token and paste it in another document to have it ready for the next step. 
+. Copy the token and paste it in another document to have it ready for the Authentication step. 
 
 
-=== Enable SIEM in BlueXP ransomware protection
+=== Connect SIEM in BlueXP ransomware protection
 Enabling SIEM sends data from BlueXP ransomware protection to your SIEM server for threat analysis and reporting. 
 
 . From the BlueXP menu, select *Protection* > *Ransomware protection*. 
@@ -296,8 +296,8 @@ NOTE: The information that you enter depends on the SIEM you selected.
 The Settings page shows "Connected."
 
 
-=== Disconnect the SIEM
-Disconnecting SIEM stops BlueXP ransomware protection from sending data to the SIEM server. 
+=== Disconnect SIEM
+Disconnecting SIEM stops the service from sending data to the SIEM server. 
 
 .Steps
 . From the BlueXP menu, select *Protection* > *Ransomware protection*. 

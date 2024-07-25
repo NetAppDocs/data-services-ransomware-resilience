@@ -31,6 +31,8 @@ sidebar:
           url: /rp-start-discover.html 
         - title: Configure backup destinations and enable threat detection
           url: /rp-use-settings.html 
+        - title: Disable BlueXP ransomware protection 
+          url: /rp-start-disable.html
         - title: FAQ
           url: /rp-start-faq.html
     - title: Use BlueXP ransomware protection
