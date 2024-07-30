@@ -71,8 +71,8 @@ The Protection page shows the following information about workload protection:
 * *Active*: A ransomware detection protection policy is assigned. 
 * *Not set*: A ransomware detection protection policy is not assigned. 
 * *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
-
-
++
+TIP: When protection is enabled in BlueXP ransomware protection, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
 
 
 *Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
