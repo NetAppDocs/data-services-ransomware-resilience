@@ -18,7 +18,7 @@ Learn what's new in BlueXP ransomware protection.
 // tag::whats-new[]
 == 31 July 2024
 
-This release of BlueXP ransomware protection includes the following updates:
+This release of BlueXP ransomware protection includes the following update:
 
 //* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
 //+
@@ -30,9 +30,9 @@ This release of BlueXP ransomware protection includes the following updates:
 For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 
 
-* *Workload details*: BlueXP ransomware protection provides details in the workload information from the Protection and other pages for workload protection assessment. From the workload details, you can now change the workload name, review the currently assigned policy, and review the configured backup destinations.  
-+
-For details, refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+//* *Workload details*: BlueXP ransomware protection provides details in the workload information from the Protection and other pages for workload protection assessment. From the workload details, you can now change the workload name, review the currently assigned policy, and review the configured backup destinations.  
+//+
+//For details, refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 //+
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about viewing workload details in the Protection pages].
 

@@ -130,9 +130,9 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 //For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
 
-== Supported backup targets, working environments, and data sources
+== Supported backup targets, working environments, and workload data sources
 
-Use BlueXP ransomware protection to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and data sources:
+Use BlueXP ransomware protection to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and workload data sources:
 
 *Backup targets supported*
 
@@ -148,7 +148,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 
 NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
-*Data sources supported*
+*Workload data sources supported*
 
 The service protects the following application-based workloads on primary data volumes:
 
@@ -157,8 +157,7 @@ The service protects the following application-based workloads on primary data v
 * Databases (MySQL and Oracle)
 * More coming soon
 
-In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection and BlueXP
-ransomware protection can protect and recover these in a workload-consistent manner. 
+In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection. BlueXP ransomware protection can protect and recover these in a workload-consistent manner. 
 
 == Terms that might help you with ransomware protection
 
