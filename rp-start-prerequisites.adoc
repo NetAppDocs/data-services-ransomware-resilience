@@ -13,35 +13,75 @@ summary: Get started with BlueXP ransomware protection by verifying support for 
 [.lead]
 Get started with BlueXP ransomware protection by verifying the readiness of your operational environment, login, network access, and web browser.
 
-To use BlueXP ransomware protection, you'll need these prerequisites: 
+To use BlueXP ransomware protection, you'll need these prerequisites. 
 
-* An account in NetApp StorageGRID, AWS S3, or Azure Blob for backup targets and the access permissions set
+
+== In BlueXP 
+
+* A BlueXP user account with Account Admin privileges for discovering resources.
+
+* A BlueXP account with at least one active BlueXP Connector connecting to on-premises ONTAP clusters or connecting to Cloud Volumes ONTAP in AWS or in Azure. 
+
+* At least one BlueXP working environment with a NetApp on-premises ONTAP cluster or Cloud Volume ONTAP in AWS or Azure (using NAS or CIFS protocols).
+
+** ONTAP or Cloud Volume ONTAP clusters with ONTAP OS version 9.11.1 or greater are supported. 
+
+** If your on-premises ONTAP clusters or Cloud Volume ONTAP in AWS or in Azure cloud are not already onboarded in BlueXP, then you'll need a BlueXP Connector. 
 +
-Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions list^] for details. 
+Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn how to configure a BlueXP Connector] and https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard BlueXP requirements^].
++
+NOTE: If you have multiple BlueXP Connectors in a single BlueXP account, the BlueXP ransomware protection service will scan ONTAP resources across all Connectors beyond the one that is currently selected in the BlueXP UI. 
 
-* ONTAP 9.11.1 and later
-** Cluster admin ONTAP permissions
-** ONTAP One license enabled on the on-premises ONTAP instance
-** A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
+//All source and working environments must be on the same BlueXP account. 
+
+
+//** A BlueXP Connector per each Virtual Private Cloud (VPC) or on an on-premises region must be set up in BlueXP. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
+
+== In ONTAP 9.11.1 and later
+
+* A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 +
 NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details.
 +
 For more licensing details, refer to link:concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
 
+* To apply protection configurations (such as enabling Autonomous Ransomware Protection and others), BlueXP ransomware protection needs admin permissions on the ONTAP cluster. The ONTAP cluster should have been onboarded using ONTAP cluster admin user credentials only. 
 
-* In BlueXP: 
+* If the ONTAP cluster is already onboarded in BlueXP using non-admin user credentials, then the non-admin user permissions must be updated with necessary permissions by logging into the ONTAP cluster, described on this page. 
 
-** A BlueXP working environment with NetApp on-premises storage (using NAS or CIFS protocols)
-** A BlueXP Connector per each Virtual Private Cloud (VPC) or on an on-premises region must be set up in BlueXP. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
+
+//* ONTAP One license enabled on the on-premises ONTAP instance
+
+== For data backups
+
+* An account in NetApp StorageGRID, AWS S3, or Azure Blob for backup targets and the access permissions set. 
 +
-NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. 
+Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS, Azure, or S3 permissions list^] for details. 
+
+* The BlueXP backup and recovery service does not need to be enabled on the working environment. 
++
+The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
 
+== Update non-admin user permissions in an ONTAP working environment
 
-** A BlueXP account with at least one active Connector connecting to on-premises ONTAP clusters. All source and working environments must be on the same BlueXP account. 
-** A BlueXP user account with Account Admin privileges for discovering resources
-** A BlueXP working environment with NetApp on-premises storage (using NAS or CIFS protocols)
-** https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[Standard BlueXP requirements^]
+If you need to update non-admin user permissions for a particular working environment, complete these steps. 
 
-NOTE: The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+.  Log in to the BlueXP account and look for the working environment that needs its ONTAP user permissions updated. 
 
+. Double-click on the working environment to see details. 
+. Click *View additional information* that shows the user name. 
+. Log in to the ONTAP cluster CLI using the admin user. 
+. Display the existing roles for that user. Enter: 
++
+----
+security login show -user-or-group-name <username>
+----
+
+. Change the role for the user. Enter: 
++
+----
+security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
+----
+
+. Return to the BlueXP ransomware protection UI to use it. 
