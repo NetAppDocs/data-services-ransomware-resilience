@@ -27,8 +27,9 @@ This release of BlueXP ransomware protection includes the following update.
 
 * *Threat detection with Splunk Cloud*: You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. With previous releases, you could select only the AWS Security Hub as your SIEM. With this release, you can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 +
-For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
-
+//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
++
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
 
 //* *Workload details*: BlueXP ransomware protection provides details in the workload information from the Protection and other pages for workload protection assessment. From the workload details, you can now change the workload name, review the currently assigned policy, and review the configured backup destinations.  
 //+
