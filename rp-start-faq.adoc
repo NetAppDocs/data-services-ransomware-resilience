@@ -13,10 +13,7 @@ summary: This FAQ can help if you're just looking for a quick answer to a questi
 [.lead]
 This FAQ can help if you're just looking for a quick answer to a question.
 
-== Access
-
-*What's the BlueXP ransomware protection URL?*
-For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
+== Deployment
 
 *Do you need a license to use BlueXP ransomware protection?*
 
@@ -32,19 +29,28 @@ BlueXP ransomware protection does not require any enablement. The ransomware pro
 
 To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
 
+To get started with BlueXP ransomware protection, you click "Start discovering workloads" from its initial landing page. 
 
-**Does BlueXP ransomware protection available in standard, restricted, and private modes?**
+*Is BlueXP ransomware protection available in standard, restricted, and private modes?*
 At this time, BlueXP ransomware protection is available only in standard mode. Stay tuned for more. 
 
 For an explanation about these modes across all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[BlueXP deployment modes^].
 
-**How are access permissions handled?**
+== Access
+
+*What's the BlueXP ransomware protection URL?*
+For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/^] to access the BlueXP console. 
+
+
+
+
+*How are access permissions handled?*
 Only account admins have the ability to initiate the service and discover workloads (because this involves committing to usage of a resource). Subsequent interactions can be done by any role.
 
-**What device resolution is best?**
+*What device resolution is best?*
 The recommended device resolution for BlueXP ransomware protection is 1920x1080 or better. 
 
-**Which browser should I use?**
+*Which browser should I use?*
 Any modern browser will work. 
 
 
@@ -57,22 +63,62 @@ Yes, BlueXP ransomware protection discovers Snapshot schedules set in ONTAP.
 *If you set a policy using BlueXP ransomware protection, do you have to make future changes only in this service?* 
 We recommend that you make policy changes from the BlueXP ransomware protection service.
 
+*How does BlueXP ransomware protection interact with BlueXP backup and recovery
+and SnapCenter?*
+
+BlueXP ransomware protection uses the following products and services:
+
+* BlueXP backup and recovery to discover and set snapshot and backup policies for file share workloads
+* SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
+
+In addition, BlueXP ransomware protection uses BlueXP backup and recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
+
+//*How is BlueXP ransomware protection different from Cloud Insights Storage Workload Security (CISWS)?*
+
+//BlueXP ransomware protection complements and will soon help customers use Cloud Insights Storage Workload Security (CISWS), it does not compete with it. Like ARP, CISWS is a detection and response technology that helps protect your data from ransomware by detecting threats and potential attacks. CISWS detects threats based on user activity, looking at anomalies in user behavior (such as unusual user access activity).
+
+//BlueXP ransomware protection is a service that helps customers manage the overall ransomware resilience as outlined by NIST Cybersecurity Framework 2.0. It identifies workloads, their protection posture, prioritizes them, and recommends posture improvements. BlueXP ransomware protection also helps customers create protection policies and deploys those policies per workload across multiple volumes simultaneously. Coming soon, BlueXP ransomware protection will help manage CISWS detection alerts by mapping them to workloads and helping customers identify all impacted files. BlueXP ransomware protection completes ransomware resilience by guiding customers through a simple recovery to help customers recover their workloads quickly and with minimal impact.
+
+
 == Workloads
 
-**What makes up a workload?**
-A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
+*What makes up a workload?*
+A workload is an application, a VM, or a file share. A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
 
 *How does BlueXP ransomware protection prioritize workload data?*
 Data priority is determined by the Snapshot copies made and backups that are scheduled. 
 
-The workload priority is determined by Snapshot frequencies. 
+The workload priority (critical, standard, important) is determined by Snapshot frequencies already applied to each volume associated with the workload. 
 
 link:rp-use-protect.html[Learn about workload priority or importance].
 
-**New volume added, but doesn't appear yet**
+
+*What workloads does BlueXP ransomware protection support?*
+
+BlueXP ransomware protection can identify the following workloads: Oracle, MySQL, file shares, VMs, and VM datastores.
+
+In addition, if the customer is using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection and BlueXP ransomware protection can protect and recover these in a workload-consistent manner.
+
+*How do you associate data with a workload?*
+
+BlueXP ransomware protection associates data with a workload in the following ways:
+
+* BlueXP ransomware protection discovers the volumes and the file extensions and associates them to the appropriate workload.
+* In addition, if you have SnapCenter or SnapCenter for VMware and have configured workloads in BlueXP backup and recovery, then BlueXP ransomware protection discovers the workloads managed by SnapCenter and SnapCenter for VMware and their associated volumes.
+
+*What is a "protected" workload?*
+In BlueXP ransomware protection, a workload shows a “protected” status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
+
+//Coming soon, this could also be that CISWS is monitoring user activity. 
+
+*What is an “at risk” workload?*
+If a workload does not have a primary detection policy enabled, it is “at risk” even if it has a backup and snapshot policy enabled. 
+
+
+*New volume added, but doesn't appear yet*
 If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 
 
-**The Dashboard doesn't show all my workloads. What might be wrong?**
+*The Dashboard doesn't show all my workloads. What might be wrong?*
 Currently, only NFS and CIFS volumes are supported. iSCSI volumes  and other non-supported configurations are filtered out and do not appear on the Dashboard. 
 
 == Protection policies
@@ -82,5 +128,44 @@ At this time, BlueXP backup and recovery (Cloud Backup) supports one backup poli
 
 Snapshot copies are not limited and can be added separately from each service.
 
+*What policies are required in a ransomware protection strategy?*
+
+The following policies are required in ransomware protection strategy: 
+
+* Ransomware detection policy
+* Snapshot policy
+
+A backup policy is not required in the BlueXP ransomware protection strategy. 
 
 
+*Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
+
+Yes, BlueXP ransomware protection discovers snapshot schedules set in ONTAP and whether ARP and FPolicy are enabled across all volumes in a discovered workload. The info you see initially in the Dashboard is aggregated from other NetApp solutions and products. 
+
+
+*Is BlueXP ransomware protection aware of policies already made in BlueXP backup and recovery and SnapCenter?*
+
+Yes, if you have workloads managed in BlueXP backup and recovery or SnapCenter, the policies managed by those products are brought into BlueXP ransomware protection.
+
+*Can you modify policies carried over from BlueXP backup and recovery and/or SnapCenter?*
+
+No, you cannot modify policies managed by BlueXP backup and recovery or SnapCenter within BlueXP ransomware protection. You manage any changes to those policies in BlueXP backup and recovery or SnapCenter.
+
+*If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in BlueXP ransomware protection?*
+
+No. BlueXP ransomware protection does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
+
+*What happens if you add new policies in BlueXP backup and recovery or SnapCenter
+after signing up for BlueXP ransomware protection?*
+
+BlueXP ransomware protection recognizes any new polices created in BlueXP backup and recovery or SnapCenter.
+
+*Can you change policies from ONTAP?*
+
+Yes, you can change policies from ONTAP in BlueXP ransomware protection. You can also create new policies in BlueXP ransomware protection and apply them to workloads. This action replaces existing ONTAP policies with the policies created in BlueXP ransomware protection. 
+
+*Can you disable policies?*
+
+You can disable ARP in detection policies using System Manager UI, APIs, or CLI. 
+
+You can disable FPolicy and backup policies by applying a different policy that does not include them. 

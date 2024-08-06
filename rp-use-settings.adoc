@@ -11,9 +11,9 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media
 
 [.lead]
-You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard. 
+You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. 
 
-Enabling threat detection automatically sends data to a security and event management system (SIEM) for threat analysis and detection. 
+Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
@@ -22,6 +22,17 @@ Enabling threat detection automatically sends data to a security and event manag
 //* Add a backup destination. 
 //* Set up multi-admin verification. 
 //* Classify 
+
+== Access the Settings page directly
+
+You can easily access the Settings page from the Actions option near the top menu. 
+
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+. From the drop-down menu, select *Settings*.
+. From the Settings page, you can do the following: 
+** Add a backup destination.
+** Connect your security and event management system (SIEM) for threat analysis and detection.   
+
 
 
 == Add a backup destination
@@ -57,14 +68,14 @@ image:screen-dashboard.png[Dashboard page]
 
 . Continue with instructions depending on the backup provider. 
 
-=== Access the Settings page from the menu
 
-You can easily access the Settings page from the menu. 
+=== Access Backup Destination options from the Actions drop-down menu
+
+You can easily access the Settings page from the Actions option near the top menu. 
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-. From the menu, select *Settings*.
+. From the drop-down menu, select *Settings*.
 . To add a backup destination, select *Add*.  
-
 
 
 === Add StorageGRID as a backup destination
@@ -203,12 +214,77 @@ image:screen-settings-backup-destinations-list-azure.png[Backup destinations pag
 
 == Enable threat detection
 
-You can automatically send data to a security and event management system (SIEM) for threat analysis and detection. 
+You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 
 //You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
+Before you enable SIEM in BlueXP ransomware protection, you will need to configure AWS Security Hub or Splunk Cloud. 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+=== Configure AWS Security Hub for threat detection
+Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need to do the following high level steps in AWS Security Hub: 
+
+* Set up permissions in AWS Security Hub.
+* Set up the authentication access key and secret key in AWS Security Hub. (These steps are not provided here.)
+
+.Steps to set up permissions in AWS Security Hub
+
+. Go to *AWS IAM console*. 
+. Select *Policies*.
+. Create a policy using the following code in JSON format:
+
++
+----
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "NetAppSecurityHubFindings",
+      "Effect": "Allow",
+      "Action": [
+        "securityhub:BatchImportFindings",
+        "securityhub:BatchUpdateFindings"
+      ],
+      "Resource": [
+        "arn:aws:securityhub:*:*:product/*/default",
+        "arn:aws:securityhub:*:*:hub/default"
+      ]
+    }
+  ]
+}
+----
+
+
+
+=== Configure Splunk Cloud for threat detection
+
+Before you enable Splunk Cloud in BlueXP ransomware protection, you'll need to do the following high level steps in Splunk Enterprise: 
+
+* Enable an HTTP Event Collector in Splunk Cloud to receive event data via HTTP or HTTPS from BlueXP. 
+* Create an Event Collector token in Splunk Cloud. 
+
+.Steps to enable an HTTP Event Collector in Splunk 
+
+. Go to Splunk Cloud. 
+. Select *Settings* > *Data Inputs*. 
+. Select *HTTP Event Collector* > *Global Settings*. 
+. On the All Tokens toggle, select *Enabled*.
+. To have the Event Collector listen and communicate over HTTPS rather than HTTP, select *Enable SSL*. 
+. Enter a port in *HTTP Port Number* for the HTTP Event Collector. 
+
+.Steps to create an Event Collector token in Splunk
+. Go to Splunk Cloud. 
+. Select *Settings* > *Add Data*. 
+. Select *Monitor* > *HTTP Event Collector*. 
+. Enter a Name for the token and select *Next*. 
+. Select a *Default Index* where events will be pushed, then select *Review*. 
+. Confirm that all settings for the endpoint are correct, then select *Submit*. 
+. Copy the token and paste it in another document to have it ready for the Authentication step. 
+
+
+=== Connect SIEM in BlueXP ransomware protection
+Enabling SIEM sends data from BlueXP ransomware protection to your SIEM server for threat analysis and reporting. 
+
+. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 
@@ -221,12 +297,28 @@ image:screen-settings-threat-detection3.png[Settings page]
 //+
 //image:screen-settings-threat-detection-details.png[Enable threat detection details page]
 
-. Enter SIEM server details to enable threat detection. 
-//. Enter SIEM/XDR server details to enable threat detection.
+
+. Enter the token and authentication details you configured in either AWS Security Hub or Splunk Cloud. 
++
+NOTE: The information that you enter depends on the SIEM you selected. 
 
 . Select *Enable*. 
 +
 The Settings page shows "Connected."
+
+
+=== Disconnect SIEM
+Disconnecting SIEM stops the service from sending data to the SIEM server. 
+
+.Steps
+. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
+
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+
+. Select *Settings*. 
+. In the SIEM connection pane, select *Disconnect*. 
+. In the confirmation page, select *Disconnect*. 
+
 
 //== Add multi-admin verification 
 

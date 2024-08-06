@@ -26,9 +26,11 @@ After discovery, the Dashboard shows you the health of workload data protection.
 image:screen-dashboard.png[Dashboard page]
 
 
-. From the Dashboard, you can view and do any of the following in each of the panes: 
+. From the Dashboard, you can do the following actions in each of the panes: 
 
 * *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
++
+TIP: Click the i note to see tips on this data. To increase the workload limit, click *Increase workload limit* inside this i note. Clicking this takes you to the BlueXP Support page, where you can create a case ticket. 
 
 * *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
@@ -84,10 +86,10 @@ Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 //|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
 //Refer to link:rp-use-manage.html[Manage workloads].
 //|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
-|Enable threat detection. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+|Connect to SEIM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
 //|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
-Refer to link:rp-use-settings.html[Configure protection settings].
+
 |Enable workload-consistent protection for applications or VMware. | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
 Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.

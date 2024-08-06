@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: rp-start-disable.html
+keywords: bluexp, ransomware protection, netapp, disable protection
+summary: If you no longer want to use BlueXP ransomware protection service, you can let the license expire.
+---
+
+= Disable BlueXP ransomware protection
+:hardbreaks:
+:icons: font
+:imagesdir: ./media
+
+[.lead]
+If you no longer want to use BlueXP ransomware protection service, you can let the license expire. You can also disable policies that you no longer want to use. 
+
+
+== Disable the BlueXP ransomware protection service
+
+After the subscription or license expires, the service automatically disables features that require a subscription or license. 
+
+For details about actions you can still do after the license expires, refer to link:rp-start-licenses.html[Set up BlueXP ransomware protection licensing].
+
+== Disable protection policies
+
+If you want to stop using protection policies that are applied to workloads, you can disable them using System Manager, API calls, or CLI. 
+
+You can disable FPolicy and backup policies in BlueXP ransomware protection by applying a different policy that does not include them. For instructions on setting protection policies, refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
+
+TIP: We recommend that you do not disable snapshot policies. 

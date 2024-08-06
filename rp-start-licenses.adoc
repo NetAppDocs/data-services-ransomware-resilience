@@ -16,14 +16,17 @@ With BlueXP ransomware protection, you can use different licensing plans.
 You can use the following license types:
 
 * Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace.  This will be available soon. 
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or Azure Marketplace (coming soon). 
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. 
 //NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
+The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
 
-After you set up your BYOL or purchase a PAYGO subscription in AWS, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active AWS subscription in the BlueXP digital wallet *Subscriptions* tab.
+NOTE: If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only. 
 
-After the free trial ends or the license or AWS subscription expires, you can still do the following in the service:
+After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
+
+After the free trial ends or the license or subscription expires, you can still do the following in the service:
 
 * View workloads and workload health.
 * Delete any resource, such as a workload or policy.
@@ -34,7 +37,7 @@ You can try BlueXP ransomware protection out by using a 90-day free trial. You m
 
 NOTE: No capacity limits are enforced during the trial.  
 
-You can get a license or subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license or PAYGO AWS subscription. 
+You can get a license or subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
 
 During the trial, you have full functionality. 
 
@@ -61,6 +64,7 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 After the free trial ends, you can either subscribe through AWS Marketplace or purchase a license from NetApp.  
 
 <<Subscribe through AWS Marketplace>>
+<<Subscribe through Microsoft Azure Marketplace>>
 <<Bring your own license (BYOL)>>
 
 == Subscribe through AWS Marketplace
