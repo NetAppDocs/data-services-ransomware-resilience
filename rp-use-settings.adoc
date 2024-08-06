@@ -214,11 +214,11 @@ image:screen-settings-backup-destinations-list-azure.png[Backup destinations pag
 
 == Enable threat detection
 
-You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub or Splunk as your SIEM. 
+You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 
 //You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
-Before you enable SIEM in BlueXP ransomware protection, you will need to configure AWS Security Hub or Splunk. 
+Before you enable SIEM in BlueXP ransomware protection, you will need to configure AWS Security Hub or Splunk Cloud. 
 
 === Configure AWS Security Hub for threat detection
 Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need to do the following high level steps in AWS Security Hub: 
@@ -255,16 +255,16 @@ Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need 
 
 
 
-=== Configure Splunk for threat detection
+=== Configure Splunk Cloud for threat detection
 
-Before you enable Splunk in BlueXP ransomware protection, you'll need to do the following high level steps in Splunk Enterprise: 
+Before you enable Splunk Cloud in BlueXP ransomware protection, you'll need to do the following high level steps in Splunk Enterprise: 
 
-* Enable an HTTP Event Collector in Splunk Enterprise to receive event data via HTTP or HTTPS from BlueXP. 
-* Create an Event Collector token in Splunk Enterprise. 
+* Enable an HTTP Event Collector in Splunk Cloud to receive event data via HTTP or HTTPS from BlueXP. 
+* Create an Event Collector token in Splunk Cloud. 
 
 .Steps to enable an HTTP Event Collector in Splunk 
 
-. Go to Splunk Enterprise. 
+. Go to Splunk Cloud. 
 . Select *Settings* > *Data Inputs*. 
 . Select *HTTP Event Collector* > *Global Settings*. 
 . On the All Tokens toggle, select *Enabled*.
@@ -272,7 +272,7 @@ Before you enable Splunk in BlueXP ransomware protection, you'll need to do the 
 . Enter a port in *HTTP Port Number* for the HTTP Event Collector. 
 
 .Steps to create an Event Collector token in Splunk
-. Go to Splunk Enterprise. 
+. Go to Splunk Cloud. 
 . Select *Settings* > *Add Data*. 
 . Select *Monitor* > *HTTP Event Collector*. 
 . Enter a Name for the token and select *Next*. 
@@ -298,7 +298,7 @@ image:screen-settings-threat-detection3.png[Settings page]
 //image:screen-settings-threat-detection-details.png[Enable threat detection details page]
 
 
-. Enter the token and authentication details you configured in either AWS Security Hub or Splunk. 
+. Enter the token and authentication details you configured in either AWS Security Hub or Splunk Cloud. 
 +
 NOTE: The information that you enter depends on the SIEM you selected. 
 

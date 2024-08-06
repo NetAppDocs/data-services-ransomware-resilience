@@ -16,16 +16,16 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
-== 31 July 2024
+== 5 August 2024
 
-This release of BlueXP ransomware protection includes the following update:
+This release of BlueXP ransomware protection includes the following update.
 
 //* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
 //+
 //link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 
-* *Threat detection with Splunk*: You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. With previous releases, you could select only the AWS Security Hub as your SIEM. With this release, you can select the AWS Security Hub or Splunk as your SIEM. 
+* *Threat detection with Splunk Cloud*: You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. With previous releases, you could select only the AWS Security Hub as your SIEM. With this release, you can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 +
 For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 
