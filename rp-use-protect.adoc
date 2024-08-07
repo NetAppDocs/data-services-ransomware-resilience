@@ -25,7 +25,7 @@ You can protect workloads against ransomware attacks by completing the following
 == Protection policies
 You might find it helpful to review information about the protection policies you can change and what types of policies are in a protection strategy. 
 
-* Which protection policies can you change?*
+*Which protection policies can you change?*
 
 You can change protection policies based on the workload protection you have: 
 
@@ -88,7 +88,7 @@ TIP: When protection is enabled in BlueXP ransomware protection, alert detection
 
 
 
-=== Workload importance
+*Workload importance*
 
 BlueXP ransomware protection assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
 
@@ -96,7 +96,7 @@ BlueXP ransomware protection assigns an importance or priority to each workload 
 * *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
-=== Predefined detection policies
+*Predefined detection policies*
 
 You can choose one of the following BlueXP ransomware protection predefined policies, which are aligned with workload importance: 
 
@@ -294,6 +294,9 @@ For details about BlueXP classification, refer to the following BlueXP classific
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
 
+=== View changes to workload priority based on sensitivity data 
+
+TBD
 
 == Add a ransomware protection strategy
 

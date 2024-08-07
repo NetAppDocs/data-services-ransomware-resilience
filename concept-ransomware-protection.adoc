@@ -15,7 +15,7 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 [.lead]
 Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data between one day and several weeks. 
 
-BlueXP ransomware protection is a service to protect your data from ransomware. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) as well as Cloud Volumes ONTAP for Amazon Web Services and Cloud Volumes ONTAP for Microsoft Azure across BlueXP accounts. The service backs up data to Amazon Web Services, Microsoft Azure cloud storage, and NetApp StorageGRID. 
+BlueXP ransomware protection is a service to protect your data from ransomware. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud Platform, and Cloud Volumes ONTAP for Microsoft Azure across BlueXP accounts. The service backs up data to Amazon Web Services, Google Cloud Platform, Microsoft Azure cloud storage, and NetApp StorageGRID. 
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
@@ -137,6 +137,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 *Backup targets supported*
 
 * Amazon Web Services (AWS) S3
+* Google Cloud Platform
 * Microsoft Azure Blob
 * NetApp StorageGRID
 
@@ -144,7 +145,8 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
 * Cloud Volumes ONTAP for AWS (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP for Azure (using NFS and CIFS protocols)
+* Cloud Volumes ONTAP for Google Cloud Platform (using NFS and CIFS protocols)
+* Cloud Volumes ONTAP for Microsoft Azure (using NFS and CIFS protocols)
 
 NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
