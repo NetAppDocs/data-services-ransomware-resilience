@@ -200,8 +200,6 @@ CAUTION: If you configure the backup lock setting now, you cannot change the set
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-gcp.png[Backup destinations page the Settings option]
-
 
 === Add Microsoft Azure as a backup destination 
 
