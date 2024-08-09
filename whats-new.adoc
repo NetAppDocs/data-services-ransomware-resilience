@@ -20,12 +20,12 @@ Learn what's new in BlueXP ransomware protection.
 == 30 August 2024
 This release of BlueXP ransomware protection includes the following updates.
 
-* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
-+
-link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
+//* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
+//+
+//link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 
-* *Enable data classification*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify your data. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
+
 
 * *Threat risk assessment with Digital Advisor*: 
 
@@ -39,8 +39,15 @@ For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware prot
 
 * *Support for Google Cloud Platform*: The service now supports Cloud Volumes ONTAP for Google Cloud Platform for storage protection. Previously, the service supported only Cloud Volumes ONTAP for Amazon Web Services and Microsoft Azure along with on-premises NAS.
 +
-https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and supported data sources, backup destinations, and working environments]. 
+https://docs.netapp.com/us-en/bluexp-ransomware-protctection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and supported data sources, backup destinations, and working environments]. 
 
+* *Role-based access control*: Now, you can limit access for each user to specific activities with role-based access control. This improves security. BlueXP ransomware protection now uses two roles specific to this service: Ransomware protection Admin and Ransomware protection Viewer. These roles are in addition to the BlueXP family roles. 
++
+For details about the actions that each role can perform, see link:rp-reference-roles.html[Role-based access control privileges].
++
+//For details about the actions that each role can perform, see https://docs.netapp.com/us-en/bluexp-ransomware-protctection/rp-reference-roles.html[Role-based access control privileges].
+
+//* *Enable data classification*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify your data. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
 
 == 5 August 2024
 

@@ -1,0 +1,64 @@
+---
+sidebar: sidebar
+permalink: rp-reference-roles.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights
+summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection service.
+---
+
+= BlueXP ransomware protection role-based access control privileges
+:hardbreaks:
+:icons: font
+:imagesdir: ./media
+
+[.lead]
+BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific actions. 
+
+
+The following roles are specific to the BlueXP ransomware protection (RPS) service and are in addition to the BlueXP Admin role, which can perform all actions. 
+
+* RPS Admin
+* RPS Viewer
+
+The following table indicates which features and actions that each role can access. 
+
+[cols=3*,options="header",cols="40,20a,20a",width="100%"]
+|===
+| Feature or action
+| RPS Admin
+| RPS Viewer
+
+
+| Start free trial | Y | N 
+| View dashboard | Y | Y
+| View Protection tab | Y | Y
+| View Alerts tab | Y | Y
+| View Recover tab | Y | Y
+| View Reports tab | Y| Y 
+| View Settings tab | Y | Y 
+| Initiate discovery of workloads | Y | N
+| Protect: Modify or delete policies | Y | N
+| Protect: Add policies | Y | N 
+| Protect: Protect workloads | Y | N
+| Protect: Identify sensitive data| Y | N 
+
+| Protect: Edit workload protection | Y | N
+
+| Protect: View workload details | Y | Y 
+| Protect: Download data| Y | N 
+| Alerts: View alert details | Y | Y 
+| Alerts: Edit incident status | Y | N
+| Alerts: View incident details | Y | Y
+| Alerts: Get full list of impacted files| Y | N 
+
+| Alerts: Download alerts data | Y | N 
+| Recover: Download impacted files| Y | N 
+| Recover: Restore workload | Y | N 
+| Recover: Download recovery data | Y | N
+| Recover: Download reports | Y | N
+| Settings: Add or modify backup targets| Y | N 
+
+| Settings: Add or modify SIEM targets | Y | N
+| Reports: Download reports | Y | N
+| Documentation: View documentation about the product| Y | Y 
+| Documentation: View documentation about what's new in the product| Y | Y 
+|===
