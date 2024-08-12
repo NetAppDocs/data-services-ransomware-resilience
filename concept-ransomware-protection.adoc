@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: concept-ransomware-protection.html
-keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac
 summary: Ransomware attacks can cost a business time, resources, and reputation. The BlueXP ransomware protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
 ---
 
@@ -50,6 +50,7 @@ BlueXP ransomware protection offers the following benefits:
 * Detects ransomware attacks on data in real time on primary storage using AI technology.
 * Initiates automated actions in response to detected potential attacks by creating Snapshot copies and initiating alerts about abnormal activity.
 * Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup) and SnapCenter. 
+* Uses role-based access control (RBAC) to govern access to features and operations in the service, which enhances security. 
 
 //* Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup), SnapCenter, SnapRestore, and AIQ.
 

@@ -14,16 +14,18 @@ summary: You can configure several options, including a backup destination, in t
 BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific actions. 
 
 
-The following roles are specific to the BlueXP ransomware protection (RPS) service and are in addition to the BlueXP Admin role, which can perform all actions. 
+The following roles are specific to BlueXP ransomware protection (RPS): 
 
 * RPS Admin
 * RPS Viewer
 
-The following table indicates which features and actions that each role can access. 
+These roles are in addition to the BlueXP Admin role, which has access to all BlueXP features and actions. 
+
+The following table indicates which actions that each role can perform. 
 
 [cols=3*,options="header",cols="40,20a,20a",width="100%"]
 |===
-| Feature or action
+| Feature and action
 | RPS Admin
 | RPS Viewer
 
