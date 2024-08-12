@@ -41,7 +41,7 @@ For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware prot
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protctection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and supported data sources, backup destinations, and working environments]. 
 
-* *Role-based access control*: Now, you can limit access for each user to specific activities with role-based access control. This improves security. BlueXP ransomware protection now uses two roles specific to this service: Ransomware protection Admin and Ransomware protection Viewer. These roles are in addition to the BlueXP family roles. 
+* *Role-based access control*: You can now limit access to specific activities with role-based access control (RBAC). BlueXP ransomware protection uses two roles: Ransomware protection Admin and Ransomware protection Viewer. These roles are in addition to the BlueXP family roles. 
 +
 For details about the actions that each role can perform, see link:rp-reference-roles.html[Role-based access control privileges].
 +
