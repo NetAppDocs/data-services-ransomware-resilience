@@ -53,7 +53,7 @@ The following table indicates which actions that each role can perform.
 | Alerts: Get full list of impacted files| Y | N 
 
 | Alerts: Download alerts data | Y | Y 
-| Recover: Download impacted files| Y | Y 
+| Recover: Download impacted files| Y | N 
 | Recover: Restore workload | Y | N 
 | Recover: Download recovery data | Y | Y
 | Recover: Download reports | Y | Y
