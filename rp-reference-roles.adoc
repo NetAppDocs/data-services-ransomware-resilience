@@ -46,21 +46,21 @@ The following table indicates which actions that each role can perform.
 | Protect: Edit workload protection | Y | N
 
 | Protect: View workload details | Y | Y 
-| Protect: Download data| Y | N 
+| Protect: Download data| Y | Y 
 | Alerts: View alert details | Y | Y 
 | Alerts: Edit incident status | Y | N
 | Alerts: View incident details | Y | Y
 | Alerts: Get full list of impacted files| Y | N 
 
-| Alerts: Download alerts data | Y | N 
-| Recover: Download impacted files| Y | N 
+| Alerts: Download alerts data | Y | Y 
+| Recover: Download impacted files| Y | Y 
 | Recover: Restore workload | Y | N 
-| Recover: Download recovery data | Y | N
-| Recover: Download reports | Y | N
+| Recover: Download recovery data | Y | Y
+| Recover: Download reports | Y | Y
 | Settings: Add or modify backup targets| Y | N 
 
 | Settings: Add or modify SIEM targets | Y | N
-| Reports: Download reports | Y | N
+| Reports: Download reports | Y | Y
 | Documentation: View documentation about the product| Y | Y 
 | Documentation: View documentation about what's new in the product| Y | Y 
 |===
