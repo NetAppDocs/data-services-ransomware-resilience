@@ -16,6 +16,7 @@ You can protect workloads against ransomware attacks by completing the following
 
 //** Change the priority or importance of the workload. 
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
+* link:/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 * Create or manage ransomware protection strategies that include policies that you create for snapshots, backups, and ransomware detection.
 * Import a strategy and adjust it. 
 //* Change the name of a workload.
@@ -233,70 +234,9 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 
 . Review details in the snapshot and backup policies column on the Protection page to see that the policies are managed elsewhere. 
 
-== Use BlueXP classification to scan for personally identifiable information
 
-Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
 
-=== Enable BlueXP classification 
 
-Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
-
-.Steps
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-
-. In the Protection page, locate a file share workload in the Workload column. 
-+
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
-
-. In the Privacy exposure column, select *Identify exposure*. 
-+
-image:screen-protection-sensitive-data.png[Identify sensitive data screen]
-
-. Review the information about BlueXP classification. 
-. Select *Identify*. 
-
-.Result
-BlueXP classification connects remotely to your workload data and scans it in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
-
-The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
-
-=== Review the privacy exposure
-
-After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
-
-PII data can have one of the following risk statuses: 
-
-* *High*: xnumber or more files with PII
-* *Low*: 
-
-.Steps
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-
-. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
-+
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
-
-. Select the workload link in the Workload column to see workload details. 
-+
-image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
-
-. In the Workload details page, review the information in the Privacy exposure pane. 
-
-. To investigate the exposure in BlueXP classification, select *Investigate*. 
-
-. WHAT HAPPENS? Do you go to Classification now? What is the Gear option used for?
-
-For details about BlueXP classification, refer to the following BlueXP classification topics: 
-
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
-
-=== View changes to workload priority based on sensitivity data 
-
-TBD
 
 == Add a ransomware protection strategy
 

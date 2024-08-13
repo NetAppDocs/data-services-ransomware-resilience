@@ -16,6 +16,16 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 23 September 2024 
+
+This release of BlueXP ransomware protection includes the following updates.
+
+* *Enable data classification and scan for personally identifiable information*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
++
+link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
+
+
+
 
 == 30 August 2024
 This release of BlueXP ransomware protection includes the following updates.
@@ -48,7 +58,6 @@ For details about the actions that each role can perform, see link:rp-reference-
 +
 //For details about the actions that each role can perform, see https://docs.netapp.com/us-en/bluexp-ransomware-protctection/rp-reference-roles.html[Role-based access control privileges].
 
-//* *Enable data classification*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify your data. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
 
 == 5 August 2024
 

@@ -40,7 +40,11 @@ sidebar:
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html
         - title: Protect workloads
-          url: /rp-use-protect.html
+          entries: 
+            - title: Assign protection strategies
+              url: /rp-use-protect.html
+            - title: Scan and classify sensitive data
+              url: rp-use-protect-classify.html
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
