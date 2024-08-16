@@ -108,7 +108,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
 
 === Add Amazon Web Services as a backup destination 
 
@@ -154,7 +154,7 @@ CAUTION: If you configure the backup lock setting now, you cannot change the set
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
 
 
 === Add Google Cloud Platform as a backup destination 
@@ -242,7 +242,7 @@ If you want to use Azure PrivateLink, refer to https://azure.microsoft.com/en-us
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list-azure.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
 
 
 //=== Edit a backup destination from the Settings option
