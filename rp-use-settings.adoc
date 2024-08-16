@@ -172,14 +172,14 @@ image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
-** Create a new bucket, select an existing bucket if one already exists in BlueXP, or bring your own bucket that will store the backups. 
+** Create a new bucket, select an existing bucket if one already exists in BlueXP, or bring your own bucket that will store the backups. Enter the access key and secret key. 
 ** Enter or select your Google Cloud Platform project and region.
 + 
 https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html[If you want to bring your own bucket, refer to Add Google Cloud Storage buckets^]. 
 
 * *Encryption*: If you are creating a new bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
-Data in the bucket is encrypted with GCP-managed keys by default. You can continue to use GCP-managed keys, or you can manage the encryption of your data using your own keys. 
+Data in the bucket is encrypted with Google-managed keys by default. You can continue to use Google-managed keys, or you can manage the encryption of your data using your own keys. 
 
 * *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
 ** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
