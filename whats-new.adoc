@@ -27,7 +27,9 @@ This release of BlueXP ransomware protection includes the following updates.
 
 
 
-* *Threat risk assessment with Digital Advisor*: 
+* *Security risk assessment from Digital Advisor*: BlueXP ransomware protection now gathers information about high and critical security risks related to the working environment from NetApp Digital Advisor. If these risks are found, BlueXP ransomware protection provides a recommendation in the Dashboard's *Recommended actions* pane: "Improve security posture for <working environment name>." From the recommendation on the Dashboard, clicking *Review and fix* displays suggestions on how to resolve the security risk. 
++
+Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 
 
 
