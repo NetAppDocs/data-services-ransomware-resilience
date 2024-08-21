@@ -19,6 +19,17 @@ BlueXP ransomware protection is a service to protect your data from ransomware. 
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
+== Ransomware protection at the data layer
+Your security posture typically encompasses multiple layers of defense to protect against a range of cyber threats. 
+
+* *Outermost layer*: This is your first line of defense using firewalls, intrusion detection systems, and virtual private networks to safeguard network boundaries. 
+* *Network security*: This layer builds upon the foundation with network segmentation, traffic monitoring, and encryption. 
+* *Identity security*: Uses authentication methods, access controls, and identity management to ensure only authorized users can access sensitive resources. 
+* *Application security*: Protects software applications using secure coding practices, security testing, and runtime application self-protection. 
+* *Data security*: Safeguards your data with data protection, backups, and recovery strategies. BlueXP ransomware protection operates on this layer. 
+
+image:concept-security-layer-diagram.png[Security layer diagram]
+
 == What you can do with BlueXP ransomware protection 
 
 The BlueXP ransomware protection service provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
