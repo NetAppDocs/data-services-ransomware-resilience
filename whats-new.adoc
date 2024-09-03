@@ -17,7 +17,7 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
-== 30 August 2024
+== 2 September 2024
 This release of BlueXP ransomware protection includes the following updates.
 
 //* *Edit protection strategy*. With this release, you can now edit the ransomware protection strategy. 
@@ -44,7 +44,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[
 https://docs.netapp.com/us-en/bluexp-ransomware-protctection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and supported data sources, backup destinations, and working environments]. 
 //link:concept-ransomware-protection.html[Learn about BlueXP ransomware protection and supported data sources, backup destinations, and working environments]. 
 
-* *Role-based access control*: You can now limit access to specific activities with role-based access control (RBAC). BlueXP ransomware protection uses two roles: BlueXP Account Admin and Non-Account Admin (Viewer).
+* *Role-based access control*: You can now limit access to specific activities with role-based access control (RBAC). BlueXP ransomware protection uses two roles from BlueXP: BlueXP Account Admin and Non-Account Admin (Viewer).
 //Ransomware protection Admin and Ransomware protection Viewer. These roles are in addition to the BlueXP family roles. 
 //+
 //For details about the actions that each role can perform, see link:rp-reference-roles.html[Role-based access control privileges].
