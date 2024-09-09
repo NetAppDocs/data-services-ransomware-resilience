@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
 permalink: rp-use-protect.html
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack
 summary: You can protect workloads against ransomware attacks by assigning policies to a workload in BlueXP ransomware protection.
 ---
 
-= Protect workloads against ransomware attacks
+= Protect workloads with ransomware strategies
 :hardbreaks:
 :icons: font
 :imagesdir: ./media
@@ -20,8 +20,8 @@ You can protect workloads against ransomware attacks by completing the following
 * Create or manage ransomware protection strategies that include policies that you create for snapshots, backups, and ransomware detection.
 * Import a strategy and adjust it. 
 //* Change the name of a workload.
-* Edit a protection strategy. 
-* Delete a protection strategy.
+* Edit a ransomware protection strategy. 
+* Delete a ransomware protection strategy.
 
 == Protection policies
 You might find it helpful to review information about the protection policies you can change and what types of policies are in a protection strategy. 
@@ -47,7 +47,33 @@ The following policies are required in ransomware protection strategy:
 
 A backup policy is not required in the BlueXP ransomware protection strategy. 
 
-== Protection details on the Protection page
+
+
+
+== View ransomware protection on a workload
+
+One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
+
+* Application workloads 
+* VM workloads
+* File share workloads
+
+
+.Steps 
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+. Do one of the following: 
++
+* From the Data Protection pane on the Dashboard, select *View all*. 
+* From the menu, select *Protection*.
++
+image:screen-protection-sc-columns3.png[Protection page]
+. From this page, you can view and change protection details for the workload.
+
+NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and/or FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+
+=== Protection details on the Protection page
 
 
 The Protection page shows the following information about workload protection: 
@@ -132,31 +158,6 @@ You can choose one of the following BlueXP ransomware protection predefined poli
 |===
 
 
-
-== View ransomware protection on a workload
-
-One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
-
-* Application workloads 
-* VM workloads
-* File share workloads
-
-
-.Steps 
-
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
-
-. Do one of the following: 
-+
-* From the Data Protection pane on the Dashboard, select *View all*. 
-* From the menu, select *Protection*.
-+
-image:screen-protection-sc-columns2.png[Protection page]
-. From this page, you can view and change protection details for the workload.
-
-NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and/or FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
-
-
 == Change workload details
 
 You can review workload details such as the workload name, protection policies, and storage information. 
@@ -189,6 +190,7 @@ image:screen-protection-details3.png[Workload details from the Protection page]
 +
 A list of configured backup destinations appears. 
 For details, see link:rp-use-settings.html[Configure protection settings].
+
 
 == Enable application- or VM-consistent protection with SnapCenter
 

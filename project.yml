@@ -41,7 +41,7 @@ sidebar:
           url: /rp-use-dashboard.html
         - title: Protect workloads
           entries: 
-            - title: Assign protection strategies
+            - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
             - title: Scan and classify sensitive data
               url: rp-use-protect-classify.html

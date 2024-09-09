@@ -11,7 +11,9 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 :imagesdir: ./media
 
 [.lead]
-Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload priority and helps you ensure that you have the appropriate protection. 
+Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
+
+TIP: This process impacts workload importance to help you ensure that you have the appropriate protection. 
 
 === Enable BlueXP classification 
 
@@ -23,9 +25,9 @@ Before you use BlueXP classification within the BlueXP ransomware protection ser
 
 . In the Protection page, locate a file share workload in the Workload column. 
 +
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
+image:screen-protection-sc-columns3.png[Protection page]
 
-. In the Privacy exposure column, select *Identify exposure*. 
+. To enable BlueXP classification to scan your data for sensitive data, in the Privacy exposure column, select *Identify exposure*. 
 +
 image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 
@@ -33,9 +35,15 @@ image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 . Select *Identify*. 
 
 .Result
-BlueXP classification installs a BlueXP Connector, connects remotely to your workload data, and scans it in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
+BlueXP classification installs a BlueXP Connector, connects remotely to your workload data, and scans the data in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
+
+NOTE: Scanning might take several minutes depending on the amount of data. 
 
 The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
+
+When scanning is complete, the Privacy exposure column displays the exposure level, for example, High. 
+
+
 
 === Review the privacy exposure
 
@@ -44,6 +52,7 @@ After BlueXP classification scans for personally identifiable information (PII),
 PII data can have one of the following risk statuses: 
 
 * *High*: xnumber or more files with PII
+* *Medium*: 
 * *Low*: 
 
 .Steps
@@ -59,6 +68,16 @@ image:screen-protection-exposure-link.png[Protection screen showing the Privacy 
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
 
 . In the Workload details page, review the information in the Privacy exposure pane. 
+
+=== Impact of privacy exposure on workload importance
+
+Privacy exposure changes can impact the workload importance: 
+
+* When the privacy exposure decreases from High, Medium, or Low, the workload importance does not change. 
+* When the privacy exposure increases, the following occurs: 
+** When privacy exposure increases from None to Low, the workload importance remains at Standard. 
+** When privacy exposure increases from Low to Medium, the workload importance increases from Standard to Important. 
+** When privacy exposure increases from Low or Medium to High, the workload importance increases from Standard or Important to Critical. 
 
 
 
@@ -87,7 +106,7 @@ For details about BlueXP classification, refer to the following BlueXP classific
 
 
 
-=== View changes to workload priority based on sensitivity data 
+=== Edit privacy exposure thresholds 
 
 TBD
 
