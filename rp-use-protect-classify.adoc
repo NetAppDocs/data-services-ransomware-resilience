@@ -19,6 +19,11 @@ TIP: This process impacts workload importance to help you ensure that you have t
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
 
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
+
 .Steps
 
 . From the BlueXP ransomware protection menu, select *Protection*.

@@ -19,6 +19,7 @@ You can protect workloads against ransomware attacks by completing the following
 * link:/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 * Create or manage ransomware protection strategies that include policies that you create for snapshots, backups, and ransomware detection.
 * Import a strategy and adjust it. 
+* Group file shares into workloads to make it easier for you to protect workloads rather than protect them individually. 
 //* Change the name of a workload.
 * Edit a ransomware protection strategy. 
 * Delete a ransomware protection strategy.
@@ -68,7 +69,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 * From the Data Protection pane on the Dashboard, select *View all*. 
 * From the menu, select *Protection*.
 +
-image:screen-protection-sc-columns3.png[Protection page]
+image:screen-protection3.png[Protection page]
 . From this page, you can view and change protection details for the workload.
 
 NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and/or FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
@@ -192,6 +193,118 @@ A list of configured backup destinations appears.
 For details, see link:rp-use-settings.html[Configure protection settings].
 
 
+== Group file shares into workloads 
+
+Grouping file shares into workloads makes it easier to protect your data estate. The service can protect all volumes grouped into a workload at the same time rather than protect each volume separately. This feature also speeds up your recovery after a ransomware attack because the service can recover all volumes grouped into a workload.
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups.png[Protection groups page]
+. Select *Add*. 
++
+image:screen-protection-groups-add.png[Add protection group page]
+
+. Enter a name for the protection group. 
+. If you already have protection policies in place, select whether you want to group workloads based on whether they are managed by one of these: 
+* BlueXP ransomware protection
+* SnapCenter or BlueXP backup and recovery
++
+. If you don't have protection policies already in place, the page displays the preconfigured ransomware protection strategies. 
+.. Choose one to protect your group and select *Next*. 
+.. If the workload you chose has volumes on multiple working environments, select the backup destination for the multiple working environments so that they can be backed up to the cloud. 
+
+. Select the workloads to add to the group. 
++
+TIP: To see more details on the workloads, scroll to the right. 
+
+. Select *Next*. 
++
+image:screen-protection-groups-policy.png[Add protection group - Policy page]
+
+. Select the policy that will govern the protection for this group. 
+. Select *Next*. 
+. Review the selections for the protection group. 
+. Select *Next*. 
+
+=== Add more workloads to a group
+You might later need to add more workloads to an existing group. 
+
+If the group includes workloads managed only by BlueXP ransomware protection (and not by SnapCenter or BlueXP backup and recovery), you should use separate groups for workloads managed by just BlueXP ransomware protection and another group for workloads managed by other services. 
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups-list.png[Protection groups page]
+. Select the group to which you want to add more workloads. 
++
+image:screen-protection-groups-more-workloads.png[Protection group details page]
+. From the selected protection group page, select *Add*. 
++
+BlueXP ransomware protection shows you only the workloads that are not already in the group that use the same snapshot and backup policies as the group. 
++
+TIP: The top of the page shows which service maintains the snapshot, backup, and detection policies. 
+. Select the additional workloads that should be added to the group.
+. Select *Save*. 
+
+
+=== Edit group protection 
+You can change the detection policy on an existing group. 
+If the detection policy isn't already added to this group, you can add it now. 
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups-edit.png[Protection groups page showing Edit option]
+
+. From the Protection pane, select *Edit protection*. 
+. Select or add a detection policy to this group. 
+
+
+=== Remove workloads from a group
+You might later need to remove workloads from an existing group. 
+
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups-actions.png[Protection groups page]
+
+. Select the group from which you want to remove one or more workloads. 
+. From the selected protection group page, select the workload you want to remove from the group and select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option.
+. From the Actions menu, select *Remove workload*. 
+
+. Confirm that you want to remove the workload and select *Remove*. 
+
+
+=== Delete the protection group
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups-actions.png[Protection groups page]
+
+. Select the group from which you want to remove one or more workloads. 
+. From the selected protection group page, at the top right, select *Delete protection group*.
+
+. Confirm that you want to delete the group and select *Delete*. 
+
+
+
+
 == Enable application- or VM-consistent protection with SnapCenter
 
 Enabling application- or VM-consistent protection helps you protect your application or VM workloads in a consistent manner, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. 
@@ -236,70 +349,7 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 
 . Review details in the snapshot and backup policies column on the Protection page to see that the policies are managed elsewhere. 
 
-== Use BlueXP classification to scan for personally identifiable information
 
-Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
-
-=== Enable BlueXP classification 
-
-Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
-
-.Steps
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-
-. In the Protection page, locate a file share workload in the Workload column. 
-+
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
-
-. In the Privacy exposure column, select *Identify exposure*. 
-+
-image:screen-protection-sensitive-data.png[Identify sensitive data screen]
-
-. Review the information about BlueXP classification. 
-. Select *Identify*. 
-
-.Result
-BlueXP classification connects remotely to your workload data and scans it in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
-
-The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
-
-=== Review the privacy exposure
-
-After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
-
-PII data can have one of the following risk statuses: 
-
-* *High*: xnumber or more files with PII
-* *Low*: 
-
-.Steps
-
-. From the BlueXP ransomware protection menu, select *Protection*.
-
-. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
-+
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
-
-. Select the workload link in the Workload column to see workload details. 
-+
-image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
-
-. In the Workload details page, review the information in the Privacy exposure pane. 
-
-. To investigate the exposure in BlueXP classification, select *Investigate*. 
-
-. WHAT HAPPENS? Do you go to Classification now? What is the Gear option used for?
-
-For details about BlueXP classification, refer to the following BlueXP classification topics: 
-
-* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
-* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
-* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
-
-=== View changes to workload priority based on sensitivity data 
-
-TBD
 
 == Add a ransomware protection strategy
 
@@ -447,29 +497,29 @@ You can view the workloads from the list of strategies or when you are editing a
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage ransomware protection strategies*. 
+. From the Protection page, select *Manage protection strategies*. 
 +
 The Ransomware protection strategies page displays a list of strategies.
 +
 image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing a list of strategies] 
-. On the Ransomware protection strategies page, in the Protected workloads column, click *View* next to the number of workloads protected. 
+. On the Ransomware protection strategies page, in the Protected workloads column, click the down arrow at the end of the row. 
 
-.Steps when editing a strategy
+//.Steps when editing a strategy
 
 
-. From the BlueXP ransomware protection menu, select *Protection*.
+//. From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage ransomware protection strategies*. 
-+
-image:screen-protection-strategy-list-edit.png[Ransomware protection strategies screen showing the Actions menu]
+//. From the Protection page, select *Manage protection strategies*. 
+//+
+//image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing the Actions menu]
 
-. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to change.
+//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to change.
 
-. From the Actions menu, select *Edit*. 
-+
-image:screen-protection-strategy-edit.png[Edit ransomware protection strategy page]
+//. From the Actions menu, select *Edit*. 
+//+
+//image:screen-protection-strategy-edit.png[Edit ransomware protection strategy page]
 
-. View the workloads protected by this strategy by selecting *View* next to the number of workloads at the top of the page. 
+//. View the workloads protected by this strategy by selecting *View* next to the number of workloads at the top of the page. 
 
 
 
@@ -482,15 +532,13 @@ You can edit a protection strategy by selecting a different preconfigured detect
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage ransomware protection strategies*. 
+. From the Protection page, select *Manage protection strategies*. 
 +
-image:screen-protection-strategy-list-edit.png[Ransomware protection strategies screen showing the Actions menu]
+image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing the Actions menu]
 
 . In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to change.
 
-. From the Actions menu, select *Edit*. 
-+
-image:screen-protection-strategy-edit.png[Edit ransomware protection strategy page]
+. From the Actions menu, select *Edit policy*. 
 
 . Do one of the following: 
 * Copy from an existing strategy. 
@@ -511,10 +559,10 @@ You can delete a protection strategy that is not currently associated with any w
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
-. From the Protection page, select *Manage ransomware protection strategies*. 
+. From the Protection page, select *Manage protection strategies*. 
 
 . In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
 
-. From the Actions menu, select *Delete strategy*. 
+. From the Actions menu, select *Delete policy*. 
 
 
