@@ -13,12 +13,13 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 [.lead]
 Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
 
-TIP: This process impacts workload importance to help you ensure that you have the appropriate protection. 
+//TIP: This process impacts workload importance to help you ensure that you have the appropriate protection. 
 
 === Enable BlueXP classification 
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
 
+For details about BlueXP classification before you begin to use the service, it might be helpful to review these resources. 
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
@@ -42,9 +43,7 @@ image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 .Result
 BlueXP classification installs a BlueXP Connector, connects remotely to your workload data, and scans the data in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
 
-NOTE: Scanning might take several minutes depending on the amount of data. 
-
-The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
+NOTE: Scanning might take several minutes depending on the amount of data. The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
 
 When scanning is complete, the Privacy exposure column displays the exposure level, for example, High. 
 
@@ -84,6 +83,24 @@ Privacy exposure changes can impact the workload importance:
 ** When privacy exposure increases from Low to Medium, the workload importance increases from Standard to Important. 
 ** When privacy exposure increases from Low or Medium to High, the workload importance increases from Standard or Important to Critical. 
 
+
+[cols=4*,options="header",cols="15,20a,20,20" width="100%"]
+|===
+| When privacy exposure: 
+| From this privacy exposure
+| To this privacy exposure
+| Then, workload importance does this: 
+
+
+
+.| *Decreases* | High, Medium, or Low | Medium, Low, or None | Remains the same
+
+.3+| *Increases*  | None | Low |  Remains at Standard  
+ |  Low | Medium | Changes from Standard to Important 
+ | Low or Medium | High | Changes from Standard or Important to Critical 
+ 
+
+|===
 
 
 == Investigate sensitive data directly in BlueXP classification

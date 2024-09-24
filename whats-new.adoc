@@ -24,7 +24,7 @@ This release of BlueXP ransomware protection includes the following updates.
 +
 link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 
-* *SIEM integration with Microsoft Azure Sentinel*: You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
+* *SIEM integration with Microsoft Sentinel*: You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
 +
 For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings]. 

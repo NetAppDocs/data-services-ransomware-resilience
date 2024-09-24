@@ -264,7 +264,7 @@ You can automatically send data to your security and event management system (SI
 
 //You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
-Before you enable SIEM in BlueXP ransomware protection, you will need to configure AWS Security Hub or Splunk Cloud. 
+Before you enable SIEM in BlueXP ransomware protection, you need to configure your SIEM system. 
 
 === Configure AWS Security Hub for threat detection
 Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need to do the following high level steps in AWS Security Hub: 
