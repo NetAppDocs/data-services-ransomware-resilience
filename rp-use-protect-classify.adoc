@@ -65,8 +65,8 @@ PII data can have one of the following privacy exposure risk statuses.
 
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
-image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
-//Show image showing to select the Workload in Workload column rather than yellow circle on Privacy exposure column.
+image:screen-protection3.png[Protection screen showing the Privacy exposure column]
+
 
 . Select the workload link in the Workload column to see workload details. 
 +
@@ -76,13 +76,7 @@ image:screen-protection-workload-details-privacy-exposure.png[Workload details s
 
 === Impact of privacy exposure on workload importance
 
-Privacy exposure changes can impact the workload importance: 
-
-* When the privacy exposure decreases from High, Medium, or Low, the workload importance does not change. 
-* When the privacy exposure increases, the following occurs: 
-** When privacy exposure increases from None to Low, the workload importance remains at Standard. 
-** When privacy exposure increases from Low to Medium, the workload importance increases from Standard to Important. 
-** When privacy exposure increases from Low or Medium to High, the workload importance increases from Standard or Important to Critical. 
+Privacy exposure changes can impact the workload importance.  
 
 
 [cols=4*,options="header",cols="15,20a,20,20" width="100%"]
@@ -110,6 +104,11 @@ Privacy exposure changes can impact the workload importance:
 
 .Steps
 
+. From the BlueXP ransomware protection menu, select *Protection*.
+
+. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
++
+image:screen-protection3.png[Protection screen showing the Privacy exposure column]
 . Select the workload in the Workload column to see its details. 
 +
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
@@ -120,7 +119,6 @@ image:screen-protection-workload-details-privacy-exposure.png[Workload details s
 +
 The BlueXP classification service opens to display the Investigate tab.
 
-. WHAT HAPPENS? Do you go to Classification now? What is the Gear option used for?
 
 For details about BlueXP classification, refer to the following BlueXP classification topics: 
 
@@ -130,7 +128,5 @@ For details about BlueXP classification, refer to the following BlueXP classific
 
 
 
-=== Edit privacy exposure thresholds 
 
-TBD
 

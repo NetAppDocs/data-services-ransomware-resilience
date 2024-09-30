@@ -43,8 +43,6 @@ sidebar:
           entries: 
             - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
-            - title: Scan and classify sensitive data
-              url: rp-use-protect-classify.html
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
