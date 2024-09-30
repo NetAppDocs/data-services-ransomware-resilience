@@ -31,7 +31,7 @@ For details about BlueXP classification before you begin to use the service, it 
 
 . In the Protection page, locate a file share workload in the Workload column. 
 +
-image:screen-protection-sc-columns3.png[Protection page]
+image:screen-protection3.png[Protection page]
 
 . To enable BlueXP classification to scan your data for sensitive data, in the Privacy exposure column, select *Identify exposure*. 
 +
@@ -53,11 +53,11 @@ When scanning is complete, the Privacy exposure column displays the exposure lev
 
 After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
 
-PII data can have one of the following risk statuses: 
+PII data can have one of the following privacy exposure risk statuses.  
 
-* *High*: xnumber or more files with PII
-* *Medium*: 
-* *Low*: 
+* *High*: Greater than 70% of files have PII
+* *Medium*: Greater than 30% and less than 70% of files have PII
+* *Low*: Greater than 0 and less than 30% of files have PII
 
 .Steps
 
@@ -66,6 +66,7 @@ PII data can have one of the following risk statuses:
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
 image:screen-protection-exposure-link.png[Protection screen showing the Privacy exposure column]
+//Show image showing to select the Workload in Workload column rather than yellow circle on Privacy exposure column.
 
 . Select the workload link in the Workload column to see workload details. 
 +
@@ -101,6 +102,7 @@ Privacy exposure changes can impact the workload importance:
  
 
 |===
+
 
 
 == Investigate sensitive data directly in BlueXP classification

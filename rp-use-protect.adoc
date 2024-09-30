@@ -17,12 +17,20 @@ You can protect workloads against ransomware attacks by completing the following
 //** Change the priority or importance of the workload. 
 * Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
 * link:/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
-* Create or manage ransomware protection strategies that include policies that you create for snapshots, backups, and ransomware detection.
+* Create or manage ransomware protection strategies, which include policies that you create for snapshots, backups, and ransomware protection (known as _detection policies_).
 * Import a strategy and adjust it. 
 * Group file shares to make it easier for you to protect workloads rather than protect them individually. 
 //* Change the name of a workload.
 //* Edit a ransomware protection strategy. 
 * Delete a ransomware protection strategy.
+
+*Which services are used in protection?*
+The following services can be used to manage protection policies. Protection information from these services appears in BlueXP ransomware protection: 
+
+* BlueXP backup and recovery for file shares, VM file shares
+* SnapCenter for VMware for VM datastores
+* SnapCenter for Oracle and MySQL
+
 
 == Protection policies
 You might find it helpful to review information about the protection policies you can change and what types of policies are in a protection strategy. 
