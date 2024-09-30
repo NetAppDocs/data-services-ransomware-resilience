@@ -383,7 +383,9 @@ You can assign a different protection policy replacing the current one.
 
 == Group file shares for easier protection 
 
-Grouping file shares makes it easier to protect your data estate. The service can protect all volumes in a group at the same time rather than protect each volume separately. This feature also speeds up your recovery after a ransomware attack because the service can recover all volumes in a group rather than separately.
+Grouping file shares makes it easier to protect your data estate. The service can protect all volumes in a group at the same time rather than protect each volume separately. 
+
+//This feature also speeds up your recovery after a ransomware attack because the service can recover all volumes in a group rather than separately.
 
 .Steps
 . From the BlueXP ransomware protection menu, select *Protection*.
@@ -399,13 +401,15 @@ image:screen-protection-groups.png[Protection groups page]
 image:screen-protection-groups-add.png[Add protection group page]
 
 . Enter a name for the protection group. 
-. If you already have protection policies in place, select whether you want to group workloads based on whether they are managed by one of these: 
+
+. Complete one of the following steps: 
+.. If you already have protection policies in place, select whether you want to group workloads based on whether they are managed by one of these: 
 * BlueXP ransomware protection
 * SnapCenter or BlueXP backup and recovery
 +
-. If you don't have protection policies already in place, the page displays the preconfigured ransomware protection strategies. 
-.. Choose one to protect your group and select *Next*. 
-.. If the workload you chose has volumes on multiple working environments, select the backup destination for the multiple working environments so that they can be backed up to the cloud. 
+.. If you don't have protection policies already in place, the page displays the preconfigured ransomware protection strategies. 
+... Choose one to protect your group and select *Next*. 
+... If the workload you chose has volumes on multiple working environments, select the backup destination for the multiple working environments so that they can be backed up to the cloud. 
 
 . Select the workloads to add to the group. 
 +
@@ -418,7 +422,7 @@ image:screen-protection-groups-policy.png[Add protection group - Policy page]
 . Select the policy that will govern the protection for this group. 
 . Select *Next*. 
 . Review the selections for the protection group. 
-. Select *Next*. 
+. Select *Add*. 
 
 === Add more workloads to a group
 You might later need to add more workloads to an existing group. 
