@@ -260,11 +260,13 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 == Enable threat detection
 
-You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub or Splunk Cloud as your SIEM. 
+You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub or Splunk Cloud as your SIEM.
+
+//You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub, Microsoft Sentinel, or Splunk Cloud as your SIEM. 
 
 //You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
-Before you enable SIEM in BlueXP ransomware protection, you will need to configure AWS Security Hub or Splunk Cloud. 
+Before you enable SIEM in BlueXP ransomware protection, you need to configure your SIEM system. 
 
 === Configure AWS Security Hub for threat detection
 Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need to do the following high level steps in AWS Security Hub: 
@@ -341,10 +343,11 @@ The Settings page appears.
 image:screen-settings-threat-detection3.png[Settings page]
 . In the Settings page, select *Connect* in the SIEM connection pane. 
 //+
-//image:screen-settings-threat-detection-details.png[Enable threat detection details page]
+//image:screen-settings-threat-detection-choices.png[Enable threat detection details page]
 
+. Choose one of the SIEM systems. 
 
-. Enter the token and authentication details you configured in either AWS Security Hub or Splunk Cloud. 
+. Enter the token and authentication details you configured in AWS Security Hub or Splunk Cloud. 
 +
 NOTE: The information that you enter depends on the SIEM you selected. 
 
