@@ -29,7 +29,7 @@ This release of BlueXP ransomware protection includes the following update.
 //For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings]. 
 
-* *Custom grouping of file share workloads*: With this release, you can now group file shares into groups to make it easier for you to protect your data estate. The service can protect all volumes in a group at the same time. Previously, you needed to protect each volume separately. This feature also speeds up your recovery after a ransomware attack because the service can recover all volumes in a group rather than separately. 
+* *Custom grouping of file share workloads*: With this release, you can now group file shares into groups to make it easier for you to protect your data estate. The service can protect all volumes in a group at the same time. Previously, you needed to protect each volume separately.  
 //+
 //link:rp-use-protect.html[Learn more about protecting workloads and grouping file share workloads in ransomware protection strategies].
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about grouping file share workloads in ransomware protection strategies].
