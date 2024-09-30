@@ -177,5 +177,5 @@ In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads
 
 You might benefit by understanding some terminology related to ransomware protection. 
 
-* *Protection*: Protection in BlueXP ransomware protection means ensuring that Snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
+* *Protection*: Protection in BlueXP ransomware protection means ensuring that snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
 * *Workload*: A workload in BlueXP ransomware protection can include MySQL or Oracle databases, VMware datastores, or file shares. 
