@@ -8,7 +8,7 @@ summary: Get started with BlueXP ransomware protection by setting up licensing.
 = Set up licensing for BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 With BlueXP ransomware protection, you can use different licensing plans.

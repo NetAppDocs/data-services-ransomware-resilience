@@ -8,7 +8,7 @@ summary: Get started with BlueXP ransomware protection by accessing the service 
 = Access BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 You use NetApp BlueXP to log in to the BlueXP ransomware protection service. 
