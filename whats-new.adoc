@@ -16,24 +16,37 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 31 October 2024 
+
+This release of BlueXP ransomware protection includes the following updates.
+
+* *Enable data classification and scan for personally identifiable information*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
++
+link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
+
+* *SIEM integration with Microsoft Sentinel*: You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
++
+For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings]. 
+
+* *Configure cyber vault*: With this release, you can lock immutable and indelible snapshots on a NetApp cyber vault, an air-gapped environment that is logically separated from primary networks and systems. The snapshots cannot be deleted until the retention policy on those snapshots expires. By moving data to a cyber vault, bad actors have no access to the data. 
++
+Learn more about the https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/ontap-cyber-vault-overview.html[ONTAP cyber vault].
+
+* *GCP Marketplace*: BlueXP ransomware protection is now available on GCP Marketplace. You can activate the service through the BlueXP *View payment methods* option. 
++
+For details, refer to link:rp-start-licenses.html[Set up licensing]. 
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up BlueXP ransomware protection licenses]. 
+
+
 == 30 September 2024 
 
 This release of BlueXP ransomware protection includes the following update.
-
-//* *Enable data classification and scan for personally identifiable information*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
-//+
-//link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
-
-//* *SIEM integration with Microsoft Sentinel*: You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
-//+
-//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings]. 
 
 * *Custom grouping of file share workloads*: With this release, you can now group file shares into groups to make it easier for you to protect your data estate. The service can protect all volumes in a group at the same time. Previously, you needed to protect each volume separately.  
 //+
 //link:rp-use-protect.html[Learn more about protecting workloads and grouping file share workloads in ransomware protection strategies].
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about grouping file share workloads in ransomware protection strategies].
-
 
 
 
@@ -79,6 +92,7 @@ This release of BlueXP ransomware protection includes the following update.
 +
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
 
+// end::whats-new[] 
 
 == 1 July 2024
 
@@ -108,7 +122,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[L
 //link:rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and managing ransomware protection strategies].
 
-// end::whats-new[] 
+
 
 == 10 June 2024
 This release of BlueXP ransomware protection includes the following updates:
