@@ -8,7 +8,7 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 = Scan for personally identifiable sensitive data with BlueXP classification
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
