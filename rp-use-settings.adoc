@@ -8,7 +8,7 @@ summary: You can configure several options, including a backup destination, in t
 = Configure BlueXP ransomware protection settings
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. 

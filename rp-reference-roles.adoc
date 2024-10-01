@@ -8,7 +8,7 @@ summary: You can configure several options, including a backup destination, in t
 = BlueXP ransomware protection role-based access control privileges
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses the core BlueXP roles of Account Admin and Viewer (non-Account Admin0.
