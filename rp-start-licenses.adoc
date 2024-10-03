@@ -168,8 +168,9 @@ This procedure provides a high level overview of how to subscribe directly in th
 +
 image:screen-license-payment-methods3-gcp.png[The BlueXP ransomware protection Payment methods page]
 . In the Payment methods page, select *Subscribe in Google Cloud Marketplace*. 
-. In Google Cloud Marketplace, select *View purchase options*. 
+. In Google Cloud Marketplace, select *Subscribe*. 
 . Use Google Cloud Marketplace to subscribe to BlueXP ransomware protection.  
+image:screen-license-payments-gcp.png[Google Cloud Marketplace subscription page]
  
 . When you return to BlueXP ransomware protection, a message states that you are subscribed.
 +
