@@ -38,6 +38,17 @@ Learn more about the https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/
 For details, refer to link:rp-start-licenses.html[Set up licensing]. 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up BlueXP ransomware protection licenses]. 
 
+* *Restore application workload at the file level for Podman*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. Previously, if the BlueXP Connectors in an account were using Podman, this feature was disabled. It is now enabled for Podman. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
++
+link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
+
+* *Isolate impacted data in a quarantine environment*: 
+Before starting data recovery for workloads, you can choose if you would like to quarantine infected data for further analysis post recovery.
++
+link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
+
 
 == 30 September 2024 
 
