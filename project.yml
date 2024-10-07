@@ -40,7 +40,9 @@ sidebar:
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html
         - title: Protect workloads
-          url: /rp-use-protect.html
+          entries: 
+            - title: Protect workloads with ransomware protection strategies
+              url: /rp-use-protect.html
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
@@ -52,6 +54,10 @@ sidebar:
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
+    - title: Reference
+      entries:
+        - title: Role-based access control privileges
+          url: /rp-reference-roles.html
     - title: Legal notices
       url: /legal-notices.html
 product-family:
