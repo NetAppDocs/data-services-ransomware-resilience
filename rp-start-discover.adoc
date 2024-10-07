@@ -11,7 +11,7 @@ summary: During discovery, BlueXP ransomware protection analyzes all volumes and
 :imagesdir: ./media/
 
 [.lead]
-To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and workspaces within an account. 
+To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and projects within an organization. 
 
 BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
@@ -37,10 +37,10 @@ link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
 //== Set up email notifications 
 
-//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP account, or to any other recipients who need to be aware of certain types of system activity.
+//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP organization, or to any other recipients who need to be aware of certain types of system activity.
 
 //NOTE: Sending email notifications is not supported when the Connector is installed in a site without internet access.
 
-//By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" notifications. 
+//By default, BlueXP Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
 //For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in BlueXP^]
