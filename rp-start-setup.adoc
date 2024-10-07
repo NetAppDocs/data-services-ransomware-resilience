@@ -8,7 +8,7 @@ summary: To use BlueXP ransomware protection, perform a few steps to set it up.
 = Set up BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 [.lead]
 To use BlueXP ransomware protection, perform a few steps to set it up.  
