@@ -69,6 +69,8 @@ BlueXP ransomware protection offers the following benefits:
 == Cost 
 NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. 
 
+NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
+
 //NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
 
 
@@ -85,7 +87,7 @@ With BlueXP ransomware protection, you can use different licensing plans includi
 
 //With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-The BlueXP ransomware protection service requires a NetApp ONTAP license. 
+The BlueXP ransomware protection service requires a NetApp ONTAP One license. 
 
 //NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
@@ -158,7 +160,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
 * Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.11.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
+* Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
 
 NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 

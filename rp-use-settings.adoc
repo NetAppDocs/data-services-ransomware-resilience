@@ -261,7 +261,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub, Microsoft Sentinel, or Splunk Cloud as your SIEM. 
 
-You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
+//You can automatically send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection.
 
 Before you enable SIEM in BlueXP ransomware protection, you need to configure your SIEM system. 
 
@@ -353,17 +353,17 @@ NOTE: The information that you enter depends on the SIEM you selected.
 The Settings page shows "Connected."
 
 
-=== Disconnect SIEM
-Disconnecting SIEM stops the service from sending data to the SIEM server. 
+//=== Disconnect SIEM
+//Disconnecting SIEM stops the service from sending data to the SIEM server. 
 
-.Steps
-. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
+//.Steps
+//. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
 
-. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+//. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 
-. Select *Settings*. 
-. In the SIEM connection pane, select *Disconnect*. 
-. In the confirmation page, select *Disconnect*. 
+//. Select *Settings*. 
+//. In the SIEM connection pane, select *Disconnect*. 
+//. In the confirmation page, select *Disconnect*. 
 
 
 
