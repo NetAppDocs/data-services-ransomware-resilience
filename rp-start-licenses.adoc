@@ -219,9 +219,9 @@ You'll need to have the following information before you start:
 * BlueXP ransomware protection serial number
 +
 Locate this number from your Sales Order, or contact the account team for this information.
-* BlueXP Account ID
+* BlueXP Organization ID
 +
-You can find your BlueXP Account ID by selecting the *Account* drop-down from the top of BlueXP, and then selecting *Manage Account* next to your account. Your Account ID is in the Overview tab. 
+You can find your BlueXP Organization ID by selecting the *Organization* drop-down from the top of BlueXP, and then selecting *Manage Organization* next to your account. Your Organization ID is in the Overview tab. 
 
 //For private mode site without internet access, use *account-DARKSITE1*.
 
