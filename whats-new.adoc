@@ -30,9 +30,9 @@ link:rp-use-protect-classify.html[Scan for personally identifiable sensitive dat
 For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings]. 
 
-* *Configure cyber vault*: With this release, you can lock immutable and indelible snapshots on a NetApp cyber vault, an air-gapped environment that is logically separated from primary networks and systems. The snapshots cannot be deleted until the retention policy on those snapshots expires. By moving data to a cyber vault, bad actors have no access to the data. 
-+
-Learn more about the https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/ontap-cyber-vault-overview.html[ONTAP cyber vault].
+//* *Configure cyber vault*: With this release, you can lock immutable and indelible snapshots on a NetApp cyber vault, an air-gapped environment that is logically separated from primary networks and systems. The snapshots cannot be deleted until the retention policy on those snapshots expires. By moving data to a cyber vault, bad actors have no access to the data. 
+//+
+//Learn more about the https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/ontap-cyber-vault-overview.html[ONTAP cyber vault].
 
 * *GCP Marketplace*: BlueXP ransomware protection is now available on GCP Marketplace. You can activate the service through the BlueXP *View payment methods* option. 
 +
@@ -41,7 +41,7 @@ For details, refer to link:rp-start-licenses.html[Set up licensing].
 
 * *Free trial now 30 days*: With this release, new deployments of BlueXP ransomware protection now can have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days. 
 
-* *Restore application workload at the file level for Podman*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. Previously, if the BlueXP Connectors in an account were using Podman, this feature was disabled. It is now enabled for Podman. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
+* *Restore application workload at the file level for Podman*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. Previously, if the BlueXP Connectors in an organization (previously an account) were using Podman, this feature was disabled. It is now enabled for Podman. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
 +
 link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
