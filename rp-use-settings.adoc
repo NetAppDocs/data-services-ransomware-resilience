@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. 
+You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. You can also show future Preview features. 
 
 Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
@@ -29,8 +29,10 @@ You can easily access the Settings page from the Actions option near the top men
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 . From the Settings page, you can do the following: 
+
 ** Add a backup destination.
 ** Connect your security and event management system (SIEM) for threat analysis and detection.   
+** Show upcoming Preview features.
 
 
 
@@ -73,6 +75,7 @@ image:screen-dashboard.png[Dashboard page]
 
 You can easily access the Settings page from the Actions option near the top menu. 
 
+.Steps
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 . To add a backup destination, select *Add*.  
@@ -82,6 +85,7 @@ You can easily access the Settings page from the Actions option near the top men
 
 To set up NetApp StorageGRID as a backup destination, enter the following information. 
 
+.Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
@@ -116,7 +120,7 @@ To set up AWS as a backup destination, enter the following information.
 
 For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
-
+.Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
@@ -162,7 +166,7 @@ To set up Google Cloud Platform (GCP) as a backup destination, enter the followi
 
 For details about managing your GCP storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html[Connector installation options in Google Cloud^].
 
-
+.Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
@@ -207,7 +211,7 @@ To set up Azure as a backup destination, enter the following information.
 
 For details about managing your Azure credentials and marketplace subscriptions in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
 
-
+.Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
 +
@@ -298,6 +302,90 @@ Before you enable AWS Security Hub in BlueXP ransomware protection, you'll need 
 }
 ----
 
+=== Configure Microsoft Sentinel for threat detection
+
+Before you enable Microsoft Sentinel in BlueXP ransomware protection, you'll need to do the following high level steps in Microsoft Sentinel: 
+
+* *Prerequisites*
+** Enable Microsoft Sentinel.
+** Create a custom role in Microsoft Sentinel.
+* *Registration*
+** Register BlueXP ransomware protection to receive events from Microsoft Sentinel.
+** Create a secret for the registration. 
+* *Permissions*: Assign permissions to the application. 
+* *Authentication*: Enter authentication credentials for the application. 
+
+.Steps to enable Microsoft Sentinel
+. Go to Microsoft Sentinel. 
+. Create a *Log Analytics workspace*. 
+. Enable Microsoft Sentinel to use the Log Analytics workspace you just created. 
+
+.Steps to create a custom role in Microsoft Sentinel
+. Go to Microsoft Sentinel. 
+. Select *Subscription* > *Access control (IAM)*.
+. Enter a Custom role name. Use the name *BlueXP Ransomware Protection Sentinel Configurator*.
+. Copy the following JSON and paste it into the *JSON* tab. 
++
+----
+{ 
+  "roleName": "BlueXP Ransomware Protection Sentinel Configurator",
+  "description": "", 
+  "assignableScopes":["/subscriptions/{subscription_id}"],
+  "permissions": [
+
+  ]
+}
+----
+
+. Review and save your settings. 
+
+.Steps to register BlueXP ransomware protection to receive events from Microsoft Sentinel
+
+. Go to Microsoft Sentinel. 
+. Select *Entra ID* > *Applications* > *App registrations*. 
+. For the *Display name* for the application, enter "*BlueXP ransomware protection*".
+. In the *Supported account type* field, select *Accounts in this organizational directory only*.
+. Select a *Default Index* where events will be pushed.
+. Select *Review*. 
+. Select *Register* to save your settings. 
++
+After registration, the Microsoft Entra admin center displays the application Overview pane. 
+
+.Steps to create a secret for the registration
+. Go to Microsoft Sentinel. 
+. Select *Certificates & secrets* > *Client secrets* > *New client secret*. 
+. Add a description for your application secret. 
+. Select an *Expiration* for the secret or specify a custom lifetime. 
++
+TIP: A client secret lifetime is limited to two years (24 months) or less. Microsoft recommends that you set an expiration value of less than 12 months. 
+
+. Select *Add* to create your secret. 
+. Record the secret to use in the Authentication step. The secret is never displayed again after you leave this page. 
+
+.Steps to assign permissions to the application
+. Go to Microsoft Sentinel. 
+. Select *Subscription* > *Access control (IAM)*.
+. Select *Add* > *Add role assignment*. 
+. For the *Privileged administrator roles* field, select *BlueXP Ransomware Protection Sentinel Configurator*. 
++
+TIP: This is the custom role that you created earlier. 
+. Select *Next*. 
+. In the *Assign access to* field, select *User, group, or service principal*. 
+. Select *Select Members*. Then, select *BlueXP Ransomware Protection Sentinel Configurator*. 
+. Select *Next*. 
+. In the *What user can do* feld, select *Allow user to assign all roles except privileged administrator roles Owner, UAA, RBAC (Recommended)*. 
+. Select *Next*.
+. Select *Review and assign* to assign the permissions. 
+
+.Steps to enter authentication credentials for the application
+. Go to Microsoft Sentinel. 
+. Enter the credentials: 
+.. Enter the tenant ID, the client application ID, and the client application secret. 
+.. Click *Authenticate*. 
++
+NOTE: After the authentication is successful, an "Authenticated" message appears. 
+. Enter the Log Analytics workspace details for the application. 
+.. Select the subscription ID, the resource group, and the Log Analytics workspace. 
 
 
 === Configure Splunk Cloud for threat detection
@@ -329,6 +417,7 @@ Before you enable Splunk Cloud in BlueXP ransomware protection, you'll need to d
 === Connect SIEM in BlueXP ransomware protection
 Enabling SIEM sends data from BlueXP ransomware protection to your SIEM server for threat analysis and reporting. 
 
+.Steps
 . From the BlueXP menu, select *Protection* > *Ransomware protection*. 
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
@@ -337,10 +426,10 @@ Enabling SIEM sends data from BlueXP ransomware protection to your SIEM server f
 +
 The Settings page appears. 
 +
-image:screen-settings-threat-detection3.png[Settings page]
-. In the Settings page, select *Connect* in the SIEM connection pane. 
-//+
-//image:screen-settings-threat-detection-choices.png[Enable threat detection details page]
+image:screen-settings2.png[Settings page]
+. In the Settings page, select *Connect* in the SIEM connection tile. 
++
+image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
 
 . Choose one of the SIEM systems. 
 
@@ -366,4 +455,20 @@ The Settings page shows "Connected."
 //. In the confirmation page, select *Disconnect*. 
 
 
+== Show preview features
 
+You can try out upcoming features labeled "Preview" before they are released. These features appear in the UI with a "Preview" label.
+
+.Before you begin
+You will need a key from the BlueXP ransomware protection product team to show Preview features. To get the key, send an email to mailto:ng-rps-key@netapp.com. 
+
+.Steps 
+
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+
+. Select *Settings*. 
++
+image:screen-settings2.png[Settings page]
+. In the *Preview features* tile, select *Show*.
+. Enter the key. 
+. Select *Show*. 

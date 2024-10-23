@@ -12,7 +12,9 @@ sidebar:
     - title: BlueXP ransomware protection docs
       url: /index.html
     - title: Release notes
-      url: /whats-new.html
+      entries:
+        - What's new in BlueXP ransomware protection
+          url: /whats-new.html
     - title: Get started
       entries:
         - title: Learn about BlueXP ransomware protection
