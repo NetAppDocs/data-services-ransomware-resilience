@@ -13,7 +13,7 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 [.lead]
 Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personally identifiable information (PII), which can increase security risks. 
 
-IMPORTANT: This feature is a technology Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
+IMPORTANT: BlueXP classification uses different deployment methods including deployment on-premises and in the cloud (both of which are non-SaaS deployments). BlueXP classification can also be deployed as a SaaS model in a technology Preview. When BlueXP classification is deployed using one of the non-SaaS methods or if it is already deployed, the ability to scan for Pii data in BlueXP ransomware protection is a general availability feature and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
 
 
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
@@ -110,8 +110,8 @@ Privacy exposure changes can impact the workload importance.
 
 
 
-== Investigate sensitive data directly in BlueXP classification
-
+== Investigate privacy exposure directly in BlueXP classification
+From within BlueXP ransomware protection, you can select a workload, view its details, and then investigate the exposure in BlueXP classification.
 
 .Steps
 
@@ -128,8 +128,15 @@ image:screen-protection-workload-details-privacy-exposure.png[Workload details s
 
 . To investigate the exposure in BlueXP classification, select *Investigate*. 
 +
-The BlueXP classification service opens to display the Investigate tab.
+The BlueXP classification service opens to display the Investigation tab.
++
+image:screen-protection-classification-investigation.png[BlueXP classification ]
 
+. Review the information in the Investigation tab.
+
+. To return to the BlueXP ransomware protection service, select *Back to BlueXP ransomware protection*.
+
+== For more information 
 
 For details about BlueXP classification, refer to the following BlueXP classification topics: 
 
