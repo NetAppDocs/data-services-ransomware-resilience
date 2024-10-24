@@ -20,10 +20,18 @@ Learn what's new in BlueXP ransomware protection.
 
 This release of BlueXP ransomware protection includes the following updates.
 
-* *Enable data classification and scan for personally identifiable information (Pii)*: With this release, you can now enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
+* *Enable data classification and scan for personally identifiable information (Pii)*: With this release, you can enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
++
+This feature is in a technology Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. 
 +
 link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
+
+* *Try upcoming Preview features before they are released*: You can now try out some features labeled "Preview" before they are released. To do so, use the *Settings* option to show these features, which are tagged with a "Preview" label.
++
+For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
+//+
+//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
 
 * *SIEM integration with Microsoft Sentinel*: You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
 +
@@ -41,11 +49,7 @@ For details, refer to link:rp-start-licenses.html[Set up licensing].
 
 * *Free trial now 30 days*: With this release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days. 
 
-* *Try upcoming Preview features before they are released*: You can now try out some features labeled "Preview" before they are released. To do so, use the *Settings* option to show these features, which are tagged with a "Preview" label.
-+
-For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
-//+
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
+
 
 * *Restore application workload at the file level for Podman*: Before you restore an application workload at the file level, you can now view a list of files that might have been impacted by an attack and identify those you want to restore. Previously, if the BlueXP Connectors in an organization (previously an account) were using Podman, this feature was disabled. It is now enabled for Podman. You can let BlueXP ransomware protection choose the files to restore, you can upload a CSV file that lists all the files impacted by an alert, or you can manually identify which files you want to restore. 
 +
