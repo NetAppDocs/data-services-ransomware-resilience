@@ -42,9 +42,9 @@ For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware prot
 //+
 //Learn more about the https://docs.netapp.com/us-en/netapp-solutions/cyber-vault/ontap-cyber-vault-overview.html[ONTAP cyber vault].
 
-* *Google Cloud Platform Marketplace*: BlueXP ransomware protection is now available on GCP Marketplace. You can activate the service through the BlueXP *View payment methods* option. 
-+
-For details, refer to link:rp-start-licenses.html[Set up licensing]. 
+//* *Google Cloud Platform Marketplace*: BlueXP ransomware protection is now available on GCP Marketplace. You can activate the service through the BlueXP *View payment methods* option. 
+//+
+//For details, refer to link:rp-start-licenses.html[Set up licensing]. 
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up BlueXP ransomware protection licenses]. 
 
 * *Free trial now 30 days*: With this release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days. 
