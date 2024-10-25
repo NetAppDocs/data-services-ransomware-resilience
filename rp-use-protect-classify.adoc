@@ -13,7 +13,7 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 [.lead]
 Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personally identifiable information (PII), which can increase security risks. 
 
-IMPORTANT: BlueXP classification uses different deployment methods including deployment on-premises and in the cloud (both of which are non-SaaS deployments). BlueXP classification can also be deployed as a SaaS model in a technology Preview. When BlueXP classification is deployed using one of the non-SaaS methods or if it is already deployed, the ability to scan for Pii data in BlueXP ransomware protection is a general availability feature and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
+IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for Pii data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
 
 
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
