@@ -5,7 +5,7 @@ keywords: what's new, features, new, release notes, bugs, limitations, known iss
 summary: Learn what's new in BlueXP ransomware protection.
 ---
 
-= What's new with BlueXP ransomware protection
+= What's new in BlueXP ransomware protection
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -16,13 +16,17 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
-== 31 October 2024 
+== 4 November 2024 
 
 This release of BlueXP ransomware protection includes the following updates.
 
-* *Enable data classification and scan for personally identifiable information (Pii)*: With this release, you can enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
+* *Enable data classification and scan for personally identifiable information (PII)*: With this release, you can enable BlueXP classification, a core component of the BlueXP family, to scan and classify data in your file share workloads. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. This process also impacts workload importance and helps you ensure that you are protecting workloads with the right level of protection. 
++ 
+Scanning for PII data in BlueXP ransomware protection is generally available to customers who deployed BlueX classification. BlueXP classification is available as part of the BlueXP platform at no extra charge and can be deployed on-premises or in the customer cloud. 
 +
-BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for Pii data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings]. 
+BlueXP classification can be also deployed as a SaaS model as part of a Technology Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. If you enable Preview, a "Preview" label appears next to the *Privacy exposure* column on the Protection page along with other locations. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings]. 
++
+To initiate scanning, on the Protection page, you must click *Identify exposure* in the Privacy exposure column. 
 +
 link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 //https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
