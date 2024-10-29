@@ -13,7 +13,7 @@ sidebar:
       url: /index.html
     - title: Release notes
       entries:
-        - What's new
+        - title: What's new in BlueXP ransomware protection
           url: /whats-new.html
     - title: Get started
       entries:
