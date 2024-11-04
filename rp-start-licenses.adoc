@@ -33,7 +33,7 @@ After the free trial ends or the license or subscription expires, you can still 
 * Run all scheduled operations that were created during the trial period or under the license. 
 
 == Try it out using a 30-day free trial
-You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an account administrator to start the free trial. 
+You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an BlueXP Organization administrator to start the free trial. 
 
 NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
 
