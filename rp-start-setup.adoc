@@ -62,16 +62,16 @@ You should reach out to your NetApp Sales Rep to try out or use this service. Th
 
 To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
 
-NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. This service discovers all workspaces and all Connectors associated with this account. 
+NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. This service discovers all projects and all Connectors associated with this organization. 
 
 
 
 //== Set up email notifications 
 
-//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP account, or to any other recipients who need to be aware of certain types of system activity.
+//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP organization, or to any other recipients who need to be aware of certain types of system activity.
 
 //NOTE: Sending email notifications is not supported when the Connector is installed in a site without internet access.
 
-//By default, BlueXP Account Admins will receive emails for all "Critical" and "Recommendation" notifications. 
+//By default, BlueXP Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
 //For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in BlueXP^]

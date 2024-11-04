@@ -211,17 +211,9 @@ If you want to bring your own license (BYOL), you'll need to purchase the licens
 
 After you've purchased your BlueXP ransomware protection license from your NetApp Sales Rep, you activate the license by entering the BlueXP ransomware protection serial number and NetApp Support Site (NSS) account information. 
 
-
 .Before you begin
 
-You'll need to have the following information before you start:
-
-* BlueXP ransomware protection serial number
-+
-Locate this number from your Sales Order, or contact the account team for this information.
-* BlueXP Organization ID
-+
-You can find your BlueXP Organization ID by selecting the *Organization* drop-down from the top of BlueXP, and then selecting *Manage Organization* next to your account. Your Organization ID is in the Overview tab. 
+You'll need the BlueXP ransomware protection serial number. Locate this number from your Sales Order, or contact the account team for this information.
 
 //For private mode site without internet access, use *account-DARKSITE1*.
 

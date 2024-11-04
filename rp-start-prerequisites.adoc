@@ -34,7 +34,7 @@ Refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.htm
 +
 NOTE: If you have multiple BlueXP Connectors in a single BlueXP organization, the BlueXP ransomware protection service will scan ONTAP resources across all Connectors beyond the one that is currently selected in the BlueXP UI. 
 
-//All source and working environments must be on the same BlueXP account. 
+//All source and working environments must be in the same BlueXP organization. 
 
 
 //** A BlueXP Connector per each Virtual Private Cloud (VPC) or on an on-premises region must be set up in BlueXP. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[BlueXP documentation to configure the Connector^].
@@ -70,7 +70,7 @@ The BlueXP ransomware protection service helps configure a backup destination th
 
 If you need to update non-admin user permissions for a particular working environment, complete these steps. 
 
-.  Log in to the BlueXP and look for the working environment that needs its ONTAP user permissions updated. 
+.  Log in to the BlueXP account and look for the working environment that needs its ONTAP user permissions updated. 
 
 . Double-click on the working environment to see details. 
 . Click *View additional information* that shows the user name. 
