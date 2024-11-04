@@ -32,8 +32,10 @@ After the free trial ends or the license or subscription expires, you can still 
 * Delete any resource, such as a policy.
 * Run all scheduled operations that were created during the trial period or under the license. 
 
+
 == Try it out using a 30-day free trial
-You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an account administrator to start the free trial. 
+You can try BlueXP ransomware protection out by using a 30-day free trial. You must be a BlueXP Organization admin to start the free trial. 
+
 
 NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
 
@@ -211,8 +213,8 @@ If you want to bring your own license (BYOL), you'll need to purchase the licens
 
 After you've purchased your BlueXP ransomware protection license from your NetApp Sales Rep, you activate the license by entering the BlueXP ransomware protection serial number and NetApp Support Site (NSS) account information. 
 
-
 .Before you begin
+
 
 You'll need to have the following information before you start:
 
@@ -222,6 +224,7 @@ Locate this number from your Sales Order, or contact the account team for this i
 * BlueXP Organization ID
 +
 You can find your BlueXP Organization ID by selecting the *Organization* drop-down from the top of BlueXP, and then selecting *Manage Organization* next to your account. Your Organization ID is in the Overview tab. 
+
 
 //For private mode site without internet access, use *account-DARKSITE1*.
 

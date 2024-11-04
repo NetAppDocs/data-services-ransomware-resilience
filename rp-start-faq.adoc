@@ -45,7 +45,9 @@ For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://con
 
 
 *How are access permissions handled?*
-Only organization admins have the ability to initiate the service and discover workloads (because this involves committing to usage of a resource). Subsequent interactions can be done by any role.
+
+Only Organization admins have the ability to initiate the service and discover workloads (because this involves committing to usage of a resource). Subsequent interactions can be done by any role.
+
 
 *What device resolution is best?*
 The recommended device resolution for BlueXP ransomware protection is 1920x1080 or better. 
