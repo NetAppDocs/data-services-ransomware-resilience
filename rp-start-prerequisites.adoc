@@ -72,6 +72,8 @@ The BlueXP ransomware protection service helps configure a backup destination th
 If you need to update non-admin user permissions for a particular working environment, complete these steps. 
 
 
+
+
 .  Log in to BlueXP and look for the working environment that needs its ONTAP user permissions updated. 
 
 . Double-click on the working environment to see details. 
