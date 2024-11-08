@@ -15,8 +15,8 @@ With BlueXP ransomware protection, you can use different licensing plans.
 
 You can use the following license types:
 
-* Sign up for a 90-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace or Azure Marketplace (coming soon). 
+* Sign up for a 30-day free trial.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace (coming soon). 
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. 
 //NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
@@ -29,15 +29,17 @@ After you set up your BYOL or purchase a PAYGO subscription, you can see the lic
 After the free trial ends or the license or subscription expires, you can still do the following in the service:
 
 * View workloads and workload health.
-* Delete any resource, such as a workload or policy.
+* Delete any resource, such as a policy.
 * Run all scheduled operations that were created during the trial period or under the license. 
 
-== Try it out using a 90-day free trial
-You can try BlueXP ransomware protection out by using a 90-day free trial. You must be a BlueXP Organization admin to start the free trial. 
+== Try it out using a 30-day free trial
+You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an BlueXP Organization administrator to start the free trial. 
 
-NOTE: No capacity limits are enforced during the trial.  
+NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
 
-You can get a license or subscribe at any time and you will not be charged until the 90-day trial ends. To continue after the 90-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
+No capacity limits are enforced during the trial.  
+
+You can get a license or subscribe at any time and you will not be charged until the 30-day trial ends. To continue after the 30-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
 
 During the trial, you have full functionality. 
 
@@ -61,10 +63,11 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 
 *After the trial ends, obtain a subscription or license*
 
-After the free trial ends, you can either subscribe through AWS Marketplace or purchase a license from NetApp.  
+After the free trial ends, you can either subscribe through one of the Marketplaces or purchase a license from NetApp.  
 
 <<Subscribe through AWS Marketplace>>
 <<Subscribe through Microsoft Azure Marketplace>>
+<<Subscribe through Google Cloud Marketplace>>
 <<Bring your own license (BYOL)>>
 
 == Subscribe through AWS Marketplace
@@ -155,7 +158,50 @@ image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Li
 +
 A message appears indicating that a license has been added. 
 
+== Subscribe through Google Cloud Marketplace
 
+This procedure provides a high level overview of how to subscribe directly in the Google Cloud Marketplace. 
+
+.Steps
+. In the BlueXP ransomware protection, do one of the following: 
++
+* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
+* Click on the *Free trial* notice at the top right and select *View payment methods*. 
++
+image:screen-license-payment-methods3-gcp.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe in Google Cloud Marketplace*. 
+. In Google Cloud Marketplace, select *Subscribe*. 
+. Use Google Cloud Marketplace to subscribe to BlueXP ransomware protection.  
+image:screen-license-payments-gcp.png[Google Cloud Marketplace subscription page]
+ 
+. When you return to BlueXP ransomware protection, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Google Cloud Marketplace.  
+
+. Return to BlueXP ransomware protection Payment methods page.
+
+. Add the license to BlueXP by selecting *Add license to BlueXP*.
++
+The BlueXP digital wallet service shows the Add License page. 
+
++
+image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+
+. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+
+
+. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+
+
+. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
++
+A message appears indicating that a license has been added. 
 
 == Bring your own license (BYOL)
 
