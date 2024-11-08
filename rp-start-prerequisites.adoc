@@ -18,9 +18,12 @@ To use BlueXP ransomware protection, you'll need these prerequisites.
 
 == In BlueXP 
 
-* A BlueXP user account with Organization admin privileges for discovering resources.
+
+* A BlueXP user account with Organization Admin privileges for discovering resources.
 
 * A BlueXP organization with at least one active BlueXP Connector connecting to on-premises ONTAP clusters or connecting to Cloud Volumes ONTAP in AWS or in Azure. 
+
+* The BlueXP Connector must have the `cloudmanager-ransomware-protection` container in an active state. 
 
 * At least one BlueXP working environment with a NetApp on-premises ONTAP cluster or Cloud Volume ONTAP in AWS or Azure (using NAS or CIFS protocols).
 
@@ -39,6 +42,9 @@ NOTE: If you have multiple BlueXP Connectors in a single BlueXP organization, th
 
 == In ONTAP 9.11.1 and later
 
+* An ONTAP One license is enabled on the on-premises ONTAP instance.
+
+
 * A license for NetApp Autonomous Ransomware Protection, used by BlueXP ransomware protection, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 +
 NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details.
@@ -49,8 +55,6 @@ For more licensing details, refer to link:concept-ransomware-protection.html[Lea
 
 * If the ONTAP cluster is already onboarded in BlueXP using non-admin user credentials, then the non-admin user permissions must be updated with necessary permissions by logging into the ONTAP cluster, described on this page. 
 
-
-//* ONTAP One license enabled on the on-premises ONTAP instance
 
 == For data backups
 
@@ -66,6 +70,9 @@ The BlueXP ransomware protection service helps configure a backup destination th
 == Update non-admin user permissions in an ONTAP working environment
 
 If you need to update non-admin user permissions for a particular working environment, complete these steps. 
+
+
+
 
 .  Log in to BlueXP and look for the working environment that needs its ONTAP user permissions updated. 
 

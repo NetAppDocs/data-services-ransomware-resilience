@@ -8,7 +8,7 @@ summary: If you no longer want to use BlueXP ransomware protection service, you 
 = Disable BlueXP ransomware protection
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 If you no longer want to use BlueXP ransomware protection service, you can let the license expire. You can also disable policies that you no longer want to use. 

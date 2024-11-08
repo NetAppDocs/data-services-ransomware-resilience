@@ -12,7 +12,9 @@ sidebar:
     - title: BlueXP ransomware protection docs
       url: /index.html
     - title: Release notes
-      url: /whats-new.html
+      entries:
+        - title: What's new in BlueXP ransomware protection
+          url: /whats-new.html
     - title: Get started
       entries:
         - title: Learn about BlueXP ransomware protection
@@ -43,6 +45,8 @@ sidebar:
           entries: 
             - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
+            - title: Scan for personally identifiable data
+              url: /rp-use-protect-classify.html 
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack

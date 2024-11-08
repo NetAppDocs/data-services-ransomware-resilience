@@ -5,19 +5,26 @@ keywords: ransomware protection, protect against ransomware attacks, anti-ransom
 summary: Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks.
 ---
 
-= Scan for personally identifiable sensitive data with BlueXP classification
+= Scan for personally identifiable information with BlueXP classification
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
-Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks. 
+Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personally identifiable information (PII), which can increase security risks. 
 
-//TIP: This process impacts workload importance to help you ensure that you have the appropriate protection. 
+IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for Pii data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
+
+
+TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
 
 === Enable BlueXP classification 
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
+
+TIP: You do this only once; you don't have to enable BlueXP classification again if you choose another file share workload on which to identify exposure.
+
+By using the BlueXP classification UI as an alternate method, an administrator can enable BlueXP classification in BlueXP ransomware protection. 
 
 For details about BlueXP classification before you begin to use the service, it might be helpful to review these resources. 
 
@@ -31,9 +38,9 @@ For details about BlueXP classification before you begin to use the service, it 
 
 . In the Protection page, locate a file share workload in the Workload column. 
 +
-image:screen-protection3.png[Protection page]
+image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
 
-. To enable BlueXP classification to scan your data for sensitive data, in the Privacy exposure column, select *Identify exposure*. 
+. To enable BlueXP classification to scan your data for personally identifiable data, in the *Privacy exposure* column, select *Identify exposure*. 
 +
 image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 
@@ -41,17 +48,17 @@ image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 . Select *Identify*. 
 
 .Result
-BlueXP classification installs a BlueXP Connector, connects remotely to your workload data, and scans the data in the NetApp cloud. Only the identified insights and metrics remain in the NetApp cloud; your data does not. 
+BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain the the NetApp cloud. 
 
 NOTE: Scanning might take several minutes depending on the amount of data. The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
 
-When scanning is complete, the Privacy exposure column displays the exposure level, for example, High. 
+When scanning is complete, the Privacy exposure column displays the exposure level as Low, Medium, or High.  
 
 
 
 === Review the privacy exposure
 
-After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
+After BlueXP classification scans for personally identifiable information (PII), you can look at the Pii data risk. 
 
 PII data can have one of the following privacy exposure risk statuses.  
 
@@ -59,20 +66,24 @@ PII data can have one of the following privacy exposure risk statuses.
 * *Medium*: Greater than 30% and less than 70% of files have PII
 * *Low*: Greater than 0 and less than 30% of files have PII
 
+
+
 .Steps
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
-image:screen-protection3.png[Protection screen showing the Privacy exposure column]
-
+image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
++
+TIP: If the status changes, an up or down arrow appears in the Privacy exposure column to indicate the Privacy exposure change. 
 
 . Select the workload link in the Workload column to see workload details. 
 +
-image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
-
-. In the Workload details page, review the information in the Privacy exposure pane. 
+image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure tile]
+. In the Workload details page, review the information in the Privacy exposure tile. 
++
+TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
 
 === Impact of privacy exposure on workload importance
 
@@ -99,8 +110,8 @@ Privacy exposure changes can impact the workload importance.
 
 
 
-== Investigate sensitive data directly in BlueXP classification
-
+== Investigate privacy exposure directly in BlueXP classification
+From within BlueXP ransomware protection, you can select a workload, view its details, and then investigate the exposure in BlueXP classification.
 
 .Steps
 
@@ -108,17 +119,24 @@ Privacy exposure changes can impact the workload importance.
 
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
-image:screen-protection3.png[Protection screen showing the Privacy exposure column]
+image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
 . Select the workload in the Workload column to see its details. 
 +
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
 
-. In the Workload details page, review the information in the Privacy exposure pane. 
+. In the Workload details page, review the information in the Privacy exposure tile. 
 
 . To investigate the exposure in BlueXP classification, select *Investigate*. 
 +
-The BlueXP classification service opens to display the Investigate tab.
+The BlueXP classification service opens to display the Investigation tab.
++
+image:screen-protection-classification-investigation.png[BlueXP classification ]
 
+. Review the information in the Investigation tab.
+
+. To return to the BlueXP ransomware protection service, select *Back to BlueXP ransomware protection*.
+
+== For more information 
 
 For details about BlueXP classification, refer to the following BlueXP classification topics: 
 

@@ -8,7 +8,7 @@ summary: After an attack, BlueXP ransomware protection verifies that the backup 
 = Recover from a ransomware attack (after incidents are neutralized)
 :hardbreaks:
 :icons: font
-:imagesdir: ./media
+:imagesdir: ./media/
 
 [.lead]
 After workloads have been marked "Restore needed", BlueXP ransomware protection recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
@@ -81,6 +81,8 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 . If the original destination does not have enough space to restore the workload, a "Temporary storage" row appears. You can select the temporary storage to restore the workload data. The restored data will be copied from the temporary storage to the original location. Click on the *Down arrow* in the Temporary storage row and set the destination cluster, storage VM, and local tier. 
 //+
 //image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage details]
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
+
 
 . Select *Save*. 
 
@@ -180,6 +182,8 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Change the volume prefix that will be prepended to all new volumes. 
 +
 TIP: The new volume name appears as prefix + original volume name + backup name + backup date.
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
+
 
 . Select *Save*.
 . Select *Next*.
@@ -217,6 +221,8 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Review the new volume name. 
 +
 TIP: The new volume name appears as the original volume name + backup name + backup date.
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
+
 
 . Select *Save*.
 . Select *Next*.
@@ -287,6 +293,8 @@ TIP: While the original files or directory will be overwritten by the restored d
 +
 TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 .. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
+
 
 . Select *Next*.
 . Review your selections. 
