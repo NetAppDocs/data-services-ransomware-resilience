@@ -1,0 +1,6 @@
+=== Custom grouping of file share workloads
+With this release, you can now group file shares into groups to make it easier for you to protect your data estate. The service can protect all volumes in a group at the same time. Previously, you needed to protect each volume separately.  
+//+
+//link:rp-use-protect.html[Learn more about protecting workloads and grouping file share workloads in ransomware protection strategies].
+
+https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about grouping file share workloads in ransomware protection strategies].
