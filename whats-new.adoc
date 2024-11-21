@@ -16,6 +16,9 @@ summary: Learn what's new in BlueXP ransomware protection.
 Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
+== 31 November 2024 
+include::_whatsnew/2024-11-31.adoc[]
+
 
 == 7 November 2024
 include::_whatsnew/2024-11-07.adoc[]
