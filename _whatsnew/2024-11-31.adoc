@@ -5,10 +5,22 @@ With this release, you can use Data Infrastructure Insights Storage Workload Sec
 
 For details, xxx. 
 
-Configure Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior in your storage workloads using the BlueXP ransomware protection *Settings* option.
+Before you use Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior, you need to configure the option by using the BlueXP ransomware protection *Settings* option.
 
 Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings]. 
 //Refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
+
+=== Select workloads to discover and protect
+
+With this release, you can now do the following: 
+
+* Within each Connector, select the working environments where you want to discover workloads. You might benefit from this feature if you want to protect specific workloads in your environment and not others. 
+* During workload discovery, you can enable automatic discovery of workloads per Connector. This feature lets you select the workloads that you want to protect. 
+* Discover newly created workloads for previously selected working environments. 
+
+Refer to link://rp-start-discover-html[Discover workloads]. 
+//Refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover workloads]. 
+
 
 //=== Configur cybler vault
 // With this release, you can lock immutable and indelible snapshots on a NetApp cyber vault, an air-gapped environment that is logically separated from primary networks and systems. The snapshots cannot be deleted until the retention policy on those snapshots expires. By moving data to a cyber vault, bad actors have no access to the data. 
