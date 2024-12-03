@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rp-start-login.html
-keywords: bluexp login, ransomware protection, bluexp,cyber attack, log in
+keywords: bluexp login, ransomware protection, bluexp,cyber attack, log in,access
 summary: Get started with BlueXP ransomware protection by accessing the service in BlueXP.
 ---
 
