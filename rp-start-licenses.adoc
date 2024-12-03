@@ -20,10 +20,6 @@ You can use the following license types:
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. 
 //NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
-The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
-
-NOTE: If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only. 
-
 After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
 
 After the free trial ends or the license or subscription expires, you can still do the following in the service:
@@ -32,6 +28,17 @@ After the free trial ends or the license or subscription expires, you can still 
 * Delete any resource, such as a policy.
 * Run all scheduled operations that were created during the trial period or under the license. 
 
+=== Other license considerations 
+
+The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
+
+NOTE: If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only. 
+
+You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
+
+For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+
+TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
 == Try it out using a 30-day free trial
 You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an BlueXP Organization administrator to start the free trial. 
