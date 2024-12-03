@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
-summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection service.
+summary: You can configure several options, including a backup destination, threat detection, and connection to Data Infrastructure Insights Workload Security in the BlueXP ransomware protection service.
 ---
 
 = Configure BlueXP ransomware protection settings
@@ -33,7 +33,7 @@ You can easily access the Settings page from the Actions option near the top men
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 
-== Connect to Data Infrastructure Insights Workload security to see suspected user information 
+== Connect to Data Infrastructure Insights Workload security to see suspected anomalous user behavior 
 
 Before you can view details of suspected anomalous user behavior in BlueXP ransomware protection, you need to configure the connection to the Data Infrastructure Insights Workload security system.
 
