@@ -13,7 +13,7 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 [.lead]
 Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personally identifiable information (PII), which can increase security risks. 
 
-IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for Pii data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
+//IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
 
 
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
@@ -22,11 +22,11 @@ TIP: This process can impact workload importance to help you ensure that you hav
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
 
-TIP: You do this only once; you don't have to enable BlueXP classification again if you choose another file share workload on which to identify exposure.
+//TIP: You do this only once; you don't have to enable BlueXP classification again if you choose another file share workload on which to identify exposure.
 
 By using the BlueXP classification UI as an alternate method, an administrator can enable BlueXP classification in BlueXP ransomware protection. 
 
-For details about BlueXP classification before you begin to use the service, it might be helpful to review these resources. 
+It might be helpful to review these BlueXP classification resources before you begin to use the service: 
 
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
@@ -41,11 +41,11 @@ For details about BlueXP classification before you begin to use the service, it 
 image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
 
 . To enable BlueXP classification to scan your data for personally identifiable data, in the *Privacy exposure* column, select *Identify exposure*. 
-+
-image:screen-protection-sensitive-data.png[Identify sensitive data screen]
+//+
+//image:screen-protection-sensitive-data.png[Identify sensitive data screen]
 
-. Review the information about BlueXP classification. 
-. Select *Identify*. 
+//. Review the information about BlueXP classification. 
+//. Select *Identify*. 
 
 .Result
 BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain the the NetApp cloud. 
@@ -58,7 +58,7 @@ When scanning is complete, the Privacy exposure column displays the exposure lev
 
 === Review the privacy exposure
 
-After BlueXP classification scans for personally identifiable information (PII), you can look at the Pii data risk. 
+After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
 
 PII data can have one of the following privacy exposure risk statuses.  
 
@@ -75,15 +75,15 @@ PII data can have one of the following privacy exposure risk statuses.
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
 image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
-+
-TIP: If the status changes, an up or down arrow appears in the Privacy exposure column to indicate the Privacy exposure change. 
+//+
+//TIP: If the status changes, an up or down arrow appears in the Privacy exposure column to indicate the Privacy exposure change. 
 
 . Select the workload link in the Workload column to see workload details. 
 +
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure tile]
 . In the Workload details page, review the information in the Privacy exposure tile. 
-+
-TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
+//+
+//TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
 
 === Impact of privacy exposure on workload importance
 
@@ -93,8 +93,8 @@ Privacy exposure changes can impact the workload importance.
 [cols=4*,options="header",cols="15,20a,20,20" width="100%"]
 |===
 | When privacy exposure: 
-| From this privacy exposure
-| To this privacy exposure
+| From this privacy exposure:
+| To this privacy exposure:
 | Then, workload importance does this: 
 
 
@@ -110,31 +110,32 @@ Privacy exposure changes can impact the workload importance.
 
 
 
-== Investigate privacy exposure directly in BlueXP classification
-From within BlueXP ransomware protection, you can select a workload, view its details, and then investigate the exposure in BlueXP classification.
+//== Investigate privacy exposure directly in BlueXP classification
 
-.Steps
+//From within BlueXP ransomware protection, you can select a workload, view its details, and then investigate the exposure in BlueXP classification.
 
-. From the BlueXP ransomware protection menu, select *Protection*.
+//.Steps
 
-. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
-+
-image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
-. Select the workload in the Workload column to see its details. 
-+
-image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
+//. From the BlueXP ransomware protection menu, select *Protection*.
 
-. In the Workload details page, review the information in the Privacy exposure tile. 
+//. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
+//+
+//image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
+//. Select the workload in the Workload column to see its details. 
+//+
+//image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
 
-. To investigate the exposure in BlueXP classification, select *Investigate*. 
-+
-The BlueXP classification service opens to display the Investigation tab.
-+
-image:screen-protection-classification-investigation.png[BlueXP classification ]
+//. In the Workload details page, review the information in the Privacy exposure tile. 
 
-. Review the information in the Investigation tab.
+//. To investigate the exposure in BlueXP classification, select *Investigate*. 
+//+
+//The BlueXP classification service opens to display the Investigation tab.
+//+
+//image:screen-protection-classification-investigation.png[BlueXP classification ]
 
-. To return to the BlueXP ransomware protection service, select *Back to BlueXP ransomware protection*.
+//. Review the information in the Investigation tab.
+
+//. To return to the BlueXP ransomware protection service, select *Back to BlueXP ransomware protection*.
 
 == For more information 
 
