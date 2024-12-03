@@ -11,7 +11,9 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. You can also show future Preview features. 
+You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
+
+You can also show future Preview features. 
 
 Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
@@ -466,20 +468,20 @@ The Settings page shows "Connected."
 //. In the confirmation page, select *Disconnect*. 
 
 
-== Show preview features
+//== Show preview features
 
-You can try out upcoming features labeled "Preview" before they are released. These features appear in the UI with a "Preview" label.
+//You can try out upcoming features labeled "Preview" before they are released. These features appear in the UI with a "Preview" label.
 
-.Before you begin
-You will need a key from the BlueXP ransomware protection product team to show Preview features. To get the key, send an email to mailto:ng-rps-key@netapp.com. 
+//.Before you begin
+//You will need a key from the BlueXP ransomware protection product team to show Preview features. To get the key, send an email to mailto:ng-rps-key@netapp.com. 
 
-.Steps 
+//.Steps 
 
-. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+//. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 
-. Select *Settings*. 
-+
-image:screen-settings2.png[Settings page]
-. In the *Preview features* tile, select *Show*.
-. Enter the key. 
-. Select *Show*. 
+//. Select *Settings*. 
+//+
+//image:screen-settings2.png[Settings page]
+//. In the *Preview features* tile, select *Show*.
+//. Enter the key. 
+//. Select *Show*. 
