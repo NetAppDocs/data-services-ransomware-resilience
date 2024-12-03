@@ -70,7 +70,7 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 
 == View alerts
 
-You can access alerts from BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
+You can access alerts from the BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
 
 //* Alert email sent to you
 //* BlueXP Notifications in the BlueXP UI
@@ -122,9 +122,74 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 +
 image:screen-alerts.png[Alerts page]
 
+
+
 . Continue: 
+** <<Detect anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
+
+== Detect anomalous user behavior
+
+ Looking at the Alerts tab, you can identify whether there is malicious user behavior. The details that appear depend on how the alert was triggered:
+
+ * Triggered by the Autonomous Ransomware Protection feature in ONTAP
+ * Triggered by Data Infrastructure Insights Workload Security
+
+
+=== View anomalous user behavior from Autonomous Ransomware Protection only
+
+When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware protection, you can view the following details:
+
+* Entropy of incoming data
+* Expected creation rate of new files compared to detected rate
+* Expected deletion rate of files compared to detected rate
+* Expected rename rate of files compared to detected rate
+
+.Steps
+
+. From the BlueXP ransomware protection menu, select *Alerts*.  
+. Select an alert. 
+. Review the incidents in the alert.
++
+image:screen-alerts-incidents3.png[Alert incidents page]
+
+. Select an incident to review the details of the incident. 
++
+image:screen-alerts-incidents-details-arp.png[Incident details page] 
+
+
+
+=== View anomalous user behavior in Data Infrastructure Insights Workload Security
+
+When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the following details in addition to the details available from Autonomous Ransomware Protection:
+
+* User name
+* A link to block the user
+* A link to investigate the user in Workload Security
+
+You can investigate the alert and the suspicious user directly in Data Infrastructure Insights Workload Security.
+
+.Steps
+
+. From the BlueXP ransomware protection menu, select *Alerts*.  
+. Select an alert. 
+. Review the incidents in the alert.
++
+image:screen-alerts-incidents-diiws.png[Alert incidents page showing Workload Security details]
+
+. To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. Confirm the action and select *Block*. 
+
+. Research the alert or an incident in the alert: 
+.. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.
+.. Select an incident to review the details of the incident. 
++
+image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
++
+Data Infrastructure Insights Workload Security opens in a new tab.
++
+image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Security]
+
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
@@ -141,7 +206,7 @@ image:screen-alerts.png[Alerts page]
 . In the Alerts page, select the alert. 
 . Review the incidents in the alert.
 +
-image:screen-alerts-incidents2.png[Alert incidents page]
+image:screen-alerts-incidents3.png[Alert incidents page]
 
 . If you determine that the incidents are ready for recovery, select *Mark restore needed*. 
 
