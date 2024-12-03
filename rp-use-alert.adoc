@@ -131,10 +131,11 @@ image:screen-alerts.png[Alerts page]
 
 == Detect anomalous user behavior
 
- Looking at the Alerts tab, you can identify whether there is malicious user behavior. The details that appear depend on how the alert was triggered:
+Looking at the Alerts tab, you can identify whether there is malicious user behavior. The details that appear depend on how the alert was triggered:
 
- * Triggered by the Autonomous Ransomware Protection feature in ONTAP
- * Triggered by Data Infrastructure Insights Workload Security
+* Triggered by the Autonomous Ransomware Protection feature in ONTAP
+* Triggered by Data Infrastructure Insights Workload Security. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+
 
 
 === View anomalous user behavior from Autonomous Ransomware Protection only
@@ -162,7 +163,7 @@ image:screen-alerts-incidents-details-arp.png[Incident details page]
 
 === View anomalous user behavior in Data Infrastructure Insights Workload Security
 
-When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the following details in addition to the details available from Autonomous Ransomware Protection:
+When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the following details in addition to the details available from just Autonomous Ransomware Protection:
 
 * User name
 * A link to block the user
