@@ -18,7 +18,7 @@ Within the BlueXP ransomware protection service, you can use BlueXP classificati
 
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
 
-=== Enable BlueXP classification 
+== Enable BlueXP classification 
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data. 
 
@@ -31,6 +31,10 @@ It might be helpful to review these BlueXP classification resources before you b
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
+
+.Before you begin
+
+Scanning for PII data in BlueXP ransomware protection is available to customers who deployed BlueXP classification. BlueXP classification is available as part of the BlueXP platform at no extra charge and can be deployed on-premises or in the customer cloud.
 
 .Steps
 
@@ -56,7 +60,7 @@ When scanning is complete, the Privacy exposure column displays the exposure lev
 
 
 
-=== Review the privacy exposure
+== Review the privacy exposure
 
 After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
 
@@ -85,7 +89,7 @@ image:screen-protection-workload-details-privacy-exposure.png[Workload details s
 //+
 //TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
 
-=== Impact of privacy exposure on workload importance
+== Impact of privacy exposure on workload importance
 
 Privacy exposure changes can impact the workload importance.  
 
