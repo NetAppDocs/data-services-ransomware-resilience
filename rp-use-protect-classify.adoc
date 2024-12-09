@@ -48,9 +48,9 @@ image:screen-protection-sensitive-preview-column.png[Protection page showing Pri
 //. Select *Identify*. 
 
 .Result
-BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain the the NetApp cloud. 
+//For the BlueXP classification SaaS model, BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain the the NetApp cloud. 
 
-NOTE: Scanning might take several minutes depending on the amount of data. The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
+Scanning might take several minutes depending on the amount of data. The Protection page shows that BlueXP classification is identifying files and gives you an indication of the number of files it is scanning. 
 
 When scanning is complete, the Privacy exposure column displays the exposure level as Low, Medium, or High.  
 
