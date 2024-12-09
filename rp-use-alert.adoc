@@ -142,6 +142,8 @@ For an overview of Data Infrastucture Insights Workload Security, review https:/
 
 TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
+When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
+
 === View anomalous user behavior from Autonomous Ransomware Protection only
 
 When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware protection, you can view the following details:

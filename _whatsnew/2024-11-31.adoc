@@ -8,11 +8,12 @@ Triggered by the Autonomous Ransomware Protection feature in ONTAP, BlueXP ranso
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
 
-If malicious activity occurs, an alert is generated.
+When malicious activity occurs, an alert is generated and an automated snapshot is taken.
 
 For details, refer to link://rp-use-alert.html[Respond to a detected ransomware alert]. 
 
 //For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert]. 
+
 
 === Detect anomalous user behavior using Data Infrastructure Insights Storage Workload Security
 
