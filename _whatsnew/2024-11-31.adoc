@@ -1,20 +1,4 @@
 
-=== Detect malicious activity 
-
-Triggered by the Autonomous Ransomware Protection feature in ONTAP, BlueXP ransomware protection helps you detect malicious activity based on the behavior of the files in the volume:  
-
-* Entropy of incoming data
-* Expected creation rate of new files compared to detected rate
-* Expected deletion rate of files compared to detected rate
-* Expected rename rate of files compared to detected rate
-
-When malicious activity occurs, an alert is generated and an automated snapshot is taken.
-
-For details, refer to link://rp-use-alert.html[Respond to a detected ransomware alert]. 
-
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert]. 
-
-
 === Detect anomalous user behavior using Data Infrastructure Insights Storage Workload Security
 
 With this release, you can use Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior in your storage workloads. This feature helps you identify potential security threats and block potentially malicious users to protect your data.

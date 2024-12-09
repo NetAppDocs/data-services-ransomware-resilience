@@ -144,7 +144,7 @@ TIP: If you don't have a license for Data Infrastructure Workload Security and d
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
-=== View anomalous user behavior from Autonomous Ransomware Protection only
+=== View malicious activity from Autonomous Ransomware Protection only
 
 When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware protection, you can view the following details:
 
@@ -169,7 +169,9 @@ image:screen-alerts-incidents-details-arp.png["Incident details page"]
 
 === View anomalous user behavior in Data Infrastructure Insights Workload Security
 
-When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload Security. These features are in addition to the details available from just Autonomous Ransomware Protection.
+When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload Security. 
+
+TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
 
 .Before you begin
 This option requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
@@ -188,7 +190,7 @@ For details, see link:rp-use-settings.html[Configure BlueXP ransomware protectio
 +
 image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload Security details"]
 
-. To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. Confirm the action in the popup dialog box and select *Block*. 
+. To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. 
 
 . Research the alert or an incident in the alert: 
 .. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.

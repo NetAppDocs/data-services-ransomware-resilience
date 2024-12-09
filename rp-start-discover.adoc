@@ -22,7 +22,7 @@ The service assesses the existing protection level including the current backup 
 You can do the following: 
 
 * Within each Connector, select the working environments where you want to discover workloads. You might benefit from this feature if you want to protect specific workloads in your environment and not others. 
-* During workload discovery, you can enable automatic discovery of workloads per Connector. This feature lets you select the workloads that you want to protect. 
+//* During workload discovery, you can enable automatic discovery of workloads per Connector. This feature lets you select the workloads that you want to protect. 
 * Discover newly created workloads for previously selected working environments. 
 
 
@@ -46,10 +46,10 @@ TIP: This process might take a few minutes.
 +
 image:screen-discover-workloads.png[Discover workloads screenshot]
 . From the list of BlueXP Connectors, select *Find new working environments* next to the Connector where you want to discover workloads.
-+
-image:screen-discover-workloads-select.png[Discover workloads screenshot]
+//+
+//..image:screen-discover-workloads-select.png[Discover workloads screenshot] Recapture without the AutoDiscover option
 . Select the working environments where you want to discover workload or select the box at the top of the table to discover workloads in all discovered workload environments. 
-. Optionally, select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
+//. Optionally, select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
 
 . Select *Discover*. 
 +
@@ -92,27 +92,27 @@ image:screen-discover-workloads-select.png[Discover workloads screenshot]
 . Select *Go to Dashboard*. 
 
 
-== Enable automatic discovery of workloads per Connector
+//== Enable automatic discovery of workloads per Connector
 
-After you set up the first workload discovery, you can set up automatic discovery of workloads per Connector.
+//After you set up the first workload discovery, you can set up automatic discovery of workloads per Connector.
 
-.Steps
+//.Steps
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
-+
-The Dashboard appears. 
-+
-image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+//. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+//+
+//The Dashboard appears. 
+//+
+//image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
-. From the top right of the Dashboard, select *Discover workloads*. 
+//. From the top right of the Dashboard, select *Discover workloads*. 
 
-. Locate a Connector that displays the *Find new working environments* link.  
-+
-image:screen-discover-workloads-newly-discovered.png[Newly discovered working environments screenshot]
+//. Locate a Connector that displays the *Find new working environments* link.  
+//+
+//image:screen-discover-workloads-newly-discovered.png[Newly discovered working environments screenshot]
 
-. Select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
+//. Select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
 
-. Select *Discover*. 
+//. Select *Discover*. 
 
 //== Set up email notifications 
 
