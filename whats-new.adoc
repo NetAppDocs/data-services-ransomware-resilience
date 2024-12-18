@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp
 summary: Learn what's new in BlueXP ransomware protection.
 ---
 
@@ -17,16 +17,22 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
+== 16 December 2024 
+include::_whatsnew/2024-11-31.adoc[]
+
+
 == 7 November 2024
 include::_whatsnew/2024-11-07.adoc[]
 
 == 30 September 2024 
 include::_whatsnew/2024-09-30.adoc[]
 
+// end::whats-new[]
+
 == 2 September 2024
 include::_whatsnew/2024-09-02.adoc[]
 
-// end::whats-new[]  
+  
 
 == 5 August 2024
 === Threat detection with Splunk Cloud

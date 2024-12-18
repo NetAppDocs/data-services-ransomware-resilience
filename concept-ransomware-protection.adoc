@@ -38,7 +38,7 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 * *Protect* your workloads by enabling backups, Snapshot copies, and ransomware protection strategies on your data.  
 
-* *Detect* anomalies that might be ransomware attacks.footnote:[No ransomware detection or prevention system can completely guarantee safety from a ransomware attack. While it's possible an attack might go undetected, NetApp technology acts as an important additional layer of defense.] 
+* *Detect* anomalies that might be ransomware attacks.footnote:[Although it's possible that an attack might go undetected, our research indicates NetApp technology has resulted in a high degree of detection for certain file encryption-based ransomware attacks.] 
 
 * *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp ONTAP Snapshot that is locked so that the copy cannot be deleted accidentally or maliciously. Your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
 
@@ -93,6 +93,8 @@ The BlueXP ransomware protection service requires a NetApp ONTAP One license.
 
 The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
 
+To detect anomalous user behavior, BlueXP ransomware protection uses NetApp Autonomous Ransomware Protection, a machine learning (ML) model within ONTAP that detects malicious file activity. This model is included in the BlueXP ransomware protection license. You can additionally use Data Infrastructure Insights (formerly Cloud Insights) Workload Security (license required) to investigate user behavior and block specific users from further activity. 
+
 For details, see link:rp-start-licenses.html[Set up licensing].
 
 == How BlueXP ransomware protection works
@@ -127,7 +129,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 | *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. 
 //| *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. Applies ransomware protection technology by using NetApp Advanced Ransomware Detection, a machine learning (ML) model that detects malicious file encryptions. 
 * Provides dual-layer detection that starts with detecting potential ransomware attacks in the primary storage and responding to abnormal activities by taking additional automated Snapshot copies to create the nearest data restore points. The service provides the ability to dig deeper to identify potential attacks with greater precision without impacting the performance of the primary workloads. 
-* Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection and FPolicy technologies. 
+* Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection, Data Infrastructure Insights (formerly Cloud Insights) Workload Security, and FPolicy technologies. 
 //* Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection. 
 
 |*RESPOND* | * Shows relevant data, such as file activity, user activity, and entropy, to help you complete forensic reviews about the attack.
