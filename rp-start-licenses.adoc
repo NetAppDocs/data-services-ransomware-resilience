@@ -34,9 +34,7 @@ The BlueXP ransomware protection license does not include additional NetApp prod
 
 NOTE: If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only. 
 
-You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
-
-For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
 
 TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
@@ -62,7 +60,7 @@ During the trial, you have full functionality.
 If this is your first time logging in to this service, the landing page appears. 
 
 +
-image:screen-rp-landing.png[Landing page screenshot for BlueXP ransomware protection]
+image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
 . If you haven't already added a Connector for other services, add one. 
 + 
 To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
