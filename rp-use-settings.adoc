@@ -11,11 +11,10 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
+You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
-You can also show future Preview features. 
 
-Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
+//You can also show future Preview features. 
 
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
@@ -24,7 +23,7 @@ From the Settings page, you can do the following:
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
 * Add a backup destination.
 * Connect your security and event management system (SIEM) for threat analysis and detection.   
-* Show upcoming Technology Preview features.
+//* Show upcoming Technology Preview features.
 
 == Access the Settings page directly
 
