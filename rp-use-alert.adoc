@@ -11,7 +11,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 :imagesdir: ./media/
 
 [.lead]
-If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard and in the BlueXP Notifications in the upper right indicating a potential ransomware attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
+If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard and in the BlueXP Notifications in the upper right indicating a potential ransomware attack. The service also immediately initiates taking a snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
 //If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a Snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
@@ -41,14 +41,6 @@ Evidence is based on information from Autonomous Ransomware Protection in ONTAP.
 
 //The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
 
-//An alert can have one of the following statuses: 
-
-//* *New*: All incidents are marked "new" when they are first identified. You can also mark an incident as "new." 
-//* *In progress*: If you are actively working on mitigating the alert, you might want to change the status to "In progress" to let your team know. 
-//* *Completed*: If you have finished mitigating the alert, you might want to change the status to "Completed".
-//* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed." 
-//+
-//CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted.  
 
 An alert can have one of the following statuses:
 
@@ -70,7 +62,7 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 
 == View alerts
 
-You can access alerts from BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
+You can access alerts from the BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
 
 //* Alert email sent to you
 //* BlueXP Notifications in the BlueXP UI
@@ -113,18 +105,96 @@ You can access alerts from BlueXP ransomware protection Dashboard or from the *A
 .Steps
 
 . In the BlueXP ransomware protection Dashboard, review the Alerts pane.
-. Select *View all* under one of the statues. 
+. Select *View all* under one of the statuses. 
 
 . Click on an alert to review all incidents on each volume for each alert. 
 . To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
 
 . Review the alerts on the Alerts page. 
 +
-image:screen-alerts.png[Alerts page]
+image:screen-alerts.png["Alerts page"]
+
+
 
 . Continue: 
+** <<Detect anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
+
+== Detect malicious activity and anomalous user behavior
+
+Looking at the Alerts tab, you can identify whether there is malicious activity. The details that appear depend on how the alert was triggered:
+
+* Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
+* Triggered by Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
++
+To enable Workload Security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload Security connection* option.
++
+For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+
+TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+
+When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
+
+=== View malicious activity from Autonomous Ransomware Protection only
+
+When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware protection, you can view the following details:
+
+* Entropy of incoming data
+* Expected creation rate of new files compared to detected rate
+* Expected deletion rate of files compared to detected rate
+* Expected rename rate of files compared to detected rate
+
+.Steps
+
+. From the BlueXP ransomware protection menu, select *Alerts*.  
+. Select an alert. 
+. Review the incidents in the alert.
++
+image:screen-alerts-incidents3.png["Alert incidents page"]
+
+. Select an incident to review the details of the incident. 
++
+image:screen-alerts-incidents-details-arp.png["Incident details page"] 
+
+
+
+=== View anomalous user behavior in Data Infrastructure Insights Workload Security
+
+When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload Security. 
+
+TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
+
+.Before you begin
+This option requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
+
+To enable Workload Security in BlueXP ransomware protection, do the following: 
+
+. Go to the *Settings* page.
+. Select the *Workload Security connection* option.
++ 
+For details, see link:rp-use-settings.html[Configure BlueXP ransomware protection settings].
+
+.Steps
+
+. From the BlueXP ransomware protection menu, select *Alerts*.  
+. Select an alert. 
+. Review the incidents in the alert.
++
+image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload Security details"]
+
+. To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. 
+
+. Research the alert or an incident in the alert: 
+.. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.
+.. Select an incident to review the details of the incident. 
++
+image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
++
+Data Infrastructure Insights Workload Security opens in a new tab.
++
+image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Security]
+
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
@@ -141,7 +211,7 @@ image:screen-alerts.png[Alerts page]
 . In the Alerts page, select the alert. 
 . Review the incidents in the alert.
 +
-image:screen-alerts-incidents2.png[Alert incidents page]
+image:screen-alerts-incidents3.png[Alert incidents page]
 
 . If you determine that the incidents are ready for recovery, select *Mark restore needed*. 
 
@@ -177,8 +247,8 @@ image:screen-alerts-incidents2.png[Alert incidents page]
 
 . If you determine that the incident is not a threat, dismiss it as a false positive:  
 +
-* If you selected one incident, select the *Actions* … icon on the right, select *Edit status*. 
-* If you selected multiple incidents, select the *Edit status* button above the table. 
+* Select the incident. 
+* Select the *Edit status* button above the table. 
 +
 image:screen-alerts-status-edit.png[Alert Edit Status page]
 

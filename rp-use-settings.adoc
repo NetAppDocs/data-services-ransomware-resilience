@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
-summary: You can configure several options, including a backup destination, in the BlueXP ransomware protection service.
+summary: You can configure several options, including a backup destination, threat detection, and connection to Data Infrastructure Insights Workload Security in the BlueXP ransomware protection service.
 ---
 
 = Configure BlueXP ransomware protection settings
@@ -11,18 +11,19 @@ summary: You can configure several options, including a backup destination, in t
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination or enable threat detection by reviewing recommendations on the Dashboard or by accessing the *Settings* option. 
+You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
+
 
 //You can also show future Preview features. 
 
-Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
-
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
+From the Settings page, you can do the following: 
 
-//* Add a backup destination. 
-//* Enable threat detection. 
-
+* Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
+* Add a backup destination.
+* Connect your security and event management system (SIEM) for threat analysis and detection.   
+//* Show upcoming Technology Preview features.
 
 == Access the Settings page directly
 
@@ -30,11 +31,30 @@ You can easily access the Settings page from the Actions option near the top men
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
-. From the Settings page, you can do the following: 
 
-** Add a backup destination.
-** Connect your security and event management system (SIEM) for threat analysis and detection.   
-//** Show upcoming Preview features.
+== Connect to Data Infrastructure Insights Workload security to see suspected anomalous user behavior 
+
+Before you can view details of suspected anomalous user behavior in BlueXP ransomware protection, you need to configure the connection to the Data Infrastructure Insights Workload security system.
+
+=== Obtain an API access token from the Data Infrastructure Insights Workload security system
+
+Obtain an API access token from the Data Infrastructure Insights Workload security system.
+
+. Log in to the Data Infrastructure Insights Workload security system.
+. From the left navigation, select *Admin* > *API Access*.
++
+image:../media/screen-alerts-ci-api-access-token.png[API Access page in Data Infrastructure Insights Workload security] 
+
+. Either create an API access token or use an existing one.
+. Copy the API access token.
+
+=== Connect to Data Infrastructure Insights Workload security
+
+. From the BlueXP ransomware protection Settings menu, select *Workload security connection*.
+. Select *Connect*.
+. Enter the URL for the Data Infrastructure Workload security UI.
+. Enter the API access token that provides access to Workload security. 
+. Select *Connect*.
 
 
 
@@ -51,9 +71,7 @@ To protect those workloads, you should add a backup destination. You can choose 
 
 
 
-You can add a backup destination based on a recommended action from the Dashboard.
-
-// or from accessing the Settings option on the menu. 
+You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option on the menu. 
 
 === Access Backup Destination options from the Dashboard's recommended actions
 
@@ -73,14 +91,6 @@ image:screen-dashboard.png[Dashboard page]
 . Continue with instructions depending on the backup provider. 
 
 
-=== Access Backup Destination options from the Actions drop-down menu
-
-You can easily access the Settings page from the Actions option near the top menu. 
-
-.Steps
-. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-. From the drop-down menu, select *Settings*.
-. To add a backup destination, select *Add*.  
 
 
 === Add StorageGRID as a backup destination
