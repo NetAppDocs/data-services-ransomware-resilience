@@ -1,0 +1,7 @@
+=== Simulate an attack and respond
+
+With this release, simulate a ransomware attack to test your response to a ransomware alert. This feature helps you understand how to respond to a ransomware alert and recover your data in case of a real ransomware attack.
+
+//For details, refer to link://rp-use-settings.html[Conduct a ransomware attack readiness drill and configure protection settings]. 
+
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Conduct a ransomware attack readiness drill and configure settings]. 

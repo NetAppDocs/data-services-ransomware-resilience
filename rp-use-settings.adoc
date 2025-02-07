@@ -5,13 +5,13 @@ keywords: ransomware protection, protect against ransomware attacks, anti-ransom
 summary: You can configure several options, including a backup destination, threat detection, and connection to Data Infrastructure Insights Workload Security in the BlueXP ransomware protection service.
 ---
 
-= Configure BlueXP ransomware protection settings
+= Simulate an attack and configure BlueXP ransomware protection settings
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
+You can configure backup destinations, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
 
 
 //You can also show future Preview features. 
@@ -20,9 +20,10 @@ You can configure a backup destination, enable threat detection, or configure co
 
 From the Settings page, you can do the following: 
 
+* Simulate a ransomware attack and respond to a ransomware alert. 
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
 * Add a backup destination.
-* Connect your security and event management system (SIEM) for threat analysis and detection.   
+* Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection.   
 //* Show upcoming Technology Preview features.
 
 == Access the Settings page directly
@@ -32,7 +33,85 @@ You can easily access the Settings page from the Actions option near the top men
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 
-== Connect to Data Infrastructure Insights Workload security to see suspected anomalous user behavior 
+== Simulate a ransomware attack by scheduling a readiness drill
+
+Schedule a simulated ransomware attack on a newly created, sample workload. Then, investigate the attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+
+TIP: Your real workload data will not be impacted. 
+
+=== Configure a readiness drill schedule
+
+. From the BlueXP ransomware protection Settings menu, select *Schedule readiness drill*.
++
+Or, from the Settings page, select *Ransomware readiness drill*.
+
+
+. Select a sample sandbox workload. 
+. Indicate whether to run the drill once or multiple times. 
+. Select the start date ad time.
+. Select how often you want to repeat it.
+. Select *Save*.
+
+=== Respond to a readiness drill alert
+
+. From the BlueXP ransomware protection menu, select *Alerts*.
++
+Or, from the menu, select the Notifications icon, select *View alert* next to the readiness drill alert.
++
+In the Alert ID column on the Alerts page, "Readiness drill" appears next to the ID. 
++
+image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
+
+. Select the incident with the "Readiness drill" indication. 
++
+image:screen-alerts-readiness-incidents.png[Incident page showing the readiness drill alert]
+
+. Review the alert details. 
++
+Here are some things to look for:
+
+* Look at the Potential attack Type. If the Type indicates that a user is suspected of malicious activity, review the user name. 
+** You might want to block the user by selecting *Block user*. 
+** You might also want to investigate the user more in Data Infrastructure Insights Workload security by selecting *Investigate in Workload security*. 
+
+* Look at the list of suspected files. Look at the extensions that might be causing the attack. Investigate further by selecting *View all* to see the full list of files.
+
+* Look at the list of suspected processes. 
+** Look at the incoming detected data compared to the expected data. 
+** Look at the creation rate of files that is detected compared to the expected rate.
+** Look at the file renaming rate that is detected compared to the expected rate.
+
+* Determine the impact and breadth of the attack.
+
+* Indicate the status by selecting *Edit* and change the status to one of the following: 
+
+** Dismissed: If you suspect that the activity is not a ransomware attack, change the status to Dismissed. 
++
+IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
+** In progress
+** Resolved: The incident has been mitigated. 
+
+
+* Return to the Alert details page. 
+* If the workload should be restored, do the following: 
+** Select *Mark restore needed*. 
+** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
+** Follow the restore process details in link://rp-use-restore.html[Recover from a ransomware attack (after incidents are neutralized)].  
+
+=== Review reports on the readiness drill
+
+
+. From the BlueXP ransomware protection menu, select *Reports*.
++
+image:screen-reports.png[Reports page showing the readiness drill report]
+
+. Select *Simulation analysis* and *Download* to download the readiness drill report.
+
+
+
+
+
+== See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
 
 Before you can view details of suspected anomalous user behavior in BlueXP ransomware protection, you need to configure the connection to the Data Infrastructure Insights Workload security system.
 
