@@ -1,0 +1,33 @@
+=== Simulate an attack and respond
+
+With this release, simulate a ransomware attack to test your response to a ransomware alert. This feature helps you understand how to respond to a ransomware alert and recover your data in case of a real ransomware attack.
+
+For details, refer to link://rp-use-settings.html[Conduct a ransomware attack readiness drill and configure protection settings]. 
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Conduct a ransomware attack readiness drill and configure settings]. 
+
+=== Rediscover workloads 
+
+With this release, you can rediscover workloads to identify new workloads that were added to the previously selected working environments.
+
+For details, refer to link://rp-start-discover.html[Discover newly created workloads for previously selected working environments].
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments].
+
+=== Alerts raised when high encryption is detected
+
+With this release, you can view alerts when high encryption is detected on your workloads even without high file extension changes. This feature helps you identify workloads that are at risk of ransomware attacks.
+
+For details, refer to link://rp-use-alert.html[Respond to a detected ransomware alert].
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
+
+=== New role-based access control roles and permissions 
+
+With this release, you can assign new roles and permissions to users based on their responsibilities. This feature helps you manage user access to BlueXP ransomware protection.
+
+For details, refer to link://rp-reference-roles.html[Assign roles and permissions to users].
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[Assign roles and permissions to users].
+
+
