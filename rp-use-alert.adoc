@@ -28,6 +28,7 @@ The service provides information called _evidence_ about what caused the alert t
 * File extensions were created or changed
 * File creation occurred and increased by a listed percentage 
 * File deletion occurred and increased by a listed percentage 
+* When encryption is high, without file extension changes
 
 An alert is based on the following types of behavior: 
 
@@ -144,6 +145,7 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 * Expected creation rate of new files compared to detected rate
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
+* Impacted files and directories
 
 .Steps
 

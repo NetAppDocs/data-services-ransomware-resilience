@@ -89,6 +89,9 @@ TIP: This process might take a few minutes.
 image:screen-discover-workloads-select.png[Discover workloads screenshot]
 . Select the working environments where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments. 
 
+. Select *Discover*. 
+. Optionally, select *Download results (CSV)* to download the list of discovered workloads.
+
 . Select *Go to Dashboard*. 
 
 
