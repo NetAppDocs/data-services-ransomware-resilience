@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure backup destinations, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
+You can configure backup destinations, enable threat detection, conduct an attack readiness drill, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
 
 //You can also show future Preview features. 
@@ -20,10 +20,10 @@ You can configure backup destinations, enable threat detection, or configure con
 
 From the Settings page, you can do the following: 
 
-* Simulate a ransomware attack and respond to a ransomware alert. 
+* Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. 
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
 * Add a backup destination.
-* Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection.   
+* Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
 //* Show upcoming Technology Preview features.
 
 == Access the Settings page directly
@@ -33,32 +33,77 @@ You can easily access the Settings page from the Actions option near the top men
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 
-== Simulate a ransomware attack by scheduling a readiness drill
+== Simulate a ransomware attack by conducting a readiness drill
 
-Schedule a simulated ransomware attack on a newly created, sample workload. Then, investigate the attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 
 TIP: Your real workload data will not be impacted. 
 
-=== Configure a readiness drill schedule
+=== Configure a ransomware attack readiness drill
 
-. From the BlueXP ransomware protection Settings menu, select *Schedule readiness drill*.
+. From the BlueXP ransomware protection *Settings* menu, in the Readiness drill card, select *Configure*.
 +
-Or, from the Settings page, select *Ransomware readiness drill*.
+The Configure readiness drill page appears.
++
+image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 
+. Select the BlueXP Connector that you want to use for the readiness drill.
+. Select a test environment. 
+. Select a new test workload. 
 
-. Select a sample sandbox workload. 
-. Indicate whether to run the drill once or multiple times. 
-. Select the start date ad time.
-. Select how often you want to repeat it.
 . Select *Save*.
++ 
+A message appears that the readiness drill environment is configured. In that message, select *Start readiness drill* to start the drill.
+
+=== Start a readiness drill 
+
+After you configure the readiness drill, you can start the drill.
+
+. From the BlueXP ransomware protection Settings menu, select *Start readiness drill*.
++
+OR, from the Settings page, in the Readiness drill card, select *Start readiness drill*.
+
++
+. Do one of the following:
+
+* If you haven't already configured the readiness drill, a message appears that you first need to configure the readiness drill.
++
+image:screen-settings-alert-drill-needtoconfigure.png[Settings page showing the readiness drill message that you need to configure the readiness drill]
++
+** Select *Configure readiness drill test environment*. 
+** Continue with the instructions in the previous section to configure the drill test environment.
+
+* If you already configured the readiness drill, the Start readiness drill page appears: 
++
+image:screen-settings-alert-drill-start.png[Start readiness drill page]
+
+. Select *Start*.
+
+NOTE: After the drill has started, although you cannot edit the readiness drill configuration, you can stop it. 
+
+=== Stop a readiness drill 
+
+If you need to stop a readiness drill, you can do so at any time.
+
+. From the BlueXP ransomware protection Settings menu, select *Clean up readiness drill*.
++
+image:screen-alerts-readiness-clean-up.png[Settings page showing the readiness drill stop option]
+
+NOTE: You can also stop or clean up a readiness drill from the Settings page showing the Readiness drill card. 
+
+. Review the workload readiness drill information. 
+. Select *Clean up*. 
+
 
 === Respond to a readiness drill alert
 
 . From the BlueXP ransomware protection menu, select *Alerts*.
 +
-Or, from the menu, select the Notifications icon, select *View alert* next to the readiness drill alert.
+Or, from the menu, select the *Notifications* icon, select *View alert* next to the readiness drill alert.
 +
-In the Alert ID column on the Alerts page, "Readiness drill" appears next to the ID. 
+image:screen-notifications-alert-drill.png[Notifications section showing the readiness drill alert]
++
+The Alerts page appears. In the Alert ID column on the Alerts page, "Readiness drill" appears next to the ID. 
 +
 image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
 
@@ -72,16 +117,47 @@ Here are some things to look for:
 
 * Look at the Potential attack Type. If the Type indicates that a user is suspected of malicious activity, review the user name. 
 ** You might want to block the user by selecting *Block user*. 
-** You might also want to investigate the user more in Data Infrastructure Insights Workload security by selecting *Investigate in Workload security*. 
+** You might also want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
 
-* Look at the list of suspected files. Look at the extensions that might be causing the attack. Investigate further by selecting *View all* to see the full list of files.
 
-* Look at the list of suspected processes. 
+
+* Look at the file activity and suspected processes: 
 ** Look at the incoming detected data compared to the expected data. 
 ** Look at the creation rate of files that is detected compared to the expected rate.
 ** Look at the file renaming rate that is detected compared to the expected rate.
+** Look at the deletion rate compared to the expected rate.
 
-* Determine the impact and breadth of the attack.
+* Look at the list of impacted files. Look at the extensions that might be causing the attack. 
+* Determine the impact and breadth of the attack by reviewing the number of impacted files and directories.
+
+=== Restore the test workload
+
+* Return to the Alert details page. 
+* If the test workload should be restored, do the following: 
+** Select *Mark restore needed*. 
+** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
+* From the BlueXP ransomware protection menu, select *Recovery*. 
+* Select the test workload that you want to restore.
+* Select *Restore*.
+* In the Restore page, provide information for the restore: 
+** Select the source snapshot copy.
+** Select the destination volume.
+
+* In the restore Review page, select *Restore*.
++
+The Recovery page shows the status of the Readiness drill restore as "In progress".
+
+* After the restore is complete, the status of the workload changes to *Restored*.
+* Review the restored workload. 
+
+TIP: For details about the restore process, see link://rp-use-restore.html[Recover from a ransomware attack (after incidents are neutralized)].  
+
+=== Change the Alerts status
+
+After you have reviewed the readiness drill alert and restored the workload, you might want change the status of the alert.
+
+* Return to the Alert details page.
+* Select the alert again. 
 
 * Indicate the status by selecting *Edit* and change the status to one of the following: 
 
@@ -90,13 +166,6 @@ Here are some things to look for:
 IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
 ** In progress
 ** Resolved: The incident has been mitigated. 
-
-
-* Return to the Alert details page. 
-* If the workload should be restored, do the following: 
-** Select *Mark restore needed*. 
-** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
-** Follow the restore process details in link://rp-use-restore.html[Recover from a ransomware attack (after incidents are neutralized)].  
 
 === Review reports on the readiness drill
 
