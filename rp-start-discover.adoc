@@ -79,19 +79,21 @@ link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
 == Discover newly created workloads for previously selected working environments
 
-If you have already selected working environments for discovery, you can discover newly created workloads for those environments.
+If you have already selected working environments for discovery, you can discover newly created workloads for those environments from the Dashboard.
 
 .Steps
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
 . To identify the date of the last discovery, from the Dashboard, select the info icon next to *Discover workloads* link at the top right.
-. From the Dashboard, select *Discover workloads*. 
+
+. From the Dashboard, select the Refresh icon and in the tooltip that appears, select *Discover workloads*. 
 +
-You can view the previously selected working environments for each Connector and find new working environments. 
+You can view the previously selected working environments for each Connector and find new working environments. Any newly available Connectors are also displayed.
+
 . For each Connector, select *Find new working environments*. 
 +
-image:screen-discover-workloads-newly-discovered.png[Newly discovered working environments screenshot]
+image:screen-discover-workloads.png[Discover workloads screenshot]
 +
 TIP: This process might take a few minutes.
 +
