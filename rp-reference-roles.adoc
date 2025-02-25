@@ -12,23 +12,20 @@ summary: BlueXP ransomware protection uses role-based access control (RBAC) to g
 :imagesdir: ./media/
 
 [.lead]
-BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses the core BlueXP roles of Organization Admin and Viewer (non-Organization Admin).
+BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses the following roles that are specific to BlueXP ransomware protection (RPS). 
 
+* RPS Admin
+* RPS Viewer
 
-//The following roles are specific to BlueXP ransomware protection (RPS): 
+These roles are in addition to the BlueXP Admin role, which has access to all BlueXP features and actions. 
 
-//* RPS Admin
-//* RPS Viewer
-
-//These roles are in addition to the BlueXP Admin role, which has access to all BlueXP features and actions. 
-
-The following table indicates which actions that each role can perform. 
+The following table indicates that actions that each role can perform. 
 
 [cols=3*,options="header",cols="40,20a,20a",width="100%"]
 |===
 | Feature and action
-| BlueXP Organization Admin
-| Non-Admin (Viewer)
+| RPS Admin
+| RPS Viewer
 
 
 | Start free trial | Y | N 

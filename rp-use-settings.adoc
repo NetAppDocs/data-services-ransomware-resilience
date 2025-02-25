@@ -79,11 +79,11 @@ image:screen-settings-alert-drill-start.png[Start readiness drill page]
 
 . Select *Start*.
 
-NOTE: After the drill has started, although you cannot edit the readiness drill configuration, you can stop it. 
+NOTE: After the drill has started, you cannot edit the readiness drill configuration. You can instead stop it. 
 
 === Stop a readiness drill 
 
-If you need to stop a readiness drill, you can do so at any time.
+If you need to stop a readiness drill, you can do so at any time. When you stop the drill, BlueXP ransomware protection cleans up the test workload and removes the test files.
 
 . From the BlueXP ransomware protection Settings menu, select *Clean up readiness drill*.
 +
