@@ -10,7 +10,7 @@ For details, refer to link:rp-use-settings.html[Conduct a ransomware attack read
 
 With this release, you can rediscover workloads to identify new workloads that were added to the previously selected working environments.
 
-For details, refer to link:../rp-start-discover.html[Discover newly created workloads for previously selected working environments].
+For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments].
 
 //For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments].
 
@@ -18,7 +18,7 @@ For details, refer to link:../rp-start-discover.html[Discover newly created work
 
 With this release, you can view alerts when high encryption is detected on your workloads even without high file extension changes. This feature helps you identify workloads that are at risk of ransomware attacks.
 
-For details, refer to link://rp-use-alert.html[Respond to a detected ransomware alert].
+For details, refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
 //For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
 
@@ -26,7 +26,7 @@ For details, refer to link://rp-use-alert.html[Respond to a detected ransomware 
 
 With this release, you can assign new roles and permissions to users based on their responsibilities. This feature helps you manage user access to BlueXP ransomware protection.
 
-For details, refer to link://rp-reference-roles.html[Assign roles and permissions to users].
+For details, refer to link:rp-reference-roles.html[Assign roles and permissions to users].
 
 //For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[Assign roles and permissions to users].
 
