@@ -135,7 +135,7 @@ The Recovery page shows the status of the Readiness drill restore as "In progres
 
 TIP: For details about the restore process, see link://rp-use-restore.html[Recover from a ransomware attack (after incidents are neutralized)].  
 
-== Change the Alerts status
+== Change the Alerts status after the readiness drill
 
 After you have reviewed the readiness drill alert and restored the workload, you might want change the status of the alert.
 
@@ -159,10 +159,3 @@ image:screen-reports.png[Reports page showing the readiness drill report]
 
 . Select *Simulation analysis* and *Download* to download the readiness drill report.
 
-
-
-
-
-== See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
-
-Before you can view details of suspected anomalous user behavior in BlueXP ransomware protection, you need to configure the connection to the Data Infrastructure Insights Workload security system.
