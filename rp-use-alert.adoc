@@ -156,8 +156,8 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 image:screen-alerts-incidents3.png["Alert incidents page"]
 
 . Select an incident to review the details of the incident. 
-+
-image:screen-alerts-incidents-details-arp.png["Incident details page"] 
+//+
+//image:screen-alerts-incidents-details-arp.png["Incident details page"] 
 
 
 
@@ -190,8 +190,8 @@ image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload S
 . Research the alert or an incident in the alert: 
 .. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.
 .. Select an incident to review the details of the incident. 
-+
-image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
+//+
+//image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
 +
 Data Infrastructure Insights Workload Security opens in a new tab.
 +
