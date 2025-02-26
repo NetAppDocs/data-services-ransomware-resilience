@@ -31,7 +31,9 @@ sidebar:
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-        - title: Simulate an attack, configure backup destinations, and enable threat detection in the Settings option
+        - title: Simulate a ransomware attack
+          url: /rp-start-simulate.html  
+        - title: Configure backup destinations and enable threat detection in the Settings option
           url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html

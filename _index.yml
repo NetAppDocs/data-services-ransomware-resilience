@@ -20,7 +20,7 @@ indexpage:
     - title: Configure backup destinations and enable threat detection
       url: /rp-use-settings.html 
     - title: Simulate a ransomware attack
-      url: /rp-use-settings.html
+      url: /rp-start-simulate.html
     - title: FAQ
       url: /rp-start-faq.html 
   - title: Use BlueXP ransomware protection

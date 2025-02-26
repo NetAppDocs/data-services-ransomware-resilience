@@ -25,7 +25,7 @@ You can do the following:
 //* During workload discovery, you can enable automatic discovery of workloads per Connector. This feature lets you select the workloads that you want to protect. 
 * Discover newly created workloads for previously selected working environments. 
 
-
+* Select _new_ working environments. This feature helps you protect new workloads that are added to your environment.
 
 == Select workloads to discover and protect
 Within each Connector, select the working environments where you want to discover workloads. 
@@ -85,28 +85,25 @@ If you have already selected working environments for discovery, you can discove
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. To identify the date of the last discovery, from the Dashboard, select the info icon next to *Discover workloads* link at the top right.
+. To identify the date of the last discovery, from the Dashboard, look at the date and time stamp next to *Refresh* icon at the top right.
 
-. From the Dashboard, select the Refresh icon and in the tooltip that appears, select *Discover workloads*. 
-+
-You can view the previously selected working environments for each Connector and find new working environments. Any newly available Connectors are also displayed.
+. From the Dashboard, select the *Refresh icon* and in the tooltip that appears, select *Discover workloads*. 
 
-. For each Connector, select *Find new working environments*. 
-+
-image:screen-discover-workloads.png[Discover workloads screenshot]
-+
-TIP: This process might take a few minutes.
-+
-A list of working environments for the Connectors appears.
-+
-image:screen-discover-workloads-select-no-autodiscovery.png[Discover workloads screenshot]
-. Select the working environments where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments. 
 
-. Select *Discover*. 
-. Optionally, select *Download results (CSV)* to download the list of discovered workloads.
+== Discover newly created working environments
 
-. Select *Go to Dashboard*. 
+If you have already discovered working environments, you can discover any newly created working environments from the Dashboard.
 
+.Steps
+
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+
+
+. Do one of the following: 
+
+* From the Dashboard, select *"*Add new* and in the tooltip that appears, select *Add new working environments*. 
+
+* From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. From the drop-down menu, select *Settings*. In the Workload discovery card, select *Discover workloads*.
 
 //== Enable automatic discovery of workloads per Connector
 
