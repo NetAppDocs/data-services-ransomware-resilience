@@ -21,8 +21,6 @@ indexpage:
       url: /rp-use-settings.html 
     - title: Simulate a ransomware attack
       url: /rp-start-simulate.html
-    - title: FAQ
-      url: /rp-start-faq.html 
   - title: Use BlueXP ransomware protection
     links:
     - title: Use BlueXP ransomware protection overview 
