@@ -133,7 +133,7 @@ The Recovery page shows the status of the Readiness drill restore as "In progres
 * After the restore is complete, the status of the workload changes to *Restored*.
 * Review the restored workload. 
 
-TIP: For details about the restore process, see link://rp-use-restore.html[Recover from a ransomware attack (after incidents are neutralized)].  
+TIP: For details about the restore process, see link://rp-use-recover.html[Recover from a ransomware attack (after incidents are neutralized)].  
 
 == Change the Alerts status after the readiness drill
 

@@ -243,7 +243,7 @@ image:screen-alerts.png[Alerts page]
 
 . In the Alerts page, select the alert.
 +
-image:screen-alerts-incidents2.png[Alert incidents page]
+image:screen-alerts-incidents3.png[Alert incidents page]
 
 . Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
