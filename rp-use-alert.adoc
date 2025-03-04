@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential ransomware attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
+summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
 ---
 
 = Respond to a detected ransomware alert
@@ -117,7 +117,7 @@ image:screen-alerts.png["Alerts page"]
 
 
 . Continue: 
-** <<Detect anomalous user behavior>>.
+** <<Detect malicious activity and anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
 
