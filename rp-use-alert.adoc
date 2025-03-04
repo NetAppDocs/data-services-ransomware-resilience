@@ -117,7 +117,7 @@ image:screen-alerts.png["Alerts page"]
 
 
 . Continue: 
-** <<Detect anomalous user behavior>>.
+** <<Detect malicious activity and anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
 
