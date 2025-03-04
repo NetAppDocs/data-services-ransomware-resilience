@@ -115,8 +115,8 @@ Here are some things to look for:
 
 == Restore the test workload
 
-* Return to the Alert details page. 
-* If the test workload should be restored, do the following: 
+. Return to the Alert details page. 
+. If the test workload should be restored, do the following: 
 ** Select *Mark restore needed*. 
 ** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
 * From the BlueXP ransomware protection menu, select *Recovery*. 
@@ -126,23 +126,23 @@ Here are some things to look for:
 ** Select the source snapshot copy.
 ** Select the destination volume.
 
-* In the restore Review page, select *Restore*.
+. In the restore Review page, select *Restore*.
 +
 The Recovery page shows the status of the Readiness drill restore as "In progress".
++
+After the restore is complete, the status of the workload changes to *Restored*.
+. Review the restored workload. 
 
-* After the restore is complete, the status of the workload changes to *Restored*.
-* Review the restored workload. 
-
-TIP: For details about the restore process, see link://rp-use-recover.html[Recover from a ransomware attack (after incidents are neutralized)].  
+TIP: For details about the restore process, see link:rp-use-recover.html[Recover from a ransomware attack (after incidents are neutralized)].  
 
 == Change the Alerts status after the readiness drill
 
 After you have reviewed the readiness drill alert and restored the workload, you might want change the status of the alert.
 
-* Return to the Alert details page.
-* Select the alert again. 
+. Return to the Alert details page.
+. Select the alert again. 
 
-* Indicate the status by selecting *Edit* and change the status to one of the following: 
+. Indicate the status by selecting *Edit* and change the status to one of the following: 
 
 ** Dismissed: If you suspect that the activity is not a ransomware attack, change the status to Dismissed. 
 +
