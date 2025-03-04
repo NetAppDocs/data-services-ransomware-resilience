@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-reference-roles.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account
-summary: BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses the core BlueXP roles of Organization Admin and Viewer (non-Organization Admin).
+summary: BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP ransomware protection (RPS).
 
 ---
 
@@ -23,6 +23,8 @@ BlueXP uses the following types of roles:
 * *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions.
  
 * *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
+
+For details about platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
 
 The following table indicates that actions that each BlueXP ransomware protection role can perform. 
 
