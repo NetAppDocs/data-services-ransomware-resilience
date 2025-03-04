@@ -17,9 +17,14 @@ BlueXP ransomware protection uses role-based access control (RBAC) to govern the
 * RPS Admin
 * RPS Viewer
 
-These roles are in addition to the BlueXP Admin role, which has access to all BlueXP features and actions. 
 
-The following table indicates that actions that each role can perform. 
+BlueXP uses the following types of roles: 
+ 
+* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions.
+ 
+* *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
+
+The following table indicates that actions that each BlueXP ransomware protection role can perform. 
 
 [cols=3*,options="header",cols="40,20a,20a",width="100%"]
 |===
