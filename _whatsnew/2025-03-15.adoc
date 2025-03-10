@@ -1,34 +1,40 @@
 === Simulate an attack and respond
 
-With this release, simulate a ransomware attack to test your response to a ransomware alert. This feature helps you understand how to respond to a simulated ransomware alert and recover your data in case of a real ransomware attack.
+With this release, simulate a ransomware attack to test your response to a ransomware alert. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. 
 
 For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
-=== Discover new workloads 
+=== Enhancements to discovery process
 
-With this release, you can discover newly created workloads that were added to the previously selected working environments. 
+This release includes enhancements to the selective discovery and rediscovery processes: 
 
-You can also select _new_ working environments in this release. This feature helps you protect new workloads that are added to your environment.
+* With this release, you can discover newly created workloads that were added to the previously selected working environments. 
 
-For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments].
+* You can also select _new_ working environments in this release. This feature helps you protect new workloads that are added to your environment.
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments].
+* If you want to choose all discovered workloads, you can do so by using the *Select all* option. 
+
+* You can perform these discovery processes during the discovery process initially or within the Settings option. 
+
+For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure fetaures with the Settings option].
+
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure fetaures with the Settings option].
 
 === Alerts raised when high encryption is detected
 
-With this release, you can view alerts when high encryption is detected on your workloads even without high file extension changes. This feature helps you identify workloads that are at risk of ransomware attacks.
+With this release, you can view alerts when high encryption is detected on your workloads even without high file extension changes. This feature, which uses ONTAP Autonomous Ransomware Protection (ARP) AI, helps you identify workloads that are at risk of ransomware attacks. Use this feature and download the entire list of impacted files with or without extension changes. 
 
 For details, refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
 
-=== New role-based access control roles and permissions 
+//=== New role-based access control roles and permissions 
 
-With this release, you can assign new roles and permissions to users based on their responsibilities. This feature helps you manage user access to BlueXP ransomware protection.
+//With this release, you can assign new roles and permissions to users based on their responsibilities. This feature helps you manage user access to BlueXP ransomware protection.
 
-For details, refer to link:rp-reference-roles.html[Assign roles and permissions to users].
+//For details, refer to link:rp-reference-roles.html[Assign roles and permissions to users].
 
 //For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[Assign roles and permissions to users].
 

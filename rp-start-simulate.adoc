@@ -11,7 +11,7 @@ summary: Conduct a ransomware readiness drill by simulating a ransomware attack 
 :imagesdir: ./media/
 
 [.lead]
-Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. You can run a ransomware readiness drill multiple times. 
 
 TIP: Your real workload data will not be impacted. 
 
@@ -31,12 +31,14 @@ The Configure readiness drill page appears.
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 
 . Select the BlueXP Connector that you want to use for the readiness drill.
-. Select a test environment. 
-. Select a new test workload. 
+. Select a test working environment. 
+. Select a new test workload to be created. 
 
 . Select *Save*.
 + 
 A message appears that the readiness drill environment is configured. In that message, select *Start readiness drill* to start the drill.
+
+TIP: You can edit the readiness drill configuration later using the Settings page. 
 
 == Start a readiness drill 
 
@@ -68,9 +70,15 @@ NOTE: After the drill has started, you cannot edit the readiness drill configura
 
 If you need to stop a readiness drill, you can do so at any time. When you stop the drill, BlueXP ransomware protection cleans up the test workload and removes the test files.
 
-. From the BlueXP ransomware protection Settings menu, select *Clean up readiness drill*.
+.Steps
+
+. Do one of the following: 
+
+** From the BlueXP ransomware protection Settings menu, hover over the Edit option in the Readiness drill tile and select *Clean up readiness drill*.
+
+** From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right and select *Clean up readiness drill*.
 +
-image:screen-alerts-readiness-clean-up.png[Settings page showing the readiness drill stop option]
+image:screen-settings-alert-drill-cleanup.png[Settings page showing the readiness drill stop option]
 
 NOTE: You can also stop or clean up a readiness drill from the Settings page showing the Readiness drill card. 
 
@@ -80,9 +88,11 @@ NOTE: You can also stop or clean up a readiness drill from the Settings page sho
 
 == Respond to a readiness drill alert
 
-. From the BlueXP ransomware protection menu, select *Alerts*.
+. Do one of the following: 
+
+* From the BlueXP ransomware protection menu, select *Alerts*.
 +
-Or, from the menu, select the *Notifications* icon, select *View alert* next to the readiness drill alert.
+* Or, from the menu, select the *Notifications* icon, select *View alert* next to the readiness drill alert.
 +
 image:screen-notifications-alert-drill.png[Notifications section showing the readiness drill alert]
 +
@@ -157,5 +167,5 @@ IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismi
 +
 image:screen-reports.png[Reports page showing the readiness drill report]
 
-. Select *Simulation analysis* and *Download* to download the readiness drill report.
+. Select *Readiness drills* and *Download* to download the readiness drill report.
 
