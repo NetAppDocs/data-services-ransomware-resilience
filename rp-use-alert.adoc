@@ -127,13 +127,13 @@ image:screen-alerts.png["Alerts page"]
 Looking at the Alerts tab, you can identify whether there is malicious activity. The details that appear depend on how the alert was triggered:
 
 * Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
-* Triggered by Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
+* Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
 +
-To enable Workload Security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload Security connection* option.
+To enable Workload security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload security connection* option.
 +
-For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^].
+For an overview of Data Infrastucture Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
 
-TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Workload security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
