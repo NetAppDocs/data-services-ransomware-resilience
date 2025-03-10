@@ -44,11 +44,15 @@ TIP: You can edit the readiness drill configuration later using the Settings pag
 
 After you configure the readiness drill, you can start the drill.
 
-. From the BlueXP ransomware protection Settings menu, select *Start readiness drill*.
-+
-OR, from the Settings page, in the Readiness drill card, select *Start readiness drill*.
+.Steps 
 
+. Do one of the following: 
+
+* From the BlueXP ransomware protection Settings menu, select *Start readiness drill*.
 +
+* OR, from the Settings page, in the Readiness drill card, select *Start readiness drill*.
+
+
 . Do one of the following:
 
 * If you haven't already configured the readiness drill, a message appears that you first need to configure the readiness drill.
@@ -56,7 +60,7 @@ OR, from the Settings page, in the Readiness drill card, select *Start readiness
 image:screen-settings-alert-drill-needtoconfigure.png[Settings page showing the readiness drill message that you need to configure the readiness drill]
 +
 ** Select *Configure readiness drill test environment*. 
-** Continue with the instructions in the previous section to configure the drill test environment.
+** Continue with the instructions in the previous section to configure the drill test environment in the Settings option.
 
 * If you already configured the readiness drill, the Start readiness drill page appears: 
 +
@@ -87,7 +91,10 @@ NOTE: You can also stop or clean up a readiness drill from the Settings page sho
 
 
 == Respond to a readiness drill alert
+Test your readiness by responding to a readiness drill alert.
 
+
+.Steps
 . Do one of the following: 
 
 * From the BlueXP ransomware protection menu, select *Alerts*.
@@ -125,6 +132,9 @@ Here are some things to look for:
 
 == Restore the test workload
 
+After you have reviewed the readiness drill alert, you might want to restore the test workload. 
+
+.Steps
 . Return to the Alert details page. 
 . If the test workload should be restored, do the following: 
 ** Select *Mark restore needed*. 
@@ -149,6 +159,7 @@ TIP: For details about the restore process, see link:rp-use-recover.html[Recover
 
 After you have reviewed the readiness drill alert and restored the workload, you might want change the status of the alert.
 
+.Steps
 . Return to the Alert details page.
 . Select the alert again. 
 
@@ -161,8 +172,9 @@ IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismi
 ** Resolved: The incident has been mitigated. 
 
 == Review reports on the readiness drill
+After the readiness drill is complete, you might want to review and save a report on the drill.
 
-
+.Steps
 . From the BlueXP ransomware protection menu, select *Reports*.
 +
 image:screen-reports.png[Reports page showing the readiness drill report]
