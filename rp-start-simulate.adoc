@@ -79,7 +79,7 @@ If you need to stop a readiness drill, you can do so at any time. When you stop 
 ** From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right and select *Clean up readiness drill*.
 +
 image:screen-settings-alert-drill-cleanup.png[Settings page showing the readiness drill stop option]
-
++
 NOTE: You can also stop or clean up a readiness drill from the Settings page showing the Readiness drill card. 
 
 . Review the workload readiness drill information. 

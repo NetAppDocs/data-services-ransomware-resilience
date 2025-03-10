@@ -2,7 +2,7 @@
 
 With this release, simulate a ransomware attack to test your response to a ransomware alert. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. 
 
-For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
+//For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
 For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
@@ -18,7 +18,7 @@ This release includes enhancements to the selective discovery and rediscovery pr
 
 * You can perform these discovery processes during the discovery process initially or within the Settings option. 
 
-For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure fetaures with the Settings option].
+//For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure fetaures with the Settings option].
 
 For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure fetaures with the Settings option].
 
@@ -26,7 +26,7 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection
 
 With this release, you can view alerts when high encryption is detected on your workloads even without high file extension changes. This feature, which uses ONTAP Autonomous Ransomware Protection (ARP) AI, helps you identify workloads that are at risk of ransomware attacks. Use this feature and download the entire list of impacted files with or without extension changes. 
 
-For details, refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
+//For details, refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
 For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
 

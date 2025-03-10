@@ -29,9 +29,12 @@ link:rp-start-prerequisites.html[Ensure your environment meets these requirement
 [role="quick-margin-list"]
 * link:rp-start-setup.html[Prepare NetApp StorageGRID,Amazon Web Services, or Microsoft Azure as a backup destination].
 * link:rp-start-setup.html[Configure a Connector in BlueXP].
+* link:rp-start-licenses.html[Set up licensing].
+* link:rp-start-discover.html[Discover workloads in BlueXP].
 * link:rp-start-setup.html[Configure backup destinations].
 * link:rp-start-setup.html[Optionally enable threat detection].
-* link:rp-start-discover.html[Discover workloads in BlueXP].
+* link:rp-start-simulate.html[Optionally, conduct a ransomware attack readiness drill].
+
 
 
 

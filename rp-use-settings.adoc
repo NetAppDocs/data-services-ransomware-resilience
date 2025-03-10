@@ -21,8 +21,10 @@ You can configure backup destinations, enable threat detection, conduct an attac
 From the Settings page, you can do the following: 
 
 * Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
+
+* Configure workload discovery.
+
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
-* Configure workload discovery 
 
 * Add a backup destination.
 * Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
