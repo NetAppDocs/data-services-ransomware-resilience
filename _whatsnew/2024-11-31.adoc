@@ -1,4 +1,3 @@
-
 === Detect anomalous user behavior using Data Infrastructure Insights Storage Workload Security
 
 With this release, you can use Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior in your storage workloads. This feature helps you identify potential security threats and block potentially malicious users to protect your data.

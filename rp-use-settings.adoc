@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure a backup destination, enable threat detection, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. Enabling threat detection automatically sends data to your security and event management system (SIEM) for threat analysis. 
+You can configure backup destinations, enable threat detection, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
 
 //You can also show future Preview features. 
@@ -20,9 +20,14 @@ You can configure a backup destination, enable threat detection, or configure co
 
 From the Settings page, you can do the following: 
 
+* Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
+
+* Configure workload discovery.
+
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
+
 * Add a backup destination.
-* Connect your security and event management system (SIEM) for threat analysis and detection.   
+* Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
 //* Show upcoming Technology Preview features.
 
 == Access the Settings page directly
@@ -32,7 +37,30 @@ You can easily access the Settings page from the Actions option near the top men
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 . From the drop-down menu, select *Settings*.
 
-== Connect to Data Infrastructure Insights Workload security to see suspected anomalous user behavior 
+== Simulate a ransomware attack
+
+Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. You can run a ransomware readiness drill multiple times. 
+
+For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
+
+== Configure workload discovery 
+
+You can configure workload discovery to automatically discover new workloads in your environment.
+
+. In the Settings page, locate the *Workload discovery* tile.
+. In the *Workload discovery* tile, select *Discover workloads*.
++
+This page shows BlueXP Connectors with working environments that were not selected earlier, newly available BlueXP Connectors, and newly available working environments. This page doesn't show those working environments that were previously selected. 
+
+. Select the Connector where you want to discover workloads.
+. Review the list of working environments.
+. Check the working environments where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments.
+. Do this for other working environments as needed.
+
+. Select *Discover* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector.
+
+
+== See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
 
 Before you can view details of suspected anomalous user behavior in BlueXP ransomware protection, you need to configure the connection to the Data Infrastructure Insights Workload security system.
 
@@ -50,7 +78,7 @@ image:../media/screen-alerts-ci-api-access-token.png[API Access page in Data Inf
 
 === Connect to Data Infrastructure Insights Workload security
 
-. From the BlueXP ransomware protection Settings menu, select *Workload security connection*.
+. From the BlueXP ransomware protection Settings menu, locate the *Workload security connection* tile.
 . Select *Connect*.
 . Enter the URL for the Data Infrastructure Workload security UI.
 . Enter the API access token that provides access to Workload security. 
