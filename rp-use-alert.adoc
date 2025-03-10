@@ -131,7 +131,7 @@ Looking at the Alerts tab, you can identify whether there is malicious activity.
 +
 To enable Workload Security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload Security connection* option.
 +
-For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^].
 
 TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
@@ -161,16 +161,16 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 
 
-=== View anomalous user behavior in Data Infrastructure Insights Workload Security
+=== View anomalous user behavior in Data Infrastructure Insights Workload security
 
-When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload Security. 
+When Data Infrastructure Insights Workload security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
 
 TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
 
 .Before you begin
-This option requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
+This option requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. 
 
-To enable Workload Security in BlueXP ransomware protection, do the following: 
+To enable Workload security in BlueXP ransomware protection, do the following: 
 
 . Go to the *Settings* page.
 . Select the *Workload Security connection* option.
@@ -188,7 +188,7 @@ image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload S
 . To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. 
 
 . Research the alert or an incident in the alert: 
-.. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.
+.. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
 .. Select an incident to review the details of the incident. 
 //+
 //image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 

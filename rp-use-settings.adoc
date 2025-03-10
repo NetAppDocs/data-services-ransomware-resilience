@@ -78,7 +78,7 @@ image:../media/screen-alerts-ci-api-access-token.png[API Access page in Data Inf
 
 === Connect to Data Infrastructure Insights Workload security
 
-. From the BlueXP ransomware protection Settings menu, select *Workload security connection*.
+. From the BlueXP ransomware protection Settings menu, locate the *Workload security connection* tile.
 . Select *Connect*.
 . Enter the URL for the Data Infrastructure Workload security UI.
 . Enter the API access token that provides access to Workload security. 
