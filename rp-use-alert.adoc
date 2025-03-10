@@ -28,6 +28,7 @@ The service provides information called _evidence_ about what caused the alert t
 * File extensions were created or changed
 * File creation occurred and increased by a listed percentage 
 * File deletion occurred and increased by a listed percentage 
+* When encryption is high, without file extension changes
 
 An alert is based on the following types of behavior: 
 
@@ -126,13 +127,13 @@ image:screen-alerts.png["Alerts page"]
 Looking at the Alerts tab, you can identify whether there is malicious activity. The details that appear depend on how the alert was triggered:
 
 * Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
-* Triggered by Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
+* Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
 +
-To enable Workload Security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload Security connection* option.
+To enable Workload security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload security connection* option.
 +
-For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+For an overview of Data Infrastucture Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
 
-TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Workload security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
@@ -144,6 +145,7 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 * Expected creation rate of new files compared to detected rate
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
+* Impacted files and directories
 
 .Steps
 
@@ -154,21 +156,21 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 image:screen-alerts-incidents3.png["Alert incidents page"]
 
 . Select an incident to review the details of the incident. 
-+
-image:screen-alerts-incidents-details-arp.png["Incident details page"] 
+//+
+//image:screen-alerts-incidents-details-arp.png["Incident details page"] 
 
 
 
-=== View anomalous user behavior in Data Infrastructure Insights Workload Security
+=== View anomalous user behavior in Data Infrastructure Insights Workload security
 
-When Data Infrastructure Insights Workload Security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload Security. 
+When Data Infrastructure Insights Workload security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
 
 TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
 
 .Before you begin
-This option requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. 
+This option requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. 
 
-To enable Workload Security in BlueXP ransomware protection, do the following: 
+To enable Workload security in BlueXP ransomware protection, do the following: 
 
 . Go to the *Settings* page.
 . Select the *Workload Security connection* option.
@@ -186,10 +188,10 @@ image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload S
 . To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. 
 
 . Research the alert or an incident in the alert: 
-.. To research the alert further in Data Infrastructure Insights Workload Security, select the *Investigate in Workload Security* link.
+.. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
 .. Select an incident to review the details of the incident. 
-+
-image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
+//+
+//image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
 +
 Data Infrastructure Insights Workload Security opens in a new tab.
 +
@@ -241,7 +243,7 @@ image:screen-alerts.png[Alerts page]
 
 . In the Alerts page, select the alert.
 +
-image:screen-alerts-incidents2.png[Alert incidents page]
+image:screen-alerts-incidents3.png[Alert incidents page]
 
 . Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
