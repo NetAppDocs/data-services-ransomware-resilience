@@ -14,7 +14,6 @@ This release includes enhancements to the selective discovery and rediscovery pr
 
 * You can also select _new_ working environments in this release. This feature helps you protect new workloads that are added to your environment.
 
-* If you want to choose all discovered workloads, you can do so by using the *Select all* option. 
 
 * You can perform these discovery processes during the discovery process initially or within the Settings option. 
 
