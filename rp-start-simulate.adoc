@@ -68,7 +68,7 @@ image:screen-settings-alert-drill-needtoconfigure.png[Settings page showing the 
 
 
 
-NOTE: After the drill has started, you cannot edit the readiness drill configuration. You can instead stop it. 
+NOTE: After the drill has started, you cannot edit the readiness drill configuration. You can reset it to start again. 
 
 //== Clean up and stop a readiness drill 
 
@@ -174,13 +174,13 @@ IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismi
 ** In progress
 ** Resolved: The incident has been mitigated. 
 
-== Review reports on the readiness drill
-After the readiness drill is complete, you might want to review and save a report on the drill.
+//== Review reports on the readiness drill
+//After the readiness drill is complete, you might want to review and save a report on the drill.
 
-.Steps
-. From the BlueXP ransomware protection menu, select *Reports*.
-+
-image:screen-reports.png[Reports page showing the readiness drill report]
+//.Steps
+//. From the BlueXP ransomware protection menu, select *Reports*.
+//+
+//image:screen-reports.png[Reports page showing the readiness drill report]
 
-. Select *Readiness drills* and *Download* to download the readiness drill report.
+//. Select *Readiness drills* and *Download* to download the readiness drill report.
 
