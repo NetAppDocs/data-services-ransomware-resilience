@@ -22,7 +22,7 @@ Before you conduct a simulation, you need to configure a drill by using the Sett
 .Steps
 
 . From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-. From the drop-down menu, select *Settings*.
+. From the drop-down menu, select *Readiness drill* or *Settings*.
 
 . In the Readiness drill card on the Settings page, select *Configure*.
 +
@@ -43,6 +43,11 @@ TIP: You can edit the readiness drill configuration later using the Settings pag
 == Start a readiness drill 
 
 After you configure the readiness drill, you can start the drill.
+
+When you start the readiness drill, BlueXP ransomware protection skips the learning mode and starts the drill in active mode. The detection status of the workload is Active.
+
+TIP: A workload can have a ransomware detection *Learning mode* status that indicates a ransomware detection policy was recently assigned to the workload and the service is scanning workloads. A detection status of *Active* indicates that a ransomware detection protection policy is assigned.
+
 
 .Steps 
 
@@ -100,11 +105,13 @@ Test your readiness by responding to a readiness drill alert.
 //image:screen-notifications-alert-drill.png[Notifications section showing the readiness drill alert]
 +
 The Alerts page appears. In the Alert ID column, "Readiness drill" appears next to the ID. 
-
-
-. Select the alert with the "Readiness drill" indication. A list of incident alerts appears.  
 +
 image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
+
+
+. Select the alert with the "Readiness drill" indication. A list of incident alerts appears on the Alerts details page.  
++
+image:screen-alerts-readiness-details.png[Alerts details page showing the readiness drill alert]
 . Review the alert incidents. 
 
 . Select an alert incident. 
@@ -112,14 +119,13 @@ image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
 image:screen-alerts-readiness-incidents2.png[Incident page showing the readiness drill alert]
 
 
-+
 Here are some things to look for:
 
-* Look at the Potential attack Type. If the Type indicates that a user is suspected of malicious activity, review the user name. 
+* Look at the Potential attack Type. 
++
+If the Type indicates that a user is suspected of malicious activity, review the user name. You might want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
+
 //** You might want to block the user by selecting *Block user*. 
-** You might also want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
-
-
 
 * Look at the file activity and suspected processes: 
 ** Look at the incoming detected data compared to the expected data. 
@@ -163,21 +169,24 @@ After you have reviewed the readiness drill alert and restored the workload, you
 . Return to the Alert details page.
 . Select the alert again. 
 
-. Indicate the status by selecting *Edit* and change the status to one of the following: 
+. Indicate the status by selecting *Edit status* and change the status to one of the following: 
 
 ** Dismissed: If you suspect that the activity is not a ransomware attack, change the status to Dismissed. 
 +
 IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
-** In progress
+
 ** Resolved: The incident has been mitigated. 
 
-//== Review reports on the readiness drill
-//After the readiness drill is complete, you might want to review and save a report on the drill.
+== Download the readiness drill report
 
-//.Steps
-//. From the BlueXP ransomware protection menu, select *Reports*.
+After the readiness drill is complete, you might want to review and save a CSV report on the drill.
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Alerts*.
 //+
 //image:screen-reports.png[Reports page showing the readiness drill report]
 
-//. Select *Readiness drills* and *Download* to download the readiness drill report.
+. Select the alert and select the *Download* arrow to download a CSV file. 
+
+//*Readiness drills* and *Download* to download the readiness drill report.
 
