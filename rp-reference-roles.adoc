@@ -37,19 +37,27 @@ The following table indicates that actions that each BlueXP ransomware protectio
 | Ransomware protection viewer
 
 | View dashboard and all tabs | Yes | Yes
+| On dashboard, update recommendation status | Yes | No
 | Start free trial | Yes | No 
 | Initiate discovery of workloads | Yes | No
+| Initiate rediscovery of workloads | Yes | No
+
 3+| *On the Protect tab*: 
-| Add, modify, or delete policies | Yes | No
+| Add, modify, or delete protection plans | Yes | No
 | Protect workloads | Yes | No
-| Identify sensitive data| Yes | No 
-| Edit workload protection | Yes | No
-| View workload details | Yes | Yes 
+| Identify exposure to sensitive data| Yes | No 
+| List protection plans and details | Yes | Yes
+| List protection groups    | Yes | Yes
+| View protection group details | Yes | Yes
+| Create, edit or delete protection group | Yes | No 
 | Download data| Yes | Yes 
 3+| *On the Alerts tab*: 
-| View alert details | Yes | Yes 
+| View alerts and alert details | Yes | Yes 
 | Edit incident status | Yes | No
+| Mark alert for recovery | Yes | No
 | View incident details | Yes | Yes
+| Dismiss or resolve incicents | Yes | No
+| Block user | Yes | No
 | Get full list of impacted files| Yes | No 
 | Download alerts data | Yes | Yes 
 3+| *On the Recover tab*: 
@@ -58,8 +66,21 @@ The following table indicates that actions that each BlueXP ransomware protectio
 | Download recovery data | Yes | Yes
 | Download reports | Yes | Yes
 3+| *On the Settings tab*:
-| Add or modify backup targets| Yes | No 
+| Add or modify backup destinations| Yes | No 
+| List backup destinations| Yes | Yes
+| View connected SIEM targets | Yes | Yes
 | Add or modify SIEM targets | Yes | No
+| Connect workload security targets | Yes | No
+| View workload security connection status  | Yes | Yes
+| Disconnect workload security targets | Yes | No
+| Configure readiness drill | Yes | No
+| Start readiness drill | Yes | No
+| Reset readiness drill | Yes | No
+| Edit readiness drill  | Yes | No
+| Review readiness drill status | Yes | Yes
+| Update discovery configuration | Yes | No
+| View discovery configuration | Yes | Yes
+
 3+| *On the Reports tab*:
 | Download reports | Yes | Yes
 
