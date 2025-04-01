@@ -17,9 +17,9 @@ This release includes enhancements to the selective discovery and rediscovery pr
 
 * You can perform these discovery processes during the discovery process initially or within the Settings option. 
 
-//For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure fetaures with the Settings option].
+//For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure features with the Settings option].
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure fetaures with the Settings option].
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure features with the Settings option].
 
 === Alerts raised when high encryption is detected
 

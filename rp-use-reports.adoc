@@ -42,5 +42,5 @@ image:screen-dashboard.png[Dashboard page]
 
 . If you selected the *Reports* option, select one of the preconfigured CSV file names and select *Download (CSV)* or *Download (JSON)*. 
 +
-image:screen-reports.png[Reports page]
+image:screen-reports0.png[Reports page]
 

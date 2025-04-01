@@ -32,7 +32,7 @@ image:screen-landing.png[Landing page screenshot for BlueXP ransomware protectio
 + 
 Otherwise, the BlueXP ransomware protection Dashboard appears.
 +
-image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+image:screen-dashboard2.png[BlueXP ransomware protection Dashboard]
 
 +
 NOTE: If you don't have a BlueXP Connector or it's not the one for this service, you might need to contact NetApp Support. 
