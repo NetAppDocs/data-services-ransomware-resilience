@@ -43,6 +43,7 @@ image:screen-dashboard.png[Dashboard page]
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
 . If you selected the *Reports* option, select one of the preconfigured file names and select *Download*. 
+
 +
-image:screen-reports2.png[Reports page]
+image:screen-reports.png[Reports page showing the readiness drill report]
 
