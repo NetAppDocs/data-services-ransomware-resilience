@@ -163,6 +163,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 * Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
+* Amazon FSx for NetApp ONTAP 
 
 NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
