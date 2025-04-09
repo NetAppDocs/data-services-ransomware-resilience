@@ -1,11 +1,13 @@
 === Support for Amazon FSx for NetApp ONTAP 
 
-This release supports Amazon FSx for NetApp ONTAP. This feature helps you protect your FSx for ONTAP workloads with BlueXP ransomware protection.
+This release supports Amazon FSx for NetApp ONTAP. This feature helps you protect your FSx for ONTAP workloads with BlueXP ransomware protection. 
+
+FSx for ONTAP is a fully managed service that provides the power of NetApp ONTAP storage in the cloud. It provides the same features, performance, and administrative capabilities that you use on-premises with the agility and scalability of a native AWS service.  
 
 The following changes are made to the BlueXP ransomware protection workflow:
 
-* Discovery will include FSx for ONTAP workloads.
-* The Protection tab shows FSx for ONTAP workloads. You set backup policies in AWS. You do not set backup policies for FSx for ONTAP using BlueXP ransomware protection; they appear in BlueXP ransomware protection and remain unchanged from AWS. 
+* Discovery includes workloads in FSx for ONTAP working environments.
+* The Protection tab shows workloads in FSx for ONTAP environments. You set backup policies in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
 * Alert incidents show the new FSx for ONTAP working environment. 
 
 //For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
