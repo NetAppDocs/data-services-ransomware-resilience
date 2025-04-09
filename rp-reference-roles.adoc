@@ -22,13 +22,15 @@ The service uses the following roles that are specific to BlueXP ransomware prot
 
 The BlueXP platform for all BlueXP services uses the following types of roles: 
  
-* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions.
+* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions. 
++ 
+TIP: For discovery in BlueXP ransomware protection, you must have the *Organization admin*  role in addition to the *Ransomware protection admin* role. 
  
 * *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
 
 For details about platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
 
-The following table indicates that actions that each BlueXP ransomware protection role can perform. 
+The following table indicates the actions that each BlueXP ransomware protection role can perform. 
 
 [cols=3*,options="header",cols="40,20a,20a",width="100%"]
 |===

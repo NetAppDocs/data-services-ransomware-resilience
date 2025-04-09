@@ -77,7 +77,7 @@ NOTE: With the October 2024 release, new deployments of BlueXP ransomware protec
 If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only.
 
 
-After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by BlueXP ransomware protection), and at least one snapshot or backup policy, BlueXP ransomware protection classifies it “Protected” and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy (ARP) even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
+After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by BlueXP ransomware protection), and at least one snapshot or backup policy, BlueXP ransomware protection classifies it “Protected” and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
 
 Protected workloads count against purchased capacity or the subscription after the 90-day trial period ends. BlueXP ransomware protection is charged on a per GB basis for the data associated with protected workloads before efficiencies. 
 
