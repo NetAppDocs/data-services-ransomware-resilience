@@ -17,7 +17,7 @@ For details about permissions, refer to link:rp-reference-roles.html[Role-based 
 
 //For details about permissions, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[BlueXP ransomware protection role-based access to features].
 
-
+///=== Payment improvements
 
 
 
