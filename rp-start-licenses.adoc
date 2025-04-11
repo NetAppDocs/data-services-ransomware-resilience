@@ -72,6 +72,8 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 
 After the free trial ends, you can either subscribe through one of the Marketplaces or purchase a license from NetApp.  
 
+If you already have a PAYGO subscription, the license is automatically switched to the subscription after the free trial ends.
+
 <<Subscribe through AWS Marketplace>>
 <<Subscribe through Microsoft Azure Marketplace>>
 <<Subscribe through Google Cloud Marketplace>>
