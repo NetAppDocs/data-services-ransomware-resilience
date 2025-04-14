@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: rp-reference-limitations.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account
+summary: BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP ransomware protection (RPS).
+
+---
+
+= Known limitations of BlueXP ransomware protection
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+
+== Readiness drill Reset option issue
+
+If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, BlueXP ransomware protection notifies you with an alert. If you recovery the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
