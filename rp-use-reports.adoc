@@ -11,9 +11,9 @@ summary: Using BlueXP ransomware protection, you can download reports that show 
 :imagesdir: ./media/
 
 [.lead]
-You can export protection data and download the CSV or JSON files that show details of protection, alerts, and recovery. 
+You can export protection data and download the CSV or JSON files that show details of attack readiness drills, protection, alerts, and recovery. 
 
-Before you download the CSV or JSON files, you should refresh the data, which also refreshes data that will appear in the files. 
+Before you download the files, you should refresh the data, which also refreshes data that will appear in the files. 
 
 You can download files from any of the main menu options: 
 
@@ -22,10 +22,12 @@ You can download files from any of the main menu options:
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 * *Reports*: You can export data from any of the pages and download the files. 
++
+NOTE: You can download readiness drill reports only from the *Reports* page.
 
-If you download CSV files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
+If you download CSV or JSON files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
-The CSV files include data for all workloads on all BlueXP working environments. 
+The CSV or JSON files include data for all workloads on all BlueXP working environments. 
 
 .Steps
 
@@ -40,7 +42,9 @@ image:screen-dashboard.png[Dashboard page]
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured CSV file names and select *Download (CSV)* or *Download (JSON)*. 
+. If you selected the *Reports* option, select one of the preconfigured file names and select *Download*. 
+
 +
-image:screen-reports0.png[Reports page]
+image:screen-reports.png[Reports page showing the readiness drill report]
+
 
