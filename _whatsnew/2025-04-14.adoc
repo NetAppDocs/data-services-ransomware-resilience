@@ -8,7 +8,7 @@ For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack re
 
 === New role-based access control roles and permissions
 
-Previously, you could assign roles and permissions to users based on their responsibilities, which helps you manage user access to BlueXP ransomware protection. With this release, there are two new roles and updated permissions. The new roles are:
+Previously, you could assign roles and permissions to users based on their responsibilities, which helps you manage user access to BlueXP ransomware protection. With this release, there are two new roles specific to BlueXP ransomware protection with updated permissions. The new roles are:
 
 * Ransomware protection admin
 * Ransomware protection viewer
@@ -21,5 +21,7 @@ For details about permissions, refer to link:rp-reference-roles.html[Role-based 
 
 This release includes several improvements to the payment process. 
 
+For details, refer to link:rp-start-licenses.html[Set up licensing and payment options]. 
 
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Set up licensing and payment options].
 
