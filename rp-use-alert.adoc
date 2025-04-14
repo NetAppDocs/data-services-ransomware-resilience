@@ -26,11 +26,11 @@ Each alert could have multiple incidents on different volumes with different sta
 The service provides information called _evidence_ about what caused the alert to be issued, such as the following: 
 
 * File extensions were created or changed
-* File creation occurred and increased by a listed percentage 
-* File deletion occurred and increased by a listed percentage 
+* File creation with a comparison of detected versus expected rates 
+* File deletion with a comparison of detected versus expected rates 
 * When encryption is high, without file extension changes
 
-An alert is based on the following types of behavior: 
+An alert is classified as one of the following: 
 
 * *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
 * *Warning*: A warning occurs based on the following behaviors: 
