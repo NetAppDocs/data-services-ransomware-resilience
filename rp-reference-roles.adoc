@@ -28,7 +28,10 @@ TIP: For discovery in BlueXP ransomware protection, you must have the *Organizat
  
 * *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
 
-For details about platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
+Other BlueXP platform roles are treated as viewers in BlueXP ransomware protection. For example, the *Organization viewer* role allows you to view the protection plans, but does not allow you to perform any actions in BlueXP ransomware protection.
+
+
+For details about all BlueXP platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
 
 The following table indicates the actions that each BlueXP ransomware protection role can perform. 
 

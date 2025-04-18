@@ -263,7 +263,7 @@ image:screen-alerts-incidents-impacted-files.png[list of impacted files for a sp
 
 . *Restore point*: Select the down arrow next to *Restore point* to see details. Select the restore point that you want to use to restore the data. 
 +
-NOTE: The Reason column in the Restore points pane shows the reason for the Snapshot or backup as either "Scheduled" or "Automated response to ransomware incident." 
+NOTE: The Reason column in the Restore points pane shows the reason for the snapshot or backup as either "Scheduled" or "Automated response to ransomware incident." 
 
 . *Files*: 
 ** *Automatically select files*: Let BlueXP ransomware protection select the files to be restored.
