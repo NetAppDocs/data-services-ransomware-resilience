@@ -17,3 +17,4 @@ Known limitations identify platforms, devices, or functions that are not support
 == Readiness drill Reset option issue
 
 If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, BlueXP ransomware protection notifies you with an alert. If you recover the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
+
