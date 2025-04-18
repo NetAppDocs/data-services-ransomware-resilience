@@ -131,7 +131,7 @@ You can download CSV files from any of the main menu options:
 
 //* *Dashboard:* Contains all summary information for all workloads. 
 * *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
-* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated Snapshots. 
+* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 
 If you download CSV files from the Protection, Alerts, or Recovery page, only the data on that page is included in the CSV file. 
