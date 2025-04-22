@@ -6,7 +6,7 @@ FSx for ONTAP is a fully managed service that provides the power of NetApp ONTAP
 
 The following changes were made to the BlueXP ransomware protection workflow:
 
-* Discovery includes workloads in FSx for ONTAP working environments.
+* Discovery includes workloads in FSx for ONTAP 9.15 working environments.
 * The Protection tab shows workloads in FSx for ONTAP environments. You set backup policies in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
 * Alert incidents show the new FSx for ONTAP working environment. 
 
