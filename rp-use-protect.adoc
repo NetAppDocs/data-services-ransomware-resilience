@@ -47,8 +47,7 @@ You can change protection policies based on the workload protection you have:
 
 ** If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
-You set backup policies for workloads running on Amazon FSx for NetApp ONTAP in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
-
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
 
 *Which policies are required in a ransomware protection strategy?*
 
