@@ -81,10 +81,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 . If the original destination does not have enough space to restore the workload, a "Temporary storage" row appears. You can select the temporary storage to restore the workload data. The restored data will be copied from the temporary storage to the original location. Click on the *Down arrow* in the Temporary storage row and set the destination cluster, storage VM, and local tier. 
 //+
 //image:screen-recovery2-temp-storage.png[Recovery page showing Temporary storage details]
-
-. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
-
-
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
 . Select *Save*. 
 
 . Select *Next*.
@@ -183,9 +180,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Change the volume prefix that will be prepended to all new volumes. 
 +
 TIP: The new volume name appears as prefix + original volume name + backup name + backup date.
-
-. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
-
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
 
 . Select *Save*.
 . Select *Next*.
@@ -223,10 +218,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 .. Review the new volume name. 
 +
 TIP: The new volume name appears as the original volume name + backup name + backup date.
-
-. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
-
-
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
 . Select *Save*.
 . Select *Next*.
 . Review your selections. 
@@ -271,7 +263,7 @@ image:screen-alerts-incidents-impacted-files.png[list of impacted files for a sp
 
 . *Restore point*: Select the down arrow next to *Restore point* to see details. Select the restore point that you want to use to restore the data. 
 +
-NOTE: The Reason column in the Restore points pane shows the reason for the Snapshot or backup as either "Scheduled" or "Automated response to ransomware incident." 
+NOTE: The Reason column in the Restore points pane shows the reason for the snapshot or backup as either "Scheduled" or "Automated response to ransomware incident." 
 
 . *Files*: 
 ** *Automatically select files*: Let BlueXP ransomware protection select the files to be restored.
@@ -296,8 +288,7 @@ TIP: While the original files or directory will be overwritten by the restored d
 +
 TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
 .. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
-
-. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
+//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
 
 
 . Select *Next*.

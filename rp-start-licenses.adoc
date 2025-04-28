@@ -72,6 +72,8 @@ To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/co
 
 After the free trial ends, you can either subscribe through one of the Marketplaces or purchase a license from NetApp.  
 
+If you already have a PAYGO subscription, the license is automatically switched to the subscription after the free trial ends.
+
 <<Subscribe through AWS Marketplace>>
 <<Subscribe through Microsoft Azure Marketplace>>
 <<Subscribe through Google Cloud Marketplace>>
@@ -302,3 +304,15 @@ After you pay for the license and it is registered with the NetApp Support Site,
 
 //. Type "end trial" in the text box. 
 //. Select *End*. 
+
+== End the PAYGO subscription
+
+If you want to end your PAYGO subscription, you can do so at any time.
+
+.Steps
+. In BlueXP ransomware protection, at the top right, select the license option. 
+. Select *View payment methods*.
+. In the drop-down details, uncheck the box *Use after current payment method expires*.
+. Select *Save*. 
+
+

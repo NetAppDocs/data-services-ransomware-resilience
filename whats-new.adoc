@@ -19,8 +19,14 @@ Learn what's new in BlueXP ransomware protection.
 
 // tag::whats-new[]
 
+
 == 29 April 2025
 include::_whatsnew/2025-05-12.adoc[]
+
+== 14 April 2025
+include::_whatsnew/2025-04-14.adoc[]
+
+
 
 == 10 March 2025
 include::_whatsnew/2025-03-15.adoc[]
@@ -28,6 +34,8 @@ include::_whatsnew/2025-03-15.adoc[]
 
 == 16 December 2024 
 include::_whatsnew/2024-11-31.adoc[]
+
+
 
 // end::whats-new[]
 
@@ -87,7 +95,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[L
 == 10 June 2024
 
 === Snapshot copy locking on primary storage
-Enable this to lock the Snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
+Enable this to lock the snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. 
 
 //link:rp-use-protect.html[Learn more about protecting workloads  and enabling backup locking in a ransomware protection strategy].
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and enabling backup locking in a ransomware protection strategy].
@@ -125,7 +133,7 @@ You can now perform application-consistent protection with NetApp SnapCenter Sof
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads].
 
 === Ransomware protection strategies
-If Snapshot or Backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in this service:  
+If snapshot or backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in this service:  
 
 ** Snapshot policy
 ** Backup policy 
