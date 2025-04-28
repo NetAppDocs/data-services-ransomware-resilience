@@ -12,9 +12,11 @@ The following changes were made to the BlueXP ransomware protection workflow:
 TIP: Backup policies for a workload running on FSx for ONTAP can't be set in BlueXP. Any existing backup policies set in Amazon FSx for NetApp ONTAP remain unchanged.
 * Alert incidents show the new FSx for ONTAP working environment. 
 
-For details, refer to link:rp-concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments]. 
+//For details, refer to link:rp-concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments].
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments].
 
-For information about the supported features, refer to the link:rp-reference-limitations.html[BlueXP ransomware protection limitations].
+//For information about the supported options, refer to the link:rp-reference-limitations.html[BlueXP ransomware protection limitations].
+
+For information about the supported options, refer to the https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html[BlueXP ransomware protection limitations].
 
