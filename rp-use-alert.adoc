@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. The service also immediately initiates taking a Snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
+summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. The service also immediately initiates taking a snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
 ---
 
 = Respond to a detected ransomware alert
@@ -13,7 +13,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 [.lead]
 If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard and in the BlueXP Notifications in the upper right indicating a potential ransomware attack. The service also immediately initiates taking a snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-//If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a Snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
+//If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -26,11 +26,11 @@ Each alert could have multiple incidents on different volumes with different sta
 The service provides information called _evidence_ about what caused the alert to be issued, such as the following: 
 
 * File extensions were created or changed
-* File creation occurred and increased by a listed percentage 
-* File deletion occurred and increased by a listed percentage 
+* File creation with a comparison of detected versus expected rates 
+* File deletion with a comparison of detected versus expected rates 
 * When encryption is high, without file extension changes
 
-An alert is based on the following types of behavior: 
+An alert is classified as one of the following: 
 
 * *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
 * *Warning*: A warning occurs based on the following behaviors: 
@@ -53,9 +53,11 @@ An alert incident is categorized in one of the following states:
 * *New*: All incidents are marked "new" when they are first identified. 
 * *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
 +
-CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 * *Dismissing*: The incident is in the process of being dismissed. 
-* *Resolved*: The incident has been mitigated. 
+* *Resolved*: The incident has been mitigated.
+* *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within 5 days.
+
 
 
 
@@ -231,7 +233,7 @@ After you review incidents, you need to determine whether the incidents are pote
 
 You can dismiss false positives or decide to recover your data immediately.  If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
 
-If you dismiss a workload, all Snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 
 CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
@@ -256,7 +258,7 @@ image:screen-alerts-status-edit.png[Alert Edit Status page]
 
 . From the Edit status box, select the *“Dismissed”* status. 
 +
-Additional information about the workload and which Snapshot copies will be deleted appears.
+Additional information about the workload and which snapshot copies will be deleted appears.
 
 . Select *Save*.
 +
