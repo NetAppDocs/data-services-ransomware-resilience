@@ -36,7 +36,7 @@ NOTE: If you have both BlueXP backup and recovery and BlueXP ransomware protecti
 
 You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
 
-TIP: If you don't have a license for Data Infrastructure Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
 
 == Try it out using a 30-day free trial
 You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an BlueXP Organization administrator to start the free trial. 
@@ -89,8 +89,8 @@ This procedure provides a high level overview of how to subscribe directly in th
 * You see a message that the free trial is expiring. In the message, select *View payment methods*. 
 * Click on the *Free trial* notice at the top right and select *View payment methods*. 
 +
-image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
-. In the Payment methods page, select *Subscribe in AWS Marketplace*. 
+image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe* for *Amazon Web Services*. 
 . In AWS Marketplace, select *View purchase options*. 
 . Use AWS Marketplace to subscribe to BlueXP ransomware protection.  
  
@@ -133,8 +133,8 @@ This procedure provides a high level overview of how to subscribe directly in th
 * You see a message that the free trial is expiring. In the message, select *View payment methods*. 
 * Click on the *Free trial* notice at the top right and select *View payment methods*. 
 +
-image:screen-license-payment-methods2.png[The BlueXP ransomware protection Payment methods page]
-. In the Payment methods page, select *Subscribe in Azure Marketplace*. 
+image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe* for *Microsoft Azure Marketplace*. 
 . In Azure Marketplace, select *View purchase options*. 
 . Use Azure Marketplace to subscribe to BlueXP ransomware protection.  
  
@@ -167,9 +167,9 @@ image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Li
 +
 A message appears indicating that a license has been added. 
 
-== Subscribe through Google Cloud Marketplace
+== Subscribe through Google Cloud Platform Marketplace
 
-This procedure provides a high level overview of how to subscribe directly in the Google Cloud Marketplace. 
+This procedure provides a high level overview of how to subscribe directly in the Google Cloud Platform Marketplace. 
 
 .Steps
 . In the BlueXP ransomware protection, do one of the following: 
@@ -177,15 +177,15 @@ This procedure provides a high level overview of how to subscribe directly in th
 * You see a message that the free trial is expiring. In the message, select *View payment methods*. 
 * Click on the *Free trial* notice at the top right and select *View payment methods*. 
 +
-image:screen-license-payment-methods3-gcp.png[The BlueXP ransomware protection Payment methods page]
-. In the Payment methods page, select *Subscribe in Google Cloud Marketplace*. 
-. In Google Cloud Marketplace, select *Subscribe*. 
-. Use Google Cloud Marketplace to subscribe to BlueXP ransomware protection.  
+image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+. In the Payment methods page, select *Subscribe* for Google Cloud Platform Marketplace*. 
+. In Google Cloud Platform Marketplace, select *Subscribe*. 
+. Use Google Cloud Platform Marketplace to subscribe to BlueXP ransomware protection.  
 image:screen-license-payments-gcp.png[Google Cloud Marketplace subscription page]
  
 . When you return to BlueXP ransomware protection, a message states that you are subscribed.
 +
-NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Google Cloud Marketplace.  
+NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Google Cloud Platform Marketplace.  
 
 . Return to BlueXP ransomware protection Payment methods page.
 
