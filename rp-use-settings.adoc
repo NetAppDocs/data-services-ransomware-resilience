@@ -97,7 +97,7 @@ To protect those workloads, you should add a backup destination. You can choose 
 * Google Cloud Platform
 * Microsoft Azure 
 
-
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. 
 
 You can add a backup destination based on a recommended action from the Dashboard or from accessing the Settings option on the menu. 
 

@@ -16,5 +16,13 @@ Known limitations identify platforms, devices, or functions that are not support
 
 == Readiness drill Reset option issue
 
-If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, BlueXP ransomware protection notifies you with an alert. If you recover the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
+
+If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, BlueXP ransomware protection notifies you with an alert. If you recovery the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
+
+== Amazon FSx for NetApp ONTAP limitations
+
+The Amazon FSx for NetApp ONTAP working environment is supported in BlueXP ransomware protection. The following limitations apply to this working environment:
+
+* Backup policies are not supported for Fsx for ONTAP. In this environment, you should perform backup operations using the Amazon FS for ONTAP backup service. You can restore these workloads using BlueXP ransomware protection snapshots. 
+* Restore operations are performed from snapshots only.
 
