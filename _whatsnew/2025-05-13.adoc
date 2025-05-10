@@ -14,7 +14,7 @@ With this release, BlueXP ransomware protection discovers the following unsuppor
 
 You can view the unsupported working environments during initial discovery and later from Workload discovery option in the Settings page.
 
-You can download the results of the discovery process in CSV format after discovery or from the Reports tab. 
+You can download the results of the discovery process after discovery or from the Reports tab. 
 
 For details, refer to link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection]. 
 

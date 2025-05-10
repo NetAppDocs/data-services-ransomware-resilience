@@ -30,9 +30,11 @@ The Configure readiness drill page appears.
 +
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 
-. Select the BlueXP Connector that you want to use for the readiness drill.
-. Select a test working environment. 
-. Enter the name of a new test workload to be created. 
+. Do the following: 
+.. Select the BlueXP Connector that you want to use for the readiness drill.
+.. Select a test working environment. 
+.. Select a test storage SVM. 
+.. Enter the name of a new test workload to be created. Do not include dashes in the name. 
 
 . Select *Save*.
 //+ 
