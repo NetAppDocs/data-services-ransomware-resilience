@@ -15,7 +15,7 @@ To use BlueXP ransomware protection, the service needs to first discover data. D
 
 BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
-NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. Workloads on Amazon FSx for NetApp ONTAP or on Azure NetApp Files are not supported. BlueXP ransomware protection reports on unsupported volumes on the Dashboard after the discovery process. 
+NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. Workloads on Azure NetApp Files are not supported. BlueXP ransomware protection reports on unsupported volumes during the discovery process and on the Dashboard after discovery. 
 
 The service assesses the existing protection level including the current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
 
@@ -47,15 +47,15 @@ TIP: This process might take a few minutes.
 image:screen-discover-workloads1.png[Discover workloads screenshot]
 //. Do one of the following: 
 //* To select working environments for all Connectors, select *Select all working environments*.
-. To discover workloads for a specific Connector, select *Find new working environments* next to the Connector where you want to discover workloads.
+. To discover workloads for a specific Connector, select *Select  working environments* next to the Connector where you want to discover workloads.
 +
-A list of working environments appears.
+A list of supported and unsupported working environments appears.
 +
-image:screen-discover-workloads-select.png[Discover workloads screenshot] 
+image:screen-discover-workloads-unsupported.png[Discover workloads screenshot] 
 //+
 //image:screen-discover-workloads-select-no-autodiscovery.png[Discover workloads screenshot]
 
-. Select the working environments where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments. 
+. Select the working environments where you want to discover workloads. 
 //. Optionally, select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
 . Select *Discover*. 
 +
@@ -63,7 +63,7 @@ The service discovers workload data only for those Connectors with selected work
 +
 TIP: This process might take a few minutes.
 +
-image:screen-discover-workloads-found2.png[Workloads discovered screenshot]
+image:screen-discover-workloads-unsupported-collected.png[Workloads discovered screenshot]
 . To download the list of discovered workloads, select *Download results (CSV)*.
 
 . To display the BlueXP ransomware protection Dashboard, select *Go to Dashboard*.   
@@ -101,6 +101,9 @@ If you have already discovered working environments, you can discover any newly 
 . In the Workload discovery card, select *Discover workloads*.
 +
 TIP: This process might take a few minutes as indicated by an in-process loading icon.
+. The service discovers both supported and unsupported working environments. Select the working environments where you want to discover workloads. 
+
+. Select *Discover*.
 
 //== Enable automatic discovery of workloads per Connector
 
