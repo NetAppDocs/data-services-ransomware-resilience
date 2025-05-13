@@ -92,7 +92,7 @@ If you have already discovered working environments, you can discover any newly 
 . In the Workload discovery card, select *Discover workloads*.
 +
 TIP: This process might take a few minutes as indicated by an in-process loading icon.
-. The service discovers both supported and unsupported working environments. Select the working environments where you want to discover workloads. 
+. The service discovers both supported and unsupported working environments. There are many reasons why the service doesn't support a working environment, for example, the ONTAP version on your working environment could be below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. Select the working environments where you want to discover workloads. 
 
 . Select *Discover*.
 

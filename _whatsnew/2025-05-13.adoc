@@ -12,7 +12,7 @@ With this release, BlueXP ransomware protection discovers the following unsuppor
 * ONTAP Direct on-premises clusters that are not managed by a BlueXP Connector 
 * StorageGRID 
 
-You can view the unsupported working environments during initial discovery and later from Workload discovery option in the Settings page.
+You can view the unsupported working environments during initial discovery and later from the *Workload discovery* option in the Settings page. There are many reasons why the service doesn't support a working environment, for example, the ONTAP version on your working environment could be below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. 
 
 You can download the results of the discovery process after discovery or from the Reports tab. 
 
