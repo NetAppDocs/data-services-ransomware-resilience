@@ -1,0 +1,19 @@
+=== Reporting of unsupported working environments in BlueXP ransomware protection
+
+During the discovery workflow, BlueXP ransomware protection reports more details when you hover over Supported or Unsupported Workloads. This will help you understand why some of your workloads or working environments are not part of the dashboard or managed by ransomware protection service. The following working environments are not currently supported by BlueXP ransomware protection service.
+
+* Azure NetApp Files 
+* Cloud Volumes Service 
+* E-series 
+* Google Cloud Platform (GCP)
+* ONTAP 9.11.1 and earlier versions 
+* ONTAP Direct on-premises clusters that are not managed by a BlueXP Connector 
+* StorageGRID 
+
+You can view the unsupported working environments during initial discovery and later from the *Workload discovery* option in the Settings page. There are many reasons why the service doesn't support a working environment, for example, the ONTAP version on your working environment could be below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. 
+
+You can download the results of the discovery process after discovery. 
+
+//For details, refer to link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection]. 
+
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html[Discover workloads in BlueXP ransomware protection]. 
