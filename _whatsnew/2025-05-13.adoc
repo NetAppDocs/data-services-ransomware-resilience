@@ -1,8 +1,6 @@
 === Reporting of unsupported working environments in BlueXP ransomware protection
 
-Ransomware protection service doesn't support all NetApp platforms and technologies. To help you understand why a working environment or volume is not supported, during discovery, BlueXP ransomware protection reports more details when you hover over Supported or Unsupported Workloads. 
-
-With this release, BlueXP ransomware protection discovers the following unsupported volume workloads as working environments (both with and without a BlueXP Connector). This helps you identify and resolve issues with your workloads.
+During the discovery workflow, BlueXP ransomware protection reports more details when you hover over Supported or Unsupported Workloads. This will help you understand why some of your workloads or working environments are not part of the dashboard or managed by ransomware protection service. The following working environments are not currently supported by BlueXP ransomware protection service.
 
 * Amazon FSx for ONTAP working environments that are not managed by a BlueXP Connector
 * Azure NetApp Files 
@@ -16,7 +14,7 @@ With this release, BlueXP ransomware protection discovers the following unsuppor
 
 You can view the unsupported working environments during initial discovery and later from the *Workload discovery* option in the Settings page. There are many reasons why the service doesn't support a working environment, for example, the ONTAP version on your working environment could be below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. 
 
-You can download the results of the discovery process after discovery or from the Reports tab. 
+You can download the results of the discovery process after discovery. 
 
 For details, refer to link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection]. 
 
