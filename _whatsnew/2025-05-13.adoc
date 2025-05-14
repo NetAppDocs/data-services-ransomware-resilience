@@ -14,6 +14,6 @@ You can view the unsupported working environments during initial discovery and l
 
 You can download the results of the discovery process after discovery. 
 
-For details, refer to link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection]. 
+//For details, refer to link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html[Discover workloads in BlueXP ransomware protection]. 
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discovery.html[Discover workloads in BlueXP ransomware protection]. 
