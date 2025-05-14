@@ -1,4 +1,6 @@
-=== Display of unsupported clusters in BlueXP ransomware protection
+=== Reporting of unsupported working environments in BlueXP ransomware protection
+
+Ransomware protection service doesn't support all NetApp platforms and technologies. To help you understand why a working environment or volume is not supported, during discovery, BlueXP ransomware protection reports more details when you hover over Supported or Unsupported Workloads. 
 
 With this release, BlueXP ransomware protection discovers the following unsupported volume workloads as working environments (both with and without a BlueXP Connector). This helps you identify and resolve issues with your workloads.
 
