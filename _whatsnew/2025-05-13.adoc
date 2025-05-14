@@ -2,13 +2,11 @@
 
 During the discovery workflow, BlueXP ransomware protection reports more details when you hover over Supported or Unsupported Workloads. This will help you understand why some of your workloads or working environments are not part of the dashboard or managed by ransomware protection service. The following working environments are not currently supported by BlueXP ransomware protection service.
 
-* Amazon FSx for ONTAP working environments that are not managed by a BlueXP Connector
 * Azure NetApp Files 
-* Cloud Volumes ONTAP working environments that are not managed by a BlueXP Connector
 * Cloud Volumes Service 
 * E-series 
 * Google Cloud Platform (GCP)
-* ONTAP 9.11.1 and earlier versions that are not managed by a BlueXP Connector 
+* ONTAP 9.11.1 and earlier versions 
 * ONTAP Direct on-premises clusters that are not managed by a BlueXP Connector 
 * StorageGRID 
 
