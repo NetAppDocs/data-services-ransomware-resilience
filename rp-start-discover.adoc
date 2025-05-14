@@ -45,7 +45,9 @@ The service finds both supported and unsupported working environments. This proc
 image:screen-discover-workloads-unsupported.png[Discover workloads screenshot] 
 //. Do one of the following: 
 //* To select working environments for all Connectors, select *Select all working environments*.
+
 . To discover workloads for a specific Connector, select *Select  working environments* next to the Connector where you want to discover workloads.
+
 
 
 . Select the working environments where you want to discover workloads. 
