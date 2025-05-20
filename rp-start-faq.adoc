@@ -20,7 +20,7 @@ This FAQ can help if you're just looking for a quick answer to a question.
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace (coming soon). 
+* Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and BlueXP ransomware protection with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
 
 
@@ -117,8 +117,7 @@ If a workload does not have a primary detection policy enabled, it is “at risk
 *New volume added, but doesn't appear yet*
 If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 
 
-*The Dashboard doesn't show all my workloads. What might be wrong?*
-Currently, only NFS and CIFS volumes are supported. iSCSI volumes  and other non-supported configurations are filtered out and do not appear on the Dashboard. 
+
 
 == Protection policies
 
@@ -165,6 +164,6 @@ Yes, you can change policies from ONTAP in BlueXP ransomware protection. You can
 
 *Can you disable policies?*
 
-You can disable ARP in detection policies using System Manager UI, APIs, or CLI. 
+You can disable ARP in detection policies using the System Manager UI, APIs, or CLI. 
 
 You can disable FPolicy and backup policies by applying a different policy that does not include them. 
