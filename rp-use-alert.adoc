@@ -15,6 +15,7 @@ If BlueXP ransomware protection detects a possible attack, an alert appears on t
 
 //If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
+
 You can dismiss false positives or decide to recover your data immediately.  
 
 TIP: If you decide to dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
@@ -59,8 +60,11 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within 5 days.
 
 
+*Required BlueXP role*
 
+To view alert or incident details or download reports, Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. 
 
+To perform other actions, Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 
 == View alerts

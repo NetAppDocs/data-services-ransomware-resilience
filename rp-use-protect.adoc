@@ -31,6 +31,9 @@ The following services can be used to manage protection policies. Protection inf
 * SnapCenter for VMware for VM datastores
 * SnapCenter for Oracle and MySQL
 
+*Required BlueXP role*
+
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 == Protection policies
 You might find it helpful to review information about the protection policies you can change and what types of policies are in a protection strategy. 

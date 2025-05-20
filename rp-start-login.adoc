@@ -13,11 +13,13 @@ summary: Get started with BlueXP ransomware protection by accessing the service 
 [.lead]
 You use NetApp BlueXP to log in to the BlueXP ransomware protection service. 
 
-BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific actions. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn more about BlueXP roles for all services^].
-
-For details about the actions that each role can perform, see link:rp-reference-roles.html[BlueXP ransomware protection role-based access control privileges].
-
 To log in to BlueXP, you can use your NetApp Support Site credentials or you can sign up for a NetApp cloud login using your email and a password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
+
+*Required BlueXP role*
+
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+
 
 .Steps
 

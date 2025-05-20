@@ -26,6 +26,10 @@ You can do the following:
 * Discover newly created workloads for previously selected working environments. 
 * Discover new working environments. 
 
+*Required BlueXP role*
+
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 
 == Select workloads to discover and protect
 Within each Connector, select the working environments where you want to discover workloads. 
