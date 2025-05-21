@@ -31,7 +31,6 @@ From the Settings page, you can do the following:
 //* Show upcoming Technology Preview features.
 
 *Required BlueXP role*
-
 Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 == Access the Settings page directly

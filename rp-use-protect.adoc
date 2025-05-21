@@ -32,7 +32,6 @@ The following services can be used to manage protection policies. Protection inf
 * SnapCenter for Oracle and MySQL
 
 *Required BlueXP role*
-
 Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 == Protection policies

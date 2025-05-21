@@ -29,7 +29,6 @@ After the free trial ends or the license or subscription expires, you can still 
 * Run all scheduled operations that were created during the trial period or under the license. 
 
 *Required BlueXP role*
-
 Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 

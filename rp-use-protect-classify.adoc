@@ -19,7 +19,6 @@ Within the BlueXP ransomware protection service, you can use BlueXP classificati
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
 
 *Required BlueXP role*
-
 Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 == Enable BlueXP classification 

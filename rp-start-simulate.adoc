@@ -16,7 +16,6 @@ Conduct a ransomware readiness drill by simulating a ransomware attack on a newl
 TIP: Your real workload data will not be impacted. 
 
 *Required BlueXP role*
-
 To view readiness drill details or download reports, Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. 
 
 To initiate readiness drills, Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
