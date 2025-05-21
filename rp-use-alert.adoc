@@ -60,15 +60,15 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within 5 days.
 
 
-*Required BlueXP role*
-To view alert or incident details or download reports, Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. 
 
-To perform other actions, Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 
 == View alerts
 
 You can access alerts from the BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 //* Alert email sent to you
 //* BlueXP Notifications in the BlueXP UI
@@ -129,7 +129,13 @@ image:screen-alerts.png["Alerts page"]
 
 == Detect malicious activity and anomalous user behavior
 
-Looking at the Alerts tab, you can identify whether there is malicious activity. The details that appear depend on how the alert was triggered:
+Looking at the Alerts tab, you can identify whether there is malicious activity. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+*What details appear?*
+The details that appear depend on how the alert was triggered:
 
 * Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
 * Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
@@ -207,7 +213,8 @@ image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Securi
 
 After you have mitigated the attack and are ready to recover workloads, you should communicate with your storage admin team that the data is ready for recovery so that they can start the recovery process. 
 
- 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 .Steps
 
@@ -240,6 +247,9 @@ If you dismiss a workload, all snapshot copies taken automatically in response t
 
 CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
 .Steps
 
 . From the BlueXP ransomware protection menu, select *Alerts*. 
@@ -270,6 +280,9 @@ The status on the incident or incidents changes to “Dismissed.”
 == View a list of impacted files
 
 Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 .Steps
 
