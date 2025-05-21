@@ -11,7 +11,13 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 :imagesdir: ./media/
 
 [.lead]
-You can protect workloads against ransomware attacks by completing the following actions using BlueXP ransomware protection. 
+You can protect workloads against ransomware attacks by enabling workload-consistent protection or creating ransomware protection strategies in BlueXP ransomware protection. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+*How can you protect workloads?*
+Protecting workloads with BlueXP ransomware protection includes the following tasks:
 
 
 //** Change the priority or importance of the workload. 
@@ -30,6 +36,7 @@ The following services can be used to manage protection policies. Protection inf
 * BlueXP backup and recovery for file shares, VM file shares
 * SnapCenter for VMware for VM datastores
 * SnapCenter for Oracle and MySQL
+
 
 
 == Protection policies

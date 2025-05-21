@@ -13,11 +13,14 @@ summary: You can configure several options, including a backup destination, thre
 [.lead]
 You can configure backup destinations, enable threat detection, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 //You can also show future Preview features. 
 
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
 
+*What can you do in the Settings page?*
 From the Settings page, you can do the following: 
 
 * Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
@@ -29,6 +32,8 @@ From the Settings page, you can do the following:
 * Add a backup destination.
 * Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
 //* Show upcoming Technology Preview features.
+
+
 
 == Access the Settings page directly
 

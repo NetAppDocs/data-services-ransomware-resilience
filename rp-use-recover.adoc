@@ -28,6 +28,8 @@ A workload can have one of the following restore statuses:
 * *Restored*: The workload has been restored. 
 * *Failed*: The workload restore process could not be completed.
 
+
+
 == View workloads that are ready to be restored
 
 Review the workloads that are in the "Restore needed" recovery status. 
@@ -53,6 +55,9 @@ image:screen-recovery2.png[Recovery page]
 Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
 
 The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 .Steps 
 
@@ -93,6 +98,9 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 == Restore a workload not managed by SnapCenter
 
 Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 The security storage admin can recover data at different levels: 
 

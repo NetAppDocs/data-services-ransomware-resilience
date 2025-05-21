@@ -53,14 +53,14 @@ For details about managing your Azure storage in BlueXP, refer to https://docs.n
 == Set up BlueXP
 The next step is to set up BlueXP and the BlueXP ransomware protection service. 
 
-Review https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard BlueXP requirements^].
+Review https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[BlueXP requirements for standard mode^].
 
 
 === Create a Connector in BlueXP
 
 You should reach out to your NetApp Sales Rep to try out or use this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the ransomware protection service. 
 
-To create a Connector in BlueXP before using the service, refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
+To create a Connector in BlueXP before using the service, contact your BlueXP Organization admin who has permissions to create Connectors, and refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
 
 NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. This service discovers all projects and all Connectors associated with this organization. 
 
