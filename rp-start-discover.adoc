@@ -13,12 +13,17 @@ summary: During discovery, BlueXP ransomware protection analyzes all volumes and
 [.lead]
 To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and projects within an organization. 
 
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+*What does the service discover?*
 BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
-NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. Workloads on Azure NetApp Files are not supported. The service discovers and displays both supported and unsupported working environment configurations.
+NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. The service discovers and displays both supported and unsupported working environment configurations in the Dashboard.
 
 The service assesses the existing protection level including the current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
 
+*How can you discover workloads?*
 You can do the following: 
 
 * Within each Connector, select the working environments where you want to discover workloads. You might benefit from this feature if you want to protect specific workloads in your environment and not others. 

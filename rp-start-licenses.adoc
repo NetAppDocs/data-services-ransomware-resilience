@@ -13,6 +13,10 @@ summary: Get started with BlueXP ransomware protection by setting up licensing.
 [.lead]
 With BlueXP ransomware protection, you can use different licensing plans.
 
+*Required BlueXP role*
+Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+*License types*
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
@@ -27,6 +31,8 @@ After the free trial ends or the license or subscription expires, you can still 
 * View workloads and workload health.
 * Delete any resource, such as a policy.
 * Run all scheduled operations that were created during the trial period or under the license. 
+
+
 
 == Other licenses  
 

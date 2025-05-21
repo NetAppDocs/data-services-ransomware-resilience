@@ -62,10 +62,10 @@ sidebar:
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
-    - title: Reference
-      entries:
-        - title: Role-based access control privileges
-          url: /rp-reference-roles.html
+#    - title: Reference
+#      entries:
+#        - title: Role-based access control privileges
+#          url: /rp-reference-roles.html
     - title: Legal notices
       url: /legal-notices.html
 product-family:
