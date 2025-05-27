@@ -5,20 +5,20 @@ keywords: ransomware protection alert, ransomware protection attack, detect rans
 summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 ---
 
-= Simulate a ransomware attack by conducting a readiness drill
+= Conduct a ransomware readiness drill
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. You can run a ransomware readiness drill multiple times. 
+Run a ransomware readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed.
 
-TIP: Your real workload data will not be impacted. 
+TIP: Your real workload data is not impacted. 
 
 
 
 == Configure a ransomware attack readiness drill
-Before you conduct a simulation, you need to configure a drill by using the Settings page. You can easily access the Settings page from the Actions option near the top menu.
+Before you run a simulation, set up a drill on the Settings page. Access the Settings page from the Actions option in the top menu.
 
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
@@ -30,7 +30,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 . In the Readiness drill card on the Settings page, select *Configure*.
 +
-The Configure readiness drill page appears.
+BlueXP displays the Configure readiness drill page.
 +
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 
@@ -55,8 +55,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 When you start the readiness drill, BlueXP ransomware protection skips the learning mode and starts the drill in active mode. The detection status of the workload is Active.
 
-TIP: A workload can have a ransomware detection *Learning mode* status that indicates a ransomware detection policy was recently assigned to the workload and the service is scanning workloads. A detection status of *Active* indicates that a ransomware detection protection policy is assigned.
-
+TIP: A workload can have a ransomware detection *Learning mode* status when a detection policy is recently assigned and the service scans workloads.
 
 .Steps 
 
@@ -115,7 +114,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 //+
 //image:screen-notifications-alert-drill.png[Notifications section showing the readiness drill alert]
 +
-The Alerts page appears. In the Alert ID column, "Readiness drill" appears next to the ID. 
+BlueXP displays the Alerts page. In the Alert ID column, you see "Readiness drill" next to the ID. 
 +
 image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
 
@@ -149,7 +148,7 @@ If the Type indicates that a user is suspected of malicious activity, review the
 
 == Restore the test workload
 
-After you have reviewed the readiness drill alert, you might want to restore the test workload. 
+After reviewing the readiness drill alert, restore the test workload if needed.
 
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
@@ -168,16 +167,16 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 . In the restore Review page, select *Restore*.
 +
-The Recovery page shows the status of the Readiness drill restore as "In progress".
+BlueXP displays the status of the Readiness drill restore as "In progress" on the Recovery page.
 +
-After the restore is complete, the status of the workload changes to *Restored*.
+After the restore is complete, BlueXP changes the status of the workload to *Restored*.
 . Review the restored workload. 
 
 TIP: For details about the restore process, see link:rp-use-recover.html[Recover from a ransomware attack (after incidents are neutralized)].  
 
 == Change the Alerts status after the readiness drill
 
-After you have reviewed the readiness drill alert and restored the workload, you might want change the status of the alert.
+After reviewing the readiness drill alert and restoring the workload, change the alert status if needed.
 
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
