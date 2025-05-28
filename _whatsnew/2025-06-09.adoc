@@ -16,6 +16,6 @@ BlueXP ransomware protection service lets you use BlueXP classification, a free 
 
 With this release, you can deploy BlueXP classification on a file share workload from within BlueXP ransomware protection. 
 
-For details, refer to link:rp-protect-classify.html[Scan for personally identifiable information with BlueXP classification]. 
+For details, refer to link:rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-protect-classify.html[Scan for personally identifiable information with BlueXP classification].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification].
