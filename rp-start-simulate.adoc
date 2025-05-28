@@ -25,8 +25,9 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-. From the drop-down menu, select *Readiness drill* or *Settings*.
+. From the BlueXP ransomware protection menu, select the *Run readiness drill* button at the top right.
+//. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+//. From the drop-down menu, select *Readiness drill* or *Settings*.
 
 . In the Readiness drill card on the Settings page, select *Configure*.
 +

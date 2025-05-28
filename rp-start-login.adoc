@@ -37,7 +37,7 @@ image:screen-landing.png[Landing page screenshot for BlueXP ransomware protectio
 + 
 Otherwise, the BlueXP ransomware protection Dashboard appears.
 +
-image:screen-dashboard2.png[BlueXP ransomware protection Dashboard]
+image:screen-dashboard3.png[BlueXP ransomware protection Dashboard]
 
 
 

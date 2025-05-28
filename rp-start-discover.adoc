@@ -44,6 +44,8 @@ Within each Connector, select the working environments where you want to discove
 If this is your first login, the landing page appears.
 +
 image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
++
+NOTE: If you started the free trial, the *Start 30-day free trial* button label changes to *Start by discovering workloads*. 
 
 . From the initial landing page, select *Start by discovering workloads*. 
 +
@@ -70,7 +72,7 @@ image:screen-discover-workloads-unsupported-collected.png[Workloads discovered s
 +
 The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
 +
-image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+image:screen-dashboard3.png[BlueXP ransomware protection Dashboard]
 +
 link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
