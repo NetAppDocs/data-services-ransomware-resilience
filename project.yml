@@ -33,7 +33,7 @@ sidebar:
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-        - title: Simulate a ransomware attack
+        - title: Simulate a ransomware attack with a readiness drill
           url: /rp-start-simulate.html  
         - title: Configure backups, threat detection, & attack simulations in Settings 
           url: /rp-use-settings.html 

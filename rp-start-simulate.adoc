@@ -5,13 +5,13 @@ keywords: ransomware protection alert, ransomware protection attack, detect rans
 summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 ---
 
-= Conduct a ransomware readiness drill
+= Conduct a ransomware attack readiness drill
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Run a ransomware readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed.
+Run a ransomware attack readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed.
 
 TIP: Your real workload data is not impacted. 
 

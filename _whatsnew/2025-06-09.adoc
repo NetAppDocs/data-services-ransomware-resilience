@@ -1,0 +1,21 @@
+=== Landing page updates 
+This release includes updates to the landing page for BlueXP ransomware protection that makes starting the free trial and discovery easier. 
+
+=== Readiness drill updates 
+Previously, you could run a ransomware readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed. 
+
+With this release, you can use a new option on the BlueXP ransomware protection Dashboard to run a ransomware readiness drill on an existing workload, making it easier for you to access this option.
+
+For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
+
+=== Enable BlueXP classification updates 
+
+BlueXP ransomware protection service lets you use BlueXP classification, a free core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you find personally identifiable information (PII), which can increase security risks.
+
+With this release, you can deploy BlueXP classification on a file share workload from within BlueXP ransomware protection. 
+
+For details, refer to link:rp-protect-classify.html[Scan for personally identifiable information with BlueXP classification]. 
+
+//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-protect-classify.html[Scan for personally identifiable information with BlueXP classification].
