@@ -26,7 +26,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin role
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data.
 
-You can deploy BlueXP classification within the Protection page of the BlueXP ransomware protection service. In the *Privacy exposure* column, hover over the tooltip icon next to the disabled *Identify exposure* option then select **Deploy** in the tooltip menu to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
+You can deploy BlueXP classification within the Protection page of the BlueXP ransomware protection service. In the *Privacy exposure* column, select *Identify exposure* option. If you've enabled classification, this will identify the exposure. Otherwise, a dialog box presents the option to deploy BlueXP classication. Sselect **Deploy** to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
 
 image:classification-deploy.png[Screenshot of deploy classification]
 
@@ -50,7 +50,10 @@ Scanning for PII data in BlueXP ransomware protection is available if you've lin
 +
 image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
 
-. To enable BlueXP classification to scan your data for personally identifiable data, in the *Privacy exposure* column, select *Identify exposure*. 
+. To enable BlueXP classification to scan your data for PII, in the *Privacy exposure* column, select *Identify exposure*. 
+
+[NOTE]
+If you haven't deployed BlueXP classification, selecting *Identify exposure* opens a dialog to deploy BlueXP classification. Select *Deploy*. After you've deployed BlueXP classification, you can return to the Protection page then select *Identify exposure*.
 
 .Result
 
