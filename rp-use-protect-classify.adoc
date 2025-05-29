@@ -26,7 +26,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin role
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data.
 
-You can deploy BlueXP classification from within the Protection page of the BlueXP ransomware protection service. In the *Privacy exposure* column, hover over the tooltip icon next to the disabled *Identify exposure* option then select **Deploy** in the tooltip menu to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
+You can deploy BlueXP classification within the Protection page of the BlueXP ransomware protection service. In the *Privacy exposure* column, hover over the tooltip icon next to the disabled *Identify exposure* option then select **Deploy** in the tooltip menu to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
 
 image:classification-deploy.png[Screenshot of deploy classification]
 
@@ -54,13 +54,13 @@ image:screen-protection-sensitive-preview-column.png[Protection page showing Pri
 
 .Result
 
-//For the SaaS version of BlueXP classification, BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain the the NetApp cloud. 
+//For the SaaS version of BlueXP classification, BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain in the NetApp cloud. 
 
-Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page states it is identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
+Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page indicates it's identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
 
 == Review the privacy exposure
 
-After BlueXP classification scans for personally identifiable information (PII), you can look at the PII data risk. 
+After BlueXP classification scans for personally identifiable information (PII), you can assess the risk. 
 
 PII data is classified into one of three designations:   
 
