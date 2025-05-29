@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-protect-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
-summary: Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks.
+summary: Use BlueXP classification with the BlueXP ransomware protection service to identify whether your data includes personal or private information, which can increase security risks. 
 ---
 
 = Scan for personally identifiable information with BlueXP classification
@@ -11,10 +11,11 @@ summary: Within the BlueXP ransomware protection service, you can use BlueXP cla
 :imagesdir: ./media/
 
 [.lead]
-Within the BlueXP ransomware protection service, you can use BlueXP classification to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personally identifiable information (PII), which can increase security risks. BlueXP classificaiton is a core component of the BlueXP family and available at no additional cost. 
+Within the BlueXP ransomware protection service, you can use BlueXP classification to scan and classify the data on a file share workload. Classifying data helps you identify if the dataset includes personally identifiable information (PII), which can increase security risks. BlueXP classificaiton is a core component of the BlueXP family and available at no additional cost. 
+
+link:https://docs.netapp.com/us-en/bluexp-classification/[BlueXP classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
 
 //IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
-
 
 TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
 
@@ -25,7 +26,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin role
 
 Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data.
 
-You can deploy BlueXP classification from within the Protection page of BlueXP ransomware protection service. In the *Privacy exposure* column, hover over the tooltip next to the disabled *Identify exposure* then select **Deploy** to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
+You can deploy BlueXP classification from within the Protection page of BlueXP ransomware protection service. In the *Privacy exposure* column, hover over the tooltip icon next to the disabled *Identify exposure* option then select **Deploy** in the tooltip menu to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
 
 image:classification-deploy.png[Screenshot of deploy classification]
 
@@ -142,8 +143,4 @@ For details about BlueXP classification, refer to the BlueXP classification docu
 * https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about BlueXP classification^]
 * https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
 * https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
-
-
-
-
 
