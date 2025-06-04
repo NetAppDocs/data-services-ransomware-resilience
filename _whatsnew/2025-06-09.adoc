@@ -2,9 +2,11 @@
 This release includes updates to the landing page for BlueXP ransomware protection that makes starting the free trial and discovery easier. 
 
 === Readiness drill updates 
-Previously, you could run a ransomware readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed. 
+Previously, you could run a ransomware readiness drill by simulating an attack on a new sample workload. With this feature, you can investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run and schedule these drills as often as needed. 
 
-With this release, you can use a new option on the BlueXP ransomware protection Dashboard to run a ransomware readiness drill on an existing workload, making it easier for you to access this option.
+With this release, you can use a new button on the BlueXP ransomware protection Dashboard to run a ransomware readiness drill on a test workload, making it easier for you to simulate ransomware attacks, investigate their impact, and recover workloads efficiently, all within a controlled environment.
+
+You can now run readiness drills on CIFS (SMB) workloads, in addition to NFS workloads. 
 
 For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
@@ -12,10 +14,10 @@ For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack re
 
 === Enable BlueXP classification updates 
 
-BlueXP ransomware protection service lets you use BlueXP classification, a free core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you find personally identifiable information (PII), which can increase security risks.
+Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your dataClassifying data helps you find personally identifiable information (PII), which can increase security risks. 
 
-With this release, you can deploy BlueXP classification on a file share workload from within BlueXP ransomware protection. 
+You can deploy BlueXP classification on a file share workload from within BlueXP ransomware protection. In the *Privacy exposure* column, select the *Identify exposure* option. If you've enabled the classification service, this action identifies the exposure. Otherwise, with this release, a dialog box presents the option to deploy BlueXP classification. Select *Deploy* to switch to the BlueXP classification service. 
 
-For details, refer to link:rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification]. 
+For details, refer to https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[Deploy BlueXP classification in the cloud] and to use the service within BlueXP ransomware protection, refer to link:rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification].
+//For details, refer to https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[Deploy BlueXP classification in the cloud] and to use the service within BlueXP ransomware protection, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect-classify.html[Scan for personally identifiable information with BlueXP classification].
