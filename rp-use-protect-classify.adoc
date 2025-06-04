@@ -2,31 +2,30 @@
 sidebar: sidebar
 permalink: rp-use-protect-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
-summary: Use BlueXP classification with the BlueXP ransomware protection service to identify whether your data includes personal or private information, which can increase security risks. 
+summary: Improve the security and privacy compliance of your data with BlueXP classification to identify whether your data includes personally identifiable or private information.
 ---
-
 = Scan for personally identifiable information with BlueXP classification
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Within the BlueXP ransomware protection service, you can use BlueXP classification to scan and classify the data on a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. BlueXP classification is a core component of the BlueXP family and is available at no additional cost. 
+Within the BlueXP ransomware protection service, you can use BlueXP classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. BlueXP classification is a core component of the BlueXP family and is available at no additional cost. 
 
 link:https://docs.netapp.com/us-en/bluexp-classification/[BlueXP classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
 
 //IMPORTANT: BlueXP classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
 
-TIP: This process can impact workload importance to help you ensure that you have the appropriate protection. 
+TIP: This process can impact workload importance to help ensure you have the appropriate protection. 
 
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin role. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
-== Enable BlueXP classification 
+== Identify privacy exposure with BlueXP classification 
 
-Before you use BlueXP classification within the BlueXP ransomware protection service, you need to enable BlueXP classification to scan your data.
+Before you use BlueXP classification within the BlueXP ransomware protection service, you need link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[to enable BlueXP classification to scan your data^].
 
-You can deploy BlueXP classification within the Protection page of the BlueXP ransomware protection service. In the *Privacy exposure* column, select *Identify exposure* option. If you've enabled classification, this will identify the exposure. Otherwise, a dialog box presents the option to deploy BlueXP classication. Sselect **Deploy** to switch to the BlueXP classification service. Proceed to link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deploy BlueXP classification^].
+You can deploy BlueXP classification within the Protection page of the BlueXP ransomware protection service. Follow the procedure to identify the privacy exposure. When you select **Identify exposure**, if you haven't already deployed BlueXP classification, a dialog enables you to enable BlueXP classification. 
 
 image:classification-deploy.png[Screenshot of deploy classification]
 
@@ -59,7 +58,7 @@ If you haven't deployed BlueXP classification, selecting *Identify exposure* ope
 
 //For the SaaS version of BlueXP classification, BlueXP classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain in the NetApp cloud. 
 
-Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page indicates it's identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
+Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page indicates it is identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
 
 == Review the privacy exposure
 
