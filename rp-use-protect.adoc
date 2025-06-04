@@ -5,7 +5,7 @@ keywords: ransomware protection, protect against ransomware attacks, anti-ransom
 summary: You can protect workloads against ransomware attacks by assigning policies to a workload in BlueXP ransomware protection.
 ---
 
-= Protect workloads with ransomware protection strategies
+= Protect workloads with BlueXP ransomware protection strategies
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/

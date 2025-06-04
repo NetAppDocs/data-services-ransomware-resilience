@@ -5,7 +5,7 @@ keywords: ransomware protection, protect against ransomware attacks, anti-ransom
 summary: Within the BlueXP ransomware protection service, you can use BlueXP classification, a core component of the BlueXP family, to scan and classify your data on a file share workload. Classifying data helps you identify whether your data includes personal or private information, which can increase security risks.
 ---
 
-= Scan for personally identifiable information with BlueXP classification
+= Scan for personally identifiable information with BlueXP classification in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/

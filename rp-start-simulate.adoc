@@ -5,7 +5,7 @@ keywords: ransomware protection alert, ransomware protection attack, detect rans
 summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 ---
 
-= Conduct a ransomware attack readiness drill
+= Conduct a ransomware attack readiness drill in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
