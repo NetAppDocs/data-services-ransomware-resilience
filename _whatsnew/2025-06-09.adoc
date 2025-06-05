@@ -6,7 +6,7 @@ Previously, you could run a ransomware readiness drill by simulating an attack o
 
 With this release, you can use a new button on the BlueXP ransomware protection Dashboard to run a ransomware readiness drill on a test workload, making it easier for you to simulate ransomware attacks, investigate their impact, and recover workloads efficiently, all within a controlled environment.
 
-You can now run readiness drills on CIFS (SMB) workloads, in addition to NFS workloads. 
+You can now run readiness drills on CIFS (SMB) workloads in addition to NFS workloads. 
 
 For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
