@@ -19,9 +19,11 @@ Organization admin, Folder or project admin, or Ransomware protection admin role
 *What does the service discover?*
 BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, and file shares. 
 
-NOTE: Workloads with volumes that use FlexGroup or iSCSI will not be discovered. The service discovers and displays both supported and unsupported working environment configurations in the Dashboard.
+NOTE: The service does not discover workloads with volumes that use FlexGroup or iSCSI.
 
-The service assesses the existing protection level including the current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. Based on the assessment, the service then recommends how to improve your ransomware protection. 
+BlueXP ransomware protection discovers and displays both supported and unsupported working environment configurations in the Dashboard.
+
+The service checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. It then recommends ways to improve your ransomware protection. 
 
 *How can you discover workloads?*
 You can do the following: 
@@ -39,9 +41,11 @@ Within each Connector, select the working environments where you want to discove
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
-If this is your first time logging in to this service, the landing page appears. 
+If this is your first login, the landing page appears.
 +
 image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
++
+NOTE: If you started the free trial, the *Start 30-day free trial* button label changes to *Start by discovering workloads*. 
 
 . From the initial landing page, select *Start by discovering workloads*. 
 +
@@ -66,9 +70,9 @@ image:screen-discover-workloads-unsupported-collected.png[Workloads discovered s
 
 . To display the BlueXP ransomware protection Dashboard, select *Go to Dashboard*.   
 +
-The Dashboard shows the health of data protection. The number of at risk or protected workloads increases based on the newly discovered workloads.  
+The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
 +
-image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
+image:screen-dashboard3.png[BlueXP ransomware protection Dashboard]
 +
 link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
@@ -82,12 +86,12 @@ If you have already selected working environments for discovery, you can discove
 
 . To identify the date of the last discovery, from the Dashboard, look at the date and time stamp next to *Refresh* icon at the top right.
 
-. From the Dashboard, select the *Refresh icon* which initiates discovery of new workloads. 
+. From the Dashboard, select the *Refresh icon* to find new workloads. 
 
 
 == Discover new working environments
 
-If you have already discovered working environments, you can discover any newly created working environments or working environments that you did not previously select during previous discovery processes.
+If you have already discovered working environments, you can find new or previously unselected ones.
 
 .Steps
 
@@ -98,8 +102,8 @@ If you have already discovered working environments, you can discover any newly 
 
 . In the Workload discovery card, select *Discover workloads*.
 +
-TIP: This process might take a few minutes as indicated by an in-process loading icon.
-. The service discovers both supported and unsupported working environments. There are many reasons why the service doesn't support a working environment, for example, the ONTAP version on your working environment could be below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. Select the working environments where you want to discover workloads. 
+TIP: This process might take a few minutes, and a loading icon shows the progress.
+. The service discovers both supported and unsupported working environments. The service does not support a working environment if its ONTAP version is below the required version. When you hover over an unsupported working environment, a tooltip displays the reason. Select the working environments where you want to discover workloads. 
 
 . Select *Discover*.
 
