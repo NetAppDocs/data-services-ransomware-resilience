@@ -5,7 +5,7 @@ keywords: ransomware protection, ransomware protection dashboard, detect ransomw
 summary: Using BlueXP ransomware protection, you can download reports that show details of protection, alerts, and recovery and save them as .CSV files. 
 ---
 
-= Download reports
+= Download reports in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
@@ -40,7 +40,7 @@ The CSV or JSON files include data for all workloads on all BlueXP working envir
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
 +
-image:screen-dashboard.png[Dashboard page]
+image:screen-dashboard3.png[Dashboard page]
  
 . From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
 

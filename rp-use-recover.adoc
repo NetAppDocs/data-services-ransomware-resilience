@@ -5,7 +5,7 @@ keywords: ransomware protection recovery, recover from a ransomware attack, reco
 summary: After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
 ---
 
-= Recover from a ransomware attack (after incidents are neutralized)
+= Recover from a ransomware attack (after incidents are neutralized) with BlueXP ransomware protection
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/

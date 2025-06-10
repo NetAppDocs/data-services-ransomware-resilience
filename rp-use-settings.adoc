@@ -117,7 +117,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 
 . Review the Dashboard's Recommended actions pane. 
 +
-image:screen-dashboard.png[Dashboard page]
+image:screen-dashboard3.png[Dashboard page]
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Prepare <backup provider> as a backup destination."
 

@@ -5,7 +5,7 @@ keywords: ransomware protection, ransomware protection dashboard, detect ransomw
 summary: The BlueXP ransomware protection Dashboard provides information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, impacted workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. You can also use the Dashboard to review and act on protection recommendations.
 ---
 
-= View workload health at a glance using the Dashboard
+= Monitor workload health using the BlueXP ransomware protection Dashboard
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
@@ -13,7 +13,7 @@ summary: The BlueXP ransomware protection Dashboard provides information about t
 [.lead]
 The BlueXP ransomware protection Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
 
-You can also use the Dashboard to review and act on protection recommendations, access global settings, download reports, and access this technical documentation. 
+Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
 
 *Required BlueXP role*
 Organization admin, Folder or project admin,  Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
@@ -24,18 +24,18 @@ Organization admin, Folder or project admin,  Ransomware protection admin, or Ra
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
-After discovery, the Dashboard shows you the health of workload data protection. 
+After BlueXP discovers your workloads, the Dashboard displays workload data protection health.
 +
 image:screen-dashboard2.png[Dashboard page]
 
 
 . From the Dashboard, you can do the following actions in each of the panes: 
 
-* *Workload data protection*: Click *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
+* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
 +
-TIP: Click the "i" note to see tips on this data. To increase the workload limit, click *Increase workload limit* inside this i note. Clicking this takes you to the BlueXP Support page, where you can create a case ticket. 
+TIP: Select the "i" note to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Clicking this takes you to the BlueXP Support page, where you can create a case ticket. 
 
-* *Alerts and workload data recovery*: Click *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
+* *Alerts and workload data recovery*: Select *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
 ** An incident is categorized in one of the following states: 
 +
@@ -57,13 +57,13 @@ TIP: Click the "i" note to see tips on this data. To increase the workload limit
 *** Failed
 
 
-* *Recommended actions*: To increase protection, review each recommendation and click *Review and fix*. 
+* *Recommended actions*: To increase protection, review each recommendation and select *Review and fix*. 
 +
-Refer to link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection recommendations on the Dashboard] or link:rp-use-protect.html[Protect workloads]. 
+See link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection suggestions on the Dashboard] or link:rp-use-protect.html[Protect workloads]. 
 +
-Any recommendations that were added since you last visited the Dashboard are indicated with “New” for at least 24 hours. Actions are listed in priority order with the most important at the top. You can review and act on each one or dismiss it. 
+BlueXP marks new recommendations since your last visit to the Dashboard with “New” for 24 hours. Actions appear in priority order, with the most important at the top. Review, act on, or dismiss each recommendation.
 +
-The total number of actions does not include dismissed actions. 
+The total number of actions does not include actions you dismissed. 
 
 * *Workload data*: Monitor changes in protection coverage over the last 7 days. 
 
@@ -88,7 +88,7 @@ Here is a sampling of the recommendations that the service offers.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 //|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
 //Refer to link:rp-use-manage.html[Manage workloads].
-//|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Improve your protection posture against ransomware by keeping software up to date. 
+//|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Make your protection stronger against ransomware by keeping software up to date. 
 |Connect to SEIM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
 //|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
@@ -133,11 +133,11 @@ You can export data and download CSV files that show details of protection, aler
 You can download CSV files from any of the main menu options: 
 
 //* *Dashboard:* Contains all summary information for all workloads. 
-* *Protection*: Contains the status and details of all workloads, including the total number protected and at risk. 
+* *Protection*: Contains the status and details of all workloads, including the total number of workloads that BlueXP marks as protected or at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
-* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
+* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads that BlueXP marks as "Restore needed", "In progress," "Restore failed," and "Successfully restored."
 
-If you download CSV files from the Protection, Alerts, or Recovery page, only the data on that page is included in the CSV file. 
+Downloading a CSV file from a page includes only that page's data.
 
 The CSV files include data for all workloads on all BlueXP working environments. 
 
@@ -170,4 +170,4 @@ You can access this technical documentation from docs.netapp.com or from inside 
 
 . Select one of these options: 
 ** *What's new* to view information about the features in the current or previous releases in the Release Notes.
-** *Documentation* to view the BlueXP ransomware protection documentation Home page and this documentation.  
+** *Documentation* to view the BlueXP ransomware protection documentation Home page and this documentation.
