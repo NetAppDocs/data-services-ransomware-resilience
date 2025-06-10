@@ -4,7 +4,8 @@ permalink: rp-use-protect-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
 summary: Improve the security and privacy compliance of your data with BlueXP classification to identify whether your data includes personally identifiable or private information.
 ---
-= Scan for personally identifiable information with BlueXP classification
+= Scan for personally identifiable information with BlueXP classification in BlueXP ransomware protection
+
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
@@ -62,7 +63,7 @@ Scanning can take several minutes depending on the size and number of the files.
 
 == Review the privacy exposure
 
-After BlueXP classification scans for personally identifiable information (PII), you can assess the risk. 
+After BlueXP classification scans for PII, assess the risk. 
 
 PII data is classified into one of three designations:   
 
@@ -82,7 +83,7 @@ image:screen-protection-sensitive-preview-column-medium.png[Protection page show
 . Select the workload link in the Workload column to see workload details. 
 +
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure tile]
-. In the Workload details page, review the information in the Privacy exposure tile. 
+. In the Workload details page, look at the details in the Privacy exposure tile. 
 //+
 //TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
 

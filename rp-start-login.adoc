@@ -31,14 +31,15 @@ The NetApp BlueXP login page appears.
 +
 If this is your first time logging in to this service, the landing page appears. 
 +
+NOTE: If you don't have a BlueXP Connector or it's not the one for this service, you need to deploy one. link:rp-start-setup.html[Learn how to set up a Connector].
++
 image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
 + 
 Otherwise, the BlueXP ransomware protection Dashboard appears.
 +
-image:screen-dashboard2.png[BlueXP ransomware protection Dashboard]
+image:screen-dashboard3.png[BlueXP ransomware protection Dashboard]
 
-+
-NOTE: If you don't have a BlueXP Connector or it's not the one for this service, you might need to contact NetApp Support. 
+
 
 . If you haven't done so already, select the *Discover workloads* option. 
 +
