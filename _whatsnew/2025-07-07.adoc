@@ -1,0 +1,3 @@
+=== SAN support 
+
+BlueXP ransomware protection now supports scanning SAN workloads to extend your ransomware resiliency strategy.  

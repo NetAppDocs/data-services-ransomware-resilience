@@ -125,6 +125,7 @@ The process differs slightly depending on the workload type.
 
 . *Restore scope*: Select the type of restore you want to complete: 
 +
+// SAN - restore scope has changed to "By workload". Confirm extent of change? 
 ** All volumes 
 ** By volume
 ** By file: You can specify a folder or single files to restore. 
