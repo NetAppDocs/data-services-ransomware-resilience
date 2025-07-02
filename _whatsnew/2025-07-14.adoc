@@ -1,8 +1,8 @@
 === SAN workload support 
 This release includes support for SAN workloads in BlueXP ransomware protection. You can now protect SAN workloads in addition to NFS and CIFS workloads.
 
-=== Improved protection workflow 
-This release includes an improved workflow for protecting workloads for workloads with or without any data protection. The new workflow simplifies the process of protecting workloads by guiding you through the necessary steps, making it easier to configure protection settings.
+=== Improved workload protection 
+This release includes an improved workflow for protecting workloads with or without data protection. The update simplifies the process of protecting workloads by guiding you through the steps, making it easier to protect your valuable resources.
 
 //For details, refer to link:rp-use-protect.html[Protect workloads]. 
 
