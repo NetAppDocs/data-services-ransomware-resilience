@@ -16,6 +16,7 @@ Run a ransomware attack readiness drill by simulating an attack on a new sample 
 TIP: Your real workload data is not impacted. 
 
 You can run readiness drills on NFS and CIFS (SMB) workloads. 
+// can you run on SAN? 
 
 
 
