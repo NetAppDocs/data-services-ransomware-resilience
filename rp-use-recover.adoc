@@ -125,7 +125,8 @@ The process differs slightly depending on the workload type.
 
 . *Restore scope*: Select the type of restore you want to complete: 
 +
-// SAN - restore scope has changed to "By workload". Confirm extent of change? 
+//[IMPORTANT] For SAN workloads not managed by SnapCenter, you can only restore by workload. 
+// SAN -this means no file restore? 
 ** All volumes 
 ** By volume
 ** By file: You can specify a folder or single files to restore. 
@@ -240,6 +241,8 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
 You can restore an application workload at the file level to the same or different working environment.
+
+//not supported in SAN
 
 .Steps to get the list of impacted files
 
