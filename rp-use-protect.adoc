@@ -360,8 +360,10 @@ Before adding a policy to workloads with existing policies, understand the follo
 . **Detection policies** alert you to ransomware threats but do not provide additional protection. Adding a _detection_ policy doesn't change the policies managed in other products.
 . **Protection policies** support replication of the workload managed by BlueXP ransomware protection. Protection policies can include snapshots, replication to secondary storage, or backups. Adding a _protection_ policy replaces existing snapshot and backup policies. 
 
-// BFGF retitle 
-==== Add a detection policy 
+// BFGF  
+==== Add a detection policy to workloads with existing backup or snapshot policies
+
+If you have existing snapshot or backup policies with BlueXP backup and recovery or SnapCenter, you can add a policy to detect ransomware attacks. To manage protection and detection with BlueXP ransomware protection, see <<protection, Protect with BlueXP ransomware protection>>.
 
 .Steps
 . From the BlueXP ransomware protection menu, select *Protection*.
@@ -369,7 +371,6 @@ Before adding a policy to workloads with existing policies, understand the follo
 image:screen-protection.png[Manage strategy page]
 
 . From the Protection page, select a workload then select *Protect*. 
-// BFGF changes
 . BlueXP ransomware protection detects if there are existing active SnapCenter or BlueXP backup and recovery policies.
 . To leave your existing BlueXP backup and recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . To see details of the SnapCenter policies, select the *Down arrow*.
@@ -377,8 +378,8 @@ image:screen-protection.png[Manage strategy page]
 Select a detection policy then select **Protect**. 
 . On the Protection page, review the **Detection status** to confirm detection is Active.  
 
-// BFGF rename
-==== Add a protection policy
+// BFGF 
+==== Add a protection policy to replace existing backup or snapshot policies  [[protection]]
 
 .Steps
 
