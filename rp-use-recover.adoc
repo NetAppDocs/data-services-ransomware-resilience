@@ -125,11 +125,11 @@ The process differs slightly depending on the workload type.
 
 . *Restore scope*: Select the type of restore you want to complete: 
 +
-//[IMPORTANT] For SAN workloads not managed by SnapCenter, you can only restore by workload. 
-// SAN -this means no file restore? 
 ** All volumes 
 ** By volume
 ** By file: You can specify a folder or single files to restore. 
++
+IMPORTANT: For SAN workloads, you can only restore by workload. 
 +
 TIP: You can select up to 100 files or a single folder. 
 
