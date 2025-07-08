@@ -32,7 +32,7 @@ For enhanced management and protection of your data estate, you can create link:
 
 === Protection policy integrations
 
-BlueXP ransomware protection offers its own protection policies, enabling you to create snapshots and backups of your workloads. TO learn about protection policies in BlueXP ransomware protection, see <<predefined, predefined protection policies>>. 
+BlueXP ransomware protection offers its own protection policies, enabling you to create snapshots and backups of your workloads. To learn about protection policies in BlueXP ransomware protection, see <<predefined, predefined protection policies>>. 
 
 
 BlueXP ransomware protection also integrates with other NetApp services that provide protection, enabling you to use BlueXP ransomware protection for detection while using the other services for snapshots or backups. 
@@ -45,7 +45,7 @@ The following services can be used to manage protection:
 * SnapCenter for VMware for VM datastores
 * SnapCenter for Oracle and MySQL
 
-Protection information from these services appears in BlueXP ransomware protection. You can add detection policies to these services with BlueXP ransomware protection. You can also add protection strategies to these services in BlueXP ransomware protection, which replaces the existing protection policies. 
+Protection information from these services appears in BlueXP ransomware protection. You can add detection policies to these services with BlueXP ransomware protection. Add a protection policy with BlueXP ransomware protection replaces the existing protection policies. 
 
 If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
@@ -60,8 +60,9 @@ If your workload isn't managed by BlueXP backup and recovery, BlueXP ransomware 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
 * Application workloads 
-* VM workloads
+* Block workloads
 * File share workloads
+* VM workloads
 
 .Steps 
 
@@ -228,7 +229,7 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 
 . Return to BlueXP ransomware protection. 
 
-. From BlueXP ransomware protection, go the Dashboard and initiate the discover process again. 
+. From BlueXP ransomware protection, navigate to the Dashboard and initiate the discover process again. 
 
 . From BlueXP ransomware protection, select *Protection* to view the Protection page. 
 
@@ -246,7 +247,7 @@ The ransomware protection strategy includes:
 ** Ransomware detection policy
 ** Backup policy
 
-*  **Replace the existing snapshot or backup policies from SnapCenter or BlueXP backup and recovery protection with protection strategies managed by BlueXP ransomware protection**
+*  **Replace the existing snapshot or backup policies from SnapCenter or BlueXP backup and recovery protection with protection strategies managed by BlueXP ransomware protection.**
 +
 The ransomware protection strategy includes:
 
@@ -254,7 +255,9 @@ The ransomware protection strategy includes:
 ** Ransomware detection policy
 ** Backup policy 
 
-* *Create a detection policy for workloads with existing snapshot and backup policies*, which are managed in other NetApp products or services. The detection policy will not change the policies managed in other products.
+* *Create a detection policy for workloads with existing snapshot and backup policies managed in other NetApp products or services.*
++
+The detection policy does not change the policies managed in other products.
 +
 The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
