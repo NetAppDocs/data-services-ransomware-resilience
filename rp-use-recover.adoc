@@ -242,8 +242,6 @@ Before you restore an application workload at the file level, you can view a lis
 
 You can restore an application workload at the file level to the same or different working environment.
 
-//not supported in SAN
-
 .Steps to get the list of impacted files
 
 Use the Alerts page to retrieve the list of impacted files. 

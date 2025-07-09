@@ -15,7 +15,7 @@ summary: The BlueXP ransomware protection service enables you to view relevant i
 [.lead]
 Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data for anywhere from one day to several weeks.
 
-BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, and VM datastores. It also protects on-premises ONTAP storage: NAS files shares (using the NFS and CIFS protocols) and SAN storage (FC and iSCSI) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, and Cloud Volumes ONTAP for Microsoft Azure across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
+BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, and VM datastores. It also protects on-premises ONTAP storage: NAS files shares (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, and Cloud Volumes ONTAP for Microsoft Azure across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
@@ -34,7 +34,7 @@ image:concept-security-layer-diagram.png[Security layer diagram]
 
 The BlueXP ransomware protection service provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
-* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) SAN working environments in BlueXP, across BlueXP organizations, projects, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) SAN (FC, iSCSI, and NVMe) working environments in BlueXP, across BlueXP organizations, projects, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
 // check wording
 
 * *Protect* your workloads by enabling backups, snapshot copies, and ransomware protection strategies on your data.  
@@ -112,7 +112,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN, and Cloud Volumes ONTAP data connected to BlueXP.
+| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to BlueXP.
 * Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^] and https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^].
 
 
@@ -166,7 +166,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyberatt
 *Working environments supported* 
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
-* On-premises ONTAP SAN with ONTAP 9.17.1 and greater
+* On-premises ONTAP SAN (FC, iSCSI, and NVMe) with ONTAP 9.17.1 and greater
 * Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
@@ -174,7 +174,7 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyberatt
 +
 NOTE: ARP/AI requires ONTAP 9.16 or greater. 
 
-NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
+NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
 *Workload data sources supported*
 

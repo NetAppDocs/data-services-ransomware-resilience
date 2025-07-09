@@ -76,7 +76,6 @@ One of the first steps in protecting workloads is viewing your current workloads
 * VM workloads
 * File share workloads
 * Block workloads
-// broader update required? SAN
 
 .Steps 
 

@@ -25,7 +25,7 @@ To use BlueXP ransomware protection, you'll need the prerequisites.
 
 * The BlueXP Connector must have the `cloudmanager-ransomware-protection` container in an active state. 
 
-* At least one BlueXP working environment with a NetApp on-premises ONTAP cluster or Cloud Volumes ONTAP in AWS or Azure. BlueXP ransomware protection supports both NAS (NFS and SMB) and SAN (iSCSI and FC) protocols. 
+* At least one BlueXP working environment with a NetApp on-premises ONTAP cluster or Cloud Volumes ONTAP in AWS or Azure. BlueXP ransomware protection supports both NAS (NFS and SMB) and SAN (iSCSI, FC, and NVMe) protocols. 
 
 ** ONTAP or Cloud Volumes ONTAP clusters with ONTAP OS version 9.11.1 or greater are supported. 
 [NOTE]

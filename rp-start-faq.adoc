@@ -83,7 +83,6 @@ In addition, BlueXP ransomware protection uses BlueXP backup and recovery and Sn
 
 *What makes up a workload?*
 A workload is an application, a VM, or a file share. A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
-// SAN
 
 *How does BlueXP ransomware protection prioritize workload data?*
 Data priority is determined by the snapshot copies made and backups that are scheduled. 
