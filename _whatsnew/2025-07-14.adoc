@@ -13,7 +13,7 @@ If BlueXP ransomware protection detects a possible attack, a notification appear
 
 At this point, you should view the email, which lists the severity and resources impacted and look at the potential risk in the BlueXP ransomware protection *Alerts* tab.
 
-If you configured a SIEM in BlueXP ransomware protection, the service sends alert details to your SIEM system. 
+If you configured a security and event management (SIEM) in BlueXP ransomware protection, the service sends alert details to your SIEM system. 
 
 //For details, refer to link:rp-use-alert.html[Handle detected ransomware alerts]. 
 
