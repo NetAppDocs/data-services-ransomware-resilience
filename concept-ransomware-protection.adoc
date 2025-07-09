@@ -15,7 +15,7 @@ summary: The BlueXP ransomware protection service enables you to view relevant i
 [.lead]
 Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data for anywhere from one day to several weeks.
 
-BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, and VM datastores. It also protects on-premises ONTAP storage: NAS files shares (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, and Cloud Volumes ONTAP for Microsoft Azure across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
+BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, and Amazon FSx for NetApp ONTAP across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
@@ -144,7 +144,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 * Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy technologies and services. 
 
 //* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
-* Orchestrates the recovery of workloads including VMs, file shares, and databases with application consistency. 
+* Orchestrates the recovery of workloads including VMs, file shares, block storage, and databases with application consistency. 
 |*GOVERN* | * Assigns the ransomware protection strategies
 * Helps you monitor the outcomes. 
 |===
@@ -166,11 +166,12 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyberatt
 *Working environments supported* 
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
-* On-premises ONTAP SAN (FC, iSCSI, and NVMe) with ONTAP 9.17.1 and greater
+* On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
 * Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
-* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI). 
+* Cloud Volumes ONTAP 9.17.1 or greater for AWS, Google Cloud Platform, and Microsoft Azure (using FC, iSCSI, and NVMe protocols) 
+* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
 +
 NOTE: ARP/AI requires ONTAP 9.16 or greater. 
 
@@ -181,6 +182,7 @@ NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older t
 The service protects the following application-based workloads on primary data volumes:
 
 * NetApp file shares
+* Block storage
 * VMware datastores
 * Databases (MySQL and Oracle)
 * More coming soon
