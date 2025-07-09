@@ -95,6 +95,7 @@ image:screen-alerts.png["Alerts page"]
 
 
 == Respond to an alert email
+When BlueXP ransomware protection detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
 
 You can receive email notifications for BlueXP ransomware protection alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
 
