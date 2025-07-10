@@ -89,7 +89,7 @@ Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 //|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
 //Refer to link:rp-use-manage.html[Manage workloads].
 //|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Make your protection stronger against ransomware by keeping software up to date. 
-|Connect to SEIM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+|Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
 //|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 

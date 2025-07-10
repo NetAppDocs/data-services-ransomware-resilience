@@ -109,7 +109,7 @@ The security storage admin can recover data at different levels:
 * Recover a file share at the volume level, directory, or file/folder level. 
 * Recover from a datastore at a VM level.
 
-The process differs slightly depending on the workload type. 
+The process differs depending on the workload type. 
 
 .Steps 
 
@@ -122,6 +122,7 @@ The process differs slightly depending on the workload type.
 
 
 . To restore, select *Restore*.
+
 
 . *Restore scope*: Select the type of restore you want to complete: 
 +

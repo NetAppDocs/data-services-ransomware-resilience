@@ -1,10 +1,9 @@
 ---
 sidebar: sidebar
 permalink: rp-use-protect.html
-keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, protect, malware, attack
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware
 summary: You can protect workloads against ransomware attacks by assigning policies to a workload in BlueXP ransomware protection.
 ---
-
 = Protect workloads with BlueXP ransomware protection strategies
 :hardbreaks:
 :icons: font
@@ -16,66 +15,53 @@ You can protect workloads against ransomware attacks by enabling workload-consis
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
-*How can you protect workloads?*
-Protecting workloads with BlueXP ransomware protection includes the following tasks:
+== Understand BlueXP ransomware protection strategies [[strategy]]
 
+BlueXP ransomware protection strategies encompass both _detection_ and _protection_ policies.
 
-//** Change the priority or importance of the workload. 
-* Enable workload-consistent protection, which works with SnapCenter Software or SnapCenter Plug-in for VMware vSphere.
-//* link:/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
-* Create or manage ransomware protection strategies, which include policies that you create for snapshots, backups, and ransomware protection (known as _detection policies_).
-* Import a strategy and adjust it. 
-* Group file shares to make it easier for you to protect workloads rather than protect them individually. 
-//* Change the name of a workload.
-//* Edit a ransomware protection strategy. 
-* Delete a ransomware protection strategy.
+- **Detection policies** discover ransomware threats and optionally block suspicious file extensions. Detection policies only monitor for ransomware threats; they do not create recovery points. 
 
-*Which services are used in protection?*
-The following services can be used to manage protection policies. Protection information from these services appears in BlueXP ransomware protection: 
+- **Protection policies** encompasses snapshots, replication to object storage, or backups. Protection policies work with detection policies to create recovery points of your workloads.
++
+In BlueXP ransomware protection, protection policies must include detection policies and snapshots. They can optionally include backups.
++
+BlueXP ransomware protection offers its own <<predefined, protection policies>>. If you're using other NetApp products to protect your workload, BlueXP ransomware protection discovers those and provides the option to either:
++
+* use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
++
+* use BlueXP ransomware protection to manage detection, snapshots, and backups.
+
+[TIP]
+For enhanced management and protection of your data estate, you can create link:#group-file-shares-for-easier-protection[group file shares] to collectively protect volumes under one strategy. 
+
+=== Protection policies with other NetApp-managed services [[services]]
+
+Beyond BlueXP ransomware protection, the following services can be used to manage protection:
 
 * BlueXP backup and recovery for file shares, VM file shares
 * SnapCenter for VMware for VM datastores
 * SnapCenter for Oracle and MySQL
 
+Protection information from these services appears in BlueXP ransomware protection. You can add detection policies to these services with BlueXP ransomware protection. Add a protection policy with BlueXP ransomware protection replaces the existing protection policies. 
 
-
-== Protection policies
-You might find it helpful to review information about the protection policies you can change and what types of policies are in a protection strategy. 
-
-*Which protection policies can you change?*
-
-You can change protection policies based on the workload protection you have: 
-
-* *Workloads not protected by NetApp applications*: These workloads are not managed by SnapCenter, SnapCenter Plug-in for VMware vSphere, or BlueXP backup and recovery. These workloads might have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
- 
-* *Workloads with existing protection by NetApp applications*: These workloads have backup or snapshot policies managed by SnapCenter, SnapCenter for VMWare vSphere, or BlueXP backup and recovery.
-
-** If snapshot or backup policies are being managed by SnapCenter, SnapCenter for VMWare, or BlueXP backup and recovery, they will continue to be managed by these applications. Using BlueXP ransomware protection, you can also apply a ransomware detection policy to those workloads.
-
-** If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
+If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
 NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
 
-*Which policies are required in a ransomware protection strategy?*
+=== Protection policies for workloads not protected by NetApp applications
 
-The following policies are required in ransomware protection strategy: 
-
-* Ransomware detection policy
-* Snapshot policy
-
-A backup policy is not required in the BlueXP ransomware protection strategy. 
-
-
-
-
+If your workload isn't managed by BlueXP backup and recovery, BlueXP ransomware protection, SnapCenter, or SnapCenter Plug-in for VMware vSphere, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
+ 
 == View ransomware protection on a workload
 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
 * Application workloads 
-* VM workloads
-* File share workloads
 * Block workloads
+* File share workloads
+* VM workloads
+
+
 
 .Steps 
 
@@ -89,13 +75,11 @@ One of the first steps in protecting workloads is viewing your current workloads
 image:screen-protection.png[Protection page]
 . From this page, you can view and change protection details for the workload.
 
-NOTE: For workloads that already have a protection policy with SnapCenter or BlueXP backup and recovery service, you cannot edit the protection. For these workloads, BlueXP ransomware enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+NOTE: See link:#add-a-ransomware-protection-strategy[Add a ransomware protection strategy] to learn about using BlueXP ransomware protection when there's an existing protection policy with SnapCenter or BlueXP backup and recovery service.
 
-=== Protection details on the Protection page
-
+=== Understand the Protection page
 
 The Protection page shows the following information about workload protection: 
-
 
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
@@ -113,13 +97,13 @@ The Protection page shows the following information about workload protection:
 
 *Detection status*: A workload can have one of the following ransomware detection statuses: 
 
+//BFGF - there's a new ransomware option
 * *Learning*: A ransomware detection policy was recently assigned to the workload and the service is scanning workloads. 
 * *Active*: A ransomware detection protection policy is assigned. 
 * *Not set*: A ransomware detection protection policy is not assigned. 
 * *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
 +
 TIP: When protection is enabled in BlueXP ransomware protection, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
-
 
 *Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
 
@@ -131,8 +115,6 @@ TIP: When protection is enabled in BlueXP ransomware protection, alert detection
 * Name of ransomware protection policy that governs snapshots and backups
 * None
 
-
-
 *Workload importance*
 
 BlueXP ransomware protection assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
@@ -141,10 +123,9 @@ BlueXP ransomware protection assigns an importance or priority to each workload 
 * *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
-*Predefined detection policies*
+*Predefined detection policies* [[predefined]]
 
 You can choose one of the following BlueXP ransomware protection predefined policies, which are aligned with workload importance: 
-
 
 [cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
 |===
@@ -209,9 +190,6 @@ You can choose one of the following BlueXP ransomware protection predefined poli
 //A list of configured backup destinations appears. 
 //For details, see link:rp-use-settings.html[Configure protection settings].
 
-
-
-
 == Enable application- or VM-consistent protection with SnapCenter
 
 Enabling application- or VM-consistent protection helps you protect your application or VM workloads in a consistent manner, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. 
@@ -250,26 +228,37 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 
 . Return to BlueXP ransomware protection. 
 
-. From BlueXP ransomware protection, go the Dashboard and initiate the discover process again. 
+. From BlueXP ransomware protection, navigate to the Dashboard and initiate the discover process again. 
 
 . From BlueXP ransomware protection, select *Protection* to view the Protection page. 
 
 . Review details in the snapshot and backup policies column on the Protection page to see that the policies are managed elsewhere. 
 
-
-
 == Add a ransomware protection strategy
 
-You can add a ransomware protection strategy to workloads. The way you do this depends on whether snapshot and backup policies exist already: 
+There are three approaches to adding a ransomware protection strategy: 
 
-* *Create a ransomware protection strategy if you have no snapshot or backup policies*. If snapshot or backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in BlueXP ransomware protection: 
+* **Create a ransomware protection strategy if you have no snapshot or backup policies.**
++
+The ransomware protection strategy includes:
 
 ** Snapshot policy 
-** Backup policy 
 ** Ransomware detection policy
+** Backup policy
 
+*  **Replace the existing snapshot or backup policies from SnapCenter or BlueXP backup and recovery protection with protection strategies managed by BlueXP ransomware protection.**
++
+The ransomware protection strategy includes:
 
-* *Create a detection policy to workloads that already have snapshot and backup policies*, which are managed in other NetApp products or services. The detection policy will not change the policies managed in other products.
+** Snapshot policy 
+** Ransomware detection policy
+** Backup policy 
+
+* *Create a detection policy for workloads with existing snapshot and backup policies managed in other NetApp products or services.*
++
+The detection policy does not change the policies managed in other products.
++
+The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 === Create a ransomware protection strategy (if you have no snapshot or backup policies)
 
@@ -279,15 +268,13 @@ If snapshot or backup policies do not exist on the workload, you can create a ra
 * Backup policy 
 * Ransomware detection policy
 
-
-
-.Steps to create a ransomware protection strategy 
+.Steps to create a ransomware protection strategy [[steps]]
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 +
 image:screen-protection.png[Manage strategy page]
 
-. From the Protection page, select *Manage protection strategies*. 
+. From the Protection page, select a workload then *Protect*. 
 +
 image:screen-protection-strategy.png[Manage strategies]
 
@@ -310,7 +297,7 @@ NOTE: If you choose to copy and modify an existing strategy, the service appends
 If you want to change the blocked file extensions, edit them in System Manager. 
 
 * *Snapshot policy*: 
-** *Snapshot policy base ame*: Select a policy or select *Create* and enter a name for the snapshot policy. 
+** *Snapshot policy base name*: Select a policy or select *Create* and enter a name for the snapshot policy. 
 ** *Snapshot locking*: Enable this to lock the snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
 +
 When a snapshot is locked, the volume expiration time is set to the expiration time of the snapshot copy. 
@@ -330,16 +317,31 @@ TIP: To enable backup locking on secondary storage, configure your backup destin
 
 . Select *Add*. 
 
-=== Add a detection policy to workloads that already have snapshot and backup policies
+=== Add a detection policy to workloads with existing snapshot and backup policies managed by SnapCenter or BlueXP backup and recovery
 
-With BlueXP ransomware protection, you can assign a ransomware detection policy to workloads that already have snapshot and backup policies, which are managed in other NetApp products or services. The detection policy will not change the policies managed in other products. 
+BlueXP ransomware protection enables you to assign either a detection policy or a protection policy to workloads with existing snapshot and backup protection managed in other NetApp products or services. Other services, such as BlueXP backup and recovery and SnapCenter, use policies that govern snapshots, replication to secondary storage, or backups to object storage. 
 
-Other services, such as BlueXP backup and recovery and SnapCenter, use the following types of policies to govern workloads: 
+==== Add a detection policy to workloads with existing backup or snapshot policies
 
-* Policies governing snapshots
-* Policies governing replication to secondary storage
-* Policies governing backups to object storage
+If you have existing snapshot or backup policies with BlueXP backup and recovery or SnapCenter, you can add a policy to detect ransomware attacks. To manage protection and detection with BlueXP ransomware protection, see <<protection, Protect with BlueXP ransomware protection>>.
 
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+
+. From the Protection page, select a workload then select *Protect*. 
+. BlueXP ransomware protection detects if there are existing active SnapCenter or BlueXP backup and recovery policies.
+. To leave your existing BlueXP backup and recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
+. To see details of the SnapCenter policies, select the *Down arrow*.
++
+Select a detection policy then select **Protect**. 
+. On the Protection page, review the **Detection status** to confirm detection is Active.  
+
+// BFGF 
+==== Replace existing backup or snapshot policies with a BlueXP ransomware protection strategy [[protection]]
+
+You can replace your existing backup or snapshot policies with a BlueXP ransomware protection strategy. This approach removes your externally managed protection and configures detection and protection in BlueXP ransomware protection. 
 
 .Steps
 
@@ -347,33 +349,22 @@ Other services, such as BlueXP backup and recovery and SnapCenter, use the follo
 +
 image:screen-protection.png[Manage strategy page]
 
-. From the Protection page, select a workload, and select *Protect*. 
 
+. From the Protection page, select a workload then select *Protect*. 
+// BFGF changes
+. BlueXP ransomware protection detects if there are existing active BlueXP backup and recovery or SnapCenter policies. To replace the existing BlueXP backup and recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, BlueXP ransomware protection replaces the list of detection policies with detection policies. 
 
-+
-The Protect page shows the policies managed by SnapCenter Software, SnapCenter for VMware vSphere, and BlueXP backup and recovery. 
+. Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
+. Select a backup destination or create a new one. Select **Next**. 
+. Review the new protection strategy then select **Protect** to apply it. 
+. On the Protection page, review the **Detection status** to confirm detection is Active.  
 
-+ 
-The following example shows policies managed by SnapCenter: 
-+
-image:screen-protect-sc-policies.png[Protect page showing SnapCenter policies]
-
-+
-The following example shows policies managed by BlueXP backup and recovery: 
-+
-image:screen-protect-br-policies.png[Protect page showing BlueXP backup and recovery policies]
-
-. To see details of the policies managed elsewhere, select the *Down arrow*. 
-
-. To apply a detection policy in addition to the snapshot and backup policies managed elsewhere, select the Detection policy. 
-
-. Select *Protect*. 
-
-. On the Protection page, review the Detection policy column to see the Detection policy assigned. Also, the snapshot and backup policies column shows the name of the product or service managing the policies. 
+// review the Detection policy column to see the Detection policy assigned. Also, the snapshot and backup policies column shows the name of the product or service managing the policies. relevant?
+// BFGF changes end
 
 === Assign a different policy 
 
-You can assign a different protection policy replacing the current one.
+You can replace the existing policy with a different one. 
 
 .Steps 
 
@@ -382,19 +373,23 @@ You can assign a different protection policy replacing the current one.
 
 . From the Protection page, on the workload row, select *Edit protection*. 
 
+
+. If the workload has an existing BlueXP backup and recovery or SnapCenter policy that you want to maintain, uncheck **Replace existing policies**. To replace the existing policies, check **Replace existing policies**.  
+
+
+
 . In the Policies page, select the down arrow for the policy you want to assign to review the details. 
 
 . Select the policy you want to assign.
 
+. Select *Protect* to complete the change.
 
-. Select *Protect* to finish the change.
+== Group file shares for easier protection
 
+Grouping file shares in a protection group makes it easier to protect your data estate. The service can protect all volumes in a group at the same time rather than protecting each volume separately. 
 
-== Group file shares for easier protection 
-
-Grouping file shares makes it easier to protect your data estate. The service can protect all volumes in a group at the same time rather than protect each volume separately. 
-
-//This feature also speeds up your recovery after a ransomware attack because the service can recover all volumes in a group rather than separately.
+You can create groups regardless of their protection status (that is, groups that are not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed by BlueXP backup and recovery and SnapCenter. 
+// BFGF
 
 .Steps
 . From the BlueXP ransomware protection menu, select *Protection*.
@@ -411,15 +406,6 @@ image:screen-protection-groups-add.png[Add protection group page]
 
 . Enter a name for the protection group. 
 
-. Complete one of the following steps: 
-.. If you already have protection policies in place, select whether you want to group workloads based on whether they are managed by one of these: 
-* BlueXP ransomware protection
-* SnapCenter or BlueXP backup and recovery
-+
-.. If you don't have protection policies already in place, the page displays the preconfigured ransomware protection strategies. 
-... Choose one to protect your group and select *Next*. 
-... If the workload you chose has volumes on multiple working environments, select the backup destination for the multiple working environments so that they can be backed up to the cloud. 
-
 . Select the workloads to add to the group. 
 +
 TIP: To see more details on the workloads, scroll to the right. 
@@ -428,7 +414,7 @@ TIP: To see more details on the workloads, scroll to the right.
 +
 image:screen-protection-groups-policy.png[Add protection group - Policy page]
 
-. Select the policy that will govern the protection for this group. 
+. Select the policy to govern the protection for this group. 
 . Select *Next*. 
 . Review the selections for the protection group. 
 . Select *Add*. 
@@ -457,23 +443,26 @@ image:screen-protection-groups-policy.png[Add protection group - Policy page]
 //. Select *Save*. 
 
 
-//=== Edit group protection 
-//You can change the detection policy on an existing group. 
-//If the detection policy isn't already added to this group, you can add it now. 
+=== Edit group protection 
 
-//.Steps
-//. From the BlueXP ransomware protection menu, select *Protection*.
-//. From the Protection page, select the *Protection groups* tab. 
+You can change the detection policy on an existing group. 
+
+.Steps
+. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab then select the group whose policy you want to modify. 
 //+
 //image:screen-protection-groups-edit.png[Protection groups page showing Edit option]
+. From protection group's overview page, select *Edit protection*. 
+. Select an existing protection policy to apply or select **Add** to create a new protection policy. For more information about adding a protection policy see, <<steps, Create a protection policy>>. Then select **Save**.
+. In the backup destination overview, select an existing backup destination or **Add a new backup destination**. 
+. Select **Next** to review your changes. 
 
-//. From the Protection pane, select *Edit protection*. 
-//. Select or add a detection policy to this group. 
+ 
 
 
 === Remove workloads from a group
-You might later need to remove workloads from an existing group. 
 
+You might later need to remove workloads from an existing group. 
 
 .Steps
 . From the BlueXP ransomware protection menu, select *Protection*.
@@ -490,8 +479,8 @@ image:screen-protection-groups-more-workloads.png[Protection group details page]
 
 . Confirm that you want to remove the workload and select *Remove*. 
 
-
 === Delete the protection group
+
 Deleting the protection group removes the group and its protection but doesn't remove the individual workloads.
 
 .Steps
@@ -509,13 +498,9 @@ image:screen-protection-groups-more-workloads.png[Protection group details page]
 
 . Confirm that you want to delete the group and select *Delete*. 
 
-
-
 == Manage ransomware protection strategies
 
 You can delete a ransomware strategy.
-
-//You can edit or delete a ransomware strategy.
 
 === View workloads protected by a ransomware protection strategy
 
@@ -524,7 +509,6 @@ Before you delete a ransomware protection strategy, you might want to view which
 You can view the workloads from the list of strategies or when you are editing a specific strategy. 
 
 .Steps when viewing the list of strategies
-
 
 . From the BlueXP ransomware protection menu, select *Protection*.
 
@@ -579,8 +563,6 @@ image:screen-protection-strategy-list.png[Ransomware protection strategies scree
 //. Change the details. 
 
 //. Select *Save* to finish the change. 
-
-
 
 === Delete a ransomware protection strategy
 
