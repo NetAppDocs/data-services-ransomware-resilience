@@ -23,23 +23,20 @@ BlueXP ransomware protection strategies encompass both _detection_ and _protecti
 
 - **Protection policies** encompasses snapshots, replication to object storage, or backups. Protection policies work with detection policies to create recovery points of your workloads.
 +
-In BlueXP ransomware protection, protection policies must include detection policies and snapshots. They can optionally include backups. 
+In BlueXP ransomware protection, protection policies must include detection policies and snapshots. They can optionally include backups.
 +
-Protection policies can be managed by BlueXP ransomware protection or by <<services, other services>>.
+BlueXP ransomware protection offers its own <<predefined, protection policies>>. If you're using other NetApp products to protect your workload, BlueXP ransomware protection discovers those and provides the option to either:
++
+* use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
++
+* use BlueXP ransomware protection to manage detection, snapshots, and backups.
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:#group-file-shares-for-easier-protection[group file shares] to collectively protect volumes under one strategy. 
 
-=== Protection policy integrations
+=== Protection policies with other NetApp-managed services [[services]]
 
-BlueXP ransomware protection offers its own protection policies, enabling you to create snapshots and backups of your workloads. To learn about protection policies in BlueXP ransomware protection, see <<predefined, predefined protection policies>>. 
-
-
-BlueXP ransomware protection also integrates with other NetApp services that provide protection, enabling you to use BlueXP ransomware protection for detection while using the other services for snapshots or backups. 
-
-==== Protection policies with other NetApp-managed services [[services]]
-
-The following services can be used to manage protection:
+Beyond BlueXP ransomware protection, the following services can be used to manage protection:
 
 * BlueXP backup and recovery for file shares, VM file shares
 * SnapCenter for VMware for VM datastores
@@ -51,7 +48,7 @@ If a ransomware detection policy is being managed by Autonomous Ransomware Prote
 
 NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in BlueXP ransomware protection. The backup policies appear in BlueXP ransomware protection and remain unchanged from AWS. 
 
-==== Protection policies for workloads not protected by NetApp applications
+=== Protection policies for workloads not protected by NetApp applications
 
 If your workload isn't managed by BlueXP backup and recovery, BlueXP ransomware protection, SnapCenter, or SnapCenter Plug-in for VMware vSphere, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
  
@@ -381,7 +378,6 @@ You can replace the existing policy with a different one.
 . Select the policy you want to assign.
 
 . Select *Protect* to complete the change.
-
 
 == Group file shares for easier protection
 
