@@ -61,6 +61,8 @@ One of the first steps in protecting workloads is viewing your current workloads
 * File share workloads
 * VM workloads
 
+
+
 .Steps 
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
@@ -347,6 +349,7 @@ You can replace your existing backup or snapshot policies with a BlueXP ransomwa
 +
 image:screen-protection.png[Manage strategy page]
 
+
 . From the Protection page, select a workload then select *Protect*. 
 // BFGF changes
 . BlueXP ransomware protection detects if there are existing active BlueXP backup and recovery or SnapCenter policies. To replace the existing BlueXP backup and recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, BlueXP ransomware protection replaces the list of detection policies with detection policies. 
@@ -370,8 +373,10 @@ You can replace the existing policy with a different one.
 
 . From the Protection page, on the workload row, select *Edit protection*. 
 
+
 . If the workload has an existing BlueXP backup and recovery or SnapCenter policy that you want to maintain, uncheck **Replace existing policies**. To replace the existing policies, check **Replace existing policies**.  
-// BFGF
+
+
 
 . In the Policies page, select the down arrow for the policy you want to assign to review the details. 
 
@@ -512,7 +517,7 @@ You can view the workloads from the list of strategies or when you are editing a
 The Ransomware protection strategies page displays a list of strategies.
 +
 image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing a list of strategies] 
-. On the Ransomware protection strategies page, in the Protected workloads column, click the down arrow at the end of the row. 
+. On the Ransomware protection strategies page in the Protected workloads column, select the down arrow at the end of the row. 
 
 //.Steps when editing a strategy
 

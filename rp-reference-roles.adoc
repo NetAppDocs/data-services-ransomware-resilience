@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-reference-roles.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account
-summary: BlueXP ransomware protection uses role-based access control (RBAC) to govern the access that each user has to specific features and actions. The service uses roles that are specific to BlueXP ransomware protection (RPS).
+summary: BlueXP ransomware protection employs roles to govern the access that each user has to specific features and actions. 
 
 ---
 
@@ -19,17 +19,7 @@ The service uses the following roles that are specific to BlueXP ransomware prot
 * *Ransomware protection admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
 * *Ransomware protection viewer*: View workload data, view alert data,  download recovery data, and download reports.
 
-
-The BlueXP platform for all BlueXP services uses the following types of roles: 
- 
-* *Platform roles* allow you to manage users, assign them to resources and give them roles along with other platform-wide actions. 
- 
-* *Data services roles* are limited to only a specific data service. You can have mulitple data services roles depending on your job. BlueXP ransomware protection is one of the BlueXP data services. 
-
-Other BlueXP platform roles are treated as viewers in BlueXP ransomware protection. For example, the *Ransomware protection viewer* role allows you to view the protection plans, but does not allow you to perform any actions in BlueXP ransomware protection.
-
-
-For details about all BlueXP platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
+These roles are in addition to the BlueXP platform roles that govern access to the BlueXP service and other services, such as data protection, workload management, and so on. For details about all BlueXP platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the BlueXP setup and administration documentation^].
 
 The following table indicates the actions that each BlueXP ransomware protection role can perform. 
 

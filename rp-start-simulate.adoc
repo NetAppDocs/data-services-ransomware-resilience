@@ -17,8 +17,6 @@ TIP: Your real workload data is not impacted.
 
 You can run readiness drills on NFS and CIFS (SMB) workloads. 
 
-
-
 == Configure a ransomware attack readiness drill
 Before you run a simulation, set up a drill on the Settings page. Access the Settings page from the Actions option in the top menu.
 
