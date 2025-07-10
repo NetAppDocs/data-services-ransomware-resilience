@@ -13,7 +13,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 [.lead]
 When BlueXP ransomware protection detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-//If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
+If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack. The service also immediately initiates a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
 
 You can dismiss false positives or decide to recover your data immediately.  
@@ -64,6 +64,7 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 
 
+TIP: If you configured a security and event management system (SIEM) in BlueXP ransomware protection in the Settings page, the service sends alert details to your SIEM system. 
 
 
 
@@ -76,22 +77,61 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 //* Alert email sent to you
 //* BlueXP Notifications in the BlueXP UI
- 
 
-//=== Respond from an alert email
+.Steps
 
-//. View the email. 
-//. In the email, select *View alert* and log in to BlueXP ransomware protection. 
-//+
-//The Alerts page appears.
+. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
+. Select *View all* under one of the statuses. 
 
-//. Review all incidents on each volume for each alert. 
-//. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+. Select an alert to review all incidents on each volume for each alert. 
+. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
 
-//. Continue with one of the following: 
+. Review the alerts on the Alerts page. 
++
+image:screen-alerts.png["Alerts page"]
 
-//* <<Mark ransomware incidents as ready for recovery>>.
-//* <<Dismiss incidents that are not potential attacks>>. 
+
+. Continue with one of the following: 
+** <<Detect malicious activity and anomalous user behavior>>.
+** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+** <<Dismiss incidents that are not potential attacks>>.
+
+
+
+== Respond to an alert email
+When BlueXP ransomware protection detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
+
+You can receive email notifications for BlueXP ransomware protection alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
+
+TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
+
+. In BlueXP ransomware protection, go to the *Settings* page.
+. Under *Notifications*, locate the email notification settings.
+. Enter the email address where you want to receive alerts.
+. Save your changes.
+
+You will now receive email notifications when new alerts are generated.
+
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+.Steps 
+. View the email. 
+. In the email, select *View alert* and log in to BlueXP ransomware protection. 
++
+The Alerts page appears.
+
+. Review all incidents on each volume for each alert. 
+. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+
+
+. Continue with one of the following: 
+** <<Detect malicious activity and anomalous user behavior>>.
+** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+** <<Dismiss incidents that are not potential attacks>>.
+
+
 
 //=== Respond from the BlueXP Notifications 
 
@@ -112,24 +152,6 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 //=== Respond from data incidents on the Dashboard
 
-.Steps
-
-. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
-. Select *View all* under one of the statuses. 
-
-. Select an alert to review all incidents on each volume for each alert. 
-. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
-
-. Review the alerts on the Alerts page. 
-+
-image:screen-alerts.png["Alerts page"]
-
-
-
-. Continue: 
-** <<Detect malicious activity and anomalous user behavior>>.
-** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-** <<Dismiss incidents that are not potential attacks>>.
 
 == Detect malicious activity and anomalous user behavior
 

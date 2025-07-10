@@ -60,7 +60,7 @@ For more licensing details, refer to link:concept-ransomware-protection.html[Lea
 
 == For data backups
 
-* An account in NetApp StorageGRID, AWS S3, or Azure Blob for backup targets and the access permissions set. 
+* An account in NetApp StorageGRID, AWS S3,  Azure Blob, or Google Cloud Platform for backup targets and the access permissions set. 
 +
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS, Azure, or S3 permissions list^] for details. 
 

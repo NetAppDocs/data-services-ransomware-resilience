@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure backup destinations, enable threat detection, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
+You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
 *Required BlueXP role*
 Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
@@ -30,7 +30,7 @@ From the Settings page, you can do the following:
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
 
 * Add a backup destination.
-* Enable threat detection and connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
+* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
 //* Show upcoming Technology Preview features.
 
 
@@ -306,7 +306,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 //image:screen-settings.png[Settings page]
 
 
-== Enable threat detection
+== Connect to a security and event management system (SIEM) for threat analysis and detection
 
 You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. You can select the AWS Security Hub, Microsoft Sentinel, or Splunk Cloud as your SIEM. 
 
