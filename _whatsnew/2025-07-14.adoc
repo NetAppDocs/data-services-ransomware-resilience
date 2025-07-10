@@ -1,12 +1,14 @@
 === SAN workload support 
 This release includes support for SAN workloads in BlueXP ransomware protection. You can now protect SAN workloads in addition to NFS and CIFS workloads.
 
+For more information, see link:https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-prerequisites.html[BlueXP ransomware protection prerequisites].
+
 === Improved workload protection 
 This release includes an improved workflow for protecting workloads with or without data protection. If you use other NetApp data protection tools such as SnapCenter or BlueXP backup and recovery for your snapshots or backups, BlueXP ransomware protection discovers them and lets you keep the policies that govern them. With this release, you can replace those policies with BlueXP ransomware protection policies, or you can continue to use the existing policies.
 
 //For details, refer to link:rp-use-protect.html[Protect workloads]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Protect workloads].
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Protect workloads].
 
 === Email notifications 
 If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured. The service also immediately initiates a snapshot. 
