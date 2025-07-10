@@ -17,4 +17,4 @@ If you configured a security and event management (SIEM) in BlueXP ransomware pr
 
 //For details, refer to link:rp-use-alert.html[Handle detected ransomware alerts]. 
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Handle detected ransomware alerts].
+For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Handle detected ransomware alerts].
