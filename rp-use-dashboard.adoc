@@ -16,7 +16,7 @@ The BlueXP ransomware protection Dashboard provides at-a-glance information abou
 Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
 
 *Required BlueXP role*
-Organization admin, Folder or project admin,  Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 == Review workload health using the Dashboard
 
@@ -57,7 +57,7 @@ TIP: Select the "i" note to see tips on this data. To increase the workload limi
 *** Failed
 
 
-* *Recommended actions*: To increase protection, review each recommendation and select *Review and fix*. 
+* *Recommended actions*: To increase protection, review each recommendation then select *Review and fix*. 
 +
 See link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection suggestions on the Dashboard] or link:rp-use-protect.html[Protect workloads]. 
 +
@@ -116,7 +116,7 @@ Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
 . From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
-. From the Recommended actions pane, select a recommendation and select *Review and fix*. 
+. From the Recommended actions pane, select a recommendation then select *Review and fix*. 
 
 . To dismiss the action until later, select *Dismiss*. 
 +
@@ -154,7 +154,7 @@ image:screen-dashboard2.png[Dashboard page]
 
 * From the BlueXP ransomware protection menu, select *Reports*. 
 
-. If you selected the *Reports* option, select one of the preconfigured named files and select *Download (CSV)* or *Download (JSON)*. 
+. If you selected the *Reports* option, select one of the preconfigured named files then select *Download (CSV)* or *Download (JSON)*. 
 
 
 

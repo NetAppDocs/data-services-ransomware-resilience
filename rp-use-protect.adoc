@@ -75,7 +75,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 * Application workloads 
 * VM workloads
 * File share workloads
-
+* Block workloads
 
 .Steps 
 
@@ -363,7 +363,7 @@ The following example shows policies managed by BlueXP backup and recovery:
 +
 image:screen-protect-br-policies.png[Protect page showing BlueXP backup and recovery policies]
 
-. To see details of the policies managed elsewhere, click the *Down arrow*. 
+. To see details of the policies managed elsewhere, select the *Down arrow*. 
 
 . To apply a detection policy in addition to the snapshot and backup policies managed elsewhere, select the Detection policy. 
 
@@ -382,7 +382,7 @@ You can assign a different protection policy replacing the current one.
 
 . From the Protection page, on the workload row, select *Edit protection*. 
 
-. In the Policies page, click the down arrow for the policy you want to assign to review the details. 
+. In the Policies page, select the down arrow for the policy you want to assign to review the details. 
 
 . Select the policy you want to assign.
 
@@ -533,7 +533,7 @@ You can view the workloads from the list of strategies or when you are editing a
 The Ransomware protection strategies page displays a list of strategies.
 +
 image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing a list of strategies] 
-. On the Ransomware protection strategies page, in the Protected workloads column, click the down arrow at the end of the row. 
+. On the Ransomware protection strategies page in the Protected workloads column, select the down arrow at the end of the row. 
 
 //.Steps when editing a strategy
 
