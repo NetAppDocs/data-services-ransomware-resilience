@@ -39,6 +39,10 @@ An alert is classified as one of the following:
 ** High entropy is observed. 
 ** File read, write, rename, or delete activity doubled compared to normal levels.
 
+[NOTE]
+For SAN environments, warnings are only based on high entropy. 
+
+
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 //The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
@@ -179,6 +183,9 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
 * Impacted files and directories
+
+[NOTE]
+These details are viewable for NAS workloads. For SAN environments, only the entropy data is available.  
 
 .Steps
 
