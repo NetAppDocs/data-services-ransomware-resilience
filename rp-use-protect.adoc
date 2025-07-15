@@ -19,13 +19,11 @@ Organization admin, Folder or project admin, or Ransomware protection admin role
 
 BlueXP ransomware protection strategies encompass both _detection_ and _protection_ policies.
 
-- **Detection policies** discover ransomware threats and optionally block suspicious file extensions. Detection policies only monitor for ransomware threats; they do not create recovery points. 
+- **Detection policies** detect ransomware threats and optionally block suspicious file extensions.
 
-- **Protection policies** encompasses snapshots, replication to object storage, or backups. Protection policies work with detection policies to create recovery points of your workloads.
+- **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
 +
-In BlueXP ransomware protection, protection policies must include detection policies and snapshots. They can optionally include backups.
-+
-BlueXP ransomware protection offers its own <<predefined, protection policies>>. If you're using other NetApp products to protect your workload, BlueXP ransomware protection discovers those and provides the option to either:
+If you're using other NetApp products to protect your workload, BlueXP ransomware protection discovers those and provides the option to either:
 +
 * use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
 +
