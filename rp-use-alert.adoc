@@ -2,9 +2,8 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. The service also immediately initiates taking a snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
+summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
 ---
-
 = Handle detected ransomware alerts with BlueXP ransomware protection
 :hardbreaks:
 :icons: font
@@ -13,8 +12,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 [.lead]
 When BlueXP ransomware protection detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack. The service also immediately initiates a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
-
+If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the BlueXP ransomware protection *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -168,9 +166,9 @@ The details that appear depend on how the alert was triggered:
 +
 To enable Workload security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload security connection* option.
 +
-For an overview of Data Infrastucture Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
+For an overview of Data Infrastructure Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
 
-TIP: If you don't have a license for Data Infrastructure Workload security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Workload security and don't enable it in BlueXP ransomware protection, you won't see the anomalous user behavior information. 
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
@@ -270,7 +268,7 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 After you review incidents, you need to determine whether the incidents are potential attacks. If the previous condition is not met, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately.  If you dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, the service learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 
 If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 
