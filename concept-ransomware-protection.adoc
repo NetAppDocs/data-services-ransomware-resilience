@@ -154,9 +154,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 
 == Supported backup targets, working environments, and workload data sources
 
-Use BlueXP ransomware protection to see how resilient your data is to a cyberattack on the following types of backup targets, working environments, and workload data sources:
-
-BlueXP ransomware supports the following working environments and backup destinations:
+BlueXP ransomware supports the following backup targets, working environments, and data sources:
 
 *Backup targets supported*
 
