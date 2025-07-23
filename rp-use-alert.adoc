@@ -2,9 +2,8 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. The service also immediately initiates taking a snapshot copy. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
+summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
 ---
-
 = Handle detected ransomware alerts with BlueXP ransomware protection
 :hardbreaks:
 :icons: font
@@ -13,8 +12,7 @@ summary: If BlueXP ransomware protection detects a possible attack, an alert app
 [.lead]
 When BlueXP ransomware protection detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the BlueXP ransomware protection *Alerts* tab. 
 
-//If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the email address that you configured indicating a potential ransomware attack.  The service also immediately initiates taking a snapshot. At this point, you should look at the potential risk in the BlueXP ransomware protection *Alerts* tab. 
-
+If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the BlueXP ransomware protection *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -39,6 +37,10 @@ An alert is classified as one of the following:
 ** High entropy is observed. 
 ** File read, write, rename, or delete activity doubled compared to normal levels.
 
+[NOTE]
+For SAN environments, warnings are only based on high entropy. 
+
+
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
 //The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
@@ -60,6 +62,7 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 
 
+TIP: If you configured a security and event management system (SIEM) in BlueXP ransomware protection in the Settings page, the service sends alert details to your SIEM system. 
 
 
 
@@ -72,22 +75,61 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 //* Alert email sent to you
 //* BlueXP Notifications in the BlueXP UI
- 
 
-//=== Respond from an alert email
+.Steps
 
-//. View the email. 
-//. In the email, select *View alert* and log in to BlueXP ransomware protection. 
-//+
-//The Alerts page appears.
+. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
+. Select *View all* under one of the statuses. 
 
-//. Review all incidents on each volume for each alert. 
-//. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+. Select an alert to review all incidents on each volume for each alert. 
+. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
 
-//. Continue with one of the following: 
+. Review the alerts on the Alerts page. 
++
+image:screen-alerts.png["Alerts page"]
 
-//* <<Mark ransomware incidents as ready for recovery>>.
-//* <<Dismiss incidents that are not potential attacks>>. 
+
+. Continue with one of the following: 
+** <<Detect malicious activity and anomalous user behavior>>.
+** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+** <<Dismiss incidents that are not potential attacks>>.
+
+
+
+== Respond to an alert email
+When BlueXP ransomware protection detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
+
+You can receive email notifications for BlueXP ransomware protection alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
+
+TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
+
+. In BlueXP ransomware protection, go to the *Settings* page.
+. Under *Notifications*, locate the email notification settings.
+. Enter the email address where you want to receive alerts.
+. Save your changes.
+
+You will now receive email notifications when new alerts are generated.
+
+
+*Required BlueXP role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+
+.Steps 
+. View the email. 
+. In the email, select *View alert* and log in to BlueXP ransomware protection. 
++
+The Alerts page appears.
+
+. Review all incidents on each volume for each alert. 
+. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+
+
+. Continue with one of the following: 
+** <<Detect malicious activity and anomalous user behavior>>.
+** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
+** <<Dismiss incidents that are not potential attacks>>.
+
+
 
 //=== Respond from the BlueXP Notifications 
 
@@ -108,24 +150,6 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 //=== Respond from data incidents on the Dashboard
 
-.Steps
-
-. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
-. Select *View all* under one of the statuses. 
-
-. Select an alert to review all incidents on each volume for each alert. 
-. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
-
-. Review the alerts on the Alerts page. 
-+
-image:screen-alerts.png["Alerts page"]
-
-
-
-. Continue: 
-** <<Detect malicious activity and anomalous user behavior>>.
-** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-** <<Dismiss incidents that are not potential attacks>>.
 
 == Detect malicious activity and anomalous user behavior
 
@@ -142,9 +166,9 @@ The details that appear depend on how the alert was triggered:
 +
 To enable Workload security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload security connection* option.
 +
-For an overview of Data Infrastucture Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
+For an overview of Data Infrastructure Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
 
-TIP: If you don't have a license for Data Infrastructure Workload security and don’t enable it in BlueXP ransomware protection, you won’t see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Workload security and don't enable it in BlueXP ransomware protection, you won't see the anomalous user behavior information. 
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
@@ -157,6 +181,9 @@ When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware pro
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
 * Impacted files and directories
+
+[NOTE]
+These details are viewable for NAS workloads. For SAN environments, only the entropy data is available.  
 
 .Steps
 
@@ -241,7 +268,7 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 After you review incidents, you need to determine whether the incidents are potential attacks. If the previous condition is not met, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately.  If you dismiss the alert, the service will learn this behavior and associate it with normal operations and not initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, the service learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 
 If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 

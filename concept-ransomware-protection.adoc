@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: concept-ransomware-protection.html
-keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyber attack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac
-summary: Ransomware attacks can cost a business time, resources, and reputation. The BlueXP ransomware protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyber attack. It also provides you with a list of alerts and remediations for making your data more secure.
+keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac
+summary: The BlueXP ransomware protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyberattack. It also provides you with a list of alerts and remediation steps for making your data more secure.
 ---
 
 = Learn about BlueXP ransomware protection
@@ -13,9 +13,9 @@ summary: Ransomware attacks can cost a business time, resources, and reputation.
 :imagesdir: ./media/
 
 [.lead]
-Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data between one day and several weeks. 
+Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data for anywhere from one day to several weeks.
 
-BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, and Cloud Volumes ONTAP for Microsoft Azure across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
+BlueXP ransomware protection is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, and Amazon FSx for NetApp ONTAP across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
 
 //NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
 
@@ -34,7 +34,8 @@ image:concept-security-layer-diagram.png[Security layer diagram]
 
 The BlueXP ransomware protection service provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
-* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS with NFS or CIFS working environments in BlueXP, across BlueXP organizations, projects, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) SAN (FC, iSCSI, and NVMe) working environments in BlueXP, across BlueXP organizations, projects, and BlueXP Connectors. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+// check wording
 
 * *Protect* your workloads by enabling backups, snapshot copies, and ransomware protection strategies on your data.  
 
@@ -67,15 +68,14 @@ BlueXP ransomware protection offers the following benefits:
 
 
 == Cost 
-NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. 
+NetApp doesn't charge you for using the trial version of BlueXP ransomware protection. 
 
-NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
+NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection offer a 30-day free trial. Previously, BlueXP ransomware protection provided a 90-day free trial. If you've enrolled already in the 90-day free trial, that trial is valid for the 90 days.
 
 //NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
 
 
-If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products will be billed by BlueXP ransomware protection only.
-
+If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products is billed by BlueXP ransomware protection only.
 
 After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by BlueXP ransomware protection), and at least one snapshot or backup policy, BlueXP ransomware protection classifies it “Protected” and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
 
@@ -112,7 +112,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols) and Cloud Volumes ONTAP data connected to BlueXP.
+| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to BlueXP.
 * Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^] and https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^].
 
 
@@ -144,7 +144,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 * Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy technologies and services. 
 
 //* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
-* Orchestrates the recovery of workloads including VMs, file shares, and databases with application consistency. 
+* Orchestrates the recovery of workloads including VMs, file shares, block storage, and databases with application consistency. 
 |*GOVERN* | * Assigns the ransomware protection strategies
 * Helps you monitor the outcomes. 
 |===
@@ -154,7 +154,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 
 == Supported backup targets, working environments, and workload data sources
 
-Use BlueXP ransomware protection to see how resilient your data is to a cyber attack on the following types of backup targets, working environments, and workload data sources:
+BlueXP ransomware supports the following backup targets, working environments, and data sources:
 
 *Backup targets supported*
 
@@ -166,20 +166,23 @@ Use BlueXP ransomware protection to see how resilient your data is to a cyber at
 *Working environments supported* 
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
+* On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
 * Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
 * Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
-* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI). 
+* Cloud Volumes ONTAP 9.17.1 or greater for AWS, Google Cloud Platform, and Microsoft Azure (using FC, iSCSI, and NVMe protocols) 
+* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
 +
 NOTE: ARP/AI requires ONTAP 9.16 or greater. 
 
-NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, iSCSI volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
+NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
 *Workload data sources supported*
 
 The service protects the following application-based workloads on primary data volumes:
 
 * NetApp file shares
+* Block storage
 * VMware datastores
 * Databases (MySQL and Oracle)
 * More coming soon
