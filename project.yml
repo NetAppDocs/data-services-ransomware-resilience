@@ -1,6 +1,5 @@
 settings:
   name: BlueXP ransomware protection
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
