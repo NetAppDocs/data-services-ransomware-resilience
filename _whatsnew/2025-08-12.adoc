@@ -1,1 +1,1 @@
-This release includes general performance enhancements and
+This release includes general enhancements and improvements. 
