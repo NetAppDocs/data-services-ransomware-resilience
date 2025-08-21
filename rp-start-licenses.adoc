@@ -263,11 +263,11 @@ TIP: This message also appears in Licenses and subscriptions and in https://docs
 
 .Steps
 
-. Select the chat icon in the lower-right of Console to request an extension to your term or additional capacity to your license for the particular serial number. You can also send an email to request an update to your license.
+. You can send an email to support to request an update to your license. 
 +
 After you pay for the license and it is registered with the NetApp Support Site, the Console automatically updates the license. The Data Services Licenses page will reflect the change in 5 to 10 minutes.
 
-. If the Console can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
+. If the Console can't automatically update the license, you need need to manually upload the license file.
 +
 .. You can obtain the license file from the NetApp Support Site.
 .. In the Console, select **Administration** > **Licenses and subscriptions**.
