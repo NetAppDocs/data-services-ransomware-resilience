@@ -2,26 +2,26 @@
 sidebar: sidebar
 permalink: rp-start-discover.html
 keywords: bluexp, ransomware protection, protection, risk, cyber attack, security,data security, data protection, data recovery, data discovery
-summary: During discovery, Ransomware Resilience analyzes all volumes and files in working environments across all Console agents and accounts.     
+summary: During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and accounts.     
 ---
 
-= Discover workloads in NetApp Ransomware Resilience
+= Discover workloads in BlueXP ransomware protection
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-To use NetApp Ransomware Resilience, the service needs to first discover data. During discovery, Ransomware Resilience analyzes all volumes and files in working environments across all Console agents and projects within an organization. 
+To use BlueXP ransomware protection, the service needs to first discover data. During discovery, BlueXP ransomware protection analyzes all volumes and files in working environments across all BlueXP Connectors and projects within an organization. 
 
-*Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+*Required BlueXP role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
 
 *What does the service discover?*
-Ransomware Resilience assesses MySQL applications, Oracle applications, VMware datastores, file shares, and block storage. 
+BlueXP ransomware protection assesses MySQL applications, Oracle applications, VMware datastores, file shares, and block storage. 
 
 NOTE: The service does not discover workloads with volumes that use FlexGroup.
 
-Ransomware Resilience discovers and displays both supported and unsupported working environment configurations in the Dashboard.
+BlueXP ransomware protection discovers and displays both supported and unsupported working environment configurations in the Dashboard.
 
 The service checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. It then recommends ways to improve your ransomware protection. 
 
@@ -39,11 +39,11 @@ Within each Connector, select the working environments where you want to discove
 
 .Steps
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 +
 If this is your first login, the landing page appears.
 +
-image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
+image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
 +
 NOTE: If you started the free trial, the *Start 30-day free trial* button label changes to *Start by discovering workloads*. 
 
@@ -60,7 +60,7 @@ image:screen-discover-workloads-unsupported.png[Discover workloads screenshot]
 
 
 . Select the working environments where you want to discover workloads. 
-//. Optionally, select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Connector. 
+//. Optionally, select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
 . Select *Discover*. 
 +
 The service discovers workload data only for those Connectors with selected working environments. This process might take a few minutes.
@@ -68,11 +68,11 @@ The service discovers workload data only for those Connectors with selected work
 image:screen-discover-workloads-unsupported-collected.png[Workloads discovered screenshot]
 . To download the list of discovered workloads, select *Download results*.
 
-. To display the Ransomware Resilience Dashboard, select *Go to Dashboard*.   
+. To display the BlueXP ransomware protection Dashboard, select *Go to Dashboard*.   
 +
 The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
 +
-image:screen-dashboard3.png[Ransomware Resilience Dashboard]
+image:screen-dashboard3.png[BlueXP ransomware protection Dashboard]
 +
 link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
@@ -82,7 +82,7 @@ If you have already selected working environments for discovery, you can discove
 
 .Steps
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 
 . To identify the date of the last discovery, from the Dashboard, look at the date and time stamp next to *Refresh* icon at the top right.
 
@@ -95,10 +95,10 @@ If you have already discovered working environments, you can find new or previou
 
 .Steps
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 //. Do one of the following: 
 //* From the Dashboard, select *Add new* and in the tooltip that appears, select *Add new working environments*. 
-. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. From the drop-down menu, select *Settings*. 
+. From the BlueXP ransomware protection menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. From the drop-down menu, select *Settings*. 
 
 . In the Workload discovery card, select *Discover workloads*.
 +
@@ -113,11 +113,11 @@ TIP: This process might take a few minutes, and a loading icon shows the progres
 
 //.Steps
 
-//. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+//. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
 //+
 //The Dashboard appears. 
 //+
-//image:screen-dashboard.png[Ransomware Resilience Dashboard]
+//image:screen-dashboard.png[BlueXP ransomware protection Dashboard]
 
 //. From the top right of the Dashboard, select *Discover workloads*. 
 
@@ -125,16 +125,16 @@ TIP: This process might take a few minutes, and a loading icon shows the progres
 //+
 //image:screen-discover-workloads-newly-discovered.png[Newly discovered working environments screenshot]
 
-//. Select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Connector. 
+//. Select *Enable autodiscovery* to have BlueXP ransomware protection automatically discover new workloads in the selected Connector. 
 
 //. Select *Discover*. 
 
 //== Set up email notifications 
 
-//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into Console. Emails can be sent to any users who are part of your Console organization, or to any other recipients who need to be aware of certain types of system activity.
+//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP organization, or to any other recipients who need to be aware of certain types of system activity.
 
 //NOTE: Sending email notifications is not supported when the Connector is installed in a site without internet access.
 
-//By default, Console Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
+//By default, BlueXP Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in the Console^]
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in BlueXP^]
