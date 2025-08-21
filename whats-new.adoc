@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: whats-new.html
 keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, ransomware protection, bluexp, anti-ransomware, cyber attack, ransomware, protection, detection, ARP, netapp
-summary: Learn what's new in BlueXP ransomware protection.
+summary: Learn what's new in NetApp Ransomware Resilience.
 ---
 
-= What's new in BlueXP ransomware protection
+= What's new in NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,9 +13,7 @@ summary: Learn what's new in BlueXP ransomware protection.
 :imagesdir: ./media/
 
 [.lead]
-Learn what's new in BlueXP ransomware protection.
-
-
+Learn what's new in NetApp Ransomware Resilience.
 
 // tag::whats-new[]
 == 10 October 2025
@@ -90,7 +88,7 @@ NOTE: With this release, if all BlueXP Connectors in an account are not using Po
 //link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
 //+
-//With this release, you can restore application workloads at the file level to the original source working environment and create a new path inside the volume if you want or to a different working environment.
+//With this release, you can restore application workloads at the file level to the original source system and create a new path inside the volume if you want or to a different system.
 
 === Download a list of impacted files
 Before restoring an application workload at the file level, you can now access the Alerts page to download a list of impacted files in a CSV file and then use the Recovery page to upload the CSV file. 
@@ -113,7 +111,7 @@ Enable this to lock the snapshot copies on primary storage so that they cannot b
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-protect.html[Learn more about protecting workloads and enabling backup locking in a ransomware protection strategy].
 
 === Support for Cloud Volumes ONTAP for Microsoft Azure
-This release supports Cloud Volumes ONTAP for Microsoft Azure as a working environment in addition to Cloud Volumes ONTAP for AWS and on-premises ONTAP NAS. 
+This release supports Cloud Volumes ONTAP for Microsoft Azure as a system in addition to Cloud Volumes ONTAP for AWS and on-premises ONTAP NAS. 
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html[Quick start for Cloud Volumes ONTAP in Azure^]
 
@@ -132,7 +130,7 @@ You can sign up for a 90-day free trial. Soon you be will be able to purchase a 
 https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up licensing].
 
 === CIFS protocol
-The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS working environments using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
+The service now supports on-premises ONTAP and Cloud Volumes ONTAP in AWS systems using both NFS and CIFS protocols. The previous release supported only the NFS protocol. 
 
 === Workload details
 This release now provides more details in the workload information from the Protection and other pages for improved workload protection assessment. From the workload details, you can review the currently assigned policy and review the configured backup destinations. 
@@ -178,7 +176,7 @@ https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-reports.html[L
 View documentation link is now included in the UI. You can access this documentation from the Dashboard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page. 
 
 === BlueXP backup and recovery
-The BlueXP backup and recovery service no longer needs to be already enabled on the working environment. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+The BlueXP backup and recovery service no longer needs to be already enabled on the system. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
 === Settings option
 You can now set up backup destinations in BlueXP ransomware protection Settings. 

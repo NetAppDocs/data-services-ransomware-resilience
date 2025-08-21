@@ -2,81 +2,81 @@
 sidebar: sidebar
 permalink: rp-start-faq.html
 keywords: ransomware protection faq, ransomware protection frequently asked questions
-summary: This FAQ can help if you're just looking for a quick answer to a question.
+summary: Find an answer to a frequently asked question about NetApp Ransomware Resilience.
 ---
 
-= Frequently asked questions for BlueXP ransomware protection
+= Frequently asked questions about NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-This FAQ can help if you're just looking for a quick answer to a question.
+This FAQ can help if you're just looking for a quick answer to a question about NetApp Ransomware Resilience.
 
 == Deployment
 
-*Do you need a license to use BlueXP ransomware protection?*
+*Do you need a license to use Ransomware Resilience?*
 
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and BlueXP ransomware protection with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet.
+* Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and Ransomware Resilience with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console's Licesnses and subscriptions section.
 
 
-*How do you enable BlueXP ransomware protection?* 
-BlueXP ransomware protection does not require any enablement. The ransomware protection option is automatically enabled on the BlueXP left navigation. 
+*How do you enable Ransomware Resilience?* 
+Ransomware Resilience does not require any enablement. The ransomware protection option is automatically enabled on the Console left navigation. 
 
-To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the service.
+To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the Console agent, it will include the appropriate capabilities for the service.
 
-To get started with BlueXP ransomware protection, you click "Start discovering workloads" from its initial landing page. 
+To get started with Ransomware Resilience, select "Start discovering workloads" from its initial landing page. 
 
-*Is BlueXP ransomware protection available in standard, restricted, and private modes?*
-At this time, BlueXP ransomware protection is available only in standard mode. Stay tuned for more. 
+*Is Ransomware Resilience available in standard, restricted, and private modes?*
+At this time, Ransomware Resilience is available only in standard mode. Stay tuned for more. 
 
-For an explanation about these modes across all BlueXP services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[BlueXP deployment modes^].
+For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
 == Access
 
-*What's the BlueXP ransomware protection URL?*
-For the URL, in a browser, enter: https://console.bluexp.netapp.com/[https://console.bluexp.netapp.com/ransomware-protection^] to access the BlueXP console. 
+*What's the Ransomware Resilience URL?*
+In a browser, enter https://console.netapp.com/[https://console.netapp.com/ransomware-resilience^] to access the Console. 
 
 
 
 
 *How are access permissions handled?*
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 *What device resolution is best?*
-The recommended device resolution for BlueXP ransomware protection is 1920x1080 or better. 
+The recommended device resolution for Ransomware Resilience is 1920x1080 or better. 
 
 *Which browser should I use?*
-Any modern browser will work. 
+Any modern browser. 
 
 
 
 == Interaction with other services
 
-*Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
-Yes, BlueXP ransomware protection discovers snapshot schedules set in ONTAP. 
+*Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?*
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. 
 
-*If you set a policy using BlueXP ransomware protection, do you have to make future changes only in this service?* 
-We recommend that you make policy changes from the BlueXP ransomware protection service.
+*If you set a policy using Ransomware Resilience, do you have to make future changes only in this service?* 
+We recommend that you make policy changes from Ransomware Resilience.
 
-*How does BlueXP ransomware protection interact with NetApp Backup and Recovery and SnapCenter?*
+*How does Ransomware Resilience interact with NetApp Backup and Recovery and SnapCenter?*
 
-BlueXP ransomware protection uses the following products and services:
+Ransomware Resilience uses the following products and services:
 
 * Backup and Recovery to discover and set snapshot and backup policies for file share workloads
 * SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
 
-In addition, BlueXP ransomware protection uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
+In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
 
-//*How is BlueXP ransomware protection different from Cloud Insights Storage Workload Security (CISWS)?*
+//*How is Ransomware Resilience different from Cloud Insights Storage Workload Security (CISWS)?*
 
-//BlueXP ransomware protection complements and will soon help customers use Cloud Insights Storage Workload Security (CISWS), it does not compete with it. Like ARP, CISWS is a detection and response technology that helps protect your data from ransomware by detecting threats and potential attacks. CISWS detects threats based on user activity, looking at anomalies in user behavior (such as unusual user access activity).
+//Ransomware Resilience complements and will soon help customers use Cloud Insights Storage Workload Security (CISWS), it does not compete with it. Like ARP, CISWS is a detection and response technology that helps protect your data from ransomware by detecting threats and potential attacks. CISWS detects threats based on user activity, looking at anomalies in user behavior (such as unusual user access activity).
 
-//BlueXP ransomware protection is a service that helps customers manage the overall ransomware resilience as outlined by NIST Cybersecurity Framework 2.0. It identifies workloads, their protection posture, prioritizes them, and recommends posture improvements. BlueXP ransomware protection also helps customers create protection policies and deploys those policies per workload across multiple volumes simultaneously. Coming soon, BlueXP ransomware protection will help manage CISWS detection alerts by mapping them to workloads and helping customers identify all impacted files. BlueXP ransomware protection completes ransomware resilience by guiding customers through a simple recovery to help customers recover their workloads quickly and with minimal impact.
+//Ransomware Resilience is a service that helps customers manage the overall ransomware resilience as outlined by NIST Cybersecurity Framework 2.0. It identifies workloads, their protection posture, prioritizes them, and recommends posture improvements. Ransomware Resilience also helps customers create protection policies and deploys those policies per workload across multiple volumes simultaneously. Coming soon, Ransomware Resilience will help manage CISWS detection alerts by mapping them to workloads and helping customers identify all impacted files. Ransomware Resilience completes ransomware resilience by guiding customers through a simple recovery to help customers recover their workloads quickly and with minimal impact.
 
 
 == Workloads
@@ -84,7 +84,7 @@ In addition, BlueXP ransomware protection uses Backup and Recovery and SnapCente
 *What makes up a workload?*
 A workload is an application, a VM, or a file share. A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
 
-*How does BlueXP ransomware protection prioritize workload data?*
+*How does Ransomware Resilience prioritize workload data?*
 Data priority is determined by the snapshot copies made and backups that are scheduled. 
 
 The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload. 
@@ -92,26 +92,26 @@ The workload priority (critical, standard, important) is determined by snapshot 
 link:rp-use-protect.html[Learn about workload priority or importance].
 
 
-*What workloads does BlueXP ransomware protection support?*
+*What workloads does Ransomware Resilience support?*
 
-BlueXP ransomware protection can identify the following workloads: Oracle, MySQL, file shares, block storage, VMs, and VM datastores.
+Ransomware Resilience can identify the following workloads: Oracle, MySQL, file shares, block storage, VMs, and VM datastores.
 
-In addition, if you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection, and BlueXP ransomware protection can protect and recover these in a workload-consistent manner.
+In addition, if you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience, and Ransomware Resilience can protect and recover these in a workload-consistent manner.
 
 *How do you associate data with a workload?*
 
-BlueXP ransomware protection associates data with a workload in the following ways:
+Ransomware Resilience associates data with a workload in the following ways:
 
-* BlueXP ransomware protection discovers the volumes and the file extensions and associates them to the appropriate workload.
-* In addition, if you have SnapCenter or SnapCenter for VMware and have configured workloads in Backup and Recovery, then BlueXP ransomware protection discovers the workloads managed by SnapCenter and SnapCenter for VMware and their associated volumes.
+* Ransomware Resilience discovers the volumes and the file extensions and associates them to the appropriate workload.
+* In addition, if you have SnapCenter or SnapCenter for VMware and have configured workloads in Backup and Recovery, then Ransomware Resilience discovers the workloads managed by SnapCenter and SnapCenter for VMware and their associated volumes.
 
 *What is a "protected" workload?*
-In BlueXP ransomware protection, a workload shows a “protected” status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
+In Ransomware Resilience, a workload shows a "protected" status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
 
 //Coming soon, this could also be that CISWS is monitoring user activity. 
 
-*What is an “at risk” workload?*
-If a workload does not have a primary detection policy enabled, it is “at risk” even if it has a backup and snapshot policy enabled. 
+*What is an "at risk" workload?*
+If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a backup and snapshot policy enabled. 
 
 
 *New volume added, but doesn't appear yet*
@@ -121,8 +121,8 @@ If you added a new volume to your environment, initiate discovery again and appl
 
 == Protection policies
 
-*Do BlueXP ransomware policies co-exist with the other kinds of workload policies?*
-At this time, Backup and Recovery (Cloud Backup) supports one backup policy per volume. So, Backup and Recovery and BlueXP ransomware protection share backup policies.
+*Do Ransomware Resilience ransomware policies co-exist with the other kinds of workload policies?*
+At this time, Backup and Recovery (Cloud Backup) supports one backup policy per volume. So, Backup and Recovery and Ransomware Resilience share backup policies.
 
 Snapshot copies are not limited and can be added separately from each service.
 
@@ -133,34 +133,34 @@ The following policies are required in ransomware protection strategy:
 * Ransomware detection policy
 * Snapshot policy
 
-A backup policy is not required in the BlueXP ransomware protection strategy. 
+A backup policy is not required in the Ransomware Resilience strategy. 
 
 
-*Is BlueXP ransomware protection aware of protection settings made in NetApp ONTAP?*
+*Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?*
 
-Yes, BlueXP ransomware protection discovers snapshot schedules set in ONTAP and whether ARP and FPolicy are enabled across all volumes in a discovered workload. The info you see initially in the Dashboard is aggregated from other NetApp solutions and products. 
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP and whether ARP and FPolicy are enabled across all volumes in a discovered workload. The info you see initially in the Dashboard is aggregated from other NetApp solutions and products. 
 
 
-*Is BlueXP ransomware protection aware of policies already made in Backup and Recovery and SnapCenter?*
+*Is Ransomware Resilience aware of policies already made in Backup and Recovery and SnapCenter?*
 
-Yes, if you have workloads managed in Backup and Recovery or SnapCenter, the policies managed by those products are brought into BlueXP ransomware protection.
+Yes, if you have workloads managed in Backup and Recovery or SnapCenter, the policies managed by those products are brought into Ransomware Resilience.
 
 *Can you modify policies carried over from Backup and Recovery and/or SnapCenter?*
 
-No, you cannot modify policies managed by Backup and Recovery or SnapCenter within BlueXP ransomware protection. You manage any changes to those policies in Backup and Recovery or SnapCenter.
+No, you cannot modify policies managed by Backup and Recovery or SnapCenter within Ransomware Resilience. You manage any changes to those policies in Backup and Recovery or SnapCenter.
 
-*If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in BlueXP ransomware protection?*
+*If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?*
 
-No. BlueXP ransomware protection does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
+No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
 
 *What happens if you add new policies in Backup and Recovery or SnapCenter
-after signing up for BlueXP ransomware protection?*
+after signing up for Ransomware Resilience?*
 
-BlueXP ransomware protection recognizes any new polices created in Backup and Recovery or SnapCenter.
+Ransomware Resilience recognizes any new polices created in Backup and Recovery or SnapCenter.
 
 *Can you change policies from ONTAP?*
 
-Yes, you can change policies from ONTAP in BlueXP ransomware protection. You can also create new policies in BlueXP ransomware protection and apply them to workloads. This action replaces existing ONTAP policies with the policies created in BlueXP ransomware protection. 
+Yes, you can change policies from ONTAP in Ransomware Resilience. You can also create new policies in Ransomware Resilience and apply them to workloads. This action replaces existing ONTAP policies with the policies created in Ransomware Resilience. 
 
 *Can you disable policies?*
 

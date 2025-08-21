@@ -2,18 +2,18 @@
 sidebar: sidebar
 permalink: rp-use-overview.html
 keywords: ransomware protection, ransomware protection, detect ransomware attacks, recover from ransomware attack
-summary: Using BlueXP ransomware protection, you can view workload health and protect workloads.
+summary: Using NetApp Ransomware Resilience, you can view workload health and protect workloads.
 ---
 
-= Use BlueXP ransomware protection
+= Use NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Using BlueXP ransomware protection, you can view workload health and protect workloads.
+With NetApp Ransomware Resilience, you can view workload health and protect workloads.
 
-* link:rp-start-discover.html[Discover workloads in BlueXP ransomware protection].
+* link:rp-start-discover.html[Discover workloads in Ransomware Resilience].
 * link:rp-use-dashboard.html[View protection and workload health from the Dashboard].
 ** Review and act on ransomware protection recommendations.
 * link:rp-use-protect.html[Protect workloads]:

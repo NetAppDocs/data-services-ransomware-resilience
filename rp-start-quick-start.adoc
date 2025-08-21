@@ -2,35 +2,35 @@
 sidebar: sidebar
 permalink: rp-start-quick-start.html
 keywords: how to get started with bluexp ransomware protection, ransomware protection quick start
-summary: Get started with the NetApp BlueXP ransomware protection service in a few steps.
+summary: Get started with the NetApp Ransomware Resilience in a few steps.
 ---
 
-= Quick start for BlueXP ransomware protection
+= Quick start for NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Here's an overview of the steps needed to get started with BlueXP ransomware protection. The links within each step take you to a page that provides more details.
+Here's an overview of the steps needed to get started with NetApp Ransomware Resilience. The links within each step take you to a page that provides more details.
 
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review prerequisites 
 
 [role="quick-margin-para"]
-link:rp-start-prerequisites.html[Ensure your environment meets these requirements].
+link:rp-start-prerequisites.html[Ensure your system meets these requirements].
  
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up the ransomware protection service
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Ransomware Resilience
 
 
 
 [role="quick-margin-list"]
 * link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
-* link:rp-start-setup.html[Configure a Connector in BlueXP].
+* link:rp-start-setup.html[Configure a Console agent].
 * link:rp-start-licenses.html[Set up licensing].
-* link:rp-start-discover.html[Discover workloads in BlueXP].
+* link:rp-start-discover.html[Discover workloads in the Console].
 * link:rp-start-setup.html[Configure backup destinations].
 * link:rp-start-setup.html[Optionally enable threat detection].
 * link:rp-start-simulate.html[Optionally, conduct a ransomware attack readiness drill].

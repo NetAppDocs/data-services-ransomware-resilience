@@ -11,22 +11,22 @@ summary: Improve the security and privacy compliance of your data with NetApp Da
 :imagesdir: ./media/
 
 [.lead]
-Within the NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the BlueXP family and is available at no additional cost. 
+Within the NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the Console and is available at no additional cost. 
 
 link:https://docs.netapp.com/us-en/bluexp-classification/[Data Classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
 
-//IMPORTANT: Data Classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in BlueXP ransomware protection is generally available and not in Preview. To enable Preview features, use the BlueXP ransomware protection *Settings* option. Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings].
+//IMPORTANT: Data Classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in Ransomware Resilience  is generally available and not in Preview. To enable Preview features, use the Ransomware Resilience  *Settings* option. Refer to link://rp-use-settings-html[Configure Ransomware Resilience  settings].
 
 TIP: This process can impact workload importance to help ensure you have the appropriate protection. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 == Identify privacy exposure with Data Classification 
 
-Before you use Data Classification within the BlueXP ransomware protection service, you need link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[to enable Data Classification to scan your data^].
+Before you use Data Classification within Ransomware Resilience, you need link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[to enable Data Classification to scan your data^].
 
-You can deploy Data Classification within the Protection page of the BlueXP ransomware protection service. Follow the procedure to identify the privacy exposure. When you select **Identify exposure**, if you haven't already deployed Data Classification, a dialog enables you to enable Data Classification. 
+You can deploy Data Classification within the Protection page of Ransomware Resilience . Follow the procedure to identify the privacy exposure. When you select **Identify exposure**, if you haven't already deployed Data Classification, a dialog enables you to enable Data Classification. 
 
 image:classification-deploy.png[Screenshot of deploy classification]
 
@@ -40,11 +40,11 @@ To learn more about Data Classification, see:
 
 .Before you begin
 
-Scanning for PII data in BlueXP ransomware protection is available if you've link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deployed Data Classification^]. Data Classification is available as part of the BlueXP platform at no extra charge and can be deployed on-premises or in the customer cloud.
+Scanning for PII data in Ransomware Resilience  is available if you've link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deployed Data Classification^]. Data Classification is available as part of the Console at no extra charge and can be deployed on-premises or in the customer cloud.
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Ransomware Resilience  menu, select *Protection*.
 
 . In the Protection page, locate a file share workload in the Workload column. 
 +
@@ -57,7 +57,7 @@ If you haven't deployed Data Classification, selecting *Identify exposure* opens
 
 .Result
 
-//For the SaaS version of Data Classification, Data Classification installs a BlueXP Connector, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain in the NetApp cloud. 
+//For the SaaS version of Data Classification, Data Classification installs a Console agent, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain in the NetApp cloud. 
 
 Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page indicates it is identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
 
@@ -73,7 +73,7 @@ PII data is classified into one of three designations:
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Protection*.
+. From the Ransomware Resilience  menu, select *Protection*.
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
 image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
@@ -114,11 +114,11 @@ Privacy exposure changes can impact the workload importance.
 
 //== Investigate privacy exposure directly in Data Classification
 
-//From within BlueXP ransomware protection, you can select a workload, view its details, and then investigate the exposure in Data Classification.
+//From within Ransomware Resilience , you can select a workload, view its details, and then investigate the exposure in Data Classification.
 
 //.Steps
 
-//. From the BlueXP ransomware protection menu, select *Protection*.
+//. From the Ransomware Resilience  menu, select *Protection*.
 
 //. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 //+
@@ -137,7 +137,7 @@ Privacy exposure changes can impact the workload importance.
 
 //. Review the information in the Investigation tab.
 
-//. To return to the BlueXP ransomware protection service, select *Back to BlueXP ransomware protection*.
+//. To return to the Ransomware Resilience , select *Back to Ransomware Resilience *.
 
 == For more information 
 

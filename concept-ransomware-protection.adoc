@@ -14,11 +14,9 @@ summary: NetApp Ransomware Resilience enables you to view relevant information a
 [.lead]
 Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data for anywhere from one day to several weeks.
 
-NetApp Ransomware Resilience is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, and Amazon FSx for NetApp ONTAP across BlueXP organizations. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
+NetApp Ransomware Resilience is a service that protects your data from ransomware attacks. The service protects application-based workloads of Oracle, MySQL, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, and Amazon FSx for NetApp ONTAP across the NetApp Console. The service backs up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
 
-//NOTE: THIS DOCUMENTATION IS PROVIDED AS A TECHNOLOGY PREVIEW.  With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability.   
-
-== Ransomware protection at the data layer
+== Ransomware Resilience at the data layer
 Your security posture typically encompasses multiple layers of defense to protect against a range of cyber threats. 
 
 * *Outermost layer*: This is your first line of defense using firewalls, intrusion detection systems, and virtual private networks to safeguard network boundaries. 
@@ -33,7 +31,7 @@ image:concept-security-layer-diagram.png[Security layer diagram]
 
 Ransomware Resilience full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
-* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) SAN (FC, iSCSI, and NVMe) working environments in BlueXP, across BlueXP organizations, projects, and Console agents. The service then categorizes the data priority and provides recommendations to you for ransomware protection improvements.
+* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) SAN (FC, iSCSI, and NVMe) systems across the NetApp Console, projects, and Console agents. Ransomwware Resilience categorizes the data priority and provides recommendations to you for ransomware resilience improvements.
 // check wording
 
 * *Protect* your workloads by enabling backups, snapshot copies, and ransomware protection strategies on your data.  
@@ -111,7 +109,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to BlueXP.
+| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to the Console.
 * Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^] and https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^].
 
 
@@ -151,18 +149,18 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 //For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
 
 
-== Supported backup targets, working environments, and workload data sources
+== Supported backup targets, systems, and workload data sources
 
-BlueXP ransomware supports the following backup targets, working environments, and data sources:
+Ransomware Resilience supports the following backup targets, systems, and data sources:
 
-*Backup targets supported*
+*Supported backup targets*
 
 * Amazon Web Services (AWS) S3
 * Google Cloud Platform
 * Microsoft Azure Blob
 * NetApp StorageGRID
 
-*Working environments supported* 
+*Supported systems* 
 
 * On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
 * On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
@@ -176,7 +174,7 @@ NOTE: ARP/AI requires ONTAP 9.16 or greater.
 
 NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
 
-*Workload data sources supported*
+*Supported workload data sources*
 
 The service protects the following application-based workloads on primary data volumes:
 

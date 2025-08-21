@@ -13,8 +13,8 @@ summary: You can configure several options, including a backup destination, thre
 [.lead]
 You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required NetApp Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 //You can also show future Preview features. 
 
@@ -55,14 +55,14 @@ You can configure workload discovery to automatically discover new workloads in 
 . In the Settings page, locate the *Workload discovery* tile.
 . In the *Workload discovery* tile, select *Discover workloads*.
 +
-This page shows BlueXP Connectors with working environments that were not selected earlier, newly available BlueXP Connectors, and newly available working environments. This page doesn't show those working environments that were previously selected. 
+This page shows Console agents with systems that were not selected earlier, newly available Console agents, and newly available systems. This page doesn't show those systems that were previously selected. 
 
-. Select the Connector where you want to discover workloads.
-. Review the list of working environments.
-. Check the working environments where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments.
-. Do this for other working environments as needed.
+. Select the Console agent where you want to discover workloads.
+. Review the list of systems.
+. Check the systems where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments.
+. Do this for other systems as needed.
 
-. Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Connector.
+. Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
 
 == See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
@@ -113,7 +113,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 .Steps
 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 . Review the Dashboard's Recommended actions pane. 
 +
@@ -163,7 +163,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up AWS as a backup destination, enter the following information. 
 
-For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -174,7 +174,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
-** Create a new bucket, select an existing bucket if one already exists in BlueXP, or bring your own bucket that will store the backups. 
+** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. 
 ** AWS account, region, access key and secret key for AWS credentials
 + 
 https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
@@ -209,7 +209,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up Google Cloud Platform (GCP) as a backup destination, enter the following information. 
 
-For details about managing your GCP storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html[Connector installation options in Google Cloud^].
+For details about managing your GCP storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -221,7 +221,7 @@ image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 
 * *Provider settings*:
 ** Create a new bucket. Enter the access key and secret key.
-//** Create a new bucket, select an existing bucket if one already exists in BlueXP, or bring your own bucket that will store the backups. Enter the access key and secret key. 
+//** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. Enter the access key and secret key. 
 ** Enter or select your Google Cloud Platform project and region.
 //+ 
 //https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html[If you want to bring your own bucket, refer to Add Google Cloud Storage buckets^]. 
@@ -254,7 +254,7 @@ The new backup destination is added to the list of backup destinations.
 
 To set up Azure as a backup destination, enter the following information. 
 
-For details about managing your Azure credentials and marketplace subscriptions in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
+For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -265,7 +265,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 . Select the Down arrow next to each setting and enter or select values: 
 
 * *Provider settings*:
-** Create a new storage account, select an existing one if one already exists in BlueXP, or bring your own storage account that will store the backups. 
+** Create a new storage account, select an existing one if one already exists in the Console, or bring your own storage account that will store the backups. 
 ** Azure subscription, region, and resource group for Azure credentials
 + 
 https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
@@ -295,7 +295,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 //=== Edit a backup destination from the Settings option
 
-//. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+//. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 //. From the Dashboard, select the Actions option on the upper right and select *Edit settings*. 
 //+
@@ -320,12 +320,12 @@ Ransomware Resilience can send the following event data to your SIEM system:
 
 * *context*:
 ** *os*: This is a constant with the value of ONTAP.
-** *os_version*: The version of ONTAP running on the working environment.
-** *connector_id*: The ID of the connector managing the working environment.
-** *cluster_id*: The cluster ID reported by ONTAP for the working environment.
+** *os_version*: The version of ONTAP running on the system.
+** *connector_id*: The ID of the Console agent managing the system.
+** *cluster_id*: The cluster ID reported by ONTAP for the system.
 ** *svm_name*: The name of the SVM where the alert was found.
 ** *volume_name*: The name of the volume on which the alert is found.
-** *volume_id*: The ID of the volume reported by ONTAP for the working environment.
+** *volume_id*: The ID of the volume reported by ONTAP for the system.
 
 * *incident*:
 ** *incident_id*: The incident ID generated by Ransomware Resilience for the volume under attack in the service.
@@ -456,7 +456,7 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 
 Before you enable Splunk Cloud in Ransomware Resilience, you'll need to do the following high level steps in Splunk Cloud: 
 
-* Enable an HTTP Event Collector in Splunk Cloud to receive event data via HTTP or HTTPS from BlueXP. 
+* Enable an HTTP Event Collector in Splunk Cloud to receive event data via HTTP or HTTPS from the Console. 
 * Create an Event Collector token in Splunk Cloud. 
 
 .Steps to enable an HTTP Event Collector in Splunk 
@@ -482,7 +482,7 @@ Before you enable Splunk Cloud in Ransomware Resilience, you'll need to do the f
 Enabling SIEM sends data from Ransomware Resilience to your SIEM server for threat analysis and reporting. 
 
 .Steps
-. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
+. From the Console menu, select *Protection* > *Ransomware Resilience*. 
 
 . From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 
@@ -510,7 +510,7 @@ The Settings page shows "Connected."
 //Disconnecting SIEM stops the service from sending data to the SIEM server. 
 
 //.Steps
-//. From the BlueXP menu, select *Protection* > *Ransomware protection*. 
+//. From the Console menu, select *Protection* > *Ransomware Resilience*. 
 
 //. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 

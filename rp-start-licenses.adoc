@@ -1,30 +1,30 @@
 ---
 sidebar: sidebar
 permalink: rp-start-licenses.html
-keywords: bluexp license, ransomware protection license, netapp
-summary: Get started with BlueXP ransomware protection by setting up licensing.
+keywords: bluexp license, ransomware protection license, netapp console
+summary: Get started with NeApp Ransomware Resilience by setting up licensing.
 ---
 
-= Set up licensing for BlueXP ransomware protection
+= Set up licensing for NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-With BlueXP ransomware protection, you can use different licensing plans.
+With NetApp Ransomware Resilience, you can use different licensing plans.
 
-*Required BlueXP role*
-Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 *License types*
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in BlueXP digital wallet. 
-//NOTE: BlueXP ransomware protection charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in BlueXP digital wallet, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console. 
+//NOTE: Ransomware Resilience charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in the Console Licenses and subscriptions page, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
-After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the BlueXP digital wallet *Data service Licenses* tab or the active subscription in the BlueXP digital wallet *Subscriptions* tab.
+After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
 
 After the free trial ends or the license or subscription expires, you can still do the following in the service:
 
@@ -32,23 +32,21 @@ After the free trial ends or the license or subscription expires, you can still 
 * Delete any resource, such as a policy.
 * Run all scheduled operations that were created during the trial period or under the license. 
 
-
-
 == Other licenses  
 
-The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use NetApp Backup and Recovery even if you don't have a license for it. 
+The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use NetApp Backup and Recovery even if you don't have a license for it. 
 
 NOTE: If you have both Bakup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
-You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in BlueXP ransomware protection. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in Ransomware Resilience. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
 
-TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don't enable it in BlueXP ransomware protection, you won't see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don't enable it in Ransomware Resilience, you won't see the anomalous user behavior information. 
 
 == Try it out using a 30-day free trial
-You can try BlueXP ransomware protection out by using a 30-day free trial. You must be an BlueXP Organization administrator to start the free trial. 
+You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
 
 
-NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
+NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
 
 No capacity limits are enforced during the trial.  
 
@@ -59,18 +57,18 @@ During the trial, you have full functionality.
 
 .Steps
 
-. Access the https://console.bluexp.netapp.com/[BlueXP console^].
-. Log in to BlueXP. 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. Access the https://console.netapp.com/[Console^].
+. Log in to the Console. 
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 +
 If this is your first time logging in to this service, the landing page appears. 
 
 +
-image:screen-landing.png[Landing page screenshot for BlueXP ransomware protection]
+image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
 . If you haven't already added a Connector for other services, add one. 
 + 
-To add a Connector, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Connectors^].
-. After you set up a Connector, in the BlueXP ransomware protection landing page, the button to add a Connector changes to a button for discovering workloads. Select *Start by discovering workloads*. 
+To add a Console agent, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^].
+. After you set up a Console agent, in the Ransomware Resilience landing page, the button to add a Console agent changes to a button for discovering workloads. Select *Start by discovering workloads*. 
 
 . To review the free trial information, select the drop-down option in the top right. 
 
@@ -90,41 +88,38 @@ If you already have a PAYGO subscription, the license is automatically switched 
 This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
 
 .Steps
-. In the BlueXP ransomware protection, do one of the following: 
+. In Ransomware Resilience, do one of the following: 
 +
-* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
-* Click on the *Free trial* notice at the top right and select *View payment methods*. 
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*. 
 +
-image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+image:screen-license-payment-methods3.png[The Ransomware Resilience Payment methods page]
 . In the Payment methods page, select *Subscribe* for *Amazon Web Services*. 
 . In AWS Marketplace, select *View purchase options*. 
-. Use AWS Marketplace to subscribe to *NetApp Intelligent Services* and *BlueXP ransomware protection*.  
+. Use AWS Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.  
  
-. When you return to BlueXP ransomware protection, a message states that you are subscribed.
+. When you return to Ransomware Resilience, a message states that you are subscribed.
 +
-NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in AWS Marketplace.  
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number, and indicates that Ransomware Resilience is subscribed in AWS Marketplace.  
 
-. Return to BlueXP ransomware protection Payment methods page.
+. Return to the Ransomware Resilience payment methods page.
 
-. Add the license to BlueXP by selecting *Add license to BlueXP*.
-+
-The BlueXP digital wallet service shows the Add License page. 
+. Add the license to the Console by selecting *Add license*.
 
 +
-image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
-. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+. In the Add License page, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
 
 
-. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+. To view license details, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
 +
-image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+image:screen-dw-data-services-license.png[Screenshot of licenses and subscriptions.]
 
-
-. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 +
 A message appears indicating that a license has been added. 
@@ -134,41 +129,37 @@ A message appears indicating that a license has been added.
 This procedure provides a high level overview of how to subscribe directly in the Azure Marketplace. 
 
 .Steps
-. In the BlueXP ransomware protection, do one of the following: 
+. In Ransomware Resilience, do one of the following: 
 +
-* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
-* Click on the *Free trial* notice at the top right and select *View payment methods*. 
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*.  
 +
-image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+image:screen-license-payment-methods3.png[The Ransomware Resilience Payment methods page]
 . In the Payment methods page, select *Subscribe* for *Microsoft Azure Marketplace*. 
 . In Azure Marketplace, select *View purchase options*. 
-. Use Azure Marketplace to subscribe to *NetApp Intelligent Services* and *BlueXP ransomware protection*.  
+. Use Azure Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.  
  
-. When you return to BlueXP ransomware protection, a message states that you are subscribed.
+. When you return to Ransomware Resilience, a message states that you are subscribed.
 +
-NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Azure Marketplace.  
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number, and indicates that Ransomware Resilience is subscribed in Azure Marketplace.  
 
-. Return to BlueXP ransomware protection Payment methods page.
+. Return to Ransomware Resilience Payment methods page.
 
-. Add the license to BlueXP by selecting *Add license to BlueXP*.
+. To add the license, select *Add a license*.
 +
-The BlueXP digital wallet service shows the Add License page. 
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
-+
-image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+. In the Add License page, select *Enter Serial Number* then enter the serial number frin the email sent to you. Select *Add License*. 
 
-. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
-
-
-. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+. To view license details in Licenses and subscriptions, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
 +
-image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+image:screen-dw-data-services-license.png[Data Services Licenses page]
 
 
-. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 +
 A message appears indicating that a license has been added. 
@@ -178,57 +169,54 @@ A message appears indicating that a license has been added.
 This procedure provides a high level overview of how to subscribe directly in the Google Cloud Platform Marketplace. 
 
 .Steps
-. In the BlueXP ransomware protection, do one of the following: 
+. In the Ransomware Resilience, do one of the following: 
 +
-* You see a message that the free trial is expiring. In the message, select *View payment methods*. 
-* Click on the *Free trial* notice at the top right and select *View payment methods*. 
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*.  
 +
-image:screen-license-payment-methods3.png[The BlueXP ransomware protection Payment methods page]
+image:screen-license-payment-methods3.png[Screenshot of the Ransomware Resilience Payment methods page.]
 . In the Payment methods page, select *Subscribe* for Google Cloud Platform Marketplace*. 
 . In Google Cloud Platform Marketplace, select *Subscribe*. 
-. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *BlueXP ransomware protection*.    
-image:screen-license-payments-gcp2.png[Google Cloud Marketplace subscription page]
+. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.    
+image:screen-license-payments-gcp2.png[Screenshot of the Google Cloud Marketplace subscription page.]
  
-. When you return to BlueXP ransomware protection, a message states that you are subscribed.
+. When you return to Ransomware Resilience, a message states that you are subscribed.
 +
-NOTE: An email is sent to you that includes the BlueXP ransomware protection serial number and indicates that BlueXP ransomware protection is subscribed in Google Cloud Platform Marketplace.  
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number and indicates that Ransomware Resilience is subscribed in Google Cloud Platform Marketplace.  
 
-. Return to BlueXP ransomware protection Payment methods page.
+. Return to Ransomware Resilience Payment methods page.
 
-. Add the license to BlueXP by selecting *Add license to BlueXP*.
+. To add the license to the Console, select *Add license*.
 +
-The BlueXP digital wallet service shows the Add License page. 
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
-+
-image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
-
-. In the Add License page in BlueXP digital wallet, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+. In the Add License page, select *Enter Serial Number*. Enter the serial number in the email sent to you. Select *Add License*. 
 
 
-. To view license details in BlueXP digital wallet, from the BlueXP left navigation, select *Governance* > *Digital wallet*.
+. To view license details, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
 +
-image:screen-dw-data-services-license.png[BlueXP digital wallet Data Services Licenses page]
+image:screen-dw-data-services-license.png[Screenshot of the licenses and subscriptions page.]
 
 
-. Return to BlueXP ransomware protection. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 +
 A message appears indicating that a license has been added. 
 
 == Bring your own license (BYOL)
 
-If you want to bring your own license (BYOL), you'll need to purchase the license, get the NetApp License File (NLF), and add the license to BlueXP digital wallet. 
+If you want to bring your own license (BYOL), you need to purchase the license, get the NetApp License File (NLF), then add the license to the Console. 
 
-*Add your license file to BlueXP digital wallet*
+*Add your license file to the Console*
 
-After you've purchased your BlueXP ransomware protection license from your NetApp Sales Rep, you activate the license by entering the BlueXP ransomware protection serial number and NetApp Support Site (NSS) account information. 
+After you've purchased your Ransomware Resilience license from your NetApp sales rep, you activate the license by entering the Ransomware Resilience serial number and NetApp Support Site (NSS) account information. 
 
 .Before you begin
 
-You'll need the BlueXP ransomware protection serial number. Locate this number from your Sales Order, or contact the account team for this information.
+You need the Ransomware Resilience serial number. Locate this number from your sales order, or contact the account team for this information.
 
 //For private mode site without internet access, use *account-DARKSITE1*.
 
@@ -245,58 +233,54 @@ You'll need the BlueXP ransomware protection serial number. Locate this number f
 
 .Steps
 
-. After you obtain the license, return to BlueXP ransomware protection. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
+. After you obtain the license, return to Ransomware Resilience. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 
-. Select *Add license to BlueXP*. 
-+
-You will be directed to BlueXP digital wallet. 
+. Select *Add license* to go to the Console Licesnses and subscriptions page. 
 
-. In BlueXP digital wallet, from the *Data Services Licenses* tab, select *Add license*. 
+. From the *Data Services Licenses* tab, select *Add license*. 
 
 +
-image:screen-license-dw-add-license.png[The BlueXP digital wallet Add License page]
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 . In the Add License page, enter the serial number and NetApp Support Site account information.
 
 +
-* If you have the BlueXP license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
+* If you have the Console license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
 +
-If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to BlueXP^].
-* If you have the BlueXP license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
+If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to the Console^].
+* If you have the zvondolr license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
 
 . Select *Add License*. 
 
 .Result
-BlueXP digital wallet now shows BlueXP ransomware protection with a license. 
+The Licenses and subscriptions page shows Ransomware Resilience has a license. 
 
+== Update your Console license when it expires
 
+If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the Ransomware Resilience UI. You can update your Ransomware Resilience license before it expires so there's no interruption in your ability to access your scanned data.
 
-== Update your BlueXP license when it expires
-
-If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the BlueXP disaster ransomware protection UI. You can update your BlueXP ransomware protection license before it expires so that there is no interruption in your ability to access your scanned data.
-
-TIP: This message also appears in BlueXP digital wallet and in https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notifications]. 
+TIP: This message also appears in Licenses and subscriptions and in https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notification settings]. 
 
 .Steps
 
-. Select the chat icon in the lower-right of BlueXP to request an extension to your term or additional capacity to your license for the particular serial number. You can also send an email to request an update to your license.
+. Select the chat icon in the lower-right of Console to request an extension to your term or additional capacity to your license for the particular serial number. You can also send an email to request an update to your license.
 +
-After you pay for the license and it is registered with the NetApp Support Site, BlueXP automatically updates the license in the BlueXP digital wallet and the Data Services Licenses page will reflect the change in 5 to 10 minutes.
+After you pay for the license and it is registered with the NetApp Support Site, the Console automatically updates the license. The Data Services Licenses page will reflect the change in 5 to 10 minutes.
 
-. If BlueXP can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
+. If the Console can't automatically update the license (for example, when installed in a dark site), then you'll need to manually upload the license file.
 +
 .. You can obtain the license file from the NetApp Support Site.
-.. Access the BlueXP digital wallet.
-.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the service serial number you are updating, and select *Update License*.
+.. In the Console, select **Administration** > **Licenses and subscriptions**.
+.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the service serial number you are updating then select *Update License*.
 //+
-//image:digital-wallet-licenses-expired.png[NetApp BlueXP digital wallet showing expired license]
+//image:digital-wallet-licenses-expired.png[Screenshot showing expired license]
 
 //== End the free trial
 
 //You can stop the free trial at any time or you can wait until it expires. 
 
 //.Steps
-//. In BlueXP ransomware protection, at the top right, select *Free trial - View details*. 
+//. In Ransomware Resilience, at the top right, select *Free trial - View details*. 
 
 //. In the drop-down details, select *End free trial*. 
 //+
@@ -306,7 +290,7 @@ After you pay for the license and it is registered with the NetApp Support Site,
 //+
 //This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
 //+
-//NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, BlueXP ransomware protection deletes all of your data. 
+//NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, Ransomware Resilience deletes all of your data. 
 
 //. Type "end trial" in the text box. 
 //. Select *End*. 
@@ -316,7 +300,7 @@ After you pay for the license and it is registered with the NetApp Support Site,
 If you want to end your PAYGO subscription, you can do so at any time.
 
 .Steps
-. In BlueXP ransomware protection, at the top right, select the license option. 
+. In Ransomware Resilience, at the top right, select the license option. 
 . Select *View payment methods*.
 . In the drop-down details, uncheck the box *Use after current payment method expires*.
 . Select *Save*. 

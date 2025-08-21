@@ -2,17 +2,17 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If BlueXP ransomware protection detects a possible attack, an alert appears on the BlueXP ransomware protection Dashboard indicating a potential attack. At this point, you should look at the potential risk in the BlueXP ransomware protection Alerts tab.  
+summary: If Ransomware Resilience  detects a possible attack, an alert appears on the Ransomware Resilience  Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience  Alerts tab.  
 ---
-= Handle detected ransomware alerts with BlueXP ransomware protection
+= Handle detected ransomware alerts with NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-When BlueXP ransomware protection detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the BlueXP ransomware protection *Alerts* tab. 
+When NetApp Ransomware Resilience detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
 
-If BlueXP ransomware protection detects a possible attack, a notification appears in the BlueXP Notifications and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the BlueXP ransomware protection *Alerts* tab.
+If Ransomware Resilience  detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -62,23 +62,23 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 
 
-TIP: If you configured a security and event management system (SIEM) in BlueXP ransomware protection in the Settings page, the service sends alert details to your SIEM system. 
+TIP: If you configured a security and event management system (SIEM) in Ransomware Resilience  in the Settings page, the service sends alert details to your SIEM system. 
 
 
 
 == View alerts
 
-You can access alerts from the BlueXP ransomware protection Dashboard or from the *Alerts* tab. 
+You can access alerts from the Ransomware Resilience  Dashboard or from the *Alerts* tab. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 //* Alert email sent to you
-//* BlueXP Notifications in the BlueXP UI
+//* Console Notifications in the Console UI
 
 .Steps
 
-. In the BlueXP ransomware protection Dashboard, review the Alerts pane.
+. In the Ransomware Resilience  Dashboard, review the Alerts pane.
 . Select *View all* under one of the statuses. 
 
 . Select an alert to review all incidents on each volume for each alert. 
@@ -97,13 +97,13 @@ image:screen-alerts.png["Alerts page"]
 
 
 == Respond to an alert email
-When BlueXP ransomware protection detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
+When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
 
-You can receive email notifications for BlueXP ransomware protection alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
+You can receive email notifications for Ransomware Resilience  alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
 
 TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
 
-. In BlueXP ransomware protection, go to the *Settings* page.
+. In Ransomware Resilience , go to the *Settings* page.
 . Under *Notifications*, locate the email notification settings.
 . Enter the email address where you want to receive alerts.
 . Save your changes.
@@ -111,12 +111,12 @@ TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en
 You will now receive email notifications when new alerts are generated.
 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps 
 . View the email. 
-. In the email, select *View alert* and log in to BlueXP ransomware protection. 
+. In the email, select *View alert* and log in to Ransomware Resilience . 
 +
 The Alerts page appears.
 
@@ -131,12 +131,12 @@ The Alerts page appears.
 
 
 
-//=== Respond from the BlueXP Notifications 
+//=== Respond from the Console Notifications 
 
-//. In BlueXP, select the Notification icon at the top right. 
+//. In the Console, select the Notification icon at the top right. 
 //. In the Notifications, look for the “Potential ransomware attack” notification.
 
-//. In the notification, select *View alert* and access BlueXP ransomware protection. 
+//. In the notification, select *View alert* and access Ransomware Resilience . 
 //+
 //The Alerts page appears.
 
@@ -155,26 +155,26 @@ The Alerts page appears.
 
 Looking at the Alerts tab, you can identify whether there is malicious activity. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 *What details appear?*
 The details that appear depend on how the alert was triggered:
 
 * Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
-* Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
+* Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in Ransomware Resilience . This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
 +
-To enable Workload security in BlueXP ransomware protection, go to the *Settings* page and select the *Workload security connection* option.
+To enable Workload security in Ransomware Resilience , go to the *Settings* page and select the *Workload security connection* option.
 +
 For an overview of Data Infrastructure Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
 
-TIP: If you don't have a license for Data Infrastructure Workload security and don't enable it in BlueXP ransomware protection, you won't see the anomalous user behavior information. 
+TIP: If you don't have a license for Data Infrastructure Workload security and don't enable it in Ransomware Resilience , you won't see the anomalous user behavior information. 
 
 When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
 
 === View malicious activity from Autonomous Ransomware Protection only
 
-When Autonomous Ransomware Protection triggers an alert in BlueXP ransomware protection, you can view the following details:
+When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience , you can view the following details:
 
 * Entropy of incoming data
 * Expected creation rate of new files compared to detected rate
@@ -187,7 +187,7 @@ These details are viewable for NAS workloads. For SAN environments, only the ent
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Alerts*.  
+. From the Ransomware Resilience  menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
 +
@@ -201,29 +201,29 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 === View anomalous user behavior in Data Infrastructure Insights Workload security
 
-When Data Infrastructure Insights Workload security triggers an alert in BlueXP ransomware protection, you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
+When Data Infrastructure Insights Workload security triggers an alert in Ransomware Resilience , you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
 
 TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
 
 .Before you begin
-This option requires a license for Data Infrastructure Insights Workload security and that you enable it in BlueXP ransomware protection. 
+This option requires a license for Data Infrastructure Insights Workload security and that you enable it in Ransomware Resilience . 
 
-To enable Workload security in BlueXP ransomware protection, do the following: 
+To enable Workload security in Ransomware Resilience , do the following: 
 
 . Go to the *Settings* page.
 . Select the *Workload Security connection* option.
 + 
-For details, see link:rp-use-settings.html[Configure BlueXP ransomware protection settings].
+For details, see link:rp-use-settings.html[Configure Ransomware Resilience  settings].
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Alerts*.  
+. From the Ransomware Resilience  menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
 +
 image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload Security details"]
 
-. To block a suspected user from further access in your environment that is monitored by BlueXP, select the *Block user* link. 
+. To block a suspected user from further access in your environment that is monitored by the Console, select the *Block user* link. 
 
 . Research the alert or an incident in the alert: 
 .. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
@@ -240,12 +240,12 @@ image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Securi
 
 After stopping the attack, notify your storage administrator that the data is ready so they can start recovery.
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Alerts*. 
+. From the Ransomware Resilience  menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -274,12 +274,12 @@ If you dismiss a workload, all snapshot copies taken automatically in response t
 
 CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 
-. From the BlueXP ransomware protection menu, select *Alerts*. 
+. From the Ransomware Resilience  menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -308,8 +308,8 @@ The status on the incident or incidents changes to “Dismissed.”
 
 Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 
@@ -319,7 +319,7 @@ TIP: If a volume has multiple alerts, you might need to download the CSV list of
 
 //Alert tab -> Single alert -> Single incident -> Download file
 
-. From the BlueXP ransomware protection menu, select *Alerts*.
+. From the Ransomware Resilience menu, select *Alerts*.
 . On the Alerts page, sort the results by workload to show the alerts for the application workload that you want to restore. 
 . From the list of alerts for that workload, select an alert. 
 . For that alert, select a single incident. 

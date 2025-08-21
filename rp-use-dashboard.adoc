@@ -2,38 +2,38 @@
 sidebar: sidebar
 permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack
-summary: The BlueXP ransomware protection Dashboard provides information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, impacted workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. You can also use the Dashboard to review and act on protection recommendations.
+summary: The NetApp Ransomware Resilience Dashboard provides information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, impacted workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. You can also use the Dashboard to review and act on protection recommendations.
 ---
 
-= Monitor workload health using the BlueXP ransomware protection Dashboard
+= Monitor workload health using the NetAPp Ransomware Resilience Dashboard
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The BlueXP ransomware protection Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
+The NetApp Ransomware Resilience Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
 
 Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
 
-*Required BlueXP role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+*Required Console role*
+Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 == Review workload health using the Dashboard
 
 .Steps
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. From the NetApp Console left navigation, select *Protection* > *Ransomware Resilience*. 
 +
-After BlueXP discovers your workloads, the Dashboard displays workload data protection health.
+After the Console discovers your workloads, the Dashboard displays workload data protection health.
 +
 image:screen-dashboard2.png[Dashboard page]
 
 
 . From the Dashboard, you can do the following actions in each of the panes: 
 
-* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don’t match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
+* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
 +
-TIP: Select the "i" note to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Clicking this takes you to the BlueXP Support page, where you can create a case ticket. 
+TIP: Select the "i" tooltip to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket. 
 
 * *Alerts and workload data recovery*: Select *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
@@ -61,7 +61,7 @@ TIP: Select the "i" note to see tips on this data. To increase the workload limi
 +
 See link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection suggestions on the Dashboard] or link:rp-use-protect.html[Protect workloads]. 
 +
-BlueXP marks new recommendations since your last visit to the Dashboard with “New” for 24 hours. Actions appear in priority order, with the most important at the top. Review, act on, or dismiss each recommendation.
+Ransomware Resilience displays new recommendations since your last visit to the Dashboard with the "New" tag for 24 hours. Actions appear in priority order, with the most important at the top. Review, act on, or dismiss each recommendation.
 +
 The total number of actions does not include actions you dismissed. 
 
@@ -71,7 +71,7 @@ The total number of actions does not include actions you dismissed.
 
 == Review protection recommendations on the Dashboard
 
-BlueXP ransomware protection assesses the protection on your workloads and recommends actions to improve that protection. 
+Ransomware Resilience assesses the protection on your workloads and recommends actions to improve that protection. 
 
 You can review a recommendation and act on it, which changes the recommendation status to Complete. Or, if you want to act on it later, you can dismiss it. Dismissing an action moves the recommendation to a list of dismissed actions, which you can review later. 
 
@@ -95,7 +95,7 @@ Refer to link:rp-use-settings.html[Configure protection settings].
 
 |Enable workload-consistent protection for applications or VMware. | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
 Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
-|Improve security posture for working environment | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
+|Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
 Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
@@ -104,9 +104,9 @@ Refer to link:rp-use-settings.html[Configure protection settings].| Protect crit
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Register available SnapCenter plugin for VMware vSphere (SCV) with BlueXP | A VM workload is not protected. | Assign  VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
+| Register available SnapCenter plugin for VMware vSphere (SCV) with the Console | A VM workload is not protected. | Assign  VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Register available SnapCenter Server with BlueXP | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
+| Register available SnapCenter Server with the Console | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Review new alerts. | New alerts exist. | Review the new alerts. 
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
@@ -114,9 +114,9 @@ Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
 .Steps
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
-. From the Recommended actions pane, select a recommendation then select *Review and fix*. 
+. From the Recommended actions pane, select a recommendation then *Review and fix*. 
 
 . To dismiss the action until later, select *Dismiss*. 
 +
@@ -133,17 +133,17 @@ You can export data and download CSV files that show details of protection, aler
 You can download CSV files from any of the main menu options: 
 
 //* *Dashboard:* Contains all summary information for all workloads. 
-* *Protection*: Contains the status and details of all workloads, including the total number of workloads that BlueXP marks as protected or at risk. 
+* *Protection*: Contains the status and details of all workloads, including the total number of workloads that Ransomware Resilience marks as protected or at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
-* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads that BlueXP marks as "Restore needed", "In progress," "Restore failed," and "Successfully restored."
+* *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads that Ransomware Resilience marks as "Restore needed", "In progress," "Restore failed," and "Successfully restored."
 
 Downloading a CSV file from a page includes only that page's data.
 
-The CSV files include data for all workloads on all BlueXP working environments. 
+The CSV files include data for all workloads on all Console systems. 
 
 .Steps
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*.
 +
 image:screen-dashboard2.png[Dashboard page]
  
@@ -152,7 +152,7 @@ image:screen-dashboard2.png[Dashboard page]
 . Do one of the following:
 * From the page, select the *Download* image:button-download.png[Download option] option. 
 
-* From the BlueXP ransomware protection menu, select *Reports*. 
+* From the Ransomware Resilience menu, select *Reports*. 
 
 . If you selected the *Reports* option, select one of the preconfigured named files then select *Download (CSV)* or *Download (JSON)*. 
 
@@ -160,14 +160,14 @@ image:screen-dashboard2.png[Dashboard page]
 
 == Access technical documentation 
 
-You can access this technical documentation from docs.netapp.com or from inside the BlueXP ransomware protection service. 
+You can access this technical documentation from link:https://docs.netapp.com[docs.netapp.com^] or from inside Ransomware Resilience. 
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*.
+. From the Ransomware Resilience left navigation, select *Protection* > *Ransomware Resilience*.
 
 . From the Dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
 
 . Select one of these options: 
 ** *What's new* to view information about the features in the current or previous releases in the Release Notes.
-** *Documentation* to view the BlueXP ransomware protection documentation Home page and this documentation.
+** *Documentation* to view the Ransomware Resilience documentation Home page and this documentation.

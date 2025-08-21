@@ -1,5 +1,5 @@
 settings:
-  name: BlueXP ransomware protection
+  name: NetApp Ransomware Resilience
   internal:
     pdf_enabled: true
   prod:
@@ -8,25 +8,25 @@ settings:
   rss_page: "whats-new.html"
 sidebar:
   entries:
-    - title: BlueXP ransomware protection docs
+    - title: NetApp Ransomware Resilience docs
       url: /index.html
     - title: Release notes
       entries:
-        - title: What's new in BlueXP ransomware protection
+        - title: What's new in Ransomware Resilience
           url: /whats-new.html
         - title: Known limitations
           url: /rp-reference-limitations.html
     - title: Get started
       entries:
-        - title: Learn about BlueXP ransomware protection
+        - title: Learn about Ransomware Resilience
           url: /concept-ransomware-protection.html
         - title: Prerequisites
           url: /rp-start-prerequisites.html
         - title: Quick start
           url: /rp-start-quick-start.html
-        - title: Set up BlueXP ransomware protection 
+        - title: Set up Ransomware Resilience 
           url: /rp-start-setup.html
-        - title: Access BlueXP ransomware protection
+        - title: Access Ransomware Resilience
           url: /rp-start-login.html
         - title: Set up licensing
           url: /rp-start-licenses.html
@@ -38,9 +38,9 @@ sidebar:
           url: /rp-use-settings.html 
         - title: FAQ
           url: /rp-start-faq.html
-    - title: Use BlueXP ransomware protection
+    - title: Use Ransomware Resilience
       entries:
-        - title: Use BlueXP ransomware protection overview
+        - title: Use Ransomware Resilience overview
           url: /rp-use-overview.html 
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html

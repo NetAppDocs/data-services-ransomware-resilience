@@ -2,16 +2,16 @@
 sidebar: sidebar
 permalink: rp-start-setup.html
 keywords: bluexp, ransomware protection, aws, azure
-summary: To use BlueXP ransomware protection, perform a few steps to set it up.    
+summary: To use Ransomware Resilience, perform a few steps to set it up.    
 ---
 
-= Set up BlueXP ransomware protection
+= Set up NetApp ansomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-To use BlueXP ransomware protection, perform a few steps to set it up.  
+To use Ransomware Resilience, perform a few steps to set it up.  
 
 
 Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
@@ -25,7 +25,7 @@ Prepare one of the following backup destinations:
 * Google Cloud Platform
 * Microsoft Azure 
 
-After you configure options in the backup destination itself, you will later configure it as a backup destination in the BlueXP ransomware protection service. For details about how to configure the backup destination in BlueXP ransomware protection, refer to link:rp-use-settings.html[Configure backup destinations].
+After you configure options in the backup destination itself, you will later configure it as a backup destination in Ransomware Resilience. For details about how to configure the backup destination in Ransomware Resilience, refer to link:rp-use-settings.html[Configure backup destinations].
 
 === Prepare StorageGRID to become a backup destination
 
@@ -38,7 +38,7 @@ If you want to use StorageGRID as your backup destination, refer to https://docs
 * Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions^] in AWS. 
  
 
-For details about managing your AWS storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 
 === Prepare Azure to become a backup destination
@@ -47,31 +47,31 @@ For details about managing your AWS storage in BlueXP, refer to https://docs.net
 * Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[Azure permissions^] in Azure. 
  
 
-For details about managing your Azure storage in BlueXP, refer to https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html[Manage your Azure storage accounts^].
+For details about managing your Azure storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html[Manage your Azure storage accounts^].
 
 
-== Set up BlueXP
-The next step is to set up BlueXP and the BlueXP ransomware protection service. 
+== Set up the NetApp Console
+The next step is to set up the Console and Ransomware Resilience. 
 
-Review https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[BlueXP requirements for standard mode^].
+Review https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[Console requirements for standard mode^].
 
 
-=== Create a Connector in BlueXP
+=== Create a Console agent
 
-You should reach out to your NetApp Sales Rep to try out or use this service. Then, when you use the BlueXP Connector, it will include the appropriate capabilities for the ransomware protection service. 
+Contact your NetApp Sales Rep to try out or use this service. Then, when you use the Console agent, it will include the appropriate capabilities for Ransomware Resilience. 
 
-To create a Connector in BlueXP before using the service, contact your BlueXP Organization admin who has permissions to create Connectors, and refer to the BlueXP documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a BlueXP Connector^]. 
+To create a Console agent using the service, contact your Console organization admin who has permissions to create Console agents, and refer to the documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a Console agent^]. 
 
-NOTE: If you have multiple BlueXP Connectors, the service will scan data across all Connectors beyond the one that currently shows in the BlueXP UI. This service discovers all projects and all Connectors associated with this organization. 
+NOTE: If you have multiple Console agents, the Ransomware Resilience scan datas across all Console agents beyond the one that currently shows in the Console. This service discovers all projects and all Console agents associated with this organization. 
 
 
 
 //== Set up email notifications 
 
-//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into BlueXP. Emails can be sent to any users who are part of your BlueXP organization, or to any other recipients who need to be aware of certain types of system activity.
+//You can send specific types of notifications by email so you can be informed of important system activity even when you’re not logged into the Console. Emails can be sent to any users who are part of your the Console organization, or to any other recipients who need to be aware of certain types of system activity.
 
 //NOTE: Sending email notifications is not supported when the Connector is installed in a site without internet access.
 
-//By default, BlueXP Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
+//By default, Console Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in BlueXP^]
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in the Console^]

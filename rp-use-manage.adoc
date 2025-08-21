@@ -5,17 +5,17 @@ keywords: ransomware protection workload name, ransomware protection
 summary: You can manage workloads by changing the workload name rather than using a default name, which is riskier.
 ---
 
-= Manage workloads
+= Manage workloads in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-You can manage workloads by changing the workload name. Using a default name is a risk for ransomware attacks. 
+You can manage workloads in NetApp Ransomware Resilience by changing the workload name. Using a default name is a risk for ransomware attacks. 
 
 .Steps 
 
-. From the BlueXP left navigation, select *Protection* > *Ransomware protection*. 
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 . From the menu, select *Protection*.
 
