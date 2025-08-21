@@ -64,9 +64,9 @@ For more licensing details, refer to link:concept-ransomware-protection.html[Lea
 +
 Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS, Azure, or S3 permissions list^] for details. 
 
-* The BlueXP backup and recovery service does not need to be enabled on the working environment. 
+* NetApp Backup and Recovery does not need to be enabled on the working environment. 
 +
-The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+Ransomware Resilience helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
 
 == Update non-admin user permissions in an ONTAP working environment
@@ -76,7 +76,7 @@ If you need to update non-admin user permissions for a particular working enviro
 
 
 
-.  Log in to BlueXP and look for the working environment that needs its ONTAP user permissions updated. 
+.  Log in to the Console and look for the working environment that needs its ONTAP user permissions updated. 
 
 . Double-click on the working environment to see details. 
 . Select *View additional information* to display the username. 
