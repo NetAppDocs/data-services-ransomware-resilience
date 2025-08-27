@@ -67,7 +67,7 @@ We recommend that you make policy changes from Ransomware Resilience.
 
 Ransomware Resilience uses the following products and services:
 
-* Backup and Recovery to discover and set snapshot and backup policies for file share workloads
+* BlueXP backup and recovery to discover and set snapshot and backup policies for file share workloads
 * SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
 
 In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
@@ -121,7 +121,7 @@ If you added a new volume to your environment, initiate discovery again and appl
 
 == Protection policies
 
-*Do Ransomware Resilience ransomware policies co-exist with the other kinds of workload policies?*
+*Do Ransomware Resilience ransomware policies co-exist with other kinds of workload policies?*
 At this time, Backup and Recovery (Cloud Backup) supports one backup policy per volume. So, Backup and Recovery and Ransomware Resilience share backup policies.
 
 Snapshot copies are not limited and can be added separately from each service.
@@ -145,16 +145,15 @@ Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP and whether
 
 Yes, if you have workloads managed in Backup and Recovery or SnapCenter, the policies managed by those products are brought into Ransomware Resilience.
 
-*Can you modify policies carried over from Backup and Recovery and/or SnapCenter?*
+*Can you modify policies carried over from BlueXP backup and recovery and/or SnapCenter?*
 
-No, you cannot modify policies managed by Backup and Recovery or SnapCenter within Ransomware Resilience. You manage any changes to those policies in Backup and Recovery or SnapCenter.
+No, you cannot modify policies managed by Backup and Recovery or SnapCenter from Ransomware Resilience. You manage any changes to those policies in Backup and Recovery or SnapCenter.
 
 *If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?*
 
 No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
 
-*What happens if you add new policies in Backup and Recovery or SnapCenter
-after signing up for Ransomware Resilience?*
+*What happens if you add new policies in Backup and Recovery or SnapCenter after signing up for Ransomware Resilience?*
 
 Ransomware Resilience recognizes any new polices created in Backup and Recovery or SnapCenter.
 

@@ -7,9 +7,9 @@ indexpage:
   - title: Get started
     #image: ./media/outline_directions_run_black_18dp.png
     links:
-    - title: Learn about NetApp Ransomware Resilience
+    - title: Learn about BlueXP ransomware protection
       url: /concept-ransomware-protection.html
-    - title: What's new in Ransomware Resilience
+    - title: What's new in BlueXP ransomware protection
       url: /whats-new.html
 #   - title: Release notes
 #     url: /rp-rn_overview.html
@@ -21,9 +21,9 @@ indexpage:
       url: /rp-use-settings.html 
     - title: Simulate a ransomware attack
       url: /rp-start-simulate.html
-  - title: Use Ransomware Resilience
+  - title: Use BlueXP ransomware protection
     links:
-    - title: Use Ransomware Resilience overview 
+    - title: Use BlueXP ransomware protection overview 
       url: /rp-use-overview.html
     - title: Discover workloads
       url: /rp-start-discover.html 
@@ -31,7 +31,7 @@ indexpage:
       url: /rp-use-dashboard.html
     - title: Protect workloads
       url: /rp-use-protect.html
-    - title: Scan for personally identifiable information with NetApp Data Classification
+    - title: Scan for personally identifiable information with BlueXP classification
       url: /rp-use-protect-classify.html
     - title: Respond to a detected alert 
       url: /rp-use-alert.html
@@ -47,5 +47,5 @@ indexpage:
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
     - title: Cloud webinars
       url: https://bluexp.netapp.com/events     
-    - title: Ransomware Resilience on NetApp.com 
+    - title: BlueXP ransomware protection on NetApp.com 
       url: https://www.netapp.com/cyber-resilience/ransomware-protection/

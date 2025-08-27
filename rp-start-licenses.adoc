@@ -34,9 +34,10 @@ After the free trial ends or the license or subscription expires, you can still 
 
 == Other licenses  
 
+// huh? 
 The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use NetApp Backup and Recovery even if you don't have a license for it. 
 
-NOTE: If you have both Bakup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
+NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
 You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in Ransomware Resilience. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
 
