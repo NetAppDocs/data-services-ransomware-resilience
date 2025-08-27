@@ -18,7 +18,7 @@ Learn what's new in BlueXP ransomware protection.
 
 
 // tag::whats-new[]
-== 12 July 2025
+== 12 August 2025
 include::_whatsnew/2025-08-12.adoc[]
 
 == 15 July 2025
