@@ -5,16 +5,13 @@ keywords: bluexp, ransomware protection, aws, azure
 summary: To use Ransomware Resilience, perform a few steps to set it up.    
 ---
 
-= Set up NetApp ansomware Resilience
+= Set up NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-To use Ransomware Resilience, perform a few steps to set it up.  
-
-
-Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
+You can easily deploy NetApp Ransomware Resilience. Before you begin, review link:rp-start-prerequisites.html[prerequisites] to ensure that your environment is ready.
 
 == Prepare the backup destination 
 

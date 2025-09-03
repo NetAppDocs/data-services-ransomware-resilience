@@ -1,1 +1,1 @@
-# bluexp-ransomware-protection
+# netapp-ransomware-resilience

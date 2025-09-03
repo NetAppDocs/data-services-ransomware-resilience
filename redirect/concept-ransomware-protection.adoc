@@ -1,0 +1,5 @@
+---
+permalink: bluexp-ransomware-protection.concept-ransomware-protection.html
+redirect: console-ransomware-resilience/concept-ransomware-resilience.html
+---
+// confirm url 

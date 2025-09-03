@@ -22,9 +22,7 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 .Steps
 
-. From the NetApp Console left navigation, select *Protection* > *Ransomware Resilience*. 
-+
-After the Console discovers your workloads, the Dashboard displays workload data protection health.
+. After the Console discovers your workloads, the Ransomware Resilience dashboard displays workload data protection health.
 +
 image:screen-dashboard2.png[Dashboard page]
 
@@ -114,9 +112,7 @@ Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
 .Steps
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
-
-. From the Recommended actions pane, select a recommendation then *Review and fix*. 
+. From the Recommended actions pane in Ransomware Resilience, select a recommendation then *Review and fix*. 
 
 . To dismiss the action until later, select *Dismiss*. 
 +
@@ -143,11 +139,7 @@ The CSV files include data for all workloads on all Console systems.
 
 .Steps
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*.
-+
-image:screen-dashboard2.png[Dashboard page]
- 
-. From the page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
+. From Ransomware Resilience dashboard, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
 
 . Do one of the following:
 * From the page, select the *Download* image:button-download.png[Download option] option. 
@@ -156,17 +148,13 @@ image:screen-dashboard2.png[Dashboard page]
 
 . If you selected the *Reports* option, select one of the preconfigured named files then select *Download (CSV)* or *Download (JSON)*. 
 
-
-
 == Access technical documentation 
 
-You can access this technical documentation from link:https://docs.netapp.com[docs.netapp.com^] or from inside Ransomware Resilience. 
+You can access Ransomware Resilience technical documentation from link:https://docs.netapp.com[docs.netapp.com^] or from inside Ransomware Resilience. 
 
 .Steps 
 
-. From the Ransomware Resilience left navigation, select *Protection* > *Ransomware Resilience*.
-
-. From the Dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
+. From the Ransomware Resilience dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
 
 . Select one of these options: 
 ** *What's new* to view information about the features in the current or previous releases in the Release Notes.

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rp-start-prerequisites.html
-keywords: what are bluexp ransomware protection requirements, bluexp ransomware protection, ransomware protection prerequisites
+keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience
 summary: Get started with NetApp Ransomware Resilience by verifying support for your environment, network access, login, and web browser.
 ---
 
@@ -66,7 +66,7 @@ Refer to the https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissi
 
 * NetApp Backup and Recovery does not need to be enabled on the system. 
 +
-The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+Ransomware Resilience helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
 
 == Update non-admin user permissions in an ONTAP system

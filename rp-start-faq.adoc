@@ -25,7 +25,7 @@ You can use the following license types:
 
 
 *How do you enable Ransomware Resilience?* 
-Ransomware Resilience does not require any enablement. The ransomware protection option is automatically enabled on the Console left navigation. 
+Ransomware Resilience does not require any enablement. You can access Ransomware Resilience from the NetApp Console.
 
 To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the Console agent, it will include the appropriate capabilities for the service.
 
@@ -67,7 +67,7 @@ We recommend that you make policy changes from Ransomware Resilience.
 
 Ransomware Resilience uses the following products and services:
 
-* BlueXP backup and recovery to discover and set snapshot and backup policies for file share workloads
+* Backup and Recovery to discover and set snapshot and backup policies for file share workloads
 * SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
 
 In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
@@ -145,7 +145,7 @@ Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP and whether
 
 Yes, if you have workloads managed in Backup and Recovery or SnapCenter, the policies managed by those products are brought into Ransomware Resilience.
 
-*Can you modify policies carried over from BlueXP backup and recovery and/or SnapCenter?*
+*Can you modify policies carried over from NetApp Backup and Recovery and/or SnapCenter?*
 
 No, you cannot modify policies managed by Backup and Recovery or SnapCenter from Ransomware Resilience. You manage any changes to those policies in Backup and Recovery or SnapCenter.
 

@@ -39,12 +39,7 @@ Otherwise, the Ransomware Resilience dashboard appears.
 +
 image:screen-dashboard3.png[Screenshot of the Ransomware Resilience dashboard]
 
-. If you haven't done so already, select the *Discover workloads* option. 
+. If you haven't done so already, select the *Discover Workloads* option. 
 +
-Refer to link:rp-start-discover.html[Discover workloads].
- 
-//* If you are a BlueXP user with an an existing Connector, when you select "*Ransomware Resilience*", a message appears about signing up. 
-
-//* If you are new to BlueXP and haven't used any Connector, when you select "*Ransomware Resilience*", a message appears about signing up. Go ahead and submit the form. NetApp will contact you about your evaluation request.
-
+Refer to link:rp-start-discover.html[Discover Workloads].
 

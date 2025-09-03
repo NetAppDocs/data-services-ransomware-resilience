@@ -19,7 +19,7 @@ sidebar:
     - title: Get started
       entries:
         - title: Learn about Ransomware Resilience
-          url: /concept-ransomware-protection.html
+          url: /concept-ransomware-resilience.html
         - title: Prerequisites
           url: /rp-start-prerequisites.html
         - title: Quick start

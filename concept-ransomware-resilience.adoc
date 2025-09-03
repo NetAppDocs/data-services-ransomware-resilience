@@ -1,11 +1,11 @@
 ---
 sidebar: sidebar
-permalink: concept-ransomware-protection.html
+permalink: concept-ransomware-resilience.html
 keywords: artificial intelligence, personal data, personal information, sensitive, personal sensitive data, data sense, ransomware, ransomware protection, ransomware attack, detect, recover, cyberstorage, cyberattack, cybersecurity, protection, bluexp, netapp, role-based access control, rbac
-summary: The BlueXP ransomware protection service enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyberattack. It also provides you with a list of alerts and remediation steps for making your data more secure.
+summary: Ransomware Resilience enables you to view relevant information about cybersecurity and assess how resilient your organization is to a cyberattack. It also provides you with a list of alerts and remediation steps for making your data more secure.
 ---
 
-= Learn about BlueXP ransomware protection
+= Learn about NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -24,13 +24,13 @@ Your security posture typically encompasses multiple layers of defense to protec
 * *Network security*: This layer builds upon the foundation with network segmentation, traffic monitoring, and encryption. 
 * *Identity security*: Uses authentication methods, access controls, and identity management to ensure only authorized users can access sensitive resources. 
 * *Application security*: Protects software applications using secure coding practices, security testing, and runtime application self-protection. 
-* *Data security*: Safeguards your data with data protection, backups, and recovery strategies. BlueXP ransomware protection operates on this layer. 
+* *Data security*: Safeguards your data with data protection, backups, and recovery strategies. Ransomware Resilience operates on this layer. 
 
 image:concept-security-layer-diagram.png[Security layer diagram]
 
-== What you can do with BlueXP ransomware protection 
+== What you can do with Ransomware Resilience 
 
-The BlueXP ransomware protection service provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
+Ransomware Resilience provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
 * *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) and SAN (FC, iSCSI, and NVMe) systems across the NetApp Console, projects, and Console agents. Ransomwware Resilience categorizes the data priority and provides recommendations to you for ransomware resilience improvements.
 // check wording
@@ -46,11 +46,11 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 
 * *Govern*: Implement your ransomware protection strategy and monitor the outcomes. 
 
-image:diagram-rp-features-phases3.png[Diagram showing BlueXP ransomware protection strategies of identify, protect, detect, respond, and recover]
+image:diagram-rp-features-phases3.png[Diagram showing Ransomware Resilience strategies of identify, protect, detect, respond, and recover]
 
-== Benefits of using BlueXP ransomware protection 
+== Benefits of using Ransomware Resilience 
 
-BlueXP ransomware protection offers the following benefits: 
+Ransomware Resilience offers the following benefits: 
 
 * Discovers workloads and their existing snapshot and backup schedules, and ranks their relative importance.
 * Evaluates your ransomware protection posture and displays it in an easy-to-understand dashboard.
@@ -59,49 +59,47 @@ BlueXP ransomware protection offers the following benefits:
 * Protects data in top application-based workloads, such as MySQL, Oracle, VMware datastores and file-shares. 
 * Detects ransomware attacks on data in real time on primary storage using AI technology.
 * Initiates automated actions in response to detected potential attacks by creating snapshot copies and initiating alerts about abnormal activity.
-* Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup) and SnapCenter. 
+* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including NetApp Backup and Recovery (formerly Cloud Backup) and SnapCenter. 
 * Uses role-based access control (RBAC) to govern access to features and operations in the service, which enhances security. 
 
-//* Applies curated recovery to meet RPO policies. BlueXP ransomware protection orchestrates recovery from ransomware incidents by using several NetApp recovery services, including BlueXP backup and recovery (formerly Cloud Backup), SnapCenter, SnapRestore, and AIQ.
+//* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including Backup and Recovery, SnapCenter, SnapRestore, and AIQ.
 
 
 == Cost 
-NetApp doesn't charge you for using the trial version of BlueXP ransomware protection. 
+NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
 
-NOTE: With the October 2024 release, new deployments of BlueXP ransomware protection offer a 30-day free trial. Previously, BlueXP ransomware protection provided a 90-day free trial. If you've enrolled already in the 90-day free trial, that trial is valid for the 90 days.
+NOTE: With the October 2024 release, new deployments of Ransomware Resilience offer a 30-day free trial. Previously, Ransomware Resilience provided a 90-day free trial. If you've enrolled already in the 90-day free trial, that trial is valid for the 90 days.
 
-//NetApp doesn’t charge you for using the trial version of BlueXP ransomware protection. The full version of BlueXP ransomware protection can be used with a NetApp license or an AWS subscription.
+//NetApp doesn’t charge you for using the trial version of Ransomware Resilience. The full version of Ransomware Resilience can be used with a NetApp license or an AWS subscription.
 
 
-If you have both BlueXP backup and recovery and BlueXP ransomware protection, any common data protected by both products is billed by BlueXP ransomware protection only.
+If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 
-After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by BlueXP ransomware protection), and at least one snapshot or backup policy, BlueXP ransomware protection classifies it “Protected” and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
+After you purchase a license or PayGo subscription, any workload that has a ransomware detection policy (Autonomous Ransomware Protection) enabled (discovered or set by Ransomware Resilience), and at least one snapshot or backup policy, Ransomware Resilience classifies it "Protected" and it counts against purchased capacity or the PayGo subscription. If a workload is discovered without a detection policy even if it has backup or snapshot policies, it is classified “At risk” and it does _not_ count against purchased capacity. 
 
-Protected workloads count against purchased capacity or the subscription after the 90-day trial period ends. BlueXP ransomware protection is charged on a per GB basis for the data associated with protected workloads before efficiencies. 
+Protected workloads count against purchased capacity or the subscription after the 90-day trial period ends. Ransomware Resilience is charged on a per GB basis for the data associated with protected workloads before efficiencies. 
 
 == Licensing 
 
-With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+With Ransomware Resilience, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-//With BlueXP ransomware protection, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
+//With Ransomware Resilience, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-The BlueXP ransomware protection service requires a NetApp ONTAP One license. 
+Ransomware Resilience requires a NetApp ONTAP One license. 
 
-//NOTE: The general release of BlueXP ransomware protection, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
+//NOTE: The general release of Ransomware Resilience, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
-The BlueXP ransomware protection license does not include additional NetApp products. BlueXP ransomware protection can use BlueXP backup and recovery even if you don't have a license for it. 
+The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use Backup and Recovery even if you don't have a license for it. 
 
-To detect anomalous user behavior, BlueXP ransomware protection uses NetApp Autonomous Ransomware Protection, a machine learning (ML) model within ONTAP that detects malicious file activity. This model is included in the BlueXP ransomware protection license. You can additionally use Data Infrastructure Insights (formerly Cloud Insights) Workload Security (license required) to investigate user behavior and block specific users from further activity. 
+To detect anomalous user behavior, Ransomware Resilience uses NetApp Autonomous Ransomware Protection, a machine learning (ML) model within ONTAP that detects malicious file activity. This model is included in the Ransomware Resilience license. You can additionally use Data Infrastructure Insights (formerly Cloud Insights) Workload Security (license required) to investigate user behavior and block specific users from further activity. 
 
 For details, see link:rp-start-licenses.html[Set up licensing].
 
-== How BlueXP ransomware protection works
+== How Ransomware Resilience works
 
-At a high-level, BlueXP ransomware protection works like this.
+Ransomware Resilience uses NetApp Backup and Recovery to discover and set snapshot and backup policies for file share workloads, and SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery.
 
-BlueXP ransomware protection uses BlueXP backup and recovery to discover and set snapshot and backup policies for file share workloads, and SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. In addition, BlueXP ransomware protection uses BlueXP backup and recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery.
-
-image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware protection architecture]
+image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience architecture]
 
 
 [cols=2*,options="header",cols="15,65a",width="100%"]
@@ -115,16 +113,16 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 
 
 
- * Discovers each volume's current protection level of NetApp snapshot copies and backup policies as well as any on-box detection capabilities. The service then associates this protection posture with the workloads by using BlueXP backup and recovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), FPolicy, Backup policies, and snapshot policies.
- Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[BlueXP backup and recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+ * Discovers each volume's current protection level of NetApp snapshot copies and backup policies as well as any on-box detection capabilities. The service then associates this protection posture with the workloads by using Backup andRrecovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), FPolicy, Backup policies, and snapshot policies.
+ Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[NetApp Backup and Recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 
 * Assigns a business priority to each workload based on automatically discovered protection levels and recommends protection policies for workloads based on their business priority. Workload priority is based on snapshot frequencies already applied to each volume associated with the workload. 
-//* Assigns a business priority to each workload based on discovered protection levels by using BlueXP classification (formerly Cloud Data Sense). 
-// Learn more about https://docs.netapp.com/us-en/bluexp-classification/index.html[BlueXP classification^].
+//* Assigns a business priority to each workload based on discovered protection levels by using Data Classification (formerly Cloud Data Sense). 
+// Learn more about https://docs.netapp.com/us-en/bluexp-classification/index.html[Data Classification^].
 
 
-| *PROTECT* | * Actively monitors workloads and orchestrates the use of BlueXP backup and recovery, SnapCenter, and ONTAP APIs by applying policies to each of the identified workloads. 
+| *PROTECT* | * Actively monitors workloads and orchestrates the use of Backup and Recovery, SnapCenter, and ONTAP APIs by applying policies to each of the identified workloads. 
 //https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock^].
 
 
@@ -139,9 +137,9 @@ image:diagram-rp-architecture-preview3.png[Diagram showing BlueXP ransomware pro
 * Initiates quick snapshot copies by using NetApp technologies and products such as ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy. 
 //* Initiates quick snapshot copies by using NetApp technologies and products such as ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection. 
 |*RECOVER* | //* Verifies that backup data on secondary storage is clean and scans for known ransomware signatures in the data.
-* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy technologies and services. 
+* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using Backup and Recovery, ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy technologies and services. 
 
-//* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using BlueXP backup and recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
+//* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using Backup and Recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
 * Orchestrates the recovery of workloads including VMs, file shares, block storage, and databases with application consistency. 
 |*GOVERN* | * Assigns the ransomware protection strategies
 * Helps you monitor the outcomes. 
@@ -185,11 +183,11 @@ The service protects the following application-based workloads on primary data v
 * Databases (MySQL and Oracle)
 * More coming soon
 
-In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in BlueXP ransomware protection. BlueXP ransomware protection can protect and recover these in a workload-consistent manner. 
+In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
 
 == Terms that might help you with ransomware protection
 
 You might benefit by understanding some terminology related to ransomware protection. 
 
-* *Protection*: Protection in BlueXP ransomware protection means ensuring that snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
-* *Workload*: A workload in BlueXP ransomware protection can include MySQL or Oracle databases, VMware datastores, or file shares. 
+* *Protection*: Protection in Ransomware Resilience means ensuring that snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
+* *Workload*: A workload in Ransomware Resilience can include MySQL or Oracle databases, VMware datastores, or file shares. 

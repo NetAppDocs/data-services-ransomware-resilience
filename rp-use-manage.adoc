@@ -15,9 +15,7 @@ You can manage workloads in NetApp Ransomware Resilience by changing the workloa
 
 .Steps 
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
-
-. From the menu, select *Protection*.
+. From the Ransomware Resilience menu, select *Protection*.
 
 . Select a workload, select the *Actions* ... icon on the right and select *Edit workload name*.  
 

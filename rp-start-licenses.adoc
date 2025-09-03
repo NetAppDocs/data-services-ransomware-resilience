@@ -60,7 +60,8 @@ During the trial, you have full functionality.
 
 . Access the https://console.netapp.com/[Console^].
 . Log in to the Console. 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+// check this step
+. From the NetApp Console, select *Protection* > *Ransomware Resilience*. 
 +
 If this is your first time logging in to this service, the landing page appears. 
 

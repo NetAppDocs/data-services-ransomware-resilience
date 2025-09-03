@@ -2,20 +2,20 @@
 sidebar: sidebar
 permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
-summary: After an attack, BlueXP ransomware protection verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
 ---
 
-= Recover from a ransomware attack (after incidents are neutralized) with BlueXP ransomware protection
+= Recover from a ransomware attack (after incidents are neutralized) with NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-After workloads have been marked "Restore needed", BlueXP ransomware protection recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
+After workloads have been marked "Restore needed", NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
-* If the application or VM is managed by SnapCenter, BlueXP ransomware protection restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
+* If the application or VM is managed by SnapCenter, Ransomware Resilience restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
 
-* If the application or VM is _not_ managed by SnapCenter and is managed by BlueXP backup and recovery or BlueXP ransomware protection, BlueXP ransomware protection performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
+* If the application or VM is _not_ managed by SnapCenter and is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
 +
 You can restore the workload by selecting all volumes, specific volumes, or specific files. 
 
@@ -52,7 +52,7 @@ image:screen-recovery2.png[Recovery page]
 
 == Restore a workload managed by SnapCenter 
 
-Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
+Using Ransomware Resilience, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
 
 The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
 
@@ -62,8 +62,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 .Steps 
 
 
-. From the BlueXP ransomware protection menu, select *Recovery*.
-
+. From Ransomware Resilience, select *Recovery*.
 . Review the workload information in the *Recovery* page.  
 
 . Select a workload that is in the "Restore needed" state. 
@@ -75,7 +74,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 . *Source*: Select the down arrow next to Source to see details. Select the restore point that you want to use to restore the data. 
 +
-TIP: BlueXP ransomware protection identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
+TIP: Ransomware Resilience identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
 
 . *Destination*: Select the down arrow next to Destination to see details.
 
@@ -97,7 +96,7 @@ TIP: BlueXP ransomware protection identifies the best restore point as the lates
 
 == Restore a workload not managed by SnapCenter
 
-Using BlueXP ransomware protection, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
+Using Ransomware Resilience, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
 *Required Console role*
 Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
