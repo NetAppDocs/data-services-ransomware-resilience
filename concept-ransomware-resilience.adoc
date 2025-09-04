@@ -41,7 +41,6 @@ Ransomware Resilience provides full use of several NetApp technologies so that y
 
 * *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp ONTAP snapshot that is locked so that the copy cannot be deleted accidentally or maliciously. Your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
 
-
 * *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover specific volumes. The service provides recommendations on the best options. 
 
 * *Govern*: Implement your ransomware protection strategy and monitor the outcomes. 
@@ -64,8 +63,8 @@ Ransomware Resilience offers the following benefits:
 
 //* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including Backup and Recovery, SnapCenter, SnapRestore, and AIQ.
 
-
 == Cost 
+
 NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
 
 NOTE: With the October 2024 release, new deployments of Ransomware Resilience offer a 30-day free trial. Previously, Ransomware Resilience provided a 90-day free trial. If you've enrolled already in the 90-day free trial, that trial is valid for the 90 days.
@@ -94,6 +93,16 @@ The Ransomware Resilience license does not include additional NetApp products. R
 To detect anomalous user behavior, Ransomware Resilience uses NetApp Autonomous Ransomware Protection, a machine learning (ML) model within ONTAP that detects malicious file activity. This model is included in the Ransomware Resilience license. You can additionally use Data Infrastructure Insights (formerly Cloud Insights) Workload Security (license required) to investigate user behavior and block specific users from further activity. 
 
 For details, see link:rp-start-licenses.html[Set up licensing].
+
+== NetApp Console 
+
+Ransomware Resilience is accessible through the NetApp Console.
+
+The NetApp Console provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console administrators can control access to storage and services for all systems within the enterprise.
+ 
+You don't need a license or subscription to start using NetApp Console and you only incur charges when you need to deploy Console agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console are licensed or subscription-based.
+
+Learn more about the link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html[NetApp Console^].
 
 == How Ransomware Resilience works
 
