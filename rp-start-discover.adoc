@@ -65,15 +65,13 @@ image:screen-discover-workloads-unsupported.png[Discover workloads screenshot]
 . Select *Discover*. 
 +
 The service discovers workload data only for those Console agents with selected systems. This process might take a few minutes.
-+
-image:screen-discover-workloads-unsupported-collected.png[Workloads discovered screenshot]
 . To download the list of discovered workloads, select *Download results*.
 
 . To display the Ransomware Resilience dashboard, select *Go to Dashboard*.   
 +
 The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
 +
-image:screen-dashboard3.png[Ransomware Resilience Dashboard]
+image:screen-dashboard.png[Ransomware Resilience Dashboard]
 +
 link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
@@ -114,8 +112,6 @@ TIP: This process might take a few minutes, and a loading icon shows the progres
 //. From the top right of the Dashboard, select *Discover workloads*. 
 
 //. Locate a Console agent that displays the *Find new systems* link.  
-//+
-//image:screen-discover-workloads-newly-discovered.png[Newly discovered systems screenshot]
 
 //. Select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Console agent. 
 

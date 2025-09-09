@@ -194,10 +194,6 @@ These details are viewable for NAS workloads. For SAN environments, only the ent
 image:screen-alerts-incidents3.png["Alert incidents page"]
 
 . Select an incident to review the details of the incident. 
-//+
-//image:screen-alerts-incidents-details-arp.png["Incident details page"] 
-
-
 
 === View anomalous user behavior in Data Infrastructure Insights Workload security
 

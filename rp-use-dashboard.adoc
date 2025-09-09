@@ -24,7 +24,7 @@ Organization admin, Folder or project admin, Ransomware protection admin, or Ran
 
 . After the Console discovers your workloads, the Ransomware Resilience dashboard displays workload data protection health.
 +
-image:screen-dashboard2.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
 
 
 . From the Dashboard, you can do the following actions in each of the panes: 

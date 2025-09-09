@@ -35,7 +35,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. htt
 
 . From the NetApp Ransomware Resilience menu, select the *Run readiness drill* button at the top right.
 +
-image:screen-dashboard3.png[Dashboard page showing the Run readiness drill button]
+image:screen-dashboard.png[Dashboard page showing the Run readiness drill button]
 //. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
 //. From the drop-down menu, select *Readiness drill* or *Settings*.
 
@@ -75,7 +75,7 @@ TIP: A workload can have a ransomware detection *Learning mode* status when a de
 
 * From the Ransomware Resilience menu, select the *Run readiness drill* button at the top right.
 +
-image:screen-dashboard3.png[Dashboard page showing the Run readiness drill button]
+image:screen-dashboard.png[Dashboard page showing the Run readiness drill button]
 +
 * OR, from the Settings page, in the Readiness drill card, select *Start*.
 //. Do one of the following:

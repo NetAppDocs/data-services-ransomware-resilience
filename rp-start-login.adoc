@@ -37,7 +37,7 @@ image:screen-landing.png[Screenshot of the Ransomware Resilience landing page.]
 + 
 Otherwise, the Ransomware Resilience dashboard appears.
 +
-image:screen-dashboard3.png[Screenshot of the Ransomware Resilience dashboard]
+image:screen-dashboard.png[Screenshot of the Ransomware Resilience dashboard]
 
 . If you haven't done so already, select the *Discover Workloads* option. 
 +

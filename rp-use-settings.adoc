@@ -115,7 +115,7 @@ The Dashboard provides many recommendations. One recommendation might be to conf
 
 . In the Ransomware Resilience dashboard, review the Recommended actions pane. 
 +
-image:screen-dashboard3.png[Dashboard page]
+image:screen-dashboard.png[Dashboard page]
 
 . From the Dashboard, select *Review and fix* for the recommendation of "Prepare <backup provider> as a backup destination."
 
