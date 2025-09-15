@@ -76,7 +76,7 @@ PII data is classified into one of three designations:
 . From the Ransomware Resilience  menu, select *Protection*.
 . In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
 +
-image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
+image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
 //+
 //TIP: If the status changes, an up or down arrow appears in the Privacy exposure column to indicate the Privacy exposure change. 
 
