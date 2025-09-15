@@ -119,7 +119,7 @@ The process differs depending on the workload type.
 
 
 . To restore, select *Restore*.
-
+. Select **Custom restore** to proceed without cleaning the files. 
 
 . *Restore scope*: Select the type of restore you want to complete: 
 +
