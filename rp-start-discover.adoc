@@ -14,7 +14,7 @@ summary: During discovery, Ransomware Resilience analyzes all volumes and files 
 Before you can use NetApp Ransomware Resilience, it needs to first discover data. During discovery, Ransomware Resilience analyzes all volumes and files in systems across all Console agents and projects within an organization. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 *What does the service discover?*
 Ransomware Resilience assesses MySQL applications, Oracle applications, VMware datastores, file shares, and block storage. 

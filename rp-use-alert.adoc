@@ -71,7 +71,7 @@ TIP: If you configured a security and event management system (SIEM) in Ransomwa
 You can access alerts from the Ransomware Resilience  Dashboard or from the *Alerts* tab. 
 
 *Required Console role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 //* Alert email sent to you
 //* Console Notifications in the Console UI
@@ -112,7 +112,7 @@ You will now receive email notifications when new alerts are generated.
 
 
 *Required Console role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps 
 . View the email. 
@@ -156,7 +156,7 @@ The Alerts page appears.
 Looking at the Alerts tab, you can identify whether there is malicious activity. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 *What details appear?*
 The details that appear depend on how the alert was triggered:
@@ -237,7 +237,7 @@ image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Securi
 After stopping the attack, notify your storage administrator that the data is ready so they can start recovery.
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 
@@ -271,7 +271,7 @@ If you dismiss a workload, all snapshot copies taken automatically in response t
 CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 
@@ -305,7 +305,7 @@ The status on the incident or incidents changes to “Dismissed.”
 Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 

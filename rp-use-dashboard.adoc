@@ -16,7 +16,7 @@ The NetApp Ransomware Resilience Dashboard provides at-a-glance information abou
 Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
 
 *Required Console role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 == Review workload health using the Dashboard
 

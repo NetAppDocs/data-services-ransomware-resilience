@@ -14,7 +14,7 @@ summary: You can configure several options, including a backup destination, thre
 You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
 
 *Required NetApp Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 //You can also show future Preview features. 
 

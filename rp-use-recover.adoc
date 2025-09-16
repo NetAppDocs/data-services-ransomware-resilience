@@ -57,7 +57,7 @@ Using Ransomware Resilience, the storage administrator can determine how best to
 The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps 
 
@@ -97,7 +97,7 @@ TIP: Ransomware Resilience identifies the best restore point as the latest backu
 Using Ransomware Resilience, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 The security storage admin can recover data at different levels: 
 

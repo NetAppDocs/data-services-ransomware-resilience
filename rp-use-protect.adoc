@@ -13,7 +13,7 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 You can protect workloads against ransomware attacks by enabling workload-consistent protection or creating ransomware protection strategies in NetApp Ransomware Resilience. 
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 == Understand ransomware protection strategies [[strategy]]
 // check term with PM

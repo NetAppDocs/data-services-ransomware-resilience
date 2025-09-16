@@ -16,7 +16,7 @@ You can export protection data and download the CSV or JSON files that show deta
 TIP: Before you download the files, you should refresh the data, which also refreshes data that will appear in the files. 
 
 *Required NetApp Console role*
-Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 
 *What data can you download?*
