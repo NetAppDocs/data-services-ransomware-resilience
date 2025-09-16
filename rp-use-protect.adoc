@@ -275,7 +275,7 @@ image:screen-protection.png[Manage strategy page]
 
 . From the Protection page, select a workload then *Protect*. 
 +
-image:screen-protection-strategy.png[Manage strategies]
+image:screen-protection-strategy-list.png[Manage strategies]
 
 
 . From the Ransomware protection strategies page, select *Add*. 

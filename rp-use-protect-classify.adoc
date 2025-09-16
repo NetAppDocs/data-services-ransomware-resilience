@@ -111,34 +111,6 @@ Privacy exposure changes can impact the workload importance.
 |===
 
 
-
-//== Investigate privacy exposure directly in Data Classification
-
-//From within Ransomware Resilience , you can select a workload, view its details, and then investigate the exposure in Data Classification.
-
-//.Steps
-
-//. From the Ransomware Resilience  menu, select *Protection*.
-
-//. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
-//+
-//image:screen-protection-sensitive-preview-column-medium.png[Protection page showing Privacy exposure column]
-//. Select the workload in the Workload column to see its details. 
-//+
-//image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure pane]
-
-//. In the Workload details page, review the information in the Privacy exposure tile. 
-
-//. To investigate the exposure in Data Classification, select *Investigate*. 
-//+
-//The Data Classification service opens to display the Investigation tab.
-//+
-//image:screen-protection-classification-investigation.png[Data Classification ]
-
-//. Review the information in the Investigation tab.
-
-//. To return to the Ransomware Resilience , select *Back to Ransomware Resilience *.
-
 == For more information 
 
 For details about Data Classification, refer to the Data Classification documentation: 

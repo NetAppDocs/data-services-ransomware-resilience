@@ -114,7 +114,7 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 . In the Add License page, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
 
 
-. To view license details, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
+. To view license details, from the Console left navigation, select *Administration* > *Licenses and subscriptions*.
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.

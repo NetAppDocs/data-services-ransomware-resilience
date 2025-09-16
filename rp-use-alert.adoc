@@ -217,7 +217,7 @@ For details, see link:rp-use-settings.html[Configure Ransomware Resilience  sett
 . Select an alert. 
 . Review the incidents in the alert.
 +
-image:screen-alerts-incidents-diiws.png["Alert incidents page showing Workload Security details"]
+image:screenshot-alerts.png[Screenshot of the Alerts page.]
 
 . To block a suspected user from further access in your environment that is monitored by the Console, select the *Block user* link. 
 
