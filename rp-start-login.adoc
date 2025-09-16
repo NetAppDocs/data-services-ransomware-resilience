@@ -15,8 +15,7 @@ Log in to NetApp Ransomware Resilience through the NetApp Console.
 
 To log in to the Console, you can use your NetApp Support Site credentials or you can sign up for a NetApp cloud login using your email and a password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
 
-*Required Console role*
-Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+include::_include/console-role-admin-viewer.adoc[]
 
 .Steps
 

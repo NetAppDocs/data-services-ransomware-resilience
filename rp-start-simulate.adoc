@@ -26,10 +26,7 @@ You need to enter a user name and password for the following situations:
 * If you select a different CIFS (SMB) storage VM
 * If you enter a different test workload name
 
-
-
-*Required Console role*
-Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+include::_include/console-role-admin.adoc[]
 
 .Steps
 
@@ -62,8 +59,7 @@ TIP: You can edit the readiness drill configuration later using the Settings pag
 
 After you configure the readiness drill, you can start the drill.
 
-*Required Console role*
-Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+include::_include/console-role-admin.adoc[]
 
 When you start the readiness drill, Ransomware Resilience skips the learning mode and starts the drill in active mode. The detection status of the workload is Active.
 
@@ -116,8 +112,7 @@ NOTE: After the drill has started, you cannot edit the readiness drill configura
 == Respond to a readiness drill alert
 Test your readiness by responding to a readiness drill alert.
 
-*Required Console role*
-Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+include::_include/console-role-admin.adoc[]
 
 .Steps
 //. Do one of the following: 
@@ -163,8 +158,7 @@ If the Type indicates that a user is suspected of malicious activity, review the
 
 After reviewing the readiness drill alert, restore the test workload if needed.
 
-*Required Console role*
-Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+include::_include/console-role-admin.adoc[]
 
 .Steps
 . Return to the Alert details page. 
@@ -210,8 +204,7 @@ IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismi
 == Review reports on the readiness drill
 After the readiness drill is complete, you might want to review and save a report on the drill.
 
-*Required Console role*
-Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+include::_include/console-role-admin-viewer.adoc[]
 
 .Steps
 . From the Ransomware Resilience menu, select *Reports*.

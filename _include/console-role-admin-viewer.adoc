@@ -1,0 +1,2 @@
+*Required Console role*
+Organization admin, Folder or project admin, Ransomware Resilience admin, or Ransomware Resilience viewer role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
