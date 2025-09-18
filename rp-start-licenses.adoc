@@ -13,8 +13,8 @@ summary: Get started with NeApp Ransomware Resilience by setting up licensing.
 [.lead]
 With NetApp Ransomware Resilience, you can use different licensing plans.
 
-*Required Console role*
-Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
+
+To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 *License types*
 You can use the following license types:
