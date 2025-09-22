@@ -290,6 +290,9 @@ NOTE: If you choose to copy and modify an existing strategy, the service appends
 * *Detection policy*: 
 ** *Policy*: Choose one of the predesigned detection policies. 
 ** *Primary detection*: Enable ransomware detection to have the service detect potential ransomware attacks. 
+// ** **Detect encryption incidents**
+// ** **Detect suspicious users**
+** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
 ** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated snapshot copies when Primary detection is enabled. 
 +
 If you want to change the blocked file extensions, edit them in System Manager. 

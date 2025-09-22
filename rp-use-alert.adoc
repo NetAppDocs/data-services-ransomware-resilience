@@ -147,7 +147,7 @@ The Alerts page appears.
 
 //=== Respond from data incidents on the Dashboard
 
-
+// DII >> redirect
 == Detect malicious activity and anomalous user behavior
 
 Looking at the Alerts tab, you can identify whether there is malicious activity. 
@@ -220,12 +220,12 @@ image:screenshot-alerts.png[Screenshot of the Alerts page.]
 . Research the alert or an incident in the alert: 
 .. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
 .. Select an incident to review the details of the incident. 
-//+
-//image:screen-alerts-incidents-details-arp-diiws.png[Incident details page showing Workload Security details] 
-+
+
 Data Infrastructure Insights Workload Security opens in a new tab.
 +
 image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Security]
+
+// end DII redirect
 
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
