@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: rp-start-quick-start.html
-keywords: how to get started with bluexp ransomware protection, ransomware protection quick start
+keywords: get started, ransomware protection, quick start, resilience, quickstart 
 summary: Get started with the NetApp Ransomware Resilience in a few steps.
 ---
 
@@ -43,7 +43,7 @@ link:rp-start-prerequisites.html[Ensure your system meets these requirements].
 
 
 [role="quick-margin-para"]
-After you set up the service, here's what you might do next. 
+After you set up Ransomware Resilience, here's what you might do next. 
 
 [role="quick-margin-list"]
 * link:rp-use-dashboard.html[View workload protection health on the Dashboard].

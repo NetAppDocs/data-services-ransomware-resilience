@@ -57,7 +57,7 @@ Review https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standar
 
 Contact your NetApp Sales Rep to try out or use this service. Then, when you use the Console agent, it will include the appropriate capabilities for Ransomware Resilience. 
 
-To create a Console agent using the service, contact your Console organization admin who has permissions to create Console agents, and refer to the documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a Console agent^]. 
+To create a Console agent using Ransomware Resilience, contact your Console organization admin who has permissions to create Console agents, and refer to the documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a Console agent^]. 
 
 NOTE: If you have multiple Console agents, the Ransomware Resilience scan datas across all Console agents beyond the one that currently shows in the Console. This service discovers all projects and all Console agents associated with this organization. 
 

@@ -15,14 +15,14 @@ Before you can use NetApp Ransomware Resilience, it needs to first discover data
 
 include::_include/console-role-admin.adoc[]
 
-*What does the service discover?*
+*What does Ransomware Resilience discover?*
 Ransomware Resilience assesses MySQL applications, Oracle applications, VMware datastores, file shares, and block storage. 
 
-NOTE: The service does not discover workloads with volumes that use FlexGroup.
+NOTE: Ransomware Resilience does not discover workloads with volumes that use FlexGroup.
 
 Ransomware Resilience discovers and displays both supported and unsupported system configurations in the Dashboard.
 
-The service checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. It then recommends ways to improve your ransomware protection. 
+Ransomware Resilience checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. It then recommends ways to improve your ransomware protection. 
 
 *How can you discover workloads?*
 You can do the following: 
@@ -49,7 +49,7 @@ NOTE: If you started the free trial, the *Start 30-day free trial* button label 
 
 . From the initial landing page, select *Start by discovering workloads*. 
 +
-The service finds both supported and unsupported systems. This process might take a few minutes.
+Ransomware Resilience finds both supported and unsupported systems. This process might take a few minutes.
 +
 image:screen-discover-workloads-unsupported.png[Discover workloads screenshot] 
 //. Do one of the following: 
@@ -63,7 +63,7 @@ image:screen-discover-workloads-unsupported.png[Discover workloads screenshot]
 //. Optionally, select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Console agent. 
 . Select *Discover*. 
 +
-The service discovers workload data only for those Console agents with selected systems. This process might take a few minutes.
+Ransomware Resilience discovers workload data only for those Console agents with selected systems. This process might take a few minutes.
 . To download the list of discovered workloads, select *Download results*.
 
 . To display the Ransomware Resilience dashboard, select *Go to Dashboard*.   
@@ -98,7 +98,7 @@ If you have already discovered systems, you can find new or previously unselecte
 . In the Workload discovery card, select *Discover workloads*.
 +
 TIP: This process might take a few minutes, and a loading icon shows the progress.
-. The service discovers both supported and unsupported systems. The service does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to discover workloads. 
+. Ransomware Resilience discovers both supported and unsupported systems. Ransomware Resilience does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to discover workloads. 
 
 . Select *Discover*.
 

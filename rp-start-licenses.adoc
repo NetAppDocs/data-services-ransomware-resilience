@@ -22,11 +22,10 @@ You can use the following license types:
 * Sign up for a 30-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console. 
-//NOTE: Ransomware Resilience charges are based on provisioned capacity of datastores on the source site when there is at least one VM that has a replication plan. Capacity for a failed over datastore is not included in the capacity allowance. For a BYOL, if the data exceeds the allowed capacity, operations in the service are limited until you obtain an additional capacity license, upgrade the license in the Console Licenses and subscriptions page, or purchase a subscription in AWS. If you choose an AWS subscription, any capacity used above the contract limits is charged based on the AWS Marketplace plans. 
 
 After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
 
-After the free trial ends or the license or subscription expires, you can still do the following in the service:
+After the free trial ends or the license or subscription expires, you can still do the following in Ransomware Resilience:
 
 * View workloads and workload health.
 * Delete any resource, such as a policy.
@@ -273,7 +272,7 @@ After you pay for the license and it is registered with the NetApp Support Site,
 +
 .. You can obtain the license file from the NetApp Support Site.
 .. In the Console, select **Administration** > **Licenses and subscriptions**.
-.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the service serial number you are updating then select *Update License*.
+.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the serial number you are updating then select *Update License*.
 //+
 //image:digital-wallet-licenses-expired.png[Screenshot showing expired license]
 

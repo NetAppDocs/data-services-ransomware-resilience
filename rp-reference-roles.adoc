@@ -14,7 +14,7 @@ summary: NetApp Ransomware Resilience employs roles to govern the access that ea
 [.lead]
 NetApp Ransomware Resilience employs roles to govern the access that each user has to specific features and actions. 
 
-The service uses the following roles that are specific to Ransomware Resilience. 
+Ransomware Resilience uses the following roles that are specific to Ransomware Resilience. 
 
 * *Ransomware Resilience admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
 * *Ransomware Resilience viewer*: View NetApp workload data, view alert data, download recovery data, and download reports.

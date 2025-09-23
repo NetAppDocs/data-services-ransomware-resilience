@@ -63,7 +63,7 @@ include::_include/console-role-admin.adoc[]
 
 When you start the readiness drill, Ransomware Resilience skips the learning mode and starts the drill in active mode. The detection status of the workload is Active.
 
-TIP: A workload can have a ransomware detection *Learning mode* status when a detection policy is recently assigned and the service scans workloads.
+TIP: A workload can have a ransomware detection *Learning mode* status when a detection policy is recently assigned and Ransomware Resilience scans workloads.
 
 .Steps 
 

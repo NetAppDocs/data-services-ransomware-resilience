@@ -96,10 +96,10 @@ The Protection page shows the following information about workload protection:
 *Detection status*: A workload can have one of the following ransomware detection statuses: 
 
 //BFGF - there's a new ransomware option
-* *Learning*: A ransomware detection policy was recently assigned to the workload and the service is scanning workloads. 
+* *Learning*: A ransomware detection policy was recently assigned to the workload and Ransomware Resilience is scanning workloads. 
 * *Active*: A ransomware detection protection policy is assigned. 
 * *Not set*: A ransomware detection protection policy is not assigned. 
-* *Error*: A ransomware detection policy was assigned, but the service has encountered an error. 
+* *Error*: A ransomware detection policy was assigned, but Ransomware Resilience has encountered an error. 
 +
 TIP: When protection is enabled in Ransomware Resilience, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
 
@@ -206,8 +206,8 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 . From the Ransomware Resilience menu, select *Dashboard*.
 . From the Recommendations pane, locate one of the following recommendations and select *Review and fix*: 
 +
-* Register available SnapCenter Server with BlueXP
-* Register available SnapCenter Plug-in for VMware vSphere (SCV) with BlueXP
+* Register available SnapCenter Server with the NetApp Console
+* Register available SnapCenter Plug-in for VMware vSphere (SCV) with the NetApp Console
 //. From the Protection page, select a workload. 
 //+
 //image:screen-protection-sc-columns.png[Protection page]
@@ -283,17 +283,17 @@ image:screen-protection-strategy-add.png[Add strategy page showing the snapshot 
 
 . Enter a new strategy name, or enter an existing name to copy it. If you enter an existing name, choose which one to copy and select *Copy*.
 +
-NOTE: If you choose to copy and modify an existing strategy, the service appends "_copy" to the original name. You should change the name and at least one setting to make it unique. 
+NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilience appends "_copy" to the original name. You should change the name and at least one setting to make it unique. 
 
 . For each item, select the *Down arrow*. 
 
 * *Detection policy*: 
 ** *Policy*: Choose one of the predesigned detection policies. 
-** *Primary detection*: Enable ransomware detection to have the service detect potential ransomware attacks. 
+** *Primary detection*: Enable ransomware detection to have Ransomware Resilience detect potential ransomware attacks. 
 // ** **Detect encryption incidents**
 // ** **Detect suspicious users**
 ** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
-** *Block file extensions*: Enable this to have the service block known suspicious file extensions. The service takes automated snapshot copies when Primary detection is enabled. 
+** *Block file extensions*: Enable this to have Ransomware Resilience block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
 +
 If you want to change the blocked file extensions, edit them in System Manager. 
 
@@ -387,7 +387,7 @@ You can replace the existing policy with a different one.
 
 == Group file shares for easier protection
 
-Grouping file shares in a protection group makes it easier to protect your data estate. The service can protect all volumes in a group at the same time rather than protecting each volume separately. 
+Grouping file shares in a protection group makes it easier to protect your data estate. Ransomware Resilience can protect all volumes in a group at the same time rather than protecting each volume separately. 
 
 You can create groups regardless of their protection status (that is, groups that are not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed by SnapCenter and NetApp Backup and Recovery. 
 // BFGF

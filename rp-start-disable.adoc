@@ -16,7 +16,7 @@ If you no longer want to use NetApp Ransomware Resilience, you can let the licen
 
 == Disable Ransomware Resilience
 
-After the subscription or license expires, the service automatically disables features that require a subscription or license. 
+After the subscription or license expires, Ransomware Resilience automatically disables features that require a subscription or license. 
 
 For details about actions you can still do after the license expires, refer to link:rp-start-licenses.html[Set up Ransomware Resilience licensing].
 

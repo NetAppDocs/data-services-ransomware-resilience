@@ -27,7 +27,7 @@ You can use the following license types:
 *How do you enable Ransomware Resilience?* 
 Ransomware Resilience does not require any enablement. You can access Ransomware Resilience from the NetApp Console.
 
-To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the Console agent, it will include the appropriate capabilities for the service.
+To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the Console agent, it will include the appropriate capabilities for Ransomware Resilience.
 
 To get started with Ransomware Resilience, select "Start discovering workloads" from its initial landing page. 
 

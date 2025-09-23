@@ -10,19 +10,19 @@ summary: If Ransomware Resilience  detects a possible attack, an alert appears o
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. The service immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
+When NetApp Ransomware Resilience detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
 
 If Ransomware Resilience  detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
-TIP: If you dismiss the alert, the service learns this behavior, associates it with normal operations, and doesn't initiate an alert on it again. 
+TIP: If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on it again. 
 
 To begin to recover your data, mark the alert as ready for recovery so that your storage administrator can begin the recovery process. 
 
 Each alert might include multiple incidents on different volumes and statuses. Review all incidents.
 
-The service provides information called _evidence_ about what caused the alert to be issued, such as the following: 
+Ransomware Resilience provides information called _evidence_ about what caused the alert to be issued, such as the following: 
 
 * File extensions were created or changed
 * File creation with a comparison of detected versus expected rates 
@@ -62,7 +62,7 @@ CAUTION: After you dismiss an attack, you cannot change this back. If you dismis
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 
 
-TIP: If you configured a security and event management system (SIEM) in Ransomware Resilience  in the Settings page, the service sends alert details to your SIEM system. 
+TIP: If you configured a security and event management system (SIEM) in Ransomware Resilience  in the Settings page, Ransomware Resilience sends alert details to your SIEM system. 
 
 
 
@@ -259,7 +259,7 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 After you review incidents, you need to determine whether the incidents are potential attacks. If the previous condition is not met, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, the service learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 
 If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 
