@@ -1,0 +1,582 @@
+---
+sidebar: sidebar
+permalink: rp-use-protect.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware
+summary: You can protect workloads against ransomware attacks by assigning policies to a workload in NetApp Ransomware Resilience.
+---
+= Protect workloads with NetApp Ransomware Resilience protection strategies
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can protect workloads against ransomware attacks by enabling workload-consistent protection or creating ransomware protection strategies in NetApp Ransomware Resilience. 
+
+include::_include/console-role-admin.adoc[]
+
+== Understand ransomware protection strategies [[strategy]]
+// check term with PM
+
+Ransomware protection strategies encompass both _detection_ and _protection_ policies.
+
+- **Detection policies** detect ransomware threats and optionally block suspicious file extensions.
+
+- **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
++
+If you're using other NetApp products to protect your workload, Ransomware Resilience discovers those and provides the option to either:
++
+* use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
++
+* use Ransomware Resilience to manage detection, snapshots, and backups.
+
+[TIP]
+For enhanced management and protection of your data estate, you can create link:#group-file-shares-for-easier-protection[group file shares] to collectively protect volumes under one strategy. 
+
+=== Protection policies with other NetApp-managed services [[services]]
+
+Beyond Ransomware Resilience, the following services can be used to manage protection:
+
+* NetApp Backup and Recovery for file shares, VM file shares
+* SnapCenter for VMware for VM datastores
+* SnapCenter for Oracle and MySQL
+
+Protection information from these services appears in Ransomware Resilience. You can add detection policies to these services with Ransomware Resilience. Adding a protection policy with Ransomware Resilience replaces the existing protection policies. 
+
+If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
+
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
+
+=== Protection policies for workloads not protected by NetApp applications
+
+If your workload isn't managed by Backup and Recovery, Ransomware Resilience, SnapCenter, or SnapCenter Plug-in for VMware vSphere, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
+ 
+== View ransomware protection on a workload
+
+One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
+
+* Application workloads 
+* Block workloads
+* File share workloads
+* VM workloads
+
+
+
+.Steps 
+
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+
+. Do one of the following: 
++
+* From the Data Protection pane on the Dashboard, select *View all*. 
+* From the menu, select *Protection*.
++
+image:screen-protection.png[Protection page]
+. From this page, you can view and change protection details for the workload.
+
+NOTE: See link:#add-a-ransomware-protection-strategy[Add a ransomware protection strategy] to learn about using Ransomware Resilience when there's an existing protection policy with SnapCenter or Backup and Recovery.
+
+=== Understand the Protection page
+
+The Protection page shows the following information about workload protection: 
+
+*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
+
+* *Protected*: A policy is applied. ARP (or ARP/AI depending on the ONTAP version) is enabled on all volumes related to the workload. 
+* *At risk*: No policy is applied. If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled. 
+* *In progress*: A policy is being applied but not completed yet. 
+* *Failed*: A policy is applied but is not working. 
+
+//*Protection health*: A workload can have one of the following protection health statuses: 
+
+//* *Healthy*: The workload has protection enabled and backups and snapshot copies have been completed. 
+//* *In progress*: Backups or snapshot copies are in progress. 
+//* *Failed*: Backups or snapshot copies have not completed successfully. 
+//* *N/A*: Protection is not enabled or sufficient on the workload. 
+
+*Detection status*: A workload can have one of the following ransomware detection statuses: 
+
+//BFGF - there's a new ransomware option
+* *Learning*: A ransomware detection policy was recently assigned to the workload and Ransomware Resilience is scanning workloads. 
+* *Active*: A ransomware detection protection policy is assigned. 
+* *Not set*: A ransomware detection protection policy is not assigned. 
+* *Error*: A ransomware detection policy was assigned, but Ransomware Resilience has encountered an error. 
++
+TIP: When protection is enabled in Ransomware Resilience, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
+
+*Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
+
+*Snapshot and backup policies*: This column shows the snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
+
+* Managed by SnapCenter
+* Managed by SnapCenter Plug-in for VMware vSphere
+* Managed by Backup and Recovery
+* Name of ransomware protection policy that governs snapshots and backups
+* None
+
+*Workload importance*
+
+Ransomware Resilience assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
+
+* *Critical*: Snapshot copies taken more than 1 per hour (highly aggressive protection schedule)
+* *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
+* *Standard*: Snapshot copies taken more than 1 per day 
+
+*Predefined detection policies* [[predefined]]
+
+You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance: 
+
+[cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
+|===
+| Policy level
+| Snapshot
+| Frequency
+| Retention (Days)
+| # of snapshot copies
+| Total Max # of snapshot copies
+
+
+.4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+.4+| *Important workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
+ | Daily | Every 1 day | 14 | 14 | 165 
+ | Weekly | Every 1 week | 35 | 5 | 165 
+ | Monthly | Every 30 days | 60 | 2 | 165 
+
+
+.4+| *Standard workload policy* | Quarter hourly | Every 30 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93 
+
+
+|===
+
+
+//== Change workload details
+
+//You can review workload details such as the workload name, protection policies, and storage information. 
+
+//You can change protection details such as the workload priority and name of the workload, if that workload is not managed by SnapCenter or Backup and Recovery. 
+
+//You can change the name of the workload, if that workload is not managed by SnapCenter or Backup and Recovery. 
+
+//.Steps from the Protection page
+
+//. From the Ransomware Resilience menu, select *Protection*.
+//. From the Protection page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the workload you want to update.
+//. From the Actions menu, select *Edit workload name*. 
+
+//. Enter the new workload name. 
+//. Select *Save*. 
+
+//.Steps from the Workload details page
+
+//. From the Ransomware Resilience menu, select *Protection*.
+//. From the Protection page, select a workload. 
+//+
+//image:screen-protection-details3.png[Workload details from the Protection page]
+
+//. To change the name of a workload, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload name and change the name. 
+//. To change the importance of the workload from the assigned priority, click the *Pencil* image:button_pencil.png[Pencil] icon next to the workload priority and change it. 
+//. To view the policy associated with the workload, in the Protection pane of the Workload details page, click *View policy*. 
+
+//. To view workload backup destinations, in the Protection pane of the Workload details page, click the *View backup destination*.
+//+
+//A list of configured backup destinations appears. 
+//For details, see link:rp-use-settings.html[Configure protection settings].
+
+== Enable application- or VM-consistent protection with SnapCenter
+
+Enabling application- or VM-consistent protection helps you protect your application or VM workloads in a consistent manner, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. 
+
+This process initiates registering SnapCenter Software Server for applications or SnapCenter Plug-in for VMware vSphere for VMs using Backup and Recovery. 
+
+After you enable workload-consistent protection, you can manage protection strategies in Ransomware Resilience. The protection strategy includes the snapshot and backup policies managed elsewhere along with a ransomware detection policy managed in Ransomware Resilience. 
+
+To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere using Backup and Recovery, refer to the following information:  
+
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html[Register SnapCenter Server Software^]
+* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html[Register SnapCenter Plug-in for VMware vSphere^]
+
+.Steps 
+
+. From the Ransomware Resilience menu, select *Dashboard*.
+. From the Recommendations pane, locate one of the following recommendations and select *Review and fix*: 
++
+* Register available SnapCenter Server with the NetApp Console
+* Register available SnapCenter Plug-in for VMware vSphere (SCV) with the NetApp Console
+//. From the Protection page, select a workload. 
+//+
+//image:screen-protection-sc-columns.png[Protection page]
+//. On the Protection page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option, and in the drop-down menu, select *Enable workload-consistent protection* to enable SnapCenter. 
+//+ 
+//TIP: The Enable workload-consistent protection screen appears. If you choose the VM-based recommendation, the link to install SnapCenter Plug-in for VMware vSphere appears instead of "Install SnapCenter."
+//+
+//image:screen-protection-enable-sc.png[Enable workload-consistent protection page]
+//. In the Workload location field, select *Copy* to copy the workload location to the clipboard for use in the SnapCenter installation. Scroll down to see the remainder of the workload details. 
+//. Select *Install SnapCenter*. 
+//+
+//* If you selected an application-based workload, the SnapCenter Software information appears. 
+//* If you selected a VM-based workload, the SnapCenter Plug-in for VMware vSphere information appears. 
+
+. Follow the information to register the SnapCenter or SnapCenter Plug-in for VMware vSphere host using Backup and Recovery. 
+
+. Return to Ransomware Resilience. 
+
+. From Ransomware Resilience, navigate to the Dashboard and initiate the discover process again. 
+
+. From Ransomware Resilience, select *Protection* to view the Protection page. 
+
+. Review details in the snapshot and backup policies column on the Protection page to see that the policies are managed elsewhere. 
+
+== Add a ransomware protection strategy
+
+There are three approaches to adding a ransomware protection strategy: 
+
+* **Create a ransomware protection strategy if you have no snapshot or backup policies.**
++
+The ransomware protection strategy includes:
+
+** Snapshot policy 
+** Ransomware detection policy
+** Backup policy
+
+*  **Replace the existing snapshot or backup policies from SnapCenter or Backup and Recovery protection with protection strategies managed by Ransomware Resilience.**
++
+The ransomware protection strategy includes:
+
+** Snapshot policy 
+** Ransomware detection policy
+** Backup policy 
+
+* *Create a detection policy for workloads with existing snapshot and backup policies managed in other NetApp products or services.*
++
+The detection policy does not change the policies managed in other products.
++
+The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+
+=== Create a ransomware protection strategy (if you have no snapshot or backup policies)
+
+If snapshot or backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in Ransomware Resilience: 
+
+* Snapshot policy 
+* Backup policy 
+* Ransomware detection policy
+
+.Steps to create a ransomware protection strategy [[steps]]
+
+. From the Ransomware Resilience menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+
+. From the Protection page, select a workload then *Protect*. 
++
+image:screen-protection-strategy-list.png[Manage strategies]
+
+
+. From the Ransomware protection strategies page, select *Add*. 
++
+image:screen-protection-strategy-add.png[Add strategy page showing the snapshot section]
+
+. Enter a new strategy name, or enter an existing name to copy it. If you enter an existing name, choose which one to copy and select *Copy*.
++
+NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilience appends "_copy" to the original name. You should change the name and at least one setting to make it unique. 
+
+. For each item, select the *Down arrow*. 
+
+* *Detection policy*: 
+** *Policy*: Choose one of the predesigned detection policies. 
+** *Primary detection*: Enable ransomware detection to have Ransomware Resilience detect potential ransomware attacks. 
+// ** **Detect encryption incidents**
+// ** **Detect suspicious users**
+** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
+** *Block file extensions*: Enable this to have Ransomware Resilience block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
++
+If you want to change the blocked file extensions, edit them in System Manager. 
+
+* *Snapshot policy*: 
+** *Snapshot policy base name*: Select a policy or select *Create* and enter a name for the snapshot policy. 
+** *Snapshot locking*: Enable this to lock the snapshot copies on primary storage so that they cannot be modified or deleted for a certain period of time even if a ransomware attack manages its way to the backup storage destination. This is also called _immutable storage_. This enables quicker restore time. 
++
+When a snapshot is locked, the volume expiration time is set to the expiration time of the snapshot copy. 
++
+Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to https://docs.netapp.com/us-en/ontap/snaplock/index.html[SnapLock in ONTAP^].
+** *Snapshot schedules*: Choose schedule options, the number of snapshot copies to keep, and select to enable the schedule. 
+//+
+//image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
+* *Backup policy*: 
+** *Backup policy basename*: Enter a new or choose an existing name. 
+//** *Backup locking*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 
+
+** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
+
++
+TIP: To enable backup locking on secondary storage, configure your backup destinations using the *Settings* option. For details, see link:rp-use-settings.html[Configure settings].
+
+. Select *Add*. 
+
+=== Add a detection policy to workloads with existing snapshot and backup policies managed by SnapCenter or Backup and Recovery
+
+Ransomware Resilience enables you to assign either a detection policy or a protection policy to workloads with existing snapshot and backup protection managed in other NetApp products or services. Other services, such as Backup and Recovery and SnapCenter, use policies that govern snapshots, replication to secondary storage, or backups to object storage. 
+
+==== Add a detection policy to workloads with existing backup or snapshot policies
+
+If you have existing snapshot or backup policies with Backup and Recovery or SnapCenter, you can add a policy to detect ransomware attacks. To manage protection and detection with Ransomware Resilience, see <<protection, Protect with Ransomware Resilience>>.
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+
+. From the Protection page, select a workload then select *Protect*. 
+. Ransomware Resilience detects if there are existing active SnapCenter or Backup and Recovery policies.
+. To leave your existing Backup and Recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
+. To see details of the SnapCenter policies, select the *Down arrow*.
++
+Select a detection policy then select **Protect**. 
+. On the Protection page, review the **Detection status** to confirm detection is Active.  
+
+// BFGF 
+==== Replace existing backup or snapshot policies with a ransomware protection strategy [[protection]]
+
+You can replace your existing backup or snapshot policies with a ransomware protection strategy. This approach removes your externally managed protection and configures detection and protection in Ransomware Resilience. 
+
+.Steps
+
+. From the Ransomware Resilience menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+
+
+. From the Protection page, select a workload then select *Protect*. 
+// BFGF changes
+. Ransomware Resilience detects if there are existing active Backup and Recovery or SnapCenter policies. To replace the existing Backup and Recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
+
+. Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
+. Select a backup destination or create a new one. Select **Next**. 
+. Review the new protection strategy then select **Protect** to apply it. 
+. On the Protection page, review the **Detection status** to confirm detection is Active.  
+
+// review the Detection policy column to see the Detection policy assigned. Also, the snapshot and backup policies column shows the name of the product or service managing the policies. relevant?
+// BFGF changes end
+
+=== Assign a different policy 
+
+You can replace the existing policy with a different one. 
+
+.Steps 
+
+
+. From the Ransomware Resilience menu, select *Protection*.
+
+. From the Protection page, on the workload row, select *Edit protection*. 
+
+
+. If the workload has an existing Backup and Recovery or SnapCenter policy that you want to maintain, uncheck **Replace existing policies**. To replace the existing policies, check **Replace existing policies**.  
+
+
+
+. In the Policies page, select the down arrow for the policy you want to assign to review the details. 
+
+. Select the policy you want to assign.
+
+. Select *Protect* to complete the change.
+
+== Group file shares for easier protection
+
+Grouping file shares in a protection group makes it easier to protect your data estate. Ransomware Resilience can protect all volumes in a group at the same time rather than protecting each volume separately. 
+
+You can create groups regardless of their protection status (that is, groups that are not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed by SnapCenter and NetApp Backup and Recovery. 
+// BFGF
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+
+
+. From the Protection page, select the *Protection groups* tab. 
++
+image:screen-protection-groups.png[Protection groups page]
+. Select *Add*. 
++
+image:screen-protection-groups-add.png[Add protection group page]
+
+. Enter a name for the protection group. 
+
+. Select the workloads to add to the group. 
++
+TIP: To see more details on the workloads, scroll to the right. 
+
+. Select *Next*. 
++
+image:screen-protection-groups-policy.png[Add protection group - Policy page]
+
+. Select the policy to govern the protection for this group. 
+. Select *Next*. 
+. Review the selections for the protection group. 
+. Select *Add*. 
+
+//=== Add more workloads to a group
+//You might later need to add more workloads to an existing group. 
+
+//If the group includes workloads managed only by Ransomware Resilience (and not by SnapCenter or Backup and Recovery), you should use separate groups for workloads managed by just Ransomware Resilience and another group for workloads managed by other services. 
+
+//.Steps
+//. From the Ransomware Resilience menu, select *Protection*.
+
+
+//. From the Protection page, select the *Protection groups* tab. 
+//+
+//image:screen-protection-groups.png[Protection groups page]
+//. Select the group to which you want to add more workloads. 
+//+
+//image:screen-protection-groups-more-workloads.png[Protection group details page]
+//. From the selected protection group page, select *Add*. 
+//+
+//Ransomware Resilience shows you only the workloads that are not already in the group that use the same snapshot and backup policies as the group. 
+//+
+//TIP: The top of the page shows which service maintains the snapshot, backup, and detection policies. 
+//. Select the additional workloads that should be added to the group.
+//. Select *Save*. 
+
+
+=== Edit group protection 
+
+You can change the detection policy on an existing group. 
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab then select the group whose policy you want to modify. 
+//+
+//image:screen-protection-groups-edit.png[Protection groups page showing Edit option]
+. From protection group's overview page, select *Edit protection*. 
+. Select an existing protection policy to apply or select **Add** to create a new protection policy. For more information about adding a protection policy see, <<steps, Create a protection policy>>. Then select **Save**.
+. In the backup destination overview, select an existing backup destination or **Add a new backup destination**. 
+. Select **Next** to review your changes. 
+
+ 
+
+
+=== Remove workloads from a group
+
+You might later need to remove workloads from an existing group. 
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
+
+
+. Select the group from which you want to remove one or more workloads. 
++
+image:screen-protection-groups-more-workloads.png[Protection group details page]
+. From the selected protection group page, select the workload you want to remove from the group and select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option.
+. From the Actions menu, select *Remove workload*. 
+
+. Confirm that you want to remove the workload and select *Remove*. 
+
+=== Delete the protection group
+
+Deleting the protection group removes the group and its protection but doesn't remove the individual workloads.
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+
+
+. From the Protection page, select the *Protection groups* tab. 
+
+
+. Select the group from which you want to remove one or more workloads. 
++
+image:screen-protection-groups-more-workloads.png[Protection group details page]
+
+. From the selected protection group page, at the top right, select *Delete protection group*.
+
+. Confirm that you want to delete the group and select *Delete*. 
+
+== Manage ransomware protection strategies
+
+You can delete a ransomware strategy.
+
+=== View workloads protected by a ransomware protection strategy
+
+Before you delete a ransomware protection strategy, you might want to view which workloads are protected by that strategy. 
+
+You can view the workloads from the list of strategies or when you are editing a specific strategy. 
+
+.Steps when viewing the list of strategies
+
+. From the Ransomware Resilience menu, select *Protection*.
+
+. From the Protection page, select *Manage protection strategies*. 
++
+The Ransomware protection strategies page displays a list of strategies.
++
+image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing a list of strategies] 
+. On the Ransomware protection strategies page in the Protected workloads column, select the down arrow at the end of the row. 
+
+//.Steps when editing a strategy
+
+
+//. From the Ransomware Resilience menu, select *Protection*.
+
+//. From the Protection page, select *Manage protection strategies*. 
+//+
+//image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing the Actions menu]
+
+//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to change.
+
+//. From the Actions menu, select *Edit*. 
+//+
+//image:screen-protection-strategy-edit.png[Edit ransomware protection strategy page]
+
+//. View the workloads protected by this strategy by selecting *View* next to the number of workloads at the top of the page. 
+
+
+
+//=== Edit a ransomware protection strategy 
+
+//You can edit a protection strategy by selecting a different preconfigured detection policy strategy, selecting a different policy, or adding a new backup policy.
+
+//.Steps 
+
+
+//. From the Ransomware Resilience menu, select *Protection*.
+
+//. From the Protection page, select *Manage protection strategies*. 
+//+
+//image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing the Actions menu]
+
+//. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to change.
+
+//. From the Actions menu, select *Edit policy*. 
+
+//. Do one of the following: 
+//* Copy from an existing strategy. 
+//* Select a different snapshot or backup policy.
+//* Add a new snapshot or backup policy. 
+
+//. Change the details. 
+
+//. Select *Save* to finish the change. 
+
+=== Delete a ransomware protection strategy
+
+You can delete a protection strategy that is not currently associated with any workloads. 
+
+.Steps 
+
+. From the Ransomware Resilience menu, select *Protection*.
+
+. From the Protection page, select *Manage protection strategies*. 
+
+. In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
+
+. From the Actions menu, select *Delete policy*. 
+
+

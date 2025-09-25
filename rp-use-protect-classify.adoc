@@ -1,0 +1,120 @@
+---
+sidebar: sidebar
+permalink: rp-use-protect-classify.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
+summary: Improve the security and privacy compliance of your data with NetApp Data Classification to identify whether your data includes personally identifiable or private information.
+---
+= Scan for personally identifiable information with NetApp Data Classification in Ransomware Resilience
+
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Within NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the Console and is available at no additional cost. 
+
+link:https://docs.netapp.com/us-en/bluexp-classification/[Data Classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
+
+//IMPORTANT: Data Classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in Ransomware Resilience  is generally available and not in Preview. To enable Preview features, use the Ransomware Resilience  *Settings* option. Refer to link://rp-use-settings-html[Configure Ransomware Resilience  settings].
+
+TIP: This process can impact workload importance to help ensure you have the appropriate protection. 
+
+include::_include/console-role-admin.adoc[]
+
+== Identify privacy exposure with Data Classification 
+
+Before you use Data Classification within Ransomware Resilience, you need link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[to enable Data Classification to scan your data^].
+
+You can deploy Data Classification within the Protection page of Ransomware Resilience. Follow the procedure to identify the privacy exposure. When you select **Identify exposure**, if you haven't already deployed Data Classification, a dialog enables you to enable Data Classification. 
+
+image:classification-deploy.png[Screenshot of deploy classification]
+
+//TIP: You do this only once; you don't have to enable Data Classification again if you choose another file share workload on which to identify exposure.
+
+For more information about Data Classification, see: 
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about Data Classification^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
+
+.Before you begin
+
+Scanning for PII data in Ransomware Resilience is available if you've link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-cloud-compliance.html[deployed Data Classification^]. Data Classification is available as part of the Console at no extra charge and can be deployed on-premises or in the customer cloud.
+
+.Steps
+
+. From the Ransomware Resilience  menu, select *Protection*.
+
+. In the Protection page, locate a file share workload in the Workload column. 
++
+image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
+
+. To enable Data Classification to scan your data for PII, in the *Privacy exposure* column, select *Identify exposure*. 
+
+[NOTE]
+If you haven't deployed Data CCassification, selecting *Identify exposure* opens a dialog to deploy Data Classification. Select *Deploy*. After you've deployed Data Classification, you can return to the Protection page then select *Identify exposure*.
+
+.Result
+
+//For the SaaS version of Data Classification, Data Classification installs a Console agent, remotely connects to your workload data and scans it in the NetApp cloud (Amazon Web Services, us-west-1). Only identified insights and metrics remain in the NetApp cloud. 
+
+Scanning can take several minutes depending on the size and number of the files. During the scan, the Protection page indicates it is identifying files and provides a file count. When scanning is complete, the Privacy exposure column rates the exposure level as Low, Medium, or High.  
+
+== Review the privacy exposure
+
+After Data Classification scans for PII, assess the risk. 
+
+PII data is classified into one of three designations:   
+
+* *High*: Greater than 70% of files contain PII
+* *Medium*: Greater than 30% and less than 70% of files contain PII
+* *Low*: Greater than 0% and less than 30% of files contain PII
+
+.Steps
+
+. From the Ransomware Resilience  menu, select *Protection*.
+. In the Protection page, locate the file share workload in the Workload column that shows a status in the Privacy exposure column. 
++
+image:screen-protection-sensitive-preview-column.png[Protection page showing Privacy exposure column]
+//+
+//TIP: If the status changes, an up or down arrow appears in the Privacy exposure column to indicate the Privacy exposure change. 
+
+. Select the workload link in the Workload column to see workload details. 
++
+image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure tile]
+. In the Workload details page, look at the details in the Privacy exposure tile. 
+//+
+//TIP: If the privacy exposure change affects the workload importance, an up or down arrow appears next to the Workload Importance status.  
+
+== Impact of privacy exposure on workload importance
+
+Privacy exposure changes can impact the workload importance.  
+
+
+[cols=4*,options="header",cols="15,20a,20,20" width="100%"]
+|===
+| When privacy exposure: 
+| From this privacy exposure:
+| To this privacy exposure:
+| Then, workload importance does this: 
+
+
+
+.| *Decreases* | High, Medium, or Low | Medium, Low, or None | Remains the same
+
+.3+| *Increases*  | None | Low |  Remains at Standard  
+ |  Low | Medium | Changes from Standard to Important 
+ | Low or Medium | High | Changes from Standard or Important to Critical 
+ 
+
+|===
+
+
+== For more information 
+
+For details about Data Classification, refer to the Data Classification documentation: 
+
+* https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html[Learn about Data Classification^]
+* https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html[Categories of private data^]
+* https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html[Investigate the data stored in your organization^]
+

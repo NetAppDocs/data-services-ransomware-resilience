@@ -1,0 +1,309 @@
+---
+sidebar: sidebar
+permalink: rp-start-licenses.html
+keywords: bluexp license, ransomware protection license, netapp console
+summary: Get started with NeApp Ransomware Resilience by setting up licensing.
+---
+
+= Set up licensing for NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+With NetApp Ransomware Resilience, you can use different licensing plans.
+
+
+To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
+
+*License types*
+You can use the following license types:
+
+* Sign up for a 30-day free trial.
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console. 
+
+After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
+
+After the free trial ends or the license or subscription expires, you can still do the following in Ransomware Resilience:
+
+* View workloads and workload health.
+* Delete any resource, such as a policy.
+* Run all scheduled operations that were created during the trial period or under the license. 
+
+== Other licenses  
+
+// huh? 
+The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use NetApp Backup and Recovery even if you don't have a license for it. 
+
+NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
+
+You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in Ransomware Resilience. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
+
+TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don't enable it in Ransomware Resilience, you won't see the anomalous user behavior information. 
+
+== Try it out using a 30-day free trial
+You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
+
+
+NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
+
+No capacity limits are enforced during the trial.  
+
+You can get a license or subscribe at any time and you will not be charged until the 30-day trial ends. To continue after the 30-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
+
+During the trial, you have full functionality. 
+
+
+.Steps
+
+. Access the https://console.netapp.com/[Console^].
+. Log in to the Console. 
+// check this step
+. From the NetApp Console, select *Protection* > *Ransomware Resilience*. 
++
+If this is your first time logging in to this service, the landing page appears. 
+
++
+image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
+. If you haven't already added a Connector for other services, add one. 
++ 
+To add a Console agent, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^].
+. After you set up a Console agent, in the Ransomware Resilience landing page, the button to add a Console agent changes to a button for discovering workloads. Select *Start by discovering workloads*. 
+
+. To review the free trial information, select the drop-down option in the top right. 
+
+*After the trial ends, obtain a subscription or license*
+
+After the free trial ends, you can either subscribe through one of the Marketplaces or purchase a license from NetApp.  
+
+If you already have a PAYGO subscription, the license is automatically switched to the subscription after the free trial ends.
+
+<<Subscribe through AWS Marketplace>>
+<<Subscribe through Microsoft Azure Marketplace>>
+<<Subscribe through Google Cloud Platform Marketplace>>
+<<Bring your own license (BYOL)>>
+
+== Subscribe through AWS Marketplace
+
+This procedure provides a high level overview of how to subscribe directly in the AWS Marketplace. 
+
+.Steps
+. In Ransomware Resilience, do one of the following: 
++
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*. 
++
+image:screen-license-payment-methods3.png[The Ransomware Resilience Payment methods page]
+. In the Payment methods page, select *Subscribe* for *Amazon Web Services*. 
+. In AWS Marketplace, select *View purchase options*. 
+. Use AWS Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.  
+ 
+. When you return to Ransomware Resilience, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number, and indicates that Ransomware Resilience is subscribed in AWS Marketplace.  
+
+. Return to the Ransomware Resilience payment methods page.
+
+. Add the license to the Console by selecting *Add license*.
+
++
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
+
+. In the Add License page, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
+
+
+. To view license details, from the Console left navigation, select *Administration* > *Licenses and subscriptions*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[Screenshot of licenses and subscriptions.]
+
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+
++
+A message appears indicating that a license has been added. 
+
+== Subscribe through Microsoft Azure Marketplace
+
+This procedure provides a high level overview of how to subscribe directly in the Azure Marketplace. 
+
+.Steps
+. In Ransomware Resilience, do one of the following: 
++
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*.  
++
+image:screen-license-payment-methods3.png[The Ransomware Resilience Payment methods page]
+. In the Payment methods page, select *Subscribe* for *Microsoft Azure Marketplace*. 
+. In Azure Marketplace, select *View purchase options*. 
+. Use Azure Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.  
+ 
+. When you return to Ransomware Resilience, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number, and indicates that Ransomware Resilience is subscribed in Azure Marketplace.  
+
+. Return to Ransomware Resilience Payment methods page.
+
+. To add the license, select *Add a license*.
++
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
+
+. In the Add License page, select *Enter Serial Number* then enter the serial number frin the email sent to you. Select *Add License*. 
+
+. To view license details in Licenses and subscriptions, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[Data Services Licenses page]
+
+
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+
++
+A message appears indicating that a license has been added. 
+
+== Subscribe through Google Cloud Platform Marketplace
+
+This procedure provides a high level overview of how to subscribe directly in the Google Cloud Platform Marketplace. 
+
+.Steps
+. In the Ransomware Resilience, do one of the following: 
++
+* If you have a message stating free trial is expiring, select *View payment methods*. 
+* If you haven't started the trial, select the *Free trial* notice at the top right then *View payment methods*.  
++
+image:screen-license-payment-methods3.png[Screenshot of the Ransomware Resilience Payment methods page.]
+. In the Payment methods page, select *Subscribe* for Google Cloud Platform Marketplace*. 
+. In Google Cloud Platform Marketplace, select *Subscribe*. 
+. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.    
+image:screen-license-payments-gcp2.png[Screenshot of the Google Cloud Marketplace subscription page.]
+ 
+. When you return to Ransomware Resilience, a message states that you are subscribed.
++
+NOTE: An email is sent to you that includes the Ransomware Resilience serial number and indicates that Ransomware Resilience is subscribed in Google Cloud Platform Marketplace.  
+
+. Return to Ransomware Resilience Payment methods page.
+
+. To add the license to the Console, select *Add license*.
++
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
+
+. In the Add License page, select *Enter Serial Number*. Enter the serial number in the email sent to you. Select *Add License*. 
+
+
+. To view license details, from the Console left navigation, select *Governance* > *Licenses and subscriptions*.
+
+* To see subscription information, select *Subscriptions*. 
+* To see BYOL licenses, select *Data Services Licenses*.
++
+image:screen-dw-data-services-license.png[Screenshot of the licenses and subscriptions page.]
+
+
+. Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+
++
+A message appears indicating that a license has been added. 
+
+== Bring your own license (BYOL)
+
+If you want to bring your own license (BYOL), you need to purchase the license, get the NetApp License File (NLF), then add the license to the Console. 
+
+*Add your license file to the Console*
+
+After you've purchased your Ransomware Resilience license from your NetApp sales rep, you activate the license by entering the Ransomware Resilience serial number and NetApp Support Site (NSS) account information. 
+
+.Before you begin
+
+You need the Ransomware Resilience serial number. Locate this number from your sales order, or contact the account team for this information.
+
+//For private mode site without internet access, use *account-DARKSITE1*.
+
+//.Steps to get an NLF license file from the Support Site
+
+//. Sign in to the https://mysupport.netapp.com[NetApp Support Site^]  and select *Systems* > *Software Licenses*.
+//+
+//image:byol-nss-licenses.png[NetApp Support Site Software Licenses page]
+//. Enter your BlueXP disaster recovery license serial number.
+//. Under the License Key column, select *Get NetApp License File*.
+//+
+//image:byol-nss-licenses-get.png[NetApp Support Site Software Licenses page]
+//. Enter your BlueXP Account ID (this is called a Tenant ID on the support site) and select *Submit* to download the license file.
+
+.Steps
+
+. After you obtain the license, return to Ransomware Resilience. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
+
+. Select *Add license* to go to the Console Licesnses and subscriptions page. 
+
+. From the *Data Services Licenses* tab, select *Add license*. 
+
++
+image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
+
+. In the Add License page, enter the serial number and NetApp Support Site account information.
+
++
+* If you have the Console license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
++
+If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to the Console^].
+* If you have the zvondolr license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
+
+. Select *Add License*. 
+
+.Result
+The Licenses and subscriptions page shows Ransomware Resilience has a license. 
+
+== Update your Console license when it expires
+
+If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the Ransomware Resilience UI. You can update your Ransomware Resilience license before it expires so there's no interruption in your ability to access your scanned data.
+
+TIP: This message also appears in Licenses and subscriptions and in https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notification settings]. 
+
+.Steps
+
+. You can send an email to support to request an update to your license. 
++
+After you pay for the license and it is registered with the NetApp Support Site, the Console automatically updates the license. The Data Services Licenses page will reflect the change in 5 to 10 minutes.
+
+. If the Console can't automatically update the license, you need need to manually upload the license file.
++
+.. You can obtain the license file from the NetApp Support Site.
+.. In the Console, select **Administration** > **Licenses and subscriptions**.
+.. Select the *Data Services Licenses* tab, select the *Actions ...* icon for the serial number you are updating then select *Update License*.
+//+
+//image:digital-wallet-licenses-expired.png[Screenshot showing expired license]
+
+//== End the free trial
+
+//You can stop the free trial at any time or you can wait until it expires. 
+
+//.Steps
+//. In Ransomware Resilience, at the top right, select *Free trial - View details*. 
+
+//. In the drop-down details, select *End free trial*. 
+//+
+//image:screen-license-trial-end.png[End free trial page]
+
+//. If you want to delete all data, check the *Delete data* after the free trial ends option. 
+//+
+//This will delete all schedules, replication plans, resource groups, vCenters, and sites. Audit data, operation logs, and jobs history are retained until the end of the life of the product. 
+//+
+//NOTE: If you end the free trial and not asked to delete data and you don't purchase a license or subscription, 60 days after the free trial ends, Ransomware Resilience deletes all of your data. 
+
+//. Type "end trial" in the text box. 
+//. Select *End*. 
+
+== End the PAYGO subscription
+
+If you want to end your PAYGO subscription, you can do so at any time.
+
+.Steps
+. In Ransomware Resilience, at the top right, select the license option. 
+. Select *View payment methods*.
+. In the drop-down details, uncheck the box *Use after current payment method expires*.
+. Select *Save*. 
+
+
