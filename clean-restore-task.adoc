@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: clean-restore-task.html
-keywords: clean room, clean restore, isolated restore, secure recovery, restore
+keywords: clean room, clean restore, isolated restore, secure recovery, restore, isolated recovery environment
 summary: Ransomware Resilience enables you to perform a controlled restoration of files in a clean room. 
 ---
-= Restore files safely with clean restore in NetApp Ransomware Resilience
+= Restore files safely with the clean room in NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
