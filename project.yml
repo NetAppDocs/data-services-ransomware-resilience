@@ -51,9 +51,13 @@ sidebar:
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
-          url: /rp-use-recover.html
-        - title: Recover with clean room 
-          url: /clean-restore-task.html
+          entries:
+          - title: Review recovery status
+            url: /rp-use-recover.html
+          - title: Recover with a custom restore
+            url: /custom-restore-task.html
+          - title: Recover with clean room 
+            url: /clean-restore-task.html
 #       - title: Manage workloads 
 #         url: /rp-use-manage.html
         - title: Download reports

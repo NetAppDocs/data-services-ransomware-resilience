@@ -12,23 +12,25 @@ summary: Ransomware Resilience enables you to perform a controlled restoration o
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience enables you to perform a thorough cleaning of your workloads before performing a restore. 
+NetApp Ransomware Resilience enables you to clean workloads before performing a restore. Using the clean room scrubs all files after a ransomware incident to remove infected files. The clean room option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
 
-Using the clean room scrubs all files after a ransomware incident to remove infected files. 
-
-The clean restore process is split into seven steps: Setup, analysis, plan, cleaning, recovery, conclusion
-
+The clean restore process is split into seven steps: Setup, analysis, plan, cleaning, recovery, conclusion.
 
 == Considerations
 
-// * Number of clean rooms per 
+// * Number of clean rooms per console agent
+* There is a limit to the number of concurrent clean rooms operations per room. If the clean room doesn't have capacity for a new operation, it will be queued until there is availability. 
+* Workloads can only be cleaned in clean rooms linked to their parent Console agent. 
+* You can monitor the status of active and queued clean room operations at any time in the **Recovery** dashboard of Ransomware Resilience. 
 
+// get number 
 
 == Create a clean room 
 
 [IMPORTANT]
 Clean room is currently in **private preview**. To enroll in the private preview, navigate to the **Recovery** dashboard in Ransowmare Resilience. In the Clean Restore card, select **Sign up** to request access. 
 
+.Steps
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean rooms card, select **Add**. 
 . Provide the follow inputs: 
@@ -44,6 +46,9 @@ You can track the progress in the **Settings** tab. Once the room is created, yo
 
 == Perform a clean restore 
 
+Ransomware Resilience also supports a xref:rp-use-recover.html[custom restore option]. 
+
+.Steps
 . In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
 . In the Restore Type options, select **Clean restore** then **Next**. 
 .. If you haven't created a clean room for this system, provide the necessary information to link:#create-a-clean-room[create the clean room]. Select **Next**. 
@@ -54,8 +59,8 @@ You can track the progress in the **Settings** tab. Once the room is created, yo
 . After the setup completes, select **Run analysis**. With the analysis, Ransomware Resilience investigates all restore points--snapshots and backups--from the seven days prior to the incident. Ransomware Resilience analyzes the restore points, noting which ones are potentially impacted.
 +
 Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occured on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
-
-// image
++
+image:screenshot-clean-room-analysis.png[Screenshot of the clean room analysis step.]
 
 . After the analysis completes, plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. 
 // Synthesizes different restore points to create a restore with the least data loss.
@@ -65,8 +70,9 @@ Once a restore point is discovered without impacted files, all earlier restore p
 .. If cleaning of any file fails, those files are excluded from the recovery. Select if you want to quarantine those files by  saving them to another location. 
 // choose location
 . Choose where to save the original workload: the original location or an alternate. 
-.. If you choose the original location, select whether you want to save a new copy or replace the existing.
-.. If you select an alternative location, select the **System** and **Storage VM** then enter the **Path for the new volume** and the **New volume name**. 
++
+If you choose the original location, select whether you want to save a new copy or replace the existing.
++
+If you select an alternative location, select the **System** and **Storage VM** then enter the **Path for the new volume** and the **New volume name**. 
 . Select **Start recovery** to initiate the recovery. 
-. **Release resources and end**. 
-. To confirm you want to release the resource, select **End**. 
+. Once the recovery completes, you can release the resource based on the save location from the previous step. Select **Release resources and end** to initiate this process. To confirm you want to release the resource, select **End**. 

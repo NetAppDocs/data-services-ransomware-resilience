@@ -1,0 +1,2 @@
+*Required Console role*
+To perform this task, you need the Organization admin, Folder or project admin, or Ransomware Resilience admin role. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
