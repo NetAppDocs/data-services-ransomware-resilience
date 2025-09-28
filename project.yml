@@ -56,8 +56,8 @@ sidebar:
             url: /rp-use-recover.html
           - title: Recover with a custom restore
             url: /custom-restore-task.html
-          - title: Recover with clean room 
-            url: /clean-restore-task.html
+          - title: Recover in an isolated environment
+            url: /isolated-recovery-task.html
 #       - title: Manage workloads 
 #         url: /rp-use-manage.html
         - title: Download reports

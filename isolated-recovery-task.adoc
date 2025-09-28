@@ -1,0 +1,74 @@
+---
+sidebar: sidebar
+permalink: isolated-recovery-task.html
+keywords: clean room, clean restore, isolated restore, secure recovery, restore, isolated recovery environment
+summary: Ransomware Resilience enables you to perform a controlled restoration of files in an isolated recovery environment. 
+---
+= Restore files safely using an isolated recovery environment in NetApp Ransomware Resilience
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+NetApp Ransomware Resilience enables you to clean workloads before performing a restore with an isolated recovery environment. The isolated recovery environment guides you through a step-by-step process, identifying encryption and removing malware then provides restore process to increase the restore time and minimize data loss. The isolated recovery environment option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
+
+[IMPORTANT]
+The isolated recovery environment is in **private preview**. To enroll in the private preview, navigate to the **Recovery** dashboard in Ransowmare Resilience. In the Clean rooms card, select **Sign up** to request access. 
+
+== Considerations
+
+// * Number of isolated recovery environments per console agent
+* If the isolated recovery environment doesn't have capacity for a new operation, it will be queued until there is availability. 
+* Workloads must be cleaned in an isolated recovery environment hosted on the same Console agent. 
+* You can monitor the status of active and queued isolated recovery environment operations at any time in the **Recovery** dashboard of Ransomware Resilience. 
+
+== Create an isolated recovery environment
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the Clean rooms card, select **Add**. 
+. Provide the follow inputs: 
+    * A **Name** for the environment. 
+    * Permissions 
+// need info
+    * Provide the authentication credentials for your clean restore environment, including **Access key** and **Secret key**. 
++
+image:screenshot-set-up-recovery-environment.png[Screenshot of isolated recovery environment authentication set-up.]
++
+. Select **Add** to create the isolated recovery environment.
++
+You can track the progress in the **Settings** tab. Once the room is created, you can select **Manage**. 
+
+== Perform a clean restore 
+
+Ransomware Resilience also supports a xref:rp-use-recover.html[custom restore option]. 
+
+.Steps
+. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
+. In the Restore Type options, select **Clean restore** then **Next**. 
+.. If you haven't created an isolated recovery environment for this system, provide the necessary information to link:#create-an-isolated-recovery-environment[create the isolated recovery environment]. Select **Next**. 
+.. If you have created an isolated recovery environment, select the isolated recovery environment to use for the restore. 
+. Select **Restore**. 
+// The isolated recovery environment is automatically selected if one is already connected to the Console agent. Otherwise, you can select an isolated recovery environment
+// Setup step: 
+. After the setup completes, select **Run analysis**. With the analysis, Ransomware Resilience investigates all restore points—snapshots and backups—from the seven days prior to the incident. Ransomware Resilience analyzes the restore points, noting which ones are potentially impacted.
++
+Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occured on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
++
+image:screenshot-clean-room-analysis.png[Screenshot of the isolated recovery environment analysis step.]
+
+. After the analysis completes, plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. 
+// Synthesizes different restore points to create a restore with the least data loss.
+. To view granular file event data, select that files to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
+. Select **Next** to proceed to cleaning. 
+. If cleaning of any file fails, those files are excluded from the recovery. Select if you want to quarantine those files by  saving them to another location. 
+// choose location
+. Choose where to save the original workload: the original location or an alternate. 
++
+If you choose the original location, select whether you want to save a new copy or replace the existing.
++
+If you select an alternative location, select the **System** and **Storage VM** then enter the **Path for the new volume** and the **New volume name**. 
+. Select **Start recovery** to initiate the recovery. 
+. Once the recovery completes, you can release the resource based on the save location from the previous step. Select **Release resources and end** to initiate this process. To confirm you want to release the resource, select **End**. 
