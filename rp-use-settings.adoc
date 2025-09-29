@@ -84,7 +84,7 @@ include::_include/console-role-user-behavior.adoc[]
 
 === View the data collector 
 
-After you've created the data collector, you can
+After you've created the data collector, you can view its the workloads attached, associated policies and backup sources, and the protection status.
 
 .Steps
 . In Ransomware Resilience, go to *Settings*.
@@ -141,7 +141,7 @@ Provide the attribute mapping:
   * *Unix ID* (if you're using NFS)
   * Select *Include optional attributes*. You can also include email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
 +
-Select *Advanced* to an optional search query. 
+Select *Advanced* to add an optional search query. 
 . Select **Add**. 
 . Return to the user directory connectors tab to check the status of your user directory connector. If created successfully, the status of the user directory connector displays as *Running*. 
 

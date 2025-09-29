@@ -113,8 +113,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Screenshot of licenses and subscriptions.]
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
@@ -152,9 +150,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Data Services Licenses page]
-
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
@@ -174,9 +169,7 @@ This procedure provides a high level overview of how to subscribe directly in th
 image:screen-license-payment-methods3.png[Screenshot of the Ransomware Resilience Payment methods page.]
 . In the Payment methods page, select *Subscribe* for Google Cloud Platform Marketplace*. 
 . In Google Cloud Platform Marketplace, select *Subscribe*. 
-. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.    
-image:screen-license-payments-gcp2.png[Screenshot of the Google Cloud Marketplace subscription page.]
- 
+. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.     
 . When you return to Ransomware Resilience, a message states that you are subscribed.
 +
 NOTE: An email is sent to you that includes the Ransomware Resilience serial number and indicates that Ransomware Resilience is subscribed in Google Cloud Platform Marketplace.  
@@ -194,9 +187,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Screenshot of the licenses and subscriptions page.]
-
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
