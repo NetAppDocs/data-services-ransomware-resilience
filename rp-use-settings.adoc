@@ -64,8 +64,6 @@ This page shows Console agents with systems that were not selected earlier, newl
 . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
 //DII
-
-
 == Suspicious user activity 
 
 Ransomware Resilience supports detection of suspicious user behavior in detection policies, enabling you to address ransomware incidents at the user-level. 

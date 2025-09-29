@@ -51,7 +51,7 @@ NOTE: If you have multiple Console agents in a single Console organization, the 
 +
 NOTE: The general release of Ransomware Resilience, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details.
 +
-For more licensing details, refer to link:concept-ransomware-protection.html[Learn about Ransomware Resilience].
+For more licensing details, refer to link:concept-ransomware-resilience.html[Learn about Ransomware Resilience].
 
 * To apply protection configurations (such as enabling Autonomous Ransomware Protection and others), Ransomware Resilience needs admin permissions on the ONTAP cluster. The ONTAP cluster should have been onboarded using ONTAP cluster admin user credentials only. 
 
