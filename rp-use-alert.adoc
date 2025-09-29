@@ -152,7 +152,7 @@ The Alerts page appears.
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured a Data collector and enabled a protection policy with user behavior detection to view user-level detecity. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed with user behavior detection is not enabled. To enable suspicious user detection, see xref:rp-use-settings[Settings].
+You must have configured a Data collector and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed with user behavior detection is not enabled. To enable suspicious user detection, see xref:rp-use-settings[Settings].
 
 include::_include/workload-security-note.adoc[]
 

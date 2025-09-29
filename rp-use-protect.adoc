@@ -226,11 +226,7 @@ To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere u
 
 . Return to Ransomware Resilience. 
 
-<<<<<<< HEAD
 . From Ransomware Resilience, navigate to the Dashboard and initiate the discovery process again. 
-=======
-. From Ransomware Resilience, navigate to the Dashboard and initiate the discover process again. 
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 
 . From Ransomware Resilience, select *Protection* to view the Protection page. 
 
@@ -295,11 +291,7 @@ NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilien
 ** *Policy*: Choose one of the predesigned detection policies. 
 ** *Primary detection*: Enable ransomware detection to have Ransomware Resilience detect potential ransomware attacks. 
 // ** **Detect encryption incidents**
-<<<<<<< HEAD
 // ** **Detect suspicious users** / DII
-=======
-// ** **Detect suspicious users**
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 ** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
 ** *Block file extensions*: Enable this to have Ransomware Resilience block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
 +
@@ -360,27 +352,15 @@ image:screen-protection.png[Manage strategy page]
 
 
 . From the Protection page, select a workload then select *Protect*. 
-<<<<<<< HEAD
-=======
-// BFGF changes
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 . Ransomware Resilience detects if there are existing active Backup and Recovery or SnapCenter policies. To replace the existing Backup and Recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
 
 . Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
-<<<<<<< HEAD
 // are you creating the data collector? / dii
 .. If your protection strategy includes user behavior detection, select a User activity agent in your environment to host the new data collectors. The data collector transmits user activity events to Ransomware Resilience to detect anomalous user behavior.
 . Review the new protection strategy then select **Protect** to apply it. 
 . On the Protection page, review the **Detection status** to confirm detection is Active.  
 
-=======
-. Review the new protection strategy then select **Protect** to apply it. 
-. On the Protection page, review the **Detection status** to confirm detection is Active.  
-
-// review the Detection policy column to see the Detection policy assigned. Also, the snapshot and backup policies column shows the name of the product or service managing the policies. relevant?
-// BFGF changes end
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 
 === Assign a different policy 
 
@@ -397,7 +377,6 @@ You can replace the existing policy with a different one.
 . If the workload has an existing Backup and Recovery or SnapCenter policy that you want to maintain, uncheck **Replace existing policies**. To replace the existing policies, check **Replace existing policies**.  
 
 
-<<<<<<< HEAD
 . In the Policies page, select the down arrow for the policy you want to assign to review the details. 
 
 . Select the policy you want to assign.
@@ -408,21 +387,6 @@ You can replace the existing policy with a different one.
 Grouping file shares in a protection group makes it easier to protect your data estate. Ransomware Resilience can protect all volumes in a group at the same time rather than protecting each volume separately. 
 
 You can create groups regardless of their protection status (that is, groups not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed by SnapCenter and NetApp Backup and Recovery. 
-=======
-
-. In the Policies page, select the down arrow for the policy you want to assign to review the details. 
-
-. Select the policy you want to assign.
-
-. Select *Protect* to complete the change.
-
-== Group file shares for easier protection
-
-Grouping file shares in a protection group makes it easier to protect your data estate. Ransomware Resilience can protect all volumes in a group at the same time rather than protecting each volume separately. 
-
-You can create groups regardless of their protection status (that is, groups that are not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed by SnapCenter and NetApp Backup and Recovery. 
-// BFGF
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 
 .Steps
 . From the Ransomware Resilience menu, select *Protection*.
@@ -447,18 +411,11 @@ TIP: To see more details on the workloads, scroll to the right.
 +
 image:screen-protection-groups-policy.png[Add protection group - Policy page]
 
-<<<<<<< HEAD
 . Select the policy to govern the protection for this group. To confirm, select *Next*. 
 .. If you need to configure a backup policy, choose one then select **Next**. 
 .. If your detection policy includes user behavior detection, select the data collector you want to use then **Next**. 
 . Review the selections for the protection group. 
 . To finalize creation of the protection group, select *Add*. 
-=======
-. Select the policy to govern the protection for this group. 
-. Select *Next*. 
-. Review the selections for the protection group. 
-. Select *Add*. 
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 
 //=== Add more workloads to a group
 //You might later need to add more workloads to an existing group. 
@@ -499,11 +456,6 @@ You can change the detection policy on an existing group.
 . Select **Next** to review your changes. 
 
  
-<<<<<<< HEAD
-=======
-
-
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 === Remove workloads from a group
 
 You might later need to remove workloads from an existing group. 
@@ -530,15 +482,8 @@ Deleting the protection group removes the group and its protection but doesn't r
 .Steps
 . From the Ransomware Resilience menu, select *Protection*.
 
-<<<<<<< HEAD
 . From the Protection page, select the *Protection groups* tab. 
 
-=======
-
-. From the Protection page, select the *Protection groups* tab. 
-
-
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 . Select the group from which you want to remove one or more workloads. 
 +
 image:screen-protection-groups-more-workloads.png[Protection group details page]
@@ -557,11 +502,7 @@ Before you delete a ransomware protection strategy, you might want to view which
 
 You can view the workloads from the list of strategies or when you are editing a specific strategy. 
 
-<<<<<<< HEAD
 .Steps to view strategies
-=======
-.Steps when viewing the list of strategies
->>>>>>> a5a36aee205eaf13667fbea51eae49cb82740241
 
 . From the Ransomware Resilience menu, select *Protection*.
 

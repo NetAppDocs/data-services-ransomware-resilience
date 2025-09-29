@@ -66,7 +66,7 @@ This page shows Console agents with systems that were not selected earlier, newl
 
 Ransomware Resilience supports detection of suspicious user behavior in detection policies, enabling you to address ransomware incidents at the user-level. 
 
-Configuring supsicious user activity detection requires that you create a data collector and a user activity agent in the Ransomware Resilience settings. With the data collector configured, you can add suspicious user detection in your ransomware detection policy. 
+Configuring suspicious user activity detection requires that you create a data collector and a user activity agent in the Ransomware Resilience settings. With the data collector configured, you can add suspicious user detection in your ransomware detection policy. 
 
 
 include::_include/workload-security-note.adoc[]
@@ -80,7 +80,7 @@ include::_include/console-role-user-behavior.adoc[]
 . In Ransomware Resilience, go to *Settings*.
 . In the User Activity card, select **Activate**. 
 . Select a cloud provider and region to store your user activity data then select **Next**. 
-. Confirm the user activity agent was successfully created. In the User Activity card, a succesful deployment displays as Running.
+. Confirm the user activity agent was successfully created. In the User Activity card, a successful deployment displays as Running.
 
 === View the data collector 
 
