@@ -18,6 +18,8 @@ Ransomware Resilience uses the following roles that are specific to Ransomware R
 
 * *Ransomware Resilience admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
 * *Ransomware Resilience viewer*: View NetApp workload data, view alert data, download recovery data, and download reports.
+* *Ransomware resilience user behavior admin*: Create and manage user behavior detection settings.
+* *Ransomware resilience user behavior viewer*: View user behavior detection results. 
 
 These roles are in addition to the Console platform roles that govern access to the Console service and other services, such as data protection, workload management, and so on. For details about all Console platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the setup and administration documentation^].
 

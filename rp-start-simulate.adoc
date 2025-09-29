@@ -139,9 +139,9 @@ image:screen-alerts-readiness-incidents2.png[Incident page showing the readiness
 
 Here are some things to look for:
 
-* Look at the Potential attack Type. 
+* Look at the Potential attack Severity. 
 +
-If the Type indicates that a user is suspected of malicious activity, review the user name. You might want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
+If the Severity indicates that a user is suspected of malicious activity, review the user name. You might want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
 
 //** You might want to block the user by selecting *Block user*. 
 

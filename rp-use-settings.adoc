@@ -63,32 +63,91 @@ This page shows Console agents with systems that were not selected earlier, newl
 
 . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
+//DII
 
-== See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
 
-Before you can view details of suspected anomalous user behavior in Ransomware Resilience, you need to configure the connection to the Data Infrastructure Insights Workload security system.
+== Suspicious user activity 
 
-=== Obtain an API access token from the Data Infrastructure Insights Workload security system
+Ransomware Resilience supports detection of suspicious user behavior in detection policies, enabling you to address ransomware incidents at the user-level. 
 
-Obtain an API access token from the Data Infrastructure Insights Workload security system.
+Configuring supsicious user activity detection requires that you create a data collector and a user activity agent in the Ransomware Resilience settings. With the data collector configured, you can add suspicious user detection in your ransomware detection policy. 
 
-. Log in to the Data Infrastructure Insights Workload security system.
-. From the left navigation, select *Admin* > *API Access*.
+
+include::_include/workload-security-note.adoc[]
+
+=== Enable suspicious user activity detection 
+
+include::_include/console-role-user-behavior.adoc[]
+
+// create a user activity agent // dii
+.
+. In Ransomware Resilience, go to *Settings*.
+. In the User Activity card, select **Activate**. 
+. Select a cloud provider and region to store your user activity data then select **Next**. 
+. Confirm the user activity agent was successfully created. In the User Activity card, a succesful deployment displays as Running.
+
+=== View the data collector 
+
+After you've created the data collector, you can
+
+.Steps
+. In Ransomware Resilience, go to *Settings*.
+. In the User activity card, select **Manage**. 
+. Select the name of the data collector you want to view details for. 
+. In the user activity settings, you can view the workloads attached to the data collector, the associated policies and backups sources, and the protection status. 
+
+// image of previous field
+
+image:user-activity-settings.png[Screenshot of user activity settings]
+
+=== Add a user activity agent 
+
+User activity agents are executable environments for data collectors to share data with Ransomware Resilience. 
+
+.Steps
+. In Ransomware Resilience, go to *Settings*.
+. In the User activity card, select **Manage**. 
+. Select the **User activity agent** tab then select **Add**. 
+. In the dialog, provide:
+  * **User activity agent name**
+  * *Console agent* 
+  * *VM DNS name or IP address* 
+  * *VM SSH Key*
+  +
+  image:user-activity-agent.png[Screenshot of add activity agent interface.]
+
+. Select *Authenticate VM* to complete adding the user activity agent. 
+
+=== Add a user directory connector
+
+To map user IDs to user names, you must create a user directory connector. 
+
+.Steps 
+. In Ransomware Resilience, go to *Settings*.
+. In the User activity card, select **Manage**.
+. Select the **User directory connectors** tab then **Add**.
+. Provide the details of the connection:
+  * *Name*
+  * *User directory type*
+  * *Server IP address or domain name*
+  * *Forest name or search name*
+  * *BIND domain name*
+  * *BIND password*
+  * *Protocol* (this is optional)
+  * *Port*
 +
-image:../media/screen-alerts-ci-api-access-token.png[API Access page in Data Infrastructure Insights Workload security] 
-
-. Either create an API access token or use an existing one.
-. Copy the API access token.
-
-=== Connect to Data Infrastructure Insights Workload security
-
-. From the Ransomware Resilience Settings menu, locate the *Workload security connection* tile.
-. Select *Connect*.
-. Enter the URL for the Data Infrastructure Workload security UI.
-. Enter the API access token that provides access to Workload security. 
-. Select *Connect*.
-
-
+image:screenshot-user-directory-connection.png[Screenshot of user directory connection]
++
+Provide the attribute mapping:
+  * *Display name*
+  * *SID* (if you're using LDAP)
+  * *User name* 
+  * *Unix ID* (if you're using NFS)
+  * Select *Include optional attributes*. You can also include email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
++
+Select *Advanced* to an optional search query. 
+. Select **Add**. 
+. Return to the user directory connectors tab to check the status of your user directory connector. If created successfully, the status of the user directory connector displays as *Running*. 
 
 == Add a backup destination
 

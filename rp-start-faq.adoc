@@ -108,7 +108,7 @@ Ransomware Resilience associates data with a workload in the following ways:
 *What is a "protected" workload?*
 In Ransomware Resilience, a workload shows a "protected" status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
 
-//Coming soon, this could also be that CISWS is monitoring user activity. 
+// User activity -- data breach. 
 
 *What is an "at risk" workload?*
 If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a backup and snapshot policy enabled. 

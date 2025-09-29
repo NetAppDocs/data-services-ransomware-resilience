@@ -12,6 +12,16 @@ For details on what has changed, see the https://docs.netapp.com/us-en/bluexp-re
 
 === Data breach protection 
 
+Ransomware Resilience supports new configurations for enabling data breach detection and alerting. 
+
+include::../_include/workload-security-note.adoc[]
+
+For more information, see xref:rp-use-settings.html#enable-suspicious-user-activity-detection[Enable suspicious user activity detection].
+
+==== New user role for data breach detection 
+
+To configure data breach protection, you must have a user role with the new Ransomware Resilience data breach administrator role in the NetApp Console. You can view user-level data breach information with the Ransomware Resilience data breach administrator role or the Ransomware Resilience data breach viewer role. 
+
 === SIEM 
 
 === Clean restore environment
