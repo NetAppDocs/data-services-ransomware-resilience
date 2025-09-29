@@ -141,7 +141,8 @@ Here are some things to look for:
 
 * Look at the Potential attack Severity. 
 +
-If the Severity indicates that a user is suspected of malicious activity, review the user name. You might want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
+If the Severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-user-alert.html#view-anomalous-user-behavior[block the user.]
+//dii
 
 //** You might want to block the user by selecting *Block user*. 
 

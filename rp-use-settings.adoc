@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
-summary: You can configure several options, including a backup destination, threat detection, and connection to Data Infrastructure Insights Workload Security in Ransomware Resilience.
+summary: You can configure several options, including a backup destination and threat detection in the settings page.
 ---
 
 = Configure protection settings in NetApp Ransomware Resilience
@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
+You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure suspicious user activity detection by accessing the *Settings* option. 
 
 include::_include/console-role-admin.adoc[]
 
@@ -25,9 +25,7 @@ From the Settings page, you can do the following:
 * Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
 
 * Configure workload discovery.
-
-* Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
-
+* Configure suspicious user activity reporting.
 * Add a backup destination.
 * Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
 //* Show upcoming Technology Preview features.
@@ -176,9 +174,6 @@ image:screen-dashboard.png[Dashboard page]
 . From the Dashboard, select *Review and fix* for the recommendation of "Prepare <backup provider> as a backup destination."
 
 . Continue with instructions depending on the backup provider. 
-
-
-
 
 === Add StorageGRID as a backup destination
 

@@ -6,7 +6,6 @@ With this release, you can use Data Infrastructure Insights Storage Workload Sec
 
 For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert]. 
 
-
 Before you use Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior, you need to configure the option by using the BlueXP ransomware protection *Settings* option.
 
 //Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings]. 

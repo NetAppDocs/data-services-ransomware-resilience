@@ -183,13 +183,7 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 === View anomalous user behavior 
 
-When Data Infrastructure Insights Workload security triggers an alert in Ransomware Resilience , you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
-
-TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
-
-.Before you begin
-
-You must have configured suspicious user detection to view anomalous user behavior. For more information, see link:rp-use-settings.html[Configure Ransomware Resilience settings].
+If you've configured suspicious user detection to view anomalous user behavior, you can view user-level data and block specific users. To enable suspicious user settings, see link:rp-use-settings.html[Configure Ransomware Resilience settings].
 
 .Steps
 
@@ -197,21 +191,6 @@ You must have configured suspicious user detection to view anomalous user behavi
 . Select an alert. 
 . Review the incidents in the alert.
 . To block a suspected user from further access in your environment that is monitored by the Console, select *Block* under the user's name.
-// +
-// image:screenshot-alerts.png[Screenshot of the Alerts page.]
-
-// . To block a suspected user from further access in your environment that is monitored by the Console, select the *Block user* link. 
-
-// . Research the alert or an incident in the alert: 
-// .. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
-// .. Select an incident to review the details of the incident. 
-
-// Data Infrastructure Insights Workload Security opens in a new tab.
-// +
-// image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Security]
-
-// // end DII redirect
-
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 

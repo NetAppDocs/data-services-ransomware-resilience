@@ -38,10 +38,6 @@ The Ransomware Resilience license does not include additional NetApp products. R
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
-You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in Ransomware Resilience. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
-
-TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don't enable it in Ransomware Resilience, you won't see the anomalous user behavior information. 
-
 == Try it out using a 30-day free trial
 You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
 
