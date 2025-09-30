@@ -12,10 +12,12 @@ summary: Ransomware Resilience enables you to perform a controlled restoration o
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience enables you to clean workloads before performing a restore with an isolated recovery environment. The isolated recovery environment guides you through a step-by-step process, identifying encryption and removing malware then provides restore process to increase the restore time and minimize data loss. The isolated recovery environment option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
+NetApp Ransomware Resilience enables you to clean workloads before performing a restore with an isolated recovery environment. The isolated recovery environment guides you through a step-by-step process, identifying encryption and removing malware then provides restore process to increase the restore time and minimize data loss.
 
-[IMPORTANT]
-The isolated recovery environment is in **private preview**. To enroll in the private preview, navigate to the **Recovery** dashboard in Ransowmare Resilience. In the Clean rooms card, select **Sign up** to request access. 
+//The isolated recovery environment option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
+
+// [IMPORTANT]
+// The isolated recovery environment is in **private preview**. To enroll in the private preview, navigate to the **Recovery** dashboard in Ransowmare Resilience. In the Clean rooms card, select **Sign up** to request access. 
 
 == Considerations
 
