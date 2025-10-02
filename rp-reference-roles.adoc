@@ -53,11 +53,11 @@ The following table indicates the actions that each Ransomware Resilience role c
 | Edit incident status | Yes | No | No | No
 | Mark alert for recovery | Yes | No | No | No
 | View incident details | Yes | Yes | No | No
-| Dismiss or resolve incicents | Yes | No | No | No
+| Dismiss or resolve incidents | Yes | No | No | No
 | Block user | Yes | No | No | No
 | Get full list of impacted files| Yes | No | No | No
 | Download alerts data | Yes | Yes  | No | No
-| View supicious user activity | No | No | Yes | Yes
+| View suspicious user activity | No | No | Yes | Yes
 5+| *On the Recover tab*: 
 | Download impacted files| Yes | No | No | No
 | Restore workload | Yes | No  | No | No

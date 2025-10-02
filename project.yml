@@ -26,6 +26,8 @@ sidebar:
           url: /rp-start-quick-start.html
         - title: Set up Ransomware Resilience 
           url: /rp-start-setup.html
+        - title: Role-based access control privileges
+          url: /rp-reference-roles.html
         - title: Access Ransomware Resilience
           url: /rp-start-login.html
         - title: Set up licensing
@@ -59,10 +61,6 @@ sidebar:
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
-#    - title: Reference
-#      entries:
-#        - title: Role-based access control privileges
-#          url: /rp-reference-roles.html
     - title: FAQ
       url: /rp-start-faq.html
     - title: Legal notices
