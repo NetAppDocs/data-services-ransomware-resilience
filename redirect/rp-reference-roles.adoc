@@ -1,0 +1,88 @@
+---
+permalink: data-services-ransomware-resilience/concept-ransomware-protection.html
+redirect: console-setup-admin/reference-iam-ransomware-roles.html
+---
+
+// ---
+// sidebar: sidebar
+// permalink: rp-reference-roles.html
+// keywords: ransomware protection, protect against ransomware attacks, anti-ransomware, role-based access control, rbac, role, permission, access rights, organization,project,account
+// summary: NetApp Ransomware Resilience employs roles to govern the access that each user has to specific features and actions. 
+
+// ---
+
+// = NetApp Ransomware Resilience role-based access
+// :hardbreaks:
+// :icons: font
+// :imagesdir: ./media/
+
+// [.lead]
+// NetApp Ransomware Resilience employs roles to govern the access that each user has to specific features and actions. 
+
+// Ransomware Resilience uses the following roles that are specific to Ransomware Resilience. 
+
+// * *Ransomware Resilience admin*: Manage actions on the Protect, Alerts, Recover, Settings, and Reports tabs.
+// * *Ransomware Resilience viewer*: View NetApp workload data, view alert data, download recovery data, and download reports.
+// * *Ransomware Resilience user behavior admin*: Create and manage user behavior detection settings.
+// * *Ransomware Resilience user behavior viewer*: View user behavior detection results. 
+
+// These roles are in addition to the Console platform roles that govern access to the Console service and other services, such as data protection, workload management, and so on. For details about all Console platform roles, see https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[the setup and administration documentation^].
+
+// The following table indicates the actions that each Ransomware Resilience role can perform. 
+
+// [cols=5*,options="header",cols="40,20a,20a,20a,20a",width="100%"]
+// |===
+// | Feature and action
+// | Ransomware Resilience admin
+// | Ransomware Resilience viewer
+// | Ransomware Resilience user behavior admin
+// | Ransomware Resilience user behavior viewer
+
+// | View dashboard and all tabs | Yes | Yes | No | No
+// | On dashboard, update recommendation status | Yes | No | No | No
+// | Start free trial | Yes | No | No | No
+// | Initiate discovery of workloads | Yes | No | No | No
+// | Initiate rediscovery of workloads | Yes | No | No | No
+
+// 5+| *On the Protect tab*: 
+// | Add, modify, or delete protection plans | Yes | No | No | No
+// | Protect workloads | Yes | No | No | No
+// | Identify exposure to sensitive data| Yes | No | No | No
+// | List protection plans and details | Yes | Yes | No | No
+// | List protection groups    | Yes | Yes | No | No
+// | View protection group details | Yes | Yes | No | No
+// | Create, edit or delete protection group | Yes | No  | No | No
+// | Download data| Yes | Yes | No | No
+// 5+| *On the Alerts tab*: 
+// | View alerts and alert details | Yes | Yes | No | No
+// | Edit incident status | Yes | No | No | No
+// | Mark alert for recovery | Yes | No | No | No
+// | View incident details | Yes | Yes | No | No
+// | Dismiss or resolve incidents | Yes | No | No | No
+// | Block user | Yes | No | No | No
+// | Get full list of impacted files| Yes | No | No | No
+// | Download alerts data | Yes | Yes  | No | No
+// | View suspicious user activity | No | No | Yes | Yes
+// 5+| *On the Recover tab*: 
+// | Download impacted files| Yes | No | No | No
+// | Restore workload | Yes | No  | No | No
+// | Download recovery data | Yes | Yes | No | No
+// | Download reports | Yes | Yes | No | No
+// 5+| *On the Settings tab*:
+// | Add or modify backup destinations| Yes | No | No | No
+// | List backup destinations| Yes | Yes | No | No
+// | View connected SIEM targets | Yes | Yes | No | No
+// | Add or modify SIEM targets | Yes | No | No | No
+// | Configure readiness drill | Yes | No | No | No
+// | Start readiness drill | Yes | No | No | No
+// | Reset readiness drill | Yes | No | No | No
+// | Edit readiness drill  | Yes | No | No | No
+// | Review readiness drill status | Yes | Yes | No | No
+// | Update discovery configuration | Yes | No | No | No
+// | View discovery configuration | Yes | Yes | No | No
+// | Configure suspicious user behavior settings | No | No | Yes | No
+
+// 5+| *On the Reports tab*:
+// | Download reports | Yes | Yes | No | No
+
+// |===
