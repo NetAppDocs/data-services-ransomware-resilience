@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 permalink: legal-notices.html
 sidebar: sidebar
@@ -17,3 +18,23 @@ include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-
 
 // Add required link(s)
 * https://docs.netapp.com/us-en/bluexp-setup-admin/media/notice.pdf[Notice for the NetApp Console^]
+=======
+---
+permalink:  legal-notices.html
+sidebar: sidebar
+keywords: # no keywords
+summary: # no summary
+---
+= Legal notices
+:icons: font
+:imagesdir: ./media/
+
+// Include the common notices
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/common-legal-notices.adoc[]
+
+// Include the open source notice intro
+include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
+
+
+// Add required link(s)
+>>>>>>> db096cfa4bc2bcbc1a7a0fefc9249c9cbef4831b
