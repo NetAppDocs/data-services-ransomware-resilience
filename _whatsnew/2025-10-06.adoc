@@ -9,9 +9,3 @@ BlueXP has been renamed and redesigned to better reflect its role in managing yo
 The NetApp Console provides centralized management of storage and data services across on-premises and cloud environments at enterprise grade—delivering real-time insights, faster workflows, and simplified administration.
  
 For details on what has changed, see the https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes].
-
-=== Data breach protection 
-
-=== SIEM 
-
-=== Clean restore environment
