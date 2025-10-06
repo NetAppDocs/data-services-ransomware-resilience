@@ -1,0 +1,42 @@
+---
+sidebar: sidebar
+permalink: rp-start-login.html
+keywords: bluexp login, ransomware protection, cyber attack, log in, access
+summary: Get started with NetApp Ransomware Resilience through the NetApp Console. 
+---
+
+= Access NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Log in to NetApp Ransomware Resilience through the NetApp Console. 
+
+To log in to the Console, you can use your NetApp Support Site credentials or you can sign up for a NetApp cloud login using your email and a password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
+
+include::_include/console-role-admin-viewer.adoc[]
+
+.Steps
+
+. Open a web browser and go to link:https://console.netapp.com/[the Console^].
++ 
+The Console login page appears.
+
+. Log in to the Console. 
+. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
++
+If this is your first time logging in to this service, the landing page appears. 
++
+NOTE: If you don't have a Console agent or it's not the one for this service, you need to deploy one. link:rp-start-setup.html[Learn how to set up a Console agent].
++
+image:screen-landing.png[Screenshot of the Ransomware Resilience landing page.]
++ 
+Otherwise, the Ransomware Resilience dashboard appears.
++
+image:screen-dashboard.png[Screenshot of the Ransomware Resilience dashboard]
+
+. If you haven't done so already, select the *Discover Workloads* option. 
++
+Refer to link:rp-start-discover.html[Discover Workloads].
+

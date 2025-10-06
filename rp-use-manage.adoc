@@ -1,0 +1,24 @@
+---
+sidebar: sidebar
+permalink: rp-use-manage.html
+keywords: ransomware protection workload name, ransomware protection
+summary: You can manage workloads by changing the workload name rather than using a default name, which is riskier.
+---
+
+= Manage workloads in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+You can manage workloads in NetApp Ransomware Resilience by changing the workload name. Using a default name is a risk for ransomware attacks. 
+
+.Steps 
+
+. From the Ransomware Resilience menu, select *Protection*.
+
+. Select a workload, select the *Actions* ... icon on the right and select *Edit workload name*.  
+
+. Enter the new workload name and select *Save*.
+
+
