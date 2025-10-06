@@ -198,8 +198,8 @@ After you enable workload-consistent protection, you can manage protection strat
 
 To learn about registering SnapCenter or SnapCenter Plug-in for VMware vSphere using Backup and Recovery, refer to the following information:  
 
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapcenter-server.html[Register SnapCenter Server Software^]
-* https://docs.netapp.com/us-en/bluexp-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html[Register SnapCenter Plug-in for VMware vSphere^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapcenter-server.html[Register SnapCenter Server Software^]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/task-register-snapCenter-plug-in-for-vmware-vsphere.html[Register SnapCenter Plug-in for VMware vSphere^]
 
 .Steps 
 
@@ -256,7 +256,7 @@ The ransomware protection strategy includes:
 +
 The detection policy does not change the policies managed in other products.
 +
-The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/bluexp-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 === Create a ransomware protection strategy (if you have no snapshot or backup policies)
 

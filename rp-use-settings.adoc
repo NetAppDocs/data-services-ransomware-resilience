@@ -160,7 +160,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up AWS as a backup destination, enter the following information. 
 
-For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -174,7 +174,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. 
 ** AWS account, region, access key and secret key for AWS credentials
 + 
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
 
 * *Encryption*: If you are creating a new S3 bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
@@ -206,7 +206,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up Google Cloud Platform (GCP) as a backup destination, enter the following information. 
 
-For details about managing your GCP storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
+For details about managing your GCP storage in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -220,8 +220,6 @@ image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 ** Create a new bucket. Enter the access key and secret key.
 //** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. Enter the access key and secret key. 
 ** Enter or select your Google Cloud Platform project and region.
-//+ 
-//https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html[If you want to bring your own bucket, refer to Add Google Cloud Storage buckets^]. 
 
 * *Encryption*: If you are creating a new bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
@@ -251,7 +249,7 @@ The new backup destination is added to the list of backup destinations.
 
 To set up Azure as a backup destination, enter the following information. 
 
-For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
+For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -265,7 +263,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** Create a new storage account, select an existing one if one already exists in the Console, or bring your own storage account that will store the backups. 
 ** Azure subscription, region, and resource group for Azure credentials
 + 
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
 
 * *Encryption*: If you are creating a new storage account, enter encryption key information given to you from the provider. If you chose an existing account, encryption information is already available. 
 + 

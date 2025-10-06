@@ -100,7 +100,7 @@ When Ransomware Resilience  detects a potential attack, it sends an email notifi
 
 You can receive email notifications for Ransomware Resilience  alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
 
-TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
+TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
 
 . In Ransomware Resilience , go to the *Settings* page.
 . Under *Notifications*, locate the email notification settings.
