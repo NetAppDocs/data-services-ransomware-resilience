@@ -187,7 +187,7 @@ TIP: For details about the restore process, see link:rp-use-recover.html[Recover
 After reviewing the readiness drill alert and restoring the workload, change the alert status if needed.
 
 *Required the Console role*
-Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 . Return to the Alert details page.

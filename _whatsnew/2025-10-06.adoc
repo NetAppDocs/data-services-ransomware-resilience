@@ -3,10 +3,10 @@
 BlueXP ransomware replication has been renamed to NetApp Ransomware Resilience. 
 
 === BlueXP is now NetApp Console
+  
+The NetApp Console provides centralized management of storage and data services across on-premises and cloud environments at enterprise grade—delivering real-time insights, faster workflows, and simplified administration.
  
-The NetApp Console, built on the enhanced and restructured BlueXP foundation, provides centralized management of NetApp storage and NetApp Data Services across on-premises and cloud environments at enterprise grade—delivering real-time insights, faster workflows, and simplified administration, that is highly secure and compliant.
- 
-For details on what has changed, see the link:https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes].
+For details on what has changed, see the https://docs.netapp.com/us-en/console-relnotes/index.html[NetApp Console release notes].
 
 === Data breach protection 
 
@@ -19,7 +19,3 @@ For more information, see xref:rp-use-settings.html#enable-suspicious-user-activ
 ==== New user role for data breach detection 
 
 To configure data breach protection, you must have a user role with the new Ransomware Resilience data breach administrator role in the NetApp Console. You can view user-level data breach information with the Ransomware Resilience data breach administrator role or the Ransomware Resilience data breach viewer role. For more information, see link:rp-reference-roles.html[NetApp Ransomware Resilience role-based access].
-
-=== SIEM 
-
-Information forthcoming from engineering. 

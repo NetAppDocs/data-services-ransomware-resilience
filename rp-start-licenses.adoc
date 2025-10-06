@@ -14,7 +14,7 @@ summary: Get started with NeApp Ransomware Resilience by setting up licensing.
 With NetApp Ransomware Resilience, you can use different licensing plans.
 
 
-To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
+To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 *License types*
 You can use the following license types:
@@ -64,7 +64,7 @@ If this is your first time logging in to this service, the landing page appears.
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
 . If you haven't already added a Connector for other services, add one. 
 + 
-To add a Console agent, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html[Learn about Console agents^].
+To add a Console agent, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[Learn about Console agents^].
 . After you set up a Console agent, in the Ransomware Resilience landing page, the button to add a Console agent changes to a button for discovering workloads. Select *Start by discovering workloads*. 
 
 . To review the free trial information, select the drop-down option in the top right. 
@@ -234,7 +234,7 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 +
 * If you have the Console license serial number and know your NSS account, select the *Enter Serial Number* option and enter that information.
 +
-If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html[add the NSS account to the Console^].
+If your NetApp Support Site account isn't available from the drop-down list, https://docs.netapp.com/us-en/console-setup-admin/task-adding-nss-accounts.html[add the NSS account to the Console^].
 * If you have the zvondolr license file (required when installed in a dark site), select the *Upload License File* option and follow the prompts to attach the file.
 
 . Select *Add License*. 
@@ -246,7 +246,7 @@ The Licenses and subscriptions page shows Ransomware Resilience has a license.
 
 If your licensed term is nearing the expiration date, or if your licensed capacity is reaching the limit, you'll be notified in the Ransomware Resilience UI. You can update your Ransomware Resilience license before it expires so there's no interruption in your ability to access your scanned data.
 
-TIP: This message also appears in Licenses and subscriptions and in https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notification settings]. 
+TIP: This message also appears in Licenses and subscriptions and in https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center[Notification settings]. 
 
 .Steps
 

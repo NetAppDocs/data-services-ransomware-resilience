@@ -4,7 +4,7 @@ With this release, you can review ransomware attack readiness drill reports. A r
 
 //For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill].
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html[Conduct a ransomware attack readiness drill].
 
 === New role-based access control roles and permissions
 
@@ -15,7 +15,7 @@ Previously, you could assign roles and permissions to users based on their respo
 
 //For details about permissions, refer to link:rp-reference-roles.html[Role-based access to features]. 
 
-For details about permissions, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[BlueXP ransomware protection role-based access to features].
+For details about permissions, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[BlueXP ransomware protection role-based access to features].
 
 === Payment improvements
 
@@ -23,5 +23,5 @@ This release includes several improvements to the payment process.
 
 //For details, refer to link:rp-start-licenses.html[Set up licensing and payment options]. 
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Set up licensing and payment options].
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html[Set up licensing and payment options].
 

@@ -14,14 +14,14 @@ TIP: Backup policies for a workload running on FSx for ONTAP can't be set in Blu
 
 //For details, refer to link:concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments]. 
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments].
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-protection.html[Learn about BlueXP ransomware protection and working environments].
 
 //For information about the supported options, refer to the link:rp-reference-limitations.html[BlueXP ransomware protection limitations].
 
-For information about the supported options, refer to the https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-limitations.html[BlueXP ransomware protection limitations].
+For information about the supported options, refer to the https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html[BlueXP ransomware protection limitations].
 
 === BlueXP access role needed
 
 You now need one of the following access roles to view, discover, or manage BlueXP ransomware protection: Organization admin, Folder or project admin, Ransomware protection admin, or Ransomware protection viewer.
 
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about BlueXP access roles for all services^].
