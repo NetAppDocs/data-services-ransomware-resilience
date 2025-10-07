@@ -124,4 +124,4 @@ TIP: This process might take a few minutes, and a loading icon shows the progres
 
 //By default, Console organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings^]
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings^]
