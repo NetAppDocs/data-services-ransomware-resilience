@@ -1,5 +1,5 @@
 ---
-permalink: data-services-ransomware-resilience/concept-ransomware-protection.html
+permalink: concept-ransomware-protection.html
 redirect: console-setup-admin/reference-iam-ransomware-roles.html
 ---
 
