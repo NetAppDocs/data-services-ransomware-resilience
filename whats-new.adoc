@@ -116,9 +116,9 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 === Support for Cloud Volumes ONTAP for Microsoft Azure
 This release supports Cloud Volumes ONTAP for Microsoft Azure as a system in addition to Cloud Volumes ONTAP for AWS and on-premises ONTAP NAS. 
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-getting-started-azure.html[Quick start for Cloud Volumes ONTAP in Azure^]
+https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/task-getting-started-azure.html[Quick start for Cloud Volumes ONTAP in Azure^]
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about BlueXP ransomware protection].
 
 === Microsoft Azure added as a backup destination
 You can now add Microsoft Azure as a backup destination along with AWS and NetApp StorageGRID. 
@@ -202,7 +202,7 @@ You can now view more forensic details to investigate the detected potential att
 === Recovery process
 The recovery process was enhanced. Now, you can recover volume by volume or all volumes for a workload. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html[Learn more about recovering from a ransomware attack (after incidents have been neutralized)]. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about BlueXP ransomware protection].
 
 == 6 October 2023 
 
@@ -220,4 +220,4 @@ The BlueXP ransomware protection service provides full use of several NetApp tec
 * Quickly assess the impact of ransomware incidents on your workload. 
 * Recover from ransomware incidents intelligently by restoring data and ensuring that reinfection from stored data does not occur. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-protection.html[Learn about BlueXP ransomware protection].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about BlueXP ransomware protection].
