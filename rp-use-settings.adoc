@@ -265,7 +265,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** Create a new storage account, select an existing one if one already exists in the Console, or bring your own storage account that will store the backups. 
 ** Azure subscription, region, and resource group for Azure credentials
 + 
-https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
 
 * *Encryption*: If you are creating a new storage account, enter encryption key information given to you from the provider. If you chose an existing account, encryption information is already available. 
 + 

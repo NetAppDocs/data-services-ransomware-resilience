@@ -33,7 +33,7 @@ image:classification-deploy.png[Screenshot of deploy classification]
 
 For more information about Data Classification, see: 
 
-* https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html[Learn about Data Classification^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html[Learn about Data Classification^]
 * https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html[Categories of private data^]
 * https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html[Investigate the data stored in your organization^]
 
@@ -114,7 +114,7 @@ Privacy exposure changes can impact the workload importance.
 
 For details about Data Classification, refer to the Data Classification documentation: 
 
-* https://docs.netapp.com/us-en/data-services-data-classification/concept-cloud-compliance.html[Learn about Data Classification^]
+* https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html[Learn about Data Classification^]
 * https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html[Categories of private data^]
 * https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html[Investigate the data stored in your organization^]
 
