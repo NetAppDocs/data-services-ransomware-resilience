@@ -1,6 +1,6 @@
 === BlueXP ransomware protection is now NetApp Ransomware Resilience
  
-BlueXP ransomware replication has been renamed to NetApp Ransomware Resilience. 
+BlueXP ransomware protection has been renamed to NetApp Ransomware Resilience. 
 
 === BlueXP is now NetApp Console
   
