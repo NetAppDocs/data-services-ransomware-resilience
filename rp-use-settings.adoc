@@ -76,7 +76,7 @@ include::_include/workload-security-note.adoc[]
 include::_include/console-role-user-behavior.adoc[]
 
 // create a user activity agent // dii
-.
+.Steps
 . In Ransomware Resilience, go to *Settings*.
 . In the User Activity card, select **Activate**. 
 . Select a cloud provider and region to store your user activity data then select **Next**. 
