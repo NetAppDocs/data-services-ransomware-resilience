@@ -74,7 +74,7 @@ Ransomware Resilience helps configure a backup destination through the Settings 
 If you need to update non-admin user permissions for a particular system, complete these steps. 
 
 
-.  Log in to the Console and look for the system that needs its ONTAP user permissions updated. 
+. Log in to the Console and look for the system that needs its ONTAP user permissions updated. 
 . Select the system to see details. 
 . Select *View additional information* to display the username. 
 . Log in to the ONTAP cluster CLI using the admin user. 

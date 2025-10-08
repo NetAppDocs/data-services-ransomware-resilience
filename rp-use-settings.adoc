@@ -29,7 +29,7 @@ From the Settings page, you can do the following:
 * Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
 
 * Add a backup destination.
-* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
+* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.  
 //* Show upcoming Technology Preview features.
 
 
@@ -140,7 +140,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** StorageGRID gateway node fully qualified domain name, port, StorageGRID access key and secret key credentials.
 * *Networking*: Choose the IPspace. 
 ** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
-//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 //June 20, 2024 we do not support Azure and StorageGrid backup locking
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
@@ -186,7 +186,7 @@ Data in the bucket is encrypted with AWS-managed keys by default. You can contin
 +
 If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
 
-* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 +
 CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 
@@ -233,7 +233,7 @@ Data in the bucket is encrypted with Google-managed keys by default. You can con
 ** Optionally, choose whether you'll use an GCP private endpoint (PrivateLink) that you previously configured. 
 //+
 //If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
-//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 //** *Governance mode*: Specific users (with s3:BypassGovernanceRetention permission) can overwrite or delete protected files during the retention period. 
