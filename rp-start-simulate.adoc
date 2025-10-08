@@ -83,8 +83,6 @@ image:screen-dashboard.png[Dashboard page showing the Run readiness drill button
 //** Continue with the instructions in the previous section to configure the drill test environment in the Settings option.
 
 . If you already configured the readiness drill, after selecting *Start*, the readiness drill begins.  
-//+
-//image:screen-settings-alert-drill-start.png[Start readiness drill page]
 
 
 
