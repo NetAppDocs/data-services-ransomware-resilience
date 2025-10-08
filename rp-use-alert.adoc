@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If Ransomware Resilience  detects a possible attack, an alert appears on the Ransomware Resilience  Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience  Alerts tab.  
+summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
 ---
 = Handle detected ransomware alerts with NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: If Ransomware Resilience  detects a possible attack, an alert appears o
 [.lead]
 When NetApp Ransomware Resilience detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
 
-If Ransomware Resilience  detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
+If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -173,7 +173,7 @@ These details are viewable for NAS workloads. For SAN environments, only the ent
 
 .Steps
 
-. From the Ransomware Resilience  menu, select *Alerts*.  
+. From the Ransomware Resilience  menu, select *Alerts*. 
 . Select an alert. 
 . Review the incidents in the alert.
 +
@@ -200,7 +200,7 @@ include::_include/console-role-admin.adoc[]
 
 .Steps
 
-. From the Ransomware Resilience  menu, select *Alerts*. 
+. From the Ransomware Resilience menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -217,7 +217,7 @@ image:screen-alerts-incidents3.png[Alert incidents page]
 
 .Result
 
-After the alert is marked for restore, the alert moves from the Alerts tab to the Recovery tab.  
+After the alert is marked for restore, the alert moves from the Alerts tab to the Recovery tab. 
 
 == Dismiss incidents that are not potential attacks
 
@@ -233,7 +233,7 @@ include::_include/console-role-admin.adoc[]
 
 .Steps
 
-. From the Ransomware Resilience  menu, select *Alerts*. 
+. From the Ransomware Resilience menu, select *Alerts*. 
 +
 image:screen-alerts.png[Alerts page]
 
@@ -243,7 +243,7 @@ image:screen-alerts-incidents3.png[Alert incidents page]
 
 . Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
 
-. If you determine that the incident is not a threat, dismiss it as a false positive:  
+. If you determine that the incident is not a threat, dismiss it as a false positive: 
 +
 * Select the incident. 
 * Select the *Edit status* button above the table. 

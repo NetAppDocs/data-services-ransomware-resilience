@@ -290,8 +290,6 @@ NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilien
 * *Detection policy*: 
 ** *Policy*: Choose one of the predesigned detection policies. 
 ** *Primary detection*: Enable ransomware detection to have Ransomware Resilience detect potential ransomware attacks. 
-// ** **Detect encryption incidents**
-// ** **Detect suspicious users**
 ** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
 ** *Block file extensions*: Enable this to have Ransomware Resilience block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
 +
