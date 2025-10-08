@@ -11,7 +11,7 @@ summary: The NetApp Ransomware Resilience Dashboard provides information about t
 :imagesdir: ./media/
 
 [.lead]
-The NetApp Ransomware Resilience Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.  
+The NetApp Ransomware Resilience Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. 
 
 Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
 
@@ -28,7 +28,7 @@ image:screen-dashboard.png[Dashboard page]
 
 . From the Dashboard, you can do the following actions in each of the panes: 
 
-* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].  
+* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads]. 
 +
 TIP: Select the "i" tooltip to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket. 
 
@@ -81,7 +81,7 @@ Here is a sampling of the recommendations that Ransomware Resilience offers.
 | How to resolve
 
 
-| Add a ransomware protection policy. | The workload is currently not protected.  | Assign a policy to the workload. 
+| Add a ransomware protection policy. | The workload is currently not protected. | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 //|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
 //Refer to link:rp-use-manage.html[Manage workloads].
@@ -101,7 +101,7 @@ Refer to link:rp-use-settings.html[Configure protection settings].| Protect crit
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Register available SnapCenter plugin for VMware vSphere (SCV) with the Console | A VM workload is not protected. | Assign  VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
+| Register available SnapCenter plugin for VMware vSphere (SCV) with the Console | A VM workload is not protected. | Assign VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Register available SnapCenter Server with the Console | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
