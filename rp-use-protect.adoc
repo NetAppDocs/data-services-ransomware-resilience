@@ -151,8 +151,10 @@ The **Encryption user extension** policy is the only predefined policy that supp
  | Weekly | Every 1 week | 35 | 5  | 93 
  | Monthly | Every 30 days | 60 | 2 | 93 
 
-//check numbers
 .4+| *Encryption user extension* | Quarter hourly | Every 30 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93
 
 |===
 
