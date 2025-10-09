@@ -61,7 +61,6 @@ This page shows Console agents with systems that were not selected earlier, newl
 
 . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
-//DII
 == Suspicious user activity 
 
 Ransomware Resilience supports detection of suspicious user behavior in detection policies, enabling you to address ransomware incidents at the user-level. 
@@ -69,13 +68,11 @@ Ransomware Resilience supports detection of suspicious user behavior in detectio
 Configuring suspicious user activity detection requires that you create a data collector and a user activity agent in the Ransomware Resilience settings. With the data collector configured, you can add suspicious user detection in your ransomware detection policy. 
 
 
-include::_include/workload-security-note.adoc[]
-
 === Enable suspicious user activity detection 
 
 include::_include/console-role-user-behavior.adoc[]
 
-// create a user activity agent // dii
+// create a user activity agent
 .Steps
 . In Ransomware Resilience, go to *Settings*.
 . In the User Activity card, select **Activate**. 
