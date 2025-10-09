@@ -334,11 +334,18 @@ image:screen-protection.png[Manage strategy page]
 . Ransomware Resilience detects if there are existing active SnapCenter or Backup and Recovery policies.
 . To leave your existing Backup and Recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . To see details of the SnapCenter policies, select the *Down arrow*.
-+
-Select a detection policy then select **Protect**. 
+. Select the detection settings you want:
+    *Encyrption detection*
+    *Suspicious user behavior detection*
+    *Block suspicious file extensions* 
+. Select **Next**.
+. If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:rp-use-settings.html#add-a-user-activity-agent[or create one].
++ 
+The user activity agent hosts the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.
+. Select **Next**.
+. Review your choices. Select **Create** to activate detection. 
 . On the Protection page, review the **Detection status** to confirm detection is Active.  
 
-// BFGF 
 ==== Replace existing backup or snapshot policies with a ransomware protection strategy [[protection]]
 
 You can replace your existing backup or snapshot policies with a ransomware protection strategy. This approach removes your externally managed protection and configures detection and protection in Ransomware Resilience. 
@@ -349,17 +356,14 @@ You can replace your existing backup or snapshot policies with a ransomware prot
 +
 image:screen-protection.png[Manage strategy page]
 
-
 . From the Protection page, select a workload then select *Protect*. 
 . Ransomware Resilience detects if there are existing active Backup and Recovery or SnapCenter policies. To replace the existing Backup and Recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
 
 . Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
-// are you creating the data collector? / dii
-.. If your protection strategy includes user behavior detection, select a User activity agent in your environment to host the new data collectors. The data collector transmits user activity events to Ransomware Resilience to detect anomalous user behavior.
+.. If your protection strategy includes user behavior detection, select a User activity agent in your environment to host the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.
 . Review the new protection strategy then select **Protect** to apply it. 
 . On the Protection page, review the **Detection status** to confirm detection is Active.  
-
 
 === Assign a different policy 
 
