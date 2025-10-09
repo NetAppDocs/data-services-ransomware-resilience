@@ -147,12 +147,11 @@ The Alerts page appears.
 
 //=== Respond from data incidents on the Dashboard
 
-// DII >> redirect
 == Detect malicious activity and anomalous user behavior
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:rp-use-settings.html#suspicious-user-activity[Suspicious user activity].
+You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
 include::_include/workload-security-note.adoc[]
 

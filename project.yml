@@ -36,6 +36,8 @@ sidebar:
           url: /rp-start-simulate.html  
         - title: Configure backups, threat detection, & attack simulations in Settings 
           url: /rp-use-settings.html 
+        - title: Configure suspicious user activity detection
+          url: /suspicious-user-activity.html
     - title: Use Ransomware Resilience
       entries:
         - title: Use Ransomware Resilience overview
