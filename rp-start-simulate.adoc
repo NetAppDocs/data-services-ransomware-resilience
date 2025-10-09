@@ -139,7 +139,7 @@ Here are some things to look for:
 
 * Look at the Potential attack severity. 
 +
-If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-user-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
+If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
 //dii
 
 //** You might want to block the user by selecting *Block user*. 
