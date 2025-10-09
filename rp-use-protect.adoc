@@ -30,7 +30,7 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 * use Ransomware Resilience to manage detection, snapshots, and backups.
 
 [TIP]
-For enhanced management and protection of your data estate, you can create link:#group-file-shares-for-easier-protection[group file shares] to collectively protect volumes under one strategy. 
+For enhanced management and protection of your data estate, you can create link:#create-a-protection-group[group file shares] to collectively protect volumes under one strategy. 
 
 === Protection policies with other NetApp-managed services [[services]]
 

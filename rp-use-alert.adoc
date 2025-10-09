@@ -152,7 +152,7 @@ The Alerts page appears.
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured a Data collector and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed with user behavior detection is not enabled. To enable suspicious user detection, see xref:rp-use-settings[Settings].
+You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:rp-use-settings.html#suspicious-user-activity[Suspicious user activity].
 
 include::_include/workload-security-note.adoc[]
 
@@ -221,7 +221,7 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 == Dismiss incidents that are not potential attacks
 
-After you review incidents, you need to determine whether the incidents are potential attacks. If the previous condition is not met, they can be dismissed.
+After you review incidents, you need to determine whether the incidents are potential attacks. If they are not actual threats, they can be dismissed.
 
 You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 
