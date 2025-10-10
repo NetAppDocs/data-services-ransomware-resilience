@@ -36,6 +36,8 @@ sidebar:
           url: /rp-start-simulate.html  
         - title: Configure backups, threat detection, & attack simulations in Settings 
           url: /rp-use-settings.html 
+        - title: Configure suspicious user activity detection
+          url: /suspicious-user-activity.html
     - title: Use Ransomware Resilience
       entries:
         - title: Use Ransomware Resilience overview
@@ -59,10 +61,6 @@ sidebar:
 #   - title: Monitor ransomware protection jobs
 #     url: /rp-use-monitor-jobs.html 
     - section: support
-#    - title: Reference
-#      entries:
-#        - title: Role-based access control privileges
-#          url: /rp-reference-roles.html
     - title: FAQ
       url: /rp-start-faq.html
     - title: Legal notices

@@ -83,8 +83,6 @@ image:screen-dashboard.png[Dashboard page showing the Run readiness drill button
 //** Continue with the instructions in the previous section to configure the drill test environment in the Settings option.
 
 . If you already configured the readiness drill, after selecting *Start*, the readiness drill begins.  
-//+
-//image:screen-settings-alert-drill-start.png[Start readiness drill page]
 
 
 
@@ -139,11 +137,9 @@ image:screen-alerts-readiness-incidents2.png[Incident page showing the readiness
 
 Here are some things to look for:
 
-* Look at the potential attack type. 
+* Look at the Potential attack severity. 
 +
-If the type indicates that a user is suspected of malicious activity, review the user name. You might want to investigate the user more in Data Infrastructure Insights Workload Security by selecting *Investigate in Workload security*. 
-
-//** You might want to block the user by selecting *Block user*. 
+If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
 
 * Look at the file activity and suspected processes: 
 ** Look at the incoming detected data compared to the expected data. 

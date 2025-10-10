@@ -66,7 +66,6 @@ include::_include/console-role-admin.adoc[]
 
 . Select a workload that is in the "Restore needed" state. 
 
-
 . To restore, select *Restore*.
 
 . *Restore scope*: Application-consistent (or for SnapCenter for VMs, the restore scope is "By VM")

@@ -147,28 +147,16 @@ The Alerts page appears.
 
 //=== Respond from data incidents on the Dashboard
 
-// DII >> redirect
 == Detect malicious activity and anomalous user behavior
 
-Looking at the Alerts tab, you can identify whether there is malicious activity. 
+Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-include::_include/console-role-admin.adoc[]
+You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
-*What details appear?*
-The details that appear depend on how the alert was triggered:
+[NOTE]
+If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Secuirty agents requires a paring relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing.
 
-* Triggered by the Autonomous Ransomware Protection feature in ONTAP. This detects malicious activity based on the behavior of the files in the volume.
-* Triggered by Data Infrastructure Insights Workload security. This requires a license for Data Infrastructure Insights Workload security and that you enable it in Ransomware Resilience . This feature detects anomalous user behavior in your storage workloads and enables you to block that user from further access.
-+
-To enable Workload security in Ransomware Resilience , go to the *Settings* page and select the *Workload security connection* option.
-+
-For an overview of Data Infrastructure Insights Workload security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload security^].
-
-TIP: If you don't have a license for Data Infrastructure Workload security and don't enable it in Ransomware Resilience , you won't see the anomalous user behavior information. 
-
-When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
-
-=== View malicious activity from Autonomous Ransomware Protection only
+=== View malicious activity
 
 When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience , you can view the following details:
 
@@ -191,42 +179,16 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 . Select an incident to review the details of the incident. 
 
-=== View anomalous user behavior in Data Infrastructure Insights Workload security
+=== View anomalous user behavior 
 
-When Data Infrastructure Insights Workload security triggers an alert in Ransomware Resilience , you can view the suspicious user, block the user, and investigate the user activity directly in Data Infrastructure Insights Workload security. 
-
-TIP: These features are in addition to the details available from just Autonomous Ransomware Protection.
-
-.Before you begin
-This option requires a license for Data Infrastructure Insights Workload security and that you enable it in Ransomware Resilience . 
-
-To enable Workload security in Ransomware Resilience , do the following: 
-
-. Go to the *Settings* page.
-. Select the *Workload Security connection* option.
-+ 
-For details, see link:rp-use-settings.html[Configure Ransomware Resilience settings].
+If you've configured suspicious user detection to view anomalous user behavior, you can view user-level data and block specific users. To enable suspicious user settings, see link:rp-use-settings.html[Configure Ransomware Resilience settings].
 
 .Steps
 
-. From the Ransomware Resilience menu, select *Alerts*. 
+. From the Ransomware Resilience menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
-+
-image:screenshot-alerts.png[Screenshot of the Alerts page.]
-
-. To block a suspected user from further access in your environment that is monitored by the Console, select the *Block user* link. 
-
-. Research the alert or an incident in the alert: 
-.. To research the alert further in Data Infrastructure Insights Workload security, select the *Investigate in Workload security* link.
-.. Select an incident to review the details of the incident. 
-
-Data Infrastructure Insights Workload Security opens in a new tab.
-+
-image:screen-alerts-incidents-diiws-diiwspage.png[Investigate in Workload Security]
-
-// end DII redirect
-
+. To block a suspected user from further access in your environment that is monitored by the Console, select *Block* under the user's name.
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
@@ -257,7 +219,7 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 == Dismiss incidents that are not potential attacks
 
-After you review incidents, you need to determine whether the incidents are potential attacks. If the previous condition is not met, they can be dismissed.
+After you review incidents, you need to determine whether the incidents are potential attacks. If they are not actual threats, they can be dismissed.
 
 You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 

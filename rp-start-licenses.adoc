@@ -38,10 +38,6 @@ The Ransomware Resilience license does not include additional NetApp products. R
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
-You can view anomalous user behavior with Data Infrastructure Insights Workload Security. This requires a license for Data Infrastructure Insights Workload Security and that you enable it in Ransomware Resilience. For an overview of Data Infrastucture Insights Workload Security, review https://docs.netapp.com/us-en/data-infrastructure-insights/cs_intro.html[About Workload Security^]
-
-TIP: If you don't have a license for Data Infrastructure Insights Workload Security and don't enable it in Ransomware Resilience, you won't see the anomalous user behavior information. 
-
 == Try it out using a 30-day free trial
 You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
 
@@ -117,8 +113,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Screenshot of licenses and subscriptions.]
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
@@ -156,9 +150,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Data Services Licenses page]
-
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
@@ -178,9 +169,7 @@ This procedure provides a high level overview of how to subscribe directly in th
 image:screen-license-payment-methods3.png[Screenshot of the Ransomware Resilience Payment methods page.]
 . In the Payment methods page, select *Subscribe* for Google Cloud Platform Marketplace*. 
 . In Google Cloud Platform Marketplace, select *Subscribe*. 
-. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.    
-image:screen-license-payments-gcp2.png[Screenshot of the Google Cloud Marketplace subscription page.]
- 
+. Use Google Cloud Platform Marketplace to subscribe to *NetApp Intelligent Services* and *Ransomware Resilience*.     
 . When you return to Ransomware Resilience, a message states that you are subscribed.
 +
 NOTE: An email is sent to you that includes the Ransomware Resilience serial number and indicates that Ransomware Resilience is subscribed in Google Cloud Platform Marketplace.  
@@ -198,9 +187,6 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
 * To see subscription information, select *Subscriptions*. 
 * To see BYOL licenses, select *Data Services Licenses*.
-+
-image:screen-dw-data-services-license.png[Screenshot of the licenses and subscriptions page.]
-
 
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 

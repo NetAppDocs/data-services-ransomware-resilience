@@ -13,11 +13,9 @@ summary: Get started with NetApp Ransomware Resilience by verifying support for 
 [.lead]
 Get started with NetApp Ransomware Resilience by verifying the readiness of your operational environment, login, network access, and web browser.
 
-To use Ransomware Resilience, you'll need the prerequisites. 
-
+To use Ransomware Resilience, you'll need to satisfy the following prerequisites. 
 
 == In the NetApp Console 
-
 
 * A NetApp Console user account with Organization Admin privileges for discovering resources.
 

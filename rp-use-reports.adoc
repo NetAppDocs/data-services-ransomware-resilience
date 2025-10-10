@@ -49,5 +49,3 @@ image:screen-dashboard.png[Dashboard page]
 
 +
 image:screen-reports.png[Reports page showing the readiness drill report]
-
-
