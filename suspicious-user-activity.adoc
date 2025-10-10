@@ -37,7 +37,8 @@ User activity agents are executable environments for data collectors; data colle
 
 To install a user activity agent, you need a host or a VM with any of the following supported operating system and server requirements.
 
-.Operating system requirements
+**Operating system requirements**
+
 [cols=2]
 |===
 | Operating system | Supported versions
@@ -52,7 +53,7 @@ To install a user activity agent, you need a host or a VM with any of the follow
 | Ubuntu | 20.04 LTS (64 bit), 22.04 LTS (64 bit) and 24.04 LTS (64 bit)
 |===
 
-.Server requirements 
+**Server requirements**
 
 The server must meet the following minimum requirements:
 
