@@ -1,11 +1,28 @@
 === BlueXP ransomware protection is now NetApp Ransomware Resilience
  
-BlueXP ransomware replication has been renamed to NetApp Ransomware Resilience. 
+BlueXP ransomware protection service has been renamed to NetApp Ransomware Resilience. 
 
 === BlueXP is now NetApp Console
- 
-BlueXP has been renamed and redesigned to better reflect its role in managing your data infrastructure.  
- 
+  
 The NetApp Console provides centralized management of storage and data services across on-premises and cloud environments at enterprise grade—delivering real-time insights, faster workflows, and simplified administration.
  
-For details on what has changed, see the https://docs.netapp.com/us-en/bluexp-relnotes/index.html[NetApp Console release notes].
+For details on what has changed, see the https://docs.netapp.com/us-en/console-relnotes/index.html[NetApp Console release notes].
+
+=== Data breach detection 
+
+Ransomware Resilience includes a new detection mechanism that can be activated in a few steps to detect anomalous user reads as an early indicator of data breach. Ransomware resilience collects and analyzes user read events by creating a historic baseline, which is a profile of expected, normal behavior from the past data. When new user activity significantly deviates from this established norm (such as an unexpected read surge combined with suspicious read patterns), an alert is generated. Ransomware Resilience includes an AI model to detect suspicious read patterns.
+
+Unlike encryption detection by ARP at the storage layer, detection of the user behavior anomaly is done in the Ransomware Resilience SaaS service by collecting FPolicy events.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm[Enable suspicious user activity detection] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
+
+==== Additional suspicious user activity detections
+In addition to data breach detection, Ransomware Resilience also detects the following alert types based on observed suspicious user activity:
+
+* **Data destruction - potential attack** - An alert with the severity of potential attack is created when the number of file deletions exceed the historic norm.
+* **Suspicious user behavior - potential attack** - An alert with the severity of potential attack is created when read, rename, and delete operations in a sequence similar to a ransomware attack are observed
+* **Suspicious user behavior - Warning** - An alert with the severity of warning is created when the total number of file activities (read, delete, rename etc.) exceeds the historic norm
+
+==== New user role for data breach detection 
+
+To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles to provide granular access to sensitive data such as user's file activity. For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[NetApp Ransomware Resilience role-based access].

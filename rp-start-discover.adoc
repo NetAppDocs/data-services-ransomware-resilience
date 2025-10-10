@@ -51,7 +51,7 @@ NOTE: If you started the free trial, the *Start 30-day free trial* button label 
 +
 Ransomware Resilience finds both supported and unsupported systems. This process might take a few minutes.
 +
-image:screen-discover-workloads-unsupported.png[Discover workloads screenshot] 
+image:screen-discover-workloads.png[Discover workloads screenshot] 
 //. Do one of the following: 
 //* To select systems for all Console agents, select *Select all systems*.
 
@@ -124,4 +124,4 @@ TIP: This process might take a few minutes, and a loading icon shows the progres
 
 //By default, Console organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings^]
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings^]

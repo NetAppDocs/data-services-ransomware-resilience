@@ -4,13 +4,12 @@ With this release, you can use Data Infrastructure Insights Storage Workload Sec
 
 //For details, refer to link://rp-use-alert.html[Respond to a detected ransomware alert]. 
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert]. 
-
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Respond to a detected ransomware alert]. 
 
 Before you use Data Infrastructure Insights Storage Workload Security to detect anomalous user behavior, you need to configure the option by using the BlueXP ransomware protection *Settings* option.
 
 //Refer to link://rp-use-settings-html[Configure BlueXP ransomware protection settings]. 
-Refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
+Refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 
 === Select workloads to discover and protect
 
@@ -21,7 +20,7 @@ With this release, you can now do the following:
 * Discover newly created workloads for previously selected working environments. 
 
 //Refer to link://rp-start-discover-html[Discover workloads]. 
-Refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover workloads]. 
+Refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html[Discover workloads]. 
 
 
 //=== Configure cyber vault
@@ -34,11 +33,11 @@ Refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-dis
 
 //+
 //For details, refer to link:rp-start-licenses.html[Set up licensing]. 
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-licenses.html[Learn more about setting up BlueXP ransomware protection licenses]. 
+//https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-licenses.html[Learn more about setting up BlueXP ransomware protection licenses]. 
 
 //=== Isolate impacted data in a quarantine environment
 
 //Before starting data recovery for workloads, you can choose if you would like to quarantine infected data for further analysis post recovery.
 //+
 //link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
-//https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-recover.html[Learn more about recovering from a ransomware attack].
+//https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html[Learn more about recovering from a ransomware attack].

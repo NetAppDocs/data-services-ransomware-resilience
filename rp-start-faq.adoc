@@ -34,7 +34,7 @@ To get started with Ransomware Resilience, select "Start discovering workloads" 
 *Is Ransomware Resilience available in standard, restricted, and private modes?*
 At this time, Ransomware Resilience is available only in standard mode. Stay tuned for more. 
 
-For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html[NetApp Console deployment modes^].
+For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
 == Access
 
@@ -45,7 +45,7 @@ In a browser, enter https://console.netapp.com/[https://console.netapp.com/ranso
 
 
 *How are access permissions handled?*
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 *What device resolution is best?*
 The recommended device resolution for Ransomware Resilience is 1920x1080 or better. 
@@ -107,8 +107,6 @@ Ransomware Resilience associates data with a workload in the following ways:
 
 *What is a "protected" workload?*
 In Ransomware Resilience, a workload shows a "protected" status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
-
-//Coming soon, this could also be that CISWS is monitoring user activity. 
 
 *What is an "at risk" workload?*
 If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a backup and snapshot policy enabled. 

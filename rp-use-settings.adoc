@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
-summary: You can configure several options, including a backup destination, threat detection, and connection to Data Infrastructure Insights Workload Security in Ransomware Resilience.
+summary: You can configure several options, including a backup destination and threat detection in the settings page.
 ---
 
 = Configure protection settings in NetApp Ransomware Resilience
@@ -11,7 +11,7 @@ summary: You can configure several options, including a backup destination, thre
 :imagesdir: ./media/
 
 [.lead]
-You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure connection to Data Infrastructure Insights Workload security by accessing the *Settings* option. 
+You can configure backup destinations, send data to an external security and event management (SIEM) system, conduct an attack readiness drill, configure workload discovery, or configure suspicious user activity detection by accessing the *Settings* option. 
 
 include::_include/console-role-admin.adoc[]
 
@@ -25,11 +25,9 @@ From the Settings page, you can do the following:
 * Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
 
 * Configure workload discovery.
-
-* Configure the connection to Data Infrastructure Insights Workload security to see suspected user information in ransomware alerts.  
-
+* Configure suspicious user activity reporting.
 * Add a backup destination.
-* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.   
+* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis.  
 //* Show upcoming Technology Preview features.
 
 
@@ -63,32 +61,11 @@ This page shows Console agents with systems that were not selected earlier, newl
 
 . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
+== Suspicious user activity
 
-== See suspected anomalous user behavior by connecting to Data Infrastructure Insights Workload security 
+In the User activity card, you can create and manage the user activity agent that is required to detect suspicious user activity.
 
-Before you can view details of suspected anomalous user behavior in Ransomware Resilience, you need to configure the connection to the Data Infrastructure Insights Workload security system.
-
-=== Obtain an API access token from the Data Infrastructure Insights Workload security system
-
-Obtain an API access token from the Data Infrastructure Insights Workload security system.
-
-. Log in to the Data Infrastructure Insights Workload security system.
-. From the left navigation, select *Admin* > *API Access*.
-+
-image:../media/screen-alerts-ci-api-access-token.png[API Access page in Data Infrastructure Insights Workload security] 
-
-. Either create an API access token or use an existing one.
-. Copy the API access token.
-
-=== Connect to Data Infrastructure Insights Workload security
-
-. From the Ransomware Resilience Settings menu, locate the *Workload security connection* tile.
-. Select *Connect*.
-. Enter the URL for the Data Infrastructure Workload security UI.
-. Enter the API access token that provides access to Workload security. 
-. Select *Connect*.
-
-
+For more information, see link:suspicious-user-activity.html[Suspicious user activity].
 
 == Add a backup destination
 
@@ -120,9 +97,6 @@ image:screen-dashboard.png[Dashboard page]
 
 . Continue with instructions depending on the backup provider. 
 
-
-
-
 === Add StorageGRID as a backup destination
 
 To set up NetApp StorageGRID as a backup destination, enter the following information. 
@@ -134,13 +108,13 @@ To set up NetApp StorageGRID as a backup destination, enter the following inform
 image:screen-settings-backup-destination.png[Backup destinations page]
 
 . Select *StorageGRID*.
-. Select the Down arrow next to each setting and enter or select values: 
+. Select the down arrow next to each setting and enter or select values: 
 * *Provider settings*:
 ** Create a new bucket or bring your own bucket that will store the backups. 
 ** StorageGRID gateway node fully qualified domain name, port, StorageGRID access key and secret key credentials.
 * *Networking*: Choose the IPspace. 
 ** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
-//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 //June 20, 2024 we do not support Azure and StorageGrid backup locking
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
@@ -160,7 +134,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up AWS as a backup destination, enter the following information. 
 
-For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -174,7 +148,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. 
 ** AWS account, region, access key and secret key for AWS credentials
 + 
-https://docs.netapp.com/us-en/bluexp-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
 
 * *Encryption*: If you are creating a new S3 bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
@@ -186,7 +160,7 @@ Data in the bucket is encrypted with AWS-managed keys by default. You can contin
 +
 If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
 
-* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 +
 CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 
@@ -206,7 +180,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 To set up Google Cloud Platform (GCP) as a backup destination, enter the following information. 
 
-For details about managing your GCP storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
+For details about managing your GCP storage in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -220,8 +194,6 @@ image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 ** Create a new bucket. Enter the access key and secret key.
 //** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. Enter the access key and secret key. 
 ** Enter or select your Google Cloud Platform project and region.
-//+ 
-//https://docs.netapp.com/us-en/bluexp-google-cloud-storage/task-add-gcp-bucket.html[If you want to bring your own bucket, refer to Add Google Cloud Storage buckets^]. 
 
 * *Encryption*: If you are creating a new bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
@@ -233,7 +205,7 @@ Data in the bucket is encrypted with Google-managed keys by default. You can con
 ** Optionally, choose whether you'll use an GCP private endpoint (PrivateLink) that you previously configured. 
 //+
 //If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
-//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days.  
+//* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 //+
 //CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
 //** *Governance mode*: Specific users (with s3:BypassGovernanceRetention permission) can overwrite or delete protected files during the retention period. 
@@ -251,7 +223,7 @@ The new backup destination is added to the list of backup destinations.
 
 To set up Azure as a backup destination, enter the following information. 
 
-For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
+For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
 
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
@@ -265,7 +237,7 @@ image:screen-settings-backup-destination.png[Backup destinations page]
 ** Create a new storage account, select an existing one if one already exists in the Console, or bring your own storage account that will store the backups. 
 ** Azure subscription, region, and resource group for Azure credentials
 + 
-https://docs.netapp.com/us-en/bluexp-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
 
 * *Encryption*: If you are creating a new storage account, enter encryption key information given to you from the provider. If you chose an existing account, encryption information is already available. 
 + 
@@ -434,7 +406,7 @@ TIP: This is the custom role that you created earlier.
 . In the *Assign access to* field, select *User, group, or service principal*. 
 . Select *Select Members*. Then, select *Ransomware Resilience Sentinel Configurator*. 
 . Select *Next*. 
-. In the *What user can do* feld, select *Allow user to assign all roles except privileged administrator roles Owner, UAA, RBAC (Recommended)*. 
+. In the *What user can do* field, select *Allow user to assign all roles except privileged administrator roles Owner, UAA, RBAC (Recommended)*. 
 . Select *Next*.
 . Select *Review and assign* to assign the permissions. 
 
