@@ -21,7 +21,7 @@ At least one user activity agent must be installed to activate suspicious user a
 An agent can host multiple data collectors. Data collectors send data to a SaaS location for analysis. There are two types of collectors:
 
 * the **data collector** collects user activity data from ONTAP.
-* the **user directory collector** connects to your directory to map user IDs to usernames.
+* the **user directory connector** connects to your directory to map user IDs to usernames.
 
 Collectors are configured in the Ransomware Resilience settings. 
 
@@ -55,6 +55,7 @@ To install a user activity agent, you must meet the following operating system a
 .Server requirements 
 
 The server must meet the following minimum requirements:
+
 * **CPU**: 4 CORES
 * **RAM**: 16GB RAM
 * **Disc space**: 35GB free disk spac
@@ -84,7 +85,7 @@ After the user activity agent is successfully created, return to the **Settings*
 
 Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [add a detection policy].
 
-You can view the details of the data collector menu. From Settings, select **Manage** in the User activity card. Select the **Data collector** tab then select the data collector to view its details. 
+You can view the details of the data collector menu. From Settings, select **Manage** in the User activity card. Select the **Data collector** tab then select the data collector to view its details or pause it.  
 
 image:user-activity-settings.png[Screenshot of user activity settings]
 
@@ -127,13 +128,13 @@ Select *Advanced* to add an optional search query.
 . Identify the user directory connector you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
 . In the pop-up dialog, select **Delete** to confirm your actions. 
 
-=== Delete a user activity agent
+// === Delete a user activity agent
 
-. In Ransomware Resilience, go to *Settings*.
-. Locate the User activity card, select **Manage**.
-. Select the **User activity agent** tab.
-. Identify the user activity agent you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
-. In the pop-up dialog, select **Delete** to confirm your actions. 
+// . In Ransomware Resilience, go to *Settings*.
+// . Locate the User activity card, select **Manage**.
+// . Select the **User activity agent** tab.
+// . Identify the user activity agent you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
+// . In the pop-up dialog, select **Delete** to confirm your actions. 
 
 
 == Respond to suspicious user activity alerts
