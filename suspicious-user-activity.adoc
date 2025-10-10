@@ -63,9 +63,9 @@ The server must meet the following minimum requirements:
 
 .Steps
 
-. If this is your first time creating a user activity agent, go to the **Dashboard**. In the User activity tile, select **Activate**.
+. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity** tile, select **Activate**.
 +
-If you're adding an additional user activity agent, go to *Settings*, locate the User activity tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
+If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
 . Select a **Cloud provider** then a **Region**. Select **Next**. 
 . Provide the user activity agent details:
   * **User activity agent name**
