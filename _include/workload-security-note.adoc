@@ -1,2 +1,0 @@
-[NOTE]
-Data breach protection replaces NetApp Data Infrastructure Insights Workload Security. Workloads that are already protected with and recognized by Workload Security are shared with Ransomware Resilience. You can enable protection for more workloads with the **Detect suspicious users** option in Ransomware Resilience. When you attempt to activate it, you will be prompted to send an e-mail to activate data breach protection in Ransomware Resilience. 

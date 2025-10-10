@@ -14,8 +14,6 @@ Ransomware Resilience includes a new detection mechanism that can be activated i
 
 Unlike encryption detection by ARP at the storage layer, detection of the user behavior anomaly is done in the Ransomware Resilience SaaS service by collecting FPolicy events.
 
-//include::../_include/workload-security-note.adoc[]
-
 For more information, see xref:suspicious-user-activity.adoc[Enable suspicious user activity detection] and xref:rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
 
 // For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm[Enable suspicious user activity detection] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
