@@ -14,9 +14,7 @@ Ransomware Resilience includes a new detection mechanism that can be activated i
 
 Unlike encryption detection by ARP at the storage layer, detection of the user behavior anomaly is done in the Ransomware Resilience SaaS service by collecting FPolicy events.
 
-For more information, see xref:suspicious-user-activity.adoc[Enable suspicious user activity detection] and xref:rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
-
-// For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm[Enable suspicious user activity detection] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.htm[Enable suspicious user activity detection] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
 
 ==== Additional suspicious user activity detections
 In addition to data breach detection, Ransomware Resilience also detects the following alert types based on observed suspicious user activity:
@@ -27,7 +25,4 @@ In addition to data breach detection, Ransomware Resilience also detects the fol
 
 ==== New user role for data breach detection 
 
-To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles to provide granular access to sensitive data such as user's file activity. For more information, see link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[NetApp Ransomware Resilience role-based access].
-
-
-//see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[NetApp Ransomware Resilience role-based access].
+To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles to provide granular access to sensitive data such as user's file activity. For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[NetApp Ransomware Resilience role-based access].
