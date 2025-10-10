@@ -33,21 +33,47 @@ include::_include/console-role-user-behavior.adoc[]
 
 User activity agents are executable environments for data collectors to share data with Ransomware Resilience. You must create at least one user activity agent to enable suspicious user activity detection. 
 
+==== Prerequisites 
+
+To install a user activity agent, you must meet the following operating system and server requrirements.
+
+[cols=2]
+|===
+| Operating system | Supported versions
+| AlmaLinux |9.4 (64bit) through 9.5 (64bit), and 10 (64bit), including SELinux
+| CentOS | CentOS Stream 9 (64bit)
+| Debian | 11 (64bit), 12 (64bit), including SELinux
+| OpenSUSE Leap | 15.3 (64bit) through 15.6(64bit)
+| Oracle Linux | 8.10 (64bit), and 9.1 (64bit)  through 9.6 (64bit), including SELinux
+| RedHat | 8.10 (64bit), 9.1 (64bit) through 9.6 (64bit), and 10 (64bit), including SELinux
+| Rocky | Rocky 9.4 (64bit) through 9.6(64bit), including SELinux
+| SUSE Enterprise Linux |15 SP4 (64bit) through 15 SP6 (64bit), including SELinux
+| Ubuntu | 20.04 LTS (64bit), 22.04 LTS (64bit) and 24.04 LTS (64bit)
+|===
+
+.Server requirements 
+
+The server must meet the following minimum requirements:
+* **CPU**: 4 CORES
+* **RAM**: 16GB RAM
+* **Disc space**: 35GB free disk spac
+
 .Steps
 . In Ransomware Resilience, go to *Settings*.
 . Locate the User activity card. If this is your first time creating a user activity agent, select **Activate**.
 +
 If you're adding a new user activity agent, select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
 . Select the **User activity agent** tab then select **Add**. 
-. In the dialog, provide:
+. Select a **Cloud provider** then a **Region**. Select **Next**. 
+. Provide the user activity agent details:
   * **User activity agent name**
-  * *Console agent* 
+  * *Console agent* - the Console agent should be in the same network as the user activity agent and have SSH connectivity to the user activity agent IP address.
   * *VM DNS name or IP address* 
-  * *VM SSH Key*
+  * *VM SSH Key* 
 +
 image:user-activity-agent.png[Screenshot of add activity agent interface.]
 . Select **Next**.
-. Review your settings. Select *Authenticate VM* to complete adding the user activity agent. 
+. Review your settings. Select *Activate* to complete adding the user activity agent. 
 . Confirm the user activity agent was successfully created. In the User activity card, a successful deployment displays as Running.
 
 .Result
@@ -55,7 +81,7 @@ After the user activity agent is successfully created, return to the **Settings*
 
 === Add a data collector 
 
-Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see xref:rp-use-protect.html#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [add a detection policy].
+Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see xref:rp-use-protect.adoc#add-a-detection-policy-to workloads-with-existing-backup-or-snapshot-policies [add a detection policy].
 
 You can view the details of the data collector menu. From Settings, select **Manage** in the User activity card. Select the **Data collector** tab then select the data collector to view its details. 
 
