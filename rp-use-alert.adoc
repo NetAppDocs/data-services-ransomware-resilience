@@ -154,8 +154,7 @@ Looking at the Alerts tab, you can identify whether there is malicious activity 
 You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
 [NOTE]
-Data breach protection replaces NetApp Data Infrastructure Insights Workload Security. Workloads that are already protected with and recognized by Workload Security are shared with Ransomware Resilience. You can enable protection for more workloads with the **Detect suspicious users** option in Ransomware Resilience. When you attempt to activate it, you will be prompted to send an e-mail to activate data breach protection in Ransomware Resilience. 
-When malicious activity occurs, an alert is generated and an automated snapshot is taken. 
+If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Secuirty agents requires a paring relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing.
 
 === View malicious activity
 

@@ -33,10 +33,11 @@ include::_include/console-role-user-behavior.adoc[]
 
 User activity agents are executable environments for data collectors to share data with Ransomware Resilience. You must create at least one user activity agent to enable suspicious user activity detection. 
 
-==== Prerequisites 
+==== Requirements 
 
 To install a user activity agent, you must meet the following operating system and server requrirements.
 
+.Operating system requirements
 [cols=2]
 |===
 | Operating system | Supported versions
