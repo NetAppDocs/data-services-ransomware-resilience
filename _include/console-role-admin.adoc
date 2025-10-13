@@ -1,2 +1,2 @@
 *Required Console role*
-To perform this task, you need the Organization admin, Folder or project admin, or Ransomware Resilience admin role. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+To perform this task, you need the Organization admin, Folder or project admin, or Ransomware Resilience admin role. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^].
