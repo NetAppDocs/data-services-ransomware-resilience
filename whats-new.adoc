@@ -24,22 +24,19 @@ include::_whatsnew/2025-08-12.adoc[]
 
 == 15 July 2025
 include::_whatsnew/2025-07-14.adoc[]
+// end::whats-new[]
 
 == 9 June 2025 
 include::_whatsnew/2025-06-09.adoc[]
 
-
 == 13 May 2025
 include::_whatsnew/2025-05-13.adoc[]
-
 
 == 29 April 2025
 include::_whatsnew/2025-05-12.adoc[]
 
 == 14 April 2025
 include::_whatsnew/2025-04-14.adoc[]
-
-// end::whats-new[]
 
 == 10 March 2025
 include::_whatsnew/2025-03-15.adoc[]
@@ -48,10 +45,6 @@ include::_whatsnew/2025-03-15.adoc[]
 == 16 December 2024 
 include::_whatsnew/2024-11-31.adoc[]
 
-
-
-
-
 == 7 November 2024
 include::_whatsnew/2024-11-07.adoc[]
 
@@ -59,12 +52,9 @@ include::_whatsnew/2024-11-07.adoc[]
 == 30 September 2024 
 include::_whatsnew/2024-09-30.adoc[]
 
-
-
 == 2 September 2024
 include::_whatsnew/2024-09-02.adoc[]
 
-  
 
 == 5 August 2024
 === Threat detection with Splunk Cloud
