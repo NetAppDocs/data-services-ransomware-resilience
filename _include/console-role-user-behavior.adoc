@@ -1,4 +1,4 @@
 *Required Console role*
-To perform this task, you need the Ransomware Resilience user behavior admin role. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+To perform this task, you need the Ransomware Resilience user behavior admin role. You can't perform this task with the Ransomware Resilience admin role. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^].
 
 // or viewer

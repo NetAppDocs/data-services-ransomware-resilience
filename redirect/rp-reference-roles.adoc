@@ -1,5 +1,5 @@
 ---
-permalink: redirect/rp-reference-roles.adoc
+permalink: rp-reference-roles.adoc
 redirect: console-setup-admin/reference-iam-ransomware-roles.html
 ---
 
