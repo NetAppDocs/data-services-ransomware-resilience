@@ -25,4 +25,8 @@ In addition to data breach detection, Ransomware Resilience also detects the fol
 
 ==== New user role for data breach detection 
 
-To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles to provide granular access to sensitive data such as user's file activity. For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[NetApp Ransomware Resilience role-based access].
+To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles for Console organization admins to grant access to supsicious user activity detection: Ransomware Resilience user behavior admin and Ransomware Resilience user behavior viewer.
+
+You must be a user behavior admin to configure suspicious user behavior settings. The Ransomware Resilience admin role is not supported for configuring suspicious user behavior settings. 
+
+For more information, see link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[NetApp Ransomware Resilience role-based access^].
