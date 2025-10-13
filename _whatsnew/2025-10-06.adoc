@@ -14,6 +14,9 @@ Ransomware Resilience includes a new detection mechanism that can be activated i
 
 Unlike encryption detection by ARP at the storage layer, detection of the user behavior anomaly is done in the Ransomware Resilience SaaS service by collecting FPolicy events.
 
+[IMPORTANT]
+You must use the new link:#new-user-roles-for-data-breach-detection[Ransomware Resilience user behavior admin and Ransomware Resilience user behavior viewer] roles to access suspicious user behavior detection settings. 
+
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Enable suspicious user activity detection] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html#view-anomalous-user-behavior[View anomalous user behavior].
 
 ==== Additional suspicious user activity detections
@@ -23,7 +26,7 @@ In addition to data breach detection, Ransomware Resilience also detects the fol
 * **Suspicious user behavior - potential attack** - An alert with the severity of potential attack is created when read, rename, and delete operations in a sequence similar to a ransomware attack are observed
 * **Suspicious user behavior - Warning** - An alert with the severity of warning is created when the total number of file activities (read, delete, rename etc.) exceeds the historic norm
 
-==== New user role for data breach detection 
+==== New user roles for data breach detection 
 
 To manage suspicious user activity alerts, Ransomware Resilience has introduced two new roles for Console organization admins to grant access to supsicious user activity detection: Ransomware Resilience user behavior admin and Ransomware Resilience user behavior viewer.
 
