@@ -47,6 +47,7 @@ image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 .. Select a test system. 
 .. Select a test storage SVM. 
 .. If you selected a CIFS (SMB) storage VM, **User name** and **Password** fields appear. Enter the user name and password for the storage VM.
+.. Select the readiness drill type. For a manual recovery from an encryption data breach, choose **Custom recovery**. For recovery from suspicious user activity, choose **Data breach**.
 .. Enter the name of a new test workload to be created. Do not include dashes in the name. 
 
 . Select *Save*.
@@ -82,11 +83,7 @@ image:screen-dashboard.png[Dashboard page showing the Run readiness drill button
 //** Select *Configure readiness drill test environment*. 
 //** Continue with the instructions in the previous section to configure the drill test environment in the Settings option.
 
-. If you already configured the readiness drill, after selecting *Start*, the readiness drill begins.  
-
-
-
-NOTE: After the drill has started, you cannot edit the readiness drill configuration. You can reset it to start again. 
+NOTE: You can't edit the readiness drill configuration while the drill is running. You can reset the drill to stop it and modify the configuration. 
 
 //== Clean up and stop a readiness drill 
 
