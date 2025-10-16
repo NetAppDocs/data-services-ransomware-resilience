@@ -45,10 +45,10 @@ These tasks require the _Ransomware Resilience admin_ role. Configuring suspicio
 
 [role="quick-margin-list"]
 * link:rp-use-protect.html[Protect workloads]
-* Optionally, link:suspicious-user-activity.html[Configure suspicious user activity detection]
+** Optionally, link:suspicious-user-activity.html[enhance protection by configuring suspicious user activity detection]
 * Optionally, configure backup destinations:
-    * link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
-    * link:rp-start-setup.html[Configure backup destinations]
+** link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
+** link:rp-start-setup.html[Configure backup destinations]
 * link:rp-use-alert.html[Respond to detection of potential ransomware attacks]
 * link:rp-use-recover.html[Recover from an attack (after incidents are neutralized)]
 
@@ -59,4 +59,6 @@ After you configure protection in Ransomware Resilience, here's what you might d
 
 [role="quick-margin-list"]
 * link:rp-use-protect-classify.html[Enable Data Classification to identify governance and security risks]
-* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection[Send alerts to SIEM]
+* link:rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection[Send alerts to SIEM]
+* link:p-use-reports.html[Download alert, protection, readiness drill, recovery, or summary reports]
+
