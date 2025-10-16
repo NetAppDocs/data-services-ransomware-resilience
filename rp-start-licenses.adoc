@@ -21,7 +21,10 @@ You can use the following license types:
 
 * Sign up for a 30-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console. 
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales rep. You can use the license serial number to get the BYOL activated in the Console. 
+
+[NOTE]
+If you enroll in a six-month trial, you should have an NLF license.
 
 After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
 
@@ -33,8 +36,8 @@ After the free trial ends or the license or subscription expires, you can still 
 
 == Other licenses  
 
-// huh? 
-The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use NetApp Backup and Recovery even if you don't have a license for it. 
+// is this better? what about classification? 
+The Ransomware Resilience license does not include additional NetApp products. However, Ransomware Resilience can integrate with NetApp Backup and Recovery, even if you do not have a separate license for Backup and Recovery.
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
