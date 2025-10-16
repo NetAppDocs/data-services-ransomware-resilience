@@ -11,45 +11,52 @@ summary: Get started with the NetApp Ransomware Resilience in a few steps.
 :imagesdir: ./media/
 
 [.lead]
-Here's an overview of the steps needed to get started with NetApp Ransomware Resilience. The links within each step take you to a page that provides more details.
+Understand the high-level steps you need to follow to set up Ransomware Resilience and protect your workloads. 
+
+Follow the links in each step for detailed information.
 
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review prerequisites 
 
 [role="quick-margin-para"]
-link:rp-start-prerequisites.html[Ensure your system meets these requirements].
- 
+These tasks require the _Console admin_ role. 
 
+[role="quick-margin-list"]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation[Ensure you've installed a Console agent^]
+* link:rp-start-prerequisites.html[Ensure your system meets the requirements]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[Review Ransomware Resilience user roles and assign permissions to users accessing Ransomware Resilience]
+* link:rp-start-licenses.html[Set up licensing]
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Set up Ransomware Resilience
 
-
+[role="quick-margin-para"]
+These tasks require the _Ransomware Resilience admin_ role.
 
 [role="quick-margin-list"]
-* link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
-* link:rp-start-setup.html[Configure a Console agent].
-* link:rp-start-licenses.html[Set up licensing].
-* link:rp-start-discover.html[Discover workloads in the Console].
-* link:rp-start-setup.html[Configure backup destinations].
-* link:rp-start-setup.html[Optionally enable threat detection].
-* link:rp-start-simulate.html[Optionally, conduct a ransomware attack readiness drill].
+* link:rp-start-discover.html[Discover workloads in the Console]
+* link:rp-use-dashboard.html[View workload protection health on the Dashboard]
+* link:rp-start-simulate.html[Optionally, conduct a ransomware attack readiness drill]
 
-
-
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] What's next?
-
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Configure protection and detection in Ransomware Resilience
 
 [role="quick-margin-para"]
-After you set up Ransomware Resilience, here's what you might do next. 
+These tasks require the _Ransomware Resilience admin_ role. Configuring suspicious user behavior activity requires the additional _Ransomware Resilience user behavior admin_ role.
 
 [role="quick-margin-list"]
-* link:rp-use-dashboard.html[View workload protection health on the Dashboard].
-* link:rp-use-protect.html[Protect workloads].
-* link:rp-use-alert.html[Respond to detection of potential ransomware attacks].
-* link:rp-use-recover.html[Recover from an attack (after incidents are neutralized)].
-//* link:rp-use-manage.html[Manage workloads].
+* link:rp-use-protect.html[Protect workloads]
+* Optionally, link:suspicious-user-activity.html[Configure suspicious user activity detection]
+* Optionally, configure backup destinations:
+    * link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
+    * link:rp-start-setup.html[Configure backup destinations]
+* link:rp-use-alert.html[Respond to detection of potential ransomware attacks]
+* link:rp-use-recover.html[Recover from an attack (after incidents are neutralized)]
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[Four] What's next?
 
+[role="quick-margin-para"]
+After you configure protection in Ransomware Resilience, here's what you might do next. 
+
+[role="quick-margin-list"]
+* link:rp-use-protect-classify.html[Enable Data Classification to identify governance and security risks]
+* link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html#connect-to-a-security-and-event-management-system-siem-for-threat-analysis-and-detection[Send alerts to SIEM]
