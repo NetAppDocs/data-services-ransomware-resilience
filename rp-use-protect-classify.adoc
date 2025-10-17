@@ -11,7 +11,7 @@ summary: Improve the security and privacy compliance of your data with NetApp Da
 :imagesdir: ./media/
 
 [.lead]
-Within NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the Console and is available at no additional cost. 
+Within NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the NetApp Console and is available at no additional cost. 
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/[Data Classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
 
