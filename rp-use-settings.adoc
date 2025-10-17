@@ -185,8 +185,6 @@ For details about managing your GCP storage in the Console, refer to https://doc
 .Steps
 . In the *Settings > Backup destinations* page, select *Add*. 
 . Enter a name for the backup destination. 
-+
-image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 . Select *Google Cloud Platform*.
 . Select the Down arrow next to each setting and enter or select values: 
 
@@ -194,7 +192,8 @@ image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 ** Create a new bucket. Enter the access key and secret key.
 //** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. Enter the access key and secret key. 
 ** Enter or select your Google Cloud Platform project and region.
-
++
+image:screen-settings-backup-destination-gcp.png[Backup destinations page]
 * *Encryption*: If you are creating a new bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
 + 
 Data in the bucket is encrypted with Google-managed keys by default. You can continue to use Google-managed keys. 
