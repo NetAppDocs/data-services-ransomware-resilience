@@ -17,11 +17,13 @@ With NetApp Ransomware Resilience, you can use different licensing plans.
 To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 *License types*
-You can use the following license types:
 
-* Sign up for a 30-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales rep. You can use the license serial number to get the BYOL activated in the Console. 
+Ransomware Resilience supports the following license types:
+
+* 30-day trial
+* 6-month trial
+* Pay-as-you-go (PAYGO) subscription, purchased through Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales rep. You can use the license serial number to get the BYOL activated in the NetApp Console. 
 
 [NOTE]
 If you enroll in a six-month trial, you should have an NLF license.
@@ -30,9 +32,9 @@ After you set up your BYOL or purchase a PAYGO subscription, you can see the lic
 
 After the free trial ends or the license or subscription expires, you can still do the following in Ransomware Resilience:
 
-* View workloads and workload health.
-* Delete any resource, such as a policy.
-* Run all scheduled operations that were created during the trial period or under the license. 
+* View workloads and workload health
+* Delete any resource, such as a policy
+* Run all scheduled operations that were created during the trial period or under the license.
 
 == Other licenses  
 
@@ -41,15 +43,14 @@ The Ransomware Resilience license does not include additional NetApp products. H
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
-== Try it out using a 30-day free trial
-You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
+== Try it out using a free trial
+You can try Ransomware Resilience out by using a 30-day or 6-month free trial. You must be an Console Organization administrator to start the free trial. 
 
-
-NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
+// NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
 
 No capacity limits are enforced during the trial.  
 
-You can get a license or subscribe at any time and you will not be charged until the 30-day trial ends. To continue after the 30-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
+You can get a license or subscribe at any time and you will not be charged until the free trial ends. To continue after the trial, you need to purchase a BYOL license or PAYGO subscription. 
 
 During the trial, you have full functionality. 
 
@@ -65,7 +66,7 @@ If this is your first time logging in to this service, the landing page appears.
 
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
-. If you haven't already added a Connector for other services, add one. 
+. If you haven't already added a Console agent for other services, add one. 
 + 
 To add a Console agent, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[Learn about Console agents^].
 . After you set up a Console agent, in the Ransomware Resilience landing page, the button to add a Console agent changes to a button for discovering workloads. Select *Start by discovering workloads*. 
