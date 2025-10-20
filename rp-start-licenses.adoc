@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-licenses.html
 keywords: bluexp license, ransomware protection license, netapp console
-summary: Get started with NeApp Ransomware Resilience by setting up licensing.
+summary: Get started with NeApp Ransomware Resilience by setting up your license.
 ---
 
 = Set up licensing for NetApp Ransomware Resilience
@@ -44,11 +44,9 @@ The Ransomware Resilience license does not include additional NetApp products. H
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
 == Try it out using a free trial
-You can try Ransomware Resilience out by using a 30-day or 6-month free trial. You must be an Console Organization administrator to start the free trial. 
+You can try Ransomware Resilience out by using a 30-day or 6-month free trial. You must be an Console Organization administrator to initiate the free trial. 
 
-// NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
-
-No capacity limits are enforced during the trial.  
+Storage capacity limits are not enforced during the trial.  
 
 You can get a license or subscribe at any time and you will not be charged until the free trial ends. To continue after the trial, you need to purchase a BYOL license or PAYGO subscription. 
 
@@ -258,7 +256,7 @@ TIP: This message also appears in Licenses and subscriptions and in https://docs
 +
 After you pay for the license and it is registered with the NetApp Support Site, the Console automatically updates the license. The Data Services Licenses page will reflect the change in 5 to 10 minutes.
 
-. If the Console can't automatically update the license, you need need to manually upload the license file.
+. If the Console can't automatically update the license, you need to manually upload the license file.
 +
 .. You can obtain the license file from the NetApp Support Site.
 .. In the Console, select **Administration** > **Licenses and subscriptions**.
