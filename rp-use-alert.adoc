@@ -151,10 +151,10 @@ The Alerts page appears.
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured an user activity agent  and enabled a protection policy with user behavior detection to view user-level detection. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
+You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
 [NOTE]
-If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Secuirty agents requires a paring relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing.
+If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Security agents requires a pairing relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing.
 
 === View malicious activity
 
@@ -188,7 +188,7 @@ If you've configured suspicious user detection to view anomalous user behavior, 
 . From the Ransomware Resilience menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
-. To block a suspected user from further access in your environment that is monitored by the Console, select *Block* under the user's name.
+. To block a suspected user in your environment, select *Block* under the user's name.
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
@@ -225,7 +225,7 @@ You can dismiss false positives or decide to recover your data immediately. If y
 
 If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 
-CAUTION: If you dismiss an alert, you cannot change that status back to any other status and you cannot undo this change. 
+CAUTION: If you dismiss an alert, you can't change its status or undo this change. 
 
 include::_include/console-role-admin.adoc[]
 
@@ -276,4 +276,4 @@ TIP: If a volume has multiple alerts, you might need to download the CSV list of
 . For that alert, select a single incident. 
 +
 image:screen-alerts-incidents-impacted-files.png[list of impacted files for a specific alert]
-. For that incident, select the download icon and download the list of impacted files in CSV format.
+. For that incident, select the download icon to download the list of impacted files in CSV format.
