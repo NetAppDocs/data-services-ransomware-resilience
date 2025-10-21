@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-licenses.html
 keywords: bluexp license, ransomware protection license, netapp console
-summary: Get started with NeApp Ransomware Resilience by setting up licensing.
+summary: Ensure you meet the licensing requirements for Ransomware Resilience to protect your systems and workloads.
 ---
 
 = Set up licensing for NetApp Ransomware Resilience
@@ -17,22 +17,19 @@ With NetApp Ransomware Resilience, you can use different licensing plans.
 To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 *License types*
-You can use the following license types:
+Ransomware Resilience is available with the following license types:
 
-* Sign up for a 30-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales rep. You can use the license serial number to get the BYOL activated in the Console. 
-
-[NOTE]
-If you enroll in a six-month trial, you should have an NLF license.
+* 30-day free trial
+* Purchase a pay-as-you-go (PAYGO) subscription with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, or Azure Marketplace
+* Bring your own license (BYOL): a NetApp License File (NLF) that you obtain from your NetApp sales rep. You can use the license serial number to get the BYOL activated in the Console. 
 
 After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
 
-After the free trial ends or the license or subscription expires, you can still do the following in Ransomware Resilience:
+After the free trial ends or the license or subscription expires, you can still:
 
-* View workloads and workload health.
-* Delete any resource, such as a policy.
-* Run all scheduled operations that were created during the trial period or under the license. 
+* View workloads and workload health
+* Delete resources such as policies
+* Run all scheduled operations created during the trial period or under the license
 
 == Other licenses  
 
@@ -41,18 +38,15 @@ The Ransomware Resilience license does not include additional NetApp products. H
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
 
-== Try it out using a 30-day free trial
-You can try Ransomware Resilience out by using a 30-day free trial. You must be an Console Organization administrator to start the free trial. 
+== Try Ransomware Resilience with a 30-day free trial
 
+You can try Ransomware Resilience with a 30-day free trial. You must be a Console Organization administrator to start the free trial. 
 
-NOTE: With the October 2024 release, new deployments of Ransomware Resilience now have 30 days for a free trial. Previously, Ransomware Resilience provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days.
-
-No capacity limits are enforced during the trial.  
+Storage capacity limits are not enforced during the trial.  
 
 You can get a license or subscribe at any time and you will not be charged until the 30-day trial ends. To continue after the 30-day trial, you'll need to purchase a BYOL license or PAYGO subscription. 
 
 During the trial, you have full functionality. 
-
 
 .Steps
 
@@ -65,10 +59,10 @@ If this is your first time logging in to this service, the landing page appears.
 
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
-. If you haven't already added a Connector for other services, add one. 
-+ 
-To add a Console agent, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[Learn about Console agents^].
-. After you set up a Console agent, in the Ransomware Resilience landing page, the button to add a Console agent changes to a button for discovering workloads. Select *Start by discovering workloads*. 
+. If you haven't already added a Console agent for other services, link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[add one^].
+. In the Ransomware Resilience landing page, select *Start by discovering workloads* to discover your workloads.
+[NOTE]
+This option is only available if you've successfully installed a Console agent.
 
 . To review the free trial information, select the drop-down option in the top right. 
 
@@ -109,9 +103,7 @@ NOTE: An email is sent to you that includes the Ransomware Resilience serial num
 +
 image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 
-. In the Add License page, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, and select *Add License*. 
-
-
+. In the Add License page, select *Enter Serial Number*, enter the serial number that was included in the email sent to you, then select *Add License*. 
 . To view license details, from the Console left navigation, select *Administration* > *Licenses and subscriptions*.
 
 * To see subscription information, select *Subscriptions*. 
@@ -120,7 +112,7 @@ image:screen-license-dw-add-license.png[Screenshot of the Add License page.]
 . Return to Ransomware Resilience. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
 +
-A message appears indicating that a license has been added. 
+A message confirms a license has been added. 
 
 == Subscribe through Microsoft Azure Marketplace
 
@@ -257,7 +249,7 @@ TIP: This message also appears in Licenses and subscriptions and in https://docs
 +
 After you pay for the license and it is registered with the NetApp Support Site, the Console automatically updates the license. The Data Services Licenses page will reflect the change in 5 to 10 minutes.
 
-. If the Console can't automatically update the license, you need need to manually upload the license file.
+. If the Console can't automatically update the license, you need to manually upload the license file.
 +
 .. You can obtain the license file from the NetApp Support Site.
 .. In the Console, select **Administration** > **Licenses and subscriptions**.
