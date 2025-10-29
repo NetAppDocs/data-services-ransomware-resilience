@@ -15,62 +15,59 @@ This FAQ can help if you're just looking for a quick answer to a question about 
 
 == Deployment
 
-*Do you need a license to use Ransomware Resilience?*
+.Do you need a license to use Ransomware Resilience?
 
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
 * Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and Ransomware Resilience with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
-* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. You can use the license serial number to get the BYOL activated in the Console's Licesnses and subscriptions section.
+* Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales representative. You can use the license serial number to get the BYOL activated in the Console's Licenses and subscriptions section.
 
 
-*How do you enable Ransomware Resilience?* 
-Ransomware Resilience does not require any enablement. You can access Ransomware Resilience from the NetApp Console.
+.How do you enable Ransomware Resilience?
 
-To get going, you need to sign up or reach out to your NetApp Sales rep to try out this service. Then, when you use the Console agent, it will include the appropriate capabilities for Ransomware Resilience.
+You can access Ransomware Resilience from the NetApp Console. Ensure that you've link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[access roles] and link:rp-start-prerequisites.html[prerequisites]. If you've successfully configured a Console agent, you can then link:rp-start-discover.html[discover workloads].
 
-To get started with Ransomware Resilience, select "Start discovering workloads" from its initial landing page. 
+For more information, see link:rp-start-login.html[Access Ransomware Resilience] and link:rp-start-quick-start.html[Ransomware Resilience quick start guide].
 
-*Is Ransomware Resilience available in standard, restricted, and private modes?*
-At this time, Ransomware Resilience is available only in standard mode. Stay tuned for more. 
+.Is Ransomware Resilience available in standard, restricted, and private modes?*
+
+Ransomware Resilience is currently available in standard mode only.
 
 For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
 == Access
 
-*What's the Ransomware Resilience URL?*
+.What's the Ransomware Resilience URL?
+
 In a browser, enter https://console.netapp.com/[https://console.netapp.com/ransomware-resilience^] to access the Console. 
 
+.How are access permissions handled?
 
+https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^]. Ransomware Resilience also has link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[dedicated access roles^].
 
+.What device resolution is best?
 
-*How are access permissions handled?*
-https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
-
-*What device resolution is best?*
 The recommended device resolution for Ransomware Resilience is 1920x1080 or better. 
 
-*Which browser should I use?*
-Any modern browser. 
+.Which browser should I use?
 
+You can access the NetApp Console with any modern web browser. 
 
 
 == Interaction with other services
 
-*Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?*
+.Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?
+
 Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. 
 
-*If you set a policy using Ransomware Resilience, do you have to make future changes only in this service?* 
-We recommend that you make policy changes from Ransomware Resilience.
+.How does Ransomware Resilience interact with NetApp Backup and Recovery and SnapCenter?
 
-*How does Ransomware Resilience interact with NetApp Backup and Recovery and SnapCenter?*
+Ransomware Resilience works with Backup and Recovery to discover and set snapshot and backup policies for file share workloads.
 
-Ransomware Resilience uses the following products and services:
+Ransomware Resilience works with SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
 
-* Backup and Recovery to discover and set snapshot and backup policies for file share workloads
-* SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
-
-In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery. 
+Ransomware Resilience also works with Backup and Recovery and SnapCenter (including SnapCenter for VMware) to perform file- and workload-consistent recovery. 
 
 //*How is Ransomware Resilience different from Cloud Insights Storage Workload Security (CISWS)?*
 
@@ -81,10 +78,14 @@ In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / Sna
 
 == Workloads
 
-*What makes up a workload?*
-A workload is an application, a VM, or a file share. A workload includes all volumes that are used by a single application instance. For example, an Oracle DB instance deployed on ora3.host.com can have vol1 and vol2 for its data and logs, respectively. Those volumes together constitute the workload for that specific instance of the Oracle DB instance.
+.What is a workload in the context of Ransomware Resilience? 
 
-*How does Ransomware Resilience prioritize workload data?*
+A workload is an application, a VM, or a file share. A workload includes all volumes that are used by a single application instance. 
+
+For example, consider an Oracle Database deployed on ora3.host.com with `vol1` containing data and `vol2` containing logs. The two volumes constitute the workload for that Oracle Database instance. 
+
+.How does Ransomware Resilience prioritize workload data?
+
 Data priority is determined by the snapshot copies made and backups that are scheduled. 
 
 The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload. 
@@ -92,75 +93,75 @@ The workload priority (critical, standard, important) is determined by snapshot 
 link:rp-use-protect.html[Learn about workload priority or importance].
 
 
-*What workloads does Ransomware Resilience support?*
+.What workloads does Ransomware Resilience support?
 
 Ransomware Resilience can identify the following workloads: Oracle, MySQL, file shares, block storage, VMs, and VM datastores.
 
-In addition, if you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience, and Ransomware Resilience can protect and recover these in a workload-consistent manner.
+If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover SnapCenter and SnapCenter workloads in a workload-consistent manner.
 
-*How do you associate data with a workload?*
+.How do you associate data with a workload?
 
-Ransomware Resilience associates data with a workload in the following ways:
+Ransomware Resilience discovers the volumes and the file extensions and associates them with the appropriate workload.
 
-* Ransomware Resilience discovers the volumes and the file extensions and associates them to the appropriate workload.
-* In addition, if you have SnapCenter or SnapCenter for VMware and have configured workloads in Backup and Recovery, then Ransomware Resilience discovers the workloads managed by SnapCenter and SnapCenter for VMware and their associated volumes.
+If you have SnapCenter or SnapCenter for VMware and have configured workloads in Backup and Recovery, then Ransomware Resilience discovers the workloads managed by SnapCenter and SnapCenter for VMware and their associated volumes.
 
-*What is a "protected" workload?*
-In Ransomware Resilience, a workload shows a "protected" status when it has a primary detection policy enabled. For now, this means ARP is enabled on all volumes related to the workload.
+.What is a protected workload?
 
-*What is an "at risk" workload?*
-If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a backup and snapshot policy enabled. 
+In Ransomware Resilience, a workload shows a status of *protected* when it has a primary detection policy enabled. This means link:concept-ransomware-resilience.html[Autonomous Ransomware Protection (ARP)] is enabled on all volumes related to the workload.
 
+.What is an "at risk" workload?
 
-*New volume added, but doesn't appear yet*
-If you added a new volume to your environment, initiate discovery again and apply protection policies to protect that new volume. 
+If a workload does not have a primary detection policy enabled, it's labeled "at risk" even if it has a backup and snapshot policy enabled. For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
 
+.I've added a new volume, but it has not appeared yet. What should I do?
+
+If you added a new volume to your environment, initiate discovery again. After the volume has been discovered, link:rp-use-protect.html#add-a-ransomware-protection-strategy[apply protection policies to protect the new volume]. 
 
 
 == Protection policies
 
-*Do Ransomware Resilience ransomware policies co-exist with other kinds of workload policies?*
-At this time, Backup and Recovery (Cloud Backup) supports one backup policy per volume. So, Backup and Recovery and Ransomware Resilience share backup policies.
+.Do Ransomware Resilience ransomware policies co-exist with other kinds of workload policies?
+
+At this time, Backup and Recovery (Cloud Backup) supports one backup policy per volume. If you configure backup protection with Backup and Recovery, it shares backup policies with Ransomware Resilience.
 
 Snapshot copies are not limited and can be added separately from each service.
 
-*What policies are required in a ransomware protection strategy?*
+.What policies are required in a ransomware protection strategy?
 
-The following policies are required in ransomware protection strategy: 
+A link:rp-use-protect.html#add-a-ransomware-protection-strategy[ransomware protection strategy] requires: 
 
-* Ransomware detection policy
-* Snapshot policy
+* a ransomware detection policy, and
+* a snapshot policy
 
 A backup policy is not required in the Ransomware Resilience strategy. 
 
 
-*Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?*
+.Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?
 
-Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP and whether ARP and FPolicy are enabled across all volumes in a discovered workload. The info you see initially in the Dashboard is aggregated from other NetApp solutions and products. 
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also discovers whether ARP and FPolicy are enabled across all volumes in a discovered workload. The information you see in the Ransomware Resilience Dashboard is aggregated from other NetApp solutions and products. 
 
-
-*Is Ransomware Resilience aware of policies already made in Backup and Recovery and SnapCenter?*
+.Is Ransomware Resilience aware of policies already made in Backup and Recovery and SnapCenter?
 
 Yes, if you have workloads managed in Backup and Recovery or SnapCenter, the policies managed by those products are brought into Ransomware Resilience.
 
-*Can you modify policies carried over from NetApp Backup and Recovery and/or SnapCenter?*
+.Can you modify policies carried over from NetApp Backup and Recovery and/or SnapCenter?
 
 No, you cannot modify policies managed by Backup and Recovery or SnapCenter from Ransomware Resilience. You manage any changes to those policies in Backup and Recovery or SnapCenter.
 
-*If policies exist from ONTAP (already enabled in System Manager such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?*
+.If policies exist from ONTAP (such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?
 
 No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
 
-*What happens if you add new policies in Backup and Recovery or SnapCenter after signing up for Ransomware Resilience?*
+.What happens if you add new policies in Backup and Recovery or SnapCenter after signing up for Ransomware Resilience?
 
-Ransomware Resilience recognizes any new polices created in Backup and Recovery or SnapCenter.
+Ransomware Resilience recognizes newly created policies and policy changes in Backup and Recovery or SnapCenter.
 
-*Can you change policies from ONTAP?*
+.Can you change policies from ONTAP?
 
 Yes, you can change policies from ONTAP in Ransomware Resilience. You can also create new policies in Ransomware Resilience and apply them to workloads. This action replaces existing ONTAP policies with the policies created in Ransomware Resilience. 
 
-*Can you disable policies?*
+.Can you disable policies in ONTAP?
 
-You can disable ARP in detection policies using the System Manager UI, APIs, or CLI. 
+You can disable ARP in detection policies using the System Manager UI, APIs, or CLI in ONTAP.
 
 You can disable FPolicy and backup policies by applying a different policy that does not include them. 
