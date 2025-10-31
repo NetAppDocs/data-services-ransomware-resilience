@@ -30,7 +30,7 @@ You can access Ransomware Resilience from the NetApp Console. Ensure that you've
 
 For more information, see link:rp-start-login.html[Access Ransomware Resilience] and link:rp-start-quick-start.html[Ransomware Resilience quick start guide].
 
-.Is Ransomware Resilience available in standard, restricted, and private modes?*
+.Is Ransomware Resilience available in standard, restricted, and private modes?
 
 Ransomware Resilience is currently available in standard mode only.
 
