@@ -104,7 +104,7 @@ If you have SnapCenter or SnapCenter for VMware and have configured workloads in
 
 .What is a protected workload?
 
-In Ransomware Resilience, a workload shows a status of *protected* when it has a primary detection policy enabled. This means link:concept-ransomware-resilience.html[Autonomous Ransomware Protection (ARP)] is enabled on all volumes related to the workload.
+In Ransomware Resilience, a workload shows a status of *protected* when it has a primary _detection_ policy enabled, meaning link:concept-ransomware-resilience.html[Autonomous Ransomware Protection (ARP)] is enabled on all volumes related to the workload.
 
 .What is an "at risk" workload?
 
