@@ -55,7 +55,7 @@ The recommended device resolution for Ransomware Resilience is 1920x1080 or bett
 You can access the NetApp Console with any modern web browser. 
 
 
-== Interaction with other services
+== Interoperability
 
 .Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?
 
@@ -86,18 +86,15 @@ For example, consider an Oracle Database deployed on ora3.host.com with `vol1` c
 
 .How does Ransomware Resilience prioritize workload data?
 
-Data priority is determined by the snapshot copies made and backups that are scheduled. 
-
-The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload. 
+The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload and scheduled backups. 
 
 link:rp-use-protect.html[Learn about workload priority or importance].
-
 
 .What workloads does Ransomware Resilience support?
 
 Ransomware Resilience can identify the following workloads: Oracle, MySQL, file shares, block storage, VMs, and VM datastores.
 
-If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover SnapCenter and SnapCenter workloads in a workload-consistent manner.
+If you're using SnapCenter or SnapCenter for VMware, all workloads supported by these products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover SnapCenter and SnapCenter workloads in a workload-consistent manner.
 
 .How do you associate data with a workload?
 
@@ -115,8 +112,7 @@ If a workload does not have a primary detection policy enabled, it's labeled "at
 
 .I've added a new volume, but it has not appeared yet. What should I do?
 
-If you added a new volume to your environment, initiate discovery again. After the volume has been discovered, link:rp-use-protect.html#add-a-ransomware-protection-strategy[apply protection policies to protect the new volume]. 
-
+If you added a new volume to your environment, initiate discovery of the workload again. After the volume has been discovered, link:rp-use-protect.html#add-a-ransomware-protection-strategy[apply protection policies to protect the new volume]. 
 
 == Protection policies
 
