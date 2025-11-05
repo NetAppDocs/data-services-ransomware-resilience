@@ -14,6 +14,12 @@ Get started with NetApp Ransomware Resilience by verifying the readiness of your
 
 To use Ransomware Resilience, ensure you meet the prerequisites. 
 
+== Supported systems 
+
+Ensure you're using a supported system:
+
+include::_include/supported-systems.adoc[]
+
 == NetApp Console requirements
 
 Your NetApp Console configuration requires:
@@ -43,7 +49,6 @@ If you plan to use Ransomware Resilience on SAN workloads, you must be running O
 == ONTAP requirements
 
 * You must be running ONTAP 9.11.1 or later with an ONTAP One license enabled on the on-premises ONTAP instance. For more information about ONTAP support, see link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
-* A license for NetApp Autonomous Ransomware Protection, used by Ransomware Resilience, enabled on the on-premises ONTAP instance, depending on the version of ONTAP you are using. For more licensing details, refer to link:concept-ransomware-resilience.html[Learn about Ransomware Resilience].
 
 * To apply protection configurations (such as enabling Autonomous Ransomware Protection and others), Ransomware Resilience needs admin permissions on the ONTAP cluster. The ONTAP cluster should have been onboarded using ONTAP cluster admin user credentials only. 
 

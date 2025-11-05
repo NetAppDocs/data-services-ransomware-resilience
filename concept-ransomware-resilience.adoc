@@ -170,18 +170,7 @@ Ransomware Resilience supports the following backup targets, systems, and data s
 
 === Supported systems
 
-* On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
-* On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
-* Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.17.1 or greater for AWS, Google Cloud Platform, and Microsoft Azure (using FC, iSCSI, and NVMe protocols) 
-* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
-
-[NOTE]
-Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. 
-+
-ONTAP doesn't provide ransomware protection support for FlexGroup volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
+include::_include/supported-systems.adoc[]
 
 === Supported workload data sources
 
