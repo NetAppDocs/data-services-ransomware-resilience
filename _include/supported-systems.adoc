@@ -7,7 +7,6 @@
 * Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
 
 [NOTE]
-Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. 
-+
+Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
 ONTAP doesn't provide ransomware protection support for FlexGroup volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
 
