@@ -161,28 +161,18 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 Ransomware Resilience supports the following backup targets, systems, and data sources:
 
-*Supported backup targets*
+=== Supported backup targets
 
 * Amazon Web Services (AWS) S3
 * Google Cloud Platform
 * Microsoft Azure Blob
 * NetApp StorageGRID
 
-*Supported systems* 
+=== Supported systems
 
-* On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
-* On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
-* Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.17.1 or greater for AWS, Google Cloud Platform, and Microsoft Azure (using FC, iSCSI, and NVMe protocols) 
-* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
-+
-NOTE: ARP/AI requires ONTAP 9.16 or greater. 
+include::_include/supported-systems.adoc[]
 
-NOTE: The following are not supported: FlexGroup volumes, ONTAP versions older than 9.11.1, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. 
-
-*Supported workload data sources*
+=== Supported workload data sources
 
 Ransomware Resilience protects the following application-based workloads on primary data volumes:
 
@@ -190,7 +180,6 @@ Ransomware Resilience protects the following application-based workloads on prim
 * Block storage
 * VMware datastores
 * Databases (MySQL and Oracle)
-* More coming soon
 
 In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
 
