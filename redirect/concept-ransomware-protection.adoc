@@ -1,4 +1,4 @@
 ---
 permalink: concept-ransomware-protection.html
-redirect: /data-services-disaster-recovery/get-started/dr-intro.html
+redirect: data-services-ransomware-resilience/concept-ransomware-resilience.html
 ---
