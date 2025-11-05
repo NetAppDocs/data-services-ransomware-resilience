@@ -13,10 +13,10 @@ summary: Ensure you meet the licensing requirements for Ransomware Resilience to
 [.lead]
 With NetApp Ransomware Resilience, you can use different licensing plans.
 
-
 To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
-*License types*
+== License types
+
 Ransomware Resilience is available with the following license types:
 
 * 30-day free trial
@@ -33,7 +33,6 @@ After the free trial ends or the license or subscription expires, you can still:
 
 == Other licenses  
 
-// is this better? what about classification? 
 The Ransomware Resilience license does not include additional NetApp products. However, Ransomware Resilience can integrate with NetApp Backup and Recovery, even if you do not have a separate license for Backup and Recovery.
 
 NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products will be billed by Ransomware Resilience only. 
