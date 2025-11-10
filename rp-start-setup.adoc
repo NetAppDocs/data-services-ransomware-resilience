@@ -32,32 +32,32 @@ If you want to use StorageGRID as your backup destination, refer to https://docs
 === Prepare AWS to become a backup destination
  
 * Set up an account in AWS.
-* Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[AWS permissions^] in AWS. 
+* Configure https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html[AWS permissions^] in AWS. 
  
 
-For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+For details about managing your AWS storage in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
 
 
 === Prepare Azure to become a backup destination
  
 * Set up an account in Azure.
-* Configure https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html[Azure permissions^] in Azure. 
+* Configure https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html[Azure permissions^] in Azure. 
  
 
-For details about managing your Azure storage in the Console, refer to https://docs.netapp.com/us-en/bluexp-blob-storage/task-view-azure-blob-storage.html[Manage your Azure storage accounts^].
+For details about managing your Azure storage in the Console, refer to https://docs.netapp.com/us-en/storage-management-blob-storage/task-view-azure-blob-storage.html[Manage your Azure storage accounts^].
 
 
 == Set up the NetApp Console
 The next step is to set up the Console and Ransomware Resilience. 
 
-Review https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-standard-mode.html[Console requirements for standard mode^].
+Review https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-standard-mode.html[Console requirements for standard mode^].
 
 
 === Create a Console agent
 
 Contact your NetApp Sales Rep to try out or use this service. Then, when you use the Console agent, it will include the appropriate capabilities for Ransomware Resilience. 
 
-To create a Console agent using the service, contact your Console organization admin who has permissions to create Console agents, and refer to the documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a Console agent^]. 
+To create a Console agent using Ransomware Resilience, contact your Console organization admin who has permissions to create Console agents, and refer to the documentation that describes https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[how to create a Console agent^]. 
 
 NOTE: If you have multiple Console agents, the Ransomware Resilience scan datas across all Console agents beyond the one that currently shows in the Console. This service discovers all projects and all Console agents associated with this organization. 
 
@@ -71,4 +71,4 @@ NOTE: If you have multiple Console agents, the Ransomware Resilience scan datas 
 
 //By default, Console Organization admins will receive emails for all "Critical" and "Recommendation" notifications. 
 
-//For instructions on configuring email settings, see https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in the Console^]
+//For instructions on configuring email settings, see https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Configure email settings in the Console^]

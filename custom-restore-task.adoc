@@ -79,7 +79,6 @@ The process differs depending on the workload type.
 
 . Select a workload that is in the "Restore needed" state. 
 
-
 . To restore, select *Restore*.
 . Select **Custom restore** to proceed without cleaning the files. 
 

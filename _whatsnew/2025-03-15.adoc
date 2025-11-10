@@ -4,7 +4,7 @@ With this release, simulate a ransomware attack to test your response to a ranso
 
 //For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html[Conduct a ransomware attack readiness drill]. 
 
 === Enhancements to discovery process
 
@@ -19,7 +19,7 @@ This release includes enhancements to the selective discovery and rediscovery pr
 
 //For details, refer to link:rp-start-discover.html[Discover newly created workloads for previously selected working environments] and link:rp-use-settings.html[Configure features with the Settings option].
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-settings.html[Configure features with the Settings option].
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html[Discover newly created workloads for previously selected working environments] and https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Configure features with the Settings option].
 
 === Alerts raised when high encryption is detected
 
@@ -27,7 +27,7 @@ With this release, you can view alerts when high encryption is detected on your 
 
 //For details, refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 
-For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-use-alert.html[Respond to a detected ransomware alert].
+For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Respond to a detected ransomware alert].
 
 //=== New role-based access control roles and permissions 
 
@@ -35,6 +35,6 @@ For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection
 
 //For details, refer to link:rp-reference-roles.html[Assign roles and permissions to users].
 
-//For details, refer to https://docs.netapp.com/us-en/bluexp-ransomware-protection/rp-reference-roles.html[Assign roles and permissions to users].
+//For details, refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[Assign roles and permissions to users].
 
 
