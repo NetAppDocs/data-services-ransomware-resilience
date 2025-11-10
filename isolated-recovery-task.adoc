@@ -14,10 +14,7 @@ summary: Ransomware Resilience enables you to perform a controlled restoration o
 [.lead]
 NetApp Ransomware Resilience enables you to clean workloads before performing a restore with an isolated recovery environment. The isolated recovery environment guides you through a step-by-step process, identifying encryption and removing malware then provides restore process to increase the restore time and minimize data loss.
 
-//The isolated recovery environment option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
-
-// [IMPORTANT]
-// The isolated recovery environment is in **private preview**. To enroll in the private preview, navigate to the **Recovery** dashboard in Ransowmare Resilience. In the Clean rooms card, select **Sign up** to request access. 
+The isolated recovery environment option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
 
 == Considerations
 
@@ -30,7 +27,9 @@ NetApp Ransomware Resilience enables you to clean workloads before performing a 
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 
-. In the Clean rooms card, select **Add**. 
+. In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
+. If this is your first time creating an isolated recovery environment, proceed to the next step. 
+If you've already created an isolated recovery environment, select **Add** to create another one. 
 . Provide the follow inputs: 
     * A **Name** for the environment. 
     * Permissions 
@@ -54,7 +53,7 @@ Ransomware Resilience also supports a xref:rp-use-recover.html[custom restore op
 .. If you have created an isolated recovery environment, select the isolated recovery environment to use for the restore. 
 . Select **Restore**. 
 // The isolated recovery environment is automatically selected if one is already connected to the Console agent. Otherwise, you can select an isolated recovery environment
-// Setup step: 
+// Setup step: If you haven't peered the isolated recovery environment 
 . After the setup completes, select **Run analysis**. With the analysis, Ransomware Resilience investigates all restore points—snapshots and backups—from the seven days prior to the incident. Ransomware Resilience analyzes the restore points, noting which ones are potentially impacted.
 +
 Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occured on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
@@ -74,3 +73,13 @@ If you choose the original location, select whether you want to save a new copy 
 If you select an alternative location, select the **System** and **Storage VM** then enter the **Path for the new volume** and the **New volume name**. 
 . Select **Start recovery** to initiate the recovery. 
 . Once the recovery completes, you can release the resource based on the save location from the previous step. Select **Release resources and end** to initiate this process. To confirm you want to release the resource, select **End**. 
+
+== Delete a clean room
+
+You can't delete a clean room with an restoration in progress. You can cancel the restore operation or wait until the restore completes then delete the clean room. 
+
+. Go to **Settings**.
+. In the Clean restore card, select **Manage**. 
+. Identify the clean room you want to delete. In the actions menu column for that room, select the three dots `...`.
+. Select **Delete**.
+. Select **Delete** to confirm the operation. 
