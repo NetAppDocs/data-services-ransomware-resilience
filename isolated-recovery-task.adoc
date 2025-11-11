@@ -25,7 +25,6 @@ The isolated recovery environment option is an alternative to the xref:rp-use-re
 
 == Create an isolated recovery environment
 
-.Steps
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
 . If this is your first time creating an isolated recovery environment, proceed to the next step. 
