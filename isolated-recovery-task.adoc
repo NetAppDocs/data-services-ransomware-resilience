@@ -20,7 +20,7 @@ The isolated recovery environment option is an alternative to the xref:rp-use-re
 
 // * Number of isolated recovery environments per console agent
 * If the isolated recovery environment doesn't have capacity for a new operation, it will be queued until there is availability. 
-* Workloads must be cleaned in an isolated recovery environment hosted on the same Console agent. 
+* When you configure an isolated recovery environment, it's connected to a Console agent. Workloads must be cleaned in an isolated recovery environment hosted on the same Console agent. 
 * You can monitor the status of active and queued isolated recovery environment operations at any time in the **Recovery** dashboard of Ransomware Resilience. 
 
 == Create an isolated recovery environment
@@ -33,39 +33,38 @@ If you've already created an isolated recovery environment, select **Add** to cr
 . Provide the follow inputs: 
     * A **Name** for the environment. 
     * Permissions 
-// need info
     * Provide the authentication credentials for your clean restore environment, including **Access key** and **Secret key**. 
 +
 image:screenshot-set-up-recovery-environment.png[Screenshot of isolated recovery environment authentication set-up.]
 +
 . Select **Add** to create the isolated recovery environment.
 +
-You can track the progress in the **Settings** tab. Once the room is created, you can select **Manage**. 
+You can track the progress in the **Settings** tab. Once the room is created, you can select **Manage** to view the clean room.
 
-== Perform a clean restore 
+== Perform a clean restore
 
-Ransomware Resilience also supports a xref:rp-use-recover.html[custom restore option]. 
-
-.Steps
 . In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
 . In the Restore Type options, select **Clean restore** then **Next**. 
-.. If you haven't created an isolated recovery environment for this system, provide the necessary information to link:#create-an-isolated-recovery-environment[create the isolated recovery environment]. Select **Next**. 
-.. If you have created an isolated recovery environment, select the isolated recovery environment to use for the restore. 
+. If you haven't created an isolated recovery environment for this system, provide the necessary information to link:#create-an-isolated-recovery-environment[create the isolated recovery environment]. Select **Next**. 
+. If you have created an isolated recovery environment, select the isolated recovery environment you want to use.  
 . Select **Restore**. 
 // The isolated recovery environment is automatically selected if one is already connected to the Console agent. Otherwise, you can select an isolated recovery environment
-// Setup step: If you haven't peered the isolated recovery environment 
+. If you haven't peered the isolated recovery environment, accept the peering request in the production environment.
+. After the peering request is accepted, Ransomware Resilience perform a set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to data analsysis, select **Next**. 
 . After the setup completes, select **Run analysis**. With the analysis, Ransomware Resilience investigates all restore points—snapshots and backups—from the seven days prior to the incident. Ransomware Resilience analyzes the restore points, noting which ones are potentially impacted.
 +
 Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occured on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the isolated recovery environment analysis step.]
 
-. After the analysis completes, plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. 
-// Synthesizes different restore points to create a restore with the least data loss.
-. To view granular file event data, select that files to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
-. Select **Next** to proceed to cleaning. 
-. If cleaning of any file fails, those files are excluded from the recovery. Select if you want to quarantine those files by  saving them to another location. 
-// choose location
+. After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either options, and optionally look at individual file data for either restore point. 
++
+To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
+. After you choose your restore point, select **Create restore point** to begin cleaning your files. 
+. Ransomware Resilience begins cleaning the workload. 
+//If cleaning of any file fails, those files are excluded from the recovery. Select if you want to quarantine those files by saving them to another location. 
++
+Once the cleaning completes, select **Next** to initiate the recovery. 
 . Choose where to save the original workload: the original location or an alternate. 
 +
 If you choose the original location, select whether you want to save a new copy or replace the existing.
@@ -83,3 +82,5 @@ You can't delete a clean room with an restoration in progress. You can cancel th
 . Identify the clean room you want to delete. In the actions menu column for that room, select the three dots `...`.
 . Select **Delete**.
 . Select **Delete** to confirm the operation. 
+
+// == Disconnect a clean room
