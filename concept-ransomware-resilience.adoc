@@ -181,7 +181,9 @@ Ransomware Resilience protects the following application-based workloads on prim
 * VMware datastores
 * Databases (MySQL and Oracle)
 
-In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
+If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
+
+//  Volumes with no mount path are unsupported
 
 == Terms that might help you with ransomware protection
 
