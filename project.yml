@@ -42,8 +42,6 @@ sidebar:
           url: /suspicious-user-activity.html
     - title: Use Ransomware Resilience
       entries:
-        - title: Use Ransomware Resilience overview
-          url: /rp-use-overview.html 
         - title: View workload health using the Dashboard
           url: /rp-use-dashboard.html
         - title: Protect workloads
