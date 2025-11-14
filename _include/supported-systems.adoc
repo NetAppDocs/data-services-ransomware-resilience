@@ -10,3 +10,36 @@
 Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
 ONTAP doesn't provide ransomware protection support for FlexGroup volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
 
+
+
+Environment	Storage Type	Volume Types	Protocols	ARP	ARP/AI	FPolicy	Backup	RPS 26H1(Detection)
+NetApp On-prem	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
+NetApp On-prem	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
+NetApp On-prem	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
+NetApp On-prem	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	Yes(9.18.1+)	Yes	Yes	Yes
+NetApp On-prem	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
+NetApp On-prem	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	No	Yes
+NetApp On-prem	NAS	Consistency Group (CG)	NFS/SMB/CIFS	No	No	No	No	No
+NetApp On-prem	NAS	Data Protection Vol	NFS/SMB/CIFS	No	No	Yes	Yes	Yes
+NetApp On-prem	NAS/SAN	SnapMirror sync (SM-S)	NFS/SMB/CIFS	No	Yes(9.19.1+)	No	Yes	Yes
+NetApp On-prem	NAS/SAN	SnapMirror active sync (SMaS)	NFS/SMB/CIFS	No	Yes(9.19.1+)	No	No	Yes
+CVO	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
+CVO	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
+CVO	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
+CVO	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	No	Yes	Yes	Yes
+CVO	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
+CVO	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	Yes	Yes
+CVO	NAS	Data Protection Vol	NFS/SMB/CIFS	No	No	No	Yes	No
+Amazon FSx	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	26H1	Yes
+Amazon FSx	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	26H1	Yes
+Amazon FSx	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	26H1	Yes
+Amazon FSx	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	No	Yes	26H1	Yes
+Amazon FSx	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	26H1	Yes
+Amazon FSx	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	26H1	Yes
+Amazon FSx	NAS	Data Protection Vol	NFS/SMB/CIFS	Yes	No	No	26H1	Yes
+ANF	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	No	No	Yes
+ANF	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	No	No	Yes
+GCNV	SAN	FlexVol	iSCSI/FC/NVMe	No	26H1	No	No	No
+GCNV	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	26H1	No	No	No
+GCNV	NAS	FlexVol Vol	NFS/SMB/CIFS	No	26H1	No	No	No
+GCNV	NAS	Read/Write Vol	NFS/SMB/CIFS	No	26H1	No	No	No
