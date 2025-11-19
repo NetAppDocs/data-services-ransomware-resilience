@@ -1,45 +1,22 @@
-* On-premises ONTAP NAS (using NFS and CIFS protocols) with ONTAP version 9.11.1 and greater
-* On-premises ONTAP SAN (using FC, iSCSI, and NVMe protocols) with ONTAP version 9.17.1 and greater
-* Cloud Volumes ONTAP 9.11.1 or greater for AWS (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.11.1 or greater for Google Cloud Platform (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.12.1 or greater for Microsoft Azure (using NFS and CIFS protocols)
-* Cloud Volumes ONTAP 9.17.1 or greater for AWS, Google Cloud Platform, and Microsoft Azure (using FC, iSCSI, and NVMe protocols) 
-* Amazon FSx for NetApp ONTAP, which uses Autonomous Ransomware Protection (ARP and not ARP/AI)
+
+|===
+| Environment | Protocol | Supported versions
+| Amazon FSx for NetApp ONTAP* | NFS, CIFS, and SAN | N/A
+.2+| Cloud Volumes ONTAP for AWS
+| NFS and CIFS | 9.11.1 and later
+| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+.2+| Cloud Volumes ONTAP for Google Cloud Platform
+| NFS and CIFS | 9.11.1 and later
+| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+.2+| Cloud Volumes ONTAP for Microsoft Azure
+| NFS and CIFS | 9.12.1 and later
+| SAN (FC, iSCSI, & NVMe) | ONTAP 9.17.1 and later
+.2+| ONTAP (on-premises)
+| NFS and CIFS/SMB  | ONTAP 9.11.1 and later 
+|===
+
+{asterisk} Amazon FSx for NetApp ONTAP uses Autonomous Ransomware Protection (ARP) and not ARP/AI.
 
 [NOTE]
 Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
 ONTAP doesn't provide ransomware protection support for FlexGroup volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
-
-
-
-Environment	Storage Type	Volume Types	Protocols	ARP	ARP/AI	FPolicy	Backup	RPS 26H1(Detection)
-NetApp On-prem	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
-NetApp On-prem	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
-NetApp On-prem	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
-NetApp On-prem	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	Yes(9.18.1+)	Yes	Yes	Yes
-NetApp On-prem	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
-NetApp On-prem	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	No	Yes
-NetApp On-prem	NAS	Consistency Group (CG)	NFS/SMB/CIFS	No	No	No	No	No
-NetApp On-prem	NAS	Data Protection Vol	NFS/SMB/CIFS	No	No	Yes	Yes	Yes
-NetApp On-prem	NAS/SAN	SnapMirror sync (SM-S)	NFS/SMB/CIFS	No	Yes(9.19.1+)	No	Yes	Yes
-NetApp On-prem	NAS/SAN	SnapMirror active sync (SMaS)	NFS/SMB/CIFS	No	Yes(9.19.1+)	No	No	Yes
-CVO	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
-CVO	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	Yes	Yes
-CVO	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
-CVO	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	No	Yes	Yes	Yes
-CVO	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	Yes	Yes
-CVO	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	Yes	Yes
-CVO	NAS	Data Protection Vol	NFS/SMB/CIFS	No	No	No	Yes	No
-Amazon FSx	SAN	FlexVol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	26H1	Yes
-Amazon FSx	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	Yes(9.17.1+)	No	26H1	Yes
-Amazon FSx	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	Yes	26H1	Yes
-Amazon FSx	NAS	FlexGroup Vol	NFS/SMB/CIFS	Yes	No	Yes	26H1	Yes
-Amazon FSx	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	Yes	26H1	Yes
-Amazon FSx	NAS	FlexCache Vol	NFS/SMB/CIFS	No	No	Yes	26H1	Yes
-Amazon FSx	NAS	Data Protection Vol	NFS/SMB/CIFS	Yes	No	No	26H1	Yes
-ANF	NAS	FlexVol Vol	NFS/SMB/CIFS	Yes	Yes	No	No	Yes
-ANF	NAS	Read/Write Vol	NFS/SMB/CIFS	Yes	Yes	No	No	Yes
-GCNV	SAN	FlexVol	iSCSI/FC/NVMe	No	26H1	No	No	No
-GCNV	SAN	Read/Write Vol	iSCSI/FC/NVMe	No	26H1	No	No	No
-GCNV	NAS	FlexVol Vol	NFS/SMB/CIFS	No	26H1	No	No	No
-GCNV	NAS	Read/Write Vol	NFS/SMB/CIFS	No	26H1	No	No	No

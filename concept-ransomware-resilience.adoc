@@ -176,12 +176,17 @@ include::_include/supported-systems.adoc[]
 
 Ransomware Resilience protects the following application-based workloads on primary data volumes:
 
-* NetApp file shares
 * Block storage
+* Databases:
+** Microsoft SQL Server
+** MySQL
+** Oracle
+** PostgreSQL
+* NetApp file shares
 * VMware datastores
-* Databases (MySQL and Oracle)
+// * VMs
 
-In addition, if you are using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
+If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
 
 == Terms that might help you with ransomware protection
 
