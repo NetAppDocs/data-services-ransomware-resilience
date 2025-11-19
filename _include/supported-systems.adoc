@@ -1,4 +1,5 @@
 
+[%header]
 |===
 | Environment | Protocol | Supported versions
 | Amazon FSx for NetApp ONTAP* | NFS, CIFS, and SAN | N/A

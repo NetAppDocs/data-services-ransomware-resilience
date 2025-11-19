@@ -40,7 +40,7 @@ To install a user activity agent, you need a host or VM that meets the following
 
 **Operating system requirements**
 
-[cols=2]
+[%header,cols=2]
 |===
 | Operating system | Supported versions
 | AlmaLinux |9.4 (64 bit) through 9.5 (64 bit), and 10 (64 bit), including SELinux
@@ -61,6 +61,17 @@ The server must meet the following minimum requirements:
 * **CPU**: 4 CORES
 * **RAM**: 16GB RAM
 * **Disc space**: 35 GB free disk space
+
+**Cloud provider support**
+
+Suspicious user activity is available with AWS and Azure in the following regions:
+
+[%header]
+|===
+| Cloud provider | Region 
+| AWS | US East (us-east-1)
+| Azure | East US
+|===
 
 .Steps
 

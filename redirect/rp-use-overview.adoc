@@ -1,6 +1,6 @@
 ---
 permalink: rp-use-overview.html
-redirect: console-setup-admin/rp-use-dashboard.html
+redirect: data-services-ransomware-resilience/rp-use-dashboard.html
 ---
 
 // = Use NetApp Ransomware Resilience
