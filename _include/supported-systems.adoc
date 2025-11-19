@@ -3,20 +3,17 @@
 | Environment | Protocol | Supported versions
 | Amazon FSx for NetApp ONTAP* | NFS, CIFS, and SAN | N/A
 .2+| Cloud Volumes ONTAP for AWS
-| NFS and CIFS | 9.11.1 and later
+| CIFS & NFS | 9.11.1 and later
 | SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Google Cloud Platform
-| NFS and CIFS | 9.11.1 and later
+| CIFS & NFS | 9.11.1 and later
 | SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Microsoft Azure
-| NFS and CIFS | 9.12.1 and later
+| CIFS & NFS | 9.12.1 and later
 | SAN (FC, iSCSI, & NVMe) | ONTAP 9.17.1 and later
 .2+| ONTAP (on-premises)
-| NFS and CIFS/SMB  | ONTAP 9.11.1 and later 
+| CIFS & NFS  | ONTAP 9.11.1 and later 
 |===
 
-{asterisk} Amazon FSx for NetApp ONTAP uses Autonomous Ransomware Protection (ARP) and not ARP/AI.
+{asterisk} Amazon FSx for NetApp ONTAP uses Autonomous Ransomware Protection (ARP) and not ARP/AI. For more information about the difference, see link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai[ARP/AI^].
 
-[NOTE]
-Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
-ONTAP doesn't provide ransomware protection support for FlexGroup volumes, mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].

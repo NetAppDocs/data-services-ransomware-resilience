@@ -172,6 +172,10 @@ Ransomware Resilience supports the following backup targets, systems, and data s
 
 include::_include/supported-systems.adoc[]
 
+[NOTE]
+Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
+ONTAP doesn't provide ransomware protection support for FabricPool FlexCache, FlexGroup volumes, consistency groups mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
+
 === Supported workload data sources
 
 Ransomware Resilience protects the following application-based workloads on primary data volumes:
