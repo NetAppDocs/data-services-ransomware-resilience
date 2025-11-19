@@ -30,6 +30,9 @@ Collectors are configured in the Ransomware Resilience settings.
 *Required Console role*
 To activate suspicious user activity detection, you need the Organization admin role. For subsequent configurations for suspicious user activity, you need the Ransomware Resilience user behavior admin role. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
 
+[IMPORTANT]
+Suspicious user activity detection is currently supported with AWS and Azure in the US East region only.
+
 === Add a user activity agent 
 
 User activity agents are executable environments for data collectors; data collectors share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable suspicious user activity detection.
