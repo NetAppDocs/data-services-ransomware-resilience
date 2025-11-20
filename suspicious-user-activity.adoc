@@ -64,7 +64,7 @@ The server must meet the following minimum requirements:
 
 **Cloud provider support**
 
-Suspicious user activity is available with AWS and Azure in the following regions:
+Suspicious user activity data can be stored in AWS and Azure in the following regions:
 
 [%header]
 |===

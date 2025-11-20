@@ -27,7 +27,7 @@ Your NetApp Console configuration requires:
 * A NetApp Console user account with Organization Admin privileges for discovering resources.
 
 * A Console organization and system with at least one active Console agent connecting to a link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources[supported system].
-** If your on-premises ONTAP clusters or Cloud Volumes ONTAP in AWS or in Azure cloud are not set up in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[Learn how to configure a Console agent^] and link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard Console requirements^].
+** If your on-premises ONTAP clusters or Cloud Volumes ONTAP in AWS or in Azure cloud are not set up in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html[Learn how to configure a Console agent^] and link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard Console requirements^].
 +
 NOTE: If you have multiple Console agents in a single Console organization, the Ransomware Resilience will scan ONTAP resources across all Console agents beyond the one that is currently selected in the Console UI. 
 
