@@ -172,18 +172,25 @@ Ransomware Resilience supports the following backup targets, systems, and data s
 
 include::_include/supported-systems.adoc[]
 
+[NOTE]
+Using ARP/AI in ONTAP requires ONTAP 9.16 or greater. +
+ONTAP doesn't provide ransomware protection support for FabricPool FlexCache, FlexGroup volumes, consistency groups mount point volumes, mount path volumes, offline volumes, and Data protection (DP) volumes. Ensure you review link:https://docs.netapp.com/us-en/ontap/anti-ransomware/use-cases-restrictions-concept.html[supported and unsupported configurations in ONTAP^].
+
 === Supported workload data sources
 
 Ransomware Resilience protects the following application-based workloads on primary data volumes:
 
-* NetApp file shares
 * Block storage
+* Databases:
+** Microsoft SQL Server
+** MySQL
+** Oracle
+** PostgreSQL
+* NetApp file shares
 * VMware datastores
-* Databases (MySQL and Oracle)
+// * VMs
 
 If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
-
-//  Volumes with no mount path are unsupported
 
 == Terms that might help you with ransomware protection
 
