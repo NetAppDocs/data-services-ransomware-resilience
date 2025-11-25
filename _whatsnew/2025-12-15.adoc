@@ -1,5 +1,5 @@
-=== Isolated recovery environment
+=== Clean restore
 
-Ransomware Resilience now supports an isolated recovery environment. With the isolated recovery environment, Ransomware Resilience isolates infected workloads to identify encryption and remove malware; it also recommends recovery options to increase the recovery time and reduce the amount of data loss. The isolated recovery environment provides a guided, step-by-step restoration process. This approach delivers a clean, malware-free workload restoration that prevents reinfection and minimizes data loss.
+Ransomware Resilience now supports clean restores. With clean restores, Ransomware Resilience isolates infected workloads to identify encryption and remove malware; it also recommends recovery options to increase the recovery time and reduce the amount of data loss. Clean restores provide a guided, step-by-step restoration process to deliver a clean, malware-free workload restoration that prevents reinfection and minimizes data loss.
 
-For more information, see link:isolated-recovery-task.html[Restore files safely with the isolated recovery environment].
+For more information, see link:clean-restore-task.html[Recover workloads with clean restore].

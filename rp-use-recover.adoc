@@ -12,6 +12,9 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 [.lead]
 After workloads have been marked "Restore needed", NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
+[TIP]
+You can alternately restore workloads with xref:clean-restore-task.html[clean restores]. 
+
 * If the application or VM is managed by SnapCenter, Ransomware Resilience restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
 
 * If the application or VM is _not_ managed by SnapCenter and is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
