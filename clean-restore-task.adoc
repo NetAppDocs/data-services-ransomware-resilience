@@ -20,6 +20,7 @@ The clean restore option is an alternative to the xref:rp-use-recover.html[custo
 == Considerations
 
 // * Number of isolated recovery environments per console agent
+* Clean restore is supported on AWS in the US East 1 region.
 * If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
 * When you configure an isolated recovery environment, it's connected to a Console agent. Workloads must be cleaned in an isolated recovery environment hosted on the same Console agent. 
 * You can monitor the status of active and queued clean restore operations at any time in the **Recovery** dashboard of Ransomware Resilience. 
