@@ -76,8 +76,7 @@ a|
 * US East (N. Virginia) (us-east-1)
 | Azure | East US
 |===
-
- and 
+ 
 
 .Steps
 
