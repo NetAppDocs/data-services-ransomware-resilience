@@ -69,9 +69,15 @@ Suspicious user activity data can be stored in AWS and Azure in the following re
 [%header]
 |===
 | Cloud provider | Region 
-| AWS | US East (us-east-1)
+| AWS 
+a| 
+* Asia Pacific (Sydney) (ap-southeast-2)
+* Europe (Frankfurt) (eu-central-1)
+* US East (N. Virginia) (us-east-1)
 | Azure | East US
 |===
+
+ and 
 
 .Steps
 
