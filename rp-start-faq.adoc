@@ -57,7 +57,7 @@ You can access the NetApp Console with any modern web browser.
 
 == Interoperability
 
-.Is Ransomware Resilience aware of protection settings made in NetApp ONTAP?
+.Is Ransomware Resilience aware of protection settings ONTAP?
 
 Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. 
 
@@ -68,6 +68,8 @@ Ransomware Resilience works with Backup and Recovery to discover and set snapsho
 Ransomware Resilience works with SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
 
 Ransomware Resilience also works with Backup and Recovery and SnapCenter (including SnapCenter for VMware) to perform file- and workload-consistent recovery. 
+
+For licensing and billing, Ransomware Resilience can integrate with Backup and Recovery even if you don't have a separate license for Backup and Recovery. If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 
 //*How is Ransomware Resilience different from Cloud Insights Storage Workload Security (CISWS)?*
 
