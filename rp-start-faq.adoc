@@ -57,7 +57,7 @@ You can access the NetApp Console with any modern web browser.
 
 == Interoperability
 
-.Is Ransomware Resilience aware of protection settings ONTAP?
+.Is Ransomware Resilience aware of protection settings in ONTAP?
 
 Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. 
 
