@@ -122,7 +122,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 
 
- * Discovers each volume's current protection level of NetApp snapshot copies and backup policies as well as any on-box detection capabilities. Ransomware Resilience then associates this protection posture with the workloads by using Backup andRrecovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), FPolicy, Backup policies, and snapshot policies.
+ * Discovers each volume's current protection level of NetApp snapshot copies and backup policies as well as any on-box detection capabilities. Ransomware Resilience then associates this protection posture with the workloads by using Backup and Recovery, ONTAP services, and NetApp technologies such as Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), FPolicy, backup policies, and snapshot policies.
  Learn more about https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[NetApp Backup and Recovery^], and https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
 
