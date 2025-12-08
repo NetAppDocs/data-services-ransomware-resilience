@@ -32,7 +32,7 @@ image:concept-security-layer-diagram.png[Security layer diagram]
 
 Ransomware Resilience provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
-* *Identify* all application-based, file-share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) and SAN (FC, iSCSI, and NVMe) systems across the NetApp Console, projects, and Console agents. Ransomwware Resilience categorizes the data priority and provides recommendations to you for ransomware resilience improvements.
+* *Identify* all application-based, file share, or VMware-managed workloads in NetApp on-premises NAS (NFS or CIFS) and SAN (FC, iSCSI, and NVMe) systems across the NetApp Console, projects, and Console agents. Ransomwware Resilience categorizes the data priority and provides recommendations to you for ransomware resilience improvements.
 // check wording
 
 * *Protect* your workloads by enabling backups, snapshot copies, and ransomware protection strategies on your data.  
@@ -55,7 +55,7 @@ Ransomware Resilience offers the following benefits:
 * Evaluates your ransomware protection posture and displays it in an easy-to-understand dashboard.
 * Provides recommendations on next steps based on discovery and protection posture analysis. 
 * Applies AI/ML-driven data protection recommendations with one-click access.
-* Protects data in top application-based workloads, such as Oracle, VMware datastores and file-shares. 
+* Protects data in application-based workloads such as Oracle, VMware datastores, and file shares. 
 * Detects ransomware attacks on data in real time on primary storage using AI technology.
 * Initiates automated actions in response to detected potential attacks by creating snapshot copies and initiating alerts about abnormal activity.
 * Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including NetApp Backup and Recovery (formerly Cloud Backup) and SnapCenter. 
