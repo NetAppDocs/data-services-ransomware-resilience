@@ -85,10 +85,11 @@ a|
 If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
 . Select a **Cloud provider** then a **Region**. Select **Next**. 
 . Provide the user activity agent details:
-  * **User activity agent name**
-  * *Console agent* - the Console agent should be in the same network as the user activity agent and have SSH connectivity to the user activity agent IP address.
-  * *VM DNS name or IP address* 
-  * *VM SSH Key* 
++
+* **User activity agent name**
+* *Console agent* - The Console agent should be in the same network as the user activity agent and have SSH connectivity to the user activity agent's IP address.
+* *VM DNS name or IP address* 
+* *VM SSH Key* 
 +
 image:user-activity-agent.png[Screenshot of add activity agent interface.]
 . Select **Next**.
@@ -116,6 +117,7 @@ To map user IDs to usernames, you must create a user directory connector.
 . Select the **User directory connectors** tab then **Add**.
 . Configure the connection. Enter the required information for each field.
 +
+[%header,cols="25,75"]
 |===
 | Field | Description 
 | *Name* | Enter a unique name for the user directory connector
