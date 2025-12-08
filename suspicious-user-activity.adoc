@@ -122,12 +122,10 @@ To map user IDs to usernames, you must create a user directory connector.
 | *User directory type* | The directory type
 | *Server IP address or domain name* | The IP address or Fully-Qualified Domain Name (FQDN) of the server hosting the connection 
 | *Forest name or search name* 
-a| 	You can specify the forest level of the directory structure as the direct domain name (for example `unit.company.com`) or the relative distinguished name (for example: `DC=unit,DC=company,DC=com`). You can also enter an `OU` to filter by an organizational unit or a CN to limit to a specific user (for example:`CN=user,OU=engineering,DC=unit,DC=company,DC=com`)
-
-Trusted Active Directory domains are also supported.
+a| 	You can specify the forest level of the directory structure as the direct domain name (for example `unit.company.com`) or a set of relative distinguished names (for example: `DC=unit,DC=company,DC=com`). You can also enter an `OU` to filter by an organizational unit or a `CN` to limit to a specific user (for example: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
 | *BIND DN* | The BIND DN is a user account permitted to search the directory, such as user@domain.com. The user requires the Domain Read Only permission. 
 | *BIND password* | The password for the user provided in BIND DN
-| *Protocol* | The protocol field is optional. Supported LDAP protocols are `ldap`, `ldaps`, and `ldap-start-tls`.
+| *Protocol* | The protocol field is optional. You can use LDAP, LDAPS, or LDAP over StartTLS.
 | *Port* | Enter your chosen port number
 |===
 +
