@@ -58,8 +58,8 @@ To install a user activity agent, you need a host or VM that meets the following
 
 The server must meet the following minimum requirements:
 
-* **CPU**: 4 CORES
-* **RAM**: 16GB RAM
+* **CPU**: 4 cores
+* **RAM**: 16 GB RAM
 * **Disc space**: 35 GB free disk space
 
 **Cloud provider support**
@@ -114,15 +114,22 @@ To map user IDs to usernames, you must create a user directory connector.
 . In Ransomware Resilience, go to *Settings*.
 . In the User activity tile, select **Manage**.
 . Select the **User directory connectors** tab then **Add**.
-. Provide the details of the connection:
-  * *Name*
-  * *User directory type*
-  * *Server IP address or domain name*
-  * *Forest name or search name*
-  * *BIND domain name*
-  * *BIND password*
-  * *Protocol* (this is optional)
-  * *Port*
+. Configure the connection. Enter the required information for each field.
++
+|===
+| Field | Description 
+| *Name* | Enter a unique name for the user directory connector
+| *User directory type* | 
+| *Server IP address or domain name* | The IP address or Fully-Qualified Domain Name (FQDN) of the server hosting the connection 
+| *Forest name or search name* 
+a| 	The forest level of the directory structure. You can specify it as the direct domain name (for example `unit.company.com`) or the relative distinguished name (for example: `DC=unit,DC=company,DC=com`). You can also enter a `OU` to filter by an organizational unit or a CN to limit to a specific user (for example:`CN=user,OU=engineering,DC=unit,DC=company,DC=com`)
+
+Trusted Active Directory domains are also supported.
+| *BIND DN* | BIND DN is a user permitted to search the directory, such as user@domain.com. The user requires the Domain Read Only permission. 
+| *BIND password* | The password for the user provided in BIND DN
+| *Protocol* | The protocol field is optional. Supported LDAP protocols are `ldap`, `ldaps`, and `ldap-start-tls`.
+| *Port* | Enter your chosen portal number
+|===
 +
 image:screenshot-user-directory-connection.png[Screenshot of user directory connection]
 +
@@ -131,7 +138,7 @@ Provide the attribute mapping details:
   * *SID* (if you're using LDAP)
   * *User name* 
   * *Unix ID* (if you're using NFS)
-  * Select *Include optional attributes*. You can also include email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
+  * If you select *Include optional attributes*, you can also add an email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
 +
 Select *Advanced* to add an optional search query. 
 . Select **Add**. 
