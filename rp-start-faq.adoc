@@ -94,7 +94,7 @@ link:rp-use-protect.html[Learn about workload priority or importance].
 
 .What workloads does Ransomware Resilience support?
 
-Ransomware Resilience can identify the following workloads: Oracle, MySQL, file shares, block storage, VMs, and VM datastores.
+Ransomware Resilience can identify the following workloads: Oracle, file shares, block storage, VMs, and VM datastores.
 
 If you're using SnapCenter or SnapCenter for VMware, all workloads supported by these products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover SnapCenter and SnapCenter workloads in a workload-consistent manner.
 
