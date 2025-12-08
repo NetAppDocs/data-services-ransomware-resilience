@@ -16,7 +16,7 @@ Before you can use NetApp Ransomware Resilience, it needs to first discover data
 include::_include/console-role-admin.adoc[]
 
 *What does Ransomware Resilience discover?*
-Ransomware Resilience assesses MySQL applications, Oracle applications, VMware datastores, file shares, and block storage. 
+Ransomware Resilience assesses Oracle applications, VMware datastores, file shares, and block storage. 
 
 NOTE: Ransomware Resilience does not discover workloads with volumes that use FlexGroup.
 
