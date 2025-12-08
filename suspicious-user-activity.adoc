@@ -132,6 +132,7 @@ a| 	You can specify the forest level of the directory structure as the direct do
 image:screenshot-user-directory-connection.png[Screenshot of user directory connection]
 +
 Provide the attribute mapping details:
++
 * *Display name*
 * *SID* (if you're using LDAP)
 * *User name* 
