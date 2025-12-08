@@ -16,7 +16,7 @@ Ransomware Resilience detects suspicious user activity by analyzing user activit
 
 == Agents and collectors
 
-At least one user activity agent must be installed to activate suspicious user activity detection in Ransomware Resilience. When you activate the suspicious user activity feature from Ransomware Resilience dashboard, you need to provide the agent host information to activate the feature.
+At least one user activity agent must be installed to activate suspicious user activity detection in Ransomware Resilience. When you activate the suspicious user activity feature from the Ransomware Resilience dashboard, you need to provide the agent host information.
 
 An agent can host multiple data collectors. Data collectors send data to a SaaS location for analysis. There are two types of collectors:
 
@@ -46,10 +46,10 @@ To install a user activity agent, you need a host or VM that meets the following
 | AlmaLinux |9.4 (64 bit) through 9.5 (64 bit), and 10 (64 bit), including SELinux
 | CentOS | CentOS Stream 9 (64 bit)
 | Debian | 11 (64 bit), 12 (64 bit), including SELinux
-| OpenSUSE Leap | 15.3 (64 bit) through 15.6(64 bit)
-| Oracle Linux | 8.10 (64 bit), and 9.1 (64 bit)  through 9.6 (64 bit), including SELinux
-| RedHat | 8.10 (64 bit), 9.1 (64 bit) through 9.6 (64 bit), and 10 (64 bit), including SELinux
-| Rocky | Rocky 9.4 (64 bit) through 9.6(64 bit), including SELinux
+| OpenSUSE Leap | 15.3 (64 bit) through 15.6 (64 bit)
+| Oracle Linux | 8.10 (64 bit), and 9.1 (64 bit) through 9.6 (64 bit), including SELinux
+| Red Hat | 8.10 (64 bit), 9.1 (64 bit) through 9.6 (64 bit), and 10 (64 bit), including SELinux
+| Rocky | Rocky 9.4 (64 bit) through 9.6 (64 bit), including SELinux
 | SUSE Enterprise Linux |15 SP4 (64 bit) through 15 SP6 (64 bit), including SELinux
 | Ubuntu | 20.04 LTS (64 bit), 22.04 LTS (64 bit) and 24.04 LTS (64 bit)
 |===
@@ -58,9 +58,9 @@ To install a user activity agent, you need a host or VM that meets the following
 
 The server must meet the following minimum requirements:
 
-* **CPU**: 4 CORES
-* **RAM**: 16GB RAM
-* **Disc space**: 35 GB free disk space
+* **CPU**: 4 cores
+* **RAM**: 16 GB RAM
+* **Disk space**: 35 GB free disk space
 
 **Cloud provider support**
 
@@ -114,15 +114,20 @@ To map user IDs to usernames, you must create a user directory connector.
 . In Ransomware Resilience, go to *Settings*.
 . In the User activity tile, select **Manage**.
 . Select the **User directory connectors** tab then **Add**.
-. Provide the details of the connection:
-  * *Name*
-  * *User directory type*
-  * *Server IP address or domain name*
-  * *Forest name or search name*
-  * *BIND domain name*
-  * *BIND password*
-  * *Protocol* (this is optional)
-  * *Port*
+. Configure the connection. Enter the required information for each field.
++
+|===
+| Field | Description 
+| *Name* | Enter a unique name for the user directory connector
+| *User directory type* | The directory type
+| *Server IP address or domain name* | The IP address or Fully-Qualified Domain Name (FQDN) of the server hosting the connection 
+| *Forest name or search name* 
+a| 	You can specify the forest level of the directory structure as the direct domain name (for example `unit.company.com`) or a set of relative distinguished names (for example: `DC=unit,DC=company,DC=com`). You can also enter an `OU` to filter by an organizational unit or a `CN` to limit to a specific user (for example: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
+| *BIND DN* | The BIND DN is a user account permitted to search the directory, such as user@domain.com. The user requires the Domain Read Only permission. 
+| *BIND password* | The password for the user provided in BIND DN
+| *Protocol* | The protocol field is optional. You can use LDAP, LDAPS, or LDAP over StartTLS.
+| *Port* | Enter your chosen port number
+|===
 +
 image:screenshot-user-directory-connection.png[Screenshot of user directory connection]
 +
@@ -131,7 +136,7 @@ Provide the attribute mapping details:
   * *SID* (if you're using LDAP)
   * *User name* 
   * *Unix ID* (if you're using NFS)
-  * Select *Include optional attributes*. You can also include email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
+  * If you select *Include optional attributes*, you can also add an email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
 +
 Select *Advanced* to add an optional search query. 
 . Select **Add**. 
