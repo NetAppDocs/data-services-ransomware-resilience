@@ -1,10 +1,6 @@
-This release includes general enhancements and improvements, and the following features. 
+=== Extension blocking is enabled at the workload level
 
-=== Enable FPolicy on workloads 
-
-link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[FPolicy^] can now be enabled on entire workloads.
-
-// For more information see
+When you enable extension blocking, it's now enabled at the workload level rather than the storage VM level. 
 
 === Edit user behavior alert status 
 
@@ -13,12 +9,8 @@ Ransomware Resilience now enables you to edit the status of user behavior alerts
 For more information, see xref:rp-use-alert.html[Manage alerts].
 //For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
 
-=== Support for multiple console agents 
+=== Support for multiple Console agents 
 
-Ransomware Resilience now supports using multiple console agents.
+Ransomware Resilience now supports using multiple Console agents to manage the same systems. 
 
-//HA
-
-For more information, see xref:rp-start-setup.adoc[Create a Console agent].
-
-// link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-setup.html 
+For more information about Console agents, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-setup.html[Create a Console agent].
