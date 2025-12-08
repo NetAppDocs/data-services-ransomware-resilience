@@ -119,7 +119,7 @@ To map user IDs to usernames, you must create a user directory connector.
 |===
 | Field | Description 
 | *Name* | Enter a unique name for the user directory connector
-| *User directory type* | 
+| *User directory type* | The directory type
 | *Server IP address or domain name* | The IP address or Fully-Qualified Domain Name (FQDN) of the server hosting the connection 
 | *Forest name or search name* 
 a| 	You can specify the forest level of the directory structure as the direct domain name (for example `unit.company.com`) or the relative distinguished name (for example: `DC=unit,DC=company,DC=com`). You can also enter an `OU` to filter by an organizational unit or a CN to limit to a specific user (for example:`CN=user,OU=engineering,DC=unit,DC=company,DC=com`)
