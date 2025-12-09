@@ -1,0 +1,16 @@
+=== Extension blocking is enabled at the workload level
+
+When you enable extension blocking, it's now enabled at the workload level rather than the storage VM level. 
+
+=== Edit user behavior alert status 
+
+Ransomware Resilience now enables you to edit the status of user behavior alerts. You can manually dismiss and resolve alerts. You can now also mark alerts as "In review."
+
+For more information, see xref:rp-use-alert.html[Manage alerts].
+//For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
+
+=== Support for multiple Console agents 
+
+Ransomware Resilience now supports using multiple Console agents to manage the same systems. 
+
+For more information about Console agents, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-setup.html[Create a Console agent].

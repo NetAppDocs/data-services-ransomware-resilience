@@ -4,13 +4,13 @@ permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
 summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
 ---
-= Handle detected ransomware alerts with NetApp Ransomware Resilience
+= Manage alerts in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience detects a possible attack, it shows an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
+When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
 
 If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
 
@@ -51,12 +51,13 @@ An alert can have one of the following statuses:
 * *New* 
 * *Inactive*
 
-An alert incident can have one of the following states: 
+An alert incident can have the following states: 
 
 * *New*: All incidents are marked "new" when they are first identified. 
+* *In review*: You can mark an incident as in review while you evaluate it. 
 * *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
 +
-CAUTION: After you dismiss an attack, you cannot change this back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+CAUTION: After you dismiss an attack, you can't revert it's status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 * *Dismissing*: The incident is in the process of being dismissed. 
 * *Resolved*: The incident has been fixed.
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
@@ -219,9 +220,9 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 == Dismiss incidents that are not potential attacks
 
-After you review incidents, you need to determine whether the incidents are potential attacks. If they are not actual threats, they can be dismissed.
+After you review incidents, you need to determine whether the incidents are potential attacks. If they aren't actual threats, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior and associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
 
 If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 
@@ -239,7 +240,7 @@ image:screen-alerts.png[Alerts page]
 +
 image:screen-alerts-incidents3.png[Alert incidents page]
 
-. Select one or more incidents. Or, select all incidents by selecting the Incident ID box at the top left of the table. 
+. Select one or more incidents. Alternately, select all incidents by selecting the Incident ID box at the top left of the table. 
 
 . If you determine that the incident is not a threat, dismiss it as a false positive: 
 +
@@ -248,13 +249,13 @@ image:screen-alerts-incidents3.png[Alert incidents page]
 +
 image:screen-alerts-status-edit.png[Alert Edit Status page]
 
-. From the Edit status box, select the *“Dismissed”* status. 
+. From the Edit status box, choose the *Dismissed* status. 
 +
-Additional information about the workload and that snapshot copies are deleted appears.
+Additional information about the workload and the snapshot copies are deleted appears.
 
 . Select *Save*.
 +
-The status on the incident or incidents changes to “Dismissed.” 
+The status on the incident or incidents changes to "Dismissed." 
 
 == View a list of impacted files
 
