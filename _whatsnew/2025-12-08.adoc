@@ -6,8 +6,7 @@ When you enable extension blocking, it's now enabled at the workload level rathe
 
 Ransomware Resilience now enables you to edit the status of user behavior alerts. You can manually dismiss and resolve alerts.
 
-For more information, see xref:rp-use-alert.html[Manage alerts].
-//For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
 
 === Support for multiple Console agents 
 
