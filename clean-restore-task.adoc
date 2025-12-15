@@ -16,6 +16,21 @@ With clean restores, NetApp Ransomware Resilience enables you to clean ransomwar
 
 The clean restore option is an alternative to the xref:rp-use-recover.html[custom restore option]. 
 
+== Support
+
+Supported source environments 
+Cloud Volumes ONTAP - AWS 
+(Planne 26h1: Amazon FSx for NetApp ONTAP, Google Cloud NetApp Volumes, ONTAP CVO - Azure & GCP)
+
+Supported destination environments 
+AWS - US East
+Planned - AWS EMEA Frankfurt 
+Azure & GCP - US East; Frankfurt 
+
+On-prem: VMWare VCenter 
+
+Clean restore is only supported with NAS file shares (NFS/CIFS).
+
 == Considerations
 
 // * Number of isolated recovery environments per console agent
