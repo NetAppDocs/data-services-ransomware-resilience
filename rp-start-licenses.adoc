@@ -286,4 +286,6 @@ If you want to end your PAYGO subscription, you can do so at any time.
 . In the drop-down details, uncheck the box *Use after current payment method expires*.
 . Select *Save*. 
 
+== More information 
 
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[NetApp Console licenses and subscriptions^]
