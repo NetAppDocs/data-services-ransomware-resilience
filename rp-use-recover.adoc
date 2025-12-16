@@ -28,13 +28,9 @@ A workload can have one of the following restore statuses:
 * *Restored*: The workload has been restored. 
 * *Failed*: The workload restore process could not be completed.
 
-
-
 == View workloads that are ready to be restored
 
 Review the workloads that are in the "Restore needed" recovery status. 
-
-
 
 .Steps 
 
