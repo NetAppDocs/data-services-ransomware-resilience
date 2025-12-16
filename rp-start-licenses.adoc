@@ -288,4 +288,4 @@ If you want to end your PAYGO subscription, you can do so at any time.
 
 == More information 
 
-* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[NetApp Console licenses and subscriptions^]
+* link:https://docs.netapp.com/us-en/console-licenses-subscriptions/index.html[NetApp Console licenses and subscriptions documentation^]
