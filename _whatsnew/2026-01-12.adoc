@@ -10,3 +10,12 @@ For more information, see xref:rp-use-alert.html[Manage alerts].
 //For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
 
 === Exclude workloads
+
+If you don't want to include a workload in a system in the Ransomware Resilience dashboard, you can now exclude it. You can exclude workloads after discovery, and re-include them if you want to add ransomware protection. You aren't billed for exlcuded workloads. 
+
+For more information, see link:rp-start-discover.html#exclude-workloads[Exclude workloads].
+//For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads[Exclude workloads].
+
+== Unsupported workloads
+
+== ONTAP secondary 
