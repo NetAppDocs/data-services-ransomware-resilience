@@ -102,7 +102,6 @@ Ransomware Resilience allows you to exclude specific workloads in a systems if y
 You aren't billed for workloads excluded from Ransomware Resilience. 
 
 .Exclude workloads
-
 . In Ransomware Resilience, select **Settings**. 
 . In the Settings dashboard, locate the Workload discovery dashboard. The card identifies the number of excluded workloads. Next to the excluded workloads, select **Manage**.
 +
@@ -113,12 +112,14 @@ image:settings-excluded-workload.png[Ransomware Resilience settings dashboard]
 . Select **Add**. 
 . Review the excluded workloads in the Excluded workloads page. While the workload is being added, a progress indicator displays next to its name. If a workload was not excluded successfully, it doesn't display on the page. 
 
-.Re-include workloads 
+.Restore excluded workloads to Ransomware Resilience
 . In Ransomware Resilience, select **Settings**. 
 . In the Settings dashboard, locate the Workload discovery dashboard. The card identifies the number of excluded workloads. Next to the excluded workloads, select **Manage**.
 +
 image:settings-excluded-workload.png[Screenshot of Ransomware Resilience settings dashboard.]
-. Select the action menu for the workload you want to remove from the excluded list.
+. To remove an individual workload, select the action menu for the workload you want to remove from the excluded list.
++
+To remove multiple workloads, select 
 . In the dialog, select **Remove** to confirm that you want to remove the workload from the excluded workload list.
 . If the workload is removed from the exluded workload list successfully, a success message appears on the Exlcuded workload page and the workload no longer appears as an excluded list. If the action fails, an error message appears; attempt the operation again. 
 image:exlcude-workload-remove-successful.png[Screenshot of successfully removing an excluded workload.]
