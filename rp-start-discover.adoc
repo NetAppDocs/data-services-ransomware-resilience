@@ -21,14 +21,6 @@ Ransomware Resilience checks your current backup protection, snapshot copies, an
 
 include::_include/console-role-admin.adoc[]
 
-*How can you discover workloads?*
-You can do the following: 
-
-* Within each Console agent, select the systems where you want to discover workloads. You might benefit from this feature if you want to protect specific workloads in your environment and not others. 
-//* During workload discovery, you can enable automatic discovery of workloads per Console agent. This feature lets you select the workloads that you want to protect. 
-* Discover newly created workloads for previously selected systems. 
-* Discover new systems. 
-
 == Select workloads to discover and protect
 
 Within each Console agent, select the systems where you want to discover workloads. 
@@ -60,9 +52,8 @@ image:screen-discover-workloads.png[Discover workloads screenshot]
 //. Optionally, select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Console agent. 
 . Select *Discover*. 
 +
-Ransomware Resilience discovers workload data only for Console agents with selected systems. This process can take a few minutes.
+Ransomware Resilience only discovers workload data when you select system. The discovery process can take several minutes. 
 . To download the list of discovered workloads, select *Download results*.
-
 . To display the Ransomware Resilience dashboard, select *Go to Dashboard*.   
 +
 The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
@@ -73,11 +64,11 @@ link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
 == Discover newly created workloads for previously selected systems
 
-If you have already selected systems for discovery, you can discover newly created workloads for those environments from the Dashboard.
+If you've added workloads to a previously discovered system, you need to reinitiate discovery to protect the new workloads. 
 
 .Steps
 
-. To identify the date of the last discovery, look at the date and time stamp next to *Refresh* icon at the top right of the Ransomware Resilience dashboard.
+. To identify the time of the last discovery, look at the date and time stamp next to *Refresh* icon at the top right of the Ransomware Resilience dashboard.
 
 . From the Dashboard, select the *Refresh* icon to find new workloads. 
 
@@ -97,13 +88,13 @@ If you have already discovered systems, you can find new or previously unselecte
 
 == Exclude workloads 
 
-Ransomware Resilience allows you to exclude specific workloads in a systems if you don't want them include in your ransomware detection and protection scheme. You can only exclude workloads that are supported and have been discovered successfully. 
+Ransomware Resilience allows your to exclude specific workloads in a system if you won't want to enable them for ransomware protection and detection. 
 
-You aren't billed for workloads excluded from Ransomware Resilience. 
+You can only exclude workloads that are supported and have been discovered successfully. You can modify the list of excluded workloads at any time. You aren't billed for workloads excluded from Ransomware Resilience. 
 
-.Exclude workloads
+.Add workloads to the excluded workloads list
 . In Ransomware Resilience, select **Settings**. 
-. In the Settings dashboard, locate the Workload discovery dashboard. The card identifies the number of excluded workloads. Next to the excluded workloads, select **Manage**.
+. In the Settings dashboard, locate the Workload discovery dashboard. The card identifies the number of excluded workloads. To add workloads, next to the excluded workloads, select **Manage**.
 +
 image:settings-excluded-workload.png[Ransomware Resilience settings dashboard]
 +
@@ -112,15 +103,15 @@ image:settings-excluded-workload.png[Ransomware Resilience settings dashboard]
 . Select **Add**. 
 . Review the excluded workloads in the Excluded workloads page. While the workload is being added, a progress indicator displays next to its name. If a workload was not excluded successfully, it doesn't display on the page. 
 
-.Restore excluded workloads to Ransomware Resilience
+.Remove workloads from the excluded workload list
 . In Ransomware Resilience, select **Settings**. 
 . In the Settings dashboard, locate the Workload discovery dashboard. The card identifies the number of excluded workloads. Next to the excluded workloads, select **Manage**.
 +
 image:settings-excluded-workload.png[Screenshot of Ransomware Resilience settings dashboard.]
 . To remove an individual workload, select the action menu for the workload you want to remove from the excluded list.
 +
-To remove multiple workloads, select 
-. In the dialog, select **Remove** to confirm that you want to remove the workload from the excluded workload list.
+To remove multiple workloads, select the checkbox next to the workloads you want to remove then **Remove from excluded**. 
+. In the dialog, select **Remove** to confirm that you want to remove the workloads from the exclude list. 
 . If the workload is removed from the exluded workload list successfully, a success message appears on the Exlcuded workload page and the workload no longer appears as an excluded list. If the action fails, an error message appears; attempt the operation again. 
 image:exlcude-workload-remove-successful.png[Screenshot of successfully removing an excluded workload.]
 // 
