@@ -63,9 +63,9 @@ Refer to the https://docs.netapp.com/us-en/console-setup-admin/reference-permiss
 +
 Ransomware Resilience helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
 
-== Suspicious user behavior
+== Suspicious user behavior requirements
 
-For Ransomware Resilience to provide alerts about suspicious user behavior, you must configure a user activity agent. For more information, see link:suspicious-user-activity.html[Configure suspicious user activity detection in NetApp Ransomware Resilience].
+For Ransomware Resilience to provide alerts about suspicious user behavior, you must configure a user activity agent. To install a user activity agent, ensure your system meets link:suspicious-user-activity.html[the requirements].
 
 == Update non-admin user permissions in an ONTAP system
 
