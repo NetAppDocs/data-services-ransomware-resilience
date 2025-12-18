@@ -17,7 +17,7 @@ include::_include/console-role-admin.adoc[]
 == Understand ransomware protection strategies [[strategy]]
 // check term with PM
 
-Ransomware protection strategies encompass both _detection_ and _protection_ policies.
+Ransomware protection strategies encompass both _detection_, _protection_, and _replication_ policies.
 
 - **Detection policies** detect ransomware threats 
 
@@ -28,6 +28,10 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 * use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
 +
 * use Ransomware Resilience to manage detection, snapshots, and backups.
+
+- **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
++
+Currently, you can only replicate snapshots to on-premises ONTAP storage.
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:#create-a-protection-group[group file shares] to collectively protect volumes under one strategy. 
@@ -62,7 +66,6 @@ One of the first steps in protecting workloads is viewing your current workloads
 .Steps 
 
 . From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
-
 . Do one of the following: 
 +
 * From the Data Protection pane on the Dashboard, select *View all*. 
@@ -93,7 +96,6 @@ The Protection page shows the following information about workload protection:
 
 *Detection status*: A workload can have one of the following ransomware detection statuses: 
 
-//BFGF - there's a new ransomware option
 * *Learning*: A ransomware detection policy was recently assigned to the workload and Ransomware Resilience is scanning workloads. 
 * *Active*: A ransomware detection protection policy is assigned. 
 * *Not set*: A ransomware detection protection policy is not assigned. 
@@ -101,7 +103,12 @@ The Protection page shows the following information about workload protection:
 +
 TIP: When protection is enabled in Ransomware Resilience, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
 
+[NOTE]
+Suspicious user behavior activity and FPolicy (suspicious file extension) activity are listed separately from detection status. 
+
 *Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
+
+*Replication destination*: If you've configured snapshot replication, the names of the destination storage VMs and systems are listed. If there's no replication, this field displays "None."
 
 *Snapshot and backup policies*: This column shows the snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
 
@@ -119,7 +126,7 @@ Ransomware Resilience assigns an importance or priority to each workload during 
 * *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
 * *Standard*: Snapshot copies taken more than 1 per day 
 
-*Predefined detection policies* [[predefined]]
+=== Predefined detection policies [[predefined]]
 
 You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance. 
 
@@ -131,9 +138,9 @@ The **Encryption user extension** policy is the only predefined policy that supp
 | Policy level
 | Snapshot
 | Frequency
-| Retention (Days)
-| # of snapshot copies
-| Total Max # of snapshot copies
+| Retention (days)
+| Number of snapshot copies
+| Maximum number of snapshot copies
 
 .4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
  | Daily  | Every 1 day | 14 | 14 | 309 
@@ -152,6 +159,11 @@ The **Encryption user extension** policy is the only predefined policy that supp
  | Monthly | Every 30 days | 60 | 2 | 93 
 
 .4+| *Encryption user extension* | Quarter hourly | Every 30 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93
+
+ .4+| *Encryption user extension* | Quarter hourly | Every 30 min | 3| 72 | 93 
  | Daily | Every 1 day | 14 | 14 | 93  
  | Weekly | Every 1 week | 35 | 5  | 93 
  | Monthly | Every 30 days | 60 | 2 | 93
