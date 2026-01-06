@@ -18,9 +18,9 @@ The clean restore option is an alternative to the xref:custom-restore-task.html[
 
 == Overview 
 
-Clean recovery guides you through multi-step process that optimizes recovery. 
+Clean restore guides you through multi-step process that optimizes recovery. 
 
-* **Setup**: Clean recovery requires an isolated recovery environment. When you initiate a clean recovery, you select the isolated recovery environment, then Ransomware Resilience creates a clean room where all the subsequent operations for the workload are conducted. 
+* **Setup**: Clean restores require an isolated recovery environment. When you initiate a clean restore, you select the isolated recovery environment, then Ransomware Resilience creates a clean room where all the subsequent operations for the workload are conducted. 
 * **Analysis**: Ransomware Resilience investigates the workload for malware and reviews all restore points—snapshots and backups—from the seven days prior to the incident to recommend a recovery path. 
 +
 Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occurred on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
@@ -118,7 +118,7 @@ image:clean-restore-systems.png[Screenshot of systems selection interface.]
 .. Enter the *IP address range* and *Gateway* for the VMs. 
 +
 image:clean-restore-compute.png[Screenshot of compute selection interface.]
-. Expand the *VMs* section, which is populated based on your inputs in the *Compute* section. Select the VMs located on the ESXi host that you will use for scanning malware during the clean recovery. Provide the *User name* and *Password* for each VM you select. 
+. Expand the *VMs* section, which is populated based on your inputs in the *Compute* section. Select the VMs located on the ESXi host that you will use for scanning malware during the clean restore. Provide the *User name* and *Password* for each VM you select. 
 . Select **Add** to create the isolated recovery environment.
 --
 ====
@@ -133,13 +133,11 @@ You can modify the systems in an isolated recovery environment after it's create
 . In the Restore Type options, select **Clean restore** then **Next**. 
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-// The isolated recovery environment is automatically selected if one is already connected to the Console agent. Otherwise, you can select an isolated recovery environment
 . If you haven't peered the isolated recovery environment, accept the peering request in the production environment.
 . After the peering request is accepted, Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to data analysis, select **Next**. 
 . After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
-
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
