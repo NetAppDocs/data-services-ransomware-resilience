@@ -21,8 +21,8 @@ If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, 
 
 == Amazon FSx for NetApp ONTAP limitations
 
-The Amazon FSx for NetApp ONTAP system is supported in Ransomware Resilience. The following limitations apply to this system:
+The Amazon FSx for NetApp ONTAP system is supported in Ransomware Resilience. The following limitations apply to Amazon FSx for ONTAP:
 
-* Backup policies are not supported for Fsx for ONTAP. In this environment, you should perform backup operations using the Amazon FSx for backups. You can restore these workloads using Ransomware Resilience. 
+* Backup policies are not supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using the Amazon FSx for backups. You can restore these workloads using Ransomware Resilience. 
 * Restore operations are performed from snapshots only.
 

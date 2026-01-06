@@ -39,7 +39,8 @@ Ransomware Resilience provides full use of several NetApp technologies so that y
 
 * *Detect* anomalies that might be ransomware attacks.footnote:[Although it's possible that an attack might go undetected, our research indicates NetApp technology has resulted in a high degree of detection for certain file encryption-based ransomware attacks.] 
 
-* *Respond* to potential ransomware attacks by automatically initiating a tamper-proof NetApp ONTAP snapshot that is locked so that the copy cannot be deleted accidentally or maliciously. Your backup data will stay immutable and protected end to end from ransomware attacks at the source and in the destination.
+* *Respond* to potential ransomware attacks by automatically initiating a point-in-time snapshot that is locked so that the copy can't be deleted accidentally or maliciously. Your backup data will stay immutable and protected end-to-end from ransomware attacks at the source and in the destination.
+// by default it remains for 10 days; auto-delete after dismissal 
 
 * *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover specific volumes. Ransomware Resilience provides recommendations on the best options. 
 
@@ -65,12 +66,7 @@ Ransomware Resilience offers the following benefits:
 
 == Cost 
 
-NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
-
-NOTE: With the October 2024 release, new deployments of Ransomware Resilience offer a 30-day free trial. Previously, Ransomware Resilience provided a 90-day free trial. If you've enrolled already in the 90-day free trial, that trial is valid for the 90 days.
-
-//NetApp doesn’t charge you for using the trial version of Ransomware Resilience. The full version of Ransomware Resilience can be used with a NetApp license or an AWS subscription.
-
+New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
 
 If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 

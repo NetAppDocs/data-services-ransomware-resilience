@@ -5,15 +5,15 @@ keywords: ransomware protection, ransomware protection dashboard, detect ransomw
 summary: The NetApp Ransomware Resilience Dashboard provides information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, impacted workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. You can also use the Dashboard to review and act on protection recommendations.
 ---
 
-= Monitor workload health using the NetAPp Ransomware Resilience Dashboard
+= Monitor workload health using the NetApp Ransomware Resilience Dashboard
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The NetApp Ransomware Resilience Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk. 
+The NetApp Ransomware Resilience Dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.
 
-Use the Dashboard to review protection suggestions, change settings, download reports, and view documentation.
+Use the Dashboard to review protection suggestions, change settings, and download reports.
 
 include::_include/console-role-admin-viewer.adoc[]
 
@@ -30,7 +30,7 @@ image:screen-dashboard.png[Dashboard page]
 
 * *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads]. 
 +
-TIP: Select the "i" tooltip to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket. 
+TIP: Select the "i" icon to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket. 
 
 * *Alerts and workload data recovery*: Select *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
 +
@@ -117,7 +117,7 @@ Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 +
 The recommendation clears from the To Do list and appears on the Dismissed list. 
 +
-TIP: You can later change a dismissed item to a To Do item. When you mark an item completed or you change a dismissed item to a To Do action, the Total actions increases by 1.
+TIP: You can later change a dismissed item to a To Do item. When you mark an item as completed or you change a dismissed item to a To Do action, the Total actions count increases by 1.
 
 . To review information on how to act on the recommendations, select the *information* icon.
 
@@ -132,16 +132,16 @@ You can download CSV files from any of the main menu options:
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads that Ransomware Resilience marks as "Restore needed", "In progress," "Restore failed," and "Successfully restored."
 
-Downloading a CSV file from a page includes only that page's data.
+Downloading a CSV file from a page includes only the data from that page.
 
 The CSV files include data for all workloads on all Console systems. 
 
 .Steps
 
-. From Ransomware Resilience dashboard, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
+. From the Ransomware Resilience dashboard, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
 
 . Do one of the following:
-* From the page, select the *Download* image:button-download.png[Download option] option. 
+* From the page, select the *Download* image:button-download.png[Image of the download option icon] option. 
 
 * From the Ransomware Resilience menu, select *Reports*. 
 
