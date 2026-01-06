@@ -12,7 +12,7 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 :imagesdir: ./media/
 
 [.lead]
-With a clean restore, NetApp Ransomware Resilience enables you to create an isolated recovery environment that sequesters the workload to identify and clean affected files. The clean restore identifies optimized recovery paths to help minimize data loss and get your workloads back online in the shortest amount of time possible.
+With a clean restore, NetApp Ransomware Resilience enables you to create an isolated recovery environment that sequesters the workload to identify and clean affected files. The clean restore identifies optimized recovery paths to minimize data loss and get your workloads back online in the shortest amount of time possible.
 
 The clean restore option is an alternative to the xref:custom-restore-task.html[custom restore option]. 
 
@@ -20,21 +20,18 @@ The clean restore option is an alternative to the xref:custom-restore-task.html[
 
 Clean restore guides you through multi-step process that optimizes recovery. 
 
-* **Setup**: Clean restores require an isolated recovery environment. When you initiate a clean restore, you select the isolated recovery environment, then Ransomware Resilience creates a clean room where all the subsequent operations for the workload are conducted. 
-* **Analysis**: Ransomware Resilience investigates the workload for malware and reviews all restore points—snapshots and backups—from the seven days prior to the incident to recommend a recovery path. 
+* **SETUP**: Clean restores require an isolated recovery environment. When you initiate a clean restore, you select the isolated recovery environment, then Ransomware Resilience creates a clean room where all the subsequent operations for the workload are conducted. 
+* **ANALYSIS**: Ransomware Resilience investigates the workload for malware and reviews all restore points—snapshots and backups—from the seven days prior to the incident to recommend a recovery path. 
 +
 Once a restore point is discovered without impacted files, all earlier restore points are skipped. For example, if the ransomware event occurred on October 10, and a restore point was discovered on October 7 at 10:21 AM with no impacted files, all restore points prior to October 7 at 10:21 AM are skipped. 
 +
 The analysis step also displays the number of files reviewed, denoting which are impacted and which are not. 
-* **Plan**: After the analysis, Ransomware Resilience suggests two recovery plans:
-+
-** Least data loss
-** Latest unimpacted restore point.
+* **PLAN**: After the analysis, Ransomware Resilience suggests two recovery plans *least data loss* or *latest unimpacted restore point*.
 +
 In the planning stage, you can compare the different restore plans. The planning menu captures the amount of data loss in hours for every file in the restore plan, the recommended restore point and date. You can also view file histories in the planning step, to see when ransomware events impacted the files and how the recovery point relates in time to that event. 
-* **Cleaning**: Ransomware Resilience iterates through every file in the impacted environment, cleaning files infected with malware. If any files can't be cleaned, they are excluded from the recovery and quarantined to a separate location. 
-* **Recovery**: Ransomware Resilience recovers the workload to its original destination. You also have the option to save the original workload before releasing the workloads and returning to normal operations. 
-* **End**: Ransomware Resilience provides a detailed summary of the process and closes the clean room, freeing the isolated recovery room for other clean restores.  
+* **CLEANING**: Ransomware Resilience iterates through every file in the impacted environment, cleaning files infected with malware. If any files can't be cleaned, they are excluded from the recovery and quarantined to a separate location. 
+* **RECOVERY**: Ransomware Resilience recovers the workload to its original destination. You also have the option to save the original workload before releasing the workloads and returning to normal operations. 
+* **END**: Ransomware Resilience provides a detailed summary of the process and closes the clean room, freeing the isolated recovery room for other clean restores.  
 
 == Supported configurations
 
@@ -50,7 +47,7 @@ You can create an isolated recovery environment in the cloud or on-premises. Cur
 
 * For Cloud Volumes ONTAP, the Console agent and Cloud Volumes ONTAP instance must be set up in a dedicated virtual private cloud. 
 * You must be running ONTAP 9.15.1 or later. 
-* On-premises sources must be AFF or FAS systems. 
+* On-premises environments must be AFF or FAS systems. 
 * For AWS deployments, you must have administrator access to the AWS account. AWS credentials must provide full access to create the isolated recovery environment. 
 
 // SOURCE: Amazon FSx for NetApp ONTAP, Google Cloud NetApp Volumes, Cloud Volumes ONTAP with Azure; Cloud Volumes ONTAP with Google Cloud. 
@@ -62,7 +59,7 @@ You can create an isolated recovery environment in the cloud or on-premises. Cur
 // * Number of isolated recovery environments per console agent
 * If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
 * When you configure an isolated recovery environment, it's connected to a Console agent. Workloads must be cleaned in an isolated recovery environment hosted on the same Console agent. 
-* You can monitor the status of active and queued clean restore operations at any time in the **Recovery** dashboard of Ransomware Resilience. 
+* You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
 
 == Sizing and best practices 
 
@@ -141,6 +138,9 @@ image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysi
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
++
+image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
+
 . After you choose your restore point, select **Create restore point** to begin cleaning your files. 
 . Ransomware Resilience begins cleaning the workload. 
 //If cleaning of any file fails, those files are excluded from the recovery. Select if you want to quarantine those files by saving them to another location. 
