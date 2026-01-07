@@ -32,6 +32,7 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 - **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
 +
 Currently, you can only replicate snapshots to on-premises ONTAP storage.
+// can this be enabled with SnapCenter or Backup and Recovery?
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:#create-a-protection-group[group file shares] to collectively protect volumes under one strategy. 
@@ -168,8 +169,13 @@ The **Encryption user extension** policy is the only predefined policy that supp
  | Weekly | Every 1 week | 35 | 5  | 93 
  | Monthly | Every 30 days | 60 | 2 | 93
 
-|===
+ .4+| *Critical replication policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
 
+|===
+// check replication values
 
 //== Change workload details
 
@@ -281,6 +287,7 @@ If snapshot or backup policies do not exist on the workload, you can create a ra
 * Snapshot policy 
 * Backup policy 
 * Ransomware detection policy
+* Secondary replication to ONTAP
 
 .Steps to create a ransomware protection strategy [[steps]]
 
@@ -318,12 +325,15 @@ Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more ab
 ** *Snapshot schedules*: Choose schedule options, the number of snapshot copies to keep, and select to enable the schedule. 
 //+
 //image:screen-protection-strategy-add-backups.png[Add strategy page showing the Backup section]
+* *Replication policy*:
+** *Replication policy basename*: Enter a new name or choose an existing one. The basename is the prefix appended to all snapshots. 
+** *Replication schedules*: Toggle the frequencies you want to enable (hourly, daily, weekly, or monthly) and set the retention value (the number of replicated snapshots to keep) for each schedule you enable. 
+
 * *Backup policy*: 
 ** *Backup policy basename*: Enter a new or choose an existing name. 
 //** *Backup locking*: Choose this to prevent backups on secondary storage from being modified or deleted for a certain period of time. This is also called _immutable storage_. 
 
 ** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
-
 +
 TIP: To enable backup locking on secondary storage, configure your backup destinations using the *Settings* option. For details, see link:rp-use-settings.html[Configure settings].
 
@@ -372,6 +382,7 @@ image:screen-protection.png[Manage strategy page]
 . Ransomware Resilience detects if there are existing active Backup and Recovery or SnapCenter policies. To replace the existing Backup and Recovery or SnapCenter policies, select the **Replace existing policies ** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
 
 . Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
+. If your strategy includes replication, select the **Destination system** and **Destination storage VM**. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
 .. If your protection strategy includes user behavior detection, select a User activity agent in your environment to host the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.
 . Review the new protection strategy then select **Protect** to apply it. 
