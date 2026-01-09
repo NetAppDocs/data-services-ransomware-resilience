@@ -80,13 +80,8 @@ Review the cloud network access rules for your relevant geography (Asia Pacific,
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent
-a| 
-* <site_name>.cs01-ap-1.cloudinsights.netapp.com
-* <site_name>.c01-ap-1.cloudinsights.netapp.com
-* <site_name>.c02-ap-1.cloudinsights.netapp.com
-|Access to Ransomware Resilience
-|TCP|443|User activity agent|agentlogin.cs01-ap-1.cloudinsights.netapp.com
+|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
+|TCP|443|User activity agent| Ransomware Resilience service
 |Access to authentication services
 |===
 
@@ -95,13 +90,8 @@ a|
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent
-a|
-* <site_name>.cs01-eu-1.cloudinsights.netapp.com
-* <site_name>.c01-eu-1.cloudinsights.netapp.com
-* <site_name>.c02-eu-1.cloudinsights.netapp.com
-|Access to Ransomware Resilience
-|TCP|443|User activity agent|agentlogin.cs01-eu-1.cloudinsights.netapp.com
+|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
+|TCP|443|User activity agent| Ransomware Resilience service
 |Access to authentication services
 |===
 
@@ -110,12 +100,8 @@ a|
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent
-a|
-* <site_name>.cs01.cloudinsights.netapp.com 
-* <site_name>.c01.cloudinsights.netapp.com 
-* <site_name>.c02.cloudinsights.netapp.com|Access to Ransomware Resilience
-|TCP|443|User activity agent|agentlogin.cs01.cloudinsights.netapp.com|Access to authentication services
+|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
+|TCP|443|User activity agent| Ransomware Resilience service |Access to authentication services
 |===
 
 === In-network rules
