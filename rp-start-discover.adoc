@@ -80,7 +80,7 @@ If you have already discovered systems, you can find new or previously unselecte
 
 //. Do one of the following: 
 //* From the Dashboard, select *Add new* and in the tooltip that appears, select *Add new systems*. 
-. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. From the drop-down menu, select *Settings*. 
+. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]`...` option at the top right. From the drop-down menu, select *Settings*. 
 
 . In the Workload discovery card, select *Discover workloads*. Discovery can take a few minutes. A loading icon displays the progress. 
 . Ransomware Resilience discovers both supported and unsupported systems. It does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to discover workloads. 
@@ -88,7 +88,7 @@ If you have already discovered systems, you can find new or previously unselecte
 
 == Exclude workloads 
 
-Ransomware Resilience allows your to exclude specific workloads in a system if you won't want to enable them for ransomware protection and detection. 
+Ransomware Resilience allows your to exclude specific workloads in a system from ransomware protection and detection. 
 
 You can only exclude workloads that are supported and have been discovered successfully. You can modify the list of excluded workloads at any time. You aren't billed for workloads excluded from Ransomware Resilience. 
 
@@ -99,8 +99,7 @@ You can only exclude workloads that are supported and have been discovered succe
 image:settings-excluded-workload.png[Ransomware Resilience settings dashboard]
 +
 . In the Excluded workloads page, select **Add**. 
-. Select the workloads you want to exclude. 
-. Select **Add**. 
+. Select the workloads you want to exclude then **Add**. 
 . Review the excluded workloads in the Excluded workloads page. While the workload is being added, a progress indicator displays next to its name. If a workload was not excluded successfully, it doesn't display on the page. 
 
 .Remove workloads from the excluded workload list
@@ -114,6 +113,4 @@ To remove multiple workloads, select the checkbox next to the workloads you want
 . In the dialog, select **Remove** to confirm that you want to remove the workloads from the exclude list. 
 . If the workload is removed from the exluded workload list successfully, a success message appears on the Exlcuded workload page and the workload no longer appears as an excluded list. If the action fails, an error message appears; attempt the operation again. 
 image:exlcude-workload-remove-successful.png[Screenshot of successfully removing an excluded workload.]
-// 
-
 
