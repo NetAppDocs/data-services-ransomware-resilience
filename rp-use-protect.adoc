@@ -19,7 +19,7 @@ include::_include/console-role-admin.adoc[]
 
 Ransomware protection strategies encompass both _detection_, _protection_, and _replication_ policies.
 
-- **Detection policies** detect ransomware threats 
+- **Detection policies** identify ransomware threats 
 
 - **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
 +
@@ -66,7 +66,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 
 .Steps 
 
-. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+. From the Console's left navigation, select *Protection* > *Ransomware Resilience*. 
 . Do one of the following: 
 +
 * From the Data Protection pane on the Dashboard, select *View all*. 
@@ -123,9 +123,9 @@ Suspicious user behavior activity and FPolicy (suspicious file extension) activi
 
 Ransomware Resilience assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
 
-* *Critical*: Snapshot copies taken more than 1 per hour (highly aggressive protection schedule)
-* *Important*: Snapshot copies taken less than 1 per hour but greater than 1 per day
-* *Standard*: Snapshot copies taken more than 1 per day 
+* *Critical*: More than one snapshot copy is taken per hour (highly aggressive protection schedule)
+* *Important*: Snapshots copies are created less frequently than every hour but more frequently than every day 
+* *Standard*: Snapshot copies are taken more than once per day
 
 === Predefined detection policies [[predefined]]
 
@@ -133,6 +133,8 @@ You can choose one of the following Ransomware Resilience predefined policies, w
 
 [NOTE]
 The **Encryption user extension** policy is the only predefined policy that supports suspicious user behavior detection. 
++
+The **Critical replication policy** is the  only predefined policy that supports replicating snapshots to ONTAP. 
 
 [cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
 |===
@@ -175,8 +177,6 @@ The **Encryption user extension** policy is the only predefined policy that supp
  | Monthly | Every 30 days | 60 | 2 | 309 
 
 |===
-// check replication values
-
 //== Change workload details
 
 //You can review workload details such as the workload name, protection policies, and storage information. 
@@ -309,9 +309,9 @@ NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilien
 
 * *Detection policy*: 
 ** *Policy*: Choose one of the predesigned detection policies. 
-** *Primary detection*: Enable ransomware detection to have Ransomware Resilience detect potential ransomware attacks. 
+** *Primary detection*: Enable Ransomware Resilience to detect potential ransomware attacks. 
 ** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
-** *Block file extensions*: Enable this to have Ransomware Resilience block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
+** *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
 +
 If you want to change the blocked file extensions, edit them in System Manager. 
 
@@ -357,7 +357,7 @@ image:screen-protection.png[Manage strategy page]
 . To leave your existing Backup and Recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . To see details of the SnapCenter policies, select the *Down arrow*.
 . Select the detection settings you want:
-    *Encyrption detection*
+    *Encryption detection*
     *Suspicious user behavior detection*
     *Block suspicious file extensions* 
 . Select **Next**.
@@ -438,8 +438,12 @@ TIP: To see more details on the workloads, scroll to the right.
 image:screen-protection-groups-policy.png[Add protection group - Policy page]
 
 . Select the policy to govern the protection for this group. To confirm, select *Next*. 
-.. If you need to configure a backup policy, choose one then select **Next**. 
-.. If your detection policy includes user behavior detection, select the data collector you want to use then **Next**. 
+. If the protection strategy includes replication, review the replication settings. 
+.. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. 
++
+To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**. 
+. If you need to configure a backup policy, choose one then select **Next**. 
+. If your detection policy includes user behavior detection, select the data collector you want to use then **Next**. 
 . Review the selections for the protection group. 
 . To finalize creation of the protection group, select *Add*. 
 
