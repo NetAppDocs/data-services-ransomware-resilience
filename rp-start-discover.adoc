@@ -71,6 +71,9 @@ image:screen-dashboard.png[Ransomware Resilience Dashboard]
 +
 link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
 
+[TIP]
+If you find there are volumes not displaying for the system you've discovered, the volumes might be unsupported. To find a list of unsupported volumes, go to the **Settings** menu then select the action menu in the Workload discovery card to download a JSON report of supported and unsupported volumes. 
+
 == Discover newly created workloads for previously selected systems
 
 If you have already selected systems for discovery, you can discover newly created workloads for those environments from the Dashboard.
