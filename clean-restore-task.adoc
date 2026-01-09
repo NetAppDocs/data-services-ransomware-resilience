@@ -134,7 +134,7 @@ You can modify the systems in an isolated recovery environment after it's create
 
 == Perform a clean restore
 
-. In the **Recovery** section, select the file share you want to restore. Select **Restore**. 
+. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
 . In the Restore Type options, select **Clean restore** then **Next**. 
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
@@ -148,10 +148,10 @@ To view granular file event data, select a file to analyze its encryption status
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
 . After you choose your restore point, select **Next** to begin cleaning your files. 
-. Ransomware Resilience begins cleaning the file share. 
+. Ransomware Resilience begins cleaning the workload. 
 +
 When the cleaning completes, select **Start recovery** to initiate the recovery. 
-. Choose if you want to save the original file share. To forgo saving the original file share, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
+. Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
 . Select **Start recovery** to initiate the recovery. 
 . When the recovery completes, select **Next** to move to the final phase. 
 . Select **Re
