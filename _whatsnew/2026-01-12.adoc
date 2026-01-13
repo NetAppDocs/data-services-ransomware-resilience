@@ -6,7 +6,7 @@ For more information, see link:https://docs.netapp.com/us-en/data-services-ranso
 
 === Exclude workloads from Ransomware Resilience
 
-Ransomware Resilience now supports excluding specific workloads in a system from protection and the Ransomware Resilience dashboard. You can exclude workloads after discovery, and re-include them if you want to add ransomware protection. You aren't billed for exlcuded workloads. 
+Ransomware Resilience now supports excluding specific workloads in a system from protection and the Ransomware Resilience dashboard. You can exclude workloads after discovery, and re-include them if you want to add ransomware protection. You aren't billed for excluded workloads. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads[Exclude workloads^].
 

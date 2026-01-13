@@ -57,7 +57,7 @@ An alert incident can have the following states:
 * *In review*: You can mark an incident as in review while you evaluate it. 
 * *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
 +
-CAUTION: After you dismiss an attack, you can't revert it's status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+CAUTION: After you dismiss an attack, you can't revert its status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 * *Dismissing*: The incident is in the process of being dismissed. 
 * *Resolved*: The incident has been fixed.
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
