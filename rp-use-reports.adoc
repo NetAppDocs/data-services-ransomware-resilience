@@ -20,7 +20,6 @@ include::_include/console-role-admin-viewer.adoc[]
 *What data can you download?*
 You can download files from any of the main menu options: 
 
-* **Summary**: Includes lists of supported and unsupported workloads, recommended actions to improve your cyber resiliency posture, and information captured in the Ransomware Resilience dashboard. 
 * *Protection*: Includes the status and details of all workloads, including the total number protected and at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
