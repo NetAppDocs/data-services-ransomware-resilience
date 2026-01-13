@@ -12,13 +12,6 @@ Ransomware Resilience now supports excluding specific workloads in a system from
 For more information, see link:rp-start-discover.html#exclude-workloads[Exclude workloads].
 //For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads[Exclude workloads^].
 
-=== Unsupported volumes
-
-Ransomware Resilience reports now capture information about supported and unsupported volumes in the **Summary** report. Use this information to diagnose why volumes in a system might be ineligible for ransomware protection. 
-
-For more information, see link:rp-use-reports.html[Download reports].
-// //For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html[Download reports in Ransomware Resilience^].
-
 === Mark alerts as in review
 
 Ransomware Resilience now allows you to mark alerts as "In review." Use the "In review" label to improve clarity across your team when triaging and managing active ransomware threats. 
