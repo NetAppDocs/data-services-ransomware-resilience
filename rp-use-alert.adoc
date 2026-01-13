@@ -54,6 +54,7 @@ An alert can have one of the following statuses:
 An alert incident can have the following states: 
 
 * *New*: All incidents are marked "new" when they are first identified. 
+* *In review*: You can mark an incident as in review while you evaluate it. 
 * *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
 +
 CAUTION: After you dismiss an attack, you can't revert it's status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
