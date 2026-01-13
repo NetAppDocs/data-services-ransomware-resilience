@@ -1,0 +1,17 @@
+=== Replicate snapshots to ONTAP
+
+Ransomware Resilience now supports adding replication of snapshots to a secondary ONTAP site. You can create a ransomware protection strategy that includes replication or use the predefined strategy. With protection groups that use a replication policy, you can replicate to the same destination or different destinations for every workload. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Protect workloads in Ransomware Resilience^].
+
+=== Exclude workloads from Ransomware Resilience
+
+Ransomware Resilience now supports excluding specific workloads in a system from protection and the Ransomware Resilience dashboard. You can exclude workloads after discovery, and re-include them if you want to add ransomware protection. You aren't billed for excluded workloads. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#exclude-workloads[Exclude workloads^].
+
+=== Mark alerts as in review
+
+Ransomware Resilience now allows you to mark alerts as "In review." Use the "In review" label to improve clarity across your team when triaging and managing active ransomware threats. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Manage alerts in Ransomware Resilience^].
