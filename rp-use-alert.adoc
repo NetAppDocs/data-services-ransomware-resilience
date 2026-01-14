@@ -57,7 +57,7 @@ An alert incident can have the following states:
 * *In review*: You can mark an incident as in review while you evaluate it. 
 * *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
 +
-CAUTION: After you dismiss an attack, you can't revert it's status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
+CAUTION: After you dismiss an attack, you can't revert its status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
 * *Dismissing*: The incident is in the process of being dismissed. 
 * *Resolved*: The incident has been fixed.
 * *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
@@ -155,7 +155,8 @@ Looking at the Alerts tab, you can identify whether there is malicious activity 
 You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
 [NOTE]
-If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Security agents requires a pairing relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing.
+If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Security agents requires a pairing relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing. +
+If you're not using DII, you can benefit from suspicious user behavior detection features. Ensure you've link:suspicious-user-activity.html[enabled suspicious user activity detection] and have configured the appropriate agents. 
 
 === View malicious activity
 
