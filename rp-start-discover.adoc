@@ -111,6 +111,5 @@ image:settings-excluded-workload.png[Screenshot of Ransomware Resilience setting
 +
 To remove multiple workloads, select the checkbox next to the workloads you want to remove then **Remove from excluded**. 
 . In the dialog, select **Remove** to confirm that you want to remove the workloads from the exclude list. 
-. If the workload is removed from the exluded workload list successfully, a success message appears on the Exlcuded workload page and the workload no longer appears as an excluded list. If the action fails, an error message appears; attempt the operation again. 
-image:exlcude-workload-remove-successful.png[Screenshot of successfully removing an excluded workload.]
-
+. If the workload is removed from the exluded workload list successfully, a success message appears on the Excluded workload page and the workload no longer appears in the list of excluded workloads. If the action fails, an error message appears; attempt the operation again. 
+image:exclude-workload-remove-successful.png[Screenshot of successfully removing an excluded workload.]
