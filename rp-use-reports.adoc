@@ -13,7 +13,7 @@ summary: Using NetApp Ransomware Resilience, you can download reports that show 
 [.lead]
 You can export protection data and download the CSV or JSON files that show details of attack readiness drills, protection, alerts, and recovery. 
 
-TIP: Before you download the files, you should refresh the dashboard to capture the most recent data in your reports.  
+TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 
 include::_include/console-role-admin-viewer.adoc[]
 
