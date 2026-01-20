@@ -439,10 +439,8 @@ image:screen-protection-groups-policy.png[Add protection group - Policy page]
 
 . Select the policy to govern the protection for this group. To confirm, select *Next*. 
 . If the protection strategy includes replication, review the replication settings. 
-.. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. 
-+
-To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**. 
-. If you need to configure a backup policy, choose one then select **Next**. 
+.. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. + To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**. 
+. To configure a backup policy, choose one then select **Next**. 
 . If your detection policy includes user behavior detection, select the data collector you want to use then **Next**. 
 . Review the selections for the protection group. 
 . To finalize creation of the protection group, select *Add*. 
