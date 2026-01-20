@@ -66,10 +66,42 @@ You must be running ONTAP 9.11.1 or later.
 * When you initiate a clean resotre, the original volume is unmounted, which can disrupt IO access. 
 * [Forthcoming point about cost cost pending legal discussion]
 
+== Requirements
+
+* For on-premises deployments:
+
+** The vCenter must be version 7.0 or later with at least one data center. 
+** The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
+** The provided vCenter credentials must have permissions to discover resources and clone VMs. 
+
+
+Operating System: Ubuntu Linux 20.04 or later 
+
+Status: Powered on 
+
+VMware Tools: Installed and running 
+
+Network Configuration: IP configured 
+
+Services: 
+
+SSH enabled 
+
+nfs-common installed 
+
+Docker installed and running 
+
+Storage: Minimum of 40GB free space 
+
+
+
 == Sizing and best practices 
 
-* Engineering recommendations to go here. 
-
+* Windows VMs should have 20 GB of free space. 
+    * The OS should be Windows Server 2022 or 2025. 
+    * VMware Tools should be installed and running. 
+    * WinRM must be enabled. 
+    * The IP should be configured. 
 == Create an isolated recovery environment
 
 Before conducting a clean restore, you must create an isolated recovery room. 
