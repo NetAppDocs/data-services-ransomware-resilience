@@ -13,13 +13,14 @@ summary: Using NetApp Ransomware Resilience, you can download reports that show 
 [.lead]
 You can export protection data and download the CSV or JSON files that show details of attack readiness drills, protection, alerts, and recovery. 
 
-TIP: Before you download the files, you should refresh the dashboard to capture the most recent data in your reports.  
+TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 
 include::_include/console-role-admin-viewer.adoc[]
 
 *What data can you download?*
 You can download files from any of the main menu options: 
 
+* **Summary**: Includes lists of supported and unsupported workloads, recommended actions to improve your cyber resiliency posture, and information captured in the Ransomware Resilience dashboard. 
 * *Protection*: Includes the status and details of all workloads, including the total number protected and at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
