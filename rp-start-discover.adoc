@@ -72,6 +72,9 @@ If you've added workloads to a previously discovered system, you need to reiniti
 
 . From the Dashboard, select the *Refresh* icon to find new workloads. 
 
+[TIP]
+If you find there are volumes not displaying for the system you've discovered, the volumes might be unsupported. To find a list of unsupported volumes, go to the **Settings** menu then select the action menu in the Workload discovery card to download a JSON report of supported and unsupported volumes. 
+
 == Discover new systems
 
 If you have already discovered systems, you can find new or previously unselected ones.

@@ -1,6 +1,6 @@
 === Replicate snapshots to ONTAP
 
-Ransomware Resilience now supports adding replication of snapshots to a secondary ONTAP site. You can create a ransomware protection strategy that includes replication or use the predefined strategy. 
+Ransomware Resilience now supports adding replication of snapshots to a secondary ONTAP site.  With protection groups that use a replication policy, you can replicate to the same destination or different destinations for every workload.  You can create a ransomware protection strategy that includes replication or use the predefined strategy. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Protect workloads in Ransomware Resilience^].
 
