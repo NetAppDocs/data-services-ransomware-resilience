@@ -61,6 +61,9 @@ This page shows Console agents with systems that were not selected earlier, newl
 
 . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
 
+[TIP]
+From the Workload discovery card in Settings, select the action menu `...` then **Download report (JSON)** to review a list of supported and unsupported workloads in your systems. 
+
 == Suspicious user activity
 
 In the User activity card, you can create and manage the user activity agent that is required to detect suspicious user activity.

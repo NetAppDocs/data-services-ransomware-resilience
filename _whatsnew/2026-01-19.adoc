@@ -1,0 +1,5 @@
+=== Unsupported volumes
+
+Ransomware Resilience reports now capturing information about supported and unsupported volumes in the **Summary** report. Use this information to diagnose why volumes in a system might be ineligible for ransomware protection. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html[Download reports in Ransomware Resilience^].
