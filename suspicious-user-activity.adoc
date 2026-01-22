@@ -26,7 +26,9 @@ A user activity agent can host multiple data collectors. Data collectors send da
 Collectors are configured in the Ransomware Resilience settings. 
 
 *Required Console role*
-To activate suspicious user activity detection, you need the Organization admin role. For subsequent configurations for suspicious user activity, you need the Ransomware Resilience user behavior admin role. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
+To activate suspicious user activity detection, you need the **Organization admin role**. For subsequent suspicious user activity configurations, you need the **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
+
+Ensure each role is applied at the organization level.
 
 == System requirements
 
