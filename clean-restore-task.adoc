@@ -38,6 +38,10 @@ You can also view file histories in the planning step, to see when ransomware ev
 * **RESTORE**: Ransomware Resilience restores the clean data into the source environment. 
 * **END**: Ransomware Resilience provides a detailed summary of the process and closes the clean room. 
 
+== Architecture
+
+Diagrams will go here. 
+
 == Supported configurations
 
 You can create an isolated recovery environment in the cloud or on-premises. Currently, the following configurations are supported:
@@ -64,13 +68,23 @@ You must be running ONTAP 9.11.1 or later.
 * If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
 * You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
 * When you initiate a clean resotre, the original volume is unmounted, which can disrupt IO access. 
-* [Forthcoming point about cost cost pending legal discussion]
+* Enabling clean recovery may incur third party cloud provider charges, some of which may reoccur until the environments you create with this feature are deleted. Examples of third-party charges include the creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example:
++
+For workloads that needs to be recovered, twos AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware.
++
+Clean recovery in Cloud Volumes ONTAP instances also creates metadata volumes and snapshot clones for analysis. 
 
-== RequIsolated recovery environmentments
+== Requirements
 
-=== Cloud 
+Ensure you meet the requirements for your chosen clean recovery deployment type.
 
-* For the clean room's SVM data LIP, provide an IP address. 
+[role="tabbed-block"]
+====
+.Cloud
+--
+Follow these requirements for cloud-to-cloud or on-premises-to-cloud deployments. 
+
+* For the clean room's SVM data LIF, provide an IP address. 
 ** For Cloud Volumes ONTAP with AWS using a cloud to cloud clean recovery, ensure the IP address is allocated to the Elastic Network Interface. 
 * For the isolated recovery environment, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
 ** The VPC should have a minimum capacity of 64 IP address (a /26 netmask). 
@@ -186,48 +200,38 @@ You must be running ONTAP 9.11.1 or later.
 
 * Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean recovery data LIF IP. The firewall should be open for ingress from the Isolated recovery environment CIDR range:
 
-* Isolated recovery environment route table should be the main route table in the Isolated recovery environment VPC.
+* Isolated recovery environment route table should be the main route table in the isolated recovery environment VPC.
 * The isolated recovery environment route table should allow routing to the clean recovery data LIP IP address. 
 * The isolated recovery environment route table should also allow a route to public internet for the isolated recovery environment agent to work.
 // what's the agent? 
+--
 
+.On-premises
+--
+For isolated recoery environments deployed on-premises:
 
+* The vCenter must be version 7.0 or later with at least one data center. 
+* The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
+* The provided vCenter credentials must have permissions to discover resources and clone VMs. 
 
-=== On-premises
-
-
-
-
-* For on-premises deployments:
-
-** The vCenter must be version 7.0 or later with at least one data center. 
-** The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
-** The provided vCenter credentials must have permissions to discover resources and clone VMs. 
-
-* The operating system must be Ubuntu Linux 20.04 or later.
-* The on-premises system must be powered on.
+* For Linux VMs:
+** The operating system must be Ubuntu Linux 20.04 or later.
+** The on-premises system must be powered on.
 * VMware Tools must be installed and running. 
-* SSH must be enabled.
-* You must install `nfs-common`
-Services: 
+** SSH must be enabled.
+** You must have installed nfs-common.
+** Docker must be installed and running. 
+** You must have a minimum of 40 GB of free space. 
 
-SSH enabled 
+* For Windows VMs:
+** Windows VMs should have 20 GB of free space. 
+** The OS should be Windows Server 2022 or 2025. 
+** VMware Tools should be installed and running. 
+** WinRM must be enabled. 
+** The IP should be configured. 
+--
+====
 
-nfs-common installed 
-
-Docker installed and running 
-
-Storage: Minimum of 40GB free space 
-
-
-
-== Sizing and best practices 
-
-* Windows VMs should have 20 GB of free space. 
-    * The OS should be Windows Server 2022 or 2025. 
-    * VMware Tools should be installed and running. 
-    * WinRM must be enabled. 
-    * The IP should be configured. 
 == Create an isolated recovery environment
 
 Before conducting a clean restore, you must create an isolated recovery room. 
