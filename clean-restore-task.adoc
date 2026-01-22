@@ -66,7 +66,137 @@ You must be running ONTAP 9.11.1 or later.
 * When you initiate a clean resotre, the original volume is unmounted, which can disrupt IO access. 
 * [Forthcoming point about cost cost pending legal discussion]
 
-== Requirements
+== RequIsolated recovery environmentments
+
+=== Cloud 
+
+* For the clean room's SVM data LIP, provide an IP address. 
+** For Cloud Volumes ONTAP with AWS using a cloud to cloud clean recovery, ensure the IP address is allocated to the Elastic Network Interface. 
+* For the isolated recovery environment, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
+** The VPC should have a minimum capacity of 64 IP address (a /26 netmask). 
+** The VPC must allow public internet access. Otherwise, the Console agent won't work 
+* Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean recovery in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to clean recovery. 
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "EC2CreateAccess",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "EC2ReadPermissions",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "IAMFullAccess",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                }
+            }
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Effect": "Allow",
+            "Action": [
+                "s3:CreateBucket"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+        },
+        {
+            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+        }
+    ]
+}
+```
+
+
+
+[cols="1,1,1,1", options="header"]
+|===
+| Protocol | Destination Port | Source | Purpose
+
+| TCP & UDP
+| 2049
+| Isolated recovery environment VPC CIDR Range
+| NFS v4 access from Isolated recovery environment
+
+| TCP & UDP
+| 111
+| Isolated recovery environment VPC CIDR Range
+| NFS v3 access from Isolated recovery environment
+
+| TCP & UDP
+| 635
+| Isolated recovery environment VPC CIDR Range
+| NFS v3 access from Isolated recovery environment
+
+| TCP & UDP
+| 4045
+| Isolated recovery environment VPC CIDR Range
+| NFS v3 access from Isolated recovery environment
+
+| TCP & UDP
+| 4046
+| Isolated recovery environment VPC CIDR Range
+| NFS v3 access from Isolated recovery environment
+
+| TCP & UDP
+| 4049
+| Isolated recovery environment VPC CIDR Range
+| NFS v3 access from Isolated recovery environment
+|===
+
+* Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean recovery data LIF IP. The firewall should be open for ingress from the Isolated recovery environment CIDR range:
+
+* Isolated recovery environment route table should be the main route table in the Isolated recovery environment VPC.
+* The isolated recovery environment route table should allow routing to the clean recovery data LIP IP address. 
+* The isolated recovery environment route table should also allow a route to public internet for the isolated recovery environment agent to work.
+// what's the agent? 
+
+
+
+=== On-premises
+
+
+
 
 * For on-premises deployments:
 
@@ -74,15 +204,11 @@ You must be running ONTAP 9.11.1 or later.
 ** The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
 ** The provided vCenter credentials must have permissions to discover resources and clone VMs. 
 
-
-Operating System: Ubuntu Linux 20.04 or later 
-
-Status: Powered on 
-
-VMware Tools: Installed and running 
-
-Network Configuration: IP configured 
-
+* The operating system must be Ubuntu Linux 20.04 or later.
+* The on-premises system must be powered on.
+* VMware Tools must be installed and running. 
+* SSH must be enabled.
+* You must install `nfs-common`
 Services: 
 
 SSH enabled 
