@@ -86,7 +86,7 @@ image:screen-alerts.png["Alerts page"]
 . Continue with one of the following: 
 ** <<Detect malicious activity and anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-** <<Dismiss incidents>>.
+** <<Dismiss incidents that are not potential attacks>>.
 
 == Respond to an alert email
 
