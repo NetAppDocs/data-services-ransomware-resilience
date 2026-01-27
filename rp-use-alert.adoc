@@ -86,11 +86,11 @@ image:screen-alerts.png["Alerts page"]
 . Continue with one of the following: 
 ** <<Detect malicious activity and anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
-** <<Dismiss incidents that are not potential attacks>>.
+** <<Dismiss incidents>>.
 
 == Respond to an alert email
 
-When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences configure in the NetApp Console settings. The email contains information about the alert, including the severity and resources impacted.
+When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences configured in the NetApp Console settings. The email contains information about the alert, including the severity and resources impacted.
 
 TIP: To set up email notifications in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
 
