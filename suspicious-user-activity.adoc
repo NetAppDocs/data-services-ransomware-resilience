@@ -77,14 +77,21 @@ It's recommended you synchronize the time on both the ONTAP system and the user 
 
 Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States).
 
+[IMPORTANT]
+During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp represenative for the site name. 
+
 ==== APAC-based user-activity agent deployments
 
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
-|TCP|443|User activity agent| Ransomware Resilience service
-|Access to authentication services
+|TCP|443|User activity agent 
+a|
+- <site_name>.cs01-ap-1.cloudinsights.netapp.com
+- <site_name>.c01-ap-1.cloudinsights.netapp.com
+- <site_name>.c02-ap-1.cloudinsights.netapp.com
+- gentlogin.cs01-ap-1.cloudinsights.netapp.com 
+|Access to Ransomware Resilience
 |===
 
 ==== Europe-based user-activity agent deployments
@@ -92,9 +99,13 @@ Review the cloud network access rules for your relevant geography (Asia Pacific,
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
-|TCP|443|User activity agent| Ransomware Resilience service
-|Access to authentication services
+|TCP|443|User activity agent 
+a| 
+- <site_name>.cs01-eu-1.cloudinsights.netapp.com
+- <site_name>.c01-eu-1.cloudinsights.netapp.com
+- <site_name>.c02-eu-1.cloudinsights.netapp.com
+- agentlogin.cs01-eu-1.cloudinsights.netapp.com |Access to Ransomware Resilience
+
 |===
 
 ==== US-based user-activity agent deployments
@@ -102,8 +113,13 @@ Review the cloud network access rules for your relevant geography (Asia Pacific,
 [cols=5*,options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent | Ransomware Resilience service |Access to Ransomware Resilience
-|TCP|443|User activity agent| Ransomware Resilience service |Access to authentication services
+|TCP|443|User activity agent 
+a|
+- <site_name>.cs01.cloudinsights.netapp.com
+- <site_name>.c01.cloudinsights.netapp.com
+- <site_name>.c02.cloudinsights.netapp.com
+- agentlogin.cs01.cloudinsights.netapp.com
+|Access to Ransomware Resilience
 |===
 
 === In-network rules
