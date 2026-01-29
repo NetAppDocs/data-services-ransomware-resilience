@@ -82,7 +82,7 @@ During the initial installation, replace the `<site_name>` with a wildcard (`*`)
 
 ==== APAC-based user-activity agent deployments
 
-[cols=5*,options="header"]
+[cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
 |TCP|443|User activity agent 
@@ -96,7 +96,7 @@ a|
 
 ==== Europe-based user-activity agent deployments
 
-[cols=5*,options="header"]
+[cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
 |TCP|443|User activity agent 
@@ -110,7 +110,7 @@ a|
 
 ==== US-based user-activity agent deployments
 
-[cols=5*,options="header"]
+[cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
 |TCP|443|User activity agent 
