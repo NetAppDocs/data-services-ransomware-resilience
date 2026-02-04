@@ -17,7 +17,7 @@ include::_include/console-role-admin.adoc[]
 == Understand ransomware protection strategies [[strategy]]
 // check term with PM
 
-Ransomware protection strategies encompass both _detection_, _protection_, and _replication_ policies.
+Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
 - **Detection policies** identify ransomware threats 
 
