@@ -17,7 +17,7 @@ include::_include/console-role-admin.adoc[]
 == Understand ransomware protection strategies [[strategy]]
 // check term with PM
 
-Ransomware protection strategies encompass both _detection_, _protection_, and _replication_ policies.
+Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
 - **Detection policies** identify ransomware threats 
 
@@ -32,7 +32,9 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 - **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
 +
 Currently, you can only replicate snapshots to on-premises ONTAP storage.
-// can this be enabled with SnapCenter or Backup and Recovery?
+
+[NOTE]
+If you're configuring protection strategies for Amazon FSxN for ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:#create-a-protection-group[group file shares] to collectively protect volumes under one strategy. 
@@ -49,7 +51,7 @@ Protection information from these services appears in Ransomware Resilience. You
 
 If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
-NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
 
 === Protection policies for workloads not protected by NetApp applications
 

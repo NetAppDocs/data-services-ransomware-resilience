@@ -16,13 +16,20 @@ Known limitations identify platforms, devices, or functions that are not support
 
 == Readiness drill Reset option issue
 
-
 If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, Ransomware Resilience sends an alert. If you recover the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
 
 == Amazon FSx for NetApp ONTAP limitations
 
 The Amazon FSx for NetApp ONTAP system is supported in Ransomware Resilience. The following limitations apply to Amazon FSx for ONTAP:
 
-* Backup policies are not supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using the Amazon FSx for backups. You can restore these workloads using Ransomware Resilience. 
+* Backup policies aren't supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using the Amazon FSx for backups. You can restore these workloads using Ransomware Resilience. 
 * Restore operations are performed from snapshots only.
+
+== Azure NetApp Files limitations
+
+Azure NetApp Files is supported in Ransomware Resilience. 
+
+* Ransomware protection strategies with backup policies aren't supported for Azure NetApp Files. Instead, you can use Azure NetApp Files backup.
+* Replication policies aren't supported for Azure NetApp Files. 
+* When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
 
