@@ -85,7 +85,7 @@ During the initial installation, replace the `<site_name>` with a wildcard (`*`)
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent 
+|HTTPS (TCP)|443|User activity agent 
 a|
 - <site_name>.cs01-ap-1.cloudinsights.netapp.com
 - <site_name>.c01-ap-1.cloudinsights.netapp.com
@@ -99,7 +99,7 @@ a|
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent 
+|HTTPS (TCP)|443|User activity agent 
 a| 
 - <site_name>.cs01-eu-1.cloudinsights.netapp.com
 - <site_name>.c01-eu-1.cloudinsights.netapp.com
@@ -113,7 +113,7 @@ a|
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|TCP|443|User activity agent 
+|HTTPS (TCP)|443|User activity agent 
 a|
 - <site_name>.cs01.cloudinsights.netapp.com
 - <site_name>.c01.cloudinsights.netapp.com
@@ -129,7 +129,7 @@ a|
 |Protocol|Port|Source	|Destination |Description
 |TCP|389(LDAP)
 636 (LDAPs / start-tls) |User activity agent|LDAP Server URL|Connect to LDAP
-|TCP|443|User activity agent|Cluster or SVM management IP address (depending on SVM collector configuration)|API communication with ONTAP
+|HTTPS (TCP)|443|User activity agent|Cluster or SVM management IP address (depending on SVM collector configuration)|API communication with ONTAP
 |TCP|35000 - 55000
 a|SVM data LIF IP addresses|User activity agent|Communication from ONTAP to the user activity agent for Fpolicy events. These ports must be opened towards the user activity agent in order for ONTAP to send events to it, including any firewall on the User activity agent itself (if present). +
 **NOTE:** You don't need to reserve *all* of these ports, but the ports you reserve for this must be within this range. It's recommended you start by reserving  100 ports and increase if necessary.
