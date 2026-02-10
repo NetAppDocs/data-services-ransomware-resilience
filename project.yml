@@ -39,7 +39,13 @@ sidebar:
         - title: Configure backups, threat detection, & attack simulations in Settings 
           url: /rp-use-settings.html 
         - title: Configure suspicious user activity detection
-          url: /suspicious-user-activity.html
+          entries: 
+          - title: Learn about suspicious user activity detection 
+            url: /concept-user-behavior.html
+          - title: User activity requirements 
+            url: /reference-user-activity-requirements.html
+          - title: Configure agents and collectors
+            url: /suspicious-user-activity.html
     - title: Use Ransomware Resilience
       entries:
         - title: View workload health using the Dashboard
