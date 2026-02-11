@@ -10,7 +10,7 @@ summary: Suspicious user activity detection in Ransomware Resilience enables you
 :imagesdir: ./media/
 
 [.lead]
-To enable suspicious user behavior detection in NetApp Ransomware Resilience, you must install at at least one user activity agent. When you activate the suspicious user activity feature from the Ransomware Resilience dashboard, you need to provide the user activity agent host information.
+To enable suspicious user behavior detection in NetApp Ransomware Resilience, you must install at least one user activity agent. When you activate the suspicious user activity feature from the Ransomware Resilience dashboard, you need to provide the user activity agent host information.
 
 A user activity agent can host multiple data collectors. Data collectors send data to a SaaS location for analysis. There are two types of collectors:
 
@@ -53,10 +53,10 @@ If you're adding an additional user activity agent, go to *Settings*, locate the
 image:user-activity-agent.png[Screenshot of add activity agent interface.]
 . Select **Next**.
 . Review your settings. Select *Activate* to complete adding the user activity agent. 
-. Confirm the user activity agent was successfully created. In the User activity tile, a successful deployment displays as Running.
+. Confirm the user activity agent was successfully created. In the User activity tile, a successful deployment displays as **Running**.
 
 .Result
-After the user activity agent is successfully created, return to the **Settings** menu then select **Manage** in the User activity tile. Select the **User activity agent** tab then select the user activity agent to view details about it, including data collectors and user directory connectors. 
+After the user activity agent is successfully created, return to the **Settings** menu then select **Manage** in the User activity tile. Select the **User activity agents** tab then select the user activity agent to view details about it, including data collectors and user directory connectors. 
 
 === Add a data collector 
 
@@ -110,7 +110,7 @@ Select *Advanced* to add an optional search query.
 . Locate the User activity tile, select **Manage**.
 . Select the **User directory connector** tab.
 . Identify the user directory connector you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
-. In the pop-up dialog, select **Delete** to confirm your actions. 
+. In the pop-up dialog, select **Delete** to confirm. 
 
 // === Delete a user activity agent
 
@@ -123,4 +123,4 @@ Select *Advanced* to add an optional search query.
 
 == Respond to suspicious user activity alerts
 
-After you configure suspicious user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and anomalous user behavior].
+After you configure suspicious user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].

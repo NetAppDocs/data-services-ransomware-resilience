@@ -4,7 +4,7 @@ permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking
 summary: Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
 ---
-= Requirements for user behavior activity detection in NetApp Ransomware Resilience
+= Requirements for user behavior detection in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
@@ -31,7 +31,7 @@ a|
 
 == Operating system requirements
 
-User behavior activity detection is supported with the following operating systems:
+Suspicious user behavior detection is supported with the following operating systems:
 
 [%header,cols=2]
 |===
@@ -64,17 +64,20 @@ The server must meet the following minimum requirements:
 
 * Allocate extra disk space to allow for the creation of the filesystem. Ensure that there is at least 35 GB of free space in the filesystem. +
 If `/opt` is a mounted folder from a NAS storage, local users must have access to this folder. User activity agent creation can fail if local users don't have the necessary permissions. 
-* It's recommended you install the user activity agent on a different system than your Ransomware Resilience environment. If you do install them on the same machine, you should allow for 50 to 55 GB of disk space. For Linux, allocate 25-30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
+* It is recommended that you install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install them on the same machine, you should allow for 50 to 55 GB of disk space. For Linux, allocate 25-30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
 * It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
 
 == Cloud network access rules
 
-Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). Because 
+Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
 
 [IMPORTANT]
-During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp represenative for the site name. 
+During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp representative for the site name. 
 
-=== APAC-based user-activity agent deployments
+[NOTE]
+The user activity agent uses NetApp Data Insights Infrastructure technology, hence the use of `cloudinsights` endpoints. For more information, see 
+
+=== APAC-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -88,7 +91,7 @@ a|
 |Access to Ransomware Resilience
 |===
 
-=== Europe-based user-activity agent deployments
+=== Europe-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -102,7 +105,7 @@ a|
 
 |===
 
-=== US-based user-activity agent deployments
+=== US-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -133,6 +136,6 @@ a|SVM data LIF IP addresses|User activity agent|Communication from ONTAP to the 
 |SSH |22|User activity agent| Cluster management |Needed for CIFS/SMB user blocking.
 |===
 
-== Next steps
+== Next step
 
 * link:suspicious-user-activity.html[Configure user activity agents and collectors]
