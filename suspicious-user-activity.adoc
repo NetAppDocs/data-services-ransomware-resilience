@@ -21,6 +21,8 @@ Collectors are configured in the Ransomware Resilience settings.
 
 [NOTE]
 include::_include/workload-security.adoc[]
++
+If you're not already using DII, proceed with the configuration instructions here. 
 
 == Before you begin
 

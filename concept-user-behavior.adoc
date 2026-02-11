@@ -36,9 +36,9 @@ There are three key components in Ransomware Resilience user behavior activity d
 * The **data collector** share user activity events with Ransomware Resilience. The data collector is created automatically when you xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[enable a ransomware protection strategy with suspicious user activity detection].
 * The **user directory connector** enables mapping between usernames and user IDs, creating greater clarity when responding to suspicious user behavior. 
 
-== Workload Security 
+== Ransomware Resilience and Data Infrastructure Insights
 
-User behavior activity detection is an integration with Data Infrastructure Insights Workload Security. You don't need any configurations with DII to enable these features. 
+Ransomware Resilience's user behavior activity detection is an integration with Data Infrastructure Insights (DII) Workload Security and uses link:eference-user-activity-requirements.html[DII endpoints]. You don't need any DII configuraition to enable user behavior detection in Ransomware Resilience. To enable user behavior detection, link:suspicious-user-activity.html[create the required agent and collectors and enable the appropriate ransomware protection strategy].
 
 include::_include/workload-security.adoc[]
 
