@@ -26,7 +26,7 @@ If you're not already using DII, proceed with the configuration instructions her
 
 == Before you begin
 
-* Ensure you meet the link:reference-user-activity-requireents.html[operating system, server, and network requirements].
+* Ensure you meet the link:reference-user-activity-requirements.html[operating system, server, and network requirements].
 
 *Required Console role*
 To activate suspicious user activity detection, you need the **Organization admin role**. For subsequent suspicious user activity configurations, you need the **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 

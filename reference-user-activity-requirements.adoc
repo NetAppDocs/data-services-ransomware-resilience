@@ -69,7 +69,7 @@ If `/opt` is a mounted folder from a NAS storage, local users must have access t
 
 == Cloud network access rules
 
-Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States).
+Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). Because 
 
 [IMPORTANT]
 During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp represenative for the site name. 

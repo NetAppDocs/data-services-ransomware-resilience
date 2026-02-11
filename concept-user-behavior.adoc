@@ -38,7 +38,7 @@ There are three key components in Ransomware Resilience user behavior activity d
 
 == Ransomware Resilience and Data Infrastructure Insights
 
-Ransomware Resilience's user behavior activity detection is an integration with Data Infrastructure Insights (DII) Workload Security and uses link:eference-user-activity-requirements.html[DII endpoints]. You don't need any DII configuraition to enable user behavior detection in Ransomware Resilience. To enable user behavior detection, link:suspicious-user-activity.html[create the required agent and collectors and enable the appropriate ransomware protection strategy].
+Ransomware Resilience's user behavior activity detection is an integration with Data Infrastructure Insights (DII) Workload Security and uses link:reference-user-activity-requirements.html[DII endpoints]. You don't need any DII configuraition to enable user behavior detection in Ransomware Resilience. To enable user behavior detection, link:suspicious-user-activity.html[create the required agent and collectors and enable the appropriate ransomware protection strategy].
 
 include::_include/workload-security.adoc[]
 

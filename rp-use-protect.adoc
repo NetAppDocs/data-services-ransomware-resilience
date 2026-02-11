@@ -361,7 +361,7 @@ image:screen-protection.png[Manage strategy page]
     *Suspicious user behavior detection*
     *Block suspicious file extensions* 
 . Select **Next**.
-. If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:suspicious-user-activity.html#add-a-user-activity-agent[or create one].
+. If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
 The user activity agent hosts the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.
 . Select **Next**.
