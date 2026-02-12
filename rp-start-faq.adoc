@@ -23,7 +23,6 @@ You can use the following license types:
 * Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and Ransomware Resilience with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales representative. You can use the license serial number to get the BYOL activated in the Console's Licenses and subscriptions section.
 
-
 .How do you enable Ransomware Resilience?
 
 You can access Ransomware Resilience from the NetApp Console. Ensure that you've link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[access roles] and link:rp-start-prerequisites.html[prerequisites]. If you've successfully configured a Console agent, you can then link:rp-start-discover.html[discover workloads].
@@ -53,7 +52,6 @@ The recommended device resolution for Ransomware Resilience is 1920x1080 or bett
 .Which browser should I use?
 
 You can access the NetApp Console with any modern web browser. 
-
 
 == Interoperability
 

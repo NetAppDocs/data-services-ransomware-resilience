@@ -62,8 +62,6 @@ Ransomware Resilience offers the following benefits:
 * Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including NetApp Backup and Recovery (formerly Cloud Backup) and SnapCenter. 
 * Uses role-based access control (RBAC) to govern access to features and operations.
 
-//* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including Backup and Recovery, SnapCenter, SnapRestore, and AIQ.
-
 == Cost 
 
 New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
@@ -78,11 +76,7 @@ Protected workloads count against purchased capacity or the subscription after t
 
 With Ransomware Resilience, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
 
-//With Ransomware Resilience, you can use different licensing plans including a free trial, a pay-as-you-go subscription, or bring your own license.
-
 Ransomware Resilience requires a NetApp ONTAP One license. 
-
-//NOTE: The general release of Ransomware Resilience, unlike the Preview release, includes a license for NetApp Autonomous Ransomware Protection technology. Refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^] for details. 
 
 The Ransomware Resilience license does not include additional NetApp products. Ransomware Resilience can use Backup and Recovery even if you don't have a license for it. 
 
@@ -96,7 +90,7 @@ Ransomware Resilience is accessible through the NetApp Console.
 
 The NetApp Console provides centralized management of NetApp storage and data services across on-premises and cloud environments at enterprise grade. The Console is required to access and use NetApp data services. As a management interface, it enables you to manage many storage resources from one interface. Console administrators can control access to storage and services for all systems within the enterprise.
  
-You don't need a license or subscription to start using NetApp Console and you only incur charges when you need to deploy Console agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console are licensed or subscription-based.
+You don't need a license or subscription to start using NetApp Console and you only incur charges when you deploy Console agents in your cloud to ensure connectivity to your storage systems or NetApp data services. However, some NetApp data services accessible from the Console are licensed or subscription-based.
 
 Learn more about the link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html[NetApp Console^].
 
@@ -128,9 +122,6 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 
 | *PROTECT* | * Actively monitors workloads and orchestrates the use of Backup and Recovery, SnapCenter, and ONTAP APIs by applying policies to each of the identified workloads. 
-//https://docs.netapp.com/us-en/ontap/snaplock/snaplock-concept.html[Learn more about SnapLock^].
-
-
 | *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. 
 //| *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. Applies ransomware protection technology by using NetApp Advanced Ransomware Detection, a machine learning (ML) model that detects malicious file encryptions. 
 
@@ -149,9 +140,6 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 |*GOVERN* | * Assigns the ransomware protection strategies
 * Helps you monitor the outcomes. 
 |===
-
-//For details about DataLock, refer to https://bluexp.netapp.com/blog/cbs-blg-cloud-backup-datalock-a-new-way-to-keep-backup-data-immutable[a blog about a new way to keep backup data immutable^].
-
 
 == Supported backup targets, systems, and workload data sources
 
@@ -187,7 +175,7 @@ Ransomware Resilience protects the following application-based workloads on prim
 
 If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
 
-== Terms that might help you with ransomware protection
+== Key terms
 
 You might benefit by understanding some terminology related to ransomware protection. 
 
