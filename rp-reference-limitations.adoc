@@ -27,9 +27,9 @@ The Amazon FSx for NetApp ONTAP system is supported in Ransomware Resilience. Th
 
 == Azure NetApp Files limitations
 
-Azure NetApp Files is supported in Ransomware Resilience. 
+Azure NetApp Files is supported in Ransomware Resilience. The following limitations apply to Azure NetApp Files:
 
 * Ransomware protection strategies with backup policies aren't supported for Azure NetApp Files. Instead, you can use Azure NetApp Files backup.
-* Replication policies aren't supported for Azure NetApp Files. 
+* Ransomware protection strategies with replication aren't supported for Azure NetApp Files. 
 * When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
 
