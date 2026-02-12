@@ -138,10 +138,6 @@ Looking at the Alerts tab, you can identify whether there is malicious activity 
 
 You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. The *Suspicious user* column appears in the Alerts dashboard only when user behavior detection is enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
-[NOTE]
-If you're using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Security agents requires a pairing relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing. +
-To use suspicious user detection _without_ DII, ensure you've link:suspicious-user-activity.html[enabled suspicious user activity detection] and have configured the appropriate agents. 
-
 === View malicious activity
 
 When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience , you can view the following details:
@@ -151,6 +147,7 @@ When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
 * Impacted files and directories
+// add here
 
 [NOTE]
 These details are viewable for NAS workloads. For SAN environments, only the entropy data is available.  
