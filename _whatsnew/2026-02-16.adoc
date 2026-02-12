@@ -8,7 +8,9 @@ For more information, see link:concept-ransomware-resilience.html[Learn about Ra
 
 === Exclude users from user behavior alerts
 
-Ransomware Resilience now enables you to exclude specific users from user behavior alerts and detection. Excluding users can prevent false positives and unnecessary alerts. 
+Ransomware Resilience now enables you to exclude specific users from user behavior alerts. Excluding trusted users can prevent false positives and unnecessary alerts.
+
+For more information, see link:suspicious-user-activity.html#exclude-users-from-alerts[Exclude users from alerts].
 
 === Protection group support for user behavior activity 
 
@@ -18,6 +20,7 @@ For more information, see link:https://docs.netapp.com/us-en/data-services-ranso
 
 === Microsoft Sentinel SOAR cloud playbook
 
-Ransomware Resilience now offers a playbook for Microsoft Sentinel security orchestration, automation, and response (SOAR). With the SOAR playbook, you can streamline ransomware incident response and management to perform tasks including taking a volume offline and creating a volume snapshot in the event of a data breach. 
+Ransomware Resilience now offers a playbook for Microsoft Sentinel for security orchestration, automation, and response (SOAR). With the SOAR playbook, you can streamline ransomware incident response and management to perform tasks including taking a volume offline and creating a volume snapshot in the event of a data breach. 
 
+For more information, see link:task-siem.html[Configure protection settings].
 // link to playbook
