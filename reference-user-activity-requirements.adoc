@@ -1,0 +1,141 @@
+---
+sidebar: sidebar
+permalink: reference-user-activity-requirements.html
+keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking
+summary: Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
+---
+= Requirements for user behavior detection in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
+
+== Cloud provider support 
+
+**Cloud provider support**
+
+Suspicious user activity data can be stored in AWS and Azure in the following regions:
+
+[%header]
+|===
+| Cloud provider | Region 
+| AWS 
+a| 
+* Asia Pacific (Sydney) (ap-southeast-2)
+* Europe (Frankfurt) (eu-central-1)
+* US East (N. Virginia) (us-east-1)
+| Azure | East US
+|===
+
+== Operating system requirements
+
+Suspicious user behavior detection is supported with the following operating systems:
+
+[%header,cols=2]
+|===
+| Operating system | Supported versions
+| AlmaLinux |9.4 (64 bit) through 9.5 (64 bit), and 10 (64 bit), including SELinux
+| CentOS | CentOS Stream 9 (64 bit)
+| Debian | 11 (64 bit), 12 (64 bit), including SELinux
+| OpenSUSE Leap | 15.3 (64 bit) through 15.6 (64 bit)
+| Oracle Linux | 8.10 (64 bit), and 9.1 (64 bit) through 9.6 (64 bit), including SELinux
+| Red Hat | 8.10 (64 bit), 9.1 (64 bit) through 9.6 (64 bit), and 10 (64 bit), including SELinux
+| Rocky | Rocky 9.4 (64 bit) through 9.6 (64 bit), including SELinux
+| SUSE Enterprise Linux |15 SP4 (64 bit) through 15 SP6 (64 bit), including SELinux
+| Ubuntu | 20.04 LTS (64 bit), 22.04 LTS (64 bit) and 24.04 LTS (64 bit)
+|===
+
+[NOTE]
+The machine you use for the user activity agent should not be running other application-level software. A dedicated server is recommended.
+
+The `unzip` command is required for installation. The `sudo su -` command is required for installation, running scripts, and uninstall.
+
+== Server requirements
+
+The server must meet the following minimum requirements:
+
+* **CPU**: 4 cores
+* **RAM**: 16 GB RAM
+* **Disk space**: 36 GB free disk space
+
+=== Server recommendations
+
+* Allocate extra disk space to allow for the creation of the filesystem. Ensure that there is at least 35 GB of free space in the filesystem. +
+If `/opt` is a mounted folder from a NAS storage, local users must have access to this folder. User activity agent creation can fail if local users don't have the necessary permissions. 
+* It is recommended that you install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install them on the same machine, you should allow for 50 to 55 GB of disk space. For Linux, allocate 25-30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
+* It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
+
+== Cloud network access rules
+
+Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
+
+[IMPORTANT]
+During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp representative for the site name. 
+
+[NOTE]
+The user activity agent uses NetApp Data Insights Infrastructure technology, hence the use of `cloudinsights` endpoints. For more information, see 
+
+=== APAC-based user activity agent deployments
+
+[cols="1,1,1,3,1",options="header"]
+|===
+|Protocol|Port|Source	|Destination |Description
+|HTTPS (TCP)|443|User activity agent 
+a|
+- <site_name>.cs01-ap-1.cloudinsights.netapp.com
+- <site_name>.c01-ap-1.cloudinsights.netapp.com
+- <site_name>.c02-ap-1.cloudinsights.netapp.com
+- gentlogin.cs01-ap-1.cloudinsights.netapp.com 
+|Access to Ransomware Resilience
+|===
+
+=== Europe-based user activity agent deployments
+
+[cols="1,1,1,3,1",options="header"]
+|===
+|Protocol|Port|Source	|Destination |Description
+|HTTPS (TCP)|443|User activity agent 
+a| 
+- <site_name>.cs01-eu-1.cloudinsights.netapp.com
+- <site_name>.c01-eu-1.cloudinsights.netapp.com
+- <site_name>.c02-eu-1.cloudinsights.netapp.com
+- agentlogin.cs01-eu-1.cloudinsights.netapp.com |Access to Ransomware Resilience
+
+|===
+
+=== US-based user activity agent deployments
+
+[cols="1,1,1,3,1",options="header"]
+|===
+|Protocol|Port|Source	|Destination |Description
+|HTTPS (TCP)|443|User activity agent 
+a|
+- <site_name>.cs01.cloudinsights.netapp.com
+- <site_name>.c01.cloudinsights.netapp.com
+- <site_name>.c02.cloudinsights.netapp.com
+- agentlogin.cs01.cloudinsights.netapp.com
+|Access to Ransomware Resilience
+|===
+
+== In-network rules
+
+[cols=5*,options="header"]
+|===
+|Protocol|Port|Source	|Destination |Description
+|TCP|389(LDAP)
+636 (LDAPs / start-tls) |User activity agent|LDAP Server URL|Connect to LDAP
+|HTTPS (TCP)|443|User activity agent|Cluster or SVM management IP address (depending on SVM collector configuration)|API communication with ONTAP
+|TCP|35000 - 55000
+a|SVM data LIF IP addresses|User activity agent|Communication from ONTAP to the user activity agent for Fpolicy events. These ports must be opened towards the user activity agent in order for ONTAP to send events to it, including any firewall on the User activity agent itself (if present). +
+**NOTE:** You don't need to reserve *all* of these ports, but the ports you reserve for this must be within this range. It's recommended you start by reserving  100 ports and increase if necessary.
+|TCP|35000-55000|Cluster Management IP|User activity agent
+|Communication from ONTAP cluster management IP to the user activity agent for *EMS events*. These ports must be opened towards the user activity agent in order for ONTAP to send EMS events to it, including any firewall on the user activity agent itself. +
+**NOTE:** You don't need to reserve *all* of these ports, but the ports you reserve for this must be within this range. It's recommended you start by reserving  100 ports and increase if necessary.
+|SSH |22|User activity agent| Cluster management |Needed for CIFS/SMB user blocking.
+|===
+
+== Next step
+
+* link:suspicious-user-activity.html[Configure user activity agents and collectors]
