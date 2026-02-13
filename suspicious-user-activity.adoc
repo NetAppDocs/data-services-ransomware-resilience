@@ -53,7 +53,7 @@ If you're adding an additional user activity agent, go to *Settings*, locate the
 [code]
 ----
 -----BEGIN OPENSSH PRIVATE KEY-----
-...private key content...
+private-key-contents
 -----END OPENSSH PRIVATE KEY-----
 ----
 +
