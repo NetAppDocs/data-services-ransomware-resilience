@@ -48,7 +48,14 @@ If you're adding an additional user activity agent, go to *Settings*, locate the
 * **User activity agent name**
 * *Console agent* - The Console agent should be in the same network as the user activity agent and have SSH connectivity to the user activity agent's IP address.
 * *VM DNS name or IP address* 
-* *VM SSH Key* 
+* *VM SSH Key* - Enter the SSH key using this format:
++
+[code]
+----
+-----BEGIN OPENSSH PRIVATE KEY-----
+...private key content...
+-----END OPENSSH PRIVATE KEY-----
+----
 +
 image:user-activity-agent.png[Screenshot of add activity agent interface.]
 . Select **Next**.
