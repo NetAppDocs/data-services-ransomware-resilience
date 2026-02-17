@@ -38,6 +38,8 @@ sidebar:
           url: /rp-start-simulate.html  
         - title: Configure backups, threat detection, & attack simulations in Settings 
           url: /rp-use-settings.html 
+        - title: Configure SIEM 
+          url: /task-siem.html
         - title: Configure user activity detection
           entries: 
           - title: Learn about user activity detection 

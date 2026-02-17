@@ -1,0 +1,17 @@
+=== Azure NetApp Files support 
+
+Ransomware Resilience now supports Azure NetApp Files systems, enabling you to efficiently detect and respond to ransomware threats in Azure NetApp Files. When you discover workloads, Ransomware Resilience now presents Azure NetApp Files and displays them in the protection dashboard. Ransomware Resilience support for Azure NetApp Files includes detection and protection strategies with snapshots only. Support for Azure NetApp Files is currently in preview. 
+
+For more information, see link:For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about Ransomware Resilience^].
+
+=== Exclude users from user behavior alerts
+
+Ransomware Resilience now enables you to exclude specific users from user behavior alerts. Excluding trusted users can prevent false positives and unnecessary alerts.
+
+For more information, see link:For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts[Exclude users from alerts^].
+
+=== Protection group support for user behavior activity 
+
+Ransomware Resilience protection groups now support detection policies for suspicious user behavior detection. When you apply a ransomware protection strategy to a protection group, it applies a policy across workloads, streamlining management of your cybersecurity posture. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html#create-a-protection-group[Create a protection group^].
