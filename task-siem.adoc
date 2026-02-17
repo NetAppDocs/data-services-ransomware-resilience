@@ -15,8 +15,6 @@ Ransomware Resilience supports the following SIEMs:
 * Microsoft Sentinel
 * Splunk Cloud
 
-Ransomware Resilience also supports a security orchestration, automation, and response (SOAR) playbook with Microsoft Sentinel
-
 Before you enable SIEM in Ransomware Resilience, you need to configure your SIEM system. 
 
 == Event data sent to a SIEM

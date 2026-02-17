@@ -18,10 +18,3 @@ For more information, see link:suspicious-user-activity.html#exclude-users-from-
 Ransomware Resilience protection groups now support detection policies for suspicious user behavior detection. When you apply a ransomware protection strategy to a protection group, it applies a policy across workloads, streamlining management of your cybersecurity posture. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html#create-a-protection-group[Create a protection group^].
-
-=== Microsoft Sentinel SOAR cloud playbook
-
-Ransomware Resilience now offers a playbook for Microsoft Sentinel for security orchestration, automation, and response (SOAR). With the SOAR playbook, you can streamline ransomware incident response and management to perform tasks including taking a volume offline and creating a volume snapshot in the event of a data breach. 
-
-//For more information, see link:task-siem.html[Configure protection settings].
-// link to playbook
