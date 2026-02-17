@@ -113,6 +113,7 @@ Select *Advanced* to add an optional search query.
 
 === Delete a user directory connector
 
+.Steps
 . In Ransomware Resilience, go to *Settings*.
 . Locate the User activity tile, select **Manage**.
 . Select the **User directory connector** tab.
@@ -127,6 +128,34 @@ Select *Advanced* to add an optional search query.
 // . Identify the user activity agent you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
 // . In the pop-up dialog, select **Delete** to confirm your actions. 
 
+=== Exclude users from alerts
+
+If there are certain trusted users whose behavior might trigger user behavior alerts, you can exclude them from alerts. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the Settings dashboard, locate the User activity card then select **Manage**. 
+. Select the **Excluded users** tab. 
+. To review individual users in the UI, choose **Select manually**. To upload a list of excluded users, select **Upload**. 
+.. If you selected **Select manually**, select the checkbox next to the names of the specific users you want to exclude. 
+.. If you select **Upload**, you must first download a CSV file that includes the list of all the users. Select **Download** to access the list. 
++
+Review the CSV file. Remove the names of all users that you want to maintain detection for. When the list includes only the names of users you want to exclude from detection, save it. Select **Upload** to locate the file then choose it. 
+. Select **Add** to complete adding the users to the exlcusion list. 
+. In the **Excluded users** tab, the names of the users removed from user behavior detection alerts now display in the dashboard. 
+
+[TIP]
+You can also exclude a user directly from an alert. For more information, see link:rp-use-alert.html[Respond to ransomware alerts].
+
+==== Remove users from the excluded user list
+
+You can add a user back to detection after.
+
+.Steps
+. In the Settings dashboard, locate the User activity card then select **Manage**. 
+. Select the **Excluded users** tab. 
+. Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
+. In the dialog, select **Remove** to confirm you want to remove the selected users. 
 
 == Respond to suspicious user activity alerts
 

@@ -32,7 +32,9 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 - **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
 +
 Currently, you can only replicate snapshots to on-premises ONTAP storage.
-// can this be enabled with SnapCenter or Backup and Recovery?
+
+[NOTE]
+If you're configuring protection strategies for Amazon FSxN for ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:#create-a-protection-group[group file shares] to collectively protect volumes under one strategy. 
@@ -49,7 +51,7 @@ Protection information from these services appears in Ransomware Resilience. You
 
 If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
-NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
 
 === Protection policies for workloads not protected by NetApp applications
 
@@ -357,9 +359,11 @@ image:screen-protection.png[Manage strategy page]
 . To leave your existing Backup and Recovery or SnapCenter policies in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . To see details of the SnapCenter policies, select the *Down arrow*.
 . Select the detection settings you want:
++
     *Encryption detection*
     *Suspicious user behavior detection*
     *Block suspicious file extensions* 
++
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
@@ -437,7 +441,7 @@ TIP: To see more details on the workloads, scroll to the right.
 +
 image:screen-protection-groups-policy.png[Add protection group - Policy page]
 
-. Select the policy to govern the protection for this group. To confirm, select *Next*. 
+. Select the policy to govern the protection for this group.
 . If the protection strategy includes replication, review the replication settings. 
 .. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. + To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**. 
 . To configure a backup policy, choose one then select **Next**. 
