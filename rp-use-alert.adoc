@@ -175,7 +175,7 @@ If you've configured suspicious user detection to view anomalous user behavior, 
 .. To disable alerts on a given user who is the subject of an alert you know to be false, select the three dots (`...`) then **Exclude this user from monitoring**. Review the dialog then select **Exclude** to confirm.
 
 [TIP]
-To re-enable alerts for a user, return the alert. Select the three dots then **Include this user in monitoring**. You can also link:suspicious-user-activity.html#exclude-users-from-the-directory-connector[Exclude users] from monitoring. 
+To re-enable alerts for a user, return the alert. Select the three dots then **Include this user in monitoring**. You can also link:suspicious-user-activity.html#exclude-users-from-alerts[Exclude users] from monitoring. 
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 

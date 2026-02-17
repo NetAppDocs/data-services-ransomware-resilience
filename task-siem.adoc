@@ -5,6 +5,8 @@ keywords: ransomware protection, SIEM, security event management system, soar, p
 summary: You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
 ---
 = Connect NetApp Ransomware Resilience to security and event management system (SIEM) for threat analysis and detection
+:icons: font
+:imagesdir: ./media/
 
 [.lead]
 You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
