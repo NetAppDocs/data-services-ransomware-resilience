@@ -13,6 +13,7 @@
 .2+| Cloud Volumes ONTAP for Microsoft Azure
 | CIFS & NFS | 9.12.1 and later
 | SAN (FC, iSCSI, & NVMe) |  9.17.1 and later
+| Google Cloud NetApp Volumes | CIFS, NFS, and SAN (iSCSI) | N/A
 .2+| ONTAP (on-premises)
 | CIFS & NFS  | 9.11.1 and later 
 | SAN (FC, iSCSI, & NVMe) |  9.17.1 and later

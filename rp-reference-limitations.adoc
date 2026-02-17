@@ -33,3 +33,4 @@ Azure NetApp Files is supported in Ransomware Resilience. The following limitati
 * Ransomware protection strategies with replication aren't supported for Azure NetApp Files. 
 * When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
 
+// GCNV? 
