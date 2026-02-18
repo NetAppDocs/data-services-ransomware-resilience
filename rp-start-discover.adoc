@@ -19,6 +19,9 @@ Ransomware Resilience does not discover workloads with volumes using FlexGroup.
 
 Ransomware Resilience checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. Ransomware Resilience also detects protection information from SnapCenter for VMware for VM datastores, SnapCenter for Oracle, and NetApp Backup and Recovery for file shares and VM file shares. It then recommends ways to improve your ransomware protection. 
 
+[IMPORTANT]
+Although Ransomware Resilience recognizes policies from SnapCenter, you can't perform recovery through SnapCenter with Ransomware Resilience. 
+
 include::_include/console-role-admin.adoc[]
 
 == Select workloads to discover and protect

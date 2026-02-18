@@ -63,9 +63,9 @@ Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP.
 
 Ransomware Resilience works with Backup and Recovery to discover and set snapshot and backup policies for file share workloads.
 
-Ransomware Resilience works with SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. 
+Ransomware Resilience works with SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. You can't currently use Ransomware Resilience for recovery with SnapCenter. 
 
-Ransomware Resilience also works with Backup and Recovery and SnapCenter (including SnapCenter for VMware) to perform file- and workload-consistent recovery. 
+Ransomware Resilience also works with Backup and Recovery to perform file- and workload-consistent recovery. 
 
 For licensing and billing, Ransomware Resilience can integrate with Backup and Recovery even if you don't have a separate license for Backup and Recovery. If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 
@@ -94,7 +94,7 @@ link:rp-use-protect.html[Learn about workload priority or importance].
 
 Ransomware Resilience can identify the following workloads: Oracle, file shares, block storage, VMs, and VM datastores.
 
-If you're using SnapCenter or SnapCenter for VMware, all workloads supported by these products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover SnapCenter and SnapCenter workloads in a workload-consistent manner.
+If you're using SnapCenter or SnapCenter for VMware, all workloads supported by these products are also identified in Ransomware Resilience.
 
 .How do you associate data with a workload?
 

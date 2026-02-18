@@ -96,7 +96,7 @@ Learn more about the link:https://docs.netapp.com/us-en/console-setup-admin/conc
 
 == How Ransomware Resilience works
 
-Ransomware Resilience uses NetApp Backup and Recovery to discover and set snapshot and backup policies for file share workloads, and SnapCenter or SnapCenter for VMware to discover and set snapshot and backup policies for application and VM workloads. In addition, Ransomware Resilience uses Backup and Recovery and SnapCenter / SnapCenter for VMware to perform file- and workload-consistent recovery.
+Ransomware Resilience uses NetApp Backup and Recovery to discover and set snapshot and backup policies for file share workloads.
 
 image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience architecture]
 
@@ -108,7 +108,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 
 | *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to the Console.
-* Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^] and https://docs.netapp.com/us-en/snapcenter/index.html[SnapCenter Software^].
+* Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^].
 
 
 
@@ -121,7 +121,7 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 // Learn more about https://docs.netapp.com/us-en/data-services-data-classification/index.html[Data Classification^].
 
 
-| *PROTECT* | * Actively monitors workloads and orchestrates the use of Backup and Recovery, SnapCenter, and ONTAP APIs by applying policies to each of the identified workloads. 
+| *PROTECT* | * Actively monitors workloads and orchestrates the use of Backup and Recovery and ONTAP APIs by applying policies to each of the identified workloads. 
 | *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. 
 //| *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. Applies ransomware protection technology by using NetApp Advanced Ransomware Detection, a machine learning (ML) model that detects malicious file encryptions. 
 
@@ -172,8 +172,6 @@ Ransomware Resilience protects the following application-based workloads on prim
 * NetApp file shares
 * VMware datastores
 // * VMs
-
-If you're using SnapCenter or SnapCenter for VMware, all workloads supported by those products are also identified in Ransomware Resilience. Ransomware Resilience can protect and recover these in a workload-consistent manner. 
 
 == Key terms
 
