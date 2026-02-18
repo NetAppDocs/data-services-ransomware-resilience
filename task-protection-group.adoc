@@ -1,0 +1,83 @@
+---
+sidebar: sidebar
+permalink: task-protection-group
+keywords: ransomware protection, protection group, modify, create, 
+summary: You can protect workloads against ransomware attacks by assigning policies to a workload in NetApp Ransomware Resilience.
+---
+= Manage protection groups in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp Ransomware Resilience offers protection groups to facilitate easier management of your data estate. Protection groups are logical groupings of workloads. Ransomware Resilience can protect all volumes in a protection group at the same time with a single protection strategy, sparing you from applying a strategy to each workload. 
+
+include::_include/console-role-admin.adoc[]
+
+== Create a protection group
+
+You can create groups regardless of their protection status (that is, groups not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed NetApp Backup and Recovery. 
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
++
+image:screen-protection.png[Manage strategy page]
+. From the Protection dashboard, select the *Protection groups* tab. 
++
+image:screen-protection-groups.png[Protection groups page]
+. Select *Add*. 
++
+image:screen-protection-groups-add.png[Add protection group page]
+. Enter a name for the protection group. 
+. Select the workloads to add to the group. 
++
+TIP: To see more details on the workloads, scroll to the right. 
+. Select *Next*. 
++
+image:screen-protection-groups-policy.png[Add protection group - Policy page]
+. Select a protection strategy for the group.
+. If the protection strategy includes replication, review the replication settings. 
+.. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. + To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**. 
+. To configure a backup policy, choose one then select **Next**. 
+. If your detection policy includes user behavior detection, select the data collector you want to use then **Next**. 
+. Review the selections for the protection group. 
+. To finalize the protection group, select *Add*. 
+
+=== Edit group protection 
+
+You can change the detection policy on an existing group. 
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab then select the group whose policy you want to modify. 
+. From protection group's overview page, select *Edit protection*. 
+. Select an existing protection policy to apply or select **Add** to create a new protection policy. For more information about adding a protection policy, see link:rp-use-protect.html#add-a-ransomware-protection-strategy[Create a protection policy]. Then select **Save**.
+. In the backup destination overview, select an existing backup destination or **Add a new backup destination**. 
+. Select **Next** to review your changes. 
+
+== Remove workloads from a protection group
+
+You might later need to remove workloads from an existing protection group. 
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab. 
+. Select the group from which you want to remove one or more workloads. 
++
+image:screen-protection-groups-more-workloads.png[Protection group details page]
+. From the protection group page, select the workload you want to remove from the group and select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option.
+. From the Actions menu, select *Remove workload*. 
+. Confirm that you want to remove the workload and select *Remove*. 
+
+== Delete a protection group
+
+When you delete a protection group, Ransomware Resilience removes the group and the protection strategy on the workloads. It doesn't delete the individual workloads.  
+
+.Steps
+. From the Ransomware Resilience menu, select *Protection*.
+. From the Protection page, select the *Protection groups* tab. 
+. Select the group from which you want to remove one or more workloads. 
++
+image:screen-protection-groups-more-workloads.png[Protection group details page]
+. From the selected protection group page, at the top right, select *Delete protection group*.
+. Confirm that you want to delete the group and select *Delete*. 
