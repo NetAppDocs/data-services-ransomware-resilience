@@ -56,6 +56,8 @@ sidebar:
           entries: 
             - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
+            - title: Manage protection groups 
+              url: /task-protection-group.html
             - title: Scan for personally identifiable data
               url: /rp-use-protect-classify.html 
         - title: Respond to a detected alert 

@@ -13,9 +13,7 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 [.lead]
 After workloads have been marked "Restore needed", NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
-* If the application or VM is managed by SnapCenter, Ransomware Resilience restores the application or VM back to its previous state and last transaction using the application-consistent or VM-consistent process. The application or VM-consistent restore adds any data that did not make it into storage, for example, data in cache or in an I/O operation, to the data in the volume. 
-
-* If the application or VM is _not_ managed by SnapCenter and is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
+* If the application or VM is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
 +
 You can restore the workload by selecting all volumes, specific volumes, or specific files. 
 
@@ -46,47 +44,7 @@ Review the workloads that are in the "Restore needed" recovery status.
 image:screen-recovery2.png[Recovery page]
 //April 2024 get new screen without Workload consistent column. 
 
-== Restore a workload managed by SnapCenter 
-
-Using Ransomware Resilience, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point. 
-
-The application state will change if required for the restore. The application will be restored to its previous state from control files, if they are included in the backup. After the restore finishes, the application opens in READ-WRITE mode. 
-
-include::_include/console-role-admin.adoc[]
-
-.Steps 
-
-
-. From Ransomware Resilience, select *Recovery*.
-. Review the workload information in the *Recovery* page.  
-
-. Select a workload that is in the "Restore needed" state. 
-
-. To restore, select *Restore*.
-
-. *Restore scope*: Application-consistent (or for SnapCenter for VMs, the restore scope is "By VM")
-
-. *Source*: Select the down arrow next to Source to see details. Select the restore point that you want to use to restore the data. 
-+
-TIP: Ransomware Resilience identifies the best restore point as the latest backup just before the incident and shows a “Recommended” indication. 
-
-. *Destination*: Select the down arrow next to Destination to see details.
-
-.. Select the original or alternate location.
-.. Select the system. 
-.. Select the Storage VM. 
- 
-. If the original destination does not have enough space to restore the workload, a "Temporary storage" row appears. You can select the temporary storage to restore the workload data. The restored data will be copied from the temporary storage to the original location. Click on the *Down arrow* in the Temporary storage row and set the destination cluster, storage VM, and local tier. 
-//. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
-. Select *Save*. 
-
-. Select *Next*.
-. Review your selections. 
-. Select *Restore*. 
-
-. From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
-
-== Restore a workload not managed by SnapCenter
+== Restore a workload
 
 Using Ransomware Resilience, the storage administrator can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
@@ -102,7 +60,6 @@ The security storage admin can recover data at different levels:
 The process differs depending on the workload type. 
 
 .Steps 
-
 
 . From the Ransomware Resilience menu, select *Recovery*.
 

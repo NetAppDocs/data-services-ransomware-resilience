@@ -89,9 +89,6 @@ Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
 //|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
-
-|Enable workload-consistent protection for applications or VMware. | These workloads are not managed by SnapCenter Software or SnapCenter Plug-in for VMware vSphere. | To have them managed by SnapCenter, enable workload-consistent protection. 
-Refer to link:rp-use-protect.html[Protect workload against ransomware attacks].
 |Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
 Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
@@ -101,9 +98,7 @@ Refer to link:rp-use-settings.html[Configure protection settings].| Protect crit
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Register available SnapCenter plugin for VMware vSphere (SCV) with the Console | A VM workload is not protected. | Assign VM-consistent protection to the VM workload by enabling the SnapCenter Plugin for VMware vSphere. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Register available SnapCenter Server with the Console | An application is not protected. | Assign application-consistent protection to the workload by enabling SnapCenter Server. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Review new alerts. | New alerts exist. | Review the new alerts. 
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
