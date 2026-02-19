@@ -203,9 +203,9 @@ image:screen-protection.png[Manage strategy page]
 . To leave your existing Backup and Recovery in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . Select the detection settings you want:
 +
-    *Encryption detection*
-    *Suspicious user behavior detection*
-    *Block suspicious file extensions* 
+* *Encryption detection*
+* *Suspicious user behavior detection*
+* *Block suspicious file extensions* 
 +
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
