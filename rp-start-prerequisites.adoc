@@ -10,9 +10,9 @@ summary: Get started with NetApp Ransomware Resilience by verifying support for 
 :imagesdir: ./media/get-started/
 
 [.lead]
-Get started with NetApp Ransomware Resilience by verifying the readiness of your operational environment, network access, and web browser.
+To ensure a successful deployment of NetApp Ransomware Resilience, verify the readiness of your operational environment, network access, and web browser.
 
-To use Ransomware Resilience, ensure you meet the prerequisites. 
+Review and ensure you meet the following requirements. 
 
 == Supported systems 
 

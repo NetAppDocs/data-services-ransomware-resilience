@@ -103,34 +103,13 @@ include::_include/console-role-admin-viewer.adoc[]
 The Alerts page appears.
 
 . Review all incidents on each volume for each alert. 
-. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
 
 
 . Continue with one of the following: 
 ** <<Detect malicious activity and anomalous user behavior>>.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
-
-
-
-//=== Respond from the Console Notifications 
-
-//. In the Console, select the Notification icon at the top right. 
-//. In the Notifications, look for the “Potential ransomware attack” notification.
-
-//. In the notification, select *View alert* and access Ransomware Resilience . 
-//+
-//The Alerts page appears.
-
-//. Review all incidents on each volume for each alert. 
-//. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
-
-//. Continue with one of the following: 
-
-//* <<Mark ransomware incidents as ready for recovery>>.
-//* <<Dismiss incidents that are not potential attacks>>.
-
-//=== Respond from data incidents on the Dashboard
 
 == Detect malicious activity and anomalous user behavior
 

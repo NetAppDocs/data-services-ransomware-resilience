@@ -43,6 +43,9 @@ image:screen-protection-groups-policy.png[Add protection group - Policy page]
 . Review the selections for the protection group. 
 . To finalize the protection group, select *Add*. 
 
+[TIP]
+When reviewing the protection dashboard in Ransomware Resilience, you can sort workloads by protection group. 
+
 === Edit group protection 
 
 You can change the detection policy on an existing group. 

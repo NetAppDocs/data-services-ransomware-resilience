@@ -11,7 +11,7 @@ summary: Get started with NetApp Ransomware Resilience through the NetApp Consol
 :imagesdir: ./media/
 
 [.lead]
-Log in to NetApp Ransomware Resilience through the NetApp Console. 
+To gain access to NetApp Ransomware Resilience, you must log in through the NetApp Console. 
 
 To log in to the Console, you can use your NetApp Support Site credentials or you can sign up for a NetApp cloud login using your email and a password. https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html[Learn more about logging in^].
 

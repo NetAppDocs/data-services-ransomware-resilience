@@ -4,7 +4,6 @@ permalink: rp-use-settings.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware settings, backup destination
 summary: You can configure several options, including a backup destination and threat detection in the settings page.
 ---
-
 = Configure protection settings in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
