@@ -15,7 +15,7 @@ NetApp Ransomware Resilience user activity detection helps you prevent user-leve
 A user activity agent hosts a data collector and user directory connector, which both send data to a SaaS location for analysis.
 
 * The **data collector** collects user activity data from ONTAP. The data collector is created automatically when you create a protection strategy with user behavior detection. 
-* The **user directory connector** connects to your directory to map user IDs to usernames. User directory connectors must
+* The **user directory connector** connects to your directory to map user IDs to usernames. You must configure the user directory connector.
 
 The user activity agent, data collector, and user directory connector can all be managed from the Ransomware Resilience settings dashboard.  
 
