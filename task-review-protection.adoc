@@ -35,7 +35,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 image:screen-protection.png[Protection page]
 . From this page, you can view and change protection details for the workload.
 
-NOTE: See link:#add-a-ransomware-protection-strategy[Add a ransomware protection strategy] to learn about using Ransomware Resilience when there's an existing protection policy with Backup and Recovery.
+NOTE: See link:rp-use-protect.html#add-a-ransomware-protection-strategy[Add a ransomware protection strategy] to learn about using Ransomware Resilience when there's an existing protection policy with Backup and Recovery.
 
 == Understand the protection dashboard
 
@@ -75,5 +75,5 @@ Ransomware Resilience assigns an importance or priority to each workload during 
 == Next steps
 
 * link:rp-use-protect.html[Protect workloads with ransomware protection strategies]
-* link:task-protection-groups.html[Manage protection groups]
+* link:task-protection-group.html[Manage protection groups]
 * link:task-classify.html[Scan for personally identifiable data]
