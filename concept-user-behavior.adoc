@@ -10,7 +10,7 @@ summary: Use suspicious user behavior detection and alerts to prevent data breac
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience supports detection of suspicious user behavior, enabling you to address ransomware incidents at the user level. 
+With user activity detection, NetApp Ransomware Resilience enables you to address ransomware events at the user-level, stopping events such as data breaches and large-scale deletion.  
 
 NetApp Ransomware Resilience delivers an AI-driven data breach detection by monitoring for suspicious user activity. Sharp increases in read activity and read activity access patterns are used to determine malicious intent. Once detected, Ransomware Resilience automatically generates alerts in the NetApp Console, via e-mail, and in any configured security ecosystem (for example, SIEM).
 

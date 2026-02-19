@@ -10,12 +10,11 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 :imagesdir: ./media/
 
 [.lead]
-You can protect workloads against ransomware attacks by enabling workload-consistent protection or creating ransomware protection strategies in NetApp Ransomware Resilience. 
+Ransomware protection strategies are a key feature of NetApp Ransomware Resilience: they support detection, protection, and replication. Protection strategies are an essential piece of your cybersecurity posture.
 
 include::_include/console-role-admin.adoc[]
 
 == Understand ransomware protection strategies [[strategy]]
-// check term with PM
 
 Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
@@ -51,85 +50,10 @@ If a ransomware detection policy is being managed by Autonomous Ransomware Prote
 
 NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
 
-=== Protection policies for workloads not protected by NetApp applications
+==== Protection policies for workloads not protected by NetApp applications
 
 If your workload isn't managed by Backup and Recovery or Ransomware Resilience, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
  
-== View ransomware protection on a workload
-
-One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
-
-* Application workloads 
-* Block workloads
-* File share workloads
-* VM workloads
-
-.Steps 
-
-. From the Console's left navigation, select *Protection* > *Ransomware Resilience*. 
-. Do one of the following: 
-+
-* From the Data Protection pane on the Dashboard, select *View all*. 
-* From the menu, select *Protection*.
-+
-image:screen-protection.png[Protection page]
-. From this page, you can view and change protection details for the workload.
-
-NOTE: See link:#add-a-ransomware-protection-strategy[Add a ransomware protection strategy] to learn about using Ransomware Resilience when there's an existing protection policy with Backup and Recovery.
-
-=== Understand the Protection page
-
-The Protection page shows the following information about workload protection: 
-
-*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
-
-* *Protected*: A policy is applied. ARP (or ARP/AI depending on the ONTAP version) is enabled on all volumes related to the workload. 
-* *At risk*: No policy is applied. If a workload does not have a primary detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled. 
-* *In progress*: A policy is being applied but not completed yet. 
-* *Failed*: A policy is applied but is not working. 
-
-//*Protection health*: A workload can have one of the following protection health statuses: 
-
-//* *Healthy*: The workload has protection enabled and backups and snapshot copies have been completed. 
-//* *In progress*: Backups or snapshot copies are in progress. 
-//* *Failed*: Backups or snapshot copies have not completed successfully. 
-//* *N/A*: Protection is not enabled or sufficient on the workload. 
-
-*Detection status*: A workload can have one of the following ransomware detection statuses: 
-
-* *Learning*: A ransomware detection policy was recently assigned to the workload and Ransomware Resilience is scanning workloads. 
-* *Active*: A ransomware detection protection policy is assigned. 
-* *Not set*: A ransomware detection protection policy is not assigned. 
-* *Error*: A ransomware detection policy was assigned, but Ransomware Resilience has encountered an error. 
-+
-TIP: When protection is enabled in Ransomware Resilience, alert detection and reporting begins after the ransomware detection policy status changes from Learning mode to Active mode.
-
-[NOTE]
-Suspicious user behavior activity and FPolicy (suspicious file extension) activity are listed separately from detection status. 
-
-*Detection policy*: The name of the ransomware detection policy appears, if one has been assigned. If the detection policy has not been assigned, "N/A" appears. 
-
-*Replication destination*: If you've configured snapshot replication, the names of the destination storage VMs and systems are listed. If there's no replication, this field displays "None."
-
-*Snapshot, replication, and backup policies*: This column shows the snapshot and backup policies applied to the workload and the product or service that is managing those policies.  
-
-* Managed by SnapCenter
-* Managed by SnapCenter Plug-in for VMware vSphere
-* Managed by Backup and Recovery
-* Name of ransomware protection policy that governs snapshots and backups
-* None
-
-[NOTE]
-You can't managed recovery in Ransomware Resilience for any SnapCenter policies.
-
-*Workload importance*
-
-Ransomware Resilience assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
-
-* *Critical*: More than one snapshot copy is taken per hour (highly aggressive protection schedule)
-* *Important*: Snapshots copies are created less frequently than every hour but more frequently than every day 
-* *Standard*: Snapshot copies are taken more than once per day
-
 === Predefined detection policies [[predefined]]
 
 You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance. 
@@ -279,9 +203,9 @@ image:screen-protection.png[Manage strategy page]
 . To leave your existing Backup and Recovery in place and only apply a _detection_ policy, leave the **Replace existing policies** box unchecked.
 . Select the detection settings you want:
 +
-    *Encryption detection*
-    *Suspicious user behavior detection*
-    *Block suspicious file extensions* 
+* *Encryption detection*
+* *Suspicious user behavior detection*
+* *Block suspicious file extensions* 
 +
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the User activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
