@@ -11,7 +11,7 @@ summary: Using NetApp Ransomware Resilience, you can download reports that show 
 :imagesdir: ./media/
 
 [.lead]
-You can export protection data and download the CSV or JSON files that show details of attack readiness drills, protection, alerts, and recovery. 
+NetApp Ransomware Resilience provides report in CSV and JSON formats that show details of attack readiness drills, protection, alerts, and recovery. With reports, you can save and review offline reports about drills, protection posture, alerts, and recovery events.  
 
 TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 

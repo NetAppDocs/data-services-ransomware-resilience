@@ -10,19 +10,19 @@ summary: Suspicious user activity detection in Ransomware Resilience enables you
 :imagesdir: ./media/
 
 [.lead]
-To enable suspicious user behavior detection in NetApp Ransomware Resilience, you must install at least one user activity agent. When you activate the suspicious user activity feature from the Ransomware Resilience dashboard, you need to provide the user activity agent host information.
+NetApp Ransomware Resilience user activity detection helps you prevent user-level ransomware events. To enable suspicious user behavior detection in Ransomware Resilience, you must install at least one user activity agent, which creates a data collection environment to monitor user behavior for aberrant patterns that resemble ransomware events. 
 
-A user activity agent can host multiple data collectors. Data collectors send data to a SaaS location for analysis. There are two types of collectors:
+A user activity agent hosts a data collector and user directory connector, which both send data to a SaaS location for analysis.
 
-* The **data collector** collects user activity data from ONTAP.
-* The **user directory connector** connects to your directory to map user IDs to usernames.
+* The **data collector** collects user activity data from ONTAP. The data collector is created automatically when you create a protection strategy with user behavior detection. 
+* The **user directory connector** connects to your directory to map user IDs to usernames. User directory connectors must
 
-Collectors are configured in the Ransomware Resilience settings. 
+The user activity agent, data collector, and user directory connector can all be managed from the Ransomware Resilience settings dashboard.  
 
 [NOTE]
 include::_include/workload-security.adoc[]
 +
-If you're not already using DII, proceed with the configuration instructions here. 
+If you're _not_ using DII, proceed with the configuration instructions here. 
 
 == Before you begin
 
