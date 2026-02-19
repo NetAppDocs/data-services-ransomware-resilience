@@ -67,7 +67,7 @@ After the user activity agent is successfully created, return to the **Settings*
 
 === Add a data collector 
 
-Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[add a detection policy].
+Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies[add a detection policy].
 
 You can view the details of the data collector. From Settings, select **Manage** in the User activity tile. Select the **Data collector** tab then select the data collector to view its details or pause it.  
 
