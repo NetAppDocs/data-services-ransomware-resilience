@@ -4,14 +4,13 @@ permalink: rp-use-reports.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack
 summary: Using NetApp Ransomware Resilience, you can download reports that show details of protection, alerts, and recovery and save them as CSV files. 
 ---
-
 = Download reports in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience provides report in CSV and JSON formats that show details of attack readiness drills, protection, alerts, and recovery. With reports, you can save and review offline reports about drills, protection posture, alerts, and recovery events.  
+NetApp Ransomware Resilience provides reports in CSV and JSON formats that show details of supported and unsupported volumes, attack readiness drills, protection, alerts, and recovery. With reports, you can save and review offline reports about drills, protection posture, alerts, and recovery events.  
 
 TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 

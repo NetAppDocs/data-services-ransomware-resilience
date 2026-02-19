@@ -10,7 +10,7 @@ summary: Before creating a user activity agent and other collectors, you must en
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience user behavior detection enables you to respond to user-level ransomware events. You must create a set of agents to enable user behavior detection, however, before enabling detection you you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events. 
+NetApp Ransomware Resilience user behavior detection enables you to respond to user-level ransomware events. You must create a set of agents to enable user behavior detection. Before enabling detection, you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events. 
 
 == Cloud provider support 
 

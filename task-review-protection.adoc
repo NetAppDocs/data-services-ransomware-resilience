@@ -70,7 +70,7 @@ Ransomware Resilience assigns an importance or priority to each workload during 
 
 *Replication destination*: If you've configured snapshot replication, the names of the destination storage VMs and systems are listed. If there's no replication, this field displays "N/A."
 
-*Backup destination*: If you've configure a ransomware protection strategy with backups, the name of the backup destination system is listed here. 
+*Backup destination*: If you've configured a ransomware protection strategy with backups, the name of the backup destination system is listed here. 
 
 == Next steps
 
