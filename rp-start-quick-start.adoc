@@ -58,7 +58,7 @@ These tasks require the _Ransomware Resilience admin_ role. Configuring suspicio
 After you configure protection in Ransomware Resilience, here's what you might do next. 
 
 [role="quick-margin-list"]
-* link:rp-use-protect-classify.html[Enable Data Classification to identify governance and security risks]
+* link:task-classify.html[Enable Data Classification to identify governance and security risks]
 * link:task-siem.html[Send alerts to SIEM]
 * link:rp-use-reports.html[Download alert, protection, readiness drill, recovery, or summary reports]
 
