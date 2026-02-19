@@ -82,12 +82,8 @@ Here is a sampling of the recommendations that Ransomware Resilience offers.
 
 | Add a ransomware protection policy. | The workload is currently not protected. | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-//|Edit workload name. | Your workloads are using default names. | Give your workload a descriptive name.
-//Refer to link:rp-use-manage.html[Manage workloads].
-//|Keep software up to date. | Your ONTAP version on all nodes is not up to date. | Make your protection stronger against ransomware by keeping software up to date. 
 |Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 Refer to link:rp-use-settings.html[Configure protection settings].
-//|Enable threat detection. | Send data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
 |Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
 Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.

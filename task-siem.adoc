@@ -150,7 +150,7 @@ TIP: This is the custom role that you created earlier.
 . Go to Microsoft Sentinel. 
 . Enter the credentials: 
 .. Enter the tenant ID, the client application ID, and the client application secret. 
-.. Click *Authenticate*. 
+.. Select *Authenticate*. 
 +
 NOTE: After the authentication is successful, an "Authenticated" message appears. 
 . Enter the Log Analytics workspace details for the application. 

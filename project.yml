@@ -54,6 +54,8 @@ sidebar:
           url: /rp-use-dashboard.html
         - title: Protect workloads
           entries: 
+            - title: Review protection 
+              url: /task-review-protection.htlm
             - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
             - title: Manage protection groups 
@@ -64,12 +66,8 @@ sidebar:
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack
           url: /rp-use-recover.html
-#       - title: Manage workloads 
-#         url: /rp-use-manage.html
         - title: Download reports
           url: /rp-use-reports.html 
-#   - title: Monitor ransomware protection jobs
-#     url: /rp-use-monitor-jobs.html 
     - section: support
     - title: FAQ
       url: /rp-start-faq.html
