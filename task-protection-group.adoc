@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-protection-group
+permalink: task-protection-group.html
 keywords: ransomware protection, protection group, modify, create, 
 summary: You can protect workloads against ransomware attacks by assigning policies to a workload in NetApp Ransomware Resilience.
 ---

@@ -29,7 +29,7 @@ indexpage:
     - title: Protect workloads
       url: /rp-use-protect.html
     - title: Scan for personally identifiable information with NetApp Data Classification
-      url: /rp-use-protect-classify.html
+      url: /task-classify.html
     - title: Respond to a detected alert 
       url: /rp-use-alert.html
     - title: Recover from an attack
