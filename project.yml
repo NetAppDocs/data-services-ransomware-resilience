@@ -55,7 +55,7 @@ sidebar:
         - title: Protect workloads
           entries: 
             - title: Review protection 
-              url: /task-review-protection.htlm
+              url: /task-review-protection.html
             - title: Protect workloads with ransomware protection strategies
               url: /rp-use-protect.html
             - title: Manage protection groups 
