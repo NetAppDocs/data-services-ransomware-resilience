@@ -10,9 +10,9 @@ Refer to https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-us
 
 To initiate scanning, on the Protection page, click *Identify exposure* in the Privacy exposure column. 
 
-//link:rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
+//link:task-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html[Scan for personally identifiable sensitive data with BlueXP classification].
 
 //=== Try upcoming Preview features before they are released
 //You can now try out some features labeled "Preview" before they are released. To do so, use the *Settings* option to show these features, which are tagged with a "Preview" label.

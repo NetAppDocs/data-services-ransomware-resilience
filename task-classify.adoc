@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: rp-use-protect-classify.html
+permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
 summary: Improve the security and privacy compliance of your data with NetApp Data Classification to identify whether your data includes personally identifiable or private information.
 ---
