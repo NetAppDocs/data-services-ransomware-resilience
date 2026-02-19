@@ -71,7 +71,7 @@ Data collectors are created automatically when you enable a ransomware protectio
 
 You can view the details of the data collector. From Settings, select **Manage** in the User activity tile. Select the **Data collector** tab then select the data collector to view its details or pause it.  
 
-image:user-activity-settings.png[Screenshot of user activity settings]
+image:user-activity-settings.png[Screenshot of user activity settings.]
 
 == Create a user directory connector
 
