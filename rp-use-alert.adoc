@@ -24,14 +24,25 @@ Each alert might include multiple incidents on different volumes and statuses. R
 
 Ransomware Resilience provides information called _evidence_ about what caused the alert to be issued, such as the following: 
 
+* Data breach
+* Data destruction 
 * File extensions were created or changed
 * File creation with a comparison of detected versus expected rates 
 * File deletion with a comparison of detected versus expected rates 
+* Suspicious user behavior 
 * When encryption is high, without file extension changes
+
+[NOTE]
+For data breach, data destruction, and suspicious user behavior alerts, you must configure link:concept-user-behavior.html[user activity detection].
+
+== Alert types 
 
 An alert is classified as one of the following: 
 
-* *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+* *Potential attack*: An alert is classified as a potential attack when:
+* Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+* Data breaches are detected. 
+* Data destruction is detected. 
 * *Warning*: A warning occurs based on the following behaviors: 
 ** Detection of a new extension has not been identified before and the same behavior does not repeat enough times to declare it as an attack. 
 ** High entropy is observed. 
@@ -44,29 +55,29 @@ Evidence is based on information from Autonomous Ransomware Protection in ONTAP.
 
 //The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
 
+=== Alert statuses
 
-An alert can have one of the following statuses:
-
-* *New* 
-* *Inactive*
+An alert has one of two statuses: *New* or *Inactive*. 
 
 An alert incident can have the following states: 
 
-* *New*: All incidents are marked "new" when they are first identified. 
-* *In review*: You can mark an incident as in review while you evaluate it. 
-* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
-+
+[options="headers",cols="10%,90%"]
+|===
+| State | Description 
+| *New* | All incidents are marked "new" when they are first identified. 
+| *In review* | You can manually mark an alert incident as "in review" while you evaluate it.
+| *Dismissed* 
+a| If you suspect that the activity is not a ransomware attack, you can change the status to "dismissed." +
 CAUTION: After you dismiss an attack, you can't revert its status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
-* *Dismissing*: The incident is in the process of being dismissed. 
-* *Resolved*: The incident has been fixed.
-* *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
+| *Resolved* | The incident has been fixed.
+| *Auto Resolved* | For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
+|===
 
-
-TIP: If you configured a security and event management system (SIEM) in Ransomware Resilience  in the Settings page, Ransomware Resilience sends alert details to your SIEM system. 
+TIP: If you link:task-siem.html[configured a security and event management system (SIEM) in Ransomware Resilience], Ransomware Resilience sends alert details to your SIEM system. 
 
 == View alerts
 
-You can access alerts from the Ransomware Resilience  Dashboard or from the *Alerts* tab. 
+You can access alerts from the Ransomware Resilience dashboard or from the *Alerts* tab. 
 
 include::_include/console-role-admin-viewer.adoc[]
 
