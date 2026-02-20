@@ -10,7 +10,7 @@ summary: If Ransomware Resilience detects a possible attack, an alert appears on
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
+When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. When you receive an alert, review the potential risk in the Ransomware Resilience *Alerts* tab to assess the impact on your data and prevent a potential ransomware attack. 
 
 If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured addresses. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience *Alerts* tab.
 
@@ -22,7 +22,9 @@ To begin to recover your data, mark the alert as ready for recovery so that your
 
 Each alert might include multiple incidents on different volumes and statuses. Review all incidents.
 
-Ransomware Resilience provides information called _evidence_ about what caused the alert to be issued, such as the following: 
+== How alerts are generated
+
+Ransomware Resilience relies on evidence about data entropy patterns, file extension types, and encryption to produce alerts. Alerts are based on the following events:
 
 * Data breach
 * Data destruction 
@@ -35,14 +37,16 @@ Ransomware Resilience provides information called _evidence_ about what caused t
 [NOTE]
 For data breach, data destruction, and suspicious user behavior alerts, you must configure link:concept-user-behavior.html[user activity detection].
 
-== Alert types 
+=== Alert types and statuses
 
-An alert is classified as one of the following: 
+Alerts have one of two statuses: *New* or *Inactive*. 
+
+An alert is classified as one of the following types: 
 
 * *Potential attack*: An alert is classified as a potential attack when:
-* Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
-* Data breaches are detected. 
-* Data destruction is detected. 
+** Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+** Data breaches are detected. 
+** Data destruction is detected. 
 * *Warning*: A warning occurs based on the following behaviors: 
 ** Detection of a new extension has not been identified before and the same behavior does not repeat enough times to declare it as an attack. 
 ** High entropy is observed. 
@@ -53,11 +57,7 @@ For SAN environments, warnings are based on high entropy only.
 
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
-//The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
-
-=== Alert statuses
-
-An alert has one of two statuses: *New* or *Inactive*. 
+=== Alert states
 
 An alert incident can have the following states: 
 
@@ -72,8 +72,6 @@ CAUTION: After you dismiss an attack, you can't revert its status. If you dismis
 | *Resolved* | The incident has been fixed.
 | *Auto Resolved* | For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 |===
-
-TIP: If you link:task-siem.html[configured a security and event management system (SIEM) in Ransomware Resilience], Ransomware Resilience sends alert details to your SIEM system. 
 
 == View alerts
 
@@ -109,7 +107,7 @@ include::_include/console-role-admin-viewer.adoc[]
 
 .Steps 
 . View the email. 
-. In the email, select *View alert* and log in to Ransomware Resilience . 
+. In the email, select *View alert* and log in to Ransomware Resilience. 
 +
 The Alerts page appears.
 
@@ -130,14 +128,15 @@ You must have configured a user activity agent and enabled a protection policy w
 
 === View malicious activity
 
-When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience , you can view the following details:
+When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience, you can view the following details:
 
+* When the alert was triggered
+* When access was changed or denied
 * Entropy of incoming data
 * Expected creation rate of new files compared to detected rate
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
-* Impacted files and directories
-// add here
+* Impacted workloads, volumes, files, and directories
 
 [NOTE]
 These details are viewable for NAS workloads. For SAN environments, only the entropy data is available.  
@@ -161,7 +160,7 @@ If you've configured suspicious user detection to view anomalous user behavior, 
 . From the Ransomware Resilience menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
-.. To block a suspected user in your environment, select *Block* next to the the user's name.
+.. To block a suspected user in your environment, select *Block* next to the user's name.
 .. To disable alerts on a given user who is the subject of an alert you know to be false, select the three dots (`...`) then **Exclude this user from monitoring**. Review the dialog then select **Exclude** to confirm.
 
 [TIP]
