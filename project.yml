@@ -34,14 +34,14 @@ sidebar:
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
+# Configure 
         - title: Simulate a ransomware attack with a readiness drill
           url: /rp-start-simulate.html  
-        - title: Configure workload discovery
-          url: /rp-use-settings.html 
         - title: Configure backup destinations
           url: /task-backup-destination.html
         - title: Configure SIEM 
           url: /task-siem.html
+# Move to detect & protection 
         - title: Configure user activity detection
           entries: 
           - title: Learn about user activity detection 
@@ -50,6 +50,8 @@ sidebar:
             url: /reference-user-activity-requirements.html
           - title: Configure agents and collectors
             url: /suspicious-user-activity.html
+# Configure detection & protection 
+# Respond & recover              
     - title: Use Ransomware Resilience
       entries:
         - title: View workload health using the Dashboard

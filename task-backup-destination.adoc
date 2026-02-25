@@ -1,4 +1,3 @@
-
 ---
 sidebar: sidebar
 permalink: task-backup-destination.html
@@ -11,7 +10,7 @@ summary: You can configure several options, including a backup destination and t
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience discovers workloads, if backups are configured, Ransomware Resilience recognizes the backup destinations. If your plan to use backups as part of your link:rp-use-protect.html[ransomware protection strategy] but have not configured backup destinations on the workload, you should add a backup destination in NetApp Ransomware Resilience to improve your cyberesiliency posture. 
+When NetApp Ransomware Resilience discovers workloads, if backups are configured, Ransomware Resilience recognizes the backup destinations. If you plan to use backups as part of your link:rp-use-protect.html[ransomware protection strategy] but have not configured backup destinations on the workload, you should add a backup destination in NetApp Ransomware Resilience to improve your cyber resiliency posture. 
 
 You can choose one of the following backup destinations: 
 
@@ -20,7 +19,7 @@ You can choose one of the following backup destinations:
 * Google Cloud Platform
 * Microsoft Azure 
 
-NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP nor Azure NetApp Files. Perform backup operations using native backup solutions: FSx for ONTAP backup service or Azure NetApp Files backups. 
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP and Azure NetApp Files. Perform backup operations using native backup solutions: FSx for ONTAP backup service or Azure NetApp Files backups. 
 
 include::_include/console-role-admin.adoc[]
 
@@ -56,7 +55,7 @@ Choose if you want to configure backup lock. With backup lock, copies are protec
 
 The new backup destination is added to the list of backup destinations. 
 
-image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
+image:screen-settings-backup-destinations-list2.png[Screenshot of backup destinations.]
 
 == Add Amazon Web Services as a backup destination 
 
@@ -88,7 +87,7 @@ If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS
 
 * *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
 +
-CAUTION: If you configure the backup lock setting now, you cannot change the setting later after the backup destination is configured. 
+CAUTION: If you configure the backup lock setting now, you cannot change the setting after the backup destination is configured. 
 
 ** *Governance mode*: Specific users (with s3:BypassGovernanceRetention permission) can overwrite or delete protected files during the retention period. 
 ** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
