@@ -10,30 +10,12 @@ summary: You can configure several options, including a backup destination and t
 :imagesdir: ./media/
 
 [.lead]
-In the NetApp Ransomware Resilience settings tab, you can configure backup destinations, conduct an attack readiness drill, configure workload discovery, or configure suspicious user activity detection.
-
+When you launch NetApp Ransomware Resilience for the first time, it discovers workloads. If you add or need to rediscover workloads, use the Ransomware Resilience settings dashboard to configure workload discovery. 
 include::_include/console-role-admin.adoc[]
 
 //You can also show future Preview features. 
 
 //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
-
-*What can you do in the Settings page?*
-From the Settings page, you can do the following: 
-
-* Simulate a ransomware attack by conducting a readiness drill and respond to a simulated ransomware alert. For details, see link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
-
-* Configure workload discovery.
-* Configure suspicious user activity reporting. For more information, see link:suspicious-user-activity.html[Suspicious user activity].
-* Add a backup destination.
-* Connect your security and event management system (SIEM) for threat analysis and detection. Enabling threat detection automatically sends data to your SIEM for threat analysis. For more information, see link:task-siem.html[Connect NetApp Ransomware Resilience to a SIEM]. 
-//* Show upcoming Technology Preview features.
-
-== Simulate a ransomware attack
-
-Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. This feature helps you know that you are prepared in the event of an actual ransomware attack by testing alert notification, response, and recovery processes. You can run a ransomware readiness drill multiple times. 
-
-For details, refer to link:rp-start-simulate.html[Conduct a ransomware attack readiness drill].
 
 == Configure workload discovery 
 

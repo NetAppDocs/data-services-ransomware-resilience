@@ -36,8 +36,10 @@ sidebar:
           url: /rp-start-discover.html 
         - title: Simulate a ransomware attack with a readiness drill
           url: /rp-start-simulate.html  
-        - title: Configure backups, threat detection, & attack simulations in Settings 
+        - title: Configure workload discovery
           url: /rp-use-settings.html 
+        - title: Configure backup destinations
+          url: /task-backup-destination.html
         - title: Configure SIEM 
           url: /task-siem.html
         - title: Configure user activity detection
