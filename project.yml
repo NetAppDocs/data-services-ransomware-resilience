@@ -28,20 +28,24 @@ sidebar:
           url: /rp-start-quick-start.html
         - title: Set up Ransomware Resilience 
           url: /rp-start-setup.html
-        - title: Access Ransomware Resilience
-          url: /rp-start-login.html
         - title: Set up licensing
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-# Configure 
-        - title: Simulate a ransomware attack with a readiness drill
-          url: /rp-start-simulate.html  
+    - title: Use Ransomware Resilience 
+      entries: 
+        - title: Access Ransomware Resilience
+          url: /rp-start-login.html
         - title: Configure backup destinations
           url: /task-backup-destination.html
-        - title: Configure SIEM 
-          url: /task-siem.html
-# Move to detect & protection 
+        - title: View workload health using the Dashboard
+          url: /rp-use-dashboard.html
+    - title: Detect and protect
+      entries: 
+        - title: Review protection 
+          url: /task-review-protection.html
+        - title: Protect workloads
+          url: /rp-use-protect.html
         - title: Configure user activity detection
           entries: 
           - title: Learn about user activity detection 
@@ -50,22 +54,16 @@ sidebar:
             url: /reference-user-activity-requirements.html
           - title: Configure agents and collectors
             url: /suspicious-user-activity.html
-# Configure detection & protection 
-# Respond & recover              
-    - title: Use Ransomware Resilience
+        - title: Manage protection groups 
+          url: /task-protection-group.html
+        - title: Scan for personally identifiable data
+          url: /task-classify.html 
+        - title: Conduct a readiness drill
+          url: /rp-start-simulate.html  
+        - title: Configure SIEM 
+          url: /task-siem.html       
+    - title: Respond and recover
       entries:
-        - title: View workload health using the Dashboard
-          url: /rp-use-dashboard.html
-        - title: Protect workloads
-          entries: 
-            - title: Review protection 
-              url: /task-review-protection.html
-            - title: Protect workloads with ransomware protection strategies
-              url: /rp-use-protect.html
-            - title: Manage protection groups 
-              url: /task-protection-group.html
-            - title: Scan for personally identifiable data
-              url: /task-classify.html 
         - title: Respond to a detected alert 
           url: /rp-use-alert.html
         - title: Recover from a ransomware attack

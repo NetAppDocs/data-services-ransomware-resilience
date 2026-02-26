@@ -8,18 +8,14 @@ indexpage:
     links:
     - title: Learn about Ransomware Resilience
       url: /concept-ransomware-resilience.html
+    - title: Learn about user activity detection 
+      url: /concept-user-behavior.html
     - title: What's new in Ransomware Resilience
       url: /whats-new.html
     - title: Prerequisites
       url: /rp-start-prerequisites.html
     - title: Quick start
       url: /rp-start-quick-start.html
-    - title: Configure backup destinations and enable threat detection
-      url: /rp-use-settings.html 
-    - title: Simulate a ransomware attack
-      url: /rp-start-simulate.html
-    - title: Configure suspicious user activity detectoin 
-      url: /suspicious-user-activity.html
   - title: Use Ransomware Resilience
     links:
     - title: Discover workloads
@@ -28,8 +24,8 @@ indexpage:
       url: /rp-use-dashboard.html
     - title: Protect workloads
       url: /rp-use-protect.html
-    - title: Scan for personally identifiable information with NetApp Data Classification
-      url: /task-classify.html
+    - title: Configure suspicious user activity detection 
+      url: /suspicious-user-activity.html
     - title: Respond to a detected alert 
       url: /rp-use-alert.html
     - title: Recover from an attack
