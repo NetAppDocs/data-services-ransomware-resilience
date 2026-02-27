@@ -134,7 +134,7 @@ A backup policy is not required in the Ransomware Resilience strategy.
 
 .Is Ransomware Resilience aware of protection settings in ONTAP?
 
-Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also discovers whether ARP and FPolicy are enabled across all volumes in a discovered workload. The information you see in the Ransomware Resilience Dashboard is aggregated from other NetApp solutions and products. 
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also discovers whether ARP and FPolicy are enabled across all volumes in a discovered workload. The information you see in the Ransomware Resilience dashboard is aggregated from other NetApp solutions and products. 
 
 .Is Ransomware Resilience aware of policies already made in Backup and Recovery and SnapCenter?
 

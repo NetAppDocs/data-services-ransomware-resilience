@@ -6,18 +6,9 @@ Scanning for PII data in BlueXP ransomware protection is generally available to 
 
 To initiate scanning, on the Protection page, select *Identify exposure* in the Privacy exposure column of the Protection dashboard. For more information, see https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-classify.html[scan for personally identifiable sensitive data with BlueXP classification].
 
-//=== Try upcoming Preview features before they are released
-//You can now try out some features labeled "Preview" before they are released. To do so, use the *Settings* option to show these features, which are tagged with a "Preview" label.
-//+
-//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
-
-//https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
-
 === SIEM integration with Microsoft Sentinel
 
 You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
-
-//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring BlueXP ransomware protection settings]. 
 

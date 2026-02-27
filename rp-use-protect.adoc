@@ -181,7 +181,7 @@ Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more ab
 
 ** *Backup schedules*: Choose schedule options for secondary storage and enable the schedule. 
 +
-TIP: To enable backup locking on secondary storage, configure your backup destinations using the *Settings* option. For details, see link:rp-use-settings.html[Configure settings].
+TIP: To enable backup locking on secondary storage, configure your backup destinations using the *Settings* option. For details, see link:task-backup-destination.html[Configure settings].
 
 . Select *Add*. 
 

@@ -1,0 +1,42 @@
+---
+permalink: rp-use-settings.html
+redirect: data-services-ransomware-resilience/rp-start-discover.html
+---
+
+// ---
+// sidebar: sidebar
+// permalink: rp-use-settings.html
+// keywords: ransomware resilience, ransomware protection, 
+// summary: You can configure several options, including a backup destination and threat detection in the settings page.
+// ---
+// = Discover workloads in NetApp Ransomware Resilience
+// :hardbreaks:
+// :icons: font
+// :imagesdir: ./media/
+
+// [.lead]
+// To expand the scope of workloads available for protection in NetApp Ransomware Resilience, you need to perform workload discovery. Workload discovery displays Console agents with systems not previously selected earlier, newly available Console agents, and newly available systems.
+
+// Performing workload discovery does not display systems already visible in Ransomware Resilience. 
+
+// include::_include/console-role-admin.adoc[]
+
+// //You can also show future Preview features. 
+
+// //Enabling threat detection automatically sends data to a security and event management system (SIEM) or extended detection and response (XDR) server for threat analysis and detection. 
+
+// == Configure workload discovery 
+
+// You can configure workload discovery to automatically discover new workloads in your environment.
+
+// . In the Settings page, locate the *Workload discovery* tile.
+// . In the *Workload discovery* tile, select *Discover workloads*.
+// . Select the Console agent where you want to discover workloads.
+// . Review the list of systems.
+// . Check the systems where you want to discover workloads or select the box at the top of the table to discover workloads in all discovered workload environments.
+// . Repeat for other systems as needed.
+// . Select *Discover* to have Ransomware Resilience automatically discover new workloads in the selected Console agent.
+
+// [TIP]
+// From the Workload discovery card in Settings, select the action menu `...` then **Download report (JSON)** to review a list of supported and unsupported workloads in your systems. 
+

@@ -39,7 +39,7 @@ The CSV or JSON files include data for all workloads on all Console systems.
 +
 image:screen-dashboard.png[Dashboard page]
  
-. From the Dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
+. From the dashboard or other page, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the reports. 
 
 . Do one of the following:
 * From the page, select the *Download* image:button-download.png[Download option] option. 

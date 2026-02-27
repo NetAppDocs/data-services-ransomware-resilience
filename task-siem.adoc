@@ -209,3 +209,17 @@ NOTE: The information that you enter depends on the SIEM you selected.
 . Select *Enable*. 
 +
 The Settings page shows "Connected."
+
+
+
+//=== Disconnect SIEM
+//Disconnecting SIEM stops Ransomware Resilience from sending data to the SIEM server. 
+
+//.Steps
+//. From the Console menu, select *Protection* > *Ransomware Resilience*. 
+
+//. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+
+//. Select *Settings*. 
+//. In the SIEM connection pane, select *Disconnect*. 
+//. In the confirmation page, select *Disconnect*. 

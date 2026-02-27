@@ -29,7 +29,7 @@ One of the first steps in protecting workloads is viewing your current workloads
 . From the Console's left navigation, select *Protection* > *Ransomware Resilience*. 
 . Do one of the following: 
 +
-* From the Data Protection pane on the Dashboard, select *View all*. 
+* From the Data Protection pane on the dashboard, select *View all*. 
 * From the menu, select *Protection*.
 +
 image:screen-protection.png[Protection page]

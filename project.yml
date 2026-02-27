@@ -28,44 +28,46 @@ sidebar:
           url: /rp-start-quick-start.html
         - title: Set up Ransomware Resilience 
           url: /rp-start-setup.html
-        - title: Access Ransomware Resilience
-          url: /rp-start-login.html
         - title: Set up licensing
           url: /rp-start-licenses.html
         - title: Discover workloads
           url: /rp-start-discover.html 
-        - title: Simulate a ransomware attack with a readiness drill
-          url: /rp-start-simulate.html  
-        - title: Configure backups, threat detection, & attack simulations in Settings 
-          url: /rp-use-settings.html 
-        - title: Configure SIEM 
-          url: /task-siem.html
-        - title: Configure user activity detection
-          entries: 
-          - title: Learn about user activity detection 
-            url: /concept-user-behavior.html
-          - title: User activity requirements 
-            url: /reference-user-activity-requirements.html
-          - title: Configure agents and collectors
-            url: /suspicious-user-activity.html
-    - title: Use Ransomware Resilience
-      entries:
-        - title: View workload health using the Dashboard
+    - title: Use Ransomware Resilience 
+      entries: 
+        - title: Access Ransomware Resilience
+          url: /rp-start-login.html
+        - title: View workload health
           url: /rp-use-dashboard.html
-        - title: Protect workloads
+        - title: Protect and detect
           entries: 
             - title: Review protection 
               url: /task-review-protection.html
-            - title: Protect workloads with ransomware protection strategies
+            - title: Configure backup destinations
+              url: /task-backup-destination.html
+            - title: Protect workloads
               url: /rp-use-protect.html
+            - title: Configure user activity detection
+              entries: 
+                - title: Learn about user activity detection 
+                  url: /concept-user-behavior.html
+                - title: User activity detection requirements 
+                  url: /reference-user-activity-requirements.html
+                - title: Configure agents and collectors
+                  url: /suspicious-user-activity.html
             - title: Manage protection groups 
               url: /task-protection-group.html
             - title: Scan for personally identifiable data
-              url: /task-classify.html 
-        - title: Respond to a detected alert 
-          url: /rp-use-alert.html
-        - title: Recover from a ransomware attack
-          url: /rp-use-recover.html
+              url: /task-classify.html      
+        - title: Respond and recover
+          entries:
+            - title: Respond to a detected alert 
+              url: /rp-use-alert.html
+            - title: Recover from a ransomware attack
+              url: /rp-use-recover.html
+        - title: Conduct a readiness drill
+          url: /rp-start-simulate.html  
+        - title: Configure SIEM 
+          url: /task-siem.html  
         - title: Download reports
           url: /rp-use-reports.html 
     - section: support
