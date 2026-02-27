@@ -44,6 +44,8 @@ sidebar:
               url: /task-review-protection.html
             - title: Protect workloads
               url: /rp-use-protect.html
+            - title: Configure backup destinations
+              url: /task-backup-destination.html
             - title: Configure user activity detection
               entries: 
                 - title: Learn about user activity detection 
@@ -54,8 +56,6 @@ sidebar:
                   url: /suspicious-user-activity.html
             - title: Manage protection groups 
               url: /task-protection-group.html
-            - title: Configure backup destinations
-              url: /task-backup-destination.html
             - title: Scan for personally identifiable data
               url: /task-classify.html      
         - title: Respond and recover

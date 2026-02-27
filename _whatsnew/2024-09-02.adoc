@@ -5,10 +5,8 @@ Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor docu
 
 === Back up to Google Cloud Platform
 With this release, you can set a backup destination to a Google Cloud Platform bucket. Previously, you could add backup destinations only to NetApp StorageGRID, Amazon Web Services, and Microsoft Azure. 
-//+
-//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html[Learn more about configuring BlueXP ransomware protection settings].
 
 === Support for Google Cloud Platform
 The service now supports Cloud Volumes ONTAP for Google Cloud Platform for storage protection. Previously, the service supported only Cloud Volumes ONTAP for Amazon Web Services and Microsoft Azure along with on-premises NAS.

@@ -83,13 +83,13 @@ Here is a sampling of the recommendations that Ransomware Resilience offers.
 | Add a ransomware protection policy. | The workload is currently not protected. | Assign a policy to the workload. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 |Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
-Refer to link:rp-use-settings.html[Configure protection settings].
+Refer to link:task-siem.html[Connect to a SIEM].
 |Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
 Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
-Refer to link:rp-use-settings.html[Configure protection settings].| Protect critical or highly important application workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
+Refer to link:task-backup-destination.html[Add a backup destination].| Protect critical or highly important application workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) application workloads that are not protected. | Assign a policy to these workloads. 
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
