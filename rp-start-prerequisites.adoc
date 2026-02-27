@@ -27,20 +27,15 @@ Your NetApp Console configuration requires:
 * A NetApp Console user account with Organization Admin privileges for discovering resources.
 
 * A Console organization and system with at least one active Console agent connecting to a link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources[supported system].
-** If your on-premises ONTAP clusters or Cloud Volumes ONTAP in AWS or in Azure cloud are not set up in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html[Learn how to configure a Console agent^] and link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard Console requirements^].
+** If your on-premises ONTAP clusters or Cloud Volumes ONTAP systems are not set up in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html[Learn how to configure a Console agent^] and link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard Console requirements^].
 +
 NOTE: If you have multiple Console agents in a single Console organization, the Ransomware Resilience will scan ONTAP resources across all Console agents beyond the one that is currently selected in the Console UI. 
 
 * The Console agent must have the `cloudmanager-ransomware-protection` container in an active state. 
 
-* At least one Console system with a NetApp on-premises ONTAP cluster or Cloud Volumes ONTAP in AWS or Azure. Ransomware Resilience supports both NAS (NFS and SMB) and SAN (iSCSI, FC, and NVMe) protocols. 
-
-** Ransomware Resilience is supported with ONTAP or Cloud Volumes ONTAP clusters with ONTAP version 9.11.1 or greater. 
+* For ONTAP or Cloud Volumes ONTAP clusters, Ransomware Resilience requires the ONTAP version be 9.11.1 or greater. 
 [NOTE]
 To use Ransomware Resilience on SAN workloads, you must be running ONTAP 9.17.1 or later. 
-
-//All source and systems must be in the same Console organization. 
-
 
 //** A Console agent per each Virtual Private Cloud (VPC) or on an on-premises region must be set up in the Console. Refer to https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[Console documentation to configure the Console agent^].
 
