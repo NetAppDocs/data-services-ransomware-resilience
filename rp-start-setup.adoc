@@ -22,7 +22,7 @@ Prepare one of the following backup destinations:
 * Google Cloud Platform
 * Microsoft Azure 
 
-After you configure options in the backup destination itself, you will later configure it as a backup destination in Ransomware Resilience. For details about how to configure the backup destination in Ransomware Resilience, refer to link:task-backup-destinatoin.html[Configure backup destinations].
+After you configure options in the backup destination itself, you will later configure it as a backup destination in Ransomware Resilience. For details about how to configure the backup destination in Ransomware Resilience, refer to link:task-backup-destination.html[Configure backup destinations].
 
 === Prepare StorageGRID to become a backup destination
 
