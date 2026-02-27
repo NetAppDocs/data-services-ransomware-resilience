@@ -20,7 +20,7 @@ indexpage:
     links:
     - title: Discover workloads
       url: /rp-start-discover.html 
-    - title: View workload health using the Dashboard
+    - title: View workload health
       url: /rp-use-dashboard.html
     - title: Protect workloads
       url: /rp-use-protect.html

@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
+summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
 ---
 = Manage alerts in NetApp Ransomware Resilience
 :hardbreaks:
@@ -10,7 +10,7 @@ summary: If Ransomware Resilience detects a possible attack, an alert appears on
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. When you receive an alert, review the potential risk in the Ransomware Resilience *Alerts* tab to assess the impact on your data and prevent a potential ransomware attack. 
+When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the dashboard and in the Notifications menu. Ransomware Resilience immediately takes a snapshot. When you receive an alert, review the potential risk in the Ransomware Resilience *Alerts* tab to assess the impact on your data and prevent a potential ransomware attack. 
 
 If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured addresses. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience *Alerts* tab.
 
@@ -81,7 +81,7 @@ include::_include/console-role-admin-viewer.adoc[]
 
 .Steps
 
-. In the Ransomware Resilience  Dashboard, review the Alerts pane.
+. In the Ransomware Resilience  dashboard, review the Alerts pane.
 . Select *View all* under one of the statuses. 
 
 . Select an alert to review all incidents on each volume for each alert. 

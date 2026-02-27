@@ -59,11 +59,11 @@ Ransomware Resilience only discovers workload data when you select system. The d
 . To download the list of discovered workloads, select *Download results*.
 . To display the Ransomware Resilience dashboard, select *Go to Dashboard*.   
 +
-The Dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
+The dashboard shows data protection health. The number of at-risk or protected workloads updates as new workloads are discovered.  
 +
-image:screen-dashboard.png[Ransomware Resilience Dashboard]
+image:screen-dashboard.png[Ransomware Resilience dashboard]
 +
-link:rp-use-dashboard.html[Learn what the Dashboard shows you.]
+link:rp-use-dashboard.html[Learn what the dashboard shows you.]
 
 == Discover newly created workloads for previously selected systems
 
@@ -73,7 +73,7 @@ If you've added workloads to a previously discovered system, you need to reiniti
 
 . To identify the time of the last discovery, look at the date and time stamp next to *Refresh* icon at the top right of the Ransomware Resilience dashboard.
 
-. From the Dashboard, select the *Refresh* icon to find new workloads. 
+. From the dashboard, select the *Refresh* icon to find new workloads. 
 
 [TIP]
 If you find there are volumes not displaying for the system you've discovered, the volumes might be unsupported. To find a list of unsupported volumes, go to the **Settings** menu then select the action menu in the Workload discovery card to download a JSON report of supported and unsupported volumes. 
@@ -84,8 +84,6 @@ If you have already discovered workloads, you can find new or previously unselec
 
 .Steps
 
-//. Do one of the following: 
-//* From the Dashboard, select *Add new* and in the tooltip that appears, select *Add new systems*. 
 . From Ransomware Resilience, select *Settings*. 
 . In the Workload discovery card, select *Discover workloads*. Discovery can take a few minutes. A loading icon displays the progress. 
 . Ransomware Resilience discovers both supported and unsupported systems. It does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to discover workloads. 

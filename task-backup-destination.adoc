@@ -178,7 +178,7 @@ image:screen-settings-backup-destinations-list2.png[Backup destinations page the
 
 //. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
 
-//. From the Dashboard, select the Actions option on the upper right and select *Edit settings*. 
+//. From the dashboard, select the Actions option on the upper right and select *Edit settings*. 
 //+
 //image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings option]
 

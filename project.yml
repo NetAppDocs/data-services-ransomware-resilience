@@ -36,16 +36,16 @@ sidebar:
       entries: 
         - title: Access Ransomware Resilience
           url: /rp-start-login.html
-        - title: View workload health using the Dashboard
+        - title: View workload health
           url: /rp-use-dashboard.html
         - title: Protect and detect
           entries: 
             - title: Review protection 
               url: /task-review-protection.html
-            - title: Protect workloads
-              url: /rp-use-protect.html
             - title: Configure backup destinations
               url: /task-backup-destination.html
+            - title: Protect workloads
+              url: /rp-use-protect.html
             - title: Configure user activity detection
               entries: 
                 - title: Learn about user activity detection 
