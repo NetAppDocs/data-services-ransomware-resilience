@@ -15,8 +15,6 @@ Within NetApp Ransomware Resilience, you can use NetApp Data Classification to s
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/[Data Classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
 
-//IMPORTANT: Data Classification can be deployed on-premises, in the cloud (non-SaaS deployments), or as a SaaS model in a technology Preview. When using non-SaaS deployments or existing deployments, scanning for PII data in Ransomware Resilience is generally available and not in Preview. To enable Preview features, use the Ransomware Resilience *Settings* option. Refer to link://rp-use-settings-html[Configure Ransomware Resilience settings].
-
 TIP: This process can impact workload importance to help ensure you have the appropriate protection. 
 
 include::_include/console-role-admin.adoc[]

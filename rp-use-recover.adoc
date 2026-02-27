@@ -34,7 +34,7 @@ Review the workloads that are in the "Restore needed" recovery status.
 
 . Do one of the following: 
 +
-* From the Dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
+* From the dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
 
 * From the menu, select *Recovery*.
 

@@ -56,7 +56,7 @@ Refer to the https://docs.netapp.com/us-en/console-setup-admin/reference-permiss
 
 * NetApp Backup and Recovery does not need to be enabled on the system. 
 +
-Ransomware Resilience helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+Ransomware Resilience helps configure a backup destination through the Settings option. See link:task-backup-destination.html[Add a backup destination].
 
 == Suspicious user behavior requirements
 
