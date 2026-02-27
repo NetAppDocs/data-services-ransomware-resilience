@@ -15,9 +15,10 @@ summary: Ransomware Resilience enables you to view relevant information about cy
 [.lead]
 Ransomware attacks can block access to your data and attackers can ask for ransom in exchange for the release of data or decryption. According to the IDC, it is not uncommon for victims of ransomware to experience multiple ransomware attacks. The attack can disrupt access to your data for anywhere from one day to several weeks.
 
-NetApp Ransomware Resilience protects your data from ransomware attacks. In Ransomware Resilience, protection is available for application-based workloads of Oracle, VM datastores, and file shares on on-premises NAS storage (using the NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe) as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, and Amazon FSx for NetApp ONTAP across the NetApp Console. You can back up data to Amazon Web Services, Google Cloud, Microsoft Azure cloud storage, and NetApp StorageGRID.
+NetApp Ransomware Resilience protects your data from ransomware attacks. In Ransomware Resilience, protection is available for application-based workloads of Oracle, VM datastores, and file shares for NAS storage (NFS and CIFS protocols) and SAN storage (FC, iSCSI, and NVMe protocols). Ransomware Resilience is supported in on-premises storage as well as Cloud Volumes ONTAP for Amazon Web Services, Cloud Volumes ONTAP for Google Cloud, Cloud Volumes ONTAP for Microsoft Azure, Azure NetApp Files, and Amazon FSx for NetApp ONTAP across the NetApp Console. You can back up data to Amazon Web Services, Google Cloud, Microsoft Azure, and NetApp StorageGRID.
 
 == Ransomware Resilience at the data layer
+
 Your security posture typically encompasses multiple layers of defense to protect against a range of cyber threats. 
 
 * *Outermost layer*: This is your first line of defense using firewalls, intrusion detection systems, and virtual private networks to safeguard network boundaries. 

@@ -33,7 +33,10 @@ NOTE: If you have multiple Console agents in a single Console organization, the 
 
 * The Console agent must have the `cloudmanager-ransomware-protection` container in an active state. 
 
-* At least one Console system with a NetApp on-premises ONTAP cluster or Cloud Volumes ONTAP in AWS or Azure. Ransomware Resilience supports both NAS (NFS and SMB) and SAN (iSCSI, FC, and NVMe) protocols. 
+* At least one Console system with a NetApp on-premises ONTAP cluster or Cloud Volumes ONTAP in AWS or Azure. Ransomware Resilience supports both NAS (NFS and SMB) and SAN (FC, iSCSI, and NVMe) protocols. 
++
+[NOTE]
+Cloud Volumes ONTAP supports NAS (NFS and SMB) and SAN (only iSCSI and NVMe). 
 
 ** Ransomware Resilience is supported with ONTAP or Cloud Volumes ONTAP clusters with ONTAP version 9.11.1 or greater. 
 [NOTE]
