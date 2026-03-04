@@ -15,11 +15,11 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
-=== Clean restore
+== 09 March 2026
+include::_whatsnew/2026-03-09.adoc[]
 
-Ransomware Resilience now supports clean restores, a new recovery option that helps you quickly and easily recovery from ransomware attacks. Clean restores offers guided workflows that identify optimal restore points to get your workloads up and running to minimize downtimes. The workflows in clean restore also provide file-level insights into your data, ensuring you can restore malware-free workload that prevents reinfection and minimizes data loss.
-
-For more information, see link:clean-restore-task.html[Recover workloads with clean restore].
+== 16 February 2026
+include::_whatsnew/2026-02-16.adoc[]
 
 == 19 January 2026
 include::_whatsnew/2026-01-19.adoc[]
@@ -77,9 +77,7 @@ include::_whatsnew/2024-09-02.adoc[]
 
 You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. With previous releases, you could select only the AWS Security Hub as your SIEM. With this release, you can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 
-//For details, refer to link:rp-use-settings.html[Configure BlueXP ransomware protection settings]. 
-
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring BlueXP ransomware protection settings].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring BlueXP ransomware protection settings].
 
 == 1 July 2024
 
@@ -129,7 +127,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransom
 === Microsoft Azure added as a backup destination
 You can now add Microsoft Azure as a backup destination along with AWS and NetApp StorageGRID. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about how to Configure protection settings].
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html[Learn more about how to Configure protection settings].
 
 == 14 May 2024
 
@@ -164,7 +162,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect
 Enable threat detection is now available using a third-party security and event management (SIEM) system. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
 //* *Enable threat detection* using third-party security and event management (SIEM) or extended detection and response (XDR) server. The Dashboard now shows a new recommendation to "Enable threat detection" which can be configured on the Settings page. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring Settings options].  
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring Settings options].  
 
 === Dismiss false positive alerts
 From the Alerts tab, you can now dismiss false positives or decide to recover your data immediately.  
@@ -185,12 +183,12 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports
 View documentation link is now included in the UI. You can access this documentation from the Dashboard vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option. Select *What's new* to view details in the Release Notes or *Documentation* to view the BlueXP ransomware protection documentation Home page. 
 
 === BlueXP backup and recovery
-The BlueXP backup and recovery service no longer needs to be already enabled on the system. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:rp-use-settings.html[Configure settings].
+The BlueXP backup and recovery service no longer needs to be already enabled on the system. See link:rp-start-prerequisites.html[prerequisites]. The BlueXP ransomware protection service helps configure a backup destination through the Settings option. See link:task-backup-destination.html[Configure settings].
 
 === Settings option
 You can now set up backup destinations in BlueXP ransomware protection Settings. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring Settings options]. 
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html[Learn more about configuring Settings options]. 
 
 == 5 March 2024
 === Protection policy management
@@ -200,7 +198,7 @@ In addition to using predefined policies, you can now create policies. https://d
 You can now make the backup immutable in secondary storage using NetApp DataLock technology in the object store. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Learn more about creating protection policies]. 
 
 === Automatic backup to NetApp StorageGRID
-In addition to using AWS, you can now choose StorageGRID as your backup destination. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-settings.html[Learn more about configuring backup destinations].
+In addition to using AWS, you can now choose StorageGRID as your backup destination. https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html[Learn more about configuring backup destinations].
 
 === Additional features to investigate potential attacks
 You can now view more forensic details to investigate the detected potential attack. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-alert.html[Learn more about responding to a detected ransomware alert]. 

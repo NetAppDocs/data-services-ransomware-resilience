@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: custom-restore-task.html
+permalink: task-custom-restore.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
 summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
 ---
@@ -13,7 +13,7 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 NetApp Ransomware resilience supports multiple ways to recover from a ransomware attack. The method depends on how you have confiured protection and the scope of the restore you want to perform.
 
 [NOTE]
-Ransomware Resilience also supports a xref:clean-restore-task.html[clean restore], enabling you to clean all files before performing the restore. 
+Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore], enabling you to clean all files before performing the restore. 
 
 == Restore a workload managed by SnapCenter 
 

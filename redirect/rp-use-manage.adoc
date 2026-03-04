@@ -1,11 +1,16 @@
 ---
+permalink: rp-use-manage.html
+redirect: data-services-ransomware-resilience/rp-use-protect.html
+---
+
+
+---
 sidebar: sidebar
 permalink: rp-use-manage.html
 keywords: ransomware protection workload name, ransomware protection
 summary: You can manage workloads by changing the workload name rather than using a default name, which is riskier.
 ---
-
-= Manage workloads in NetApp Ransomware Resilience
+= Change the name of workloads in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/

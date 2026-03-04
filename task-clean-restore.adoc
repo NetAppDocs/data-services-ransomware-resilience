@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: clean-restore-task.html
+permalink: task-clean-restore.html
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment
 summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
 ---
@@ -14,7 +14,7 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 [.lead]
 With a clean restore, NetApp Ransomware Resilience enables you to create an isolated recovery environment that sequesters the workload to identify and clean affected files. The clean restore identifies optimized recovery paths to minimize data loss and get your workloads back online in the shortest amount of time possible.
 
-The clean restore option is an alternative to the xref:custom-restore-task.html[custom restore option]. 
+The clean restore option is an alternative to the xref:task-custom-restore.html[custom restore option]. 
 
 [NOTE]
 Documentation for clean recovery is provided as a technology preview. With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability. 

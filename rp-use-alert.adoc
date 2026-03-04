@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-alert.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert
-summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience Dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
+summary: If Ransomware Resilience detects a possible attack, an alert appears on the Ransomware Resilience dashboard indicating a potential attack. At this point, you should look at the potential risk in the Ransomware Resilience Alerts tab.  
 ---
 = Manage alerts in NetApp Ransomware Resilience
 :hardbreaks:
@@ -10,9 +10,9 @@ summary: If Ransomware Resilience detects a possible attack, an alert appears on
 :imagesdir: ./media/
 
 [.lead]
-When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the Dashboard and in the Notifications area. Ransomware Resilience immediately takes a snapshot. Review the potential risk in the Ransomware Resilience *Alerts* tab. 
+When NetApp Ransomware Resilience detects a possible attack, it displays an alert on the dashboard and in the Notifications menu. Ransomware Resilience immediately takes a snapshot. When you receive an alert, review the potential risk in the Ransomware Resilience *Alerts* tab to assess the impact on your data and prevent a potential ransomware attack. 
 
-If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured address. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience  *Alerts* tab.
+If Ransomware Resilience detects a possible attack, a notification appears in the Console Notification settings, and an email is sent to the configured addresses. The email includes information about the severity, the impacted workload, and a link to the alert in the Ransomware Resilience *Alerts* tab.
 
 You can dismiss false positives or decide to recover your data immediately.  
 
@@ -22,63 +22,66 @@ To begin to recover your data, mark the alert as ready for recovery so that your
 
 Each alert might include multiple incidents on different volumes and statuses. Review all incidents.
 
-Ransomware Resilience provides information called _evidence_ about what caused the alert to be issued, such as the following: 
+== How alerts are generated
 
+Ransomware Resilience relies on evidence about data entropy patterns, file extension types, and encryption to produce alerts. Alerts are based on the following events:
+
+* Data breach
+* Data destruction 
 * File extensions were created or changed
 * File creation with a comparison of detected versus expected rates 
 * File deletion with a comparison of detected versus expected rates 
+* Suspicious user behavior 
 * When encryption is high, without file extension changes
 
-An alert is classified as one of the following: 
+[NOTE]
+For data breach, data destruction, and suspicious user behavior alerts, you must configure link:concept-user-behavior.html[user activity detection].
 
-* *Potential attack*: An alert occurs when Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+=== Alert types and statuses
+
+Alerts have one of two statuses: *New* or *Inactive*. 
+
+An alert is classified as one of the following types: 
+
+* *Potential attack*: An alert is classified as a potential attack when:
+** Autonomous Ransomware Protection detects a new extension and the occurrence is repeated more than 20 times in the last 24 hours (default behavior).
+** Data breaches are detected. 
+** Data destruction is detected. 
 * *Warning*: A warning occurs based on the following behaviors: 
 ** Detection of a new extension has not been identified before and the same behavior does not repeat enough times to declare it as an attack. 
 ** High entropy is observed. 
 ** File read, write, rename, or delete activity doubled compared to normal levels.
 
 [NOTE]
-For SAN environments, warnings are only based on high entropy. 
-
+For SAN environments, warnings are based on high entropy only. 
 
 Evidence is based on information from Autonomous Ransomware Protection in ONTAP. For details, refer to https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection overview^].
 
-//The alert status is a summary of all the incidents in a single alert. The status is set to the highest ranking incident status. 
-
-
-An alert can have one of the following statuses:
-
-* *New* 
-* *Inactive*
+=== Alert states
 
 An alert incident can have the following states: 
 
-* *New*: All incidents are marked "new" when they are first identified. 
-* *In review*: You can mark an incident as in review while you evaluate it. 
-* *Dismissed*: If you suspect that the activity is not a ransomware attack, you can change the status to "Dismissed."
-+
+[options="headers",cols="10%,90%"]
+|===
+| State | Description 
+| *New* | All incidents are marked "new" when they are first identified. 
+| *In review* | You can manually mark an alert incident as "in review" while you evaluate it.
+| *Dismissed* 
+a| If you suspect that the activity is not a ransomware attack, you can change the status to "dismissed." +
 CAUTION: After you dismiss an attack, you can't revert its status. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. 
-* *Dismissing*: The incident is in the process of being dismissed. 
-* *Resolved*: The incident has been fixed.
-* *Auto Resolved*: For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
-
-
-TIP: If you configured a security and event management system (SIEM) in Ransomware Resilience  in the Settings page, Ransomware Resilience sends alert details to your SIEM system. 
-
-
+| *Resolved* | The incident has been fixed.
+| *Auto Resolved* | For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
+|===
 
 == View alerts
 
-You can access alerts from the Ransomware Resilience  Dashboard or from the *Alerts* tab. 
+You can access alerts from the Ransomware Resilience dashboard or from the *Alerts* tab. 
 
 include::_include/console-role-admin-viewer.adoc[]
 
-//* Alert email sent to you
-//* Console Notifications in the Console UI
-
 .Steps
 
-. In the Ransomware Resilience  Dashboard, review the Alerts pane.
+. In the Ransomware Resilience  dashboard, review the Alerts pane.
 . Select *View all* under one of the statuses. 
 
 . Select an alert to review all incidents on each volume for each alert. 
@@ -94,32 +97,22 @@ image:screen-alerts.png["Alerts page"]
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
 
-
-
 == Respond to an alert email
-When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences. The email contains information about the alert, including the severity and resources impacted.
 
-You can receive email notifications for Ransomware Resilience  alerts. This feature helps you to stay informed about alerts, their severity, and resources impacted. 
+When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences configured in the NetApp Console settings. The email contains information about the alert, including the severity and resources impacted.
 
-TIP: To subscribe to email notifications, refer to https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
-
-. In Ransomware Resilience , go to the *Settings* page.
-. Under *Notifications*, locate the email notification settings.
-. Enter the email address where you want to receive alerts.
-. Save your changes.
-
-You will now receive email notifications when new alerts are generated.
+TIP: To set up email notifications in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
 
 include::_include/console-role-admin-viewer.adoc[]
 
 .Steps 
 . View the email. 
-. In the email, select *View alert* and log in to Ransomware Resilience . 
+. In the email, select *View alert* and log in to Ransomware Resilience. 
 +
 The Alerts page appears.
 
 . Review all incidents on each volume for each alert. 
-. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
+. To review additional alerts, select *Alert* in the breadcrumbs at the upper left. 
 
 
 . Continue with one of the following: 
@@ -127,46 +120,23 @@ The Alerts page appears.
 ** <<Mark ransomware incidents as ready for recovery (after incidents are neutralized)>>.
 ** <<Dismiss incidents that are not potential attacks>>.
 
-
-
-//=== Respond from the Console Notifications 
-
-//. In the Console, select the Notification icon at the top right. 
-//. In the Notifications, look for the “Potential ransomware attack” notification.
-
-//. In the notification, select *View alert* and access Ransomware Resilience . 
-//+
-//The Alerts page appears.
-
-//. Review all incidents on each volume for each alert. 
-//. To review additional alerts, click on *Alert* in the breadcrumbs at the upper left. 
-
-//. Continue with one of the following: 
-
-//* <<Mark ransomware incidents as ready for recovery>>.
-//* <<Dismiss incidents that are not potential attacks>>.
-
-//=== Respond from data incidents on the Dashboard
-
 == Detect malicious activity and anomalous user behavior
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. With user behavior detection enabled, the *Suspicious user* column appears in the Alerts dashboard; it's not displayed when user behavior detection is not enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
-
-[NOTE]
-If you are using NetApp Data Infrastructure Insights (DII) Workload Security, it's recommended you use the same Workload Security agents for Ransomware Resilience. You don't need to deploy separate Workload Security agents for Ransomware Resilience, however, using the same Workload Security agents requires a pairing relationship between the Ransomware Resilience Console organization and DII Storage Workload Security tenant. Contact your account representative to enable this pairing. +
-If you're not using DII, you can benefit from suspicious user behavior detection features. Ensure you've link:suspicious-user-activity.html[enabled suspicious user activity detection] and have configured the appropriate agents. 
+You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. The *Suspicious user* column appears in the Alerts dashboard only when user behavior detection is enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
 
 === View malicious activity
 
-When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience , you can view the following details:
+When Autonomous Ransomware Protection triggers an alert in Ransomware Resilience, you can view the following details:
 
+* When the alert was triggered
+* When access was changed or denied
 * Entropy of incoming data
 * Expected creation rate of new files compared to detected rate
 * Expected deletion rate of files compared to detected rate
 * Expected rename rate of files compared to detected rate
-* Impacted files and directories
+* Impacted workloads, volumes, files, and directories
 
 [NOTE]
 These details are viewable for NAS workloads. For SAN environments, only the entropy data is available.  
@@ -183,18 +153,22 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 === View anomalous user behavior 
 
-If you've configured suspicious user detection to view anomalous user behavior, you can view user-level data and block specific users. To enable suspicious user settings, see link:rp-use-settings.html[Configure Ransomware Resilience settings].
+If you've configured suspicious user detection to view anomalous user behavior, you can view user-level data and block specific users. To enable suspicious user settings, see link:suspicious-user-activity.html[Configure agents and collectors for user activity detection].
 
 .Steps
 
 . From the Ransomware Resilience menu, select *Alerts*.  
 . Select an alert. 
 . Review the incidents in the alert.
-. To block a suspected user in your environment, select *Block* under the user's name.
+.. To block a suspected user in your environment, select *Block* next to the user's name.
+.. To disable alerts on a given user who is the subject of an alert you know to be false, select the three dots (`...`) then **Exclude this user from monitoring**. Review the dialog then select **Exclude** to confirm.
+
+[TIP]
+To re-enable alerts for a user, return the alert. Select the three dots then **Include this user in monitoring**. You can also link:suspicious-user-activity.html#exclude-users-from-alerts[Exclude users] from monitoring. 
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 
-After stopping the attack, notify your storage administrator that the data is ready so they can start recovery.
+After stopping the attack, notify your storage administrator that the data is ready so they can initiate the recovery process.
 
 include::_include/console-role-admin.adoc[]
 

@@ -2,16 +2,17 @@
 [%header]
 |===
 | Environment | Protocol | Supported versions
-| Amazon FSx for NetApp ONTAP* | NFS, CIFS, and SAN | N/A
+| Amazon FSx for NetApp ONTAP* | CIFS, NFS, and SAN | N/A
+| Azure NetApp Files | CIFS & NFS | N/A
 .2+| Cloud Volumes ONTAP for AWS
 | CIFS & NFS | 9.11.1 and later
-| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+| SAN (iSCSI & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Google Cloud Platform
 | CIFS & NFS | 9.11.1 and later
-| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+| SAN (iSCSI & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Microsoft Azure
 | CIFS & NFS | 9.12.1 and later
-| SAN (FC, iSCSI, & NVMe) |  9.17.1 and later
+| SAN (iSCSI & NVMe) |  9.17.1 and later
 .2+| ONTAP (on-premises)
 | CIFS & NFS  | 9.11.1 and later 
 | SAN (FC, iSCSI, & NVMe) |  9.17.1 and later

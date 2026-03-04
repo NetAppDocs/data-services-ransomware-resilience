@@ -11,9 +11,9 @@ summary: Ensure you meet the licensing requirements for Ransomware Resilience to
 :imagesdir: ./media/
 
 [.lead]
-With NetApp Ransomware Resilience, you can use different licensing plans.
+NetApp Ransomware Resilience offers different license plans, enabling you to subscribe to the service where it makes sense for your organization. 
 
-To perform this task, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
+To set up licensing, you need the Organization admin, Folder or project admin role. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles^].
 
 == License types
 
