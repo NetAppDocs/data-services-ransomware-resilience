@@ -141,10 +141,10 @@ This release now provides more details in the workload information from the Prot
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Learn more about viewing workload details in the Protection pages]. 
 
-=== Application-consistent and VM-consistent protection and recovery
-You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to any of the previously available states. 
+// === Application-consistent and VM-consistent protection and recovery
+// You can now perform application-consistent protection with NetApp SnapCenter Software and VM-consistent protection with SnapCenter Plug-in for VMware vSphere, achieving a quiescent and consistent state to avoid potential data loss later if recovery is needed. If recovery is required, you can restore the application or VM back to any of the previously available states. 
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Learn more about protecting workloads].
+// https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Learn more about protecting workloads].
 
 === Ransomware protection strategies
 If snapshot or backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in this service:  
