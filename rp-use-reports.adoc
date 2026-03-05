@@ -10,28 +10,24 @@ summary: Using NetApp Ransomware Resilience, you can download reports that show 
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience provides reports in CSV and JSON formats that show details of supported and unsupported volumes, attack readiness drills, protection, alerts, and recovery. With reports, you can save and review offline reports about drills, protection posture, alerts, and recovery events.  
+NetApp Ransomware Resilience provides reports in JSON formats that show details of supported and unsupported volumes, attack readiness drills, protection, alerts, and recovery, enabling you to assess and review ransomware events and readiness offline. 
 
 TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 
 include::_include/console-role-admin-viewer.adoc[]
 
-*What data can you download?*
-You can download files from any of the main menu options: 
+*What reports can I download?*
 
 * **Summary**: Includes lists of supported and unsupported workloads, recommended actions to improve your cyber resiliency posture, and information captured in the Ransomware Resilience dashboard. 
 * *Protection*: Includes the status and details of all workloads, including the total number protected and at risk. 
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
-* *Reports*: You can export data from any of the pages and download the files. 
-+
-NOTE: You can download readiness drill reports only from the *Reports* page.
+* *Readiness drills*: Includes results from simulated attacks to highlight areas for improvement.
+* *Clean restore*: Includes details about restored workloads using clean restore.
 
-// replace reports with readiness drills
+// If you download CSV or JSON files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
-If you download CSV or JSON files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
-
-The CSV or JSON files include data for all workloads on all Console systems. 
+// The CSV or JSON files include data for all workloads on all Console systems. 
 
 .Steps
 
@@ -47,6 +43,5 @@ image:screen-dashboard.png[Dashboard page]
 * From the NetApp Ransomware Resilience menu, select *Reports*. 
 
 . If you selected the *Reports* option, select one of the preconfigured file names and select *Download*. 
-
 +
 image:screen-reports.png[Reports page showing the readiness drill report]
