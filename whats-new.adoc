@@ -39,7 +39,7 @@ include::_whatsnew/2025-08-12.adoc[]
 == 15 July 2025
 include::_whatsnew/2025-07-14.adoc[]
 
-== 9 June 2025 
+== 09 June 2025 
 include::_whatsnew/2025-06-09.adoc[]
 
 == 13 May 2025
@@ -58,25 +58,25 @@ include::_whatsnew/2025-03-15.adoc[]
 == 16 December 2024 
 include::_whatsnew/2024-11-31.adoc[]
 
-== 7 November 2024
+== 07 November 2024
 include::_whatsnew/2024-11-07.adoc[]
 
 
 == 30 September 2024 
 include::_whatsnew/2024-09-30.adoc[]
 
-== 2 September 2024
+== 02 September 2024
 include::_whatsnew/2024-09-02.adoc[]
 
 
-== 5 August 2024
+== 05 August 2024
 === Threat detection with Splunk Cloud
 
 You can automatically send data to your security and event management system (SIEM) for threat analysis and detection. With previous releases, you could select only the AWS Security Hub as your SIEM. With this release, you can select the AWS Security Hub or Splunk Cloud as your SIEM. 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring BlueXP ransomware protection settings].
 
-== 1 July 2024
+== 01 July 2024
 
 === Bring your own license (BYOL)
 With this release, you can use a BYOL license, which is a NetApp License File (NLF) that you obtain from your NetApp Sales Rep. 
@@ -187,7 +187,7 @@ You can now set up backup destinations in BlueXP ransomware protection Settings.
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-backup-destination.html[Learn more about configuring Settings options]. 
 
-== 5 March 2024
+== 05 March 2024
 === Protection policy management
 In addition to using predefined policies, you can now create policies. https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Learn more about managing policies].
 
@@ -205,7 +205,7 @@ The recovery process was enhanced. Now, you can recover volume by volume or all 
 
 https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about BlueXP ransomware protection].
 
-== 6 October 2023 
+== 06 October 2023 
 
 The BlueXP ransomware protection service is a SaaS solution for protecting data, detecting potential attacks, and recovering data from a ransomware attack. 
 

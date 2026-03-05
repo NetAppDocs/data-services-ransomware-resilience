@@ -44,8 +44,6 @@ Beyond Ransomware Resilience, you can use NetApp Backup and Recovery to manage p
 
 Protection information from Backup & Recovery services appears in Ransomware Resilience. You can add detection policies to these services with Ransomware Resilience. Adding a protection policy with Ransomware Resilience replaces the existing protection policies. 
 
-Ransomware Resilience also discovers protection policies from SnapCenter for VMware for VM datastores and SnapCenter for Oracle. You can't use these services to restore with Ransomware Resilience.
-
 If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
 NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
