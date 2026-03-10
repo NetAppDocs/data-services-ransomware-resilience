@@ -35,6 +35,10 @@ Ransomware Resilience is currently available in standard mode only.
 
 For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
+.How does billing for Ransomware Resilience work? 
+
+include::_include/cost.adoc[]
+
 == Access
 
 .What's the Ransomware Resilience URL?
