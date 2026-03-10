@@ -41,10 +41,6 @@ NOTE: If you have both Backup and Recovery and Ransomware Resilience, any common
 
 include::_include/cost.adoc[]
 
-=== Exceeding capacity
-
-If you exceed the licensed capacity with a BYOL license (for example, by resizing a volume beyond the limit), Ransomware Resilience looks for a PAYGO license. If Ransomware Resilience also has a configured PAYGO license, charges are incurred against the PAYGO license. If there's no PAYGO license, Ransomware Resilience protection is not applied to any data beyond what is alloted in the BYOL license. 
-
 [TIP]
 Monitor the size of protected data in the Ransomware Resilience protection dashboard. To add capacity, see link:https://docs.netapp.com/us-en/console-licenses-subscriptions/task-manage-data-services-licenses.html#update-a-license[Update a license^].
 

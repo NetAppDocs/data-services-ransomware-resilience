@@ -37,6 +37,8 @@ For an explanation about these modes across all NetApp data services, refer to h
 
 .How does billing for Ransomware Resilience work? 
 
+New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
+
 include::_include/cost.adoc[]
 
 == Access
