@@ -5,7 +5,7 @@ keywords: ransomware protection recovery, recover from a ransomware attack, reco
 summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
 ---
 
-= Recover from a ransomware attack (after incidents are neutralized) with NetApp Ransomware Resilience
+= Recover from a ransomware attack with NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
