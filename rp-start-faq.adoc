@@ -35,6 +35,12 @@ Ransomware Resilience is currently available in standard mode only.
 
 For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
+.How does billing for Ransomware Resilience work? 
+
+New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
+
+include::_include/cost.adoc[]
+
 == Access
 
 .What's the Ransomware Resilience URL?
