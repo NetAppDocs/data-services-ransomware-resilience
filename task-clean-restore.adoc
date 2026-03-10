@@ -229,6 +229,8 @@ For isolated recoery environments deployed on-premises:
 ** VMware Tools should be installed and running. 
 ** WinRM must be enabled. 
 ** The IP should be configured. 
+** Ensure you have appropriate license to allow cloning of base VMs. 
+** The VM must be powered on. 
 --
 ====
 
