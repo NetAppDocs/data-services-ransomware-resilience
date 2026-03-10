@@ -1,11 +1,11 @@
 === Bulk exclude users from user behavior alerts
 
-Ransomware Resilience now supports uploading a JSON list of users to exclude from user behavior activity alerts in addition to the existing UI and CSV-based options.  
+Ransomware Resilience now supports uploading a JSON list of users to exclude from user behavior activity alerts in addition to the existing UI and CSV-based options.
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts[Exclude users from alerts^].
 
-=== User behavior activity events now included in SIEM
+=== User behavior activity enhancements
 
-If you've configured Ransomware Resilience to a supported SIEM (AWS Security Hub, Microsoft Sentinel, or Splunk Cloud), user activity events are now included in the event data, provided you've enabled user activity detection. This enhancement creates more accurate insights into your security event and compliance monitoring. 
+Ransomware Resilience has improved insights into user behavior by adding email alerts and including user behavior events in supported SIEM event data (AWS Security Hub, Microsoft Sentinel, and Splunk Cloud). These enhancements provide more accurate insights into your security and compliance monitoring.
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Connect NetApp Ransomware Resilience to a SIEM^].
