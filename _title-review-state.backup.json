@@ -1,0 +1,546 @@
+[
+  {
+    "fileName": "concept-ransomware-resilience.adoc",
+    "originalTitle": "Learn about NetApp Ransomware Resilience",
+    "suggestedTitle": "Learn about NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title correctly follows the concept page pattern 'Learn about [product name]' for product overview pages, includes the product name, and aligns with the user's goal of understanding what Ransomware Resilience is.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Concept",
+      "userGoal": "Learn what NetApp Ransomware Resilience is, how it works, and what you can do with it"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "concept-user-behavior.adoc",
+    "originalTitle": "Learn about user activity detection in NetApp Ransomware Resilience",
+    "suggestedTitle": "Learn about user activity detection in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows the concept page pattern 'Learn about...' for introducing a feature, includes the product name naturally integrated, and aligns with the user's goal to understand user activity detection capabilities.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "User activity detection",
+      "pageType": "Concept",
+      "userGoal": "Understand how user activity detection works in Ransomware Resilience and how it helps prevent data breach and destruction events"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "legal-notices.adoc",
+    "originalTitle": "Legal notices",
+    "suggestedTitle": "Legal notices for NetApp Ransomware Resilience",
+    "titleReasoning": "Added the product name 'NetApp Ransomware Resilience' to provide necessary context, as legal notices are standard across documentation but must be attributed to the specific product. Title remains clear and follows reference page patterns.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Reference",
+      "userGoal": "Access legal notices and open source information"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    }
+  },
+  {
+    "fileName": "reference-user-activity-requirements.adoc",
+    "originalTitle": "Requirements for user behavior detection in NetApp Ransomware Resilience",
+    "suggestedTitle": "User activity detection requirements for NetApp Ransomware Resilience",
+    "titleReasoning": "Changed to improve clarity and follow standard reference page patterns. The revised title uses a descriptive noun phrase with the product name integrated naturally, making it more scannable and direct for reference content.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "User activity detection",
+      "pageType": "Reference",
+      "userGoal": "Look up operating system, server, and network requirements for user activity detection"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "No",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-reference-limitations.adoc",
+    "originalTitle": "Known limitations of NetApp Ransomware Resilience",
+    "suggestedTitle": "Known limitations in NetApp Ransomware Resilience",
+    "titleReasoning": "Minor revision for consistency with release notes patterns. Changed 'of' to 'in' to match the standard pattern for limitations pages, making it consistent with other NetApp documentation.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Release Notes",
+      "userGoal": "Review known limitations and issues with the product"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-disable.adoc",
+    "originalTitle": "Disable NetApp Ransomware Resilience",
+    "suggestedTitle": "Disable NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb appropriate for a task page, includes the product name naturally, and clearly aligns with the user's goal to disable the service.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Stop using NetApp Ransomware Resilience or disable protection policies"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-discover.adoc",
+    "originalTitle": "Discover and manage workloads in NetApp Ransomware Resilience",
+    "suggestedTitle": "Discover workloads in NetApp Ransomware Resilience",
+    "titleReasoning": "Simplified to focus on the primary task. The page is primarily about discovering workloads with some management aspects. Removing 'manage' makes the title more focused on the core user goal and reduces redundancy since discovery includes initial management steps.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "Workloads",
+      "pageType": "Task",
+      "userGoal": "Discover and select workloads to protect, including managing excluded workloads"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-faq.adoc",
+    "originalTitle": "Frequently asked questions about NetApp Ransomware Resilience",
+    "suggestedTitle": "FAQ for NetApp Ransomware Resilience",
+    "titleReasoning": "Simplified to follow the standard FAQ page pattern. The shortened version is clearer and more scannable while maintaining all necessary information.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "FAQ",
+      "userGoal": "Find quick answers to common questions about Ransomware Resilience"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "No",
+      "productInclusion": "Yes",
+      "titleLength": "No",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-licenses.adoc",
+    "originalTitle": "Set up licensing for NetApp Ransomware Resilience",
+    "suggestedTitle": "Set up licensing for NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb appropriate for a task page, includes the product name, and aligns with the user's goal of setting up licensing.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Set up licensing for Ransomware Resilience including trials, subscriptions, and BYOL"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-login.adoc",
+    "originalTitle": "Access NetApp Ransomware Resilience",
+    "suggestedTitle": "Access NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb appropriate for a task page, includes the product name naturally, and aligns with the user's goal to log in and access the service.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Log in and access NetApp Ransomware Resilience through the NetApp Console"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-prerequisites.adoc",
+    "originalTitle": "NetApp Ransomware Resilience prerequisites",
+    "suggestedTitle": "NetApp Ransomware Resilience prerequisites",
+    "titleReasoning": "No change needed. The title is a clear descriptive noun phrase that includes the product name and accurately reflects the reference content listing requirements and prerequisites.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Reference",
+      "userGoal": "Look up system requirements, network access requirements, and prerequisites needed before deploying NetApp Ransomware Resilience"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-quick-start.adoc",
+    "originalTitle": "Quick start for NetApp Ransomware Resilience",
+    "suggestedTitle": "Quick start for NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows the correct pattern for Quick Start pages and includes the product name.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Quick Start",
+      "userGoal": "Get started quickly with NetApp Ransomware Resilience by following high-level steps that link to detailed task pages"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-setup.adoc",
+    "originalTitle": "Set up NetApp Ransomware Resilience",
+    "suggestedTitle": "Set up NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb and includes the product name, following the correct pattern for task pages.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Set up and configure NetApp Ransomware Resilience, including backup destinations and Console agents"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-start-simulate.adoc",
+    "originalTitle": "Conduct a ransomware attack readiness drill in NetApp Ransomware Resilience",
+    "suggestedTitle": "Conduct a ransomware attack readiness drill in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name, and accurately reflects the task of conducting a readiness drill simulation.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Conduct a ransomware attack simulation to test alert notifications, response procedures, and recovery processes"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-use-alert.adoc",
+    "originalTitle": "Manage alerts in NetApp Ransomware Resilience",
+    "suggestedTitle": "Manage alerts in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name, and accurately reflects the task of managing and responding to alerts.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "View, assess, and respond to ransomware alerts, including detecting malicious activity and managing alert incidents"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-use-dashboard.adoc",
+    "originalTitle": "Monitor workload health in NetApp Ransomware Resilience",
+    "suggestedTitle": "Monitor workload health in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name, and accurately describes the task of monitoring workload protection health via the dashboard.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Monitor the protection health of workloads using the dashboard, review protection recommendations, and assess protection coverage"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-use-protect.adoc",
+    "originalTitle": "Protect workloads with NetApp Ransomware Resilience protection strategies",
+    "suggestedTitle": "Protect workloads with NetApp Ransomware Resilience protection strategies",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name with a natural integration of the component (protection strategies), and accurately describes the task.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "protection strategies",
+      "pageType": "Task",
+      "userGoal": "Protect workloads against ransomware attacks by assigning and managing detection, protection, and replication policies"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-use-recover.adoc",
+    "originalTitle": "Recover from a ransomware attack (after incidents are neutralized) with NetApp Ransomware Resilience",
+    "suggestedTitle": "Recover from a ransomware attack with NetApp Ransomware Resilience",
+    "titleReasoning": "Simplified by removing the parenthetical phrase which adds unnecessary detail. The core action is recovering from an attack, and the product name is included. The parenthetical information is important but belongs in the content, not the title.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Recover workloads after a ransomware attack by restoring data from backup or snapshot copies"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "No",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "rp-use-reports.adoc",
+    "originalTitle": "Download reports in NetApp Ransomware Resilience",
+    "suggestedTitle": "Download reports in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name, and accurately describes the task of downloading various report types.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Download CSV and JSON reports showing details of protection, alerts, recovery, and readiness drills"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "suspicious-user-activity.adoc",
+    "originalTitle": "Configure agents and collectors for user activity detection in NetApp Ransomware Resilience",
+    "suggestedTitle": "Configure agents and collectors for user activity detection in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title starts with an imperative verb, includes the product name, and accurately describes the configuration task for enabling user activity detection.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "user activity detection",
+      "pageType": "Task",
+      "userGoal": "Configure user activity agents, data collectors, and user directory connectors to enable suspicious user behavior detection"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "task-backup-destination.adoc",
+    "originalTitle": "Add a backup destination in NetApp Ransomware Resilience",
+    "suggestedTitle": "Add a backup destination in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows task page patterns (starts with imperative verb 'Add'), includes the product name 'NetApp Ransomware Resilience', is grammatically correct with proper article 'a', and aligns with the user goal of adding a backup destination.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Add a backup destination to improve cyber resiliency for workloads"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "task-classify.adoc",
+    "originalTitle": "Scan for personally identifiable information with NetApp Data Classification in Ransomware Resilience",
+    "suggestedTitle": "Scan for personally identifiable information with NetApp Data Classification",
+    "titleReasoning": "Removed 'in Ransomware Resilience' to improve readability while maintaining the primary product context through 'NetApp Data Classification'. The title clearly indicates the task action and the integrated tool being used within the Ransomware Resilience product context.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": "Data Classification",
+      "pageType": "Task",
+      "userGoal": "Scan and classify data in file share workloads to identify personally identifiable information (PII)"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "No",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    }
+  },
+  {
+    "fileName": "task-protection-group.adoc",
+    "originalTitle": "Manage protection groups in NetApp Ransomware Resilience",
+    "suggestedTitle": "Manage protection groups in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows task page patterns (starts with imperative verb 'Manage'), includes the product name 'NetApp Ransomware Resilience', and aligns with the user goal of managing protection groups.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Create, edit, and manage protection groups to facilitate easier management of workloads"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "task-review-protection.adoc",
+    "originalTitle": "Review protection status in NetApp Ransomware Resilience",
+    "suggestedTitle": "Review protection status in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows task page patterns (starts with imperative verb 'Review'), includes the product name 'NetApp Ransomware Resilience', and aligns with the user goal of reviewing protection status and readiness.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Review and understand the protection status and readiness of workloads"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "task-siem.adoc",
+    "originalTitle": "Connect NetApp Ransomware Resilience to a SIEM for threat analysis and detection",
+    "suggestedTitle": "Connect NetApp Ransomware Resilience to a SIEM for threat analysis and detection",
+    "titleReasoning": "No change needed. The title follows task page patterns (starts with imperative verb 'Connect'), includes the product name 'NetApp Ransomware Resilience', is grammatically correct with proper article 'a', and aligns with the user goal of connecting to a SIEM system.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Task",
+      "userGoal": "Connect NetApp Ransomware Resilience to a security information and event management (SIEM) system for streamlined threat analysis and detection"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "No",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  },
+  {
+    "fileName": "whats-new.adoc",
+    "originalTitle": "What's new in NetApp Ransomware Resilience",
+    "suggestedTitle": "What's new in NetApp Ransomware Resilience",
+    "titleReasoning": "No change needed. The title follows release notes page patterns (\"What's new in [product name]\"), includes the product name 'NetApp Ransomware Resilience', and aligns with the user goal of learning about new features and updates.",
+    "fileInfo": {
+      "productName": "NetApp Ransomware Resilience",
+      "componentName": null,
+      "pageType": "Release Notes",
+      "userGoal": "Learn about new features, enhancements, and updates in NetApp Ransomware Resilience"
+    },
+    "abcdefCheck": {
+      "userGoalAlignment": "Yes",
+      "pageTypePattern": "Yes",
+      "productInclusion": "Yes",
+      "titleLength": "Yes",
+      "noForbiddenPatterns": "Yes",
+      "capGrammarVoice": "Yes"
+    },
+    "verification": "Yes"
+  }
+]
