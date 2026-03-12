@@ -20,15 +20,15 @@ Ransomware Resilience playbooks offer the following capabilities:
 * Test connectivity
 * Review the status of an enrichment job
 
-== Supported playbooks
+== Playbooks
 
 Ransomware Resilience offers playbooks for Microsoft Sentinel and Splunk. Review the respective GitHub pages for setup details. 
 
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks[Microsoft Sentinel^]
-* link:https://github.com/splunk-soar-connectors/netappransomwareresilienceSplunk[Splunk^]
+* link:https://github.com/splunk-soar-connectors/netappransomwareresilience[Splunk^]
 
 [NOTE]
-For Splunk cloud, you must be running platform version 7.0, 7.1, 7.2, 8.0, or 8.4. For more information, see link:https://splunkbase.splunk.com/app/8483[Splunkbase^].
+For Splunk Cloud, you must be running platform version 7.0, 7.1, 7.2, 8.0, or 8.4. For more information, see link:https://splunkbase.splunk.com/app/8483[Splunkbase^].
 
 == More information
 
