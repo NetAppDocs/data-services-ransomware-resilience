@@ -78,6 +78,6 @@ security login show -user-or-group-name <username>
 . Change the role for the user. Enter: 
 +
 ----
-security login modify -user-or-group-name <username> -application console|http|ontapi|ssh|telnet -authentication-method password -role admin
+security login modify -user-or-group-name <name> -application console|http|ontapi|ssh -authentication-method password -role admin
 ----
 . Return to the NetApp Console to use Ransomware Resilience. 
