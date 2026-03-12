@@ -13,16 +13,23 @@ Ransomware Resilience offers security orchestration, automation, and response (S
 
 == Supported playbooks
 
-Ransomware Resilience currently offers a SOAR playbook for link:https://github.com/splunk-soar-connectors/netappransomwareresilience[Splunk Cloud^].This playbook is for cloud and on-premises deployments. For cloud, you should be running platform version 7.0, 7.1, 7.2, 8.0, or 8.4.
+Ransomware Resilience supports the following playbooks. For setup and playbook details, select the link in the table. 
 
-With the playbook for Splunk, you can:
-
-- Test connectivity
-- Enrich an IP address with threat intelligence
-- Enrich storage information for a given agent and system
-- Create a snapshot of a volume
-- Take a volume offline for incident response
-- Check the status of an enrichment job
+[cols=3,options="header",cols="20,35,45",width="100%"]
+|===
+| Service | Details | Capabilities
+| link:https://github.com/splunk-soar-connectors/netappransomwareresilience[Splunk^] 
+a|
+* Cloud & on-premises support
+* For cloud, you must be running platform version 7.0, 7.1, 7.2, 8.0, or 8.4.
+a|
+* Test connectivity
+* Enrich an IP address with threat intelligence
+* Enrich storage information for a given agent and system
+* Create a snapshot of a volume
+* Take a volume offline for incident response
+* Check the status of an enrichment job
+|===
 
 == More information
 
