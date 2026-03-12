@@ -4,16 +4,18 @@ permalink: task-classify.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, cds, sensitive, pii, classification
 summary: Improve the security and privacy compliance of your data with NetApp Data Classification to identify whether your data includes personally identifiable or private information.
 ---
-= Scan for personally identifiable information with NetApp Data Classification in Ransomware Resilience
+= Scan for personally identifiable information in NetApp Ransomware Resilience
 
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Within NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks. Data Classification is a core component of the NetApp Console and is available at no additional cost. 
+Within NetApp Ransomware Resilience, you can use NetApp Data Classification to scan and classify the data in a file share workload. Classifying data helps you determine whether the dataset includes personally identifiable information (PII), which can increase security risks.
 
 link:https://docs.netapp.com/us-en/data-services-data-classification/[Data Classification^] utilizes AI-driven natural language processing for contextual data analysis and categorization, providing actionable insights into your data to address compliance requirements, detect security vulnerabilities, optimize costs, and accelerate migration.
+
+Data Classification is a core component of the NetApp Console. You don't need a license to use Data Classification. Depending on your setup, configuring Data Classification can incur costs, which are not charged by Ransomware Resilience. For more information, see link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost[Learn about Data Classification^].
 
 TIP: This process can impact workload importance to help ensure you have the appropriate protection. 
 

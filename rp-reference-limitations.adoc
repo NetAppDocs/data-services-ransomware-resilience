@@ -6,7 +6,7 @@ summary: Known limitations identify platforms, devices, or functions that are no
 
 ---
 
-= Known limitations of NetApp Ransomware Resilience
+= Known limitations in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
