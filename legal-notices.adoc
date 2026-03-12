@@ -5,7 +5,7 @@ keywords:
 summary:
 ---
 
-= Legal notices
+= Legal notices for NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
