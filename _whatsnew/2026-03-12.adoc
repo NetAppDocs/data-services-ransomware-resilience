@@ -1,5 +1,5 @@
-=== SOAR playbook for Splunk
+=== SOAR playbooks for Microsoft Sentinel and Splunk
 
-Ransomware Resilience now offers a link:https://github.com/splunk-soar-connectors/netappransomwareresilience[security orchestration, automation, and response (SOAR) playbook for Splunk]. The playbook enables easier threat response management, automating tasks such as connectivity testing and essential ransomware response efforts including creating snapshots and taking a volume offline. 
+Ransomware Resilience now offers security orchestration, automation, and response (SOAR) playbooks for link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooksp[Microsoft Sentinel^] and link:https://github.com/splunk-soar-connectors/netappransomwareresilience[Splunk^]. The playbooks enable easier threat response management, automating tasks testing and essential ransomware response efforts including creating snapshots and taking a volume offline. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html[Integrate SOAR playbooks^].
