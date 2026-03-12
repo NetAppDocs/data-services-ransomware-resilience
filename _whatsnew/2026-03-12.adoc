@@ -1,0 +1,5 @@
+=== SOAR playbook for Splunk
+
+Ransomware Resilience now offers a link:https://github.com/splunk-soar-connectors/netappransomwareresilience[security orchestration, automation, and response (SOAR) playbook for Splunk]. The playbook enables easier threat response management, automating tasks such as connectivity testing and essential ransomware response efforts including including creating snapshots and taking a volume offline. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html[Integrate SOAR playbooks^].

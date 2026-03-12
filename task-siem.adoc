@@ -19,6 +19,9 @@ Ransomware Resilience supports the following SIEMs:
 
 Before you enable SIEM in Ransomware Resilience, you need to configure your SIEM system. 
 
+[TIP]
+Ransomware Resilience also supports link:reference-soar.html[security orchestration, automation, and response (SOAR) playbooks^].
+
 == Event data sent to a SIEM
 
 Ransomware Resilience can send the following event data to your SIEM system:
@@ -210,7 +213,9 @@ NOTE: The information that you enter depends on the SIEM you selected.
 +
 The Settings page shows "Connected."
 
+## Next steps
 
+* link:reference-soar.html[Integrate a SOAR playbook]
 
 //=== Disconnect SIEM
 //Disconnecting SIEM stops Ransomware Resilience from sending data to the SIEM server. 
