@@ -4,12 +4,12 @@ permalink: task-siem.html
 keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management
 summary: You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
 ---
-= Connect NetApp Ransomware Resilience to security and event management system (SIEM) for threat analysis and detection
+= Connect NetApp Ransomware Resilience to a SIEM for threat analysis and detection
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-A security and event management system (SIEM) centralizes log and event data to provide insights into security events and compliance. NetApp Ransomware Resilience supports automatically sending data to your SIEM for streamlined threat analysis and detection. 
+A security information and event management system (SIEM) centralizes log and event data to provide insights into security events and compliance. NetApp Ransomware Resilience supports automatically sending data to your SIEM for streamlined threat analysis and detection. 
 
 Ransomware Resilience supports the following SIEMs:
 
@@ -18,6 +18,9 @@ Ransomware Resilience supports the following SIEMs:
 * Splunk Cloud
 
 Before you enable SIEM in Ransomware Resilience, you need to configure your SIEM system. 
+
+[TIP]
+Ransomware Resilience also supports link:reference-soar.html[security orchestration, automation, and response (SOAR) playbooks^].
 
 == Event data sent to a SIEM
 
@@ -210,7 +213,9 @@ NOTE: The information that you enter depends on the SIEM you selected.
 +
 The Settings page shows "Connected."
 
+## Next steps
 
+* link:reference-soar.html[Integrate a SOAR playbook]
 
 //=== Disconnect SIEM
 //Disconnecting SIEM stops Ransomware Resilience from sending data to the SIEM server. 

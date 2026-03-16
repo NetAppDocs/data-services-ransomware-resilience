@@ -59,18 +59,14 @@ Ransomware Resilience offers the following benefits:
 * Protects data in application-based workloads such as Oracle, VMware datastores, and file shares. 
 * Detects ransomware attacks on data in real time on primary storage using AI technology.
 * Initiates automated actions in response to detected potential attacks by creating snapshot copies and initiating alerts about abnormal activity.
-* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by using several NetApp recovery services, including NetApp Backup and Recovery (formerly Cloud Backup) and SnapCenter. 
+* Applies curated recovery to meet RPO policies. Ransomware Resilience orchestrates recovery from ransomware incidents by NetApp Backup and Recovery.
 * Uses role-based access control (RBAC) to govern access to features and operations.
 
 == Cost 
 
 New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
 
-If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
-
-When a workload is classified as protected, it counts against purchased capacity or the PayGo subscription. Ransomware Resilience classifies a workload as protected when a detection policy is enabled with at least one snapshopt or backup policy. Workloads discovered with a detection policy but _without_ backup or snapshot policies are classified as at risk. At risk workloads do not count against purchased capacity. 
-
-Protected workloads count against purchased capacity or the subscription after the free trial period ends. Ransomware Resilience is charged on a per GB basis for the data associated with protected workloads before efficiencies. 
+include::_include/cost.adoc[]
 
 == Licensing 
 
@@ -107,8 +103,8 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises NAS (NFS and CIFS protocols), SAN (FC, iSCSI, and NVMe), and Cloud Volumes ONTAP data connected to the Console.
-* Identifies customer data from ONTAP and SnapCenter service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^].
+| *IDENTIFY* | * Finds all customer on-premises and cloud NAS (NFS and CIFS protocols) and SAN (FC, iSCSI, and NVMe) data in systems attached to the Console.
+* Identifies customer data from ONTAP and Backup and Recovery service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^].
 
 
 
