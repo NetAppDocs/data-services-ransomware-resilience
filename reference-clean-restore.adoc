@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
-permalink: task-clean-restore.html
+permalink: reference-clean-restore.html
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment
 summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
 ---
-= Recover workloads with clean restore in NetApp Ransomware Resilience
+= Requirements for clean recovery in NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -74,19 +74,16 @@ Clean recovery in Cloud Volumes ONTAP instances also creates metadata volumes an
 
 == Requirements
 
-
-image::diagram-clean-recovery-cloud-cloud.png[]
-
-image:diagram-clean-recovery-cloud-on-prem.png[]
-
-image:diagram-clean-recovery-on-prem.png[]
-
 Ensure you meet the requirements for your chosen clean recovery deployment type.
 
 [role="tabbed-block"]
 ====
 .Cloud
 --
+image::diagram-clean-recovery-cloud-cloud.png[]
+
+image:diagram-clean-recovery-cloud-on-prem.png[]
+
 Follow these requirements for cloud-to-cloud or on-premises-to-cloud deployments. 
 
 * For the clean room's SVM data LIF, provide an IP address. 
@@ -213,6 +210,9 @@ Follow these requirements for cloud-to-cloud or on-premises-to-cloud deployments
 
 .On-premises
 --
+
+image:diagram-clean-recovery-on-prem.png[]
+
 For isolated recoery environments deployed on-premises:
 
 * The vCenter must be version 7.0 or later with at least one data center. 
@@ -238,102 +238,3 @@ For isolated recoery environments deployed on-premises:
 ** The VM must be powered on. 
 --
 ====
-
-== Create an isolated recovery environment
-
-Before conducting a clean restore, you must create an isolated recovery room. 
-
-The process for creating an isolated recovery room differs if the environment is in the cloud or on-premises. Ensure you follow the instructions for the correct location. 
-
-[role="tabbed-block"]
-====
-.Cloud
---
-. In Ransomware Resilience, select **Settings**. 
-. In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
-. If this is your first time creating an isolated recovery environment, proceed to the next step. 
-If you've already created an isolated recovery environment, select **Add** to create another one. 
-. For a cloud-based isolated recovery environment, select **Amazon Web Services**. 
-. Expand the **Name** section. Create a **Name** for the environment. 
-. Expand the *Systems* section. Choose the systems that you want to connect to the isolated recovery environment. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
-// not needed for FSx
-+ 
-image:clean-restore-systems.png[Screenshot of systems selection interface.]
-. Expand the **Authentication** section. 
-    * Enter the cloud **Account** ID and select the **Region** for the account. 
-    * Enter the **Access key** and **Secret key** for the account**. 
-* Expand the *Virtual private cloud (VPC)* section. Enter the VPC ID where the isolated recovery environment is to be deployed. 
-+
-image:screenshot-set-up-recovery-environment.png[Screenshot of isolated recovery environment authentication set-up.]
-+
-. Select **Add** to create the isolated recovery environment. Ransomware Resilience tests the connection after you select add; This process can take a while.
-
---
-.On-premises
---
-. In Ransomware Resilience, select **Settings**. 
-. In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
-. If this is your first time creating an isolated recovery environment, proceed to the next step. 
-If you've already created an isolated recovery environment, select **Add** to create another one. 
-. In the location block, select **On-premises**. 
-. Expand the **Prerequisites** section then select **View prerequisites** then review the prerequisites. Ensure you've satisified all of them. 
-. Expand the *Name* section. Assign a **Name** for the isolated recovery environment. 
-. Expand the *Systems* section. Choose the systems that you want to connect to the isolated recovery environment. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the isolated recovery environment.  
-+
-image:clean-restore-systems.png[Screenshot of systems selection interface.]
-. Expand the **Console agent** section. Select the Console agent from the dropdown menu that's deployed in the isolated recovery environment. 
-. Expand the *Compute* section. 
-.. Provide the credentials to authenticate the vCenter server: *IP address* or full-qualified domain name (FQDN), *Port*, *User name*, and *Password*.
-.. Select **Authenticate** to confirm the credentials. You must receive confirmation hat the credentials are authenticated before proceeding. 
-.. Select the *Datacenter*, *Cluster*, and *ESXi host* where the VMs will be deployed.
-.. Select the ESXi hosts *Datastore* and *Network*.
-.. Enter the *IP address range* and *Gateway* for the VMs. 
-+
-image:clean-restore-compute.png[Screenshot of compute selection interface.]
-. Expand the *VMs* section, which is populated based on your inputs in the *Compute* section. Select the VMs located on the ESXi host that you will use for scanning malware during the clean restore. Provide the *User name* and *Password* for each VM you select. 
-. Select **Add** to create the isolated recovery environment. Ransomware Resilience tests the connection after you select add; This process can take a while.
---
-====
-
-You can track the progress. In the settings tab, select **Isolated recovery environments**. The isolated recovery environments page displays all isolated recovery environments and their status. Select **View jobs** for a breakdown of all jobs pertaining to that environment. 
-
-You can modify the systems in an isolated recovery environment after it's created. In the settings tab, select **Isolated recovery environments**. Locate the isolated recovery environment you want to edit, select the action menu `...` then **Edit**. Proceed to modify the systems. Select **Save** when complete. 
-
-== Perform a clean restore
-
-. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
-. In the Restore Type options, select **Clean restore** then **Next**. 
-. Select the isolated recovery environment you want to use then **Next**. 
-. Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to analysis, select **Next**. 
-. After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
-+
-image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
-. After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
-+
-To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
-+
-image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-. After you choose your restore point, select **Next** to begin cleaning your files. 
-. Ransomware Resilience begins cleaning the workload. 
-+
-When the cleaning completes, select **Start recovery** to initiate the recovery. 
-. Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
-. Select **Start recovery** to initiate the recovery. 
-. When the recovery completes, select **Next** to move to the final phase. 
-. Select **Release resources and end** to release the resources and close the clean room. To confirm you want to release the resource, select **End**. 
-
-== Delete an isolated recovery environment
-
-You can't delete a clean room with an restoration in progress. You can cancel the restore operation or wait until the restore completes then delete the clean room. 
-
-. Go to **Settings**.
-. In the Clean restore card, select **Manage**. 
-. Identify the clean room you want to delete. In the actions menu column for that room, select the three dots `...` then **Delete**.
-. In the dialog, select **Delete** to confirm the operation. 
-
-// == Disconnect a clean room
-
-== Next steps
-
-* link:reference-clean-restore.html[Requirements for clean restore]

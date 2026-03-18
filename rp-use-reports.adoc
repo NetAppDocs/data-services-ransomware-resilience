@@ -23,7 +23,7 @@ include::_include/console-role-admin-viewer.adoc[]
 * *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 * *Readiness drills*: Includes results from simulated attacks to highlight areas for improvement.
-* *Clean restore*: Includes details about restored workloads using clean restore.
+* *Clean restore*: Includes details about workloads restored with clean restore.
 
 // If you download CSV or JSON files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
