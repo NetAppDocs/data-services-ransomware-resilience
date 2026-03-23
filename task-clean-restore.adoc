@@ -19,6 +19,8 @@ The clean restore option is an alternative to the xref:task-custom-restore.html[
 [NOTE]
 Documentation for clean recovery is provided as a technology preview. With this preview offering, NetApp reserves the right to modify offering details, contents, and timeline before General Availability. 
 
+include::_include/console-role-admin.adoc[]
+
 == Overview 
 
 Clean restore guides you through multi-step process that optimizes recovery. 
@@ -74,146 +76,32 @@ Clean recovery in Cloud Volumes ONTAP instances also creates metadata volumes an
 
 == Requirements
 
-
-image::diagram-clean-recovery-cloud-cloud.png[]
-
-image:diagram-clean-recovery-cloud-on-prem.png[]
-
-image:diagram-clean-recovery-on-prem.png[]
-
 Ensure you meet the requirements for your chosen clean recovery deployment type.
 
 [role="tabbed-block"]
 ====
-.Cloud
+.Cloud to cloud
 --
-Follow these requirements for cloud-to-cloud or on-premises-to-cloud deployments. 
+Follow these requirements for cloud-to-cloud deployments. 
 
-* For the clean room's SVM data LIF, provide an IP address. 
-** For Cloud Volumes ONTAP with AWS using a cloud to cloud clean recovery, ensure the IP address is allocated to the Elastic Network Interface. 
-* For the isolated recovery environment, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
-** The VPC should have a minimum capacity of 64 IP address (a /26 netmask). 
-** The VPC must allow public internet access. Otherwise, the Console agent won't work 
-* Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean recovery in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to clean recovery. 
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "EC2Isolated recovery environmentFullAccess",
-            "Effect": "Allow",
-            "Action": "ec2:*",
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
-                }
-            }
-        },
-        {
-            "Sid": "EC2CreateAccess",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:*"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "EC2ReadPermissions",
-            "Effect": "Allow",
-            "Action": [
-                "ec2:Describe*"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "IAMFullAccess",
-            "Effect": "Allow",
-            "Action": "iam:*",
-            "Resource": "*",
-            "Condition": {
-                "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
-                }
-            }
-        },
-        {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
-            "Effect": "Allow",
-            "Action": [
-                "s3:CreateBucket"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
-            "Effect": "Allow",
-            "Action": [
-                "s3:*"
-            ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
-        },
-        {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
-            "Effect": "Allow",
-            "Action": [
-                "s3:*"
-            ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
-        }
-    ]
-}
-```
+image::diagram-clean-recovery-cloud-cloud.png[]
 
 
-
-[cols="1,1,1,1", options="header"]
-|===
-| Protocol | Destination Port | Source | Purpose
-
-| TCP & UDP
-| 2049
-| Isolated recovery environment VPC CIDR Range
-| NFS v4 access from Isolated recovery environment
-
-| TCP & UDP
-| 111
-| Isolated recovery environment VPC CIDR Range
-| NFS v3 access from Isolated recovery environment
-
-| TCP & UDP
-| 635
-| Isolated recovery environment VPC CIDR Range
-| NFS v3 access from Isolated recovery environment
-
-| TCP & UDP
-| 4045
-| Isolated recovery environment VPC CIDR Range
-| NFS v3 access from Isolated recovery environment
-
-| TCP & UDP
-| 4046
-| Isolated recovery environment VPC CIDR Range
-| NFS v3 access from Isolated recovery environment
-
-| TCP & UDP
-| 4049
-| Isolated recovery environment VPC CIDR Range
-| NFS v3 access from Isolated recovery environment
-|===
-
-* Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean recovery data LIF IP. The firewall should be open for ingress from the Isolated recovery environment CIDR range:
-
-* Isolated recovery environment route table should be the main route table in the isolated recovery environment VPC.
-* The isolated recovery environment route table should allow routing to the clean recovery data LIP IP address. 
-* The isolated recovery environment route table should also allow a route to public internet for the isolated recovery environment agent to work.
-// what's the agent? 
 --
 
-.On-premises
+.On-premises to cloud
+--
+Follow these requirements for on-premises-to-cloud deployments. 
+
+image:diagram-clean-recovery-cloud-on-prem.png[]
+
+--
+
+.On-premises to on-premises
 --
 For isolated recoery environments deployed on-premises:
+
+image:diagram-clean-recovery-on-prem.png[]
 
 * The vCenter must be version 7.0 or later with at least one data center. 
 * The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
@@ -309,11 +197,13 @@ You can modify the systems in an isolated recovery environment after it's create
 . After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
+// replace image - ask Erika
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
+// replace image - ask Erika 
 . After you choose your restore point, select **Next** to begin cleaning your files. 
 . Ransomware Resilience begins cleaning the workload. 
 +
@@ -331,9 +221,3 @@ You can't delete a clean room with an restoration in progress. You can cancel th
 . In the Clean restore card, select **Manage**. 
 . Identify the clean room you want to delete. In the actions menu column for that room, select the three dots `...` then **Delete**.
 . In the dialog, select **Delete** to confirm the operation. 
-
-// == Disconnect a clean room
-
-== Next steps
-
-* link:reference-clean-restore.html[Requirements for clean restore]
