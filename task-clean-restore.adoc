@@ -50,12 +50,16 @@ You can create an isolated recovery environment in the cloud or on-premises. Cur
 | On-premises (AFF or FAS systems only) | On-premises (VMware vCenter)
 | On-premises (AFF or FAS systems only) | Cloud: AWS in US East 1 or EU Central 1
 | Cloud: Cloud Volumes ONTAP with AWS | Cloud: AWS in US East 1 or EU Central 1
+| Cloud: Amazon FSxN for ONTAP | ? 
 |===
 
 // Amazon FSx for NetApp ONTAP,
 
 [NOTE]
 You must be running ONTAP 9.11.1 or later. 
+
+[NOTE]
+Performing a clean restore in a cloud-based environment can incur additional compute charges from the cloud provider. 
 
 // SOURCE:  Google Cloud NetApp Volumes, Cloud Volumes ONTAP with Azure; Cloud Volumes ONTAP with Google Cloud. 
 
@@ -84,8 +88,9 @@ Ensure you meet the requirements for your chosen clean recovery deployment type.
 --
 Follow these requirements for cloud-to-cloud deployments. 
 
-image::diagram-clean-recovery-cloud-cloud.png[]
+image::diagram-clean-recovery-cloud-cloud.png[Diagram of cloud-to-cloud clean recovery]
 
+include::_include/clean-recovery-cloud-destination.adoc[]
 
 --
 
@@ -93,7 +98,9 @@ image::diagram-clean-recovery-cloud-cloud.png[]
 --
 Follow these requirements for on-premises-to-cloud deployments. 
 
-image:diagram-clean-recovery-cloud-on-prem.png[]
+image:diagram-clean-recovery-cloud-on-prem.png[Diagram of cloud to on-prem clean recovery]
+
+include::_include/clean-recovery-cloud-destination.adoc[]
 
 --
 
@@ -101,7 +108,7 @@ image:diagram-clean-recovery-cloud-on-prem.png[]
 --
 For isolated recoery environments deployed on-premises:
 
-image:diagram-clean-recovery-on-prem.png[]
+image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
 * The vCenter must be version 7.0 or later with at least one data center. 
 * The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
@@ -144,7 +151,9 @@ If you've already created an isolated recovery environment, select **Add** to cr
 . For a cloud-based isolated recovery environment, select **Amazon Web Services**. 
 . Expand the **Name** section. Create a **Name** for the environment. 
 . Expand the *Systems* section. Choose the systems that you want to connect to the isolated recovery environment. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
-// not needed for FSx
++
+[NOTE]
+For isolated recovery environments deployed to Amazon FSxN for ONTAP, you don't need to provide this information. 
 + 
 image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Authentication** section. 
