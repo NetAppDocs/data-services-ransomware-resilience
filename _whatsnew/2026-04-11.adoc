@@ -1,4 +1,4 @@
-=== Clean recovery
+=== Clean restore
 
 Ransomware Resilience now supports clean restores, a new recovery option that helps you quickly and easily recovery from ransomware attacks. Clean restores offers guided workflows that identify optimal restore points to get your workloads up and running to minimize downtimes. The workflows in clean restore also provide file-level insights into your data, ensuring you can restore malware-free workload that prevents reinfection and minimizes data loss.
 

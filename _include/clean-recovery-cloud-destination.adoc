@@ -1,10 +1,12 @@
-* For the clean room's SVM data LIF, provide an IP address. 
-** For Cloud Volumes ONTAP with AWS using a cloud to cloud clean recovery, ensure the IP address is allocated to the Elastic Network Interface. 
-* For the isolated recovery environment, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
+* (ONE) For the isolated recovery environment, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
 ** The VPC should have a minimum capacity of 64 IP address (a /26 netmask). 
 ** The VPC must allow public internet access. Otherwise, the Console agent won't work 
-* Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean recovery in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to clean recovery. 
 
+* (TWO) Isolated recovery environment route table should be the main route table in the isolated recovery environment VPC.
+* The isolated recovery environment route table should allow routing to the clean recovery data LIP IP address. 
+* The isolated recovery environment route table should also allow a route to public internet for the isolated recovery environment agent to work.
+* (THREE) Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean recovery in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to clean recovery. 
++
 ```json
 {
     "Version": "2012-10-17",
@@ -74,8 +76,7 @@
     ]
 }
 ```
-
-
+* (FIVE) Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean recovery data LIF IP. The firewall should be open for ingress from the Isolated recovery environment CIDR range:
 
 [cols="1,1,1,1", options="header"]
 |===
@@ -112,9 +113,5 @@
 | NFS v3 access from Isolated recovery environment
 |===
 
-* Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean recovery data LIF IP. The firewall should be open for ingress from the Isolated recovery environment CIDR range:
-
-* Isolated recovery environment route table should be the main route table in the isolated recovery environment VPC.
-* The isolated recovery environment route table should allow routing to the clean recovery data LIP IP address. 
-* The isolated recovery environment route table should also allow a route to public internet for the isolated recovery environment agent to work.
-// what's the agent? 
+* (FIVE) For the clean room's SVM data LIF, provide an IP address.
+** For Cloud Volumes ONTAP with AWS using a cloud to cloud clean recovery, ensure the IP address is allocated to the Elastic Network Interface. 
