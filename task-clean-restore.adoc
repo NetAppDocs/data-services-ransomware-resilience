@@ -59,8 +59,6 @@ a|
 * EU Central 1
 |===
 
-// Amazon FSx for NetApp ONTAP,
-
 [NOTE]
 You must be running ONTAP 9.11.1 or later. 
 
@@ -87,7 +85,7 @@ When you create the isolated environment for on-premises sources, you have the o
 
 If the primary source is available, the clean restore must be restored to the primacy source. If the primary source is unavailable and you've configured a secondary source, clean restore will restore to the secondary source. 
 
-The clean restore process by default analyzes snapshots from the source environment. If either the source environment is unavailable or an unencrypted snapshot on the source is not available, clean restore analyzes snapshots on a secondary system _if you have configured one_. 
+The clean restore process by default analyzes snapshots from the source environment. If either the source environment is unavailable or an unencrypted snapshot on the source is not available, clean restore analyzes snapshots on a secondary system if you have configured one. 
 
 == Cost and licensing
 
@@ -95,26 +93,23 @@ Clean restore is offered as part of Ransomware Resilience. No additional license
 
 Enabling clean restore can incur third-party cloud provider charges. Depending on how you use the service, these charges can recur while the clean recovery environments exist.
 
-Third-party charges can include creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example, when IRE is deployed in AWS and the clean restore is initiated, two t3.medium AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware. 
+Third-party charges can include creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. Consider the following examples: 
 
-Clean recovery in Cloud Volumes ONTAP instances creates a clean room storage VM for metadata volumes and snapshot clones for analysis.  
+* When an IRE is deployed in AWS and you initiate the clean restore, two t3.medium AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware. 
+* In Cloud Volumes ONTAP, clean recovery creates a clean room storage VM for metadata volumes and snapshot clones for analysis.  
 
 == Prerequisites
 
-// add numbers
-
 Ensure you've completed the prerequisites for your chosen clean recovery deployment type. Select the tab for your chosen isolated recovery environment configuration. 
 
-
 [NOTE]
-When you create the isolated recovery environment, you must add every system you want to use for analysis. 
-Every system whether Source or Secondary that you would like to use for analysis or recovery using clean restore must be added in the system sections of create IRE step. 
+When you create the IRE, you must add every system (primary or secondary) you want to use for analysis during the system selection step of creating the IRE.
 
 [role="tabbed-block"]
 ====
 .Cloud to cloud
 --
-Follow these requirements for cloud-to-cloud deployments. 
+This diagram illustrates an example of the cloud-to-cloud clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
 
 image::diagram-clean-recovery-cloud-cloud.png[Diagram of cloud-to-cloud clean recovery]
 
@@ -124,7 +119,7 @@ include::_include/clean-recovery-cloud-destination.adoc[]
 
 .On-premises to cloud
 --
-Follow these requirements for on-premises-to-cloud deployments. 
+This diagram illustrates an example of the on-premises-to-cloud clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
 
 image:diagram-clean-recovery-cloud-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
@@ -134,7 +129,7 @@ include::_include/clean-recovery-cloud-destination.adoc[]
 
 .On-premises to on-premises
 --
-For isolated recovery environments deployed on-premises:
+This diagram illustrates an example of the on-premises to on-premises clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
 
 image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
@@ -187,12 +182,13 @@ a|
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[4] Clean room SVM data LIF
 
-A storage virtual machine (SVM) is created in each of the systems you select to connect ot the IRE for restoring workloads. Provide a dedicated IP address for each system that is used as the data LIF of the clean room SVM. 
+A storage virtual machine (SVM) is created in each of the systems you select to connect ot the IRE for restoring workloads. You must provide a dedicated IP address for each system that is used as the data LIF of the clean room SVM. 
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[5] Dedicated IRE agent
 
-Deploy a dedicated NetApp Console agent for the IRE. Consult 
+(TWO)
+Deploy a dedicated NetApp Console agent for the IRE. The Console agent must be deployed in the destination vCenter with access to the clean room VLAN. For more information, see link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html[Deploy a Console agent on-premises^].
 
 --
 ====
