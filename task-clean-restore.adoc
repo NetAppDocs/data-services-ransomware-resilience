@@ -4,7 +4,7 @@ permalink: task-clean-restore.html
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment
 summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
 ---
-= Recover workloads with clean restore in NetApp Ransomware Resilience
+= Configure the clean restore environment in NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 :imagesdir: ./media/
 
 [.lead]
-With a clean restore, NetApp Ransomware Resilience enables you to create an isolated recovery environment that sequesters the workload to identify and clean affected files. The clean restore identifies optimized recovery paths to minimize data loss and get your workloads back online in the shortest amount of time possible.
+NetApp Ransomware Resilience offers clean restores, which provide a guided recovery after ransomware attacks. To perform a clean restore, you must first create an isolated recovery environment (IRE), either on-premises or in a supported cloud environment. In the isolated recovery environment, you create a clean room where Ransomware Resilience sequesters the workload to identify which files are clean and which are impacted by ransomware.
 
 The clean restore option is an alternative to the xref:task-custom-restore.html[custom restore option]. 
 
@@ -43,11 +43,20 @@ You can create an isolated recovery environment in the cloud or on-premises. Cur
 
 [%header]
 |===
-| Source | Destination (isolated recovery environment)
-| On-premises (AFF or FAS systems only) | On-premises (VMware vCenter)
-| On-premises (AFF or FAS systems only) | Cloud: AWS in US East 1 or EU Central 1
-| Cloud: Cloud Volumes ONTAP with AWS | Cloud: AWS in US East 1 or EU Central 1
-| Cloud: Amazon FSxN for ONTAP | ? 
+| Source | Destination (isolated recovery environment) | Supported destination regions 
+| On-premises (AFF or FAS systems only) | On-premises (VMware vCenter) | N/A 
+| On-premises (AFF or FAS systems only) | Cloud: AWS
+a| 
+* US East 1
+* EU Central 1
+| Cloud: Cloud Volumes ONTAP with AWS | Cloud: AWS
+a| 
+* US East 1
+* EU Central 1
+| Cloud: Amazon FSxN for ONTAP | Cloud: AWS
+a| 
+* US East 1
+* EU Central 1
 |===
 
 // Amazon FSx for NetApp ONTAP,
@@ -58,28 +67,48 @@ You must be running ONTAP 9.11.1 or later.
 [NOTE]
 Performing a clean restore in a cloud-based environment can incur additional compute charges from the cloud provider. 
 
-// SOURCE:  Google Cloud NetApp Volumes, Cloud Volumes ONTAP with Azure; Cloud Volumes ONTAP with Google Cloud. 
-
 == Considerations
 
-* Clean restore is currently only supported for NAS file shares (NFS/CIFS).
-* Clean restores must be restored to the source environment. 
-* You can only perform a clean restore for an encryption-based ransomware attack. 
-// * Number of isolated recovery environments per console agent
-* If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
-* You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
-* When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 
-* Enabling clean recovery may incur third party cloud provider charges, some of which may reoccur until the environments you create with this feature are deleted. Examples of third-party charges include the creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example:
-+
-For workloads that needs to be recovered, two AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware.
-+
-Clean recovery in Cloud Volumes ONTAP instances also creates metadata volumes and snapshot clones for analysis. 
+include::_include/clean-restore-considerations.adoc[]
 
-== Requirements
+=== On-premises considerations 
+
+If you're deploying an on-premises IRE, when a Windows VM is cloned for the recovery analysis in the clean restore, the cloned VM retains the same configuration as the source. This can cause conflicts:
+
+* Using the same security identfier (SID) results in authentication and security conflicts.
+* Using the same computer name (CN) causes network conflicts. 
+* Using the same machine identity leads to licensing and activation issues. 
+
+To avoid these conflicts, Ransomware Resilience performs sysprem on the clone VM, which resets the SID, CN, and machine identity. Resetting these values ensures the clone VM operates as a unique and independent instance without interfering with the source VM. 
+
+=== Secondary sources 
+
+When you create the isolated environment for on-premises sources, you have the option of adding a secondary source. 
+
+If the primary source is available, the clean restore must be restored to the primacy source. If the primary source is unavailable and you've configured a secondary source, clean restore will restore to the secondary source. 
+
+The clean restore process by default analyzes snapshots from the source environment. If either the source environment is unavailable or an unencrypted snapshot on the source is not available, clean restore analyzes snapshots on a secondary system _if you have configured one_. 
+
+== Cost and licensing
+
+Clean restore is offered as part of Ransomware Resilience. No additional license is required to perform a clean restore or create an isolated recovery enviornment. 
+
+Enabling clean restore can incur third-party cloud provider charges. Depending on how you use the service, these charges can recur while the clean recovery environments exist.
+
+Third-party charges can include creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example, when IRE is deployed in AWS and the clean restore is initiated, two t3.medium AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware. 
+
+Clean recovery in Cloud Volumes ONTAP instances creates a clean room storage VM for metadata volumes and snapshot clones for analysis.  
+
+== Prerequisites
 
 // add numbers
 
-Ensure you meet the requirements for your chosen clean recovery deployment type.
+Ensure you've completed the prerequisites for your chosen clean recovery deployment type. Select the tab for your chosen isolated recovery environment configuration. 
+
+
+[NOTE]
+When you create the isolated recovery environment, you must add every system you want to use for analysis. 
+Every system whether Source or Secondary that you would like to use for analysis or recovery using clean restore must be added in the system sections of create IRE step. 
 
 [role="tabbed-block"]
 ====
@@ -109,9 +138,21 @@ For isolated recovery environments deployed on-premises:
 
 image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Hosts & vCenter
+
+
 * The vCenter must be version 7.0 or later with at least one data center. 
 * The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
 * The provided vCenter credentials must have permissions to discover resources and clone VMs. 
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Base VMs (Windows or Linux)
+
+* During recovery in the clean restore, the base VM are cloned into a selected datacenter, placed on the chosen ESXi compute, mapped to the specified datastore, and attached to the designated network. When the VMs are clone, the are configured to have 2 vCPUs and 4 GB RAM (for Linux or Windows VM) and the same amount of disk space as the base VMs. Each clean restore session uses two IP addresses from the given CIDR range. Youmust provide a sufficient IP address range to accommodate multiple parallel clean room sessions. (The IP addresses are released after the recovery has been completed.)
+
+* The datastore should have sufficient free capacity to accomodate cloning VMs. 
+
+* The IP address range must be specified in the CIDR format (for example, 100.100.0.0/24)
 
 * For Linux VMs:
 ** The operating system must be Ubuntu Linux 20.04 or later.
@@ -130,6 +171,29 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recov
 ** The IP should be configured. 
 ** Ensure you have appropriate license to allow cloning of base VMs. 
 ** The VM must be powered on. 
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Network
+
+|===
+| Resource | Access 
+| Clean room SVM VLAN | NFS access to the production Console agent, IRE agent VLAN, and clean room VLAN 
+| IRE agent VLAN 
+a| 
+* NFS access to clean room SVM VLAN 
+* HTTP/SSH access to clean room VLAN
+| Clean room VLAN | NFS access to clean room SVM VLAN
+|===
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png[4] Clean room SVM data LIF
+
+A storage virtual machine (SVM) is created in each of the systems you select to connect ot the IRE for restoring workloads. Provide a dedicated IP address for each system that is used as the data LIF of the clean room SVM. 
+
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[5] Dedicated IRE agent
+
+Deploy a dedicated NetApp Console agent for the IRE. Consult 
+
 --
 ====
 
@@ -176,7 +240,9 @@ image:screenshot-set-up-recovery-environment.png[Screenshot of isolated recovery
 If you've already created an isolated recovery environment, select **Add** to create another one. 
 . For location, select **On-premises**. 
 . Expand the *Name* section. Assign a **Name** for the isolated recovery environment. 
-. Expand the *Systems* section. Choose the systems that you want to connect to the isolated recovery environment. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the isolated recovery environment.  
+. Expand the *Systems* section. Choose the systems that you want to connect to the isolated recovery environment. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the isolated recovery environment.
++
+Each system you select must have an assigned IP address. You can select primary or secondary systems. Secondary systems can be used for analysis and recovery if the primary system has no unencrypted snapshots or if it's unavailable.   
 +
 image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Console agent** section. Select the Console agent from the dropdown menu that's deployed in the isolated recovery environment. 
@@ -197,35 +263,12 @@ You can track the progress. In the settings tab, select **Isolated recovery envi
 
 You can modify the systems in an isolated recovery environment after it's created. In the settings tab, select **Isolated recovery environments**. Locate the isolated recovery environment you want to edit, select the action menu `...` then **Edit**. Proceed to modify the systems. Select **Save** when complete. 
 
-== Perform a clean restore
-
-. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
-. In the Restore Type options, select **Clean restore** then **Next**. 
-. Select the isolated recovery environment you want to use then **Next**. 
-. Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to analysis, select **Next**. 
-. After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
-+
-image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
-// replace image - ask Erika
-. After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
-+
-To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
-+
-image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-// replace image - ask Erika 
-. After you choose your restore point, select **Next** to begin cleaning your files. 
-. Ransomware Resilience begins cleaning the workload. 
-+
-When the cleaning completes, select **Start recovery** to initiate the recovery. 
-. Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
-. Select **Start recovery** to initiate the recovery. 
-. When the recovery completes, select **Next** to move to the final phase. 
-. Select **Release resources and end** to release the resources and close the clean room. To confirm you want to release the resource, select **End**. 
-
 == Delete an isolated recovery environment
 
 You can't delete a clean room with an restoration in progress. You can cancel the restore operation or wait until the restore completes then delete the clean room. 
+
+[IMPORTANT]
+If you delete the IRE, it also delete the clean room SVM and the metadata volume. Once these assets have been deleted, you are no longer able to generate reports for the clean restore. 
 
 . Go to **Settings**.
 . In the Clean restore card, select **Manage**. 

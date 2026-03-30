@@ -1,0 +1,12 @@
+* You can only create one isolated recovery environment (IRE) per Ransomware Resilience account. Each IRE can have three clean rooms. 
+* Clean restore is currently only supported for NAS file shares (NFS/CIFS).
+* Clean restores must be restored to the source environment. 
+* You can only perform a clean restore for an encryption-based ransomware attack. 
+* If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
+** You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
+* When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 
+* Enabling clean recovery may incur third party cloud provider charges, some of which may reoccur until the environments you create with this feature are deleted. Examples of third-party charges include the creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example:
++
+For workloads that needs to be recovered, two AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware.
++
+Clean restores in Cloud Volumes ONTAP instances also creates metadata volumes and snapshot clones for analysis. 

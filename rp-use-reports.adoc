@@ -24,6 +24,8 @@ include::_include/console-role-admin-viewer.adoc[]
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads marked "Restore needed", "In progress," "Restore failed" and "Successfully restored."
 * *Readiness drills*: Includes results from simulated attacks to highlight areas for improvement.
 * *Clean restore*: Includes details about workloads restored with clean restore.
++
+You must have an active isolated recovery environment (IRE) to generate clean restore reports. Clean restore reports aren't available after the IRE has been deleted. 
 
 // If you download CSV or JSON files from the Protection, Alerts, or Recovery page, the data shows only the data on that page. 
 
