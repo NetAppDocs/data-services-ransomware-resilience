@@ -103,13 +103,13 @@ Third-party charges can include creation and deployment of compute instances and
 Ensure you've completed the prerequisites for your chosen clean recovery deployment type. Select the tab for your chosen isolated recovery environment configuration. 
 
 [NOTE]
-When you create the IRE, you must add every system (primary or secondary) you want to use for analysis during the system selection step of creating the IRE.
+When you create the IRE, you must add every system (primary or secondary) you want to use for analysis during the system selection step when you create the IRE.
 
 [role="tabbed-block"]
 ====
 .Cloud to cloud
 --
-This diagram illustrates an example of the cloud-to-cloud clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
+This diagram illustrates an example of the cloud-to-cloud clean recovery configuration. Review the diagram and the resources that you need to configure before you can create the IRE. 
 
 image::diagram-clean-recovery-cloud-cloud.png[Diagram of cloud-to-cloud clean recovery]
 
@@ -119,7 +119,7 @@ include::_include/clean-recovery-cloud-destination.adoc[]
 
 .On-premises to cloud
 --
-This diagram illustrates an example of the on-premises-to-cloud clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
+This diagram illustrates an example of the on-premises-to-cloud clean recovery configuration. Review the diagram and the resources that you need to configure before you can create the IRE. 
 
 image:diagram-clean-recovery-cloud-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
@@ -129,7 +129,7 @@ include::_include/clean-recovery-cloud-destination.adoc[]
 
 .On-premises to on-premises
 --
-This diagram illustrates an example of the on-premises to on-premises clean recovery configuration. Before configuring your isolated recovery environment, you must configure the following resources. 
+This diagram illustrates an example of the on-premises to on-premises clean recovery configuration. Review the diagram and the resources that you need to configure before you can create the IRE. 
 
 image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recovery]
 

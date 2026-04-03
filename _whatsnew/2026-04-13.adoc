@@ -2,7 +2,7 @@
 
 Ransomware Resilience now supports clean restores, a new recovery option that helps you quickly and easily recovery from ransomware attacks. Clean restores offers guided workflows that identify optimal restore points to get your workloads up and running to minimize downtimes. The workflows in clean restore also provide file-level insights into your data, ensuring you can restore malware-free workload that prevents reinfection and minimizes data loss.
 
-To learn about supported configurations and how to configure your system for a clean recovery, see link:task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:task-clean-restore-recover[Recover workloads with a clean restore^].
+To learn about supported configurations and how to configure your system for a clean restore, see link:task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:task-clean-restore-recover[Recover workloads with a clean restore^].
 
 // full urls link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/
 
