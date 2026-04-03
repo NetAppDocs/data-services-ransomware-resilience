@@ -5,3 +5,11 @@ Ransomware Resilience now supports clean restores, a new recovery option that he
 To learn about supported configurations and how to configure your system for a clean recovery, see link:task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:task-clean-restore-recover[Recover workloads with a clean restore^].
 
 // full urls link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/
+
+=== User behavior activity enhancement
+
+User behavior activity insights are now retained for 13 months afters an incident. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html[Learn about user activity detection^].
+
+// === ANF GA
