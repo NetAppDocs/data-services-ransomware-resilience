@@ -129,7 +129,7 @@ include::_include/clean-recovery-cloud-destination.adoc[]
 
 .On-premises to on-premises
 --
-This diagram illustrates an example of the on-premises to on-premises clean recovery configuration. Before configurint your isolated recovery environment, you must configure the following resources. 
+This diagram illustrates an example of the on-premises to on-premises clean recovery configuration. Before configuring your isolated recovery environment, you must configure the following resources. 
 
 image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recovery]
 
@@ -170,6 +170,8 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean recov
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Network
 
+* Configure the VLAN resources with the following access:
++
 |===
 | Resource | Access 
 | Clean room SVM VLAN | NFS access to the production Console agent, IRE agent VLAN, and clean room VLAN 
@@ -187,8 +189,7 @@ A storage virtual machine (SVM) is created in each of the systems you select to 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png[5] Dedicated IRE agent
 
-(TWO)
-Deploy a dedicated NetApp Console agent for the IRE. The Console agent must be deployed in the destination vCenter with access to the clean room VLAN. For more information, see link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html[Deploy a Console agent on-premises^].
+* Deploy a dedicated NetApp Console agent for the IRE. The Console agent must be deployed in the destination vCenter with access to the clean room VLAN. For more information, see link:https://docs.netapp.com/us-en/console-setup-admin/task-install-agent-on-prem.html[Deploy a Console agent on-premises^].
 
 --
 ====
