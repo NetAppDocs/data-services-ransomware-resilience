@@ -49,7 +49,7 @@ image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 .. Select a test storage SVM. 
 .. If you selected a CIFS (SMB) storage VM, **User name** and **Password** fields appear. Enter the user name and password for the storage VM.
 .. Select the readiness drill type. For a manual recovery from an encryption data breach, choose **Custom recovery**. For recovery from suspicious user activity, choose **Data breach**.
-.. Enter the name of a new test workload to be created. Do not include dashes in the name. 
+.. Enter the name for the test workload. Do not include dashes in the name. 
 
 . Select *Save*.
 //+ 
@@ -160,7 +160,7 @@ include::_include/console-role-admin.adoc[]
 ** Select *Mark restore needed*. 
 ** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
 * From the Ransomware Resilience menu, select *Recovery*. 
-* Select the test workload marked with "Readiness drill" that you want to restore.
+* Select the test workload marked marked with "Readiness drill" that you want to restore.
 * Select *Restore*.
 * In the Restore page, provide information for the restore: 
 ** Select the source snapshot copy.
@@ -190,7 +190,7 @@ Organization admin, Folder or project admin, or Ransomware Resilience admin. htt
 
 ** Dismissed: If you suspect that the activity is not a ransomware attack, change the status to Dismissed. 
 +
-IMPORTANT: After you dismiss an attack, you cannot chanage it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
+IMPORTANT: After you dismiss an attack, you cannot change it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
 
 ** Resolved: The incident has been mitigated. 
 
