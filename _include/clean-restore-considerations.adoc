@@ -5,8 +5,8 @@
 * If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
 ** You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
 * When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 
-* Enabling clean restores may incur third party cloud provider charges, some of which can recur until the environments you create for clean restore are deleted. Examples of third-party charges include the creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example:
+* Enabling clean restores may incur third-party cloud provider charges, some of which can recur until the environments you create for clean restore are deleted. Examples of third-party charges include the creation and deployment of compute instances and additional production storage capacity for cleaning and recovery. For example:
 +
-For workloads that needs to be recovered, two AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware.
+For workloads that need to be recovered, two AWS EC2 instances are deployed in the clean room within the isolated recovery environment for cleaning encryption and malware.
 +
-Clean restores in Cloud Volumes ONTAP instances also creates metadata volumes and snapshot clones for analysis. 
+Clean restores in Cloud Volumes ONTAP instances create metadata volumes and snapshot clones for analysis. 
