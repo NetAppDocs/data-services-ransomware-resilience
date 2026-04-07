@@ -18,9 +18,9 @@ The clean restore option is an alternative to the xref:task-custom-restore.html[
 
 include::_include/console-role-admin.adoc[]
 
-== Overview 
+== Learn about clean restores 
 
-Clean restore guides you through multi-step process that optimizes recovery. 
+When you perform a clean restore, Ransomware Resilience guides you through multi-step process that optimizes recovery. 
 
 * **SETUP**: To perform a clean restore, you must first create an IRE then select the workload to restore. Ransomware Resilience creates a clean room where all actions for the workload are taken. 
 * **ANALYSIS**: In the clean room, Ransomware Resilience analyzes all snapshots to see if encryption is present. Clean restore determines a recovery map to determine the optimal recovery plan. 
@@ -44,12 +44,12 @@ You can create an IRE in the cloud or on-premises. Currently, the following conf
 [%header]
 |===
 | Source | Destination (IRE) | Supported destination regions 
-| On-premises (AFF or FAS systems only) | On-premises (VMware vCenter) | N/A 
-| On-premises (AFF or FAS systems only) | Cloud: AWS
+| On-premises (AFF or FAS systems only)* | On-premises (VMware vCenter) | N/A 
+| On-premises (AFF or FAS systems only)* | Cloud: AWS
 a| 
 * US East 1
 * EU Central 1
-| Cloud: Cloud Volumes ONTAP with AWS | Cloud: AWS
+| Cloud: Cloud Volumes ONTAP with AWS* | Cloud: AWS
 a| 
 * US East 1
 * EU Central 1
@@ -59,17 +59,16 @@ a|
 * EU Central 1
 |===
 
-[NOTE]
-You must be running ONTAP 9.11.1 or later. 
+{asterisk} You must be running ONTAP 9.11.1 or later. 
 
 [NOTE]
-Performing a clean restore in a cloud-based environment can incur additional compute charges from the cloud provider. 
+Performing a clean restore in a cloud-based environment can incur additional compute charges from the cloud provider. For more information, see link:#cost-and-licensing[Cost and licensing].
 
 == Considerations
 
 include::_include/clean-restore-considerations.adoc[]
 
-=== On-premises considerations 
+=== Additional considerations for on-premises environments
 
 If you're deploying an on-premises IRE, when a Windows VM is cloned for the recovery analysis in the clean restore, the cloned VM retains the same configuration as the source. This can cause conflicts:
 
@@ -81,9 +80,9 @@ To avoid these conflicts, Ransomware Resilience performs sysprem on the clone VM
 
 === Secondary sources 
 
-When you create the isolated environment for on-premises sources, you have the option of adding a secondary source. 
+When you create the IRE for on-premises sources, you have the option of adding a secondary source. 
 
-If the primary source is available, the clean restore must be restored to the primary source. If the primary source is unavailable and you've configured a secondary source, clean restore will restore to the secondary source. 
+If the primary source is available, the clean restore must be restored to the primary source. If the primary source is unavailable and you've configured a secondary source, the clean restore will be restored to the secondary source. 
 
 The clean restore process by default analyzes snapshots from the source environment. If either the source environment is unavailable or an unencrypted snapshot on the source is not available, clean restore analyzes snapshots on a secondary system if you have configured one. 
 
@@ -166,9 +165,14 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean resto
 .Network
 * Configure the VLAN resources with the following access:
 +
+[options="header",cols="25,75"]
 |===
 | Resource | Access 
-| Clean room SVM VLAN | NFS access to the production Console agent, Console agent VLAN, and clean room VLAN 
+| Clean room SVM VLAN 
+a| NFS access to the:
+* Production Console agent
+* Console agent VLAN
+* Clean room VLAN 
 | Console agent VLAN 
 a| 
 * NFS access to the clean room SVM VLAN 

@@ -30,12 +30,9 @@ A workload can have one of the following restore statuses:
 Review the workloads that are in the "Restore needed" recovery status. 
 
 .Steps 
-. Do one of the following: 
+. From the main Ransomware Resilience dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
 +
-* From the dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
-
-* From the menu, select *Recovery*.
-
+Alternately, select *Recovery* from the sidebar. 
 . Review the workload information in the *Recovery* page. 
 +
 image:screen-recovery2.png[Recovery page]

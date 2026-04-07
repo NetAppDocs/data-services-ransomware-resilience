@@ -66,7 +66,7 @@ sidebar:
               url: /rp-use-recover.html
             - title: Recover with a custom restore 
               url: /rp-use-recover.html
-            - title: Clean restore
+            - title: Perform a clean restore
               entries:
               - title: Create an isolated recovery environment
                 url: /task-clean-restore.html

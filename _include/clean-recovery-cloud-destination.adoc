@@ -14,7 +14,7 @@
 | TCP & UDP
 | 2049
 | IRE VPC CIDR range
-| NFS v4 access from IRE
+| NFSv4 access from IRE
 
 | TCP & UDP
 | 111
