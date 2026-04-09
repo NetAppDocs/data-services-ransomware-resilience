@@ -14,7 +14,7 @@ With Ransomware Resilience, storage administrators can determine how best to res
 
 
 [NOTE]
-Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore], enabling you to clean all files before performing the restore. 
+Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore], enabling you to clean all files and identify optimized recovery pathways before performing the restore. 
 
 == Restore a workload
 

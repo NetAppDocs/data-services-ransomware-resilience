@@ -14,7 +14,7 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 [.lead]
 NetApp Ransomware Resilience offers clean restores, which provide a guided recovery after ransomware attacks. To perform a clean restore, you must first create an isolated recovery environment (IRE), either on-premises or in a supported cloud environment. In the IRE, you create a clean room where Ransomware Resilience sequesters the workload to identify which files are clean and which are impacted by ransomware.
 
-The clean restore option is an alternative to the xref:task-custom-restore.html[custom restore option]. 
+The clean restore option is an optimized alternative to the xref:task-custom-restore.html[custom restore option]. 
 
 include::_include/console-role-admin.adoc[]
 
