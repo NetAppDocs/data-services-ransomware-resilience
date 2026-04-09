@@ -12,14 +12,13 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 [.lead]
 With Ransomware Resilience, storage administrators can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
 
-
-[NOTE]
-Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore], enabling you to clean all files and identify optimized recovery pathways before performing the restore. 
+[TIP]
+Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore option], which provides guided recovery and advanced capabilities to ensure only clean and unencrypted data is recovered. 
 
 == Restore a workload
 
 *Required Console role*
-Organization admin, Folder or project admin, or Ransomware protection admin. https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
+Organization admin, Folder or project admin, or Ransomware protection admin. link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 The security storage admin can recover data at different levels: 
 
@@ -97,8 +96,6 @@ image:screen-recovery-all-volumes.png[Restore by all volumes page]
 .. Select the restore point that you want to use to restore the data. 
 +
 TIP: Ransomware Resilience identifies the best restore point as the latest backup just before the incident and shows a "Safest for all volumes" indication. This means that all volumes will be restored to a copy prior to the first attack on the first volume detected. 
-+
-//Latest clean: Each volume will be restored to the latest copy prior to the attack on that volume. 
 
 . *Destination*: Select the down arrow next to Destination to see details.
 
