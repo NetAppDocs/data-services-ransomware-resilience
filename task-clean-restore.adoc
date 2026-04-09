@@ -35,12 +35,16 @@ The analysis step also displays the number of files reviewed, denoting which are
 You can also view file histories in the planning step, to see when ransomware events impacted the files and how the recovery point relates in time to that event. 
 * **CLEANING**: Ransomware Resilience removes malware from the recovery point. If any files can't be cleaned, they are excluded from the recovery and quarantined to a separate location. 
 * **RESTORE**: Ransomware Resilience restores the clean data into the source environment. 
-* **END**: Ransomware Resilience provides a detailed summary of the process and closes the clean room. 
+* **END**: Ransomware Resilience provides a detailed summary of the process and closes the clean room. Ransomware Resilience releases the resources to reduce resource cost. 
+// check verbiage
 
 == Supported configurations
 
-You can create an IRE in the cloud or on-premises. Currently, the following configurations are supported:
-
+* You can only create one IRE per Ransomware Resilience account. Each IRE can have three clean rooms. 
+* Clean restore is currently only supported for NAS file shares (NFS/CIFS).
+* You must restore a clean restore to the source environment. 
+* You can create an IRE in the cloud or on-premises. Currently, the following configurations are supported:
++
 [%header]
 |===
 | Source | Destination (IRE) | Supported destination regions 
@@ -58,7 +62,7 @@ a|
 * US East 1
 * EU Central 1
 |===
-
++
 {asterisk} You must be running ONTAP 9.11.1 or later. 
 
 [NOTE]
@@ -76,7 +80,7 @@ If you're deploying an on-premises IRE, when a Windows VM is cloned for the reco
 * Using the same computer name (CN) causes network conflicts. 
 * Using the same machine identity leads to licensing and activation issues. 
 
-To avoid these conflicts, Ransomware Resilience performs sysprem on the clone VM, which resets the SID, CN, and machine identity. Resetting these values ensures the clone VM operates as a unique and independent instance without interfering with the source VM. 
+To avoid these conflicts, Ransomware Resilience performs sysprep on the clone VM, which resets the SID, CN, and machine identity. Resetting these values ensures the clone VM operates as a unique and independent instance without interfering with the source VM. 
 
 === Secondary sources 
 
@@ -135,6 +139,12 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean resto
 .Clean room SVM data LIF IP (crr-data-LIF-IP)
 * A storage virtual machine (SVM) is created in each of the systems you select to connect to the IRE for restoring workloads. You must provide a dedicated IP address for each system that is used as the data LIF of the clean room SVM. 
 
+
+.Hosts & vCenter
+* The vCenter must be version 7.0 or later with at least one data center. 
+* The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
+* The provided vCenter credentials must have permissions to discover resources and clone VMs. 
+
 .Base VMs (Windows or Linux)
 * During recovery in the clean restore, the base VM are cloned into a selected datacenter, placed on the chosen ESXi compute, mapped to the specified datastore, and attached to the designated network. When the VMs are cloned, they are configured to have 2 vCPUs and 4 GB RAM (for Linux or Windows VM) and the same amount of disk space as the base VMs. Each clean restore session uses two IP addresses from the given CIDR range.
 *  You must provide a sufficient IP address range to accommodate multiple parallel clean room sessions. The IP addresses are released after the recovery has been completed.
@@ -143,7 +153,7 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean resto
 * For Linux VMs:
 ** The operating system must be Ubuntu Linux 20.04 or later.
 ** The on-premises system must be powered on.
-* VMware Tools must be installed and running. 
+** VMware Tools must be installed and running. 
 ** SSH must be enabled.
 ** You must have installed nfs-common.
 ** Docker must be installed and running. 
@@ -156,11 +166,6 @@ image:diagram-clean-recovery-on-prem.png[Diagram of cloud to on-prem clean resto
 ** The IP should be configured. 
 ** Ensure you have appropriate license to allow cloning of base VMs. 
 ** The VM must be powered on. 
-
-.Hosts & vCenter
-* The vCenter must be version 7.0 or later with at least one data center. 
-* The ESXi host must be ESXi version 7.0 or later with at least one host that has sufficient CPU and memory resources available to clone the VMs. 
-* The provided vCenter credentials must have permissions to discover resources and clone VMs. 
 
 .Network
 * Configure the VLAN resources with the following access:
@@ -217,7 +222,9 @@ image:clean-restore-systems.png[Screenshot of systems selection interface.]
 +
 image:screenshot-set-up-recovery-environment.png[Screenshot of IRE authentication set-up.]
 +
-. Select **Add** to create the IRE. Ransomware Resilience tests the connection after you select add; This process can take a while.
+. Select **Add** to create the IRE.
++
+Ransomware Resilience tests the connection after you select add, which can take a few minutes.
 
 --
 .On-premises
@@ -254,7 +261,7 @@ You can modify the systems in an IRE after it's created. In the settings tab, se
 
 == Delete an isolated recovery environment
 
-You can't delete a clean room with an restoration in progress. You can cancel the restore operation or wait until the restore completes then delete the clean room. 
+You can't delete an IRE with an active restore operation; you can cancel the restore operation or wait until the restore completes then delete the IRE. 
 
 [IMPORTANT]
 If you delete the IRE, it also delete the clean room SVM and the metadata volume. Once these assets have been deleted, you are no longer able to generate reports for the clean restore. 

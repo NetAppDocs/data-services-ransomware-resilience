@@ -36,13 +36,11 @@ include::_include/clean-restore-considerations.adoc[]
 . After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
-// replace image - ask Erika
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-// replace image - ask Erika 
 . After you choose your restore point, select **Next** to begin cleaning your files. 
 . Ransomware Resilience begins cleaning the workload. 
 +

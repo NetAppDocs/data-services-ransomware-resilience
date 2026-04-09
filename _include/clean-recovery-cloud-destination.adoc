@@ -1,4 +1,8 @@
 .Clean room SVM data LIF IP (crr-data-LIF-IP)
++
+[NOTE]
+For IREs with the source in Amazon FSxN for ONTAP, you can skip the clean room SVM data LIF requirement.
++
 * Provision the IP address for the clean room SVM data LIF. Make note of the IP address: you need this IP address during the IRE configuration process.
 ** For Cloud Volumes ONTAP with AWS using a cloud-to-cloud clean restore, ensure the IP address is allocated to the Elastic Network Interface. 
 * Allow routing from the SVM data LIF IP to the IRE. 
