@@ -16,6 +16,7 @@ Ransomware Resilience supports the following SIEMs:
 * AWS Security Hub
 * Microsoft Sentinel
 * Splunk Cloud
+* Splunk Enterprise
 
 Before you enable SIEM in Ransomware Resilience, you need to configure your SIEM system. 
 
@@ -159,16 +160,19 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 . Enter the Log Analytics workspace details for the application. 
 .. Select the subscription ID, the resource group, and the Log Analytics workspace. 
 
-== Configure Splunk Cloud for threat detection
+== Configure Splunk Cloud and Splunk Enterprise for threat detection
 
-Before you enable Splunk Cloud in Ransomware Resilience, you'll need to do the following high level steps in Splunk Cloud: 
+Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Enterprise. Before enabling the Splunk connection in Ransomware Resilience, you need to: 
 
-* Enable an HTTP Event Collector in Splunk Cloud to receive event data via HTTP or HTTPS from the Console. 
-* Create an Event Collector token in Splunk Cloud. 
+* Enable an HTTP Event Collector in Splunk Cloud or Enterprise to receive event data via HTTP or HTTPS from the Console. 
+* Create an Event Collector token in Splunk Cloud or Enterprise.
+
+[NOTE]
+For Splunk Enterprise, you must allow inbound traffic from public internet for Ransomware Resilience to be able to push events using the HTTP event collector details supplied to it. 
 
 .Steps to enable an HTTP Event Collector in Splunk 
 
-. Go to Splunk Cloud. 
+. Go to your chosen Splunk environment: Cloud or Enterprise. 
 . Select *Settings* > *Data Inputs*. 
 . Select *HTTP Event Collector* > *Global Settings*. 
 . On the All Tokens toggle, select *Enabled*.
@@ -176,7 +180,7 @@ Before you enable Splunk Cloud in Ransomware Resilience, you'll need to do the f
 . Enter a port in *HTTP Port Number* for the HTTP Event Collector. 
 
 .Steps to create an Event Collector token in Splunk
-. Go to Splunk Cloud. 
+. Go to Splunk Cloud or Enterprise. 
 . Select *Settings* > *Add Data*. 
 . Select *Monitor* > *HTTP Event Collector*. 
 . Enter a Name for the token and select *Next*. 
