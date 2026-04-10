@@ -168,7 +168,7 @@ Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Ent
 * Create an Event Collector token in Splunk Cloud or Enterprise.
 
 [NOTE]
-For Splunk Enterprise, you must allow inbound traffic from public internet for Ransomware Resilience to be able to push events using the HTTP event collector details supplied to it. 
+For Splunk Enterprise, you must allow inbound public internet traffic for Ransomware Resilience to be able to push events using the HTTP event collector details supplied to it. 
 
 .Steps to enable an HTTP Event Collector in Splunk 
 
@@ -209,7 +209,7 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 
 . Choose one of the SIEM systems. 
 
-. Enter the token and authentication details you configured in AWS Security Hub or Splunk Cloud. 
+. Enter the token and authentication details you configured in AWS Security Hub, Splunk Cloud, or Splunk Enterprise. 
 +
 NOTE: The information that you enter depends on the SIEM you selected. 
 

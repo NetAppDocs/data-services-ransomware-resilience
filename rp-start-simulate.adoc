@@ -160,7 +160,7 @@ include::_include/console-role-admin.adoc[]
 ** Select *Mark restore needed*. 
 ** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
 * From the Ransomware Resilience menu, select *Recovery*. 
-* Select the test workload marked marked with "Readiness drill" that you want to restore.
+* Select the test workload marked with "Readiness drill" that you want to restore.
 * Select *Restore*.
 * In the Restore page, provide information for the restore: 
 ** Select the source snapshot copy.
