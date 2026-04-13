@@ -214,8 +214,8 @@ For IREs deployed to Amazon FSxN for ONTAP, you don't need to provide this infor
 image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Authentication** section. 
     * Enter the cloud **Account** ID and select the **Region** for the account. 
-    * Enter the **Access key** and **Secret key** for the account**. 
-* Expand the *Virtual private cloud (VPC)* section. Enter the VPC ID where the IRE is to be deployed. 
+    * Enter the **Access key** and **Secret key** for the account. 
+. Expand the *Virtual private cloud (VPC)* section. Enter the VPC ID where the IRE is to be deployed. 
 +
 image:screenshot-set-up-recovery-environment.png[Screenshot of IRE authentication set-up.]
 +

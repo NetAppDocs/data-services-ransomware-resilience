@@ -1,13 +1,10 @@
 .Clean room SVM data LIF IP (crr-data-LIF-IP)
-
-[NOTE]
-====
-If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this clean room SVM data LIF IP requirement.
-====
-
 * Provision the IP address for the clean room SVM data LIF. Make note of the IP address: you need this IP address during the IRE configuration process.
 ** For Cloud Volumes ONTAP with AWS using a cloud-to-cloud clean restore, ensure the IP address is allocated to the Elastic Network Interface. 
 * Allow routing from the SVM data LIF IP to the IRE. 
+
+[NOTE]
+If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this clean room SVM data LIF IP requirement.
 
 .Production environment route table 
 * The production route table must allow traffic from the IRE subnet to the clean restore data LIF IP. You must add this route to the production route table. 
@@ -60,7 +57,7 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
 
 .Cloud permissions
 * Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean restore in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to the clean restore. 
-+
+
 ```json
 {
     "Version": "2012-10-17",
@@ -130,3 +127,4 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
     ]
 }
 ```
+
