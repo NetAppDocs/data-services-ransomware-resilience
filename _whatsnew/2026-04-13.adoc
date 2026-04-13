@@ -1,15 +1,18 @@
 === Clean restore
 
-Ransomware Resilience now supports clean restores, a new recovery option that helps you quickly and easily recovery from ransomware attacks. Clean restores offers guided workflows that identify optimal restore points to get your workloads up and running to minimize downtimes. The workflows in clean restore also provide file-level insights into your data, ensuring you can restore malware-free workload that prevents reinfection and minimizes data loss.
+Ransomware Resilience now supports clean restores, a new recovery option that helps you quickly and easily recover from ransomware attacks. Clean restores offer guided workflows that identify optimal restore points to get your workloads up and running while minimizing downtime. The workflows in clean restore also provide file-level insights into your data, ensuring you can restore malware-free workloads that prevents reinfection and minimizes data loss.
 
-To learn about supported configurations and how to configure your system for a clean restore, see link:task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:task-clean-restore-recover[Recover workloads with a clean restore^].
+To learn about supported configurations and how to configure your system for a clean restore, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover[Recover workloads with a clean restore^].
 
-// To learn about supported configurations and how to configure your system for a clean restore, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment^]. To learn how to recover with a clean restore, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover[Recover workloads with a clean restore^].
+
+=== SIEM support for Splunk Enterprise 
+
+Ransomware Resilience now provides security information event management (SIEM) support for Splunk Enterprise, enabling you to centralize log and event data and streamline threat analysis and detection. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect Ransomware Resilience to a SIEM^].
 
 === User behavior activity enhancement
 
-User behavior activity insights are now retained for 13 months afters an incident, expanding on the existing 30 day time period.  
+Insights into data breach events are now retained for 13 months after an incident, enabling longer record-keeping for your reporting needs. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-user-behavior.html[Learn about user activity detection^].
-
-// === ANF GA
