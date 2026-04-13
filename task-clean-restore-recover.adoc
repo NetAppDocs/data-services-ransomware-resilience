@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: task-clean-restore-recover.html
+keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire
+summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
+---
+= Recover workloads with clean restore in NetApp Ransomware Resilience
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+With NetApp Ransomware Resilience, you can perform a guided recovery after an encryption-based ransomware attack using a clean restore. The clean restore identifies optimized recovery paths to minimize data loss and return your workloads online in the shortest amount of time possible.
+
+The clean restore option is an alternative to the xref:task-custom-restore.html[custom restore option]. 
+
+== Before you begin
+
+You must have configured an link:task-clean-restore.html[isolated recovery environment^] before you can perform a clean restore. 
+
+include::_include/console-role-admin.adoc[]
+
+== Considerations
+
+include::_include/clean-restore-considerations.adoc[]
+
+== Perform a clean restore
+
+. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
+. In the Restore Type options, select **Clean restore** then **Next**. 
+. Select the isolated recovery environment you want to use then **Next**. 
+. Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
+. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to analysis, select **Next**. 
+. After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
++
+image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
+. After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
++
+To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
++
+image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
+. After you choose your restore point, select **Next** to begin cleaning your files. 
+. Ransomware Resilience begins cleaning the workload. 
++
+When the cleaning completes, select **Start recovery** to initiate the recovery. 
+. Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
+. Select **Start recovery** to initiate the recovery. 
+. When the recovery completes, select **Next** to move to the final phase. 
+. Select **Release resources and end** to release the resources and close the clean room. To confirm you want to release the resource, select **End**. 
