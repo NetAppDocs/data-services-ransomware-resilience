@@ -65,7 +65,7 @@ If this is your first time logging in to this service, the landing page appears.
 
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
-. If you haven't already added a Console agent for other services, link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[add one^].
+. If you haven't already added a Console agent for other services, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[add one^].
 . In the Ransomware Resilience landing page, select *Start by discovering workloads* to discover your workloads.
 [NOTE]
 This option is only available if you've successfully installed a Console agent.
