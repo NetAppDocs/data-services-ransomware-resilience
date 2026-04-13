@@ -5,7 +5,6 @@ keywords: ransomware protection, protect against ransomware attacks, anti-ransom
 summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the product.
 
 ---
-
 = Known limitations in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
