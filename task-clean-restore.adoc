@@ -2,9 +2,9 @@
 sidebar: sidebar
 permalink: task-clean-restore.html
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment
-summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
+summary: Before conducting a clean restore in NetApp Ransomare Resilience, you must create an isolated recovery environment to sequester and clean the environment. 
 ---
-= Configure the clean restore environment in NetApp Ransomware Resilience
+= Configure the environment for a clean restore in NetApp Ransomware Resilience
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -199,13 +199,9 @@ The process for creating an isolated recovery room differs if the environment is
 .Cloud
 --
 . In Ransomware Resilience, select **Settings**. 
-. In the Clean restores card, select **Configure** if this is your first environment or **Manage** if you've already created one. 
-. If this is your first time creating an IRE, proceed to the next step. 
-+
-If you've already created an IRE, select **Add** to create another one. 
-// pre-req step. Choose on-premises then review and confirm. 
+. In the Clean restore card, select **Add** to create the isolated recovery environment.  
 . For a cloud-based IRE, select **Amazon Web Services**. 
-. Expand the **Name** section. Create a **Name** for the environment. 
+. Expand the **Name** section. Enter a **Name** for the environment. 
 . Expand the *Systems* section. Choose the systems you want to connect to the IRE. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
 +
 [NOTE]
@@ -213,7 +209,7 @@ For IREs deployed to Amazon FSxN for ONTAP, you don't need to provide this infor
 + 
 image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Authentication** section. 
-    * Enter the cloud **Account** ID and select the **Region** for the account. 
+    * Enter the cloud **Account** ID and select the **Region** for the account from the dropdown menu. You can only deploy an IRE in a supported region. 
     * Enter the **Access key** and **Secret key** for the account. 
 . Expand the *Virtual private cloud (VPC)* section. Enter the VPC ID where the IRE is to be deployed. 
 +
@@ -221,16 +217,14 @@ image:screenshot-set-up-recovery-environment.png[Screenshot of IRE authenticatio
 +
 . Select **Add** to create the IRE.
 +
-Ransomware Resilience tests the connection after you select add, which can take a few minutes.
+Ransomware Resilience tests the connection after you select add, which can take a few minutes. The IRE has been deployed successfully when its status displays as "deployed."
 
 --
+
 .On-premises
 --
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
-// pre-req step. Choose on-premises then review and confirm. 
-. If this is your first time creating an IRE, proceed to the next step. 
-If you've already created an IRE, select **Add** to create another one. 
 . For location, select **On-premises**. 
 . Expand the *Name* section. Assign a **Name** for the IRE. 
 . Expand the *Systems* section. Choose the systems that you want to connect to the IRE. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the IRE.
@@ -242,19 +236,25 @@ image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the *Compute* section. 
 .. Provide the credentials to authenticate the vCenter server: *IP address* or full-qualified domain name (FQDN), *Port*, *User name*, and *Password*.
 .. Select **Authenticate** to confirm the credentials. Wait until the UI confirms your credentials before proceeding. 
-.. Select the *Datacenter*, *Cluster*, and *ESXi host* where the VMs will be deployed.
-.. Select the ESXi hosts *Datastore* and *Network*.
-.. Enter the *IP address range* and *Gateway* for the VMs. 
+.. Select the *Datacenter* and *Cluster* where the VMs will be deployed.
+.. Select the *Datastore* and *Network* for the ESXi host. 
+.. Enter the *IP address range* in CIDR format (e.g. 10.0.0.1/24), *Subnet mask*, and *Gateway* for the VMs. 
 +
 image:clean-restore-compute.png[Screenshot of compute selection interface.]
-. Expand the *VMs* section, which is populated based on your inputs in the *Compute* section. Select the VMs located on the ESXi host that you will use for scanning malware during the clean restore. Provide the *User name* and *Password* for each VM you select. 
-. Select **Add** to create the IRE. Ransomware Resilience tests the connection after you select add; This process can take a while.
+. Expand the *VMs* section, which is populated based on your inputs in the *Compute* section.
+.. For the Linux VM that Ransomware Resilience uses to scan for ransomware, select the VM from the dropdown menu then enter the *User name* and *Password* for the VM. 
+.. For the Windows VM that's used for scanning, select the VM from the dropdown menu then enter the *User name* and *Password* for the VM. 
+. Select **Add** to create the IRE. Ransomware Resilience tests the connection after you select add; this process can take a few minutes. The IRE has been deployed successfully when its status displays as "deployed."
+
 --
 ====
 
-You can track the progress. In the settings tab, select **Isolated recovery environments**. The isolated recovery environments page displays all IREs and their status. Select **View jobs** for a breakdown of all jobs pertaining to that environment. 
+You can track the progress. In the settings tab, select **Isolated recovery environments**. The isolated recovery environments page displays the IRE and its status. Select **View jobs** for a breakdown of all jobs pertaining to that environment. 
 
 You can modify the systems in an IRE after it's created. In the settings tab, select **Isolated recovery environments**. Locate the IRE you want to edit, select the action menu `...` then **Edit**. Proceed to modify the systems. Select **Save** when complete. 
+
+[TIP]
+If you need to change any details of the IRE, select *Settings* from the Ransomware Resilience sidebar, then, in the Clean restore card, select **Manage**. Select the action menu for the IRE then **Edit** to change the configuration. 
 
 == Delete an isolated recovery environment
 
@@ -265,5 +265,5 @@ If you delete the IRE, it also delete the clean room SVM and the metadata volume
 
 . Go to **Settings**.
 . In the Clean restore card, select **Manage**. 
-. Identify the clean room you want to delete. In the actions menu column for that room, select the three dots `...` then **Delete**.
+. Identify the clean room you want to delete. Select the action menu (`...`) for the IRE then **Delete**. 
 . In the dialog, select **Delete** to confirm the operation. 
