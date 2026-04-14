@@ -14,13 +14,11 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 [.lead]
 With NetApp Ransomware Resilience, you can perform a guided recovery after an encryption-based ransomware attack using a clean restore. The clean restore identifies optimized recovery paths to minimize data loss and return your workloads online in the shortest amount of time possible.
 
-The clean restore option is an alternative to the xref:task-custom-restore.html[custom restore option]. 
-
 == Before you begin
 
-You must have configured an link:task-clean-restore.html[isolated recovery environment^] before you can perform a clean restore. 
-
 include::_include/console-role-admin.adoc[]
+
+You must have configured an link:task-clean-restore.html[isolated recovery environment^] before you can perform a clean restore. 
 
 == Considerations
 
