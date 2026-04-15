@@ -42,15 +42,15 @@ Ransomware Resilience can send the following event data to your SIEM system:
 ** *severity*: One of the following alert levels: "CRITICAL", "HIGH", "MEDIUM", "LOW".
 ** *description*: Details about the alert that was detected, for example, "A Potential ransomware attack detected on workload arp_learning_mode_test_2630"
 ** *title*: The display name of the detected alert
-* *criticality*: An assessment of the urgency of the alert: "CRITICAL", "IMPORTANT", "STANDARD".
-* *incident_status*: The active status of the incident, which can be: "NEW", "RESOLVED", "DISMISSED", "AUTO_RESOLVED".
-* *first_detected*: The timestamp indicating when the incident was first detected by Ransomware Resilience.
-* *is_readiness_drill*: A boolean value indicating whether the alert is a drill or an actual incident.
-* *protocol*: The protocol used by the volume. Possible values are "NFS" and "SMB".
-* *alert_type*: The type of threat detected. Possible values are "Encryption", "Data destruction", "Data breach", "Suspicious user behavior".
-* *user_name*: The username of the suspicious user associated with the alert.
-* *user_id*: The user ID of the suspicious user associated with the alert. 
-* *client_ips*: A list of client IP addresses associated with the suspicious activity, applicable only for NFS alerts. 
+** *criticality*: An assessment of the urgency of the alert: "CRITICAL", "IMPORTANT", "STANDARD".
+** *incident_status*: The active status of the incident, which can be: "NEW", "RESOLVED", "DISMISSED", "AUTO_RESOLVED".
+** *first_detected*: The timestamp indicating when the incident was first detected by Ransomware Resilience.
+** *is_readiness_drill*: A boolean value indicating whether the alert is a drill or an actual incident.
+** *protocol*: The protocol used by the volume. Possible values are "NFS" and "SMB".
+** *alert_type*: The type of threat detected. Possible values are "Encryption", "Data destruction", "Data breach", "Suspicious user behavior".
+** *user_name*: The username of the suspicious user associated with the alert.
+** *user_id*: The user ID of the suspicious user associated with the alert. 
+** *client_ips*: A list of client IP addresses associated with the suspicious activity, applicable only for NFS alerts. 
 
 [NOTE]
 The *user_name* and *user_id* fields are only pertinent if you've configured xref:concept-user-behavior.adoc[user behavior detection].
