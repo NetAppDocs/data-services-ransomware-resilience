@@ -33,3 +33,4 @@ Azure NetApp Files is supported in Ransomware Resilience. The following limitati
 * Azure NetApp Files doesn't support FPolicy or user behavior activity. 
 * When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
 * It's recommended you not use link:reference-soar.html[SOAR playbooks] with Azure NetApp Files due to Azure NetApp Files APIs blocking automated actions. 
+* Some event data is not included in link:task-siem.html[SIEM reports] for Azure NetApp Files configurations. 
