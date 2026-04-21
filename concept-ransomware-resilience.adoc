@@ -33,8 +33,7 @@ image:concept-security-layer-diagram.png[Security layer diagram]
 
 Ransomware Resilience provides full use of several NetApp technologies so that your storage administrator, data security administrator, or security operations engineer can accomplish the following goals:
 
-* *Identify* application-based, file share, or VMware-managed workloads in NetApp on-premises NAS and SAN systems across the NetApp Console, projects, and Console agents. After discovering workloads, Ransomware Resilience identifies opportunities to improve ransomware resiliency. 
-// check wording
+* *Identify* workloads in NetApp on-premises NAS and SAN systems across the NetApp Console, projects, and Console agents. After discovering workloads, Ransomware Resilience identifies opportunities to improve ransomware resiliency. 
 
 * *Protect* your workloads by enabling backups, snapshot copies, and ransomware protection strategies on your data.  
 
@@ -43,7 +42,7 @@ Ransomware Resilience provides full use of several NetApp technologies so that y
 * *Respond* to potential ransomware attacks by automatically initiating a point-in-time snapshot that is locked so that the copy can't be deleted accidentally or maliciously. Your backup data will stay immutable and protected end-to-end from ransomware attacks at the source and in the destination.
 // by default it remains for 10 days; auto-delete after dismissal 
 
-* *Recover* your workloads that help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover specific volumes. Ransomware Resilience provides recommendations on the best options. 
+* *Recover* your workloads to help accelerate workload uptime by orchestrating several NetApp technologies. You can choose to recover specific volumes. Ransomware Resilience provides recommendations on the best options. 
 
 * *Govern*: Implement your ransomware protection strategy and monitor the outcomes. 
 
@@ -103,8 +102,8 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 | Description
 
 
-| *IDENTIFY* | * Finds all customer on-premises and cloud NAS (NFS and CIFS protocols) and SAN (FC, iSCSI, and NVMe) data in systems attached to the Console.
-* Identifies customer data from ONTAP and Backup and Recovery service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^].
+| *IDENTIFY* | * Finds all on-premises and cloud NAS (NFS and CIFS protocols) and SAN (FC, iSCSI, and NVMe) data in systems attached to the Console.
+* Identifies data from ONTAP and Backup and Recovery service APIs and associates it with workloads. Learn more about https://docs.netapp.com/us-en/ontap-family/[ONTAP^].
 
 
 
@@ -113,9 +112,6 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 
 * Assigns a business priority to each workload based on automatically discovered protection levels and recommends protection policies for workloads based on their business priority. Workload priority is based on snapshot frequencies already applied to each volume associated with the workload. 
-//* Assigns a business priority to each workload based on discovered protection levels by using Data Classification (formerly Cloud Data Sense). 
-// Learn more about https://docs.netapp.com/us-en/data-services-data-classification/index.html[Data Classification^].
-
 
 | *PROTECT* | * Actively monitors workloads and orchestrates the use of Backup and Recovery and ONTAP APIs by applying policies to each of the identified workloads. 
 | *DETECT* | * Detects potential attacks with an integrated machine learning (ML) model that detects potentially anomalous encryption and activity. 
@@ -123,15 +119,10 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 
 * Provides dual-layer detection that starts with detecting potential ransomware attacks in the primary storage and responding to abnormal activities by taking additional automated snapshot copies to create the nearest data restore points. Ransomware Resilience provides the ability to dig deeper to identify potential attacks with greater precision without impacting the performance of the primary workloads. 
 * Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version) and FPolicy technologies. 
-//* Determines the specific suspect files and maps that attack to the associated workloads, using ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection. 
-
 |*RESPOND* | * Shows relevant data, such as file activity, user activity, and entropy, to help you complete forensic reviews about the attack.
 * Initiates quick snapshot copies by using NetApp technologies and products such as ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy. 
-//* Initiates quick snapshot copies by using NetApp technologies and products such as ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection. 
 |*RECOVER* | //* Verifies that backup data on secondary storage is clean and scans for known ransomware signatures in the data.
 * Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using Backup and Recovery, ONTAP, Autonomous Ransomware Protection (ARP or ARP/AI depending on your ONTAP version), and FPolicy technologies and services. 
-
-//* Determines the best snapshot or backup and recommends the best recovery point actual (RPA) by using Backup and Recovery, ONTAP, Autonomous Ransomware Protection, FPolicy, and Advanced Ransomware Detection technologies and services. 
 * Orchestrates the recovery of workloads including VMs, file shares, block storage, and databases with application consistency. 
 |*GOVERN* | * Assigns the ransomware protection strategies
 * Helps you monitor the outcomes. 
@@ -174,4 +165,4 @@ Ransomware Resilience protects the following application-based workloads on prim
 You might benefit by understanding some terminology related to ransomware protection. 
 
 * *Protection*: Protection in Ransomware Resilience means ensuring that snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
-* *Workload*: A workload in Ransomware Resilience can include Oracle databases, VMware datastores, or file shares. 
+* *Workload*: A workload is a logical grouping of storage resources within a system, for example an Oracle database, a VMware datastore, or a file share. 

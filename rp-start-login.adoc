@@ -36,7 +36,5 @@ Otherwise, the Ransomware Resilience dashboard appears.
 +
 image:screen-dashboard.png[Screenshot of the Ransomware Resilience dashboard]
 
-. If you haven't done so already, select the *Discover Workloads* option. 
-+
-Refer to link:rp-start-discover.html[Discover Workloads].
+. If this is your first time using Ransomware Resilience, link:rp-start-discover.html[discover workloads].
 
