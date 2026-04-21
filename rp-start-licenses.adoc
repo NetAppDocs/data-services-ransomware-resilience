@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-licenses.html
 keywords: bluexp license, ransomware protection license, netapp console
-summary: Ensure you meet the licensing requirements for Ransomware Resilience to protect your systems and workloads.
+summary: Ensure you meet the licensing requirements for Ransomware Resilience to protect your workloads.
 ---
 
 = Set up licensing for NetApp Ransomware Resilience
@@ -65,7 +65,7 @@ If this is your first time logging in to this service, the landing page appears.
 
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
-. If you haven't already added a Console agent for other services, link:ps://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[add one^].
+. If you haven't already added a Console agent for other services, link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html[add one^].
 . In the Ransomware Resilience landing page, select *Start by discovering workloads* to discover your workloads.
 [NOTE]
 This option is only available if you've successfully installed a Console agent.
@@ -223,7 +223,7 @@ You need the Ransomware Resilience serial number. Locate this number from your s
 
 . After you obtain the license, return to Ransomware Resilience. Select the *View payment methods* option in the upper right. Or, in the message that the free trial is expiring, select *Subscribe or purchase a license*. 
 
-. Select *Add license* to go to the Console Licesnses and subscriptions page. 
+. Select *Add license* to go to the Console Licenses and subscriptions page. 
 
 . From the *Data Services Licenses* tab, select *Add license*. 
 

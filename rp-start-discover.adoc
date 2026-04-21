@@ -15,40 +15,32 @@ Before you can use NetApp Ransomware Resilience, it first needs to discover work
 In the Discovery dashboard, Ransomware Resilience displays supported and unsupported system configurations. Ransomware Resilience assesses Oracle applications, VMware datastores, file shares, and block storage. 
 
 [NOTE]
-Ransomware Resilience does not discover workloads with volumes using FlexGroup.
+Ransomware Resilience does not discover systems with volumes using FlexGroup.
 
 Ransomware Resilience checks your current backup protection, snapshot copies, and NetApp Autonomous Ransomware Protection options. Ransomware Resilience also detects protection information from NetApp Backup and Recovery for file shares and VM file shares. It then recommends ways to improve your ransomware protection. 
 
 include::_include/console-role-admin.adoc[]
 
-== Select workloads to discover and protect
+== Select workloads to discover
 
-Within each Console agent, select the systems where you want to discover workloads. 
+Within each Console agent, select the systems where you want to identify workloads. 
+
+Discovering workloads does not automatically protect them. Ransomware Resilience recognizes existing protection policies from NetApp Backup and Recovery or ONTAP in the discovery process. Any workloads that don't have protection require you to link:rp-use-protect.html[configure protection].
 
 .Steps
 
-// check
-. From the NetApp Console, select *Protection* > *Ransomware protection*. 
+. From the NetApp Console, select *Protection* > *Ransomware Resilience*. 
 +
-If this is your first login, the landing page appears.
+If this is your first login, the landing page appears. To start with the free trial, select *Start 30-day free trial*. If you've already enabled the trial, select *Start by discovering workloads*.
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
 +
-NOTE: If you started the free trial, the *Start 30-day free trial* button label changes to *Start by discovering workloads*. 
-
-. From the initial landing page, select *Start by discovering workloads*. 
-+
 Ransomware Resilience finds both supported and unsupported systems. This process might take a few minutes.
+
+. To discover systems for a specific Console agent, choose the down arrow for the Console agent that contains the system you want to discover.
 +
 image:screen-discover-workloads.png[Discover workloads screenshot] 
-//. Do one of the following: 
-//* To select systems for all Console agents, select *Select all systems*.
-
-. To discover workloads for a specific Console agent, select *Select systems* next to the Console agent where you want to discover workloads.
-
-
-
-. Select the systems where you want to discover workloads. 
+. Select the systems you want to perform discovery on.  
 //. Optionally, select *Enable autodiscovery* to have Ransomware Resilience automatically discover new workloads in the selected Console agent. 
 . Select *Discover*. 
 +
@@ -70,20 +62,20 @@ If you've added workloads to a previously discovered system, you need to reiniti
 
 . To identify the time of the last discovery, look at the date and time stamp next to *Refresh* icon at the top right of the Ransomware Resilience dashboard.
 
-. From the dashboard, select the *Refresh* icon to find new workloads. 
+. From the dashboard, select the *Refresh* icon to identify new workloads. 
 
 [TIP]
 If you find there are volumes not displaying for the system you've discovered, the volumes might be unsupported. To find a list of unsupported volumes, go to the **Settings** menu then select the action menu in the Workload discovery card to download a JSON report of supported and unsupported volumes. 
 
 == Discover new systems
 
-If you have already discovered workloads, you can find new or previously unselected ones.
+If you have already performed discovery on a system and since added a workload to it, perform discovery again to identify the workloads. 
 
 .Steps
 
 . From Ransomware Resilience, select *Settings*. 
-. In the Workload discovery card, select *Discover workloads*. Discovery can take a few minutes. A loading icon displays the progress. 
-. Ransomware Resilience discovers both supported and unsupported systems. It does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to discover workloads. 
+. In the Workload discovery card, select *Discover*. Discovery can take a few minutes. A loading icon displays the progress. 
+. Ransomware Resilience discovers both supported and unsupported systems. It does not support a system if its ONTAP version is below the required version. When you hover over an unsupported system, a tooltip displays the reason. Select the systems where you want to identify workloads. 
 . Select *Discover*.
 
 == Exclude workloads 
