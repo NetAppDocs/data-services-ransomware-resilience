@@ -21,7 +21,7 @@ Ransomware Resilience checks your current backup protection, snapshot copies, an
 
 include::_include/console-role-admin.adoc[]
 
-== Select works to discover and protect
+== Select workloads to discover
 
 Within each Console agent, select the systems where you want to identify workloads. 
 
@@ -31,7 +31,7 @@ Discovering workloads does not automatically protect them. Ransomware Resilience
 
 . From the NetApp Console, select *Protection* > *Ransomware Resilience*. 
 +
-If this is your first login, the landing page appears. To start with the free trial, select *Start 30-day free trial*. If you've already enabled the trial, select *Start by discovering systems*.
+If this is your first login, the landing page appears. To start with the free trial, select *Start 30-day free trial*. If you've already enabled the trial, select *Start by discovering workloads*.
 +
 image:screen-landing.png[Landing page screenshot for Ransomware Resilience]
 +
@@ -69,7 +69,7 @@ If you find there are volumes not displaying for the system you've discovered, t
 
 == Discover new systems
 
-If you have already performed discovery on a system and since added a workload, perform discovery to identify the workloads. 
+If you have already performed discovery on a system and since added a workload to it, perform discovery again to identify the workloads. 
 
 .Steps
 

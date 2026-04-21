@@ -18,7 +18,7 @@ indexpage:
       url: /rp-start-quick-start.html
   - title: Use Ransomware Resilience
     links:
-    - title: Discover systems
+    - title: Discover workloads
       url: /rp-start-discover.html 
     - title: View workload health
       url: /rp-use-dashboard.html
