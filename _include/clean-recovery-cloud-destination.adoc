@@ -45,7 +45,7 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
 |===
 
 .IRE firewall
-* You should create a separate firewall to manage ingress for crr-data-LIF-IP. This firewall should allow NFSv3 and NFSv4 mounts from the IRE VPC CIDR range.
+* You should create a separate firewall to manage ingress for the crr-data-LIF-IP. This firewall should allow NFSv3 and NFSv4 mounts from the IRE VPC CIDR range.
 
 .IRE route table
 * The IRE route table should be the main route table in the IRE VPC.
