@@ -8,7 +8,6 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
 
 .Production environment route table 
 * The production route table must allow traffic from the IRE subnet to the clean restore data LIF IP. You must add this route to the production route table. 
-* Security groups and firewalls on the production ONTAP cluster should allow NFSv4 and NFSv3 inbound traffic to the clean restore data LIF IP. The firewall should be open for ingress from the IRE CIDR range:
 +
 [cols="1,1,1,1", options="header"]
 |===
@@ -44,6 +43,9 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
 | IRE VPC CIDR range
 | NFSv3 access from IRE
 |===
+
+.IRE firewall
+* You should create a separate firewall to manage ingress for crr-data-LIF-IP. This firewall should allow NFSv3 and NFSv4 mounts from the IRE VPC CIDR range.
 
 .IRE route table
 * The IRE route table should be the main route table in the IRE VPC.
