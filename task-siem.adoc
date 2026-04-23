@@ -101,12 +101,12 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 * *Permissions*: Assign permissions to the application. 
 * *Authentication*: Enter authentication credentials for the application. 
 
-.Steps to enable Microsoft Sentinel
+.Enable Microsoft Sentinel
 . Go to Microsoft Sentinel. 
 . Create a *Log Analytics workspace*. 
 . Enable Microsoft Sentinel to use the Log Analytics workspace you just created. 
 
-.Steps to create a custom role in Microsoft Sentinel
+.Create a custom role in Microsoft Sentinel
 . Go to Microsoft Sentinel. 
 . Select *Subscription* > *Access control (IAM)*.
 . Enter a Custom role name. Use the name *Ransomware Resilience Sentinel Configurator*.
@@ -125,7 +125,7 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 
 . Review and save your settings. 
 
-.Steps to register Ransomware Resilience to receive events from Microsoft Sentinel
+.Register Ransomware Resilience to receive events from Microsoft Sentinel
 
 . Go to Microsoft Sentinel. 
 . Select *Entra ID* > *Applications* > *App registrations*. 
@@ -137,7 +137,7 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 +
 After registration, the Microsoft Entra admin center displays the application Overview pane. 
 
-.Steps to create a secret for the registration
+.Create a secret for the registration
 . Go to Microsoft Sentinel. 
 . Select *Certificates & secrets* > *Client secrets* > *New client secret*. 
 . Add a description for your application secret. 
@@ -148,7 +148,7 @@ TIP: A client secret lifetime is limited to two years (24 months) or less. Micro
 . Select *Add* to create your secret. 
 . Record the secret to use in the Authentication step. The secret is never displayed again after you leave this page. 
 
-.Steps to assign permissions to the application
+.Assign permissions
 . Go to Microsoft Sentinel. 
 . Select *Subscription* > *Access control (IAM)*.
 . Select *Add* > *Add role assignment*. 
@@ -163,7 +163,7 @@ TIP: This is the custom role that you created earlier.
 . Select *Next*.
 . Select *Review and assign* to assign the permissions. 
 
-.Steps to enter authentication credentials for the application
+.Enter authentication credentials
 . Go to Microsoft Sentinel. 
 . Enter the credentials: 
 .. Enter the tenant ID, the client application ID, and the client application secret. 
@@ -183,7 +183,7 @@ Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Ent
 [NOTE]
 For Splunk Enterprise, you must allow inbound public internet traffic for Ransomware Resilience to be able to push events using the HTTP event collector details supplied to it. 
 
-.Steps to enable an HTTP Event Collector in Splunk 
+.Enable an HTTP Event Collector in Splunk 
 
 . Go to your chosen Splunk environment: Cloud or Enterprise. 
 . Select *Settings* > *Data Inputs*. 
@@ -192,7 +192,7 @@ For Splunk Enterprise, you must allow inbound public internet traffic for Ransom
 . To have the Event Collector listen and communicate over HTTPS rather than HTTP, select *Enable SSL*. 
 . Enter a port in *HTTP Port Number* for the HTTP Event Collector. 
 
-.Steps to create an Event Collector token in Splunk
+.Create an Event Collector token in Splunk
 . Go to Splunk Cloud or Enterprise. 
 . Select *Settings* > *Add Data*. 
 . Select *Monitor* > *HTTP Event Collector*. 

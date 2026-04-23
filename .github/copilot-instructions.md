@@ -4,7 +4,7 @@
 
 **Product:** NetApp Ransomware Resilience
 
-This repository documents NetApp Ransomware Resilience, a data protection service that helps organizations detect, respond to, and recover from ransomware attacks. The service operates at the data security layer and provides protection for application-based workloads (Oracle), file shares, and VM datastores across on-premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, and Amazon FSx for NetApp ONTAP environments. Ransomware Resilience integrates with NetApp Console and leverages NetApp Backup and Recovery for comprehensive ransomware protection.
+This repository documents NetApp Ransomware Resilience, a data protection service that helps organizations detect, respond to, and recover from ransomware attacks. The service operates at the data security layer and provides protection for file shares and VM datastores across on-premises ONTAP, Cloud Volumes ONTAP, Azure NetApp Files, and Amazon FSx for NetApp ONTAP environments. Ransomware Resilience integrates with NetApp Console and leverages NetApp Backup and Recovery for comprehensive ransomware protection.
 
 ## Repository structure
 
@@ -18,8 +18,8 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
 ## Product-specific context
 
 * **System** - a managed environment tied to a Console agent. Systems contain workloads. 
-* **Workload** - logical groupings of resources that belong to a system, such as a SQL database, file share, or VMware datastore.
- Applications, volumes, or databases that have been discovered by Ransomware Resilience through a recognized Console agent. Workloads can be discovered automatically and grouped for collective protection.
+* **Workload** - logical groupings of resources that belong to a system, such as a file share.
+ Volumes or databases that have been discovered by Ransomware Resilience through a recognized Console agent. Workloads can be discovered automatically and grouped for collective protection.
 * **Protection strategy** - Comprehensive protection framework that encompasses detection policies, protection policies (snapshots and backups), and optional replication policies. Predefined strategies include Critical, Important, Standard, Encryption user extension, and Critical replication policies.
 * **Clean restore** - Guided multi-step recovery process that uses an isolated recovery environment to analyze snapshots, identify clean files, remove malware, and restore data after a ransomware attack. Alternative to custom restore.
 * **Isolated recovery environment (IRE)** - Secure environment (on-premises or cloud-based) where clean restore operations are performed. Can be configured for cloud-to-cloud, on-premises-to-cloud, or on-premises-to-on-premises scenarios.
