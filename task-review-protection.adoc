@@ -19,7 +19,6 @@ Once you understand the scope of your current protection, link:rp-use-protect.ht
 
 One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
 
-* Application workloads 
 * Block workloads
 * File share workloads
 * VM workloads
