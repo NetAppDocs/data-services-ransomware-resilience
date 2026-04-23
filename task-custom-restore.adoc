@@ -22,7 +22,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. lin
 
 The security storage admin can recover data at different levels: 
 
-* Recovery all volumes 
+* Recover all volumes 
 * Recover a file share at the volume level, directory, or file level. 
 * Recover from a datastore at a VM level.
 
@@ -147,7 +147,7 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 . From the top menu, select *Recovery* to review the workload on the Recovery page where the status of the operation moves through the states.
 
-=== Restore an workload at the file level
+=== Restore a workload at the file level
 
 Before you restore a workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
@@ -178,7 +178,7 @@ After assessing the impacted files, you can restore them.
 
 .Steps
 . From the Ransomware Resilience menu, select *Recovery*.
-. Select an workload in the "Restore needed" state. 
+. Select a workload in the "Restore needed" state. 
 . Select *Restore*.
 . On the Restore page, in the Restore scope, select *By file*. 
 . On the list of volumes, select the volume that contains the files that you want to restore. 
