@@ -151,12 +151,12 @@ ONTAP doesn't provide ransomware protection support for FabricPool FlexCache, Fl
 Ransomware Resilience protects the following workloads on primary data volumes:
 
 * Block storage
-* Databases:
-** Microsoft SQL Server
-** Oracle
-** PostgreSQL
-* NetApp file shares
-* VMware datastores
+// * Databases:
+// ** Microsoft SQL Server
+// ** Oracle
+// ** PostgreSQL
+* File shares
+// * VMware datastores
 // * VMs
 
 == Key terms
@@ -164,4 +164,4 @@ Ransomware Resilience protects the following workloads on primary data volumes:
 You might benefit by understanding some terminology related to ransomware protection. 
 
 * *Protection*: Protection in Ransomware Resilience means ensuring that snapshots and immutable backups occur on a regular basis to a different security domain using protection policies. 
-* *Workload*: A workload is a logical grouping of storage resources within a system, for example an Oracle database, a VMware datastore, or a file share. 
+* *Workload*: A workload is a logical grouping of storage resources within a system, for example a file share. 
