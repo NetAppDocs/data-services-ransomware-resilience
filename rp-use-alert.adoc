@@ -234,7 +234,7 @@ The status on the incident or incidents changes to "Dismissed."
 
 == View a list of impacted files
 
-Before you restore an application workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
+Before you restore a workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
 
 include::_include/console-role-admin.adoc[]
 
@@ -247,7 +247,7 @@ TIP: If a volume has multiple alerts, you might need to download the CSV list of
 //Alert tab -> Single alert -> Single incident -> Download file
 
 . From the Ransomware Resilience menu, select *Alerts*.
-. On the Alerts page, sort the results by workload to show the alerts for the application workload that you want to restore. 
+. On the Alerts page, sort the results by workload to show the alerts for the workload that you want to restore. 
 . From the list of alerts for that workload, select an alert. 
 . For that alert, select a single incident. 
 +
