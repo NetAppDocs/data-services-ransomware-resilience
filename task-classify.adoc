@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-classify.html
 keywords: ransomware protection, workload importance, privacy, cds, sensitive, pii
-summary: Improve the security and privacy compliance of your data with NetApp Data Classification to identify whether your data includes personally identifiable or private information.
+summary: Ransomware Resilience can identify privacy exposures in your data that help you improve the security of your workloads. 
 ---
 = Identify privacy exposures with NetApp Ransomware Resilience
 
