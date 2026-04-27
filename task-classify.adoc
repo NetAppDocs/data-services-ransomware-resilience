@@ -19,7 +19,7 @@ include::_include/console-role-admin.adoc[]
 
 Before you can identify privacy exposures in Ransomware Resilience, you need link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-cloud-compliance.html[to enable Data Classification to scan your data^].
 
-Data Classification is a core component of the NetApp Console. Using it does not require a license. Depending on your setup, deployment link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost[can incur costs], which are not charged by Ransomware Resilience.
+Data Classification is a core component of the NetApp Console and a separate product from Ransomware Resilience. Using it does not require a license. Depending on your setup, deployment link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#cost[can incur costs], which are not charged by Ransomware Resilience.
 
 You can deploy Data Classification from the Protection page of Ransomware Resilience. Follow the procedure to identify the privacy exposure. When you select **Identify exposure**, a dialog appears; select *Deploy Classification for free*. After successful deployment, you can return to Ransomware Resilience to identify the exposure on the workload. 
 
