@@ -42,5 +42,5 @@ image:screen-recovery2.png[Recovery page]
 
 After you assess the workloads, you have two options to restore your workload:
 
-* xref:task-custom-restore.html[Recover with a custom restore]
 * xref:task-clean-restore.html[Recover with a clean restore]
+* xref:task-custom-restore.html[Recover with a custom restore]

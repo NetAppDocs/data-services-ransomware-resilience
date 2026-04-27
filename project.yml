@@ -64,14 +64,14 @@ sidebar:
               url: /rp-use-alert.html
             - title: Review recovery status 
               url: /rp-use-recover.html
-            - title: Recover with a custom restore 
-              url: /rp-use-recover.html
-            - title: Perform a clean restore
+            - title:  Recover with a clean restore 
               entries:
               - title: Create an isolated recovery environment
                 url: /task-clean-restore.html
-              - title: Recover with clean restore 
+              - title: Perform a clean restore
                 url: /task-clean-restore-recover.html
+            - title: Recover with a custom restore 
+              url: /rp-use-recover.html
         - title: Conduct a readiness drill
           url: /rp-start-simulate.html  
         - title: Configure SIEM 
