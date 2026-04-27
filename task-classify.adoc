@@ -42,25 +42,39 @@ image:screen-protection-sensitive-preview-column.png[Protection page showing Pri
 * *Medium*: Greater than 30% and less than 70% of files contain PII
 * *Low*: Greater than 0% and less than 30% of files contain PII
 
-. To view more details about the privacy exposure, select the workload name and assess the <<impact of privacy exposure on workload importance>>.
+. To view more details about the privacy exposure, select the workload name and assess the <<privacy-impact, impact of the privacy exposure on workload importance>>.
 +
 image:screen-protection-workload-details-privacy-exposure.png[Workload details screen showing the Privacy exposure tile]
 
-
+[[privacy-impact]]
 == Impact of privacy exposure on workload importance
 
 Privacy exposure changes can impact the workload importance. 
 
-[cols=4*,options="header",cols="15,20a,20,20" width="100%"]
+[cols="15,25,25,35",options="header"]
 |===
-| When privacy exposure: 
-| From this privacy exposure:
-| To this privacy exposure:
-| Then, workload importance does this: 
-.| *Decreases* | High, Medium, or Low | Medium, Low, or None | Remains the same
-.3+| *Increases* | None | Low | Remains at Standard 
-| Low | Medium | Changes from Standard to Important 
-| Low or Medium | High | Changes from Standard or Important to Critical 
+| Privacy exposure change
+| Previous exposure
+| Current exposure
+| Change in workload importance
+
+| *Decreases* 
+| High, Medium, or Low 
+| Medium, Low, or None 
+| Remains the same
+
+.3+| *Increases* 
+| None 
+| Low 
+| Remains at Standard
+
+| Low 
+| Medium 
+| Changes from Standard to Important
+
+| Low or Medium 
+| High 
+| Changes from Standard or Important to Critical
 |===
 
 == More information 
