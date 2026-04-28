@@ -1,3 +1,11 @@
 {
-    "asciidoc.antora.enableAntoraSupport": false
+    "asciidoc.antora.enableAntoraSupport": false,
+    "chat.mcp.serverSampling": {
+        "data-services-ransomware-resilience-internal/.vscode/mcp.json: my-mcp-server-3ac7b818": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/claude-sonnet-4.6"
+            ]
+        }
+    }
 }
