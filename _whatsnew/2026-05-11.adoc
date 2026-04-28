@@ -3,6 +3,7 @@
 Ransomware Resilience now supports Google Cloud NetApp Volumes systems. When you conduct discovery, Ransomware Resilience automatically displays workloads in Google Cloud NetApp Volumes. 
 
 // link to limitations (no support for UEBA)
+For information about the scope of Google Cloud NetApp Volumes support, review link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html[Limitations in Ransomware Resilience^].
 
 === Clean restore enhancements 
 
@@ -22,13 +23,16 @@ Ransomware Resilience now supports security information and event management (SI
 
 For configuration information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect Ransomware Resilience to a SIEM^].
 
-
 === User behavior policy support
 
 Ransomware Resiliene now supports a protection strategy that enables you to take a snapshot and block a user at the policy level. This new option enables you to create a custom policy in Ransomware Resilience that creates a snapshot of a workload and blocks a user whose activity triggers suspcious activity alerts, enabling a swifter response to events such as data destruction that enhances your data protection. 
 
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Suspicious user activity detection^].
+
+=== Customize detection scope
+
+Ransomware Resilience now supports customizing the scope of ransomware detection in your policies. Previously, Ransomware Resilience required detection for encryption-based attacks in all ransomware protection policies. Now, Ransomware Resilience enables you to protect with detection for _only_ encryption-based attacks or suspicious user activity. Compound policies that detect encryption events, suspicious file extensions, and suspicious user activity are still supported to maximize your ransomware readiness posture. 
+
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Add a ransomware protection strategy^].
 
-
-// Change in protection algorithm ​
 // ANF GA​
