@@ -1,0 +1,4 @@
+* You can only perform a clean restore for an encryption-based ransomware attack. 
+* If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
+** You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
+* When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 

@@ -1,0 +1,4 @@
+---
+permalink: rp-use-settings.html
+redirect: data-services-ransomware-resilience/rp-start-discover.html
+---

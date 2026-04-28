@@ -4,17 +4,15 @@ permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, end points, operating systems, networking
 summary: Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
 ---
-= Requirements for user behavior detection in NetApp Ransomware Resilience
+= User activity detection requirements for NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
+NetApp Ransomware Resilience user behavior detection enables you to respond to user-level ransomware events. You must create a set of agents to enable user behavior detection. Before enabling detection, you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events. 
 
 == Cloud provider support 
-
-**Cloud provider support**
 
 Suspicious user activity data can be stored in AWS and Azure in the following regions:
 

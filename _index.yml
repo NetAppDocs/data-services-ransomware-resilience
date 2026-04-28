@@ -1,35 +1,31 @@
 indexpage:
   title: NetApp Ransomware Resilience documentation
-  lead: NetApp Ransomware Resilience protects, detects, and supports recovery of application workloads and file shares from ransomware threats in on-premises and cloud storage. Ransomware Resilience enables secure backup and recovery, helping organizations safeguard critical data and maintain business continuity for Oracle, VM datastores, NAS storage, and more. 
-  summary: NetApp Ransomware Resilience protects, detects, and supports recovery of application workloads and file shares from ransomware threats in on-premises and cloud storage. Ransomware Resilience enables secure backup and recovery, helping organizations safeguard critical data and maintain business continuity for Oracle, VM datastores, NAS storage, and more. 
+  lead: NetApp Ransomware Resilience protects, detects, and supports recovery of workloads from ransomware threats in on-premises and cloud storage. Ransomware Resilience enables secure backup and recovery, helping organizations safeguard critical data and maintain business continuity for Oracle, VM datastores, NAS storage, and more. 
+  summary: NetApp Ransomware Resilience protects, detects, and supports recovery of workloads from ransomware threats in on-premises and cloud storage. Ransomware Resilience enables secure backup and recovery, helping organizations safeguard critical data and maintain business continuity for Oracle, VM datastores, NAS storage, and more. 
   keywords: bluexp, ransomware, anti-ransomware, cyber attack, netapp, ontap, amazon web services, aws, storagegrid, protection, resilience
   tiles:
   - title: Get started
     links:
     - title: Learn about Ransomware Resilience
       url: /concept-ransomware-resilience.html
+    - title: Learn about user activity detection 
+      url: /concept-user-behavior.html
     - title: What's new in Ransomware Resilience
       url: /whats-new.html
     - title: Prerequisites
       url: /rp-start-prerequisites.html
     - title: Quick start
       url: /rp-start-quick-start.html
-    - title: Configure backup destinations and enable threat detection
-      url: /rp-use-settings.html 
-    - title: Simulate a ransomware attack
-      url: /rp-start-simulate.html
-    - title: Configure suspicious user activity detectoin 
-      url: /suspicious-user-activity.html
   - title: Use Ransomware Resilience
     links:
     - title: Discover workloads
       url: /rp-start-discover.html 
-    - title: View workload health using the Dashboard
+    - title: View workload health
       url: /rp-use-dashboard.html
     - title: Protect workloads
       url: /rp-use-protect.html
-    - title: Scan for personally identifiable information with NetApp Data Classification
-      url: /rp-use-protect-classify.html
+    - title: Configure suspicious user activity detection 
+      url: /suspicious-user-activity.html
     - title: Respond to a detected alert 
       url: /rp-use-alert.html
     - title: Recover from an attack

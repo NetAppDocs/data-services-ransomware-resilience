@@ -4,25 +4,25 @@ permalink: suspicious-user-activity.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
 summary: Suspicious user activity detection in Ransomware Resilience enables you to detect user activity that could represent a potential threat. 
 ---
-= Configure agents and collectors for user activity detection in NetApp Ransomware Resilience
+= Configure user activity detection in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-To enable suspicious user behavior detection in NetApp Ransomware Resilience, you must install at least one user activity agent. When you activate the suspicious user activity feature from the Ransomware Resilience dashboard, you need to provide the user activity agent host information.
+NetApp Ransomware Resilience user activity detection helps you prevent user-level ransomware events. To enable suspicious user behavior detection in Ransomware Resilience, you must install at least one user activity agent, which creates a data collection environment to monitor user behavior for aberrant patterns that resemble ransomware events. 
 
-A user activity agent can host multiple data collectors. Data collectors send data to a SaaS location for analysis. There are two types of collectors:
+A user activity agent hosts a data collector and user directory connector, which both send data to a SaaS location for analysis.
 
-* The **data collector** collects user activity data from ONTAP.
-* The **user directory connector** connects to your directory to map user IDs to usernames.
+* The **data collector** collects user activity data from ONTAP. The data collector is created automatically when you create a protection strategy with user behavior detection. 
+* The **user directory connector** connects to your directory to map user IDs to usernames. You must configure the user directory connector.
 
-Collectors are configured in the Ransomware Resilience settings. 
+The user activity agent, data collector, and user directory connector can all be managed from the Ransomware Resilience settings dashboard.  
 
 [NOTE]
 include::_include/workload-security.adoc[]
 +
-If you're not already using DII, proceed with the configuration instructions here. 
+If you're _not_ using DII, proceed with the configuration instructions here. 
 
 == Before you begin
 
@@ -67,11 +67,11 @@ After the user activity agent is successfully created, return to the **Settings*
 
 === Add a data collector 
 
-Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see xref:rp-use-protect.adoc#add-a-detection-policy-to-workloads-with-existing-snapshot-and-backup-policies-managed-by-snapcenter-or-backup-and-recovery[add a detection policy].
+Data collectors are created automatically when you enable a ransomware protection strategy with suspicious user activity detection. For more information, see link:rp-use-protect.html#add-a-detection-policy-to-workloads-with-existing-backup-or-snapshot-policies[add a detection policy].
 
 You can view the details of the data collector. From Settings, select **Manage** in the User activity tile. Select the **Data collector** tab then select the data collector to view its details or pause it.  
 
-image:user-activity-settings.png[Screenshot of user activity settings]
+image:user-activity-settings.png[Screenshot of user activity settings.]
 
 == Create a user directory connector
 
@@ -138,9 +138,11 @@ If there are certain trusted users whose behavior might trigger user behavior al
 . Select the **Excluded users** tab. 
 . To review individual users in the UI, choose **Select manually**. To upload a list of excluded users, select **Upload**. 
 .. If you selected **Select manually**, select the checkbox next to the names of the specific users you want to exclude. 
-.. If you select **Upload**, you must first download a CSV file that includes the list of all the users. Select **Download** to access the list. 
+.. If you select **Upload**, download the CSV or JSON file that includes the list of all the users. Select **Download** to access the list. 
 +
-Review the CSV file. Remove the names of all users that you want to maintain detection for. When the list includes only the names of users you want to exclude from detection, save it. Select **Upload** to locate the file then choose it. 
+On your local machine, review the file. Remove the names of all users that you want to maintain detection for. When the list includes only the names of users you want to exclude from detection, save it.
++
+In Ransomware Resilience, select **Upload**. Locate and upload the file. 
 . Select **Add** to complete adding the users to the exlcusion list. 
 . In the **Excluded users** tab, the names of the users removed from user behavior detection alerts now display in the dashboard. 
 
@@ -153,7 +155,9 @@ You can add a user back to detection after.
 
 .Steps
 . In the Settings dashboard, locate the User activity card then select **Manage**. 
-. Select the **Excluded users** tab. 
+. Select the **Excluded users** tab.
+. Select **Add**.
+. To exlcude individual users from the UI, choose **Select manually**.
 . Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
 . In the dialog, select **Remove** to confirm you want to remove the selected users. 
 

@@ -1,0 +1,206 @@
+---
+sidebar: sidebar
+permalink: task-backup-destination.html
+keywords: ransomware protection, backup destination, storagegrid, aws, azure, google cloud
+summary: Add a backup destination in NetApp Ransomware Resilience to improve cyber resiliency. 
+---
+= Add a backup destination in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When NetApp Ransomware Resilience discovers workloads, if backups are configured, Ransomware Resilience recognizes the backup destinations. If you plan to use backups as part of your link:rp-use-protect.html[ransomware protection strategy] but have not configured backup destinations on the workload, you must add a backup destination in NetApp Ransomware Resilience to improve cyber resiliency. 
+
+You can choose one of the following backup destinations: 
+
+* NetApp StorageGRID
+* Amazon Web Services (AWS)
+* Google Cloud Platform
+* Microsoft Azure 
+
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP and Azure NetApp Files. Perform backup operations using native backup solutions: FSx for ONTAP backup service or Azure NetApp Files backups. 
+
+include::_include/console-role-admin.adoc[]
+
+== Add StorageGRID as a backup destination
+
+To set up NetApp StorageGRID as a backup destination, enter the following information. 
+
+.Steps
+
+. In Ransomware Resilience, select **Settings**. 
+. In the **Backup Destinations** tile, select **View**. 
+. Select **Add**.
+. Enter a name for the backup destination. 
++
+image:screen-settings-backup-destination.png[Backup destinations page]
+. Select *StorageGRID*.
+. Select the down arrow next to each setting to review the required fields: 
+* *Provider settings*:
+** Choose to **Create a new bucket** or **Bring your own bucket**. 
+** Provide the **Gateway node fully qualified domain name (FQDN)** and **Port**. 
+** Provide the StorageGRID credentials: **Access key** and **Secret key**. 
+* *Networking*: Choose the IPspace. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+* *Backup Lock*
++
+Choose if you want to configure backup lock. With backup lock, copies are protected from being modified or deleted and scanned for ransomware threats. You cannot modify this setting after configuring the backup destination. 
+** If you don't want backup lock, select **None**. 
+** Select **Governance mode** to allow users with specific permissions to overwrite or delete protected backup files during the retention period.
+** Select **Compliance mode** to prevent users from overwriting or deleting protected backup files during the retention period.
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list2.png[Screenshot of backup destinations.]
+
+== Add Amazon Web Services as a backup destination 
+
+To set up AWS as a backup destination, enter the following information. 
+
+For details about managing your AWS storage in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/task-viewing-amazon-s3.html[Manage your Amazon S3 buckets^].
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the **Backup Destinations** tile, select **View**. 
+. Select **Add**.
+. Select *Amazon Web Services*.
+. Select the Down arrow next to each setting and enter or select values: 
+* *Provider settings*:
+** Create a new bucket, select an existing bucket if one already exists in the Console, or bring your own bucket that will store the backups. 
+** AWS account, region, access key and secret key for AWS credentials
++ 
+https://docs.netapp.com/us-en/storage-management-s3-storage/task-add-s3-bucket.html[If you want to bring your own bucket, refer to Add S3 buckets^]. 
+
+* *Encryption*: If you are creating a new S3 bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
++ 
+Data in the bucket is encrypted with AWS-managed keys by default. You can continue to use AWS-managed keys, or you can manage the encryption of your data using your own keys. 
+
+* *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+** Optionally, choose whether you'll use an AWS private endpoint (PrivateLink) that you previously configured. 
++
+If you want to use AWS PrivateLink, refer to https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html[AWS PrivateLink for Amazon S3^].
+
+* *Backup lock*: Choose whether you want Ransomware Resilience to protect backups from being modified or deleted. This option uses the NetApp DataLock technology. Each backup will be locked during the retention period, or for a minimum of 30 days, plus a buffer period of up to 14 days. 
++
+CAUTION: If you configure the backup lock setting now, you cannot change the setting after the backup destination is configured. 
+
+** *Governance mode*: Specific users (with s3:BypassGovernanceRetention permission) can overwrite or delete protected files during the retention period. 
+** *Compliance mode*: Users cannot overwrite or delete protected backup files during the retention period. 
+
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
+
+
+== Add Google Cloud Platform as a backup destination 
+
+To set up Google Cloud Platform (GCP) as a backup destination, enter the following information. 
+
+For details about managing your GCP storage in the Console, refer to link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html[Console agent installation options in Google Cloud^].
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the **Backup Destinations** tile, select **View**. 
+. Select **Add**.
+. Enter a name for the backup destination. 
+. Select *Google Cloud Platform*.
+. Select the Down arrow next to each setting and enter or select values: 
+
+* *Provider settings*:
+** Choose to **Create a new bucket** or **Bring your own bucket**. 
+** Provide the Google Cloud Platform credentials: **Access key** and **Secret key**. 
+** Select your **Project** and the **Region** it exists in. 
++
+image:screen-settings-backup-destination-gcp.png[Backup destinations page]
+* *Encryption*: If you are creating a new bucket, enter encryption key information given to you from the provider. If you chose an existing bucket, encryption information is already available. 
++ 
+Data in the bucket is encrypted with Google-managed keys by default. You can continue with the default setting by selecting **Google-managed keys** or use **Customer-managed keys**. 
+// * *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
+// ** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access.
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+
+== Add Microsoft Azure as a backup destination 
+
+To set up Azure as a backup destination, enter the following information. 
+
+For details about managing your Azure credentials and marketplace subscriptions in the Console, refer to https://docs.netapp.com/us-en/console-setup-admin/task-adding-azure-accounts.html[Manage your Azure credentials and marketplace subscriptions^].
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the **Backup Destinations** tile, select **View**. 
+. Select **Add**.
+. Select *Azure*.
+. Select the Down arrow next to each setting and enter or select values: 
+
+* *Provider settings*:
+** Create a new storage account, select an existing one if one already exists in the Console, or bring your own storage account that will store the backups. 
+** Provide the Application (client) ID, Client secret, and Directory (tenant) ID. Select **Authenticate**. 
+** Select the Azure subscription, region, and resource group for your Azure subscription. 
++ 
+https://docs.netapp.com/us-en/storage-management-blob-storage/task-add-blob-storage.html[If you want to bring your own storage account, refer to Add Azure Blob storage accounts^]. 
+
+* *Encryption*: By default, data is encrypted with a Microsoft-managed key. Select **Microsoft-managed key** to maintain this option; alternatively, choose **Customer managed key** to use your own keys for encryption.  
+* *Networking*: Choose the IPspace and whether you'll be using a Private Endpoint. 
+** The IPspace is the cluster where the volumes you want to back up reside. The intercluster LIFs for this IPspace must have outbound internet access. 
+** Optionally, choose whether you'll use an Azure private endpoint that you previously configured. 
++
+If you want to use Azure PrivateLink, refer to https://azure.microsoft.com/en-us/products/private-link/[Azure PrivateLink^].
+* *Backup Lock*
++
+Choose if you want to configure backup lock. With backup lock, copies are protected from being modified or deleted and scanned for ransomware threats. You cannot modify this setting after configuring the backup destination. 
+** If you don't want backup lock, select **None**. 
+** Select **Governance mode** to allow users with specific permissions to overwrite or delete protected backup files during the retention period.
+** Select **Compliance mode** to prevent users from overwriting or deleting protected backup files during the retention period.
+. Select *Add*.
+
+.Result
+
+The new backup destination is added to the list of backup destinations. 
+
+image:screen-settings-backup-destinations-list2.png[Backup destinations page the Settings option]
+
+
+//=== Edit a backup destination from the Settings option
+
+//. From the Console left navigation, select *Protection* > *Ransomware Resilience*. 
+
+//. From the dashboard, select the Actions option on the upper right and select *Edit settings*. 
+//+
+//image:screen-dashboard-settings-menu.png[Dashboard page showing the Settings option]
+
+//. From the Settings page, select *Backup destinations* and select *Edit*.
+//+
+//image:screen-settings.png[Settings page]
+
+
+//== Show preview features
+
+//You can try out upcoming features labeled "Preview" before they are released. These features appear in the UI with a "Preview" label.
+
+//.Before you begin
+//You will need a key from the Ransomware Resilience product team to show Preview features. To get the key, send an email to mailto:ng-rps-key@netapp.com. 
+
+//.Steps 
+
+//. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
+
+//. Select *Settings*. 
+//+
+//image:screen-settings2.png[Settings page]
+//. In the *Preview features* tile, select *Show*.
+//. Enter the key. 
+//. Select *Show*. 

@@ -6,17 +6,17 @@
 | Azure NetApp Files | CIFS & NFS | N/A
 .2+| Cloud Volumes ONTAP for AWS
 | CIFS & NFS | 9.11.1 and later
-| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+| SAN (iSCSI & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Google Cloud Platform
 | CIFS & NFS | 9.11.1 and later
-| SAN (FC, iSCSI, & NVMe) | 9.17.1 and later
+| SAN (iSCSI & NVMe) | 9.17.1 and later
 .2+| Cloud Volumes ONTAP for Microsoft Azure
 | CIFS & NFS | 9.12.1 and later
-| SAN (FC, iSCSI, & NVMe) |  9.17.1 and later
-| Google Cloud NetApp Volumes | CIFS, NFS, and SAN (iSCSI) | N/A
+| SAN (iSCSI & NVMe) |  9.17.1 and later
 .2+| ONTAP (on-premises)
 | CIFS & NFS  | 9.11.1 and later 
-| SAN (FC, iSCSI, & NVMe) |  9.17.1 and later
+| SAN (iSCSI, & NVMe) |  9.17.1 and later
+| Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI & NVMe) | N/A
 |===
 
 {asterisk} Amazon FSx for NetApp ONTAP uses Autonomous Ransomware Protection (ARP) and not ARP/AI. For more information about the difference, see link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#arp-ai[ARP/AI^].

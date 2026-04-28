@@ -22,7 +22,7 @@ For details about actions you can still do after the license expires, refer to l
 
 == Disable protection policies
 
-If you want to stop using protection policies that are applied to workloads, you can disable them using System Manager, API calls, or CLI. 
+If you want to stop using protection policies that are applied to workloads, you can disable them using System Manager, API calls, or the CLI. 
 
 You can disable FPolicy and backup policies in Ransomware Resilience by applying a different policy that does not include them. For instructions on setting protection policies, refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 
