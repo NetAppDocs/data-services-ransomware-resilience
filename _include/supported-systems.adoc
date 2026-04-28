@@ -1,4 +1,3 @@
-
 [%header]
 |===
 | Environment | Protocol | Supported versions
