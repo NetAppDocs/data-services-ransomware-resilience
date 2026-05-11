@@ -21,7 +21,7 @@ Ransomware Resilience playbooks offer the following capabilities:
 * Test connectivity
 * Review the status of an enrichment job
 
-{asterisk} Blocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behaviorp[user behavior activity detection] on a supported system to block a user. 
+{asterisk} Blocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior activity detection] on a supported system to block a user. 
 
 == Playbooks
 
