@@ -200,8 +200,9 @@ The process for creating an isolated recovery room differs if the environment is
 --
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restore card, select **Add** to create the isolated recovery environment.  
-. For a cloud-based IRE, select **Amazon Web Services**. 
+. In the Type section, choose *Cleaning only*. 
 . Expand the **Name** section. Enter a **Name** for the environment. 
+. For a cloud-based IRE, select **Amazon Web Services**. 
 . Expand the *Systems* section. Choose the systems you want to connect to the IRE. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
 +
 [NOTE]
@@ -225,8 +226,9 @@ Ransomware Resilience tests the connection after you select add, which can take 
 --
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
-. For location, select **On-premises**. 
+. In the Type section, choose *Cleaning only*. 
 . Expand the *Name* section. Assign a **Name** for the IRE. 
+. For location, select **On-premises**. 
 . Expand the *Systems* section. Choose the systems that you want to connect to the IRE. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the IRE.
 +
 Each system you select must have an assigned IP address. You can select primary or secondary systems. Secondary systems can be used for analysis and recovery if the primary system has no unencrypted snapshots or if it's unavailable.   
