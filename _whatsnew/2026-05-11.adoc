@@ -1,7 +1,7 @@
 
 === Clean restore enhancements 
 
-Clean restore now supports reports, recovery to alternate clusters, and analysis beyond seven days. 
+Clean restore now supports recovery to alternate clusters, and analysis beyond seven days. 
 
 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Recover workloads with a clean restore^].
 
