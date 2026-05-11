@@ -31,7 +31,7 @@ include::_include/clean-restore-considerations.adoc[]
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
 . Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to analysis, select **Next**. 
-. After the setup completes, select **Run analysis**. Ransomware Resilience analyzes all available restore points in the seven days prior to the ransomware event, displaying the date and type of restore point. 
+. After the setup completes, select **Run analysis**. Ransomware Resilience looks for available restore points prior to the ransomware event, displaying the date and type of restore point. Ransomware Resilience searches for restore points in seven-day intervals. If a restore point is not available in the first seven days, Ransomware Resilience begins looking at the previous seven-day stretch and repeats the process until a viable recovery pathway is found. 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
@@ -39,10 +39,13 @@ image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysi
 To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-. After you choose your restore point, select **Next** to begin cleaning your files. 
-. Ransomware Resilience begins cleaning the workload. 
+. After you choose your restore point, select **Next** to begin cleaning your files. Ransomware Resilience begins cleaning the workload. 
 +
-When the cleaning completes, select **Start recovery** to initiate the recovery. 
+. Choose the recovery destination. 
+// Primary, Secondary, Alternate
+.. If you chose *Alternate*, choose the *System*, *Storage VM*, and *Aggregate* to recover to. Enter a *New volume* name. 
+// action step
+. When the cleaning completes, select **Start recovery** to initiate the recovery. 
 . Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
 . Select **Start recovery** to initiate the recovery. 
 . When the recovery completes, select **Next** to move to the final phase. 
