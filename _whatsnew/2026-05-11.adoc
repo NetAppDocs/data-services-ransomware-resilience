@@ -1,9 +1,9 @@
 
 === Clean restore enhancements 
 
-Clean restore now supports recovery to alternate clusters and analysis beyond seven days. 
+Clean restore now supports recovering to an alternate location, enabling you to restore volumes to different systems, storage VMs, and aggregates managed by the same Console agent. Additionally, clean restore has removed the seven-day limitation in searching for viable snapshots for recovery. Clean restore now continues looking through available snapshots for a viable recovery point regardless of distance from the ransomware event. 
 
-link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Recover workloads with a clean restore^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html[Recover workloads with a clean restore^].
 
 === Google SecOps SIEM support
 
