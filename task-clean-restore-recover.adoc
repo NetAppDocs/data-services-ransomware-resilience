@@ -31,7 +31,7 @@ When you restore a volume using clean restore, you have the option of restoring 
 * ARP is automatically enabled on the new volume.
 * The junction path is set based on the name you provide. For example: `<Data LIF IP address of destination storage VM>:<new volume name>`.
 * The export policy on the restored volume is the same as the source volume. 
-* The SMB shares on the restored volume are be the same as the source volume. 
+* The SMB shares on the restored volume are the same as the source volume. 
 
 == Perform a clean restore
 
@@ -39,8 +39,8 @@ When you restore a volume using clean restore, you have the option of restoring 
 . In the Restore Type options, select **Clean restore** then **Next**. 
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience updates the status. To proceed, select **Next**. 
-. After the setup completes, select **Run analysis**. Ransomware Resilience searches for the most recent snapshot unimpacted snapshot.
+. Ransomware Resilience performs the necessary configuration. Once the set up completes successfully, Ransomware Resilience updates the status. To proceed, select **Next**. 
+. After the setup completes, select **Run analysis**. Ransomware Resilience searches for the most recent unimpacted snapshot.
 // stop 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
