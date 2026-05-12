@@ -24,29 +24,42 @@ You must have configured an link:task-clean-restore.html[isolated recovery envir
 
 include::_include/clean-restore-considerations.adoc[]
 
+=== Considerations for restoring to an alternate location 
+
+When you restore a volume using clean restore, you have the option of restoring to an alternate location managed by the same Console agent. The new location can be on the same or different system, storage VM, or aggregate. When you restore to an alternate location:
+
+* ARP is automatically enabled on the new volume.
+* The junction path is set based on the name you provide. For example: `<Data LIF IP address of destination storage VM>:<new volume name>`.
+* The export policy on the restored volume is the same as the source volume. 
+* The SMB shares on the restored volume are be the same as the source volume. 
+
 == Perform a clean restore
 
-. In the **Recovery** section, select the workload you want to restore. Select **Restore**. 
+. In the **Recovery** section, identify the workload you want to restore. Select **Restore**. 
 . In the Restore Type options, select **Clean restore** then **Next**. 
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience denotes **Setup complete**. To proceed to analysis, select **Next**. 
-. After the setup completes, select **Run analysis**. Ransomware Resilience looks for available restore points prior to the ransomware event, displaying the date and type of restore point. Ransomware Resilience searches for restore points in seven-day intervals. If a restore point is not available in the first seven days, Ransomware Resilience begins looking at the previous seven-day stretch and repeats the process until a viable recovery pathway is found. 
+. Ransomware Resilience performs the necessary set up. Once the set up completes successfully, Ransomware Resilience updates the status. To proceed, select **Next**. 
+. After the setup completes, select **Run analysis**. Ransomware Resilience searches for the most recent snapshot unimpacted snapshot.
+// stop 
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
-To view granular file event data, select a file to analyze its encryption status; when it was created, modified, or deleted, and what restore point corresponds to what action. 
+To view granular file event data, select a file to analyze its encryption status and metadata: when it was created, modified, or deleted, and what restore point corresponds to what action. 
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-. After you choose your restore point, select **Next** to begin cleaning your files. Ransomware Resilience begins cleaning the workload. 
+. After you choose your restore point, select **Create restore point**. Ransomware Resilience begins a series of jobs to create the restore point. Once this process completes, select **Next**.
+. Select **Start cleaning** to begin cleaning malware from the files. 
+. Once the cleaning completes, select **Next**. 
+. Choose the recovery destination:
+* Select **Primary (original)** to restore to the original destination.
 +
-. Choose the recovery destination. 
-// Primary, Secondary, Alternate
-.. If you chose *Alternate*, choose the *System*, *Storage VM*, and *Aggregate* to recover to. Enter a *New volume* name. 
-// action step
-. When the cleaning completes, select **Start recovery** to initiate the recovery. 
-. Choose if you want to save the original workload. To forgo saving the original workload, select **No, replace the original workload**. To save it, select **Yes, save the original workload** then enter a new name for the workload.
+If the primary location is unavailable and link:task-clean-restore.html#secondary-sources[you've configured a secondary source], you can instead restore to the **Secondary** source. 
+* Select **Alternate** to restore to a new volume. Choose the **System**, **Storage VM**, and **Aggregate** for the new volume then provide a **New volume name**. 
++
+image:alternate-recovery-destination.png[Screenshot of alternate recovery destination]
+
 . Select **Start recovery** to initiate the recovery. 
 . When the recovery completes, select **Next** to move to the final phase. 
-. Select **Release resources and end** to release the resources and close the clean room. To confirm you want to release the resource, select **End**. 
+. Select **Release resources and exit** to release the resources and close the clean room. To confirm, select **End**. 

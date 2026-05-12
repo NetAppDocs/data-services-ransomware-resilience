@@ -83,7 +83,7 @@ To avoid these conflicts, Ransomware Resilience performs sysprep on the clone VM
 
 When you create the IRE for on-premises sources, you have the option of adding a secondary source. 
 
-If the primary source is available, the clean restore must be restored to the primary source. If the primary source is unavailable and you've configured a secondary source, the clean restore will be restored to the secondary source. 
+If the primary source is unavailable and you've configured a secondary source, the clean restore will be restored to the secondary source. 
 
 The clean restore process by default analyzes snapshots from the source environment. If either the source environment is unavailable or an unencrypted snapshot on the source is not available, clean restore analyzes snapshots on a secondary system if you have configured one. 
 
