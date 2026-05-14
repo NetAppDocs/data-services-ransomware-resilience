@@ -81,7 +81,7 @@ To avoid these conflicts, Ransomware Resilience performs sysprep on the clone VM
 
 === Secondary sources 
 
-When you create the IRE for on-premises sources, you have the option of adding a secondary source. 
+When you create the IRE, you have the option of adding a secondary source. 
 
 If the primary source is unavailable and you've configured a secondary source, the clean restore will be restored to the secondary source. 
 
