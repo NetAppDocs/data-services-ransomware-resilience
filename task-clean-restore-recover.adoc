@@ -43,7 +43,8 @@ When you restore a volume using clean restore, you have the option of restoring 
 . After the setup completes, select **Run analysis**. Ransomware Resilience searches for the most recent unimpacted snapshot.
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
-.. While the analysis runs, you can select **Stop**. Stopping the analysis requires the clean restore process to be started anew. 
++
+While the analysis runs, you can select **Stop**. Stopping the analysis requires the clean restore process to be started anew. 
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status and metadata: when it was created, modified, or deleted, and what restore point corresponds to what action. 

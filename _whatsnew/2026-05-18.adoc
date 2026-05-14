@@ -4,7 +4,6 @@ Clean restore now supports reports. With reports, you can review and assess clea
 
 Clean restores also now support stopping the analysis. If you stop the analysis, you must begin the clean restore again. 
 
-
 To learn more about reports, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-reports.html[Download reports in Ransomware Resilience^]. To learn more about recovery, see link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore-recover.html[Recover workloads with a clean restore^].
 
 
