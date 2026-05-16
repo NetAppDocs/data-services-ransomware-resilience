@@ -65,6 +65,29 @@ If `/opt` is a mounted folder from a NAS storage, local users must have access t
 * It is recommended that you install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install them on the same machine, you should allow for 50 to 55 GB of disk space. For Linux, allocate 25-30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
 * It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
 
+=== Sizing recommendations 
+
+
+When collecting user events, you should size the machine hosting the user activity agent appropriately. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. 
+
+| User activity agent machine configuration
+| Number of data collectors
+| Maximum event rate
+| 4 core, 16GB
+| 10 data collectors
+| 20,000 events/second
+| 4 core, 32GB
+| 20 data collectors
+| 20,000 events/second
+
+When calculating the appropriate size, it's recommended you qualify with a buffer rate of 30%. You can use the formula to determine a reasonable size:
+(sum of all events per second per data collector) + [0.3 * (sum of all events per second per data collector)] < 20,000 events/second
+
+// add examplegit
+
+For more information about calculating event rate data, link:reference-user-activity-sizing.html[Calculate machine sizing for data collectors].
+// add article https://docs.netapp.com/us-en/data-infrastructure-insights/concept_cs_event_rate_checker.html#requirements
+
 == Cloud network access rules
 
 Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
