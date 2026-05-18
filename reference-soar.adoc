@@ -13,12 +13,15 @@ Ransomware Resilience offers security orchestration, automation, and response (S
 
 Ransomware Resilience playbooks offer the following capabilities:
 
+* Block a user*
 * Create a snapshot of a volume
 * Enrich an IP address with threat intelligence
 * Enrich storage information for a given agent and system
 * Take a volume offline for incident response
 * Test connectivity
 * Review the status of an enrichment job
+
+{asterisk} Blocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior activity detection] on a supported system to block a user. 
 
 == Playbooks
 

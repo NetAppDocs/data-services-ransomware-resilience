@@ -15,13 +15,11 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
-=== Google Cloud NetApp Volumes support
+== 18 May 2026
+include::_whatsnew/2026-05-18.adoc[]
 
-Ransomware Resilience now supports Google Cloud NetApp Volumes systems. When you conduct discovery, Ransomware Resilience automatically displays workloads in Google Cloud NetApp Volumes. 
-
-// link to limitations (no support for UEBA)
-For information about the scope of Google Cloud NetApp Volumes support, review link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html[Limitations in Ransomware Resilience^].
-
+== 11 May 2026
+include::_whatsnew/2026-05-11.adoc[]
 
 == 13 April 2026
 include::_whatsnew/2026-04-13.adoc[]

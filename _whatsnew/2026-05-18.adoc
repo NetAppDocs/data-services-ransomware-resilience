@@ -1,0 +1,5 @@
+=== Google Cloud NetApp Volumes support (preview)
+
+Ransomware Resilience now supports Google Cloud NetApp Volumes systems, enabling you to efficiently detect and respond to ransomware threats in Google Cloud NetApp Volumes. When you conduct discovery, Ransomware Resilience automatically displays workloads from Google Cloud NetApp Volumes systems. When you discover the systems, they appear in the Ransomware Resilience dashboard. Support for Google Cloud NetApp Volumes in Ransomware Resilience is currently in preview. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html[Learn about Ransomware Resilience^]. For information about the scope of Google Cloud NetApp Volumes support, review link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html[Limitations in Ransomware Resilience^].
