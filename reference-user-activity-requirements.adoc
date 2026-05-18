@@ -67,7 +67,7 @@ If `/opt` is a mounted folder from a NAS storage, local users must have access t
 
 === Sizing recommendations 
 
-When collecting user events, you should size the machine hosting the user activity agent appropriately. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. 
+When collecting user events, ensure the machine hosting the user activity agent is sized to accommodate your event rate. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. To increase the number of data collectors, you may need to increase the RAM or CPU capacity. Ransomware Resilience supports up to 50 data collectors per user activity agent. 
 
 The following table provides general guidance for sizing:
 
@@ -77,8 +77,6 @@ The following table provides general guidance for sizing:
 | 4 cores, 16GB | 10 data collectors | 20,000 events/second
 | 4 cores, 32GB | 20 data collectors | 20,000 events/second
 |===
-
-You can increase the number of cores or the memory to increase the number of data collectors supported.
 
 You can also calculate your specific requirements. When calculating the appropriate size, it's recommended you qualify with a buffer rate of 30%. Use this formula to determine if your configuration can handle the load.
 
@@ -93,6 +91,7 @@ E + (0.3 x E) < 20,000 events/second
 ====
 Ransomware Resilience provides a script you can run on your system to calculate the event data rate. By default, the script runs for a maximum of five storage VMs. If your environment includes more than 5 SVMs, you can modify the script accordingly. Regardless of the number of SVMs, the script takes approximately five minutes to get an average event rate reading. Before running the script you must have:
 
+* link:suspicious-user-activity.html[Configured a user activity agent]
 * The cluster IP address
 * The cluster admin username and password
 * Installed `sshpass` on the Linux machine (you can install with the command `sudo yum install -y sshpass`)
