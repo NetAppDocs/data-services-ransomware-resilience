@@ -35,7 +35,7 @@ The following limitations apply to Azure NetApp Files:
 * It's recommended you not use link:reference-soar.html[SOAR playbooks] with Azure NetApp Files due to Azure NetApp Files APIs blocking automated actions. 
 * Some event data is not included in link:task-siem.html[SIEM reports] for Azure NetApp Files configurations. 
 
-== Google Cloud NetApp Volumes limitations 
+== Google Cloud NetApp Volumes limitations
 
 The following limitations apply to Google Cloud NetApp Volumes:
 
