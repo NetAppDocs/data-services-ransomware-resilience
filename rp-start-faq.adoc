@@ -83,8 +83,6 @@ For licensing and billing, Ransomware Resilience can integrate with Backup and R
 
 A workload is a VM or a file share.
 
-// A workload includes all volumes that used by a single application instance. For example, consider an Oracle Database deployed on ora3.host.com with `vol1` containing data and `vol2` containing logs. The two volumes constitute the workload for that Oracle Database instance. 
-
 .How does Ransomware Resilience prioritize workload data?
 
 The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload and scheduled backups. 
