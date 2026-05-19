@@ -11,7 +11,7 @@ Ransomware Resilience now provides security information event management (SIEM) 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect Ransomware Resilience to a SIEM^].
 
-=== User behavior activity enhancement
+=== User behavior detection enhancement
 
 Insights into data breach events are now retained for 13 months after an incident, enabling longer record-keeping for your reporting needs. 
 

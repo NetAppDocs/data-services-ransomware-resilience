@@ -24,7 +24,7 @@ indexpage:
       url: /rp-use-dashboard.html
     - title: Protect workloads
       url: /rp-use-protect.html
-    - title: Configure suspicious user activity detection 
+    - title: Configure user activity detection 
       url: /suspicious-user-activity.html
     - title: Respond to a detected alert 
       url: /rp-use-alert.html

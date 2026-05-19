@@ -1,4 +1,4 @@
 ---
-permalink: rp-use-manage.html
+permalink: rp-start-disable.html
 redirect: data-services-ransomware-resilience/rp-use-protect.html
 ---

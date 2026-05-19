@@ -58,9 +58,9 @@ Refer to the https://docs.netapp.com/us-en/console-setup-admin/reference-permiss
 +
 Ransomware Resilience helps configure a backup destination through the Settings option. See link:task-backup-destination.html[Add a backup destination].
 
-== Suspicious user behavior requirements
+== User behavior detection requirements
 
-For Ransomware Resilience to provide alerts about suspicious user behavior, you must configure a user activity agent. To install a user activity agent, ensure your system meets link:reference-user-activity-requirements.html[the requirements].
+For Ransomware Resilience to provide alerts about user behavior, you must configure a user activity agent. To install a user activity agent, ensure your system meets link:reference-user-activity-requirements.html[the requirements].
 
 == Clean restore prerequisites
 
