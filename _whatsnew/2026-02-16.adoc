@@ -10,7 +10,7 @@ Ransomware Resilience now enables you to exclude specific users from user behavi
 
 For more information, see link:For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#exclude-users-from-alerts[Exclude users from alerts^].
 
-=== Protection group support for user behavior activity 
+=== Protection group support for user behavior detection 
 
 Ransomware Resilience protection groups now support detection policies for suspicious user behavior detection. When you apply a ransomware protection strategy to a protection group, it applies a policy across workloads, streamlining management of your cybersecurity posture. 
 
