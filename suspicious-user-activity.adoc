@@ -21,7 +21,8 @@ The user activity agent, data collector, and user directory connector can all be
 
 [NOTE]
 include::_include/workload-security.adoc[]
-+
+
+
 If you're _not_ using DII, proceed with the configuration instructions here. 
 
 == Before you begin
