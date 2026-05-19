@@ -67,6 +67,46 @@ If `/opt` is a mounted folder from a NAS storage, local users must have access t
 * It is recommended that you install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install them on the same machine, you should allow for 50 to 55 GB of disk space. For Linux, allocate 25-30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
 * It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
 
+=== Sizing recommendations 
+
+When collecting user events, ensure the machine hosting the user activity agent is sized to accommodate your event rate. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. To increase the number of data collectors, you may need to increase the RAM or CPU capacity. Ransomware Resilience supports up to 50 data collectors per user activity agent. 
+
+The following table provides general guidance for sizing:
+
+[options="header"]
+|===
+| User activity agent machine configuration | Number of data collectors | Maximum event rate
+| 4 cores, 16GB | 10 data collectors | 20,000 events/second
+| 4 cores, 32GB | 20 data collectors | 20,000 events/second
+|===
+
+You can also calculate your specific requirements. When calculating the appropriate size, it's recommended you qualify with a buffer rate of 30%. Use this formula to determine if your configuration can handle the load.
+
+----
+Where E is the sum of all events per second across all data collectors:
+
+E + (0.3 x E) < 20,000 events/second
+----
+
+.Ransomware Resilience provides a script to calculate the event data rate. Learn how to calculate the event data rate in Ransomware Resilience. 
+[%collapsible]
+====
+Ransomware Resilience provides a script you can run on your system to calculate the event data rate. By default, the script runs for a maximum of five storage VMs. If your environment includes more than 5 SVMs, you can modify the script accordingly. Regardless of the number of SVMs, the script takes approximately five minutes to get an average event rate reading. Before running the script you must have:
+
+* link:suspicious-user-activity.html[Configured a user activity agent]
+* The cluster IP address
+* The cluster admin username and password
+* Installed `sshpass` on the Linux machine (you can install with the command `sudo yum install -y sshpass`)
+
+.Steps 
+. From the cluster hosting the user activity agent, run the script as an admin: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
+. When prompted, provide the cluter IP address, the admin username, and the admin password. 
+. The script takes approximately five minutes to run. When it completes, the command line displays the event rate, for example "Svm svm_rate is generating 100 events/sec."
++
+Use the event rate to calculate your sizing.
+
+====
+
 == Cloud network access rules
 
 Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
