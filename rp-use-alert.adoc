@@ -124,7 +124,7 @@ The Alerts page appears.
 
 Looking at the Alerts tab, you can identify whether there is malicious activity or anomalous user behavior. 
 
-You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. The *Suspicious user* column appears in the Alerts dashboard only when user behavior detection is enabled. To enable suspicious user detection, see link:suspicious-user-activity.html[Suspicious user activity].
+You must have configured a user activity agent and enabled a protection policy with user behavior detection to view user-level alerts. The *Suspicious user* column appears in the Alerts dashboard only when user behavior detection is enabled. For more information, link:suspicious-user-activity.html[learn about user activity detection].
 
 === View malicious activity
 
@@ -153,7 +153,7 @@ image:screen-alerts-incidents3.png["Alert incidents page"]
 
 === View anomalous user behavior 
 
-If you've configured suspicious user detection to view anomalous user behavior, you can view user-level data and block specific users. To enable suspicious user settings, see link:suspicious-user-activity.html[Configure agents and collectors for user activity detection].
+If you've configured user behavior detection, you can view user-level data and block specific users. To enable user activity detection, see link:suspicious-user-activity.html[Configure agents and collectors].
 
 .Steps
 

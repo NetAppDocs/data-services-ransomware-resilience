@@ -48,7 +48,7 @@ image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 .. Select a test system. 
 .. Select a test storage SVM. 
 .. If you selected a CIFS (SMB) storage VM, **User name** and **Password** fields appear. Enter the user name and password for the storage VM.
-.. Select the readiness drill type. For a manual recovery from an encryption data breach, choose **Custom recovery**. For recovery from suspicious user activity, choose **Data breach**.
+.. Select the readiness drill type. For a manual recovery from an encryption data breach, choose **Custom recovery**. For recovery from suspicious user behavior, choose **Data breach**.
 .. Enter the name for the test workload. Do not include dashes in the name. 
 
 . Select *Save*.
