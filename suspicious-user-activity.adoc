@@ -10,7 +10,7 @@ summary: Suspicious user activity detection in Ransomware Resilience enables you
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience user activity detection helps you prevent user-level ransomware events. To enable suspicious user behavior detection in Ransomware Resilience, you must install at least one user activity agent, which creates a data collection environment to monitor user behavior for aberrant patterns that resemble ransomware events. 
+NetApp Ransomware Resilience user behavior activity detection helps you prevent user-level ransomware events. To enable user behavior detection in Ransomware Resilience, you must install at least one user activity agent, which creates a data collection environment to monitor user behavior for aberrant patterns that resemble ransomware events. 
 
 A user activity agent hosts a data collector and user directory connector, which both send data to a SaaS location for analysis.
 
@@ -30,7 +30,7 @@ If you're _not_ using DII, proceed with the configuration instructions here.
 * Ensure you meet the link:reference-user-activity-requirements.html[operating system, server, and network requirements].
 
 *Required Console role*
-To activate suspicious user activity detection, you need the **Organization admin role**. For subsequent suspicious user activity configurations, you need the **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
+To activate user behavior detection, you need the **Organization admin role**. For subsequent user behavior detection configurations, you need the **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
 
 Ensure each role is applied at the organization level.
 
@@ -162,6 +162,6 @@ You can add a user back to detection after.
 . Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
 . In the dialog, select **Remove** to confirm you want to remove the selected users. 
 
-== Respond to suspicious user activity alerts
+== Respond to user activity alerts
 
-After you configure suspicious user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].
+After you configure user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].

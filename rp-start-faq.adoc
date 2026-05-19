@@ -128,12 +128,13 @@ A backup policy is not required in the Ransomware Resilience strategy.
 
 .What types of attacks does Ransomware Resilience recognize? 
 
-Ransomware Resilience recognizes four attack types: 
+Ransomware Resilience recognizes five attack types: 
 
 * Encryption (entropy)
 * Encryption (user behavior)
 * Data breach
 * Data destruction 
+* Suspicious user activity 
 
 Learn more about link:concept-ransomware-resilience.html#attack-types[attack types].
 

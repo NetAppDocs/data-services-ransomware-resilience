@@ -135,6 +135,7 @@ Ransomware Resilience recognizes four types of attacks:
 | Encryption (user behavior) | Ransomware Resilience identifies anomalous file read/writes/renaming undertaken by a specific user 
 | Data breach | Ransomware Resilience detect anomalous file read access patterns by a specific user
 | Data destruction | Ransomware Resilience discovers detection of mass deletion of files by a specific user
+| Suspicious user behavior | Ransomware Resilience identifies anomalous behavior beyond the scope of data breach, destruction, or encryption
 |===
 
 [NOTE]
