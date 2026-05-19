@@ -1,4 +1,4 @@
 ---
-permalink: task-classify.html
+permalink: rp-use-protect-classify.html
 redirect: data-services-ransomware-resilience/task-classify.html
 ---

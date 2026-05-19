@@ -124,6 +124,22 @@ image:diagram-rp-architecture-preview3.png[Diagram showing Ransomware Resilience
 * Helps you monitor outcomes. 
 |===
 
+=== Attack types
+
+Ransomware Resilience recognizes four types of attacks:
+
+[options="header",cols="25,75"]
+|===
+| Attack type | Definition 
+| Encryption (entropy) | Ransomware Resilience recognizes abnormal IOPS patterns, data entropy, and non-standard file suffixes to capture encryption-based ransomware events
+| Encryption (user behavior) | Ransomware Resilience identifies anomalous file read/writes/renaming undertaken by a specific user 
+| Data breach | Ransomware Resilience detect anomalous file read access patterns by a specific user
+| Data destruction | Ransomware Resilience discovers detection of mass deletion of files by a specific user
+|===
+
+[NOTE]
+To identify a specific user responsible for an attack, you must configure link:concept-user-behavior.html[suspicious user activity detection.] Review link:rp-reference-limitations.html[limitations] to see if your system supports suspicious user activity detection. 
+
 == Supported backup targets, systems, and workload data sources
 
 Ransomware Resilience supports the following backup targets, systems, and data sources:
