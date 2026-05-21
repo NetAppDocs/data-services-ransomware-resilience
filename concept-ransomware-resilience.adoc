@@ -130,7 +130,7 @@ Ransomware Resilience recognizes five types of attacks:
 
 [options="header",cols="25,75"]
 |===
-| Attack type | Definition 
+| Attack type | Description 
 | Encryption (entropy) | Ransomware Resilience recgonizes abnormal IOPS patterns, data entropy, and non-standard file suffixes.
 | Encryption (user behavior) | Ransomware Resilience identifies anomalous file read, writie, and renaming activity performed by a specific user.
 | Data breach | Ransomware Resilience detects anomalous file read access patterns performed by a specific user.

@@ -1,0 +1,26 @@
+=== Enhanced flexibility for protection strategies
+
+Ransomware Resilience now provides broader support for ransomware protection strategies, enabling you to create a protection strategy for suspicious user behavior detection only. Previously, all ransomware protection strategies had to include encryption detection. Now, when you create a protection strategy, it can be rooted in encryption detection or suspicious user behavior detection. 
+
+Protection strategies can still include both encryption detection _and_ suspicious user behavior detection. Blocking file extensions can also be added to any protection strategy. 
+
+If you disable part of the protection strategy for an existing policy, any extant alerts created under the previous iteration of the policy only be marked as "Resolved" not "Dismissed". For example, if you had a protection strategy that included encryption detection and suspicious user behavior but you disabled encryption detection, you can only resolve an existing encryption alert for that workload. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Protect workloads with NetApp Ransomware Resilience protection strategies^].
+
+
+=== Automate responses to user behavior events
+
+Ransomware Resilience now supports a new policy with user behavior detection that automatically creates a snapshot and blocks a user when suspicious activity is detected. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Learn about user behavior detection^].
+
+=== Modify FPolicy extension list
+
+Ransomware Resilience uses FPolicy to monitor for unusual file extensions introduced to a workload. With this enhancement, you can manually modify the list of file extensions to increase the security posture or limit alerts if you're aware of new file extensions being added to the workload. 
+
+// link
+
+=== SOAR action remediation for blocked user
+
+? 
