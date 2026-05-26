@@ -24,3 +24,8 @@ Ransomware Resilience uses FPolicy to monitor for unusual file extensions introd
 === SOAR action remediation for blocked user
 
 ? 
+
+// === Webhooks
+
+// === Cybervault
+// CRR for cybervault, conflig only, categorization of snapshots
