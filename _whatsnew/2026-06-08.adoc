@@ -27,5 +27,7 @@ Ransomware Resilience uses FPolicy to monitor for unusual file extensions introd
 
 // === Webhooks
 
-// === Cybervault
+// === Cybervault (private)
 // CRR for cybervault, conflig only, categorization of snapshots
+// primary is only backed up -- there is no cleaning (deploy cybervault w/ no clean room)
+// snapshots will be labeled as usable / not usable (clean & dirty) - for cybervault & general clean restore
