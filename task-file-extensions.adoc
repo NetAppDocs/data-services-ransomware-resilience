@@ -29,7 +29,7 @@ Select **Upload** then choose a CSV file that includes the list of file extensio
 To enter a list, select **Enter manually** then enter the list as a set of comma-separated values, for example "vvv, xyz, zzz".
 . Select **Add**. 
 
-.Remove blocked extensiosn
+.Remove blocked extensions
 . In Ransomware Resilience, select **Settings**. 
 . Under the Blocked file extensions heading, select **Manage**.
 . In the list of blocked file extensions, select the box next to the file extensions you want to remove. 
