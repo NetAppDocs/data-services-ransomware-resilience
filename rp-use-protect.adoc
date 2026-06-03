@@ -18,7 +18,16 @@ include::_include/console-role-admin.adoc[]
 
 Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
-- **Detection policies** identify ransomware threats 
+- **Detection policies** identify ransomware threats. There are three options when you configure detection:
++
+** Encryption detection
+** Suspicious user behavior detection
+** Block suspicious file extensions 
++
+You can enable all three or a combination provided you include encryption detection or suspicious user behavior detection. Additional configurations are required for link:concept-user-behavior.html[suspicious user behavior detection].
++
+[TIP]
+When you enable detection with block suspicious file extensions, hover over the tooltip then select **Manage** to link:task-file-extensions.html[modify the list of blocked extensions].
 
 - **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
 +
@@ -332,5 +341,3 @@ You can delete a protection strategy that is not currently associated with any w
 . In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
 
 . From the Actions menu, select *Delete policy*. 
-
-

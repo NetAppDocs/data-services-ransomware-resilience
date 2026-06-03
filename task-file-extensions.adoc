@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: task-file-extensions.adoc
+keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
+summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+---
+= Manage blocked file extensions in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. By default, Ransomware Resilience develops a list of blocked file extensions based on the nature of the workload. You can manually modify the list of file extensions, adding or removing file extensions as needed if the nature of the workload changes. 
+
+== Modify blocked extensions
+
+Your Ransomware Resilience organization must include a policy that blocks suspicious file extensions before you can perform this task. Learn how to link:rp-use-protect.html[configure a ransomware protection strategy].
+
+.Add blocked extensions
+. In Ransomware Resilience, select **Settings**. 
+. Under the Blocked file extensions heading, select **Manage**. 
+. Select **Add**. 
++
+image:blocked-file-extensions.png[Screenshot of blocked file extensions.]
+. To upload a list of blocked file extensions, select the **Upload** radio button.
++
+Select **Upload** then choose a CSV file that includes the list of file extensions you want to block. 
++
+To enter a list, select **Enter manually** then enter the list as a set of comma-separated values, for example "vvv, xyz, zzz".
+. Select **Add**. 
+
+.Remove blocked extensiosn
+. In Ransomware Resilience, select **Settings**. 
+. Under the Blocked file extensions heading, select **Manage**.
+. In the list of blocked file extensions, select the box next to the file extensions you want to remove. 
++
+image:blocked-file-extensions.png[Screenshot of blocked file extensions.]
+. At the top of the list, select **Remove**.
+. Select **Save**. 
+
+== More information 
+
+* link:rp-use-protect.html[Configure a ransomware protection strategy]
