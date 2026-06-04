@@ -1,0 +1,5 @@
+=== Google Cloud NetApp Volumes support (preview)
+
+Ransomware Resilience now supports creating protection groups for workloads in Google Cloud NetApp Volumes systems, enabling you to organize multiple workloads under one policy to streamline management.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html[Create a protection group in Ransomware Resilience^].

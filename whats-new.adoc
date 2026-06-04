@@ -18,6 +18,9 @@ Learn what's new in NetApp Ransomware Resilience.
 == 08 June 2026
 include::_whatsnew/2026-06-08.adoc[]
 
+== 26 May 2026
+include::_whatsnew/2026-05-26.adoc[]
+
 == 18 May 2026
 include::_whatsnew/2026-05-18.adoc[]
 

@@ -54,9 +54,8 @@ If you've connected an ONTAP cluster to the Console with non-admin credentials, 
 +
 Refer to the https://docs.netapp.com/us-en/console-setup-admin/reference-permissions.html[AWS, Azure, or S3 permissions list^] for details. 
 
-* NetApp Backup and Recovery does not need to be enabled on the system. 
-+
-Ransomware Resilience helps configure a backup destination through the Settings option. See link:task-backup-destination.html[Add a backup destination].
+[NOTE]
+You can link:task-backup-destination.html[configure a backup destination in Ransomware Resilience]. If your workloads are protected by NetApp Backup and Recovery, Ransomware Resilience automatically recognizes protection details, including snapshots and backup destinations. Backup and Recovery is _not_ required to use Ransomware Resilience. 
 
 == User behavior detection requirements
 
