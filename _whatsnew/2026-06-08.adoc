@@ -14,11 +14,3 @@ Ransomware Resilience SOAR playbooks now remediation steps after you've blocked 
 
 link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html[Integrate a SOAR playbook^].
 
-
-
-// === Webhooks
-
-// === Cybervault (private)
-// CRR for cybervault, conflig only, categorization of snapshots
-// primary is only backed up -- there is no cleaning (deploy cybervault w/ no clean room)
-// snapshots will be labeled as usable / not usable (clean & dirty) - for cybervault & general clean restore
