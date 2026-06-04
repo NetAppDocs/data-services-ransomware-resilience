@@ -162,37 +162,6 @@ You can add a user back to detection after.
 . Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
 . In the dialog, select **Remove** to confirm you want to remove the selected users. 
 
-== Configure automated responses
-
-If a user behavior event triggers an alert, Ransomware Resilience enables you to automatically create a snapshot of the workload and block the user associated with the alert. This capability accelerates response time, enables swifter recovery, and prevents future activity by the user. 
-
-[NOTE]
-For suspicious user behavior alerts, you can't block a user. 
-
-.Steps
-. In Ransomware Resilience, select **Settings**.
-. In the Settings dashboard, locate the User activity card then select **Manage**. 
-. Select the **Automated responses** tab. 
-. Select **Add**.
-. Enter a **Name** for the automated response. 
-. Choose the types of alerts that trigger the response:
-+ 
-[options="header",cols="25,75"]
-|===
-| Attack type | Definition 
-| Encryption (user behavior) | Ransomware Resilience identifies anomalous file read, writie, and renaming activity performed by a specific user.
-| Data breach | Ransomware Resilience detects anomalous file read access patterns performed by a specific user.
-| Data destruction | Ransomware Resilience discovers mass deletion of files by a specific user.
-| Suspicious user behavior | Ransomware Resilience identifies anomalous behavior beyond the scope of data breach, data destruction, or encryption.
-|===
-. Choose the automated response strategy:
-* Select **Block user access** to block the user from any further activity on the storage VM monitored by Ransomware Resilience. 
-* Select **Take snapshots** to create a snapshot of the workload. 
-. Select **Add** to create the response. 
-
-After creating the automated response, it will apply to all workloads with the user behavior detection policy. You can pause, modify, or delete the automated response at any time.
-//Consequence to deleting. 
-
 == Respond to user activity alerts
 
 After you configure user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].
