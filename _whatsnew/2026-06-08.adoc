@@ -8,21 +8,13 @@ If you disable part of the protection strategy for an existing policy, any extan
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Protect workloads with NetApp Ransomware Resilience protection strategies^].
 
-=== Automate responses to user behavior events
+=== SOAR playbook enhancements
 
-Ransomware Resilience now supports a new policy with user behavior detection that automatically creates a snapshot and blocks a user when suspicious activity is detected. 
+Ransomware Resilience SOAR playbooks now remediation steps after you've blocked a user or taken a volume offline. You can now take a volume back online. 
 
-For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Learn about user behavior detection^].
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html[Integrate a SOAR playbook^].
 
-=== Modify FPolicy extension list
 
-Ransomware Resilience uses FPolicy to monitor for unusual file extensions introduced to a workload. With this enhancement, you can manually modify the list of file extensions to increase the security posture or limit alerts if you're aware of new file extensions being added to the workload. 
-
-// link
-
-=== SOAR action remediation for blocked user
-
-? 
 
 // === Webhooks
 
