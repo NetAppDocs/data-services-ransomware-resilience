@@ -13,11 +13,11 @@ Ransomware Resilience offers security orchestration, automation, and response (S
 
 Ransomware Resilience playbooks offer the following capabilities:
 
-* Block a user*
+* Block/unblock a user*
 * Create a snapshot of a volume
 * Enrich an IP address with threat intelligence
 * Enrich storage information for a given agent and system
-* Take a volume offline for incident response
+* Take a volume offline for incident response or take a volume online after an incident
 * Test connectivity
 * Review the status of an enrichment job
 
