@@ -18,7 +18,13 @@ include::_include/console-role-admin.adoc[]
 
 Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
-- **Detection policies** identify ransomware threats 
+- **Detection policies** identify ransomware threats. You have three options for detection:
++
+* Encryption detection
+* Suspicious user activity 
+* Block suspicious file extensions
++
+Your detection policy can include all three options or a combination. It must include either encryption detection or link:suspicious-user-activity.html[suspicious user activity (which requires additional configurations)].
 
 - **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
 +
