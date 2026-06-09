@@ -16,7 +16,7 @@ If Ransomware Resilience detects a possible attack, a notification appears in th
 
 You can dismiss false positives or decide to recover your data immediately.  
 
-TIP: If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and doesn't initiate an alert on it again. 
+TIP: If you dismiss the alert, Ransomware Resilience learns this behavior, associates it with normal operations, and stops sending alerts on similar events.  
 
 To begin to recover your data, mark the alert as ready for recovery so that your storage administrator can begin the recovery process. 
 
@@ -72,6 +72,9 @@ CAUTION: After you dismiss an attack, you can't revert its status. If you dismis
 | *Resolved* | The incident has been fixed.
 | *Auto Resolved* | For low priority alerts, the incident is automatically resolved if there has been no action taken on it within five days.
 |===
+
+[NOTE]
+If you have an existing protection strategy and then disable one form of detection on it, any alerts created under the previous iteration of the policy can only be marked as "Resolved" not "Dismissed." For example, if you had an active alert for protection strategy that included encryption detection and suspicious user behavior but then disabled encryption detection, you can only mark that alert as "Resolved."
 
 == View alerts
 
