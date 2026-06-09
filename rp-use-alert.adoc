@@ -74,7 +74,7 @@ CAUTION: After you dismiss an attack, you can't revert its status. If you dismis
 |===
 
 [NOTE]
-If you have an existing protection strategy and then disable one form of detection on it, any alerts created under the previous iteration of the policy can only be marked as "Resolved" not "Dismissed." For example, if you had an active alert for protection strategy that included encryption detection and suspicious user behavior but then disabled encryption detection, you can only mark that alert as "Resolved."
+If you have an existing protection strategy and then disable one form of detection on it, any alerts created under the previous iteration of the policy can only be marked as "Resolved" not "Dismissed." For example, if you had an active alert for a protection strategy that included encryption detection and suspicious user behavior but then disabled encryption detection, you can only mark that alert as "Resolved."
 
 == View alerts
 

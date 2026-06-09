@@ -42,10 +42,10 @@ The protection dashboard in Ransomware Resilience displays detailed information 
 
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
 
-* *Protected*: A policy is applied. ARP (or ARP/AI depending on the ONTAP version) is enabled on all volumes related to the workload. 
+* *Protected*: A detection policy is applied. 
 * *At risk*: No policy is applied. If a workload does not have a detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled. 
-* *In progress*: A policy is being applied but not completed yet. 
-* *Failed*: A policy is applied but is not working. 
+* *In progress*: A policy is being applied, but the operation has not completed. 
+* *Failed*: A policy has been configured but there's an error. 
 
 *Detection status*:
 +
