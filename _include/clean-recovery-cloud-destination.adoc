@@ -4,7 +4,7 @@
 * Allow routing from the SVM data LIF IP to the IRE. 
 
 [NOTE]
-If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this clean room SVM data LIF IP requirement.
+If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, skip this clean room SVM data LIF IP requirement.
 
 .Production environment route table 
 * The production route table must allow traffic from the IRE subnet to the clean restore data LIF IP. You must add this route to the production route table. 

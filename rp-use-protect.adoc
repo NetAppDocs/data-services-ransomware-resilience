@@ -39,7 +39,7 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 Currently, you can only replicate snapshots to on-premises ONTAP storage.
 
 [NOTE]
-If you're configuring protection strategies for Amazon FSxN for ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
+If you're configuring protection strategies for Amazon FSx for NetApp ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:task-protection-group.html[group workloads] to collectively protect volumes under one strategy. 
