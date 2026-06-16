@@ -65,13 +65,13 @@ If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, ski
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Sid": "EC2IREFullAccess",
             "Effect": "Allow",
             "Action": "ec2:*",
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                    "aws:ResourceTag/rps::ire-name": "*"
                 }
             }
         },
@@ -98,12 +98,12 @@ If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, ski
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                    "aws:ResourceTag/rps::ire-name": "*"
                 }
             }
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Sid": "S3FullAccessToIREStateBucketCreation",
             "Effect": "Allow",
             "Action": [
                 "s3:CreateBucket"
@@ -111,20 +111,20 @@ If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, ski
             "Resource": "*"
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Sid": "S3FullAccessToIREStateBucketObjects",
             "Effect": "Allow",
             "Action": [
                 "s3:*"
             ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+            "Resource": "arn:aws:s3:::*-netapp-ire-state-bucket/*"
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Sid": "S3FullAccessToIREStateBucket",
             "Effect": "Allow",
             "Action": [
                 "s3:*"
             ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+            "Resource": "arn:aws:s3:::*-netapp-ire-state-bucket"
         }
     ]
 }
