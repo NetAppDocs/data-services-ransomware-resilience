@@ -32,6 +32,7 @@ Your NetApp Console configuration requires:
 NOTE: If you have multiple Console agents in a single Console organization, Ransomware Resilience will scan ONTAP resources across all Console agents beyond the one that is currently selected in the Console UI. 
 
 * The Console agent must have the `cloudmanager-ransomware-protection` container in an active state. 
+* There's a limit of 3,000 workloads per Console agent. 
 
 * For ONTAP or Cloud Volumes ONTAP clusters, Ransomware Resilience requires ONTAP version 9.11.1 or greater. 
 [NOTE]
