@@ -11,51 +11,35 @@ summary: Conduct a ransomware readiness drill by simulating a ransomware attack 
 :imagesdir: ./media/
 
 [.lead]
-Run a ransomware attack readiness drill by simulating an attack on a new sample workload. Investigate the simulated attack and recover the workload. Use this feature to test alert notifications, response, and recovery. Run the drill as often as needed.
+With NetApp Ransomware Resilience, you can simulate an attack on a sample workload to assess your readiness for a ransomware attack. When you run a readiness drill, you can nvestigate the simulated attack and recover the workload to assess notifications, response, and recovery. 
 
-TIP: Your real workload data is not impacted. 
-
-You can run readiness drills on NFS and CIFS (SMB) workloads. 
+You can run readiness drills for different types of attacks as often as you need to. Running a readiness drill doesn't impact your production workloads. 
 
 == Configure a ransomware attack readiness drill
 
-Before you run a simulation, set up a drill on the Settings page. Access the Settings page from the Actions option in the top menu.
+Before running a simulation, you must configure the readiness drill. You must create the readiness drill for a specific type of ransomware attack. Ransomware Resilience recognizes five types of attacks:
 
-You need to enter a user name and password for the following situations: 
+include::_include/attack-types.adoc[]
 
-* If user name or password changes occurred for the previously selected storage VM
-* If you select a different CIFS (SMB) storage VM
-* If you enter a different test workload name
 
 include::_include/console-role-admin.adoc[]
 
 .Steps
-
-. From the NetApp Ransomware Resilience menu, select the *Run readiness drill* button at the top right.
-+
-image:screen-dashboard.png[Dashboard page showing the Run readiness drill button]
-//. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-//. From the drop-down menu, select *Readiness drill* or *Settings*.
-
+// update images
+. In Ransomware Resilience, select **Settings**.
 . In the Readiness drill card on the Settings page, select *Configure*.
 +
 The Console displays the Configure readiness drill page.
 +
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
-
-. Do the following: 
-.. Select the Console agent you want to use for the readiness drill.
-.. Select a test system. 
-.. Select a test storage SVM. 
-.. If you selected a CIFS (SMB) storage VM, **User name** and **Password** fields appear. Enter the user name and password for the storage VM.
-.. Select the readiness drill type. For a manual recovery from an encryption data breach, choose **Custom recovery**. For recovery from suspicious user behavior, choose **Data breach**.
-.. Enter the name for the test workload. Do not include dashes in the name. 
-
+. Select the *Ransomware attack type*.
+. Provide the configuration for the readiness drill environment. Select the *Console agent* you want to use for the readiness drill, the *Primary system*, and the *Storage VM*.
++
+If you selected a CIFS (SMB) storage VM, also enter the **User name** and **Password** for the storage VM. 
+. Enter a name for the test workload. It's automatically prepended with "rps_test_". The name cannot include dashes. 
 . Select *Save*.
-//+ 
-//A message appears that the readiness drill environment is configured. In that message, select *Start readiness drill* to start the drill.
 
-TIP: You can edit the readiness drill configuration later using the Settings page. 
+TIP: You can edit the readiness drill configuration later from the Settings page. 
 
 == Start a readiness drill 
 
