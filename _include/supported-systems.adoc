@@ -15,7 +15,7 @@
 .2+| ONTAP (on-premises)
 | CIFS & NFS  | 9.11.1 and later 
 | SAN (iSCSI & NVMe) |  9.17.1 and later
-| Google Cloud NetApp Volumes | CIFS, NFS, SAN (iSCSI & NVMe) | N/A
+| Google Cloud NetApp Volumes | CIFS & NFS | N/A
 |===
 
 [NOTE]
