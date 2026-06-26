@@ -27,6 +27,9 @@ Within each Console agent, select the systems where you want to identify workloa
 
 Discovering workloads does not automatically protect them. Ransomware Resilience recognizes existing protection policies from NetApp Backup and Recovery or ONTAP in the discovery process. Any workloads that don't have protection require you to link:rp-use-protect.html[configure protection].
 
+[NOTE]
+Ransomware Resilience can only discover up to 3,000 workloads per Console agent. 
+
 .Steps
 
 . From the NetApp Console, select *Protection* > *Ransomware Resilience*. 

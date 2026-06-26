@@ -18,13 +18,13 @@ include::_include/console-role-admin.adoc[]
 
 Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
 
-- **Detection policies** identify ransomware threats. There are three options when you configure detection:
+- **Detection policies** identify ransomware threats. You have three options for detection:
 +
-** Encryption detection
-** Suspicious user behavior detection
-** Block suspicious file extensions 
+* Encryption detection
+* Suspicious user activity 
+* Block suspicious file extensions
 +
-You can enable all three or a combination provided you include encryption detection or suspicious user behavior detection. Additional configurations are required for link:concept-user-behavior.html[suspicious user behavior detection].
+Your detection policy can include all three options or a combination. It must include either encryption detection or link:suspicious-user-activity.html[suspicious user activity (which requires additional configurations)].
 +
 [TIP]
 When you enable detection with block suspicious file extensions, hover over the tooltip then select **Manage** to link:task-file-extensions.html[modify the list of blocked extensions].
@@ -42,7 +42,7 @@ If you're using other NetApp products to protect your workload, Ransomware Resil
 Currently, you can only replicate snapshots to on-premises ONTAP storage.
 
 [NOTE]
-If you're configuring protection strategies for Amazon FSxN for ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
+If you're configuring protection strategies for Amazon FSx for NetApp ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
 
 [TIP]
 For enhanced management and protection of your data estate, you can create link:task-protection-group.html[group workloads] to collectively protect volumes under one strategy. 
@@ -162,11 +162,14 @@ NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilien
 
 * *Detection policy*: 
 ** *Policy*: Choose one of the predesigned detection policies. 
-** *Primary detection*: Enable Ransomware Resilience to detect potential ransomware attacks. 
-** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events, such as data breaches. 
-** *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions. Ransomware Resilience takes automated snapshot copies when Primary detection is enabled. 
+** *Encryption detection*: Enable Ransomware Resilience to detect encryption-based attacks. 
+** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events such as data breaches or data destruction. 
+** *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
 +
 If you want to change the blocked file extensions, edit them in System Manager. 
++
+[NOTE]
+You can choose any combination of the detection policies. The detection policy must include either encryption detection or suspicious user behavior detection. 
 
 * *Snapshot policy*: 
 ** *Snapshot policy base name*: Select a policy or select *Create* and enter a name for the snapshot policy. 

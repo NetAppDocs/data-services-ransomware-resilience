@@ -56,12 +56,12 @@ The *user_name* and *user_id* fields are only pertinent if you've configured xre
 
 == Configure AWS Security Hub for threat detection
 
-Before you enable AWS Security Hub in Ransomware Resilience, you need to do the following high-level steps in AWS Security Hub: 
+Before you enable AWS Security Hub in Ransomware Resilience, you need to perform security configurations in AWS Security Hub:
 
 * Set up permissions in AWS Security Hub.
 * Set up the authentication access key and secret key in AWS Security Hub. (These steps are not provided here.)
 
-.Steps to set up permissions in AWS Security Hub
+.Set up permissions in AWS Security Hub
 
 . Go to *AWS IAM console*. 
 . Select *Policies*.

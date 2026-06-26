@@ -13,15 +13,15 @@ Ransomware Resilience offers security orchestration, automation, and response (S
 
 Ransomware Resilience playbooks offer the following capabilities:
 
-* Block a user*
+* Block/unblock a user*
 * Create a snapshot of a volume
 * Enrich an IP address with threat intelligence
 * Enrich storage information for a given agent and system
-* Take a volume offline for incident response
+* Take a volume offline for incident response or take a volume online after an incident
 * Test connectivity
 * Review the status of an enrichment job
 
-{asterisk} Blocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior detection] on a supported system to block a user. 
+{asterisk} Blocking/unblocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior detection] on a supported system to block a user. 
 
 == Playbooks
 
@@ -30,13 +30,11 @@ Ransomware Resilience offers playbooks for Google SecOps, Microsoft Sentinel, an
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience[Google SecOps^]
 * link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks[Microsoft Sentinel^]
 * link:https://github.com/splunk-soar-connectors/netappransomwareresilience[Splunk^]
-
-[NOTE]
++
 For Splunk Cloud, you must be running platform version 7.0, 7.1, 7.2, 8.0, or 8.4. For more information, see link:https://splunkbase.splunk.com/app/8483[Splunkbase^].
 
 [NOTE]
 For Azure NetApp Files systems, review the link:rp-reference-limitations.html[limitations for Azure NetApp Files] with SOAR.
 
-== More information
-
+.More information
 * link:task-siem.html[Connect NetApp Ransomware Resilience to a SIEM for threat analysis and detection]

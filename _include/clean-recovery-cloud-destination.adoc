@@ -4,7 +4,7 @@
 * Allow routing from the SVM data LIF IP to the IRE. 
 
 [NOTE]
-If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this clean room SVM data LIF IP requirement.
+If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, skip this clean room SVM data LIF IP requirement.
 
 .Production environment route table 
 * The production route table must allow traffic from the IRE subnet to the clean restore data LIF IP. You must add this route to the production route table. 
@@ -65,13 +65,13 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "EC2Isolated recovery environmentFullAccess",
+            "Sid": "EC2IREFullAccess",
             "Effect": "Allow",
             "Action": "ec2:*",
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                    "aws:ResourceTag/rps::ire-name": "*"
                 }
             }
         },
@@ -98,12 +98,12 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
             "Resource": "*",
             "Condition": {
                 "StringLike": {
-                    "aws:ResourceTag/rps::Isolated recovery environment-name": "*"
+                    "aws:ResourceTag/rps::ire-name": "*"
                 }
             }
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketCreation",
+            "Sid": "S3FullAccessToIREStateBucketCreation",
             "Effect": "Allow",
             "Action": [
                 "s3:CreateBucket"
@@ -111,20 +111,20 @@ If you're configuring an IRE with the source in Amazon FSxN for ONTAP, skip this
             "Resource": "*"
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucketObjects",
+            "Sid": "S3FullAccessToIREStateBucketObjects",
             "Effect": "Allow",
             "Action": [
                 "s3:*"
             ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket/*"
+            "Resource": "arn:aws:s3:::*-netapp-ire-state-bucket/*"
         },
         {
-            "Sid": "S3FullAccessToIsolated recovery environmentStateBucket",
+            "Sid": "S3FullAccessToIREStateBucket",
             "Effect": "Allow",
             "Action": [
                 "s3:*"
             ],
-            "Resource": "arn:aws:s3:::*-netapp-Isolated recovery environment-state-bucket"
+            "Resource": "arn:aws:s3:::*-netapp-ire-state-bucket"
         }
     ]
 }

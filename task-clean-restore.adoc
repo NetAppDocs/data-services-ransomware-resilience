@@ -54,7 +54,7 @@ a|
 a| 
 * US East 1
 * EU Central 1
-| Cloud: Amazon FSxN for ONTAP | Cloud: AWS
+| Cloud: Amazon FSx for NetApp ONTAP | Cloud: AWS
 a| 
 * US East 1
 * EU Central 1
@@ -206,7 +206,7 @@ The process for creating an isolated recovery room differs if the environment is
 . Expand the *Systems* section. Choose the systems you want to connect to the IRE. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
 +
 [NOTE]
-For IREs deployed to Amazon FSxN for ONTAP, you don't need to provide this information. 
+For IREs deployed to Amazon FSx for NetApp ONTAP, you don't need to provide this information. 
 + 
 image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Authentication** section. 

@@ -1,0 +1,16 @@
+=== Enhanced flexibility for protection strategies
+
+Ransomware Resilience now provides more flexibility in choosing ransomware detection strategies. Previously, all ransomware protection strategies had to include encryption detection. Now, you can enable a ransomware protection strategy with only user behavior detection.  
+
+Protection strategies can still include both encryption detection _and_ suspicious user behavior detection. Blocking file extensions can also be added to any protection strategy. 
+
+If you disable part of the protection strategy for an existing policy, any extant alerts created under the previous iteration of the policy can only be marked as "Resolved" not "Dismissed." For example, if you had a protection strategy that included encryption detection and suspicious user behavior but you disabled encryption detection, you can only resolve an existing encryption alert for that workload. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[Protect workloads with NetApp Ransomware Resilience protection strategies^].
+
+=== SOAR playbook enhancements
+
+Ransomware Resilience SOAR playbooks now provide remediation steps after you've blocked a user or taken a volume offline. You can now take a volume back online and unblock a user if the action was deemed not a ransomware threat. 
+
+link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/reference-soar.html[Integrate a SOAR playbook^].
+
