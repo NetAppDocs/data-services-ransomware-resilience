@@ -131,7 +131,7 @@ The ransomware protection strategy includes:
 +
 The detection policy does not change the policies managed in other products.
 +
-The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^]. If you override the existing policies, you should manage the new policies in Ransomware Resilience. 
 
 === Create a ransomware protection strategy (if you have no snapshot or backup policies)
 
