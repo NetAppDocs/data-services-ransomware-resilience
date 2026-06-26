@@ -53,22 +53,10 @@ TIP: A workload can have a ransomware detection *Learning mode* status when a de
 
 .Steps 
 
-. Do one of the following: 
+. In Ransomware Resilience, select **Settings**.
+. In the Settings page, select *Start*.
 
-* From the Ransomware Resilience menu, select the *Run readiness drill* button at the top right.
-+
-image:screen-dashboard.png[Dashboard page showing the Run readiness drill button]
-+
-* OR, from the Settings page, in the Readiness drill card, select *Start*.
-//. Do one of the following:
-//* If you haven't already configured the readiness drill, a message appears that you first need to configure the readiness drill.
-//+
-//image:screen-settings-alert-drill-needtoconfigure.png[Settings page showing the readiness drill message that you need to configure the readiness drill]
-//+
-//** Select *Configure readiness drill test environment*. 
-//** Continue with the instructions in the previous section to configure the drill test environment in the Settings option.
-
-NOTE: You can't edit the readiness drill configuration while the drill is running. You can reset the drill to stop it and modify the configuration. 
+NOTE: You can't edit the readiness drill configuration while it's running. If you need to modify the drill while it's in progress, reset it, then change the configuration. 
 
 //== Clean up and stop a readiness drill 
 
@@ -95,18 +83,7 @@ Test your readiness by responding to a readiness drill alert.
 include::_include/console-role-admin.adoc[]
 
 .Steps
-//. Do one of the following: 
-
 . From the Ransomware Resilience menu, select *Alerts*.
-//+
-//* Or, from the menu, select the *Notifications* icon, select *View alert* next to the readiness drill alert.
-//+
-+
-The Console displays the Alerts page. In the Alert ID column, you see "Readiness drill" next to the ID. 
-+
-image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
-
-
 . Select the alert with the "Readiness drill" indication. A list of incident alerts appears on the Alerts details page.  
 +
 image:screen-alerts-readiness-details.png[Alerts details page showing the readiness drill alert]
@@ -117,13 +94,13 @@ image:screen-alerts-readiness-details.png[Alerts details page showing the readin
 image:screen-alerts-readiness-incidents2.png[Incident page showing the readiness drill alert]
 
 
-Here are some things to look for:
+. Review the incident:
 
 * Look at the Potential attack severity. 
 +
 If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
 
-* Look at the file activity and suspected processes: 
+* Review the file activity and suspected processes: 
 ** Look at the incoming detected data compared to the expected data. 
 ** Look at the creation rate of files that is detected compared to the expected rate.
 ** Look at the file renaming rate that is detected compared to the expected rate.
@@ -180,7 +157,8 @@ IMPORTANT: After you dismiss an attack, you cannot change it back. If you dismis
 
 
 == Review reports on the readiness drill
-After the readiness drill is complete, you might want to review and save a report on the drill.
+
+After the readiness drill completes, you can save a record of the drill to chart your readiness over time. 
 
 include::_include/console-role-admin-viewer.adoc[]
 
