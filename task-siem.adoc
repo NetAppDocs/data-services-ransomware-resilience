@@ -19,6 +19,8 @@ Ransomware Resilience supports the following SIEM systems:
 * Splunk Cloud
 * Splunk Enterprise
 
+Ransomware Resilience also enables SIEM connection via <<webhooks>>. 
+
 [TIP]
 Ransomware Resilience also provides link:reference-soar.html[security orchestration, automation, and response (SOAR) playbooks^].
 
@@ -129,7 +131,7 @@ If you use a custom log type, you must create a parser. Go to *SIEM Settings* > 
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 image:screen-settings2.png[Settings page]
-. In the Settings page, select *Connect* in the SIEM connection tile. 
+. In the Settings page, select *Connect* in the SIEM connection tile then choose **Google SecOps** from the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
 . Choose *Google SecOps* as the SIEM provider. 
@@ -280,7 +282,17 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Enter the event collector token you created in Splunk.
 . Select *Connect* to begin sending SIEM data. 
 
-## Next steps
+[[webhooks]]
+== Configure a SIEM with webhooks
+
+Before creating the SIEM connection with Ransomware Resilience, you must have configured the SIEM on its own platform. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**.
+. In the *SIEM* tile, select **Connect** then **Webhooks** if this is your first time configuring a SIEM. Otherwise, select **Manage**. On the overview page, select **+ Connect** then **Webhook**.
+. Provide the **Name** and **URL** for the connection. 
+
+== Next steps
 
 * link:reference-soar.html[Integrate a SOAR playbook]
 
