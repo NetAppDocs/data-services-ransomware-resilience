@@ -93,10 +93,9 @@ Before you enable AWS Security Hub in Ransomware Resilience, you need to perform
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 image:screen-settings2.png[Settings page]
-. In the Settings page, select *Connect* in the SIEM connection tile. 
+. In the Settings page, select *Connect* in the SIEM connection tile then choose **AWS Security Hub** in the the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
-. Choose *AWS Security Hub* as the SIEM provider. 
 . Review the *Permissions* sections. 
 . Expand the *Authentication* section. 
 .. Enter the AWS *Account* then select the account's *AWS Region*. 
@@ -134,7 +133,6 @@ image:screen-settings2.png[Settings page]
 . In the Settings page, select *Connect* in the SIEM connection tile then choose **Google SecOps** from the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
-. Choose *Google SecOps* as the SIEM provider. 
 . Review the *Prerequisites* and *Webhook feed* sections. 
 . Expand the *Authentication* section. 
 .. Enter the *Webhook URL* you copied from Google SecOps' webhook endpoint URL. 
@@ -229,10 +227,9 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 image:screen-settings2.png[Settings page]
-. In the Settings page, select *Connect* in the SIEM connection tile. 
+. In the Settings page, select *Connect* in the SIEM connection tile then choose **Microsoft Sentinel** from the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
-. Choose *Microsoft Sentinel* as the SIEM provider. 
 . Review the *Prerequisites*, *Registration*, and *Permissions* sections to ensure you've successfully completed each step. 
 . Expand the *Authentication* section. 
 .. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
