@@ -165,11 +165,11 @@ If you've configured user behavior detection, you can view user-level data and b
 . Review the incidents in the alert.
 .. To block a suspected user in your environment, select *Block* next to the user's name.
 .. To disable alerts on a given user who is the subject of an alert you know to be false, select the three dots (`...`) then **Exclude this user from monitoring**. Review the dialog then select **Exclude** to confirm.
-.. In the *Responses* tile, select **Take snapsoht now** to create a snapshot.
+.. In the *Responses* tile, select **Take snapshot now** to create a snapshot.
 .. If you've enabled an automated response on the SVM, select **Edit user blocking** to block the user. To block the user, select **Time period for blocked user** then set the duration of the block (anywhere from one hour to permanent). You can also unblock the user if you believe the alert to not be a ransomware event. Select **Save**. 
 
 [TIP]
-To re-enable alerts for a user, return the alert. Select the three dots then **Include this user in monitoring**. You can also link:suspicious-user-activity.html#exclude-users-from-alerts[Exclude users] from monitoring. 
+To re-enable alerts for a user, return the alert. Select the three dots then **Include this user in monitoring**. You can also link:task-users-manage.html[Exclude users] from monitoring. 
 
 == Mark ransomware incidents as ready for recovery (after incidents are neutralized)
 

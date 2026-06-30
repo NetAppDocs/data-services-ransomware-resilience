@@ -2,16 +2,16 @@
 sidebar: sidebar
 permalink: task-users-manage.html
 keywords: user activity detection, 
-summary: After creating the user activity connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from notifications. 
+summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. 
 ---
 = Manage user blocking and alerts in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-After creating the user activity connector in NetApp Ransomware Resilience, you can block and unblock users when you experience ransomware events and evaluate them. You can also selectively exclude users from ransomware alerts if you are certain their actions aren't attacks.
+After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users when you experience ransomware events and evaluate them. You can also selectively exclude users from ransomware alerts if you are certain their actions aren't attacks.
 
-You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated policy.
+You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] to block users.
 
 [TIP]
 You can link:task-automate-user-activity.html[automate responses] to user activity detection events. 
@@ -35,7 +35,7 @@ You can block users when you believe they're responsible for malicious activity.
 . Select the **Users** tab. 
 . Select **Edit user blocking**. 
 . Choose the modification. To modify the duration of the blocking, select **Time period for blocked users** then modify the duration. To remove users from the blocked user list, select **Unblock users**. 
-. Select the checkbox next to the name of the block user whose status you want to change. 
+. Select the checkbox next to the name of the blocked user whose status you want to change. 
 . Select **Save**. 
 
 == Manage user alerts
@@ -53,8 +53,8 @@ If there are certain trusted users whose behavior might trigger user behavior al
 On your local machine, review the file. Remove the names of all users that you want to maintain detection for. When the list includes only the names of users you want to exclude from detection, save it.
 +
 In Ransomware Resilience, select **Upload**. Locate and upload the file. 
-. Select **Add** to complete adding the users to the exlcusion list. 
-. In the **Excluded users** tab, the names of the users removed from user behavior detection alerts now display in the dashboard. 
+. Select **Add** to complete adding the users to the exclusion list. 
+. In the **Excluded from monitoring** tab, the names of the users removed from user behavior detection alerts now display in the dashboard. 
 
 [TIP]
 You can also exclude a user directly from an alert. For more information, see link:rp-use-alert.html[Respond to ransomware alerts].
@@ -63,8 +63,8 @@ You can also exclude a user directly from an alert. For more information, see li
 . In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
 . Select the **Excluded from monitoring** tab.
 . Select **Add**.
-. To exlcude individual users from the UI, choose **Select manually**.
-. Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
+. To exclude individual users from the UI, choose **Select manually**.
+. Locate the name of the user you want to remove from the excluded user list. Select the action menu (`...`) on the row with the user's name then **Remove**.
 . In the dialog, select **Remove** to confirm you want to remove the selected users. 
 
 == Next steps
