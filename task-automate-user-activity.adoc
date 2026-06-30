@@ -1,0 +1,57 @@
+---
+sidebar: sidebar
+permalink: task-automate-user-activity.adoc
+keywords: data breach detection, data breach, user activity, automated response
+summary: User activity detection in Ransomware Resilience enables you to detect user activity that could represent a potential threat. 
+---
+= Configure user activity detection in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+NetApp Ransomware Resilience supports creating automated responses to link:concept-user-behavior.html[user activity events]. With automated responses, Ransomware Resilience can create a snapshot or block a user when an attack or warning is detected, enabling a swifter response to ransomware events.
+
+Automated responses are supported for encryption (user behavior), data breach, and data destruction events. You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated policy.
+
+== Create an automated response
+
+You can only protect one storage VM with at least one workload that is protected with a suspicious user behavior detection policy. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the User activity monitoring tile, select **Manage**. 
+. Select the **Automated responses** tab. 
+. Select **Add** to create the behavior. 
+. Enter a **Name** for the automated response.
+. Choose the type of event to trigger the response:: **Attack** or **Warning**. Learn more about the different link:rp-use-alert.html#alert-types-and-statuses[types of alerts].
+. Choose the response:
+* **Block user access**: The user is blocked from all storage VMs protected by Ransomware Resilience when the alert is triggered. 
++
+If you choose this option, you must also select the duration of the block. It can be an interval between 1 and 24 hours or permanent. 
+* **Take snapshots**: Create a snapshot for the impacted workloads to use for potential recovery. The snapshots are retained for seven days. 
+. Select the alert types than trigger the automated response:
++
+|===
+| Alert type | Description 
+| Encryption (user behavior) | Ransomware Resilience identifies anomalous file read, write, and renaming activity performed by a specific user.
+| Data breach | Ransomware Resilience detects anomalous file read access patterns performed by a specific user.
+| Data destruction | Ransomware Resilience discovers mass deletion of files by a specific user.
+|===
+. Select the storage VMs to apply the automated response to. 
+. Select **Add** to create the automated response. 
+
+== Modify an automated response
+
+After creating an automated response, you can pause, restart, or modify the response. You can modify the name of the response, the types of alerts that trigger the response, the storage VMs, and the action taken. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the User activity monitoring tile, select **Manage**. 
+. Select the **Automated responses** tab. 
+. Selected the automated response you want to modify. 
+. To pause or delete the response, select the action menu then **Pause** (or **Start**) or **Delete**. 
++
+To modify the response, select **Edit**. 
+. You can modify any of the settings  execpt for the alert severity. 
+. Select **Save** to capture the changes. 
