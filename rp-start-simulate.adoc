@@ -39,6 +39,8 @@ include::_include/console-role-admin.adoc[]
 .. After choosing the **System**, choose the **Storage VM** from the prepopulated list. 
 .. Provide a name for the **New test workload**. The test workload will be prepended with "rps_test_".
 .. If the readiness drill is for data breach recovery, select the **User activity agent** for the drill environment.  
++
+image:screen-settings-alert-drill-configure.png[Screenshot of readiness drill configuration options.]
 . Select *Save*.
 
 TIP: You can edit the readiness drill configuration later using the Settings page. 
