@@ -31,8 +31,8 @@ include::_include/console-role-admin.adoc[]
 . In the Readiness drill tile, select **Configure**. 
 . Choose the **Readiness drill type**. 
 +
-* **Custom recovery**: This drill creates an alert to walk you through the link:rp-use-recover.html[]
-* **Clean restore**: This drill creates an alert and then guides you through a link:task-clean-restore-recover.html[clean restore]
+* **Custom recovery**: This drill creates an alert to and then enables you to conduct link:rp-use-recover.html[custom a restore] where you configure the recovery point.
+* **Clean restore**: This drill creates an alert and then brings you to the link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you to optimized recovery points. 
 * **Data breach recovery**: This drill creates an alert for a user-initiated data breach event. You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
 . Choose the environment where the readiness drill test will be created.
 .. Choose the **Console agent** and **System**.
