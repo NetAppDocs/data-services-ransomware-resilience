@@ -4,34 +4,33 @@ permalink: task-siem.html
 keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management
 summary: You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
 ---
-= Simulate suspicious user behavior in NetApp Ransomware Resilience
+= Simulate malicious user behavior in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
 When you configure user activity monitoring in NetApp Ransomware Resilience, you can run a test script to simulate suspicious user behavior events. 
 
-// wording
+This script is designed to simulate encryption-based ransomware attacks performed by a known users. With additional commands, you can also use it to simulate data breach or data destruction attacks. 
 
 == About the script
 
 The test script is available when you enable user activity monitoring on a machine. The script can be run with shell or Python.
 
-You should run the script on a volume of a storage VM where you've created a data collector. The script should be run on test data on a volume that includes at least 100 files in multiple sub-directories; you can programmatically generate these files with the script. Pause the data collector before creating the test data then resume it after. 
+You should run the script on a volume of a storage VM where you've created a data collector. The script should be run on a volume of test data that includes at least 100 files in multiple sub-directories; you can programmatically generate these files with the script. Pause the data collector before creating the test data then resume it after. 
 
 == Considerations 
 
 * The script simulates user encryption events. It can only be run on Linux systems. 
 * If the system uses NFSv4.1, you must be running ONTAP 9.15.1 or later.
-* You can run the script on the system with user activity agent. You can also run  copy the script and run it there.
-* You can run the script as a shell script or with Pyton. 
+* You can run the script as a shell script or with Python. 
 +
 [NOTE]
-There are <<pre-requisites>> to the Python script. To avoid these, use the shell script. 
+There are <<pre-requisites>> to run the Python script. To avoid these, use the shell script. 
 
 == Before you begin
 
-You should have link:suspicious-user-activity.html[a user activity collector] on the system where you want to conduct the test. 
+You must have created link:suspicious-user-activity.html[a data collector] on the system where you want to conduct the test. This requires creating a user activity agent then enabling a ransomware protection strategy with suspicious user behavior detection.
 
 [[pre-requisites]]
 === Requirements for Python script
@@ -47,9 +46,8 @@ You can check your Python version with the command `python --version`. You can t
 
 == Simulate an encryption event
 
-
 .Prepare the system
-. Mount the target volume where the samples files will be created to the Linux machine. You can mount either an NFS or CIFS export.
+. Mount the target volume where the sample files will be created to the Linux machine. You can mount either an NFS or CIFS export.
 [role="tabbed-block"]
 ====
 .NFS
@@ -91,6 +89,8 @@ This creates a 100 (non-empty) files with different extensions inside the mounte
 --
 ====
 . Resume the collector. 
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
 
 .Simulate the attack 
 [role="tabbed-block"]
@@ -98,7 +98,7 @@ This creates a 100 (non-empty) files with different extensions inside the mounte
 .Shell
 --
 . Copy the script from Agent installation directory to the target mount location: `%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
-. Execute the script in the the mounted directory to encrypt the test dataset: `./simulate_attack.sh`.
+. Execute the script in the mounted directory to encrypt the test dataset: `./simulate_attack.sh`.
 --
 .Python
 --
@@ -107,22 +107,32 @@ This creates a 100 (non-empty) files with different extensions inside the mounte
 --
 ====
 
-.Generate an alert in Ransomware Resilience
-Once the simulator script execution has finished, an alert will be seen on the Web UI within a few minutes. Ransomware Resilience detects Encryption (User Behaviour) patterns based on user behaviour.
-Triggering alert multiple times
-Ransowmare Resilience learns user behavior and will not generate alerts on repeated Encryption (User Behaviour) attacks within 24 hours for the same user.
-To generate a new alert with a different user, please follow the same steps again (creating test data and then encrypting the test data).
+.Result
+After you run the script, you can link:rp-use-alert.html[review the alert in the Ransomware Resilience Alerts menu]. 
 
-Data Breach and Data Destruction Alert:
-1.	Mount the protected volume (sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none 10.196.61.101:/vs0_vol01 /root/vol)
-2.	Pause Data collector from the RR UI (Settings->user activity->manage->data collectors): Wait for it to Pause
-3.	Write data
-1.	mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt'
-4.	Resume collector from RPS UI: Wait for it to be running
-5.	Bulk Read
-1.	Clear cache: sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
-2.	find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
-6.	Databreach alert should show up in some time
-7.	DD alert: User must be active for > 7 days.
-1.	Delete command as a dummy user: sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf data5k5'
-2.	OR just do rm -rf <dir to be deleted>
+.Generate additional alerts in Ransomware Resilience
+
+Because Ransomware Resilience adapts to user behavior, it will not generate subsequent alerts if the same action is repeated on the same data by a user within 24 hours. This means you can't simply re-encrypt the data to generate an alert. Instead, to generate additional alerts, you must repeat the process: recreate the test data then encrypt it. 
+
+== Simulate data breach and data destruction alerts
+
+You can also simulate a data breach or data destruction event to test the alerting procedure. 
+
+[NOTE]
+A user must be active in the system for more than seven days for a user alert to register. 
+
+.Steps
+. Mount the protected volume: `sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none 10.196.61.101:/vs0_vol01 /root/vol`
+. Pause the data collector: 
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Pause**. 
+. Create a data set. This command creates a data set of 5,000 files. 
+`mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt`
+. Resume operations on the data collector:
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
+. Perform a bulk read:
+.. Clear the cache: `sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null`
+`find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none`
+. Wait for the data breach alert to show up. 
+. Delete the data: `sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf data5k` or use `rm -rf <directory to be deleted>`.
