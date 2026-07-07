@@ -18,6 +18,9 @@ Automated responses are supported for encryption (user behavior), data breach, a
 
 You can only protect one storage VM with at least one workload that is protected with a suspicious user behavior detection policy. 
 
+[NOTE]
+For automated responses to suspicious user behavior, you can only take a snapshot. Blocking a user isn't support as an automated response to suspicious user behavior. 
+
 .Steps
 . In Ransomware Resilience, select **Settings**. 
 . In the User activity monitoring tile, select **Manage**. 
@@ -38,6 +41,7 @@ If you choose this option, you must also select the duration of the block. It ca
 | Encryption (user behavior) | Ransomware Resilience identifies anomalous file read, write, and renaming activity performed by a specific user.
 | Data breach | Ransomware Resilience detects anomalous file read access patterns performed by a specific user.
 | Data destruction | Ransomware Resilience discovers mass deletion of files by a specific user.
+| Suspicious user behavior | Ransomware Resilience identifies anomalous behavior beyond the scope of data breach, data destruction, or encryption.
 |===
 . Select the storage VMs to apply the automated response to. 
 . Select **Add** to create the automated response. 

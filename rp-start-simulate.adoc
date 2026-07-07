@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill
-summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 ---
 = Conduct a ransomware attack readiness drill in NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,9 +12,17 @@ summary: Conduct a ransomware readiness drill by simulating a ransomware attack 
 [.lead]
 Run a ransomware attack readiness drill in NetApp Ransomware Resilience to test your readiness for a real ransomware attack. With the readiness drill, Ransomware Resilience simulates an attack on a new sample workload, allowing you to investigate the simulated attack and perform a recovery without impacting your real production data. The readiness drill helps familiarize you with alert notifications and prepare you for response and recovery. You can run the drill as frequently as you need. 
 
-TIP: Your real workload data is not impacted. 
-
 You can run readiness drills on NFS and CIFS (SMB) workloads. 
+
+== How readiness drills work
+
+Ransomware Resilience supports three types of drills: link:task-clean-restore-recover.html[clean restore], link:rp-use-recover.html[custom recovery], and link:suspicious-user-activity.html[data breach recovery]. Clean restore and custom recovery drills simulate encryption (entropy)-based attacks and differ in the recovery method that they offer. Data breach recovery drills simulate exfiltration with unusual read patterns on your data. 
+
+When you configure a readiness drill, Ransomware Resilience creates a test volume, applies ransomware protection with a snapshot policy to the volume, validates connectivity, mounts the volume, copies baseline data, unmounts the volume, and creates a baseline snapshot.
+
+When you initiate the drill, Ransomware Resilience mounts the volume then simulates a ransomware attack. If the readiness drill is for custom recovery or clean restore, the baseline data of the test volume is replaced with file extensions known to be ransomware and encrypted/entropy-modified files. For a data breach recovery drill, files are not replaced; instead, Ransomware Resilience mimics an attacker systematically reading and exfiltrating data. Regardless of the drill type, Ransomware Resilience then triggers an alert and verifies that the alert was generated successfully. 
+
+When you run the drill, you can test your response to alerts and optionally walk through the recovery process without impacting real data. 
 
 == Configure a ransomware attack readiness drill
 
@@ -31,9 +39,9 @@ include::_include/console-role-admin.adoc[]
 . In the Readiness drill tile, select **Configure**. 
 . Choose the **Readiness drill type**. 
 +
-* **Custom recovery**: This drill creates an alert to and then enables you to conduct link:rp-use-recover.html[custom a restore] where you configure the recovery point.
-* **Clean restore**: This drill creates an alert and then brings you to the link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you to optimized recovery points. 
-* **Data breach recovery**: This drill creates an alert for a user-initiated data breach event. You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
+* **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom a restore] where you configure the recovery point.
+* **Clean restore**: Respond to an encryption (entropy) attack with a link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you toward optimized recovery points. 
+* **Data breach recovery**: You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
 . Choose the environment where the readiness drill test will be created.
 .. Choose the **Console agent** and **System**.
 .. After choosing the **System**, choose the **Storage VM** from the prepopulated list. 
@@ -61,7 +69,7 @@ image:screen-dashboard.png[Dashboard page showing the Run readiness drill button
 +
 * Or go to **Settings**. In the Readiness drill tile, select *Start*.
 
-NOTE: You can't edit the readiness drill configuration while the drill is running. To modify the readiness drill, select **Reset** then edit the drill.  
+NOTE: You can't edit the readiness drill configuration while the drill is running. To modify the readiness drill, select **Reset**, then edit the drill.  
 
 == Respond to a readiness drill alert
 
