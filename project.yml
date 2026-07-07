@@ -78,10 +78,10 @@ sidebar:
               url: /rp-use-recover.html
         - title: Simulate attacks 
           entries: 
-          - title: Conduct a readiness drill
-            url: /rp-start-simulate.html  
-          - title: Simulate malicious user events
-            url: /task-test-user-activity.html
+            - title: Conduct a readiness drill
+              url: /rp-start-simulate.html  
+            - title: Simulate malicious user events
+              url: /task-test-user-activity.html
         - title: Configure SIEM 
           url: /task-siem.html  
         - title: Integrate SOAR playbooks

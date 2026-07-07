@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-siem.html
+permalink: task-test-user-activity.html
 keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management
 summary: You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
 ---
@@ -11,7 +11,7 @@ summary: You can automatically send data from NetApp Ransomware Resilience to yo
 [.lead]
 When you configure user activity monitoring in NetApp Ransomware Resilience, you can run a test script to simulate suspicious user behavior events. 
 
-This script is designed to simulate encryption-based ransomware attacks performed by a known users. With additional commands, you can also use it to simulate data breach or data destruction attacks. 
+This script is designed to simulate encryption-based ransomware attacks performed by known users. With additional commands, you can also use it to simulate data breach or data destruction attacks. 
 
 == About the script
 
@@ -53,13 +53,13 @@ You can check your Python version with the command `python --version`. You can t
 .NFS
 --
 ```
-mount -t nfs -o vers=4.0 10.193.177.158:/svmvol1 /mntpt
-mount -t nfs -o vers=4.0 Vserver data IP>:/nfsvol /destinationlinuxfolder
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path> /mntpt
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path> /destinationlinuxfolder
 ```
 --
 .CIFS
 --
-mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o username=raisa
+ `mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>`
 --
 ====
 . Protect the link:suspicious-user-activity.html[target volume].
@@ -68,15 +68,15 @@ mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o u
 In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Pause**. 
 . Add files to be encrypted. You can either manually copy the files to be encrypted into the target folder/Volume, or use one of the included scripts to programmatically create the files. You must add a minimum of 100 files. 
 +
-To programatically create the files:
+To programmatically create the files:
 [role="tabbed-block"]
 ====
 .Shell
 --
 . Log into the Agent box.
-. Mount an NFS or CIFS share from the SVM of the filer to the UEBA Agent machine. Cd to that folder.
+. Mount an NFS or CIFS share from the SVM of the filer to the UEBA Agent machine. Change the directory to that folder. 
 . Copy the script from Agent installation directory (%AGENT_INSTALL_DIR/ agent/install/ransomware_simulation/shell/create_dataset.sh) to the target mount location.
-. Execute the `./create_dataset.sh` command using the scripts within the mounted directory to create the test dataset folder and files. This creates a 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
+. Execute the `./create_dataset.sh` command using the scripts within the mounted directory to create the test dataset folder and files. This creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
 --
 .Python
 --
@@ -85,7 +85,7 @@ To programatically create the files:
 . Copy the script from Agent installation directory to the target volume: `%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/python/create_dataset.py`.
 . Create the test dataset: `python create_dataset.py`.
 +
-This creates a 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
+This creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
 --
 ====
 . Resume the collector. 
@@ -122,7 +122,7 @@ You can also simulate a data breach or data destruction event to test the alerti
 A user must be active in the system for more than seven days for a user alert to register. 
 
 .Steps
-. Mount the protected volume: `sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none 10.196.61.101:/vs0_vol01 /root/vol`
+. Mount the protected volume: `sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/vol`
 . Pause the data collector: 
 +
 In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Pause**. 
