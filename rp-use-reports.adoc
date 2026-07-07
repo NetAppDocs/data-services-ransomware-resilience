@@ -46,3 +46,7 @@ image:screen-dashboard.png[Dashboard page]
 . If you selected the *Reports* option, select one of the preconfigured file names and select *Download*. 
 +
 image:screen-reports.png[Reports page showing the readiness drill report]
+
+== More information
+
+* link:task-automate-user-activity.html[Automate responses to user activity events]

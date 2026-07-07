@@ -1,0 +1,81 @@
+---
+sidebar: sidebar
+permalink: task-users-manage.html
+keywords: user activity detection, 
+summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. 
+---
+= Manage alerts and blocked users in NetApp Ransomware Resilience
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+After configuring user behavior monitoring in NetApp Ransomware Resilience, you can customize alerts and manage blocked users. Customizing the alerts allows you to exclude specific users or file paths from generating an alert. Blocking users is meant to respond to ransomware events to prevent malicious user activity. 
+
+You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] to block users.
+
+[TIP]
+You can link:task-automate-user-activity.html[automate responses] to user activity detection events. 
+
+== Manage blocked users
+
+You can block users when you believe they're responsible for malicious activity. 
+
+.Block users
+. In Ransomware Resilience, select **Settings**. 
+. In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
+. Select the **Users** tab. 
+. Select **Block users**. 
+. Select the duration of the blocking: it can be one hour up to 24 hours or permanent. 
+. Select the checkbox next to the names of the users you want to block. 
+. Select **Block**. 
+
+.Modify the blocked users list
+. In Ransomware Resilience, select **Settings**. 
+. In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
+. Select the **Users** tab. 
+. Select **Edit user blocking**. 
+. Choose the modification. To modify the duration of the blocking, select **Time period for blocked users** then modify the duration. To remove users from the blocked user list, select **Unblock users**. 
+. Select the checkbox next to the name of the blocked user whose status you want to change. 
+. Select **Save**. 
+
+== Exclude users from alerts
+
+If there are certain trusted users whose behavior might trigger user behavior alerts, you can exclude them from alerts. 
+
+.Exclude users from alerts
+. In Ransomware Resilience, select **Settings**. 
+. In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
+. Select the **Excluded from monitoring** tab. 
+. To review individual users in the UI, choose **Select manually**. To upload a list of excluded users, select **Upload**. 
+.. If you selected **Select manually**, select the checkbox next to the names of the specific users you want to exclude. 
+.. If you select **Upload**, download the CSV or JSON file that includes the list of all the users. Select **Download** to access the list. 
++
+On your local machine, review the file. Remove the names of all users that you want to maintain detection for. When the list includes only the names of users you want to exclude from detection, save it.
++
+In Ransomware Resilience, select **Upload**. Locate and upload the file. 
+. Select **Add** to complete adding the users to the exclusion list. 
+. In the **Excluded from monitoring** tab, the names of the users removed from user behavior detection alerts now display in the dashboard. 
+
+[TIP]
+You can also exclude a user directly from an alert. For more information, see link:rp-use-alert.html[Respond to ransomware alerts].
+
+== Exclude file paths from monitoring 
+
+Each file path must begin with a volume name. It can include up to three sub-directories for that volume, for example "volume/directory/subdirectory/subdirectory2". You can exclude file paths by enterring them manually or uploading a CSV file that lists the paths. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the User activity monitoring card, select **Manage**. 
+. Select hte *Excluded from monitoring* tab. 
+. Select **Add** to enter the file paths for exclusion. 
+. To enter the file paths in the UI, select the *Enter manually* radio button then enter the file path, for example "volume/directory/subdirectory/". To enter additional file paths, select **Select file path".
++
+. To upload a list of file paths, select the **Upload** radio button. Select the upload button to choose the CSV file.
+. Select **Add**. 
+
+.Result
+When the operation completes successfully, Ransomware Resilience begins excluding files in the selected paths from monitoring for suspicious user behavior. You can review the list of paths at any time from the Settings menu. If you need to enable monitoring for the file paths again, you can remove them from the list. 
+
+== Next steps
+
+* link:task-automate-user-activity.html[Automate responses to user activity detection events] 
