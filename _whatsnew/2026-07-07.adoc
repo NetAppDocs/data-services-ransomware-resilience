@@ -2,4 +2,4 @@
 
 Ransomware Resilience supports exclude specific file paths from user behavior monitoring alerts. You can exclude file paths if you know them to not be at risk or are performing work on files in a volume that might trigger alerts. 
 
-For more information, see see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html[Exclude file paths from alerts^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html[Exclude file paths from alerts^].
