@@ -35,7 +35,7 @@ Ransomware Resilience relies on evidence about data entropy patterns, file exten
 * When encryption is high, without file extension changes
 
 [NOTE]
-For data breach, data destruction, and suspicious user behavior alerts, you must configure link:concept-user-behavior.html[user activity detection].
+For data breach, data destruction, and suspicious user behavior alerts, you must configure link:concept-user-behavior.html[user activity detection]. You can also prevent link:task-users-manage.html[specific file paths and users] from generating alerts. 
 
 === Alert types and statuses
 
