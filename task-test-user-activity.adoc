@@ -47,7 +47,9 @@ You can check your Python version with the command `python --version`. You can t
 == Simulate an encryption event
 
 .Prepare the system
+
 . Mount the target volume where the sample files will be created to the Linux machine. You can mount either an NFS or CIFS export.
++
 [role="tabbed-block"]
 ====
 .NFS
@@ -62,6 +64,7 @@ mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path> /destinationlinuxfolde
  `mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>`
 --
 ====
++
 . Protect the link:suspicious-user-activity.html[target volume].
 . Pause the data collector.
 +
@@ -69,6 +72,7 @@ In Ransomware Resilience, select **Settings** then in the User detection monitor
 . Add files to be encrypted. You can either manually copy the files to be encrypted into the target folder/Volume, or use one of the included scripts to programmatically create the files. You must add a minimum of 100 files. 
 +
 To programmatically create the files:
++
 [role="tabbed-block"]
 ====
 .Shell
@@ -88,11 +92,13 @@ To programmatically create the files:
 This creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
 --
 ====
++
 . Resume the collector. 
 +
 In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
 
 .Simulate the attack 
+
 [role="tabbed-block"]
 ====
 .Shell
