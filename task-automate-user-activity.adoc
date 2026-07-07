@@ -19,7 +19,7 @@ Automated responses are supported for encryption (user behavior), data breach, a
 You can only protect one storage VM with at least one workload that is protected with a suspicious user behavior detection policy. 
 
 [NOTE]
-For automated responses to suspicious user behavior, you can only take a snapshot. Blocking a user isn't support as an automated response to suspicious user behavior. 
+For automated responses to suspicious user behavior, you can only take a snapshot. Blocking a user isn't supported as an automated response to suspicious user behavior. 
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 

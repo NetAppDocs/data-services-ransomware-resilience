@@ -39,7 +39,7 @@ include::_include/console-role-admin.adoc[]
 . In the Readiness drill tile, select **Configure**. 
 . Choose the **Readiness drill type**. 
 +
-* **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom a restore] where you configure the recovery point.
+* **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom restore] where you configure the recovery point.
 * **Clean restore**: Respond to an encryption (entropy) attack with a link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you toward optimized recovery points. 
 * **Data breach recovery**: You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
 . Choose the environment where the readiness drill test will be created.
