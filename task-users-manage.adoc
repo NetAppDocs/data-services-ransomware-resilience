@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-users-manage.html
 keywords: user activity detection, 
-summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. 
+summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. You can also exclude file paths from generating alerts. 
 ---
 = Manage alerts and blocked users in NetApp Ransomware Resilience
 :icons: font
@@ -59,17 +59,24 @@ In Ransomware Resilience, select **Upload**. Locate and upload the file.
 [TIP]
 You can also exclude a user directly from an alert. For more information, see link:rp-use-alert.html[Respond to ransomware alerts].
 
+.Remove users from excluded user list
+. In the Settings dashboard, locate the User activity card then select **Manage**. 
+. Select the **Excluded from monitoring** tab.
+. Select **Add**.
+. To exlcude individual users from the UI, choose **Select manually**.
+. Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
+. In the dialog, select **Remove** to confirm you want to remove the selected users. 
+
 == Exclude file paths from monitoring 
 
-Each file path must begin with a volume name. It can include up to three sub-directories for that volume, for example "volume/directory/subdirectory/subdirectory2". You can exclude file paths by enterring them manually or uploading a CSV file that lists the paths. 
+Each file path must begin with a volume name. It can include up to three sub-directories for that volume, for example "volume/directory/subdirectory/subdirectory2". You can exclude file paths by entering them manually or uploading a CSV file that lists the paths. 
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 
-. In the User activity monitoring card, select **Manage**. 
-. Select hte *Excluded from monitoring* tab. 
+. In the User activity monitoring tile, select **Manage**. 
+. Select the *Excluded from monitoring* tab. 
 . Select **Add** to enter the file paths for exclusion. 
-. To enter the file paths in the UI, select the *Enter manually* radio button then enter the file path, for example "volume/directory/subdirectory/". To enter additional file paths, select **Select file path".
-+
+. To enter the file paths in the UI, select the *Enter manually* radio button then enter the file path, for example "volume/directory/subdirectory/". To enter additional file paths, select **Select file path**.
 . To upload a list of file paths, select the **Upload** radio button. Select the upload button to choose the CSV file.
 . Select **Add**. 
 

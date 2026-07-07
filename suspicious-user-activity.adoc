@@ -129,18 +129,6 @@ Select *Advanced* to add an optional search query.
 // . Identify the user activity agent you want to delete. In the action menu at the end of the line, select the three dots `...` then **Delete**.
 // . In the pop-up dialog, select **Delete** to confirm your actions. 
 
-==== Remove users from the excluded user list
-
-You can add a user back to detection after.
-
-.Steps
-. In the Settings dashboard, locate the User activity card then select **Manage**. 
-. Select the **Excluded users** tab.
-. Select **Add**.
-. To exlcude individual users from the UI, choose **Select manually**.
-. Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
-. In the dialog, select **Remove** to confirm you want to remove the selected users. 
-
 == Respond to user activity alerts
 
 After you configure user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].
@@ -149,4 +137,4 @@ You can also link:task-automate-user-activity.html[Automate responses to user ac
 
 == Next steps 
 
-* link:task-users-manage.html[Manage user blocking and alerts in NetApp Ransomware Resilience]
+* link:task-users-manage.html[Manage alert settings and blocked users]
