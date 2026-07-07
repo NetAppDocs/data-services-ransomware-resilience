@@ -2,14 +2,14 @@
 sidebar: sidebar
 permalink: task-users-manage.html
 keywords: user activity detection, 
-summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. 
+summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. You can also exclude file paths from generating alerts. 
 ---
-= Manage user blocking and alerts in NetApp Ransomware Resilience
+= Manage alerts and blocked users in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users when you experience ransomware events and evaluate them. You can also selectively exclude users from ransomware alerts if you are certain their actions aren't attacks.
+After configuring user behavior monitoring in NetApp Ransomware Resilience, you can customize alerts and manage blocked users. Customizing the alerts allows you to exclude specific users or file paths from generating an alert. Blocking users is meant to respond to ransomware events to prevent malicious user activity. 
 
 You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] to block users.
 
@@ -38,7 +38,7 @@ You can block users when you believe they're responsible for malicious activity.
 . Select the checkbox next to the name of the blocked user whose status you want to change. 
 . Select **Save**. 
 
-== Manage user alerts
+== Exclude users from alerts
 
 If there are certain trusted users whose behavior might trigger user behavior alerts, you can exclude them from alerts. 
 
@@ -59,13 +59,29 @@ In Ransomware Resilience, select **Upload**. Locate and upload the file.
 [TIP]
 You can also exclude a user directly from an alert. For more information, see link:rp-use-alert.html[Respond to ransomware alerts].
 
-.Remove users from the excluded user list
-. In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
+.Remove users from excluded user list
+. In the Settings dashboard, locate the User activity card then select **Manage**. 
 . Select the **Excluded from monitoring** tab.
 . Select **Add**.
-. To exclude individual users from the UI, choose **Select manually**.
-. Locate the name of the user you want to remove from the excluded user list. Select the action menu (`...`) on the row with the user's name then **Remove**.
+. To exlcude individual users from the UI, choose **Select manually**.
+. Locate the name of the user you want to remove from the excluded user select. Select the action menu (`...`) on the row with the user's name then **Remove**.
 . In the dialog, select **Remove** to confirm you want to remove the selected users. 
+
+== Exclude file paths from monitoring 
+
+Each file path must begin with a volume name. It can include up to three sub-directories for that volume, for example "volume/directory/subdirectory/subdirectory2". You can exclude file paths by entering them manually or uploading a CSV file that lists the paths. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**. 
+. In the User activity monitoring tile, select **Manage**. 
+. Select the *Excluded from monitoring* tab. 
+. Select **Add** to enter the file paths for exclusion. 
+. To enter the file paths in the UI, select the *Enter manually* radio button then enter the file path, for example "volume/directory/subdirectory/". To enter additional file paths, select **Select file path**.
+. To upload a list of file paths, select the **Upload** radio button. Select the upload button to choose the CSV file.
+. Select **Add**. 
+
+.Result
+When the operation completes successfully, Ransomware Resilience begins excluding files in the selected paths from monitoring for suspicious user behavior. You can review the list of paths at any time from the Settings menu. If you need to enable monitoring for the file paths again, you can remove them from the list. 
 
 == Next steps
 
