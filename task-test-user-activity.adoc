@@ -56,8 +56,8 @@ You can check your Python version with the command `python --version`. You can t
 --
 [code]
 ----
-mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path> /mntpt
-mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path> /destinationlinuxfolder
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<mountPoint>
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<destinationLinuxFolder>
 ----
 --
 .CIFS
@@ -146,7 +146,7 @@ A user must be active in the system for more than seven days for a user alert to
 +
 [code]
 ----
-sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/vol
+sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/<volume>
 ----
 . Pause the data collector: 
 +
@@ -167,14 +167,14 @@ In Ransomware Resilience, select **Settings** then in the User detection monitor
 ----
 sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
 ----
-. Perform a read on all of the files to simulate a data breach:
+.. Perform a read on all of the files to simulate a data breach:
 +
 [code]
 ----
 find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
 ----
-. Wait for the data breach alert to appear. You can confirm the alert's presence in the **Alert** tab.
-. Delete the data:
+. Wait for the data breach alert to appear. You can confirm the alert's presence in the link:rp-use-alert.html[Alerts dashboard] and investigate the details of the alert.
+. After discerning the information you want from the alert, delete the data:
 +
 [code]
 ----
