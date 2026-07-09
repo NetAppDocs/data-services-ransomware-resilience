@@ -15,7 +15,7 @@ This script is designed to simulate encryption-based ransomware attacks performe
 
 == About the script
 
-The test script is available when you enable user activity monitoring on a machine. The script can be run with shell or Python.
+The test script is available when you enable user activity monitoring on a machine. You can run the script with shell or Python.
 
 You should run the script on a volume of a storage VM where you've created a data collector. The script should be run on a volume of test data that includes at least 100 files in multiple sub-directories; you can programmatically generate these files with the script. Pause the data collector before creating the test data then resume it after. 
 
@@ -87,7 +87,7 @@ To programmatically create the files:
 +
 [code]
 ----
-<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
 ----
 . Execute the `./create_dataset.sh` command using the scripts within the mounted directory to create the test dataset folder and files. This command creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
 --
@@ -99,7 +99,7 @@ To programmatically create the files:
 +
 [code]
 ----
-<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
 ----
 . Create the test dataset: `python create_dataset.py`.
 +
