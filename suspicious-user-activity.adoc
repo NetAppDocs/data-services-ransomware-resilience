@@ -137,4 +137,4 @@ You can also link:task-automate-user-activity.html[Automate responses to user ac
 
 == Next steps 
 
-* link:task-users-manage.html[Manage user blocking and alerts in NetApp Ransomware Resilience]
+* link:task-users-manage.html[Manage alert settings and blocked users]
