@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar
 permalink: task-test-user-activity.html
-keywords: ransomware protection, SIEM, security event management system, soar, playbook, orchestration, event management
-summary: You can automatically send data from NetApp Ransomware Resilience to your security and event management system (SIEM) for threat analysis and detection.
+keywords: readiness drill, data breach, data destruction, script, shell, python, user activity detection, simulation
+summary: NetApp Ransomware Resilience offers a script when you enable user activity monitoring to test encryption-based ransomware attacks and data breach events. 
 ---
 = Simulate malicious user behavior in NetApp Ransomware Resilience
 :icons: font
@@ -22,7 +22,7 @@ You should run the script on a volume of a storage VM where you've created a dat
 == Considerations 
 
 * The script simulates user encryption events. It can only be run on Linux systems. 
-* If the system uses NFSv4.1, you must be running ONTAP 9.15.1 or later.
+* If your system uses NFSv4.1, you must be running ONTAP 9.15.1 or later.
 * You can run the script as a shell script or with Python. 
 +
 [NOTE]
@@ -87,7 +87,7 @@ To programmatically create the files:
 +
 [code]
 ----
-%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/create_dataset.sh
+<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
 ----
 . Execute the `./create_dataset.sh` command using the scripts within the mounted directory to create the test dataset folder and files. This command creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
 --
@@ -99,7 +99,7 @@ To programmatically create the files:
 +
 [code]
 ----
-%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/python/create_dataset.py
+<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
 ----
 . Create the test dataset: `python create_dataset.py`.
 +
@@ -112,17 +112,17 @@ This command creates 100 (non-empty) files with different extensions inside the 
 In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
 
 .Simulate the attack 
-
++
 [role="tabbed-block"]
 ====
 .Shell
 --
-. Copy the script from Agent installation directory to the target mount location: `%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
+. Copy the script from Agent installation directory to the target mount location: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
 . Execute the script in the mounted directory to encrypt the test dataset: `./simulate_attack.sh`.
 --
 .Python
 --
-. Copy the script from Agent installation directory to the target mount location: `%AGENT_INSTALL_DIR/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
+. Copy the script from Agent installation directory to the target mount location: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.py`.
 . Execute the script to encrypt the data: `python simulate_attack.py` in "test_dataset".
 --
 ====
@@ -178,5 +178,5 @@ find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1
 +
 [code]
 ----
-sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf data5k` or use `rm -rf <directory to be deleted>
+ sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf ./data5k'
 ----
