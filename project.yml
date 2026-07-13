@@ -76,8 +76,12 @@ sidebar:
                 url: /task-clean-restore-recover.html
             - title: Recover with a custom restore 
               url: /rp-use-recover.html
-        - title: Conduct a readiness drill
-          url: /rp-start-simulate.html  
+        - title: Simulate attacks 
+          entries: 
+            - title: Conduct a readiness drill
+              url: /rp-start-simulate.html  
+            - title: Simulate malicious user events
+              url: /task-test-user-activity.html
         - title: Configure SIEM 
           url: /task-siem.html  
         - title: Integrate SOAR playbooks

@@ -1,0 +1,182 @@
+---
+sidebar: sidebar
+permalink: task-test-user-activity.html
+keywords: readiness drill, data breach, data destruction, script, shell, python, user activity detection, simulation
+summary: NetApp Ransomware Resilience offers a script when you enable user activity monitoring to test encryption-based ransomware attacks and data breach events. 
+---
+= Simulate malicious user behavior in NetApp Ransomware Resilience
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+When you configure user activity monitoring in NetApp Ransomware Resilience, you can run a test script to simulate suspicious user behavior events. 
+
+This script is designed to simulate encryption-based ransomware attacks performed by known users. With additional commands, you can also simulate data breach or data destruction attacks. 
+
+== About the script
+
+The test script is available when you enable user activity monitoring on a machine. You can run the script with shell or Python.
+
+You should run the script on a volume of a storage VM where you've created a data collector. The script should be run on a volume of test data that includes at least 100 files in multiple sub-directories; you can programmatically generate these files with the script. Pause the data collector before creating the test data then resume it after. 
+
+== Considerations 
+
+* The script simulates user encryption events. It can only be run on Linux systems. 
+* If your system uses NFSv4.1, you must be running ONTAP 9.15.1 or later.
+* You can run the script as a shell script or with Python. 
++
+[NOTE]
+There are <<prerequisites>> to run the Python script.
+
+== Before you begin
+
+You must have created link:suspicious-user-activity.html[a data collector] on the system where you want to conduct the test. This requires creating a user activity agent then enabling a ransomware protection strategy with suspicious user behavior detection.
+
+[[prerequisites]]
+=== Requirements for Python script
+
+To run the script in Python, you must have:
+
+* link:https://www.python.org/[Installed Python version 3.5.2 or later^]
+* link:https://bootstrap.pypa.io/[Installed pip^]
+* Installed the PyCryptodome library: `pip install pycryptodome`
+
+[TIP]
+You can check your Python version with the command `python --version`. You can test the pip installation with the command `pip --version`. You can test the PyCryptodome installation with the command `pip show pycryptodome`.
+
+== Simulate an encryption event
+
+.Prepare the system
+
+. Mount the target volume where the sample files will be created to the Linux machine. You can mount either an NFS or CIFS export.
++
+[role="tabbed-block"]
+====
+.NFS
+--
+[code]
+----
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<mountPoint>
+mount -t nfs -o vers=4.0 <SVM_data_LIF_IP>:/<export_path>/<destinationLinuxFolder>
+----
+--
+.CIFS
+--
+[code]
+----
+mount -t cifs //<SVM_data_LIF_IP>/<share_name> /root/destinationfolder/ -o username=<username>
+----
+--
+====
++
+. Protect the link:suspicious-user-activity.html[target volume].
+. Pause the data collector.
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Pause**. 
+. Add files to be encrypted. You can either manually copy the files to be encrypted into the target folder or volume, or use one of the included scripts to programmatically create the files. You must add a minimum of 100 files. 
++
+To programmatically create the files:
++
+[role="tabbed-block"]
+====
+.Shell
+--
+. Log into the host running the user activity agent. 
+. Mount an NFS or CIFS share from the storage VM of the filer to the machine running the user activity agent. Change the working directory to the appropriate volume for testing. 
+. Copy the script from the user directory agent installation directory to the target mount location:
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.sh
+----
+. Execute the `./create_dataset.sh` command using the scripts within the mounted directory to create the test dataset folder and files. This command creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
+--
+.Python
+--
+. Log into the host running the user activity agent. 
+.  Mount an NFS or CIFS share from the storage VM of the filer to the machine running the user activity agent. Change the working directory to the appropriate volume for testing. 
+. Copy the script from the user directory agent installation directory to the target volume:
++
+[code]
+----
+cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/python/create_dataset.py
+----
+. Create the test dataset: `python create_dataset.py`.
++
+This command creates 100 (non-empty) files with different extensions inside the mounted folder under a directory named "test_dataset".
+--
+====
++
+. Resume the collector. 
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
+
+.Simulate the attack 
++
+[role="tabbed-block"]
+====
+.Shell
+--
+. Copy the script from Agent installation directory to the target mount location: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.sh`.
+. Execute the script in the mounted directory to encrypt the test dataset: `./simulate_attack.sh`.
+--
+.Python
+--
+. Copy the script from Agent installation directory to the target mount location: `<AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/simulate_attack.py`.
+. Execute the script to encrypt the data: `python simulate_attack.py` in "test_dataset".
+--
+====
+
+.Result
+After you run the script, you can link:rp-use-alert.html[review the alert in the Ransomware Resilience Alerts menu]. 
+
+.Generate additional alerts in Ransomware Resilience
+
+Because Ransomware Resilience adapts to user behavior, it will not generate subsequent alerts if the same action is repeated on the same data by a user within 24 hours, ergo you can't simply re-encrypt the data to generate another alert. Instead, to generate additional alerts, you must repeat the process: recreate the test data then encrypt it. 
+
+== Simulate data breach and data destruction alerts
+
+Ransomware Resilience also supports simulating a data breach or data destruction event. 
+
+[NOTE]
+A user must be active in the system for more than seven days for a user alert to register. 
+
+.Steps
+. Mount the protected volume:
++
+[code]
+----
+sudo mount -t nfs -o rw,hard,nfsvers=4.0,proto=tcp,noac,actimeo=0,lookupcache=none <SVM_data_LIF_IP>:/<export_path> /root/<volume>
+----
+. Pause the data collector: 
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Pause**. 
+. Create a data set. This command creates a data set of 5,000 files:
++
+[code]
+----
+mkdir -p ./data5k; seq -w 1 5000 | xargs -n1 -P2 -I{} bash -c 'sz=$((RANDOM%16+5)); LC_ALL=C tr -dc "A-Za-z0-9\n" < /dev/urandom | head -c "$((sz*1024))" > ./data5k/file_{}.txt'
+----
+. Resume operations on the data collector:
++
+In Ransomware Resilience, select **Settings** then in the User detection monitoring tile, select **Manage**. In the Data collector tab, select the data collector for the storage VM then **Resume**. 
+. Perform a bulk read:
+.. Clear the cache: 
++
+[code]
+----
+sudo sync && echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null
+----
+.. Perform a read on all of the files to simulate a data breach:
++
+[code]
+----
+find ./data5k -type f -print0 | xargs -0 -n1 -P4 -I{} dd if={} of=/dev/null bs=1M iflag=direct status=none
+----
+. Wait for the data breach alert to appear. You can confirm the alert's presence in the link:rp-use-alert.html[Alerts dashboard] and investigate the details of the alert.
+. After discerning the information you want from the alert, delete the data:
++
+[code]
+----
+ sudo setpriv --reuid 60001 --regid 60001 --groups 60001 bash -lc 'id -u; id -g; id -G; rm -rf ./data5k'
+----
