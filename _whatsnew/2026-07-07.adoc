@@ -3,3 +3,9 @@
 Ransomware Resilience supports exclude specific file paths from user behavior monitoring alerts. You can exclude file paths if you know them to not be at risk or are performing work on files in a volume that might trigger alerts. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-users-manage.html[Exclude file paths from alerts^].
+
+=== ARM template for Microsoft Sentinel
+
+Ransomware Resilience now offers an Azure Resource Manager (ARM) template for connecting to Microsoft Sentinel as a SIEM, offering a secondary method to faciliate deployment. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect to a SIEM for threat detection and analysis^].
