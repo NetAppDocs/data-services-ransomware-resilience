@@ -280,7 +280,7 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Enter the event collector token you created in Splunk.
 . Select *Connect* to begin sending SIEM data. 
 
-## Next steps
+== Next steps
 
 * link:reference-soar.html[Integrate a SOAR playbook]
 
