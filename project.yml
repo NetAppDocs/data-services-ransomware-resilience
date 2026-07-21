@@ -54,6 +54,8 @@ sidebar:
                   url: /reference-user-activity-requirements.html
                 - title: Configure agents and collectors
                   url: /suspicious-user-activity.html
+                - title: Manage alerts and blocked users
+                  url: /task-users-manage.html
             - title: Manage protection groups 
               url: /task-protection-group.html
             - title: Scan for personally identifiable data
@@ -62,6 +64,8 @@ sidebar:
           entries:
             - title: Respond to a detected alert 
               url: /rp-use-alert.html
+            - title: Automate responses to user activity alerts
+              url: /task-automate-user-activity.html
             - title: Review recovery status 
               url: /rp-use-recover.html
             - title:  Recover with a clean restore 
@@ -72,8 +76,12 @@ sidebar:
                 url: /task-clean-restore-recover.html
             - title: Recover with a custom restore 
               url: /rp-use-recover.html
-        - title: Conduct a readiness drill
-          url: /rp-start-simulate.html  
+        - title: Simulate attacks 
+          entries: 
+            - title: Conduct a readiness drill
+              url: /rp-start-simulate.html  
+            - title: Simulate malicious user events
+              url: /task-test-user-activity.html
         - title: Configure SIEM 
           url: /task-siem.html  
         - title: Integrate SOAR playbooks

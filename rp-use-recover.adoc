@@ -10,7 +10,7 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 :imagesdir: ./media/
 
 [.lead]
-After workloads have been marked "Restore needed", NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
+After workloads have been marked "Restore needed," NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
 
 * If the VM is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
 +
