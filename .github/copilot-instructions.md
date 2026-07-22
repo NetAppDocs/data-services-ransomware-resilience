@@ -8,7 +8,6 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
 
 ## Repository structure
 
-* Root directory - .adoc and .yml that contain the documentation, sidebar, and landing page structure of the repository.
 * `_include` - Reusable text blocks referenced in .adoc files in the root. 
 * `media` - Images and diagrams that are elements of articles in the root directory. This includes .png and source files. 
 * `_whatsnew` - Release notes in .adoc form that are aggregated in the whats-new.adoc file.
