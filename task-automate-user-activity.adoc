@@ -10,9 +10,9 @@ summary: NetApp Ransomware Resilience supports creating automated responses to u
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience supports creating automated responses to link:concept-user-behavior.html[user activity events]. With automated responses, Ransomware Resilience can create a snapshot or block a user when an attack or warning is detected, enabling a swifter response to ransomware events.
+With NetApp Ransomware Resilience, you can automate responses to link:concept-user-behavior.html[user activity events]. With automated responses, Ransomware Resilience can create a snapshot or block a user when an attack or warning is detected, enabling a swifter response to ransomware events.
 
-Automated responses are supported for encryption (user behavior), data breach, and data destruction events. You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated response.
+Automated responses are supported for encryption (user behavior), data breach, and data destruction events. You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated response. When an automated response is triggered, Ransomware Resilience sends an email alert. 
 
 == Create an automated response
 
