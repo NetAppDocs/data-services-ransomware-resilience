@@ -15,6 +15,15 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
+=== Unify protection group based on workload and system type
+
+Ransomware Resilience now enforces that protection groups adhere to the same workload type and system type. When you create a new protection group, you must designate both the workload type (file system or block) and the system for the workload. This enhancement ensures that the chosen ransomware protection strategy for the protection group can be successfully applied to all workloads in the group. 
+
+If you have existing protection groups that mix systems and workloads types, you can continue to use them, however you can't add workloads to the protection group.
+// Unless you remove all workloads that don't match the configured workload and system types. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html[Create a protection group^].
+
 == 20 July 2026
 include::_whatsnew/2026-07-20.adoc[]
 

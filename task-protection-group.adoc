@@ -18,6 +18,8 @@ include::_include/console-role-admin.adoc[]
 
 You can create groups regardless of their protection status (that is, groups not protected and groups that are protected). When you add a protection policy to a protection group, the new protection policy replaces any existing policy, including policies managed NetApp Backup and Recovery. 
 
+Workloads in a protection group must be of the same workload type; meaning you can't mix block and file system workloads. Workloads must also belong to the same system type. For example, a protection group can include all on-premises ONTAP file system workloads; you can't add Amazon FSx for NetApp ONTAP workloads to the same protection group. 
+
 .Steps
 . From the Ransomware Resilience menu, select *Protection*.
 +
@@ -29,6 +31,7 @@ image:screen-protection-groups.png[Protection groups page]
 +
 image:screen-protection-groups-add.png[Add protection group page]
 . Enter a name for the protection group. 
+. Select the **Workload type** (block or file share) and the **System type**.
 . Select the workloads to add to the group. 
 +
 TIP: To see more details on the workloads, scroll to the right. 
@@ -48,7 +51,10 @@ When reviewing the protection dashboard in Ransomware Resilience, you can sort w
 
 === Edit group protection 
 
-You can change the detection policy on an existing group. 
+You can change the detection policy on an existing group or add and remove workloads. 
+
+[NOTE]
+If a protection group was created before August 2026 and includes workloads of either different workload types (for example, it mixes block and file system workloads) or different system types, you can't add any new workloads to the protection group. You can remove workloads to ensure there is only one type of workloads and system present, then you can add workloads. This change is designed to ensure ransomware protection strategies are enforced evenly across workload and system types. 
 
 .Steps
 . From the Ransomware Resilience menu, select *Protection*.
