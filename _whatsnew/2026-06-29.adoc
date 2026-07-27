@@ -1,0 +1,5 @@
+=== Automated responses to user activity alerts
+
+Ransomware Resilience now supports automating snapshot creation and user blocking when a user activity alert is generated. With automated responses, you can block a user as soon as a warning is generated and create a snapshot for recovery, enabling a swifter response without manual intervention. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-automate-user-activity.html[Automate responses to user activity alerts^].

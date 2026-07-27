@@ -15,11 +15,18 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
-== 13 July 2026
-
 === Readiness drill enhancement
 
 Ransomware Resilience now enables you to conduct readiness drills based on attack type. Ransomware Resilience detects five types of attacks, and you can perform readiness drills for each one to simulate the attack and recovery process to understand your readiness for a ransomware attack. For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html[Conduct a readiness drill^].
+
+== 20 July 2026
+include::_whatsnew/2026-07-20.adoc[]
+
+== 07 July 2026
+include::_whatsnew/2026-07-07.adoc[]
+
+== 29 June 2026
+include::_whatsnew/2026-06-29.adoc[]
 
 == 08 June 2026
 include::_whatsnew/2026-06-08.adoc[]

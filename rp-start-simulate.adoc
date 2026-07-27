@@ -2,18 +2,27 @@
 sidebar: sidebar
 permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill
-summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a newly created, sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
 ---
-
 = Conduct a ransomware attack readiness drill in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-With NetApp Ransomware Resilience, you can simulate an attack on a sample workload to assess your readiness for a ransomware attack. When you run a readiness drill, you can nvestigate the simulated attack and recover the workload to assess notifications, response, and recovery. 
+Run a ransomware attack readiness drill in NetApp Ransomware Resilience to test your readiness for a real ransomware attack. With the readiness drill, Ransomware Resilience simulates an attack on a new sample workload, allowing you to investigate the simulated attack and perform a recovery without impacting your real production data. The readiness drill helps familiarize you with alert notifications and prepare you for response and recovery. You can run the drill as frequently as you need. 
 
-You can run readiness drills for different types of attacks as often as you need to. Running a readiness drill doesn't impact your production workloads. 
+You can run readiness drills on NFS and CIFS (SMB) workloads. 
+
+== How readiness drills work
+
+Ransomware Resilience supports three types of drills: link:task-clean-restore-recover.html[clean restore], link:rp-use-recover.html[custom recovery], and link:suspicious-user-activity.html[data breach recovery]. Clean restore and custom recovery drills simulate encryption (entropy)-based attacks and differ in the recovery method that they offer. Data breach recovery drills simulate exfiltration with unusual read patterns on your data. 
+
+When you configure a readiness drill, Ransomware Resilience creates a test volume, applies ransomware protection with a snapshot policy to the volume, validates connectivity, mounts the volume, copies baseline data, unmounts the volume, and creates a baseline snapshot.
+
+When you initiate the drill, Ransomware Resilience mounts the volume then simulates a ransomware attack. If the readiness drill is for custom recovery or clean restore, the baseline data of the test volume is replaced with file extensions known to be ransomware and encrypted/entropy-modified files. For a data breach recovery drill, files are not replaced; instead, Ransomware Resilience mimics an attacker systematically reading and exfiltrating data. Regardless of the drill type, Ransomware Resilience then triggers an alert and verifies that the alert was generated successfully. 
+
+When you run the drill, you can test your response to alerts and optionally walk through the recovery process without impacting real data. 
 
 == Configure a ransomware attack readiness drill
 
@@ -33,10 +42,15 @@ The Console displays the Configure readiness drill page.
 +
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 . Select the *Ransomware attack type*.
-. Provide the configuration for the readiness drill environment. Select the *Console agent* you want to use for the readiness drill, the *Primary system*, and the *Storage VM*.
 +
-If you selected a CIFS (SMB) storage VM, also enter the **User name** and **Password** for the storage VM. 
-. Enter a name for the test workload. It's automatically prepended with "rps_test_". The name cannot include dashes. 
+* **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom restore] where you configure the recovery point.
+* **Clean restore**: Respond to an encryption (entropy) attack with a link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you toward optimized recovery points. 
+* **Data breach recovery**: You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
+. Choose the environment where the readiness drill test will be created.
+.. Choose the **Console agent** and **System**.
+.. After choosing the **System**, choose the **Storage VM** from the prepopulated list. 
+.. Provide a name for the **New test workload**. The test workload will be prepended with "rps_test_".
+.. If the readiness drill is for data breach recovery, select the **User activity agent** for the drill environment.  
 . Select *Save*.
 
 TIP: You can edit the readiness drill configuration later from the Settings page. 
@@ -47,10 +61,6 @@ After you configure the readiness drill, you can start the drill.
 
 include::_include/console-role-admin.adoc[]
 
-When you start the readiness drill, Ransomware Resilience skips the learning mode and starts the drill in active mode. The detection status of the workload is Active.
-
-TIP: A workload can have a ransomware detection *Learning mode* status when a detection policy is recently assigned and Ransomware Resilience scans workloads.
-
 .Steps 
 
 . In Ransomware Resilience, select **Settings**.
@@ -58,26 +68,10 @@ TIP: A workload can have a ransomware detection *Learning mode* status when a de
 
 NOTE: You can't edit the readiness drill configuration while it's running. If you need to modify the drill while it's in progress, reset it, then change the configuration. 
 
-//== Clean up and stop a readiness drill 
-
-//If you need to stop a readiness drill, you can do so at any time. When you stop the drill, Ransomware Resilience cleans up the test workload and removes the test files.
-
-//.Steps
-
-
-//** From the Ransomware Resilience Settings menu, hover over the Edit option in the Readiness drill tile and select *Clean up readiness drill*.
-
-//. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right and select *Clean up readiness drill*.
-//+
-//image:screen-settings-alert-drill-cleanup.png[Settings page showing the readiness drill stop option]
-//+
-//NOTE: You can also stop or clean up a readiness drill from the Settings page showing the Readiness drill card. 
-
-//. Review the workload readiness drill information. 
-//. Select *Clean up*. 
-
+NOTE: You can't edit the readiness drill configuration while the drill is running. To modify the readiness drill, select **Reset**, then edit the drill.  
 
 == Respond to a readiness drill alert
+
 Test your readiness by responding to a readiness drill alert.
 
 include::_include/console-role-admin.adoc[]
@@ -94,9 +88,9 @@ image:screen-alerts-readiness-details.png[Alerts details page showing the readin
 image:screen-alerts-readiness-incidents2.png[Incident page showing the readiness drill alert]
 
 
-. Review the incident:
+When reviewing the incident, consider:
 
-* Look at the Potential attack severity. 
+* The potential attack severity. 
 +
 If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
 
@@ -117,48 +111,34 @@ include::_include/console-role-admin.adoc[]
 
 .Steps
 . Return to the Alert details page. 
-. If the test workload should be restored, do the following: 
-** Select *Mark restore needed*. 
-** Review the confirmation, and select *Mark restore needed* in the confirmation box. 
-* From the Ransomware Resilience menu, select *Recovery*. 
-* Select the test workload marked with "Readiness drill" that you want to restore.
-* Select *Restore*.
-* In the Restore page, provide information for the restore: 
-** Select the source snapshot copy.
-** Select the destination volume.
+. If the test workload should be restored, select **Mark restore needed** then select that button again in the confirmation dialog. 
+. From the Ransomware Resilience menu, select *Recovery*. 
+. Select the test workload marked with the "Readiness drill" tag that you want to restore.
+. Select *Restore*.
+. Follow the instructions for the recovery style you've configured:
+* link:task-clean-restore-recover.html[Recover with a clean restore]
+* link:task-custom-restore.html[Recover with a custom restore]
 
-. In the restore Review page, select *Restore*.
-+
-The Console displays the status of the Readiness drill restore as "In progress" on the Recovery page.
-+
-After the restore is complete, the Console changes the status of the workload to *Restored*.
-. Review the restored workload. 
-
-TIP: For details about the restore process, see link:rp-use-recover.html[Recover from a ransomware attack (after incidents are neutralized)].  
-
-== Change the Alerts status after the readiness drill
+== Change the alert status after the readiness drill
 
 After reviewing the readiness drill alert and restoring the workload, change the alert status if needed.
 
-*Required the Console role*
+*Required Console role*
 Organization admin, Folder or project admin, or Ransomware Resilience admin. https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html[Learn about Console access roles for all services^].
 
 .Steps
 . Return to the Alert details page.
 . Select the alert again. 
-
-. Indicate the status by selecting *Edit status* and change the status to one of the following: 
-
+. Indicate the status by selecting *Edit* next to the status. Change the status to one of the following: 
 ** Dismissed: If you suspect that the activity is not a ransomware attack, change the status to Dismissed. 
 +
 IMPORTANT: After you dismiss an attack, you cannot change it back. If you dismiss a workload, all snapshot copies taken automatically in response to the potential ransomware attack will be permanently deleted. If you dismiss the alert, the readiness drill is considered complete.
-
 ** Resolved: The incident has been mitigated. 
 
 
 == Review reports on the readiness drill
 
-After the readiness drill completes, you can save a record of the drill to chart your readiness over time. 
+After the readiness drill is complete, you can generate and save a report on the drill. The drill report is a JSON file that captures information such as the detection policy, the alert type and timestamp, details of the attack, and recovery status. 
 
 include::_include/console-role-admin-viewer.adoc[]
 
@@ -168,5 +148,3 @@ include::_include/console-role-admin-viewer.adoc[]
 image:screen-reports.png[Reports page showing the readiness drill report]
 
 . Select *Readiness drills* and *Download* to download the readiness drill report.
-
-
