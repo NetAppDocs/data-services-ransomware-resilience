@@ -1,0 +1,19 @@
+=== Standardize protection groups based on workload and system type
+
+Ransomware Resilience now enforces that protection groups only include one workload type and system type. When you create a new protection group, you must designate both the workload type (file system or block) and the system for the workload. This enhancement ensures that the chosen ransomware protection strategy for the protection group can be successfully applied to all workloads in the group. 
+
+If you have existing protection groups that mix system and workload types, you can continue to use them, but you can't add workloads to the protection group.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-protection-group.html[Create a protection group^].
+
+=== Readiness drill enhancement
+
+Ransomware Resilience now enables you to conduct readiness drills based on attack type. Ransomware Resilience detects five types of attacks, and you can perform readiness drills for each one to simulate the attack and recovery process to understand your readiness for a ransomware attack.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-simulate.html[Conduct a readiness drill^].
+
+=== Pause or delete a SIEM system
+
+Ransomware Resilience now includes options in the UI to pause or delete a SIEM system. This enhancement makes it easier to temporarily disable the system for troubleshooting or maintenance or remove it entirely. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system[Disable a SIEM system^].

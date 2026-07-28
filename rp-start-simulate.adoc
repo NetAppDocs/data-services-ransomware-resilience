@@ -26,18 +26,21 @@ When you run the drill, you can test your response to alerts and optionally walk
 
 == Configure a ransomware attack readiness drill
 
-// You need to enter a user name and password for the following situations: 
+Before running a simulation, you must configure the readiness drill. You must create the readiness drill for a specific type of ransomware attack. Ransomware Resilience recognizes five types of attacks:
 
-// * If user name or password changes occurred for the previously selected storage VM
-// * If you select a different CIFS (SMB) storage VM
-// * If you enter a different test workload name
+include::_include/attack-types.adoc[]
+
 
 include::_include/console-role-admin.adoc[]
 
 .Steps
-. In Ransomware Resilience, select **Settings**. 
-. In the Readiness drill tile, select **Configure**. 
-. Choose the **Readiness drill type**. 
+. In Ransomware Resilience, select **Settings**.
+. In the Readiness drill card on the Settings page, select *Configure*.
++
+The Console displays the Configure readiness drill page.
++
+image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
+. Select the *Ransomware attack type*.
 +
 * **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom restore] where you configure the recovery point.
 * **Clean restore**: Respond to an encryption (entropy) attack with a link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you toward optimized recovery points. 
@@ -47,11 +50,9 @@ include::_include/console-role-admin.adoc[]
 .. After choosing the **System**, choose the **Storage VM** from the prepopulated list. 
 .. Provide a name for the **New test workload**. The test workload will be prepended with "rps_test_".
 .. If the readiness drill is for data breach recovery, select the **User activity agent** for the drill environment.  
-+
-image:screen-settings-alert-drill-configure.png[Screenshot of readiness drill configuration options.]
 . Select *Save*.
 
-TIP: You can edit the readiness drill configuration later using the Settings page. 
+TIP: You can edit the readiness drill configuration later from the Settings page. 
 
 == Start a readiness drill 
 
@@ -61,13 +62,8 @@ include::_include/console-role-admin.adoc[]
 
 .Steps 
 
-. To initiate the drill:
-
-* From the Ransomware Resilience dashboard, select the *Run readiness drill* button at the top right.
-+
-image:screen-dashboard.png[Dashboard page showing the Run readiness drill button]
-+
-* Or go to **Settings**. In the Readiness drill tile, select *Start*.
+. In Ransomware Resilience, select **Settings**.
+. In the Settings page, select *Start*.
 
 NOTE: You can't edit the readiness drill configuration while the drill is running. To modify the readiness drill, select **Reset**, then edit the drill.  
 
@@ -78,18 +74,8 @@ Test your readiness by responding to a readiness drill alert.
 include::_include/console-role-admin.adoc[]
 
 .Steps
-//. Do one of the following: 
-
 . From the Ransomware Resilience menu, select *Alerts*.
-//+
-//* Or, from the menu, select the *Notifications* icon, select *View alert* next to the readiness drill alert.
-//+
-+
-The Console displays the Alerts page. In the Alert ID column, you see "Readiness drill" next to the ID. 
-+
-image:screen-alerts-readiness.png[Alerts page showing the readiness drill alert]
-
-. Select the alert with the "Readiness drill" indication.
+. Select the alert with the "Readiness drill" indication. A list of incident alerts appears on the Alerts details page.  
 +
 image:screen-alerts-readiness-details.png[Alerts details page showing the readiness drill alert]
 . Review the alert incidents. 
@@ -104,8 +90,14 @@ When reviewing the incident, consider:
 * The potential attack severity. 
 +
 If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
-* The file activity versus expected rates. This includes read/write rate, file creation, file renaming, and deletion. 
-* The list of impacted files. Look at the extensions that might be causing the attack. 
+
+* Review the file activity and suspected processes: 
+** Look at the incoming detected data compared to the expected data. 
+** Look at the creation rate of files that is detected compared to the expected rate.
+** Look at the file renaming rate that is detected compared to the expected rate.
+** Look at the deletion rate compared to the expected rate.
+
+* Look at the list of impacted files. Look at the extensions that might be causing the attack. 
 * Determine the impact and breadth of the attack by reviewing the number of impacted files and directories.
 
 == Restore the test workload
