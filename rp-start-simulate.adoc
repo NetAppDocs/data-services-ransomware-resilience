@@ -34,7 +34,6 @@ include::_include/attack-types.adoc[]
 include::_include/console-role-admin.adoc[]
 
 .Steps
-// update images
 . In Ransomware Resilience, select **Settings**.
 . In the Readiness drill card on the Settings page, select *Configure*.
 +
@@ -65,8 +64,6 @@ include::_include/console-role-admin.adoc[]
 
 . In Ransomware Resilience, select **Settings**.
 . In the Settings page, select *Start*.
-
-NOTE: You can't edit the readiness drill configuration while it's running. If you need to modify the drill while it's in progress, reset it, then change the configuration. 
 
 NOTE: You can't edit the readiness drill configuration while the drill is running. To modify the readiness drill, select **Reset**, then edit the drill.  
 

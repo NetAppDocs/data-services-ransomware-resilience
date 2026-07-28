@@ -1,4 +1,4 @@
-=== Unify protection group based on workload and system type
+=== Standardize protection groups based on workload and system type
 
 Ransomware Resilience now enforces that protection groups only include one workload type and system type. When you create a new protection group, you must designate both the workload type (file system or block) and the system for the workload. This enhancement ensures that the chosen ransomware protection strategy for the protection group can be successfully applied to all workloads in the group. 
 
@@ -16,4 +16,4 @@ For more information, see link:https://docs.netapp.com/us-en/data-services-ranso
 
 Ransomware Resilience now includes options in the UI to pause or delete a SIEM system. This enhancement makes it easier to temporarily disable the system for troubleshooting or maintenance or remove it entirely. 
 
-For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem[Disable a SIEM system^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html#disable-a-siem-system[Disable a SIEM system^].

@@ -31,7 +31,7 @@ image:screen-protection-groups.png[Protection groups page]
 +
 image:screen-protection-groups-add.png[Add protection group page]
 . Enter a name for the protection group. 
-. Select the **Workload type** (block or file share) and the **System type**.
+. Select the **Workload type** (block or file system) and the **System type**.
 . Select the workloads to add to the group. 
 +
 TIP: To see more details on the workloads, scroll to the right. 
