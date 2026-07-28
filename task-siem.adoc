@@ -301,6 +301,17 @@ image:siem-webhook.png[Screenshot of the SIEM webhook configuration.]
 [NOTE]
 You can edit the SIEM configuration after creating it. You can edit all fields except for the name. 
 
+== Disable a SIEM system
+
+You can pause sending event data to a SIEM system or delete the SIEM system entirely if you temporarily or permanently decided you no longer need the SIEM. If you pause the SIEM, you can resume it at any time. 
+
+.Steps
+. In Ransomware Resilience, select **Settings**.
+. In the SIEM tile, select **Manage**. 
+. Select the action menu (`...`) for the SIEM system you want to stop, then select **Pause** or **Delete**. 
++
+If you're deleting, select **Delete** in the confirmation dialog to complete the action. 
+
 == Next steps
 
 * link:reference-soar.html[Integrate a SOAR playbook]
