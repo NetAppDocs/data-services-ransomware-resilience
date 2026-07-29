@@ -202,9 +202,9 @@ After the alert is marked for restore, the alert moves from the Alerts tab to th
 
 After you review incidents, you need to determine whether the incidents are potential attacks. If they aren't actual threats, they can be dismissed.
 
-You can dismiss false positives or decide to recover your data immediately. If you dismiss the alert, Ransomware Resilience learns this behavior and associates it with normal operations, and doesn't initiate an alert on such a behavior again. 
+You can dismiss false positives or decide to recover your data immediately. If you dismiss an alert, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
 
-If you dismiss a workload, all snapshot copies taken automatically in response to a potential ransomware attack are permanently deleted. 
+For alerts prompted by encryption (entropy) events, Ransomware Resilience learns from your dismissal of the alert to associate the activity with normal operations; in the future, you won't receive alerts based on this type of activity. This is because encryption (entropy) events are managed by ARP/AI. For alerts prompted by link:concept-ransomware-resilience.html#attack-types[other events], Ransomware Resilience does _not_ learn from the dismissal as these alerts are based on user activity patterns. 
 
 CAUTION: If you dismiss an alert, you can't change its status or undo this change. 
 
