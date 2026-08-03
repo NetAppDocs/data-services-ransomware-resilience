@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-users-manage.html
-keywords: user activity detection, 
+keywords: user activity detection, block user, stop alerts, exclude users, alert management
 summary: After creating the user directory connector in NetApp Ransomware Resilience, you can block and unblock users and exclude users from alerts. You can also exclude file paths from generating alerts. 
 ---
 = Manage alerts and blocked users in NetApp Ransomware Resilience

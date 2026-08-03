@@ -7,3 +7,6 @@
 | Data destruction | Ransomware Resilience discovers mass deletion of files by a specific user.
 | Suspicious user behavior | Ransomware Resilience identifies anomalous behavior beyond the scope of data breach, data destruction, or encryption.
 |===
+
+[NOTE]
+You must configure link:concept-user-behavior.html[user activity detection] to detect encryption (user behavior), data breach, data destruction, and suspicious user behavior attacks. 
