@@ -33,23 +33,23 @@ include::_include/attack-types.adoc[]
 
 include::_include/console-role-admin.adoc[]
 
+.Before you begin
+
+* To configure a readiness drill for any ransomware attack type other than encryption (entropy), you must have configured link:concept-user-behavior.html[user activity detection].
+* When you create a readiness drill for a CIFS workload, you must enter user credentials. You should create a dedicated, non-production test user for readiness drills, especially when testing user activity attack types (that is, data breach). If you use a real production user, Ransomware Resilience flags the user, which can result in blocking the user from production data. If you use a test user, all users maintain normal access to data. 
+
 .Steps
 . In Ransomware Resilience, select **Settings**.
 . In the Readiness drill card on the Settings page, select *Configure*.
 +
-The Console displays the Configure readiness drill page.
-+
 image:screen-settings-alert-drill-configure.png[Configure readiness drill page]
 . Select the *Ransomware attack type*.
-+
-* **Custom recovery**: Respond to an encryption (entropy) attack with a link:rp-use-recover.html[custom restore] where you configure the recovery point.
-* **Clean restore**: Respond to an encryption (entropy) attack with a link:task-clean-restore-recover.html[clean restore] process for recovery, which guides you toward optimized recovery points. 
-* **Data breach recovery**: You must have configured link:suspicious-user-activity.html[a user activity agent] before you can enable this drill type.
 . Choose the environment where the readiness drill test will be created.
-.. Choose the **Console agent** and **System**.
-.. After choosing the **System**, choose the **Storage VM** from the prepopulated list. 
-.. Provide a name for the **New test workload**. The test workload will be prepended with "rps_test_".
-.. If the readiness drill is for data breach recovery, select the **User activity agent** for the drill environment.  
+.. Choose the **Console agent** and **Primary system**.
+.. After choosing the primary system, choose the **Storage VM** from the prepopulated list. 
+.. If the storage VM uses the CIFS protocol, enter the Active Directory credentials. You can optionally enter the **Active Directory domain**; you must enter the **User name** and **Password**. It's recommended you enter credentials for a dedicated test user. 
+.. Provide a name for the **New test workload**. The test workload will be prepended with `rps_test_`.
+.. If the readiness drill is for a user activity attack type, select the **User activity agent** for the drill environment.  
 . Select *Save*.
 
 TIP: You can edit the readiness drill configuration later from the Settings page. 

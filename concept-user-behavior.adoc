@@ -45,9 +45,6 @@ Ransomware Resilience's user behavior detection is an integration with Data Infr
 
 include::_include/workload-security.adoc[]
 
-[TIP]
-If you've configured Workload Security, you can configure alerts through link:https://docs.netapp.com/us-en/data-infrastructure-insights/task_create_webhook.html#creating-a-webhook[DII webhooks^].
-
 == Next steps
 
 * link:reference-user-activity-requirements.html[Requirements for user behavior detection]
