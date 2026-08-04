@@ -34,7 +34,7 @@ You can block users when you believe they're responsible for malicious activity.
 . In the Settings dashboard, locate the User activity monitoring tile then select **Manage**. 
 . Select the **Users** tab. 
 . Select **Edit user blocking**. 
-. Choose which quality of user blocking you want to changeto modify the duration of the blocking, select **Time period for blocked users** then modify the **Time period**. To remove users from the blocked user list, select **Unblock users**. 
+. Choose which quality of user blocking you want to change. To modify the duration of the blocking, select **Time period for blocked users** then modify the **Time period**. To remove users from the blocked user list, select **Unblock users**. 
 . Select the checkbox next to the name of the blocked user whose status you want to change. 
 . Select **Save**. 
 
