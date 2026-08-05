@@ -36,7 +36,7 @@ include::_include/console-role-admin.adoc[]
 .Before you begin
 
 * To configure a readiness drill for any ransomware attack type other than encryption (entropy), you must have configured link:concept-user-behavior.html[user activity detection].
-* When you create a readiness drill for a CIFS workload, you must enter user credentials. You should create a dedicated, non-production test user for readiness drills, especially when testing user activity attack types (that is, data breach). If you use a real production user, Ransomware Resilience flags the user, which can result in blocking the user from production data. If you use a test user, all users maintain normal access to data. 
+* When you create a readiness drill for a CIFS workload, you must enter user credentials. You should create a dedicated, non-production test user for readiness drills, especially when testing user activity attack types (that is, data breach). If you use a real production user and that user has suspicious behavior on other production volumes, those alerts could appear under the readiness drill instead of generating a real alert. 
 
 .Steps
 . In Ransomware Resilience, select **Settings**.
