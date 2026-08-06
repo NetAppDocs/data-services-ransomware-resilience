@@ -34,7 +34,7 @@ If you encounter an issue installing or running the user activity agent in NetAp
 | Issue | Resolution
 a| User activity agent is not running after installation. After running the command `systemctl status cloudsecure-agent.service`, the output shows:
 
-````
+```
 [root@demo ~]# systemctl status cloudsecure-agent.service +
 agent.service - Workload Security Agent Daemon Service 
 Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled) +
@@ -43,7 +43,7 @@ Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure
 Main PID: 25889 (code=exited, status=126), +
 Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a +
 Aug 03 21:12:26 demo systemd[1]: Unit cloudsecure-agent.serve
-````
+```
 a| If /opt/netapp is an NFS mount, and if cssys user doesn't have access to this folder, the installation will fail. The user cssys is a local user created by the user activity agent installer that may not have permission to access the mounted share.
 
 You can check permissions by attempting to access `/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent` using the cssys user. If it returns "Permission denied," the appropriate permissions haven't been set. Install on a directory local to the machine instead of a mounted folder.
@@ -56,12 +56,12 @@ Edit the agent.properties proxy settings:
 . Open the agent.properties file in a text editor.
 . Add or modify the following lines:
 +
-````
+```
 AGENT_PROXY_HOST=<proxy.vm.url> +
 AGENT_PROXY_PORT=<portValue> +
 AGENT_PROXY_USER=<user> +
 AGENT_PROXY_PASSWORD=<password>
-````
+```
 +
 . Save the file.
 . Restart the agent: `sudo systemctl restart cloudsecure-agent.service`.
@@ -73,7 +73,7 @@ a|
 . Check the logs for the message "Failed to start Workload Security daemon service."
 . Check if the cssys user exists on the user activity agent machine or not. Execute these commands to check if the cssys user and group exist, respectively: `sudo id cssys` then `sudo groups cssys`.
 . If the user or group don't exist, a centralized monitoring policy may have deleted the cssys user. Create cssys user and group manually by executing the following commands: `sudo useradd cssys` then `sudo groupadd cssys`. 
-. Restart the agent service: `sudo systemctl restart cloudsecure-agent.service`.`
+. Restart the agent service: `sudo systemctl restart cloudsecure-agent.service`.
 | The user activity agent state is not connected
 | Restart the agent. Authenticate via SSH to the user activity agent machine then restart the agent with the command `sudo systemctl restart cloudsecure-agent.service`. After restart, check the status of the agent with the command `sudo systemctl status cloudsecure-agent.service`. If the restart operation was successful, the output displays "CONNECTED"
 |===
