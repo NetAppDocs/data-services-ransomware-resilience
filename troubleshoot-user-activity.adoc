@@ -34,16 +34,16 @@ If you encounter an issue installing or running the user activity agent in NetAp
 | Issue | Resolution
 a| User activity agent is not running after installation. After running the command `systemctl status cloudsecure-agent.service`, the output shows:
 
-====
-[root@demo ~]# systemctl status cloudsecure-agent.service
-agent.service – Workload Security Agent Daemon Service
-Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled)
-Active: activating (auto-restart) (Result: exit-code) since Tue 2021-08-03 21:12:26 PDT; 2s ago
-Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent (code=exited status=126)
-Main PID: 25889 (code=exited, status=126),
-Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a
+````
+[root@demo ~]# systemctl status cloudsecure-agent.service +
+agent.service - Workload Security Agent Daemon Service 
+Loaded: loaded (/usr/lib/systemd/system/cloudsecure-agent.service; enabled; vendor preset: disabled) +
+Active: activating (auto-restart) (Result: exit-code) since Tue 2021-08-03 21:12:26 PDT; 2s ago +
+Process: 25889 ExecStart=/bin/bash /opt/netapp/cloudsecure/agent/bin/cloudsecure-agent (code=exited status=126) +
+Main PID: 25889 (code=exited, status=126), +
+Aug 03 21:12:26 demo systemd[1]: cloudsecure-agent.service: main process exited, code=exited, status=126/n/a +
 Aug 03 21:12:26 demo systemd[1]: Unit cloudsecure-agent.serve
-====
+````
 a| If /opt/netapp is an NFS mount, and if cssys user doesn't have access to this folder, the installation will fail. The user cssys is a local user created by the user activity agent installer that may not have permission to access the mounted share.
 
 You can check permissions by attempting to access `/opt/netapp/cloudsecure/agent/bin/cloudsecure-agent` using the cssys user. If it returns "Permission denied," the appropriate permissions haven't been set. Install on a directory local to the machine instead of a mounted folder.
@@ -56,12 +56,12 @@ Edit the agent.properties proxy settings:
 . Open the agent.properties file in a text editor.
 . Add or modify the following lines:
 +
-====
-AGENT_PROXY_HOST=<proxy.vm.url>
-AGENT_PROXY_PORT=<portValue>
-AGENT_PROXY_USER=<user>
+````
+AGENT_PROXY_HOST=<proxy.vm.url> +
+AGENT_PROXY_PORT=<portValue> +
+AGENT_PROXY_USER=<user> +
 AGENT_PROXY_PASSWORD=<password>
-====
+````
 +
 . Save the file.
 . Restart the agent: `sudo systemctl restart cloudsecure-agent.service`.
