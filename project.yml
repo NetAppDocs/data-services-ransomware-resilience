@@ -56,6 +56,8 @@ sidebar:
                   url: /suspicious-user-activity.html
                 - title: Manage alerts and blocked users
                   url: /task-users-manage.html
+                - title: Troubleshoot user activity agent
+                  url: /troubleshoot-user-activity.html
             - title: Manage protection groups 
               url: /task-protection-group.html
             - title: Manage blocked file extensions
