@@ -1,0 +1,5 @@
+=== Delete a data collector
+
+Ransomware Resilience now supports deleting the data collector when you've configured user activity detection. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html[Delete the data collector^].

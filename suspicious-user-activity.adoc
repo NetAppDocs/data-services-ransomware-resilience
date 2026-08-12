@@ -74,6 +74,10 @@ You can view the details of the data collector. From Settings, select **Manage**
 
 image:user-activity-settings.png[Screenshot of user activity settings.]
 
+== Delete a data collector
+
+// details go here
+
 == Create a user directory connector
 
 To map user IDs to usernames, you must create a user directory connector. 
