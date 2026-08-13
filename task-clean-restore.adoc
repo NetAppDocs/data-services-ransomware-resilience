@@ -200,7 +200,7 @@ The process for creating an isolated recovery room differs if the environment is
 --
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restore card, select **Add** to create the isolated recovery environment.  
-. In the Type section, choose *Cleaning only*. 
+. In the Type section, choose *On-demand cleaning*. 
 . Expand the **Name** section. Enter a **Name** for the environment. 
 . For a cloud-based IRE, select **Amazon Web Services**. 
 . Expand the *Systems* section. Choose the systems you want to connect to the IRE. For each system you select, you must provide the storage VM's IP address, subnet mask, and gateway.
@@ -208,14 +208,13 @@ The process for creating an isolated recovery room differs if the environment is
 [NOTE]
 For IREs deployed to Amazon FSx for NetApp ONTAP, you don't need to provide this information. 
 + 
-image:clean-restore-systems.png[Screenshot of systems selection interface.]
+image::clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Authentication** section. 
     * Enter the cloud **Account** ID and select the **Region** for the account from the dropdown menu. You can only deploy an IRE in a supported region. 
     * Enter the **Access key** and **Secret key** for the account. 
++
+image::screenshot-set-up-recovery-environment.png[Screenshot of IRE authentication set-up.]
 . Expand the *Virtual private cloud (VPC)* section. Enter the VPC ID where the IRE is to be deployed. 
-+
-image:screenshot-set-up-recovery-environment.png[Screenshot of IRE authentication set-up.]
-+
 . Select **Add** to create the IRE.
 +
 Ransomware Resilience tests the connection after you select add, which can take a few minutes. The IRE has been deployed successfully when its status displays as "deployed."
@@ -226,14 +225,12 @@ Ransomware Resilience tests the connection after you select add, which can take 
 --
 . In Ransomware Resilience, select **Settings**. 
 . In the Clean restores card, select **Add** if this is your first environment or **Manage** if you've already created one. 
-. In the Type section, choose *Cleaning only*. 
+. In the Type section, choose *On-demand cleaning*. 
 . Expand the *Name* section. Assign a **Name** for the IRE. 
 . For location, select **On-premises**. 
 . Expand the *Systems* section. Choose the systems that you want to connect to the IRE. Assign a storage VM IP, subnet mask, and gateway for each system that has workloads to be recovered in the IRE.
 +
 Each system you select must have an assigned IP address. You can select primary or secondary systems. Secondary systems can be used for analysis and recovery if the primary system has no unencrypted snapshots or if it's unavailable.   
-+
-image:clean-restore-systems.png[Screenshot of systems selection interface.]
 . Expand the **Console agent** section. Select the Console agent from the dropdown menu that's deployed in the IRE. 
 . Expand the *Compute* section. 
 .. Provide the credentials to authenticate the vCenter server: *IP address* or full-qualified domain name (FQDN), *Port*, *User name*, and *Password*.
