@@ -171,7 +171,7 @@ a|
 636 (LDAPS / start-tls) |User activity agent|LDAP Server URL|Connect to LDAP
 |HTTPS (TCP)|443|User activity agent|Cluster or SVM management IP address (depending on SVM collector configuration)|API communication with ONTAP
 |TCP|35000 - 55000
-a|SVM data LIF IP addresses|User activity agent|Communication from ONTAP to the user activity agent for Fpolicy events. These ports must be opened towards the user activity agent in order for ONTAP to send events to it, including any firewall on the user activity agent itself (if present). +
+a|SVM data LIF IP addresses|User activity agent|Communication from ONTAP to the user activity agent for FPolicy events. These ports must be opened towards the user activity agent in order for ONTAP to send events to it, including any firewall on the user activity agent itself (if present). +
 **NOTE:** You don't need to reserve *all* of these ports, but the ports you reserve for this must be within this range. It's recommended you start by reserving  100 ports and increase if necessary.
 |TCP|35000-55000|Cluster Management IP|User activity agent
 |Communication from ONTAP cluster management IP to the user activity agent for *EMS events*. These ports must be opened towards the user activity agent in order for ONTAP to send EMS events to it, including any firewall on the user activity agent itself. +
