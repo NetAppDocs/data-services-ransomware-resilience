@@ -76,7 +76,15 @@ image:user-activity-settings.png[Screenshot of user activity settings.]
 
 == Delete a data collector
 
-// details go here
+If a data collector has gone stale or is no longer working, you can delete it. Any workload monitored by the data collector will stop being monitored for suspicious user behavior after you delete it. 
+
+.Steps
+
+. In Ransomware Resilience, go to *Settings*.
+. In the User activity monitoring tile, select **Manage**.
+. Select the *Agents and collectors tab* then *Data collectors*.
+. Identify the data collector you want to delete. Select the action menu then **Delete**. 
+. In the dialog, select *Delete* to confirm. 
 
 == Create a user directory connector
 
@@ -85,7 +93,7 @@ To map user IDs to usernames, you must create a user directory connector.
 .Steps 
 . In Ransomware Resilience, go to *Settings*.
 . In the User activity monitoring tile, select **Manage**.
-. Select the **User directory connectors** tab then **Add**.
+. Select the *Agents and collectors tab* then **User directory connectors** tab then **Add**.
 . Configure the connection. Enter the required information for each field.
 +
 [%header,cols="25,75"]
