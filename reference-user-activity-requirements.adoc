@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: reference-user-activity-requirements.html
 keywords: data breach detection, data breach, user activity, suspicious, anomalous, requirements, endpoints, operating systems, networking
-summary: Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements.
+summary: Before creating a user activity agent and other collectors, you must ensure you meet the outlined operating system, server, and network requirements. 
 ---
 = User activity detection requirements for NetApp Ransomware Resilience
 :hardbreaks:
@@ -10,19 +10,19 @@ summary: Before creating a user activity agent and other collectors, you must en
 :imagesdir: ./media/
 
 [.lead]
-Before you enable user behavior detection in NetApp Ransomware Resilience, verify that your operating system, server, and network meet the requirements for user activity agents and collectors.
+NetApp Ransomware Resilience user behavior detection enables you to respond to user-level ransomware events. You must create a set of agents to enable user behavior detection. Before enabling detection, you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events.
 
-== User activity agent cloud provider support
+== User activity agent cloud provider support 
 
-To enable user behavior detection, you must create a user activity agent. The user activity agent is an executable environment for data collectors, which send user activity events to Ransomware Resilience.
+To enable user behavior detection, you must create a user activity agent. The user activity agent is an executable environment for data collectors, which share user activity events with Ransomware Resilience. 
 
 The user activity agent can be deployed in AWS and Azure in the following regions:
 
 [%header]
 |===
-| Cloud provider | Region
-| AWS
-a|
+| Cloud provider | Region 
+| AWS 
+a| 
 * Asia Pacific (Sydney) (ap-southeast-2)
 * Europe (Frankfurt) (eu-central-1)
 * US East (N. Virginia) (us-east-1)
@@ -30,7 +30,7 @@ a|
 |===
 
 [NOTE]
-The regional deployment of the user activity agent has no impact on the Console agent. Console agent deployment is independent of these regions.
+The regional deployment of the user activity agent has no impact on the Console agent. Console agent deployment is independent of these regions.  
 
 == Operating system requirements
 
@@ -51,9 +51,9 @@ Suspicious user behavior detection is supported with the following operating sys
 |===
 
 [NOTE]
-The machine you use for the user activity agent should not run other application-level software. A dedicated server is recommended.
+The machine you use for the user activity agent should not be running other application-level software. A dedicated server is recommended.
 
-The `unzip` command is required for installation. The `sudo su -` command is required for installation, running scripts, and uninstallation.
+The `unzip` command is required for installation. The `sudo su -` command is required for installation, running scripts, and deinstallation.
 
 == Server requirements
 
@@ -66,13 +66,13 @@ The server must meet the following minimum requirements:
 === Server recommendations
 
 * Allocate extra disk space to allow for the creation of the file system. Ensure that there is at least 35 GB of free space in the file system. +
-If `/opt` is a mounted folder from a NAS storage, local users must have access to this folder. User activity agent creation can fail if local users don't have the necessary permissions.
+If `/opt` is a mounted folder from a NAS storage, local users must have access to this folder. User activity agent creation can fail if local users don't have the necessary permissions. 
 * It is recommended that you install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install the agent and Ransomware Resilience on the same machine, allow for 50 to 55 GB of disk space. For Linux, allocate 25 to 30 GB of space to `/opt/netapp` and 25 GB to `var/log/netapp`.
 * It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
 
-=== Sizing recommendations
+=== Sizing recommendations 
 
-When collecting user events, ensure the machine hosting the user activity agent is sized to accommodate your event rate. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. To increase the number of data collectors, you may need to increase the RAM or CPU capacity. Ransomware Resilience supports up to 50 data collectors per user activity agent.
+When collecting user events, ensure the machine hosting the user activity agent is sized to accommodate your event rate. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to tolerate the number of events per second. To increase the number of data collectors, you may need to increase the RAM or CPU capacity. Ransomware Resilience supports up to 50 data collectors per user activity agent. 
 
 The following table provides general guidance for sizing:
 
@@ -83,7 +83,7 @@ The following table provides general guidance for sizing:
 | 4 cores, 32GB | 20 data collectors | 20,000 events/second
 |===
 
-You can also calculate your specific requirements. When calculating the appropriate size, NetApp recommends that you use a 30% buffer. Use this formula to determine whether your configuration can handle the load.
+You can also calculate your specific requirements. When calculating the appropriate size, it's recommended you qualify with a buffer rate of 30%. Use this formula to determine if your configuration can handle the load.
 
 ----
 Where E is the sum of all events per second across all data collectors:
@@ -91,19 +91,19 @@ Where E is the sum of all events per second across all data collectors:
 E + (0.3 x E) < 20,000 events/second
 ----
 
-.Ransomware Resilience provides a script to calculate the event data rate. Learn how to calculate the event data rate in Ransomware Resilience.
+.Ransomware Resilience provides a script to calculate the event data rate. Learn how to calculate the event data rate in Ransomware Resilience. 
 [%collapsible]
 ====
-Ransomware Resilience provides a script that you can run on your system to calculate the event data rate. By default, the script runs for a maximum of five storage VMs. If your environment includes more than five SVMs, you can modify the script accordingly. Regardless of the number of SVMs, the script takes approximately five minutes to produce an average event rate reading. Before you run the script, you must have:
+Ransomware Resilience provides a script you can run on your system to calculate the event data rate. By default, the script runs for a maximum of five storage VMs. If your environment includes more than 5 SVMs, you can modify the script accordingly. Regardless of the number of SVMs, the script takes approximately five minutes to get an average event rate reading. Before running the script you must have:
 
 * link:suspicious-user-activity.html[Configured a user activity agent]
 * The cluster IP address
 * The cluster admin username and password
 * Installed `sshpass` on the Linux machine (you can install with the command `sudo yum install -y sshpass`)
 
-.Steps
+.Steps 
 . From the cluster hosting the user activity agent, run the script as an admin: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
-. When prompted, provide the cluster IP address, the admin username, and the admin password.
+. When prompted, provide the cluster IP address, the admin username, and the admin password. 
 . The script takes approximately five minutes to run. When it completes, the command line displays the event rate, for example "Svm svm_rate is generating 100 events/sec."
 +
 Use the event rate to calculate your sizing.
@@ -112,10 +112,10 @@ Use the event rate to calculate your sizing.
 
 == Cloud network access rules
 
-Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States).
+Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
 
 [IMPORTANT]
-During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp representative for the site name.
+During the initial installation, replace the `<site_name>` with a wildcard (`*`) permission. After the agent is activated and fully operational, you can replace the permission with the site name. Contact your NetApp representative for the site name. 
 
 [NOTE]
 The user activity agent uses NetApp Data Insights Infrastructure technology, hence the use of `cloudinsights` endpoints. For more information, see link:concept-user-behavior.html#user-activity-forensics[Ransomware Resilience and Data Infrastructure Insights].
@@ -125,12 +125,12 @@ The user activity agent uses NetApp Data Insights Infrastructure technology, hen
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|HTTPS (TCP)|443|User activity agent
+|HTTPS (TCP)|443|User activity agent 
 a|
 - <site_name>.cs01-ap-1.cloudinsights.netapp.com
 - <site_name>.c01-ap-1.cloudinsights.netapp.com
 - <site_name>.c02-ap-1.cloudinsights.netapp.com
-- agentlogin.cs01-ap-1.cloudinsights.netapp.com
+- agentlogin.cs01-ap-1.cloudinsights.netapp.com 
 |Access to Ransomware Resilience
 |===
 
@@ -139,8 +139,8 @@ a|
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|HTTPS (TCP)|443|User activity agent
-a|
+|HTTPS (TCP)|443|User activity agent 
+a| 
 - <site_name>.cs01-eu-1.cloudinsights.netapp.com
 - <site_name>.c01-eu-1.cloudinsights.netapp.com
 - <site_name>.c02-eu-1.cloudinsights.netapp.com
@@ -153,7 +153,7 @@ a|
 [cols="1,1,1,3,1",options="header"]
 |===
 |Protocol|Port|Source	|Destination |Description
-|HTTPS (TCP)|443|User activity agent
+|HTTPS (TCP)|443|User activity agent 
 a|
 - <site_name>.cs01.cloudinsights.netapp.com
 - <site_name>.c01.cloudinsights.netapp.com

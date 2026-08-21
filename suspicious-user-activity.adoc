@@ -12,7 +12,7 @@ summary: User activity detection in Ransomware Resilience enables you to detect 
 [.lead]
 Use NetApp Ransomware Resilience user behavior detection to identify suspicious user activity that could indicate ransomware, data breach, or data destruction events. To enable it, install at least one user activity agent to create the data collection environment. 
 
-A user activity agent hosts a data collector and user directory connector, which send data for analysis.
+A user activity agent hosts a data collector and user directory connector, which send data to a cloud location for analysis.
 
 * The **data collector** collects user activity data from ONTAP. The data collector is created automatically when you create a protection strategy with user behavior detection. 
 * The **user directory connector** connects to your directory to map user IDs to usernames. You must configure the user directory connector.

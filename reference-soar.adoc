@@ -9,7 +9,7 @@ summary: Integrate and use SOAR playbooks to automate NetApp Ransomware Resilien
 :imagesdir: ./media/
 
 [.lead]
-Use SOAR playbooks with NetApp Ransomware Resilience to automate threat response workflows and related security tasks.
+NetApp Ransomware Resilience offers security orchestration, automation, and response (SOAR) playbooks that enable you to automate tasks such as threat response.
 
 Ransomware Resilience playbooks offer the following capabilities:
 
@@ -25,7 +25,7 @@ Ransomware Resilience playbooks offer the following capabilities:
 
 == Playbooks
 
-Ransomware Resilience offers playbooks for Google SecOps, Microsoft Sentinel, and Splunk. Review the appropriate page for setup details.
+Ransomware Resilience offers playbooks for Google SecOps, Microsoft Sentinel, and Splunk. Review the pertinent page for setup details.
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience[Google SecOps^]
 * link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs?tab=Overview[Microsoft Sentinel^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks[GitHub link^]
