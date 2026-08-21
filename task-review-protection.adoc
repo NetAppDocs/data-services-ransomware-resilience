@@ -10,7 +10,7 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 :imagesdir: ./media/
 
 [.lead]
-Use the protection dashboard in NetApp Ransomware Resilience to review workload protection status, identify what needs attention, and understand your overall protection coverage.
+Use the protection dashboard in NetApp Ransomware Resilience to review workload protection status, identify workloads that need attention, and understand your overall protection coverage.
 
 Once you understand the scope of your current protection, link:rp-use-protect.html[you can create and apply ransomware protection strategies to your workloads].
 // include::_include/console-role-admin.adoc[]
