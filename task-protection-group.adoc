@@ -16,7 +16,7 @@ include::_include/console-role-admin.adoc[]
 
 == Create a protection group
 
-You can create groups regardless of their protection status. When you add a protection policy to a protection group, the new policy replaces any existing policy, including policies managed by NetApp Backup and Recovery.
+You can create groups regardless of the protection status of the workloads you add to it. When you add a protection policy to a protection group, the new policy replaces any existing policy, including policies managed by NetApp Backup and Recovery.
 
 Workloads in a protection group must be of the same workload type; meaning you can't mix block and file system workloads. Workloads must also belong to the same system type. For example, a protection group can include all on-premises ONTAP file system workloads; you can't add Amazon FSx for NetApp ONTAP workloads to the same protection group.
 
