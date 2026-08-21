@@ -8,14 +8,14 @@ To initiate scanning, on the Protection page, select *Identify exposure* in the 
 
 === SIEM integration with Microsoft Sentinel
 
-You can now send data to your security and event management system (SIEM) for threat analysis and detection using Microsoft Sentinel. Previously, you could select the AWS Security Hub or Splunk Cloud as your SIEM.
+You can now send data to your security information and event management (SIEM) system for threat analysis and detection using Microsoft Sentinel. Previously, you could select AWS Security Hub or Splunk Cloud as your SIEM.
 
-https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring BlueXP ransomware protection settings]. 
+https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Learn more about configuring NetApp Ransomware Resilience settings]. 
 
 
 === Free trial now 30 days
 
-With this release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days. 
+With this release, new deployments of NetApp Ransomware Resilience now have a 30-day free trial. Previously, BlueXP ransomware protection provided a 90-day free trial. If you are already in the 90-day free trial, that offer continues for 90 days. 
 
 // === Restore application workload at the file level for Podman
 
@@ -23,4 +23,3 @@ With this release, new deployments of BlueXP ransomware protection now have 30 d
 
 // //link:rp-use-recover.html[Learn more about recovering from a ransomware attack].
 // https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-recover.html[Learn more about recovering from a ransomware attack].
-

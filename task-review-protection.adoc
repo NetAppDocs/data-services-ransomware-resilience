@@ -10,25 +10,25 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience's protection dashboard provides an overview of the protection status and readiness of your workloads. Use the protection dashboard to gain insights into what is protected, what needs protection, and what the scope of the protection is. 
+Use the protection dashboard in NetApp Ransomware Resilience to review workload protection status, identify what needs attention, and understand your overall protection coverage.
 
 Once you understand the scope of your current protection, link:rp-use-protect.html[you can create and apply ransomware protection strategies to your workloads].
 // include::_include/console-role-admin.adoc[]
 
 == View protection on a workload
 
-One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads: 
+One of the first steps in protecting workloads is viewing your current workloads and their protection status. You can see the following types of workloads:
 
 * Block workloads
 * File share workloads
 * VM workloads
 
-.Steps 
+.Steps
 
-. From the Console's left navigation, select *Protection* > *Ransomware Resilience*. 
-. Do one of the following: 
+. From the Console's left navigation, select *Protection* > *Ransomware Resilience*.
+. Do one of the following:
 +
-* From the Data Protection pane on the dashboard, select *View all*. 
+* From the Data Protection pane on the dashboard, select *View all*.
 * From the menu, select *Protection*.
 +
 image:screen-protection.png[Protection page]
@@ -40,16 +40,16 @@ NOTE: See link:rp-use-protect.html#add-a-ransomware-protection-strategy[Add a ra
 
 The protection dashboard in Ransomware Resilience displays detailed information about workloads (for example, workload name and type, Console agent, system, and storage VM) in addition to insights about protection status. Use the protection dashboard to review and manage ransomware preparedness for workloads. The following columns are especially helpful in understanding your protection posture:
 
-*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not: 
+*Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not:
 
-* *Protected*: A detection policy is applied. 
-* *At risk*: No policy is applied. If a workload does not have a detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled. 
-* *In progress*: A policy is being applied, but the operation has not completed. 
-* *Failed*: A policy has been configured but there's an error. 
+* *Protected*: A detection policy is applied.
+* *At risk*: No policy is applied. If a workload does not have a detection policy enabled, it is "at risk" even if it has a snapshot and backup policy enabled.
+* *In progress*: A policy is being applied, but the operation has not completed.
+* *Failed*: A policy has been configured but there's an error.
 
 *Detection status*:
 +
-Ransomware Resilience provides insights into the scope of ransomware detection policies you've configured on your workloads. Review the detection scope with the following fields. 
+Ransomware Resilience provides insights into the scope of ransomware detection policies you've configured on your workloads. Review the detection scope with the following fields.
 
 ** *Encryption detection status*
 ** *Suspected user behavior detection status*
@@ -59,17 +59,17 @@ Ransomware Resilience provides insights into the scope of ransomware detection p
 
 *Importance*
 
-Ransomware Resilience assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies: 
+Ransomware Resilience assigns an importance or priority to each workload during discovery based on an analysis of each workload. The workload importance is determined by the following snapshot frequencies:
 
 * *Critical*: More than one snapshot copy is taken per hour (highly aggressive protection schedule)
-* *Important*: Snapshots copies are created less frequently than every hour but more frequently than every day 
+* *Important*: Snapshots copies are created less frequently than every hour but more frequently than every day
 * *Standard*: Snapshot copies are taken more than once per day
 
 *Privacy exposure*: Select this option to link:task-classify.html[scan for personally identifiable information with NetApp Data Classification].
 
 *Replication destination*: If you've configured snapshot replication, the names of the destination storage VMs and systems are listed. If there's no replication, this field displays "N/A."
 
-*Backup destination*: If you've configured a ransomware protection strategy with backups, the name of the backup destination system is listed here. 
+*Backup destination*: If you've configured a ransomware protection strategy with backups, the name of the backup destination system is listed here.
 
 == Next steps
 

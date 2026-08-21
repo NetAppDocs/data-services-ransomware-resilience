@@ -9,7 +9,7 @@ summary: NetApp Ransomware Resilience offers a script when you enable user activ
 :imagesdir: ./media/
 
 [.lead]
-When you configure user activity monitoring in NetApp Ransomware Resilience, you can run a test script to simulate suspicious user behavior events. 
+When you configure user activity monitoring in NetApp Ransomware Resilience, you can run a test script to simulate suspicious user behavior events for validation and testing. 
 
 This script is designed to simulate encryption-based ransomware attacks performed by known users. With additional commands, you can also simulate data breach or data destruction attacks. 
 

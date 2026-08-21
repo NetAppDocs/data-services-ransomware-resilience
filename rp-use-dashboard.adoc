@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-dashboard.html
 keywords: ransomware protection, ransomware protection dashboard, detect ransomware attacks, recover from ransomware attack
-summary: Use the Ransomware Resilience to determine which workloads require protection or attention and to assess the extent of protection by looking at how much storage is protected or at risk. 
+summary: Use the Ransomware Resilience to determine which workloads require protection or attention and to assess the extent of protection by looking at how much storage is protected or at risk.
 ---
 = Monitor workload health in NetApp Ransomware Resilience
 :hardbreaks:
@@ -10,9 +10,9 @@ summary: Use the Ransomware Resilience to determine which workloads require prot
 :imagesdir: ./media/
 
 [.lead]
-The NetApp Ransomware Resilience dashboard provides at-a-glance information about the protection health of your workloads. You can quickly determine workloads that are at risk or protected, identify workloads impacted by an incident or in recovery, and gauge the extent of protection by looking at how much storage is protected or at risk.
+Use the NetApp Ransomware Resilience dashboard to quickly see workload protection health, identify workloads that are at risk or in recovery, and gauge how much storage is protected.
 
-Use the dashboard to review protection suggestions, change settings, and download reports.
+Use the dashboard to review protection recommendations, change settings, and download reports.
 
 include::_include/console-role-admin-viewer.adoc[]
 
@@ -25,27 +25,27 @@ include::_include/console-role-admin-viewer.adoc[]
 image:screen-dashboard.png[Dashboard page]
 
 
-. From the dashboard, you can do the following actions in each of the panes: 
+. From the dashboard, you can do the following in each pane:
 
-* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads]. 
+* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].
 +
-TIP: Select the "i" icon to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket. 
+TIP: Select the "i" icon to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket.
 
-* *Alerts and workload data recovery*: Select *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert]. 
+* *Alerts and workload data recovery*: Select *View all* to see active incidents that have impacted your workload, are ready for recovery after incidents are neutralized, or are in recovery. Refer to link:rp-use-alert.html[Respond to a detected alert].
 +
-** An incident is categorized in one of the following states: 
+** An incident is categorized in one of the following states:
 +
 *** New
 *** Dismissed
 *** Dismissing
 *** Resolved
-+ 
++
 ** An alert can have one of the following statuses:
 
-*** New 
+*** New
 *** Inactive
 
-** A workload can have one of the following restore statuses: 
+** A workload can have one of the following restore statuses:
 
 *** Restore needed
 *** In progress
@@ -53,23 +53,23 @@ TIP: Select the "i" icon to see tips on this data. To increase the workload limi
 *** Failed
 
 
-* *Recommended actions*: To increase protection, review each recommendation then select *Review and fix*. 
+* *Recommended actions*: To increase protection, review each recommendation and select *Review and fix*.
 +
-See link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection suggestions on the dashboard] or link:rp-use-protect.html[Protect workloads]. 
+See link:rp-use-dashboard.html#review-protection-recommendations-on-the-dashboard[Review protection suggestions on the dashboard] or link:rp-use-protect.html[Protect workloads].
 +
 Ransomware Resilience displays new recommendations since your last visit to the dashboard with the "New" tag for 24 hours. Actions appear in priority order, with the most important at the top. Review, act on, or dismiss each recommendation.
 +
-The total number of actions does not include actions you dismissed. 
+The total number of actions does not include actions you dismissed.
 
-* *Workload data*: Monitor changes in protection coverage over the last 7 days. 
+* *Workload data*: Monitor changes in protection coverage over the last 7 days.
 
-* *Workload backups*: Monitor changes in workload backups created by Ransomware Resilience that failed or completed successfully in the last 7 days. 
+* *Workload backups*: Monitor changes in workload backups created by Ransomware Resilience that failed or completed successfully in the last 7 days.
 
 == Review protection recommendations on the dashboard
 
-Ransomware Resilience assesses the protection on your workloads and recommends actions to improve that protection. 
+Ransomware Resilience assesses the protection on your workloads and recommends actions to improve that protection.
 
-You can review a recommendation and act on it, which changes the recommendation status to Complete. Or, if you want to act on it later, you can dismiss it. Dismissing an action moves the recommendation to a list of dismissed actions, which you can review later. 
+You can review a recommendation and act on it, which changes the recommendation status to Complete. Or, if you want to act on it later, you can dismiss it. Dismissing an action moves the recommendation to a list of dismissed actions, which you can review later.
 
 Here is a sampling of the recommendations that Ransomware Resilience offers.
 
@@ -80,32 +80,32 @@ Here is a sampling of the recommendations that Ransomware Resilience offers.
 | How to resolve
 
 
-| Add a ransomware protection policy. | The workload is currently not protected. | Assign a policy to the workload. 
+| Add a ransomware protection policy. | The workload is currently not protected. | Assign a policy to the workload.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-|Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection. 
+|Connect to SIEM for threat reporting. | Send data to a security and event management system (SIEM) for threat analysis and detection. | Enter SIEM/XDR server details to enable threat detection.
 Refer to link:task-siem.html[Connect to a SIEM].
-|Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor. 
+|Improve security posture for system | NetApp Digital Advisor has identified at least one high or critical security risk. | Review all security risks in NetApp Digital Advisor.
 Refer to https://docs.netapp.com/us-en/active-iq/index.html[Digital Advisor documentation^].
 |Make a policy stronger. | Some workloads might not have enough protection. Strengthen protection on workloads with a policy. | Increase retention, add backups, enforce immutable backups, block suspicious file extensions, enable detection on secondary storage and more.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it. 
-Refer to link:task-backup-destination.html[Add a backup destination].| Protect critical or highly important workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) workloads that are not protected. | Assign a policy to these workloads. 
+| Prepare <backup provider> as a backup destination to back up your workload data. | The workload does not currently have any backup destinations. | Add backup destinations to this workload to protect it.
+Refer to link:task-backup-destination.html[Add a backup destination].| Protect critical or highly important workloads against ransomware. | The Protect page displays critical or highly important (based on the Priority level assigned) workloads that are not protected. | Assign a policy to these workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 | Protect critical or highly important file share workloads against ransomware. |The Protection page displays critical or highly important workloads of the type File Share or Datastore that are not protected. | Assign a policy to each of the workloads.
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
 Refer to link:rp-use-protect.html[Protect workloads against ransomware attacks].
-| Review new alerts. | New alerts exist. | Review the new alerts. 
+| Review new alerts. | New alerts exist. | Review the new alerts.
 Refer to link:rp-use-alert.html[Respond to a detected ransomware alert].
 |===
 
 .Steps
 
-. From the Recommended actions pane in Ransomware Resilience, select a recommendation then *Review and fix*. 
+. From the Recommended actions pane in Ransomware Resilience, select a recommendation then *Review and fix*.
 
-. To dismiss the action until later, select *Dismiss*. 
+. To dismiss the action until later, select *Dismiss*.
 +
-The recommendation clears from the To Do list and appears on the Dismissed list. 
+The recommendation clears from the To Do list and appears on the Dismissed list.
 +
 TIP: You can later change a dismissed item to a To Do item. When you mark an item as completed or you change a dismissed item to a To Do action, the Total actions count increases by 1.
 
@@ -113,37 +113,37 @@ TIP: You can later change a dismissed item to a To Do item. When you mark an ite
 
 == Export protection data to CSV files
 
-You can export data and download CSV files that show details of protection, alerts, and recovery. 
+You can export data and download CSV files that show details of protection, alerts, and recovery.
 
-You can download CSV files from any of the main menu options: 
+You can download CSV files from any of the main menu options:
 
-* *Protection*: Contains the status and details of all workloads, including the total number of workloads that Ransomware Resilience marks as protected or at risk. 
-* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots. 
+* *Protection*: Contains the status and details of all workloads, including the total number of workloads that Ransomware Resilience marks as protected or at risk.
+* *Alerts*: Includes the status and details of all alerts, including the total number of alerts and automated snapshots.
 * *Recovery*: Includes the status and details of all workloads that need to be restored, including the total number of workloads that Ransomware Resilience marks as "Restore needed", "In progress," "Restore failed," and "Successfully restored."
 
 Downloading a CSV file from a page includes only the data from that page.
 
-The CSV files include data for all workloads on all Console systems. 
+The CSV files include data for all workloads on all Console systems.
 
 .Steps
 
-. From the Ransomware Resilience dashboard, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files. 
+. From the Ransomware Resilience dashboard, select the *Refresh* image:button-refresh.png[Refresh option] option in the upper right to refresh the data that will appear in the files.
 
 . Do one of the following:
-* From the page, select the *Download* image:button-download.png[Image of the download option icon] option. 
+* From the page, select the *Download* image:button-download.png[Image of the download option icon] option.
 
-* From the Ransomware Resilience menu, select *Reports*. 
+* From the Ransomware Resilience menu, select *Reports*.
 
-. If you selected the *Reports* option, select one of the preconfigured named files then select *Download (CSV)* or *Download (JSON)*. 
+. If you selected the *Reports* option, select one of the preconfigured named files then select *Download (CSV)* or *Download (JSON)*.
 
-== Access technical documentation 
+== Access technical documentation
 
-You can access Ransomware Resilience technical documentation from link:https://docs.netapp.com[docs.netapp.com^] or from inside Ransomware Resilience. 
+You can access Ransomware Resilience technical documentation from link:https://docs.netapp.com[docs.netapp.com^] or from inside Ransomware Resilience.
 
-.Steps 
+.Steps
 
 . From the Ransomware Resilience dashboard, select the vertical *Actions* image:button-actions-vertical.png[Vertical Actions option] option.
 
-. Select one of these options: 
+. Select one of these options:
 ** *What's new* to view information about the features in the current or previous releases in the Release Notes.
 ** *Documentation* to view the Ransomware Resilience documentation Home page and this documentation.

@@ -10,9 +10,9 @@ summary: User activity detection in Ransomware Resilience enables you to detect 
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience user behavior detection helps you prevent user-level ransomware events. To enable user behavior detection in Ransomware Resilience, you must install at least one user activity agent, which creates a data collection environment to monitor user behavior for aberrant patterns that resemble ransomware events. 
+Use NetApp Ransomware Resilience user behavior detection to identify suspicious user activity that could indicate ransomware, data breach, or data destruction events. To enable it, install at least one user activity agent to create the data collection environment. 
 
-A user activity agent hosts a data collector and user directory connector, which both send data to a SaaS location for analysis.
+A user activity agent hosts a data collector and user directory connector, which send data for analysis.
 
 * The **data collector** collects user activity data from ONTAP. The data collector is created automatically when you create a protection strategy with user behavior detection. 
 * The **user directory connector** connects to your directory to map user IDs to usernames. You must configure the user directory connector.
@@ -23,7 +23,7 @@ The user activity agent, data collector, and user directory connector can all be
 include::_include/workload-security.adoc[]
 
 
-If you're _not_ using DII, proceed with the configuration instructions here. 
+If you're not using DII, proceed with the configuration instructions here. 
 
 == Before you begin
 
@@ -36,7 +36,7 @@ Ensure each role is applied at the organization level.
 
 == Create a user activity agent 
 
-User activity agents are executable environments for link:#add-a-data-collector[data collectors]; data collectors share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
+User activity agents are executable environments for link:#add-a-data-collector[data collectors], which share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
 
 .Steps
 

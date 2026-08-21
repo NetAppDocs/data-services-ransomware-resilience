@@ -9,7 +9,7 @@ summary: You can automatically send data from NetApp Ransomware Resilience to yo
 :imagesdir: ./media/
 
 [.lead]
-A security information and event management (SIEM) system centralizes log and event data to provide insights into security events and compliance. NetApp Ransomware Resilience supports automatically sending data to your SIEM for streamlined threat analysis and detection. 
+Connect NetApp Ransomware Resilience to a security information and event management (SIEM) system to automatically send event data for threat analysis and detection. 
 
 Ransomware Resilience supports configuring any SIEM system with <<webhooks,webhooks>>. Additionally, Ransomware Resilience offers native support for the following SIEM systems:
 
