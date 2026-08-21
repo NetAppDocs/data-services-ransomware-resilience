@@ -10,7 +10,7 @@ summary: Using NetApp Ransomware Resilience, you can download reports that show 
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience provides reports in JSON formats that show details of supported and unsupported volumes, attack readiness drills, protection, alerts, and recovery, enabling you to assess and review ransomware events and readiness offline. 
+Download NetApp Ransomware Resilience reports to review supported and unsupported volumes, readiness drills, protection, alerts, and recovery data offline.
 
 TIP: Before you download the files, refresh the dashboard to capture the most recent data in your reports.  
 

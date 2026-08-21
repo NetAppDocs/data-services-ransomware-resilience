@@ -9,7 +9,7 @@ summary: After creating the user directory connector in NetApp Ransomware Resili
 :imagesdir: ./media/
 
 [.lead]
-After configuring user behavior monitoring in NetApp Ransomware Resilience, you can customize alerts and manage blocked users. Customizing the alerts allows you to exclude specific users or file paths from generating an alert. Blocking users is meant to respond to ransomware events to prevent malicious user activity. 
+After you configure user activity detection in NetApp Ransomware Resilience, you can manage blocked users and customize alerts. You can exclude specific users or file paths from alerts, and you can block users in response to ransomware events to help prevent malicious activity. 
 
 You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] to block users.
 
