@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-use-recover.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
-summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery.
 ---
 = Review recovery status in NetApp Ransomware Resilience
 :hardbreaks:
@@ -10,35 +10,35 @@ summary: After an attack, NetApp Ransomware Resilience verifies that the backup 
 :imagesdir: ./media/
 
 [.lead]
-After workloads have been marked "Restore needed," NetApp Ransomware Resilience recommends a recovery point actual (RPA) and orchestrates the workflow for a crash-resistant recovery. 
+After a workload is marked *Restore needed*, NetApp Ransomware Resilience recommends a recovery point actual (RPA) and guides you through the recovery workflow.
 
-* If the VM is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore, where all the data that was in the volume at the same point of time is restored, for example, if the system crashed. 
+* If the VM is managed by NetApp Backup and Recovery or Ransomware Resilience, Ransomware Resilience performs a crash-consistent restore so all data from the same point in time is restored, as it would be after a system crash.
 +
-You can restore the workload by selecting all volumes, specific volumes, or specific files. 
+You can restore the workload by selecting all volumes, specific volumes, or specific files.
 
-TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders. 
+TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders.
 
-A workload can have one of the following restore statuses: 
+A workload can have one of the following restore statuses:
 
-* *Restore needed*: The workload needs to be restored. 
-* *In progress*: The restore operation is currently underway. 
-* *Restored*: The workload has been restored. 
+* *Restore needed*: The workload needs to be restored.
+* *In progress*: The restore operation is currently underway.
+* *Restored*: The workload has been restored.
 * *Failed*: The workload restore process could not be completed.
 
 == View workloads that are ready to be restored
 
-Review the workloads that are in the "Restore needed" recovery status. 
+Review the workloads that are in the "Restore needed" recovery status.
 
-.Steps 
-. From the main Ransomware Resilience dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*. 
+.Steps
+. From the main Ransomware Resilience dashboard, review the "Restore needed" totals in the Alerts pane and select *View all*.
 +
-Alternately, select *Recovery* from the sidebar. 
-. Review the workload information in the *Recovery* page. 
+Alternately, select *Recovery* from the sidebar.
+. Review the workload information in the *Recovery* page.
 +
 image:screen-recovery2.png[Recovery page]
-//April 2024 get new screen without Workload consistent column. 
+//April 2024 get new screen without Workload consistent column.
 
-== Recover a workload 
+== Recover a workload
 
 After you assess the workloads, you have two options to restore your workload:
 
