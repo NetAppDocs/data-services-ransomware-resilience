@@ -9,7 +9,7 @@ summary: If you encounter an issue installing the user activity agent in NetApp 
 :imagesdir: ./media/
 
 [.lead]
-If you encounter an issue installing or running the user activity agent in NetApp Ransomware Resilience, review the following common scenarios and resolutions. 
+If you have issues installing or running the user activity agent in NetApp Ransomware Resilience, review these common scenarios and resolutions. 
 
 == Installation issues
 
