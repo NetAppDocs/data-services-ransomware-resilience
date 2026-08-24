@@ -218,7 +218,7 @@ image:screen-protection.png[Manage strategy page]
 * *Suspicious user behavior detection*
 * *Block suspicious file extensions* 
 +
-If  your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all files extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can also modify the selected list any time.  
+If your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all file extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can modify the list any time.  
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the user activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
