@@ -10,7 +10,7 @@ summary: Find an answer to a frequently asked question about NetApp Ransomware R
 :imagesdir: ./media/
 
 [.lead]
-This FAQ can help if you're just looking for a quick answer to a question about NetApp Ransomware Resilience.
+Use this FAQ for quick answers about NetApp Ransomware Resilience.
 
 == Deployment
 
@@ -19,12 +19,12 @@ This FAQ can help if you're just looking for a quick answer to a question about 
 You can use the following license types:
 
 * Sign up for a 30-day free trial.
-* Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and Ransomware Resilience with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace. 
+* Purchase a pay-as-you-go (PAYGO) subscription to NetApp Intelligent Services and Ransomware Resilience with Amazon Web Services (AWS) Marketplace, Google Cloud Marketplace, and Microsoft Azure Marketplace.
 * Bring your own license (BYOL), which is a NetApp License File (NLF) that you obtain from your NetApp sales representative. You can use the license serial number to get the BYOL activated in the Console's Licenses and subscriptions section.
 
 .How do you enable Ransomware Resilience?
 
-You can access Ransomware Resilience from the NetApp Console. Ensure that you've link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[access roles] and link:rp-start-prerequisites.html[prerequisites]. If you've successfully configured a Console agent, you can then link:rp-start-discover.html[discover workloads].
+You can access Ransomware Resilience from the NetApp Console. Ensure that you have the required link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[access roles] and meet the link:rp-start-prerequisites.html[prerequisites]. If you've successfully configured a Console agent, you can then link:rp-start-discover.html[discover workloads].
 
 For more information, see link:rp-start-login.html[Access Ransomware Resilience] and link:rp-start-quick-start.html[Ransomware Resilience quick start guide].
 
@@ -34,9 +34,9 @@ Ransomware Resilience is currently available in standard mode only.
 
 For an explanation about these modes across all NetApp data services, refer to https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html[NetApp Console deployment modes^].
 
-.How does billing for Ransomware Resilience work? 
+.How does billing for Ransomware Resilience work?
 
-New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience. 
+New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn't charge you for using the trial version of Ransomware Resilience.
 
 include::_include/cost.adoc[]
 
@@ -44,7 +44,7 @@ include::_include/cost.adoc[]
 
 .What's the Ransomware Resilience URL?
 
-In a browser, enter https://console.netapp.com/[https://console.netapp.com/ransomware-resilience^] to access the Console. 
+In a browser, enter https://console.netapp.com/[https://console.netapp.com/ransomware-resilience^] to access the Console.
 
 .How are access permissions handled?
 
@@ -52,21 +52,21 @@ https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles
 
 .What device resolution is best?
 
-The recommended device resolution for Ransomware Resilience is 1920x1080 or better. 
+The recommended device resolution for Ransomware Resilience is 1920x1080 or better.
 
 .Which browser should I use?
 
-You can access the NetApp Console with any modern web browser. 
+You can access the NetApp Console with any modern web browser.
 
 == Interoperability
 
 .Is Ransomware Resilience aware of protection settings in ONTAP?
 
-Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. 
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP.
 
 .How does Ransomware Resilience interact with NetApp Backup and Recovery?
 
-Ransomware Resilience works with Backup and Recovery to discover and set snapshot and backup policies for file share workloads. Ransomware Resilience also works with Backup and Recovery to perform file- and workload-consistent recovery. 
+Ransomware Resilience works with Backup and Recovery to discover and set snapshot and backup policies for file share workloads. Ransomware Resilience also works with Backup and Recovery to perform file- and workload-consistent recovery.
 
 For licensing and billing, Ransomware Resilience can integrate with Backup and Recovery even if you don't have a separate license for Backup and Recovery. If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 
@@ -79,13 +79,13 @@ For licensing and billing, Ransomware Resilience can integrate with Backup and R
 
 == Workloads
 
-.What is a workload in the context of Ransomware Resilience? 
+.What is a workload in the context of Ransomware Resilience?
 
 A workload is a VM or a file share.
 
 .How does Ransomware Resilience prioritize workload data?
 
-The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload and scheduled backups. 
+The workload priority (critical, standard, important) is determined by snapshot frequencies already applied to each volume associated with the workload and scheduled backups.
 
 link:rp-use-protect.html[Learn about workload priority or importance].
 
@@ -107,7 +107,7 @@ If a workload does not have a detection policy enabled, it's labeled "at risk" e
 
 .I've added a new volume, but it has not appeared yet. What should I do?
 
-If you added a new volume to your environment, initiate discovery of the workload again. After the volume has been discovered, link:rp-use-protect.html#add-a-ransomware-protection-strategy[apply protection policies to protect the new volume]. 
+If you added a new volume to your environment, initiate discovery of the workload again. After the volume has been discovered, link:rp-use-protect.html#add-a-ransomware-protection-strategy[apply protection policies to protect the new volume].
 
 == Protection policies
 
@@ -119,28 +119,28 @@ Snapshot copies are not limited and can be added separately from each service.
 
 .What policies are required in a ransomware protection strategy?
 
-A link:rp-use-protect.html#add-a-ransomware-protection-strategy[ransomware protection strategy] requires: 
+A link:rp-use-protect.html#add-a-ransomware-protection-strategy[ransomware protection strategy] requires:
 
 * a ransomware detection policy, and
 * a snapshot policy
 
-A backup policy is not required in the Ransomware Resilience strategy. 
+A backup policy is not required in the Ransomware Resilience strategy.
 
-.What types of attacks does Ransomware Resilience recognize? 
+.What types of attacks does Ransomware Resilience recognize?
 
-Ransomware Resilience recognizes five attack types: 
+Ransomware Resilience recognizes five attack types:
 
 * Encryption (entropy)
 * Encryption (user behavior)
 * Data breach
-* Data destruction 
-* Suspicious user activity 
+* Data destruction
+* Suspicious user activity
 
 Learn more about link:concept-ransomware-resilience.html#attack-types[attack types].
 
 .Is Ransomware Resilience aware of protection settings in ONTAP?
 
-Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also discovers whether ARP and FPolicy are enabled across all volumes in a discovered workload. The information you see in the Ransomware Resilience dashboard is aggregated from other NetApp solutions and products. 
+Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also discovers whether ARP and FPolicy are enabled across all volumes in a discovered workload. The information you see in the Ransomware Resilience dashboard is aggregated from other NetApp solutions and products.
 
 .Is Ransomware Resilience aware of policies already made in Backup and Recovery?
 
@@ -160,10 +160,10 @@ Ransomware Resilience recognizes newly created policies and policy changes in Ba
 
 .Can you change policies from ONTAP?
 
-Yes, you can change policies from ONTAP in Ransomware Resilience. You can also create new policies in Ransomware Resilience and apply them to workloads. This action replaces existing ONTAP policies with the policies created in Ransomware Resilience. 
+Yes, you can change policies from ONTAP in Ransomware Resilience. You can also create new policies in Ransomware Resilience and apply them to workloads. This action replaces existing ONTAP policies with the policies created in Ransomware Resilience.
 
 .Can you disable policies in ONTAP?
 
 You can disable ARP in detection policies using the System Manager UI, APIs, or CLI in ONTAP.
 
-You can disable FPolicy and backup policies by applying a different policy that does not include them. 
+You can disable FPolicy and backup policies by applying a different policy that does not include them.

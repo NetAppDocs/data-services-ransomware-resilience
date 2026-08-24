@@ -21,6 +21,9 @@ Ransomware Resilience now provides the capability to customize the list of allow
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.adoc[Manage blocked file extensions in Ransomware Resilience].
 
+== 13 August 2026
+include::_whatsnew/2026-08-13.adoc[]
+
 == 03 August 2026
 include::_whatsnew/2026-08-03.adoc[]
 

@@ -9,7 +9,7 @@ summary: Integrate and use SOAR playbooks to automate NetApp Ransomware Resilien
 :imagesdir: ./media/
 
 [.lead]
-Ransomware Resilience offers security orchestration, automation, and response (SOAR) playbooks that enable you to automate tasks such as threat response. 
+NetApp Ransomware Resilience offers security orchestration, automation, and response (SOAR) playbooks that enable you to automate tasks such as threat response.
 
 Ransomware Resilience playbooks offer the following capabilities:
 
@@ -21,11 +21,11 @@ Ransomware Resilience playbooks offer the following capabilities:
 * Test connectivity
 * Review the status of an enrichment job
 
-{asterisk} Blocking/unblocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior detection] on a supported system to block a user. 
+{asterisk} Blocking/unblocking a user is only supported for Splunk and Google SecOps SOAR playbooks. You must have configured link:concept-user-behavior[user behavior detection] on a supported system to block a user.
 
 == Playbooks
 
-Ransomware Resilience offers playbooks for Google SecOps, Microsoft Sentinel, and Splunk. Review the pertinent page for setup details. 
+Ransomware Resilience offers playbooks for Google SecOps, Microsoft Sentinel, and Splunk. Review the pertinent page for setup details.
 
 * link:https://github.com/chronicle/content-hub/tree/main/content/response_integrations/third_party/partner/netappransomwareresilience[Google SecOps^]
 * link:https://marketplace.microsoft.com/en-us/product/netapp.azure-sentinel-solution-netapprrs?tab=Overview[Microsoft Sentinel^] | link:https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks[GitHub link^]

@@ -15,7 +15,7 @@ https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html
 
 === Free trial now 30 days
 
-With this release, new deployments of BlueXP ransomware protection now have 30 days for a free trial. Previously, BlueXP ransomware protection provided 90 days as a free trial. If you are already in the 90-day free trial, that offer continues for the 90 days. 
+New deployments of BlueXP ransomware protection now have a 30-day free trial. Previously, BlueXP ransomware protection provided a 90-day free trial. If you are already in the 90-day free trial, that offer continues for 90 days. 
 
 // === Restore application workload at the file level for Podman
 
