@@ -49,3 +49,7 @@ The following limitations apply to SAN (block storage) workloads:
 
 * When Ransomware Resilience generates warnings for SAN workloads, they are only based on high entropy. 
 * SAN workloads can only be restored using a link:task-custom-restore.html[custom restore]. Clean restore isn't currently available for SAN workloads.  
+
+== Multi-admin verification
+
+Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], some workflows might not work as expected in Ransomware Resilience. 
