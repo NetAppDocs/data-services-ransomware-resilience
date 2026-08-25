@@ -10,7 +10,9 @@ summary: Configure lists of supported or blocked file extensions in NetApp Ranso
 :imagesdir: ./media/
 
 [.lead]
-Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. By default, Ransomware Resilience develops a list of blocked file extensions based on the nature of the workload. You can customize the list of file extensions, adding or removing file extensions as needed if the nature of the workload changes. You can configure file extension block so that the workload will automatically block specific file extensions. Alternately, you can create an allow list, such that only listed file extensions are allowed on the workloads, meaning all others are automatically blocked. 
+NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. By default, Ransomware Resilience provides a list of blocked file extensions based on the nature of the workload. You can customize the list of file extensions, adding or removing file extensions as needed if the nature of the workload changes. You can configure file extension block so that the workload will automatically block specific file extensions. Alternately, you can create an allow list, such that only listed file extensions are allowed on the workloads, meaning all others are automatically blocked. 
+
+The default list of blocked file extensions is named *NetApp*. You can modify this list or copy and modify it. It contains 3,900 known malicious file extensions. 
 
 
 == Create blocked extensions list
@@ -64,9 +66,14 @@ The workload must include a detection policy that blocks suspicious file extensi
 . Choose the action menu for the list that you want to make the default then *Mark as default list*.
 . The list is then tagged as the default. Workloads protected with the blocked file extension list that haven't been marked with a specific list are now blocking or allowing file extensions based on the new default. 
 
-.Delte a list
+.Delete a list
 
-If you delete a default list, the *NetApp* list automatically becomes the default. You cannot delete the *NetApp* list. 
+You cannot delete a list that is designated as the default. If the list is the default, you must first desingate a new list as the default before deleting it. You cannot delete the NetApp list. 
+
+. In Ransomware Resilience, select **Settings**. 
+. Under the File extensions heading, select **Manage**.
+. Select the action menu for the list you want to delete then *Delete list*.
+. Confirm deletion in the dialog. 
 
 // does this apply retroactively or automatically
 
