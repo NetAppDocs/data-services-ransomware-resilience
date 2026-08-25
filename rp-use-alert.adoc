@@ -88,9 +88,7 @@ include::_include/console-role-admin-viewer.adoc[]
 . Select *View all* under one of the statuses.
 
 . Select an alert to review all incidents on each volume for each alert.
-+
-[TIP]
-If the alert was triggered by a suspicious file extension, you can prevent that file type from being allowed on the storage VM again. In the alert, select *Remove extensions from allow list* link:task-file-extensions.html[to modify the list of allowed file extensions].
+
 . To review additional alerts, select *Alert* in the breadcrumbs at the upper left.
 
 . Review the alerts on the Alerts page.

@@ -60,8 +60,6 @@ sidebar:
                   url: /troubleshoot-user-activity.html
             - title: Manage protection groups 
               url: /task-protection-group.html
-            - title: Manage blocked file extensions
-              url: /task-file-extensions.html
             - title: Scan for personally identifiable data
               url: /task-classify.html      
         - title: Respond and recover

@@ -165,9 +165,6 @@ NOTE: If you choose to copy and modify an existing strategy, Ransomware Resilien
 ** *Encryption detection*: Enable Ransomware Resilience to detect encryption-based attacks. 
 ** *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events such as data breaches or data destruction. 
 ** *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
-+
-You can use a default list of blocked file extensions or create a link:task-file-extensions.html[customized list].
-
 
 [NOTE]
 You can choose any combination of the detection policies. The detection policy must include either encryption detection or suspicious user behavior detection. 
@@ -217,8 +214,6 @@ image:screen-protection.png[Manage strategy page]
 * *Encryption detection*
 * *Suspicious user behavior detection*
 * *Block suspicious file extensions* 
-+
-If your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all file extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can modify the list any time.  
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the user activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
@@ -241,7 +236,6 @@ image:screen-protection.png[Manage strategy page]
 . Ransomware Resilience detects if there are existing active Backup and Recovery policies. To replace the existing policies, select the **Replace existing policies** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
 
 . Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
-. If  your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all files extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can also modify the selected list any time. 
 . If your strategy includes replication, select the **Destination system** and **Destination storage VM**. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
 .. If your protection strategy includes user behavior detection, select a User activity agent in your environment to host the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.

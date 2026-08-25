@@ -15,12 +15,9 @@ Ransomware Resilience supports configuring any SIEM system with <<webhooks,webho
 
 * AWS Security Hub
 * Google SecOps
-* Microsoft Sentinel*
+* Microsoft Sentinel
 * Splunk Cloud
 * Splunk Enterprise
-
-{asterisk} Ransomware Resilience also provides an Azure Resource Manager (ARM) template for Microsoft Sentinel. 
-
 
 [TIP]
 Ransomware Resilience also provides link:reference-soar.html[security orchestration, automation, and response (SOAR) playbooks^].
@@ -56,6 +53,16 @@ Ransomware Resilience can send the following event data to your SIEM system:
 
 [NOTE]
 The *user_name* and *user_id* fields are only pertinent if you've configured xref:concept-user-behavior.adoc[user behavior detection].
+
+=== Event delivery 
+
+Ransomware Resilience supports delivering SIEM events through the NetApp Console and the Console agent. You can choose which delivery route you prefer during configuration. 
+
+With delivery through the Console, events are sent directly from the Console to your SIEM endpoint. Your SIEM endpoint must be reachable from the public internet to receive events.
+
+For delivery through the Console agent, events are routed via the Console agent that resides within your network. This option is best for on-premise environments with strict IP address allow lists and does not require inbound connectivity. The Console agent must be able to reach the SIEM endpoint over the network. This means it can resolve the endpoint host name, connect on the required port, and pass firewall or proxy controls. 
+
+Event delivery through the Console agent is supported for Google SecOps, Splunk, and webhook-based SIEM configurations. 
 
 == Configure AWS Security Hub for threat detection
 
@@ -138,6 +145,9 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 . Expand the *Authentication* section. 
 .. Enter the *Webhook URL* you copied from Google SecOps' webhook endpoint URL. 
 .. Enter the *Secret key* and *API key* from Google SecOps.  
+. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
++
+If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Select *Connect* to begin sending SIEM data. 
 
 == Configure Microsoft Sentinel for threat detection
@@ -225,17 +235,60 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 .. Select the subscription ID, the resource group, and the Log Analytics workspace. 
 
 .Authenticate Microsoft Sentinel in Ransomware Resilience
+
+For the Microsoft Sentinel SIEM, you can chose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternately, you can perform a manual deployment where you deploy resources based on a provided ARM template.
+
+[role="tabbed-block"]
+====
+.Automatic deployment
+--
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 image:screen-settings2.png[Settings page]
 . In the Settings page, select *Connect* in the SIEM connection tile then choose *Microsoft Sentinel* from the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
+. Choose *Automatic* as the deployment method.
 . Review the *Prerequisites*, *Registration*, and *Permissions* sections to ensure you've successfully completed each step. 
 . Expand the *Authentication* section. 
 .. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
 .. In the dropdown menus, choose the *Subscription ID*, *Resource group*, and *Log analytics workspace* you want to send SIEM data to. 
 . Select *Connect* to begin sending SIEM data. 
+--
+
+.Manual deployment
+--
+. In Ransomware Resilience, select *Settings* in the sidebar. 
++
+image:screen-settings2.png[Settings page]
+. In the Settings page, select *Connect* in the SIEM connection tile then choose *Microsoft Sentinel* from the dropdown menu. 
++
+image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
+. Choose *Manual* as the deployment method.
+. Review the *Prerequisites*, *Registration*, and *Permissions* sections to ensure you've successfully completed each step. 
+. Expand the *ARM Template Deployment* section. 
+. Assign the Monitoring Metrics Publisher role.
+.. In your Azure subscription, go to *Access control (IAM)*.
+.. Select *Add role assignment*.
+.. Search for and select *Monitoring Metrics Publisher*.
+.. Add the role assignment to thee service principal of the application registration created in the Registration step.
+.. *Review + assign*.
+. Return to the Ransomware Resilience UI. Copy the JSON of the ARM template to create the Log Analytics custom table, Data Collection Endpoint (DCE), Data Collection Rule (DCR), and Sentinel analytics rules in your Azure environment.
+. In the Azure portal, search for *Deploy a custom template*.
+. Select *Build your own template* in the editor.
+. Paste the copied JSON into the editor. Select *Save*.
+. Enter the *Workspace name*, which is the name of your Log Analytics workspace. You can retrieve this from the workspace overview page in the Azure portal.
+. Select *Review + create*. Review the elections then *Create* to deploy.
+. After deployment, collect the following information for authentication in Ransomware Resilience:
++
+* *Log Ingestion Endpoint*: open the Data Collection Endpoint resource (`rps-alerts-dce`) and copy the Logs Ingestion value shown on the overview page.
+* *DCR Immutable ID*: open the Data Collection Rule resource (`rps-alerts-dcr``) and copy the Immutable ID on the overview page.
+. Expand the *Authentication* section. 
+.. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
+.. Enter the *Log Ingestion Endpoint* and *DCR immutable ID* you previously copied.
+. Select *Connect* to create the connection. 
+--
+====
 
 == Configure Splunk Cloud and Splunk Enterprise for threat detection
 
@@ -278,6 +331,9 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Select the *Protocol* for the HTTP Event Collector. It's recommended that you use HTTPS, but if SSL isn't enabled for the HTTP Event Collector, select *HTTP*. 
 .. Enter the *Host* and *Port* for the Splunk Cloud instance that runs the HTTP Event Collector. The port should match what you entered in the HTTP event collector process. 
 .. Enter the event collector token you created in Splunk.
+. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
++
+If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Select *Connect* to begin sending SIEM data. 
 
 [[webhooks]]
@@ -295,6 +351,9 @@ Before creating the SIEM connection with Ransomware Resilience, you must have co
 To add additional parameters, copy them from the list next to the input fields then paste in the appropriate part of the message. You can also add custom parameters: in the custom parameters, select *Add* then enter the *Name*, *Value*, and *Description*. Copy and paste to the message section. 
 +
 image:siem-webhook.png[Screenshot of the SIEM webhook configuration.]
+. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
++
+If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Optionally, select *Send test message* to test connectivity. 
 . Select *Connect* to initiate the connection to Ransomware Resilience. 
 
@@ -315,15 +374,3 @@ If you're deleting, select *Delete* in the confirmation dialog to complete the a
 == Next steps
 
 * link:reference-soar.html[Integrate a SOAR playbook]
-
-//=== Disconnect SIEM
-//Disconnecting SIEM stops Ransomware Resilience from sending data to the SIEM server. 
-
-//.Steps
-//. From the Console menu, select *Protection* > *Ransomware Resilience*. 
-
-//. From the Ransomware Resilience menu, select the vertical image:button-actions-vertical.png[Vertical Actions]... option at the top right. 
-
-//. Select *Settings*. 
-//. In the SIEM connection pane, select *Disconnect*. 
-//. In the confirmation page, select *Disconnect*. 
