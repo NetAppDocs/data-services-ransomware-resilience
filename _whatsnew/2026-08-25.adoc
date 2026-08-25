@@ -1,0 +1,7 @@
+=== SIEM event delivery through the Console agent
+
+Ransomware Resilience now supports delivering SIEM events through the Console agent, in addition to the existing option to deliver events through NetApp Console.
+
+When you deliver SIEM events through the Console agent, you can keep SIEM event delivery within your network boundary. This simplifies deployment for on-premises environments with strict IP address allow lists and can align better with existing security controls. To use this option, ensure the Console agent can resolve and connect to your SIEM endpoint on the required port through any firewall or proxy controls.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Configure a SIEM system^].
