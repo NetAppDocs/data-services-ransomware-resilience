@@ -88,6 +88,7 @@ include::_include/console-role-admin-viewer.adoc[]
 . Select *View all* under one of the statuses.
 
 . Select an alert to review all incidents on each volume for each alert.
+
 . To review additional alerts, select *Alert* in the breadcrumbs at the upper left.
 
 . Review the alerts on the Alerts page.
