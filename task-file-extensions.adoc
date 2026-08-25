@@ -75,8 +75,6 @@ You cannot delete a list that is designated as the default. If the list is the d
 . Select the action menu for the list you want to delete then *Delete list*.
 . Confirm deletion in the dialog. 
 
-// does this apply retroactively or automatically
-
 == More information 
 
 * link:rp-use-protect.html[Configure a ransomware protection strategy]
