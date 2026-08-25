@@ -54,13 +54,13 @@ Ransomware Resilience can send the following event data to your SIEM system:
 [NOTE]
 The *user_name* and *user_id* fields are only pertinent if you've configured xref:concept-user-behavior.adoc[user behavior detection].
 
-=== Event delivery 
+=== Event delivery route
 
 Ransomware Resilience supports delivering SIEM events through the NetApp Console and the Console agent. You can choose which delivery route you prefer during configuration. 
 
 With delivery through the Console, events are sent directly from the Console to your SIEM endpoint. Your SIEM endpoint must be reachable from the public internet to receive events.
 
-For delivery through the Console agent, events are routed via the Console agent that resides within your network. This option is best for on-premise environments with strict IP address allow lists and does not require inbound connectivity. The Console agent must be able to reach the SIEM endpoint over the network. This means it can resolve the endpoint host name, connect on the required port, and pass firewall or proxy controls. 
+For delivery through the Console agent, events are routed via the Console agent that resides within your network. This option is best for on-premises environments with strict IP address allow lists and does not require inbound connectivity. The Console agent must be able to reach the SIEM endpoint over the network. This means it can resolve the endpoint host name, connect on the required port, and pass firewall or proxy controls. 
 
 Event delivery through the Console agent is supported for Google SecOps, Splunk, and webhook-based SIEM configurations. 
 
@@ -145,7 +145,7 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 . Expand the *Authentication* section. 
 .. Enter the *Webhook URL* you copied from Google SecOps' webhook endpoint URL. 
 .. Enter the *Secret key* and *API key* from Google SecOps.  
-. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
+. Choose the <<Event delivery route>>. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events through the Console agent already on your network, select **Deliver via Console agent**. 
 +
 If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Select *Connect* to begin sending SIEM data. 
@@ -236,7 +236,7 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 
 .Authenticate Microsoft Sentinel in Ransomware Resilience
 
-For the Microsoft Sentinel SIEM, you can chose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternately, you can perform a manual deployment where you deploy resources based on a provided ARM template.
+For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternately, you can perform a manual deployment where you deploy resources based on a provided ARM template.
 
 [role="tabbed-block"]
 ====
@@ -331,7 +331,7 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Select the *Protocol* for the HTTP Event Collector. It's recommended that you use HTTPS, but if SSL isn't enabled for the HTTP Event Collector, select *HTTP*. 
 .. Enter the *Host* and *Port* for the Splunk Cloud instance that runs the HTTP Event Collector. The port should match what you entered in the HTTP event collector process. 
 .. Enter the event collector token you created in Splunk.
-. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
+. Choose the <<Event delivery route>>. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events through the Console agent already on your network, select **Deliver via Console agent**. 
 +
 If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Select *Connect* to begin sending SIEM data. 
@@ -351,7 +351,7 @@ Before creating the SIEM connection with Ransomware Resilience, you must have co
 To add additional parameters, copy them from the list next to the input fields then paste in the appropriate part of the message. You can also add custom parameters: in the custom parameters, select *Add* then enter the *Name*, *Value*, and *Description*. Copy and paste to the message section. 
 +
 image:siem-webhook.png[Screenshot of the SIEM webhook configuration.]
-. Choose the Event delivery route. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events throughthe Console agent already on your network, select **Deliver via Console agent**. 
+. Choose the <<Event delivery route>>. To deliver SIEM events to your SIEM endpoint, select **Deliver via NetApp Console**. To route events through the Console agent already on your network, select **Deliver via Console agent**. 
 +
 If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Optionally, select *Send test message* to test connectivity. 
