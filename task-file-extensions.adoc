@@ -24,8 +24,6 @@ If you've set specific file extensions in ONTAP to be blocked, Ransomware Resili
 . In Ransomware Resilience, select **Settings**. 
 . Under the File extensions heading, select **Manage**. 
 . Select **Add**. 
-+
-image:blocked-file-extensions.png[Screenshot of blocked file extensions.]
 . Enter a *Name* for the list. 
 . Select how the list should operate: to create a list of blocked file extensions, select *Block extensions*. To create a list of permitted file extensions, select *Allow extensions*.
 . Choose how to create the list:
