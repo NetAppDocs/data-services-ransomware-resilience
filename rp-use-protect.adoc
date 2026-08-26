@@ -345,3 +345,9 @@ You can delete a protection strategy that is not currently associated with any w
 . In the Manage strategies page, select the *Actions* image:screenshot_horizontal_more_button.gif[Actions button] option for the strategy you want to delete.
 
 . From the Actions menu, select *Delete policy*. 
+
+== Next steps
+
+* link:task-file-extensions.html[Manage blocked or allowed file extensions]
+* link:suspicious-user-activity.html[Configure user activity detection]
+* link:rp-use-alert.html[Respond to ransomware alerts]
