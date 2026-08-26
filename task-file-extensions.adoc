@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-file-extensions.html
-keywords: ransomware protection recovery, file list, allowlist, blocked, extensions, fpolicy
+keywords: ransomware protection recovery, file list, allowlist, blocked, extensions, fpolicy, file extensions
 summary: Configure lists of supported or blocked file extensions in NetApp Ransomware Resilience to customize your protection profile. 
 ---
 = Manage blocked file extensions in NetApp Ransomware Resilience
