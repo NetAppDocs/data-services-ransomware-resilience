@@ -10,7 +10,9 @@ summary: Configure lists of supported or blocked file extensions in NetApp Ranso
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. By default, Ransomware Resilience provides a list of blocked file extensions based on the nature of the workload. You can customize the list of file extensions, adding or removing file extensions as needed if the nature of the workload changes. You can configure file extension  so that the workload will automatically block specific file extensions. Alternately, you can create an allow list, such that only listed file extensions are allowed on the workloads; any file extension not on the list is automatically blocked. 
+NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions.  Ransomware Resilience provides a default list of known suspicious file extensions to block to prevent ransomware attacks. You can customize the list of file extensions, adding or removing entries as needed.
+
+You can configure a list of file extensions so that the workload automatically blocks specific file extensions. Alternately, you can create an allow list so that only listed file extensions are allowed on workloads; any file extension not on the list is automatically blocked.
 
 The default list of blocked file extensions is named "NetApp." You can modify this list or copy it to use as the basis for a custom list. It contains more than 3,900 known malicious file extensions. 
 
