@@ -29,6 +29,7 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
   * **Data collector** - Component that collects user activity data from ONTAP systems and sends it for analysis. Created automatically when enabling protection strategies with user behavior detection.
   * **User directory connector** - Component that connects to directory services (LDAP) to map user IDs to usernames for user activity tracking and alerting.
 * **Console agent** - NetApp component that ensures connectivity between on-premises storage systems and NetApp data services in the cloud.
+* **FPolicy** - A file access notification framework that allows administrators to monitor file access for SMB and NFS v3, v4.0. The technology exists in Ransomware Resilience, but the UI never refers to FPolicy. Instead, it is reference with terms alluding to file extensions, blocked file extensions, and suspicious file extensions. It's acceptable to use this term in explanatory contexts because users of the service will know it from ONTAP; it should not appear in reference to the UI.
 
 ## Typical user workflows
 
