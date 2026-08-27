@@ -272,7 +272,233 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Search for and select *Monitoring Metrics Publisher*.
 .. Add the role assignment to thee service principal of the application registration created in the Registration step.
 .. *Review + assign*.
-. Return to the Ransomware Resilience UI. Copy the JSON of the ARM template to create the Log Analytics custom table, Data Collection Endpoint (DCE), Data Collection Rule (DCR), and Sentinel analytics rules in your Azure environment.
+. Copy the JSON of the ARM template to create the Log Analytics custom table, Data Collection Endpoint (DCE), Data Collection Rule (DCR), and Sentinel analytics rules in your Azure environment.
+[%collapsible]
+.ARM template JSON
+====
+[source,json]
+----
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName": {
+      "type": "string",
+      "metadata": {
+        "displayName": "Workspace Name",
+        "description": "The Workspace Name of the Log Analytics workspace, as shown on the Log Analytics workspace Overview page in the Azure portal."
+      }
+    }
+  },
+  "resources": [
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/tables",
+      "apiVersion": "2022-10-01",
+      "name": "[concat(parameters('workspaceName'), '/rps_alerts_CL')]",
+      "properties": {
+        "description": "Custom log table for storing custom logs",
+        "retentionInDays": 30,
+        "schema": {
+          "name": "rps_alerts_CL",
+          "columns": [
+            {
+              "name": "TimeGenerated",
+              "type": "datetime"
+            },
+            {
+              "name": "description",
+              "type": "string"
+            },
+            {
+              "name": "severity",
+              "type": "string"
+            },
+            {
+              "name": "incident",
+              "type": "dynamic"
+            },
+            {
+              "name": "context",
+              "type": "dynamic"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Insights/dataCollectionEndpoints",
+      "name": "rps-alerts-dce",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2021-04-01",
+      "properties": {
+        "networkAcls": {
+          "publicNetworkAccess": "Enabled"
+        }
+      }
+    },
+    {
+      "type": "Microsoft.Insights/dataCollectionRules",
+      "name": "rps-alerts-dcr",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2023-03-11",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces/tables', parameters('workspaceName'), 'rps_alerts_CL')]",
+        "[resourceId('Microsoft.Insights/dataCollectionEndpoints', 'rps-alerts-dce')]"
+      ],
+      "properties": {
+        "dataCollectionEndpointId": "[resourceId('Microsoft.Insights/dataCollectionEndpoints', 'rps-alerts-dce')]",
+        "streamDeclarations": {
+          "Custom-MyTableRawData": {
+            "columns": [
+              {
+                "name": "TimeGenerated",
+                "type": "datetime"
+              },
+              {
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "name": "severity",
+                "type": "string"
+              },
+              {
+                "name": "incident",
+                "type": "dynamic"
+              },
+              {
+                "name": "context",
+                "type": "dynamic"
+              }
+            ]
+          }
+        },
+        "destinations": {
+          "logAnalytics": [
+            {
+              "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces', parameters('workspaceName'))]",
+              "name": "[parameters('workspaceName')]"
+            }
+          ]
+        },
+        "dataFlows": [
+          {
+            "streams": [
+              "Custom-rps_alerts_CL"
+            ],
+            "destinations": [
+              "[parameters('workspaceName')]"
+            ],
+            "transformKql": "source",
+            "outputStream": "Custom-rps_alerts_CL"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+      "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/high-rps-rule-one')]",
+      "kind": "NRT",
+      "apiVersion": "2023-12-01-preview",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces/tables', parameters('workspaceName'), 'rps_alerts_CL')]"
+      ],
+      "properties": {
+        "displayName": "high-rps-rule",
+        "description": "",
+        "severity": "High",
+        "enabled": true,
+        "query": "rps_alerts_CL | where TimeGenerated > ago(1d)\n| where severity == \"HIGH\"",
+        "suppressionDuration": "PT5H",
+        "suppressionEnabled": false,
+        "tactics": [],
+        "techniques": [],
+        "subTechniques": [],
+        "alertRuleTemplateName": null,
+        "incidentConfiguration": {
+          "createIncident": true,
+          "groupingConfiguration": {
+            "enabled": false,
+            "reopenClosedIncident": false,
+            "lookbackDuration": "PT5H",
+            "matchingMethod": "AllEntities",
+            "groupByEntities": [],
+            "groupByAlertDetails": [],
+            "groupByCustomDetails": []
+          }
+        },
+        "eventGroupingSettings": {
+          "aggregationKind": "AlertPerResult"
+        },
+        "alertDetailsOverride": {
+          "alertDisplayNameFormat": "{{description}}",
+          "alertDynamicProperties": []
+        },
+        "customDetails": {},
+        "entityMappings": null,
+        "sentinelEntitiesMappings": null,
+        "templateVersion": null
+      }
+    },
+    {
+      "type": "Microsoft.OperationalInsights/workspaces/providers/alertRules",
+      "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/medium-rps-rule-one')]",
+      "kind": "NRT",
+      "apiVersion": "2023-12-01-preview",
+      "dependsOn": [
+        "[resourceId('Microsoft.OperationalInsights/workspaces/tables', parameters('workspaceName'), 'rps_alerts_CL')]"
+      ],
+      "properties": {
+        "displayName": "medium-rps-rule",
+        "description": "",
+        "severity": "Medium",
+        "enabled": true,
+        "query": "rps_alerts_CL | where TimeGenerated > ago(1d)\n| where severity == \"MEDIUM\"",
+        "suppressionDuration": "PT5H",
+        "suppressionEnabled": false,
+        "tactics": [],
+        "techniques": [],
+        "subTechniques": [],
+        "alertRuleTemplateName": null,
+        "incidentConfiguration": {
+          "createIncident": true,
+          "groupingConfiguration": {
+            "enabled": false,
+            "reopenClosedIncident": false,
+            "lookbackDuration": "PT5H",
+            "matchingMethod": "AllEntities",
+            "groupByEntities": [],
+            "groupByAlertDetails": [],
+            "groupByCustomDetails": []
+          }
+        },
+        "eventGroupingSettings": {
+          "aggregationKind": "AlertPerResult"
+        },
+        "alertDetailsOverride": {
+          "alertDisplayNameFormat": "{{description}}",
+          "alertDynamicProperties": []
+        },
+        "customDetails": {},
+        "entityMappings": null,
+        "sentinelEntitiesMappings": null,
+        "templateVersion": null
+      }
+    }
+  ],
+  "outputs": {
+    "dataCollectionEndpointIngestion": {
+      "type": "string",
+      "value": "[reference('Microsoft.Insights/dataCollectionEndpoints/rps-alerts-dce', '2021-04-01').logsIngestion.endpoint]"
+    },
+    "dataCollectionRuleImmutableId": {
+      "type": "string",
+      "value": "[reference('Microsoft.Insights/dataCollectionRules/rps-alerts-dcr', '2023-03-11').immutableId]"
+    }
+  }
+}
+----
+====
 . In the Azure portal, search for *Deploy a custom template*.
 . Select *Build your own template* in the editor.
 . Paste the copied JSON into the editor. Select *Save*.
