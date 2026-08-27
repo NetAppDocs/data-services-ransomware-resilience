@@ -77,6 +77,7 @@ Before you enable AWS Security Hub in Ransomware Resilience, you need to perform
 . Select *Policies*.
 . Create a policy using the following code in JSON format:
 +
+[source,json]
 ----
 {
   "Version": "2012-10-17",
@@ -174,6 +175,7 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 . Enter a Custom role name. Use the name *Ransomware Resilience Sentinel Configurator*.
 . Copy the following JSON and paste it into the *JSON* tab. 
 +
+[source,json]
 ----
 { 
   "roleName": "Ransomware Resilience Sentinel Configurator",
@@ -240,8 +242,7 @@ For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ra
 
 [role="tabbed-block"]
 ====
-.Automatic deployment
---
+Automatic deployment::
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 . In the Settings page, select *Connect* in the SIEM connection tile then choose *Microsoft Sentinel* from the dropdown menu. 
@@ -253,10 +254,8 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
 .. In the dropdown menus, choose the *Subscription ID*, *Resource group*, and *Log analytics workspace* you want to send SIEM data to. 
 . Select *Connect* to begin sending SIEM data. 
---
 
-.Manual deployment
---
+Manual deployment::
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 image:screen-settings2.png[Settings page]
@@ -512,7 +511,6 @@ image:screen-settings-threat-detection-3options.png[Enable threat detection deta
 .. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
 .. Enter the *Log Ingestion Endpoint* and *DCR immutable ID* you previously copied.
 . Select *Connect* to create the connection. 
---
 ====
 
 == Configure Splunk Cloud and Splunk Enterprise for threat detection
