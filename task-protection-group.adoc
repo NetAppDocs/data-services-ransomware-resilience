@@ -39,13 +39,13 @@ TIP: To see more details on the workloads, scroll to the right.
 +
 image:screen-protection-groups-policy.png[Add protection group - Policy page]
 . Select a protection strategy for the group.
+. If your policy includes blocking suspicious file extensions, select the pencil icon for optional configurations with file extension blocking.
++
+include::_include/block-file-extensions.adoc[]
 . If the protection strategy includes replication, review the replication settings.
 .. To replicate all snapshots to the same destination, check **Use same destination for each workload**. Choose a *Destination system* and *Destination storage VM* for the workloads under the Console agent section. + To use different destinations, uncheck that box. Review each workloads under each Console agent and assign a *Destination system* and *Destination storage VM* for each workload. Select **Next**.
 . To configure a backup policy, choose one then select **Next**.
 . If your policy includes user behavior detection, select the data collector you want to use then **Next**.
-. If your policy includes blocking suspicious file extensions, select the pencil icon to select a list of file extensions.
-+
-include::_include/block-file-extensions.adoc[]
 . Review the selections for the protection group.
 . To finalize the protection group, select *Add*.
 

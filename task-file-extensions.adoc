@@ -16,10 +16,10 @@ When you configure protection, it's configured at the workload level. You can cu
 
 == How file extension blocking works
 
-The are two methods to approaching the file extension lists:
+There are two approaches to configuring file extension lists:
 
-* *Block file extensions* - All file extensions include in the list will be blocked and marked as ransomware threats to the SVM. 
-* *Allow file extensions* - The SVM will only permit files that have extensions from this list. Any file with an extension not on the list will be blocked and considered a ransomware threat. 
+* *Block file extensions* - All file extensions included in the list will be blocked and marked as ransomware threats.
+* *Allow file extensions* - Only files with extensions from this list are permitted. Any file with an extension not on the list is blocked and considered a ransomware threat. 
 
 === Default file extensions
 
@@ -38,7 +38,7 @@ If you've set specific file extensions in ONTAP to be blocked, Ransomware Resili
 . Enter a *Name* for the list. 
 . Select how the list should operate:
 * Select *Block extensions* to automatically flag any file extension on the list as a ransomware threat. 
-* Select *Allow extensions* to only permit file extensions on the list on the SVM. 
+* Select *Allow extensions* to only permit requests from file extensions on the list. 
 . Choose how to create the list:
 * Select the *Copy list* tab to build from an existing list. 
 +
