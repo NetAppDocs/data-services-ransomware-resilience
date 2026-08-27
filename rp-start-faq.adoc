@@ -152,7 +152,7 @@ No, you cannot modify policies managed by Backup and Recovery from Ransomware Re
 
 .If policies exist from ONTAP (such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?
 
-No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
+No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP unless you manually change those settings in Ransomware Resilience. 
 
 .What happens if you add new policies in Backup and Recovery after signing up for Ransomware Resilience?
 

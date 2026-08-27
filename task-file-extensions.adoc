@@ -10,11 +10,22 @@ summary: Configure lists of supported or blocked file extensions in NetApp Ranso
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions.  Ransomware Resilience provides a default list of known suspicious file extensions to block to prevent ransomware attacks. You can customize the list of file extensions, adding or removing entries as needed.
+NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. Ransomware Resilience provides a default list of known suspicious file extensions to block to prevent ransomware attacks. You can customize the list of file extensions, adding or removing entries as needed.
 
-You can configure a list of file extensions so that the workload automatically blocks specific file extensions. Alternately, you can create an allow list so that only listed file extensions are allowed on workloads; any file extension not on the list is automatically blocked.
+When you configure protection, it's configured at the workload level. You can customize a list of blocked file extensions at the storage VM (SVM) level, meaning different SVMs in the same workload can use different lists.  
 
-The default list of blocked file extensions is named "NetApp." You can modify this list or copy it to use as the basis for a custom list. It contains more than 3,900 known malicious file extensions. 
+== How file extension blocking works
+
+The are two methods to approaching the file extension lists:
+
+* *Block file extensions* - All file extensions include in the list will be blocked and marked as ransomware threats to the SVM. 
+* *Allow file extensions* - The SVM will only permit files that have extensions from this list. Any file with an extension not on the list will be blocked and considered a ransomware threat. 
+
+=== Default file extensions
+
+Ransomware Resilience provide a default list of blocked file extensions called "NetApp." By default, all workloads enabled to _block_ suspicious file extensions use this list, which contains more than 3,900 known malicious file extensions. You can modify this list or copy it to use as the basis for a custom list. 
+
+You can set a different list to be the default. After a list is set as the default, all workloads subsequently enabled for file blocking will use that list unless you manually select another list. 
 
 == Create file extensions list
 
@@ -25,7 +36,9 @@ If you've set specific file extensions in ONTAP to be blocked, Ransomware Resili
 . Under the File extensions heading, select **Manage**. 
 . Select **Add**. 
 . Enter a *Name* for the list. 
-. Select how the list should operate: to create a list of blocked file extensions, select *Block extensions*. To create a list of permitted file extensions, select *Allow extensions*.
+. Select how the list should operate:
+* Select *Block extensions* to automatically flag any file extension on the list as a ransomware threat. 
+* Select *Allow extensions* to only permit file extensions on the list on the SVM. 
 . Choose how to create the list:
 * Select the *Copy list* tab to build from an existing list. 
 +
@@ -38,12 +51,12 @@ Select *Upload* then choose a CSV file that includes the list of file extensions
 +
 image:blocked-file-extensions.png[Screenshot of blocked file extensions.]
 
-== Apply a file extension list to a storage VM (SVM)
+[[svm]]
+== Apply a file extension list to an SVM
+
+When you assign a ransomware protection strategy with the block suspicious file extensions policy, you can designate a specific file extension list for the whole workload. After you apply protection policy, you can apply different lists to different SVMs. 
 
 The workload must include a detection policy that blocks suspicious file extensions before you can perform this task. Learn how to link:rp-use-protect.html[configure a ransomware protection strategy]. You can only assign one list of file extensions to each SVM. 
-
-[TIP]
-You can also assign a list of blocked or allowed file extensions for an SVM or a protection group when you enable protection with a block suspicious file extensions policy. 
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 
@@ -77,7 +90,9 @@ Alternately, select the action menu at the end of the row for the individual fil
 
 .Delete a file extension list
 
-You cannot delete a list that is designated as the default. If the list is currently set as the default, you must first designate a new list as the default before deleting it. You cannot delete the NetApp list. 
+You cannot delete a list that is applied to an SVM. You must first <<svm,change the list associated with the SVM>>.
+
+You cannot delete the NetApp list. 
 
 . In Ransomware Resilience, select **Settings**. 
 . Under the File extensions heading, select **Manage**.

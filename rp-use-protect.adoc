@@ -24,7 +24,7 @@ Ransomware protection strategies encompass _detection_, _protection_, and _repli
 * Suspicious user activity 
 * Block suspicious file extensions
 +
-When you enable detection with block suspicious file extensions, hover over the tooltip then select **Manage** to link:task-file-extensions.html[modify the list of blocked extensions].
+When you enable detection with block suspicious file extensions, hover over the tooltip then select **Manage** to link:task-file-extensions.html[choose a custom list of blocked file extensions].
 
 - **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
 +
@@ -214,7 +214,7 @@ image:screen-protection.png[Manage strategy page]
 * *Suspicious user behavior detection*
 * *Block suspicious file extensions* 
 +
-If your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all file extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can modify the list any time.  
+include::_include/block-file-extensions.adoc[]
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the user activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
@@ -238,7 +238,7 @@ image:screen-protection.png[Manage strategy page]
 
 . Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>.
 +
-If your protection includes the block suspicious file extensions option, you can customize the list of blocked or allowed file extensions. The block suspicious file extensions option uses the default NetApp-provided list. To use a custom list, select the pencil icon then choose if you want the SVM to *Allow all file extensions except blocked list* or *Block all file extensions except allowed list*. Then, select the list from the dropdown menu. You must have configured link:task-file-extensions.html[a custom list]; you can also modify the selected list any time. 
+include::_include/block-file-extensions.adoc[]
 . Select **Next**. 
 . If your strategy includes replication, select the **Destination system** and **Destination storage VM**. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
