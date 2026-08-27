@@ -317,8 +317,6 @@ For Splunk Enterprise, you must allow inbound public internet traffic for Ransom
 
 .Authenticate Splunk with Ransomware Resilience
 . In Ransomware Resilience, select *Settings* in the sidebar. 
-+
-image:screen-settings2.png[Settings page]
 . In the Settings page, select *Connect* in the SIEM connection tile. 
 +
 image:screen-settings-threat-detection-3options.png[Enable threat detection details page]
