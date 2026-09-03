@@ -1,6 +1,6 @@
 If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
 
-When a workload is classified as protected, it counts against purchased capacity or the PAYGO subscription. Ransomware Resilience classifies a workload as protected when either an encryption or user behavior activity detection policy is enabled. Without at least one of this detection policies, a workload is classified as at risk. At risk workloads do not count against purchased capacity.
+When a workload is classified as protected, it counts against purchased capacity or the PAYGO subscription. Ransomware Resilience classifies a workload as protected when either an encryption or user activity detection policy is enabled. Without at least one of these detection policies, a workload is classified as at risk. At risk workloads do not count against purchased capacity.
 
 Protected workloads count against purchased capacity or the subscription after the free trial period ends. Ransomware Resilience is charged on a per GB basis for the data associated with protected workloads (as reported by ONTAP) before efficiencies. 
 
