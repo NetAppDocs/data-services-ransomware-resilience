@@ -99,11 +99,15 @@ Ransomware Resilience discovers the volumes and the file extensions and associat
 
 .What is a protected workload?
 
-In Ransomware Resilience, a workload shows a status of *protected* when it has a _detection_ policy enabled. The detection policy must consist of either encryption detection or suspicious user behavior detection (or both). It can also include suspicious file extension detection. For more information, see link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
+In Ransomware Resilience, a workload shows a status of *protected* when it has a _detection_ policy enabled. The detection policy must consist of either encryption detection or suspicious user behavior detection (or both). For more information, see link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
 
 .What is an "at risk" workload?
 
-If a workload does not have a detection policy enabled, it's labeled "at risk" even if it has a backup and snapshot policy enabled. For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
+A workload must have a ransomware protection policy with encryption detection or user behavior detection enabled to be considered protected. Without at least one of these detection strategies, the workload is labeled at risk. If a workload has a backup or snapshot policy but doesn't include encryption detection or user behavior detection enabled, it will be considered at risk. 
+
+Ransomware Resilience also offers suspicious file extension detection. If suspicious file extension detection is the only detection policy enabled, the workload will be labeled at risk. 
+
+For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
 
 .I've added a new volume, but it has not appeared yet. What should I do?
 
