@@ -42,8 +42,8 @@ The protection dashboard in Ransomware Resilience displays detailed information 
 
 *Protection status*: A workload can show one of the following protection statuses to indicate whether a policy is applied or not:
 
-* *Protected*: An encryption or user activity detection policy is applied. 
-* *At risk*: If a workload does not have a protection policy with either encryption detection or user behavior detection enabled, it's labeled at risk. Even if the workload has snapshot and backup protection and file extension blocking, it's still considered at risk without encryption detection or user behavior detection enabled.
+* *Protected*: An encryption or user activity detection policy is enabled. 
+* *At risk*: If a workload does not have a protection policy with either encryption detection or user activity detection enabled, it's labeled at risk. Even if the workload has snapshot and backup protection and file extension blocking, it's still considered at risk without encryption detection or user behavior detection enabled.
 * *In progress*: A policy is being applied, but the operation has not completed.
 * *Failed*: A policy has been configured but there's an error.
 
