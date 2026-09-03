@@ -103,7 +103,9 @@ In Ransomware Resilience, a workload shows a status of *protected* when it has a
 
 .What is an "at risk" workload?
 
-If a workload does not have a detection policy enabled, it's labeled "at risk" even if it has a backup and snapshot policy enabled. For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
+If a workload does not have a protection policy with either encryption detection or user behavior detection enabled, it's labeled at risk. Workloads that have snapshot or backup policies and file extension blocking will still be considered at risk if they don't have encryption and/or user behavior detection enabled. 
+
+For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
 
 .I've added a new volume, but it has not appeared yet. What should I do?
 

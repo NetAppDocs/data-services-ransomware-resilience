@@ -27,7 +27,7 @@ image:screen-dashboard.png[Dashboard page]
 
 . From the dashboard, you can do the following actions in each pane:
 
-* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are at risk when protection levels don't match a protection policy. Refer to link:rp-use-protect.html[Protect workloads].
+* *Workload data protection*: Select *View all* to see all workloads that are at risk or protected on the Protection page. Workloads are classified as at risk when they lack either encryption or user activity detection policies. Refer to link:rp-use-protect.html[Protect workloads].
 +
 TIP: Select the "i" icon to see tips on this data. To increase the workload limit, select *Increase workload limit* inside this i note. Selecting this takes you to the Console Support page where you can create a case ticket.
 
