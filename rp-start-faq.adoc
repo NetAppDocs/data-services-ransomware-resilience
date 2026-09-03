@@ -105,7 +105,7 @@ In Ransomware Resilience, a workload shows a status of *protected* when it has a
 
 A workload must have a ransomware protection policy with encryption detection or user behavior detection enabled to be considered protected. Without at least one of these detection strategies, the workload is labeled at risk. If a workload has a backup or snapshot policy but doesn't include encryption detection or user behavior detection enabled, it will be considered at risk. 
 
-Ransomware Resilience also offers suspicious file extension detection. If suspicious file extension detection is the only detection policy enabled, the workload will be labaled at risk. 
+Ransomware Resilience also offers suspicious file extension detection. If suspicious file extension detection is the only detection policy enabled, the workload will be labeled at risk. 
 
 For ransomware protection, you should enable a link:rp-use-protect.html#add-a-ransomware-protection-strategy[detection policy].
 
