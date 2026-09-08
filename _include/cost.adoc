@@ -4,4 +4,4 @@ When a workload is classified as protected, it counts against purchased capacity
 
 Protected workloads count against purchased capacity or the subscription after the free trial period ends. Ransomware Resilience is charged on a per GB basis for the data associated with protected workloads (as reported by ONTAP) before efficiencies. 
 
-When considering sizing, licensing costs are based on the logical capacity of the active file system (meaning space consumed snapshots is not included).
+When considering sizing, licensing costs are based on the logical capacity of the active file system, regardless of whether that data resides in hot or cold storage tiers. Space consumed by snapshots is not included in this calculation, even if those snapshots are stored in a cold tier.
