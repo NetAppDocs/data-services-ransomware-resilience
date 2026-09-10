@@ -52,4 +52,4 @@ The following limitations apply to SAN (block storage) workloads:
 
 == Multi-admin verification
 
-Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], some workflows might not work as expected in Ransomware Resilience. 
+Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], you won't be able to conduct enable protection, conduct a readiness drill, or perform any restore operations. You should disable multi-admin verification before attempting any of these operations. 
