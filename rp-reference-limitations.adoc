@@ -13,7 +13,7 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
-== Readiness drill Reset option issue
+== Readiness drill reset option issue
 // check this
 
 If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, Ransomware Resilience sends an alert. If you recover the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
@@ -22,7 +22,7 @@ If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, 
 
 The following limitations apply to Amazon FSx for ONTAP:
 
-* Backup policies aren't supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using the Amazon FSx for backups. You can restore these workloads using Ransomware Resilience. 
+* Backup policies aren't supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using Amazon FSx backups. You can restore these workloads using Ransomware Resilience. 
 * Restore operations are performed from snapshots only.
 
 == Azure NetApp Files limitations
@@ -41,15 +41,15 @@ The following limitations apply to Azure NetApp Files:
 The following limitations apply to Google Cloud NetApp Volumes:
 
 * Currently, you can only apply encryption- and FPolicy-based protection strategies to Google Cloud NetApp Volumes workloads. You can't apply user behavior protection strategies.
-* Protection strategies with replication aren't currently supported for Google Cloud NetApp Volumes
+* Protection strategies with replication aren't currently supported for Google Cloud NetApp Volumes.
 
 == SAN storage limitations 
 
 The following limitations apply to SAN (block storage) workloads:
 
-* When Ransomware Resilience generates warnings for SAN workloads, they are only based on high entropy. 
+* When Ransomware Resilience generates warnings for SAN workloads, those warnings are based only on high entropy. 
 * SAN workloads can only be restored using a link:task-custom-restore.html[custom restore]. Clean restore isn't currently available for SAN workloads.  
 
 == Multi-admin verification
 
-Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], you won't be able to conduct enable protection, conduct a readiness drill, or perform any restore operations. You should disable multi-admin verification before attempting any of these operations. 
+Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], you won't be able to enable protection, conduct a readiness drill, or perform any restore operations. You should disable multi-admin verification before attempting any of these operations. 
