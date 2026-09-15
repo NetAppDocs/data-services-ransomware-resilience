@@ -25,11 +25,15 @@ Ransomware Resilience is available with the following license types:
 
 After you set up your BYOL or purchase a PAYGO subscription, you can see the license in the Licenses and subscriptions section of the Console.
 
-After the free trial ends or the license or subscription expires, you can still:
+=== Expired licenses
+
+After the free trial ends or the license or subscription expires, workloads remain visible on Ransomware Resilience unless you exclude them. With an expired license or trial, you can:
 
 * View workloads and workload health
 * Delete resources such as policies
 * Run all scheduled operations created during the trial period or under the license
+
+You cannot perform any action on workloads with an expired license.
 
 == Other licenses
 

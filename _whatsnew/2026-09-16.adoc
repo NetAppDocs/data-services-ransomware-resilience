@@ -1,0 +1,12 @@
+=== User activity events supported for clean restore
+
+You can now perform a clean restore for workloads affected by user behavior attacks. Previously, clean restores were only supported to respond to encryption-based attacks. This enhanced capability enables you to take advantage of clean restores guided approach to restores, identifying 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
+
+
+=== SAN support for Google Cloud NetApp Volumes
+
+Ransomware Resilience now provides support for SAN workloads from Google Cloud NetApp Volumes, enabling you to detect encryption-based ransomware attacks for SAN workloads. Support for SAN in Google Cloud NetApp Volumes is now generally available.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems[supported systems^] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html#azure-netapp-files-limitations[SAN storage in Ransomware Resilience^].

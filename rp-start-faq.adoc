@@ -40,6 +40,16 @@ New deployments of Ransomware Resilience offer a 30-day free trial. NetApp doesn
 
 include::_include/cost.adoc[]
 
+.What happens after my trial ends or license expires? 
+
+After the free trial ends or the license or subscription expires, workloads remain visible on Ransomware Resilience unless you exclude them. With an expired license or trial, you can:
+
+* View workloads and workload health
+* Delete resources such as policies
+* Run all scheduled operations created during the trial period or under the license
+
+You cannot perform any action on workloads with an expired license. To decomission Ransomware Resilience, submit a support request. 
+
 == Access
 
 .What's the Ransomware Resilience URL?
