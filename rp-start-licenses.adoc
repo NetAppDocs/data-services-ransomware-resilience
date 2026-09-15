@@ -33,8 +33,6 @@ After the free trial ends or the license or subscription expires, workloads rema
 * Delete resources such as policies
 * Run all scheduled operations created during the trial period or under the license
 
-You cannot perform any action on workloads with an expired license.
-
 == Other licenses
 
 The Ransomware Resilience license does not include additional NetApp products. However, Ransomware Resilience can integrate with NetApp Backup and Recovery, even if you do not have a separate license for Backup and Recovery.
