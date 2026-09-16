@@ -1,4 +1,4 @@
-* You can only perform a clean restore for an encryption-based ransomware attack. 
+* You can only perform a clean restore for encyryption-based attacks (both user behavior and entropy) and suspicious user behavior attacks. Clean restore is not supported for data breach and data destruction attacks. 
 * If the isolated recovery environment doesn't have capacity for a new operation, it's queued until there is availability. 
 ** You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
 * When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 
