@@ -48,7 +48,7 @@ After the free trial ends or the license or subscription expires, workloads rema
 * Delete resources such as policies
 * Run all scheduled operations created during the trial period or under the license
 
-To decommission Ransomware Resilience, submit a support request. 
+To decommission Ransomware Resilience, submit a support request. The request must include your organization ID and note that you want to decomission the service.
 
 == Access
 
