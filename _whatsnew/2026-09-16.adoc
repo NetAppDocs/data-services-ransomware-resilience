@@ -1,0 +1,11 @@
+=== Enhanced support for clean restores
+
+Clean restores are now available for recovery after suspicious user behavior and user-based encryption attacks. This enhancement adds to the existing support for encryption (entropy)-based attacks. This enhanced capability enables you to take advantage of clean restore's guided approach, identifying optimal restore points to minimize data loss and accelerate recovery. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
+
+=== SAN support for Google Cloud NetApp Volumes
+
+Ransomware Resilience now provides support for SAN workloads from Google Cloud NetApp Volumes, enabling you to detect encryption-based ransomware attacks for SAN workloads. Support for SAN in Google Cloud NetApp Volumes is now generally available.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/concept-ransomware-resilience.html#supported-systems[supported systems^] and link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-limitations.html[SAN storage in Ransomware Resilience^].
