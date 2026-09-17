@@ -84,7 +84,7 @@ include::_include/console-role-admin-viewer.adoc[]
 
 .Steps
 
-. In the Ransomware Resilience  dashboard, review the Alerts pane.
+. In the Ransomware Resilience dashboard, review the Alerts pane.
 . Select *View all* under one of the statuses.
 
 . Select an alert to review all incidents on each volume for each alert.
@@ -103,7 +103,7 @@ image:screen-alerts.png["Alerts page"]
 
 == Respond to an alert email
 
-When Ransomware Resilience  detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences configured in the NetApp Console settings. The email contains information about the alert, including the severity and resources impacted.
+When Ransomware Resilience detects a potential attack, it sends an email notification to the subscribed users based on their subscription notification preferences configured in the NetApp Console settings. The email contains information about the alert, including the severity and resources impacted.
 
 TIP: To set up email notifications in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#set-email-notification-settings[Set email notification settings^].
 

@@ -70,7 +70,7 @@ sidebar:
               url: /task-automate-user-activity.html
             - title: Review recovery status 
               url: /rp-use-recover.html
-            - title:  Recover with a clean restore 
+            - title: Recover with a clean restore 
               entries:
               - title: Create an isolated recovery environment
                 url: /task-clean-restore.html
