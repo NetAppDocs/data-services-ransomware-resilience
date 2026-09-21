@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-siem-webhook.html
 keywords: ransomware protection, SIEM, security event management system, orchestration, event management, webhook, third-party siem, other siem, palo alto, crowdstrike, ibm
-summary: Streamline threat analysis and event management in NetApp Ransomware resilience by configuring any SIEM system of your choice with webhooks. 
+summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by configuring any SIEM system of your choice with webhooks. 
 ---
 = Configure a SIEM in NetApp Ransomware Resilience using webhooks
 :icons: font
@@ -13,7 +13,7 @@ NetApp Ransomware Resilience provides native support for multiple security infor
 
 == Before you begin
 
-Before creating the SIEM connection with Ransomware Resilience, you must have configured the SIEM on its own platform. Once you've configure the SIEM, you can authenticate it in Ransomware Resilience. 
+Before creating the SIEM connection with Ransomware Resilience, you must have configured the SIEM on its own platform. After you configure the SIEM, you can authenticate it in Ransomware Resilience. 
 
 == Authenticate a SIEM in Ransomware Resilience via webhook
 
@@ -26,7 +26,7 @@ Before creating the SIEM connection with Ransomware Resilience, you must have co
 To add additional parameters, copy them from the list next to the input fields then paste in the appropriate part of the message. You can also add custom parameters: in the custom parameters, select *Add* then enter the *Name*, *Value*, and *Description*. Copy and paste the parameter in the message field. 
 +
 image:siem-webhook.png[Screenshot of the SIEM webhook configuration.]
-. Choose the <<Event delivery route>>. To deliver SIEM events to your SIEM endpoint, select *Deliver via NetApp Console*. To route events through the Console agent already on your network, select *Deliver via Console agent*. 
+. Choose the link:task-siem.html#event-delivery-route[event delivery route]. To deliver SIEM events to your SIEM endpoint, select *Deliver via NetApp Console*. To route events through the Console agent already on your network, select *Deliver via Console agent*. 
 +
 If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Optionally, select *Send test message* to test connectivity. 

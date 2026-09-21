@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-siem-webhook.html
+permalink: task-siem-secops.html
 keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations
 summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by connecting the Google SecOps SIEM.
 ---
@@ -9,7 +9,7 @@ summary: Streamline threat analysis and event management in NetApp Ransomware Re
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Google SecOps. By connecting Ransomware Resilience to Google SecOps, you can automatically send event data for threat analysis and detection to streamline management ransomware protection and event management. 
+NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Google SecOps. By connecting Ransomware Resilience to Google SecOps, you can automatically send event data for threat analysis and detection to streamline ransomware protection and event management.
 
 == Before you begin
 
@@ -46,7 +46,7 @@ image:screen-settings-threat-detection-3options.png[Screenshot of SIEM connectio
 . Expand the *Authentication* section. 
 .. Enter the *Webhook URL* you copied from Google SecOps.
 .. Enter the *Secret key* and *API key* from Google SecOps.  
-. Choose the <<Event delivery route>>. To deliver SIEM events to your SIEM endpoint, select *Deliver via NetApp Console*. To route events through the Console agent already on your network, select *Deliver via Console agent*. 
+. Choose the link:task-siem.html#event-delivery-route[event delivery route]. To deliver SIEM events to your SIEM endpoint, select *Deliver via NetApp Console*. To route events through the Console agent already on your network, select *Deliver via Console agent*. 
 +
 If you chose *Deliver via Console agent*, select the Console agent to use from the dropdown menu. 
 . Select *Connect* to begin sending SIEM data. 

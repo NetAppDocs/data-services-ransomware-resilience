@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-siem-webhook.html
+permalink: task-siem-security-hub.html
 keywords: ransomware protection, SIEM, security event management system, orchestration, event management, amazon web services, aws, security hub
 summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by connecting the AWS Security Hub SIEM.
 ---
@@ -8,7 +8,8 @@ summary: Streamline threat analysis and event management in NetApp Ransomware Re
 :icons: font
 :imagesdir: ./media/
 
-NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with AWS Security Hub. By connecting Ransomware Resilience to AWS Security Hub, you can automatically send event data for threat analysis and detection to streamline management ransomware protection and event management. 
+[.lead]
+NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with AWS Security Hub. By connecting Ransomware Resilience to AWS Security Hub, you can automatically send event data for threat analysis and detection to streamline ransomware protection and event management.
 
 == Before you begin
 

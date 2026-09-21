@@ -94,7 +94,7 @@ sidebar:
               url: /task-siem-secops.html
             - title: Configure Microsoft Sentinel
               url: /task-siem-sentinel.html
-            - title: Configue Splunk Cloud & Enterprise
+            - title: Configure Splunk Cloud & Enterprise
               url: /task-siem-splunk.html
             - title: Configure a SIEM with webhooks
               url: /task-siem-webhook.html
