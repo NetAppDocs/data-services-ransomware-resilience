@@ -20,7 +20,7 @@ Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Ent
 
 * Enable an HTTP Event Collector in Splunk Cloud or Enterprise to receive event data via HTTP or HTTPS from the Console. 
 * Create an Event Collector token in Splunk Cloud or Enterprise.
-* For *Splunk Enterprise*, you must allow inbound public internet traffic for Ransomware Resilience to be able to push events using the HTTP event collector details provided to it. 
+* For *Splunk Enterprise*, if you choose *Deliver via NetApp Console*, allow inbound public internet traffic so Ransomware Resilience can push events to the HTTP Event Collector. If you choose *Deliver via Console agent*, the Console agent must be able to reach the HTTP Event Collector.
 
 .Enable an HTTP Event Collector in Splunk 
 . In Splunk Cloud or Enterprise, select *Settings* > *Data Inputs*. 
