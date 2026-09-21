@@ -13,9 +13,9 @@ NetApp Ransomware Resilience provides native support for security information an
 
 == Configure Microsoft Sentinel for threat detection
 
-Perform the following steps in Sentinel:
+Connecting Microsoft Sentinel requires performing certain steps in the Azure portal. 
 
-.Before you begin
+=== Before you begin
 
 Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do the following high-level steps in Microsoft Sentinel: 
 
@@ -30,11 +30,15 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 * *Authentication*
 ** Enter authentication credentials for the application. 
 
-.Enable Microsoft Sentinel
+=== Enable Microsoft Sentinel
+
+.Steps
 . In Microsoft Sentinel, create a *Log Analytics workspace*. 
 . link:https://learn.microsoft.com/en-us/azure/sentinel/quickstart-onboard?tabs=defender-portal[Enable Microsoft Sentinel to use the Log Analytics workspace you created.^] 
 
-.Create a custom role in Microsoft Sentinel
+=== Create a custom role in Microsoft Sentinel
+
+.Steps
 . In the Azure portal, navigate to *Subscription* > *Access control (IAM)*.
 . Create a custom role. For the *Custom role name*, enter "NetApp Ransomware Resilience Sentinel Configurator".
 . Copy the following JSON and paste it into the *JSON* tab. 
@@ -119,8 +123,9 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 ----
 . Review and save your settings. 
 
-.Authenticate Ransomware Resilience to receive events from Microsoft Sentinel
+=== Authenticate Ransomware Resilience to receive events from Microsoft Sentinel
 
+.Steps
 . In the Azure portal, select *Entra ID* > *Applications* > *App registrations*. 
 . For the *Display name* for the application, enter "*NetApp ransomware resilience*".
 . In the *Supported account type* field, select *Accounts in this organizational directory only*.
@@ -139,11 +144,12 @@ TIP: A client secret lifespan is limited to two years (24 months) or less. Micro
 . Select *Add* to create your secret. 
 . Record the secret to use in a subsequent Authentication step. This is your only opportunity to view the secret; it is never displayed after you navigate away from the page. 
 
-.Assign permissions
+=== Assign permissions
 
 [NOTE]
 For manual deployment with an ARM template, skip this section. 
 
+.Steps
 . In the Azure portal, select *Subscription* > *Access control (IAM)*.
 . Select *Add* > *Add role assignment*. 
 . For the *Privileged administrator roles* field, select the *NetApp Ransomware Resilience Sentinel Configurator* role you created earlier. 
