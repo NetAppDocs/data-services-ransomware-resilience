@@ -8,4 +8,4 @@ For more information, see link:https://docs.netapp.com/us-en/data-services-ranso
 
 Ransomware Resilience now offers an Azure Resource Manager (ARM) template for connecting to Microsoft Sentinel as a SIEM, offering a secondary method to faciliate deployment. 
 
-For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect to a SIEM for threat detection and analysis^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-sentinel.html[Configure Microsoft Sentinel SIEM in Ransomware Resilience^].
