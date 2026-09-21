@@ -26,7 +26,7 @@ Connecting Microsoft Sentinel requires performing certain steps in the Azure por
 .Steps
 . In the Azure portal, navigate to *Subscription* > *Access control (IAM)*.
 . Create a custom role. For the *Custom role name*, enter "NetApp Ransomware Resilience Sentinel Configurator".
-. Copy the following JSON and paste it into the *JSON* tab. 
+. Copy the following JSON and paste it into the *JSON* tab, replacing `{subscription_id}` with the Azure subscription ID where you will assign the role.
 +
 [source,json]
 ----
