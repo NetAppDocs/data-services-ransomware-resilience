@@ -9,7 +9,7 @@ link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clea
 
 Ransomware Resilience now supports security information and event management (SIEM) with Google SecOps, enabling you to send data automatically to Google SecOps for streamlined threat analysis and detection. 
 
-For configuration information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem.html[Connect Ransomware Resilience to a SIEM^].
+For configuration information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-siem-secops.html[Configure Google SecOps SIEM in Ransomware Resilience^].
 
 === Azure NetApp Files support is now generally available
 

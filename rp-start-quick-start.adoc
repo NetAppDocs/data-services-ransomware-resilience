@@ -48,7 +48,6 @@ These tasks require the _Ransomware Resilience admin_ role. To configure user be
 * link:rp-use-protect.html[Protect workloads]
 ** Optionally, link:suspicious-user-activity.html[enhance protection by configuring user behavior detection]
 * Optionally, configure backup destinations:
-** link:rp-start-setup.html[Prepare NetApp StorageGRID, Amazon Web Services, Google Cloud Platform, or Microsoft Azure as a backup destination].
 ** link:rp-start-setup.html[Configure backup destinations]
 * link:rp-use-alert.html[Respond to detection of potential ransomware attacks]
 * link:rp-use-recover.html[Recover from an attack (after incidents are neutralized)]
