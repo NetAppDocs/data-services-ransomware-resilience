@@ -45,7 +45,6 @@ Connecting Microsoft Sentinel requires performing certain steps in the Azure por
           "Microsoft.OperationalInsights/workspaces/sharedKeys/action",
           "Microsoft.Insights/dataCollectionRules/write",
           "Microsoft.Insights/dataCollectionRules/read",
-          "Microsoft.Insights/dataCollectionRules/read",
           "Microsoft.OperationalInsights/workspaces/tables/operationresults/read",
           "Microsoft.OperationalInsights/workspaces/tables/read",
           "Microsoft.OperationalInsights/workspaces/tables/write",
@@ -119,7 +118,7 @@ Connecting Microsoft Sentinel requires performing certain steps in the Azure por
 +
 After registration, the Microsoft Entra admin center displays the application Overview pane. 
 
-.Create a client secret for the registration application
+.Create a client secret for the application registration 
 . In the Azure portal, select *Certificates & secrets* > *Client secrets* > *New client secret*. 
 . Add a description for your application secret. 
 . Select an *Expiration* for the secret or specify a custom lifespan. 
@@ -129,12 +128,15 @@ TIP: A client secret lifespan is limited to two years (24 months) or less. Micro
 . Select *Add* to create your secret. 
 . Record the secret to use in a subsequent Authentication step. This is your only opportunity to view the secret; it is never displayed after you navigate away from the page. 
 
-=== Assign permissions
+== Authenticate Microsoft Sentinel in Ransomware Resilience
 
-[NOTE]
-For manual deployment with an ARM template, skip this section. 
+For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternatively, you can perform a manual deployment where you deploy resources based on a provided ARM template. Both options require you to set permissions in the Azure portal then authenticate the connection in Ransomware Resilience, though the steps differ. Choose the workflow that best suits your needs.
 
-.Steps
+[role="tabbed-block"]
+====
+.Automatic deployment
+--
+.Configure permissions in the Azure portal 
 . In the Azure portal, select *Subscription* > *Access control (IAM)*.
 . Select *Add* > *Add role assignment*. 
 . For the *Privileged administrator roles* field, select the *NetApp Ransomware Resilience Sentinel Configurator* role you created earlier. 
@@ -146,14 +148,7 @@ For manual deployment with an ARM template, skip this section.
 . Select *Next*.
 . Select *Review and assign* to assign the permissions. 
 
-== Authenticate Microsoft Sentinel in Ransomware Resilience
-
-For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternatively, you can perform a manual deployment where you deploy resources based on a provided ARM template.
-
-[role="tabbed-block"]
-====
-.Automatic deployment
---
+.Authenticate Microsoft Sentinel in Ransomware Resilience
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 . In the Settings page, select *Connect* in the SIEM connection tile then choose *Microsoft Sentinel* from the dropdown menu. 
@@ -162,21 +157,22 @@ image:screen-settings-threat-detection-3options.png[Screenshot of SIEM connectio
 . Choose *Automatic* as the deployment method.
 . Review the *Prerequisites*, *Registration*, and *Permissions* sections to ensure you've successfully completed each step. 
 . Expand the *Authentication* section. 
-.. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
-.. Choose the *Subscription ID*, *Resource group*, and *Log analytics workspace* you want to send SIEM data to. 
+.. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated to proceed.
+.. Choose the *Subscription ID*, *Resource group*, and *Log Analytics workspace* you want to send SIEM data to. 
 . Select *Connect* to begin sending SIEM data. 
 --
 
 .Manual deployment
 --
+.Deploy the ARM template
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 +
 . In the Settings page, select *Connect* in the SIEM connection tile then choose *Microsoft Sentinel* from the dropdown menu. 
 +
 image:screen-settings-threat-detection-3options.png[Screenshot of SIEM connect options]
 . Choose *Manual* as the deployment method.
-. Review the *Prerequisites*, *Registration*, and *ARM Template Deployments* sections to ensure you've successfully completed each step. 
-. Expand the *ARM Template Deployment* section. 
+. Review the *Prerequisites*, *Registration*, and *ARM Template Deployment* sections to ensure you've successfully completed each step. 
+. Expand the *ARM Template Deployments* section. 
 . Assign the Monitoring Metrics Publisher role.
 .. In your Azure subscription, go to *Access control (IAM)*.
 .. Select *Add role assignment*.
@@ -188,13 +184,16 @@ image:screen-settings-threat-detection-3options.png[Screenshot of SIEM connect o
 . Select *Build your own template* in the editor.
 . Paste the copied JSON into the editor. Select *Save*.
 . Enter the *Workspace name*, which is the name of your Log Analytics workspace. You can retrieve this from the workspace overview page in the Azure portal.
-. Select *Review + create*. Review the selections then *Create* to deploy.
+. Select *Review + create*. Review the selections, then select *Create* to deploy.
 . After deployment, collect the following information for authentication in Ransomware Resilience:
 +
 * *Log Ingestion Endpoint*: open the Data Collection Endpoint resource (`rps-alerts-dce`) and copy the Logs Ingestion value shown on the overview page.
 * *DCR Immutable ID*: open the Data Collection Rule resource (`rps-alerts-dcr`) and copy the Immutable ID on the overview page.
+
+.Authenticate Microsoft Sentinel in Ransomware Resilience
+. Return to the Ransomware Resilience SIEM configuration window.
 . Expand the *Authentication* section. 
-.. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate* then wait until the UI confirms the credentials have been authenticated. 
+.. Enter the *Directory (tenant) ID*, *Application (tenant) ID*, and *Client secret*. Select *Authenticate*, then wait until the UI confirms the credentials have been authenticated. 
 .. Enter the *Log Ingestion Endpoint* and *DCR immutable ID* you previously copied.
 . Select *Connect* to create the connection. 
 --
