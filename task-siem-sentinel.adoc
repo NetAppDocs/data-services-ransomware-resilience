@@ -108,7 +108,7 @@ Connecting Microsoft Sentinel requires performing certain steps in the Azure por
 ----
 . Review and save your settings. 
 
-=== Authenticate Ransomware Resilience to receive events from Microsoft Sentinel
+=== Register Ransomware Resilience in Microsoft Entra ID
 
 .Steps
 . In the Azure portal, select *Entra ID* > *Applications* > *App registrations*. 
