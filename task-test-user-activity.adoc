@@ -94,7 +94,7 @@ cp <AGENT_INSTALL_DIR>/agent/install/ransomware_simulation/shell/create_dataset.
 .Python
 --
 . Log into the host running the user activity agent. 
-.  Mount an NFS or CIFS share from the storage VM of the filer to the machine running the user activity agent. Change the working directory to the appropriate volume for testing. 
+. Mount an NFS or CIFS share from the storage VM of the filer to the machine running the user activity agent. Change the working directory to the appropriate volume for testing. 
 . Copy the script from the user directory agent installation directory to the target volume:
 +
 [code]

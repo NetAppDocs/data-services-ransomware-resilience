@@ -63,9 +63,8 @@ If your workload isn't managed by Backup and Recovery or Ransomware Resilience, 
 You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance. 
 
 [NOTE]
-The **Encryption user extension** policy is the only predefined policy that supports suspicious user behavior detection. 
-+
-The **Critical replication policy** is the  only predefined policy that supports replicating snapshots to ONTAP. 
+The **Encryption user extension** policy is the only predefined policy that supports suspicious user behavior detection. +
+The **Critical replication policy** is the only predefined policy that supports replicating snapshots to ONTAP. 
 
 [cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
 |===

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: task-automate-user-activity.html
-keywords: data breach detection, data breach, user activity, automated response
+keywords: data breach detection, data breach, user activity, automated response, block user, automate, ransomware response
 summary: NetApp Ransomware Resilience supports creating automated responses to user activity events, enabling you to automatically create a snapshot or block a user. 
 ---
 = Automate responses to user activity alerts in NetApp Ransomware Resilience
@@ -10,16 +10,19 @@ summary: NetApp Ransomware Resilience supports creating automated responses to u
 :imagesdir: ./media/
 
 [.lead]
-With NetApp Ransomware Resilience, you can automate responses to link:concept-user-behavior.html[user activity events]. With automated responses, Ransomware Resilience can create a snapshot or block a user when an attack or warning is detected, enabling a swifter response to ransomware events.
+With NetApp Ransomware Resilience, you can automate responses to link:concept-user-behavior.html[user activity events]. When a user activity alert is triggered, Ransomware Resilience can:
+
+* Block a user
+* Create a snapshot
 
 Automated responses are supported for encryption (user behavior), data breach, and data destruction events. You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated response. When an automated response is triggered, Ransomware Resilience sends an email alert. 
+
+[NOTE]
+If the alert is triggered by suspicious user behavior, you can only take a snapshot. Blocking a user isn't available as an automated response to suspicious user behavior. 
 
 == Create an automated response
 
 You can only protect one storage VM with at least one workload that is protected with a suspicious user behavior detection policy. 
-
-[NOTE]
-For automated responses to suspicious user behavior, you can only take a snapshot. Blocking a user isn't supported as an automated response to suspicious user behavior. 
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 
@@ -60,3 +63,7 @@ After creating an automated response, you can pause, restart, or modify the resp
 To modify the response, select **Edit**. 
 . You can modify any of the settings except for the alert severity. 
 . Select **Save** to capture the changes. 
+
+== Next steps 
+
+link:task-users-manage.html[Manage blocked users]
