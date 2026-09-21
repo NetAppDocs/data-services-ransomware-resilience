@@ -1,16 +1,26 @@
-
-
-= Configure the Google SecOps SIEM in NetApp Ransomware Resilience
+---
+sidebar: sidebar
+permalink: task-siem-webhook.html
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, google, secops, security operations
+summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by connecting the Google SecOps SIEM.
+---
+= Configure Google SecOps SIEM in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
-== Configure Google SecOps for threat detection
+[.lead]
+NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Google SecOps. By connecting Ransomware Resilience to Google SecOps, you can automatically send event data for threat analysis and detection to streamline management ransomware protection and event management. 
 
-Before you enable Google SecOps in Ransomware Resilience, you need to register the log type and webhook in Google SecOps to enable a connection between services.  
+== Before you begin
+
+Before you enable Google SecOps in Ransomware Resilience, you must register the log type and webhook in Google SecOps to enable a connection between services.  
+
+== Configure Google SecOps
+
+Perform the following steps in Google SecOps:
 
 .Create a log type
-. Go to Google SecOps.
-. Navigate to *Settings* > *SIEM Settings* > *Available Log Types*.
+. In Google SecOps, navigate to *Settings* > *SIEM Settings* > *Available Log Types*.
 + 
 It's recommended that you use the NETAPP_RANSOMWARE_RESILIENCE log type. If you don't want to use this, create a custom log type. 
 . If you use the NETAPP_RANSOMWARE_RESILIENCE log type, it includes a prebuilt parser, and no further action is necessary. 
@@ -18,9 +28,7 @@ It's recommended that you use the NETAPP_RANSOMWARE_RESILIENCE log type. If you 
 If you use a custom log type, you must create a parser. Go to *SIEM Settings* > *Parsers* > *Create Parser* to create the parser. 
 
 .Register the webhook
-
-. Navigate to Google SecOps.
-. Navigate to *Settings* > *SIEM settings* > *Feeds*.
+. In Google SecOps, navigate to *Settings* > *SIEM settings* > *Feeds*.
 . Select *Add new feed*.
 . Select the log type you used in the Create a log type workflow. 
 . Set the *Source type* to Webhook then save the feed. 
@@ -28,7 +36,8 @@ If you use a custom log type, you must create a parser. Go to *SIEM Settings* > 
 . Open the *Secret key* tab. Generate the secret key or copy it if you've already created one. Save the key to use when you authenticate in Ransomware Resilience. 
 . Create an *API key* using your organization's Google API key process. 
 
-.Authenticate Google SecOps in Ransomware Resilience
+== Authenticate Google SecOps in Ransomware Resilience
+
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 . In the Settings page, select *Connect* in the SIEM connection tile then choose *Google SecOps* from the dropdown menu. 
 +

@@ -1,10 +1,23 @@
-
+---
+sidebar: sidebar
+permalink: task-siem-webhook.html
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, splunk cloud, splunk enterprise, splunk
+summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by connecting either Splunk Cloud or Splunk Enterprise as your SIEM.
+---
 = Configure a Splunk SIEM in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+
+[.lead]
+NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Splunk Cloud and Splunk Enterprise. By connecting Ransomware Resilience to a Splunk SIEM, you can automatically send event data for threat analysis and detection to streamline management ransomware protection and event management. 
+
 == Configure Splunk Cloud and Splunk Enterprise for threat detection
 
+You must perform configurations in Splunk Cloud or Splunk Enterprise before authenticating the SIEM system in Ransomware Resilience. 
+
+.Before you begin
 Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Enterprise. Before enabling the Splunk connection in Ransomware Resilience, you need to: 
 
 * Enable an HTTP Event Collector in Splunk Cloud or Enterprise to receive event data via HTTP or HTTPS from the Console. 
@@ -14,24 +27,22 @@ Ransomware Resilience supports threat detection with Splunk Cloud and Splunk Ent
 For Splunk Enterprise, you must allow inbound public internet traffic for Ransomware Resilience to be able to push events using the HTTP event collector details provided to it. 
 
 .Enable an HTTP Event Collector in Splunk 
-
-. Go to your chosen Splunk environment: Cloud or Enterprise. 
-. Select *Settings* > *Data Inputs*. 
+. In Splunk Cloud or Enterprise, select *Settings* > *Data Inputs*. 
 . Select *HTTP Event Collector* > *Global Settings*. 
 . On the All Tokens toggle, select *Enabled*.
 . To have the Event Collector listen and communicate over HTTPS rather than HTTP, select *Enable SSL*. 
 . Enter a port in *HTTP Port Number* for the HTTP Event Collector. Save the port number for the authentication process. 
 
 .Create an Event Collector token in Splunk
-. Go to Splunk Cloud or Enterprise. 
-. Select *Settings* > *Add Data*. 
+. In Splunk Cloud or Enterprise, select *Settings* > *Add Data*. 
 . Select *Monitor* > *HTTP Event Collector*. 
 . Enter a Name for the token and select *Next*. 
 . Select a *Default Index* where events will be pushed, then select *Review*. 
 . Confirm that all settings for the endpoint are correct, then select *Submit*. 
 . Copy the token and paste it in another document to have it ready for the Authentication step. 
 
-.Authenticate Splunk with Ransomware Resilience
+== Authenticate Splunk with Ransomware Resilience
+
 . In Ransomware Resilience, select *Settings* in the sidebar. 
 . In the Settings page, select *Connect* in the SIEM connection tile. 
 +

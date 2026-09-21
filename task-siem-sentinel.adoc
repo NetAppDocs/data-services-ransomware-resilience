@@ -1,21 +1,34 @@
-
-= Configure the Microsoft Sentinel SIEM in NetApp Ransomware Resilience
+---
+sidebar: sidebar
+permalink: task-siem-webhook.html
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, microsoft, sentinel
+summary: Streamline threat analysis and event management in NetApp Ransomware Resilience by connecting the Microsoft Sentinel SIEM.
+---
+= Configure Microsoft Sentinel SIEM in NetApp Ransomware Resilience
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Microsoft Sentinel. By connecting Ransomware Resilience to AWS Security Hub, you can automatically send event data for threat analysis and detection to streamline management ransomware protection and event management. 
 
 == Configure Microsoft Sentinel for threat detection
+
+Perform the following steps in Sentinel:
+
+.Before you begin
 
 Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do the following high-level steps in Microsoft Sentinel: 
 
 * *Prerequisites*
-* Enable Microsoft Sentinel.
-* Create a custom role in Microsoft Sentinel.
+** Enable Microsoft Sentinel.
+** Create a custom role in Microsoft Sentinel.
 * *Registration*
-* Register Ransomware Resilience to receive events from Microsoft Sentinel.
-* Create a secret for the registration. 
-* *Permissions*: Assign permissions to the application. 
-* *Authentication*: Enter authentication credentials for the application. 
+** Register Ransomware Resilience to receive events from Microsoft Sentinel.
+** Create a secret for the registration. 
+* *Permissions*
+** Assign permissions to the application. 
+* *Authentication*
+** Enter authentication credentials for the application. 
 
 .Enable Microsoft Sentinel
 . Go to Microsoft Sentinel. 
@@ -89,7 +102,7 @@ NOTE: After the authentication is successful, an "Authenticated" message appears
 . Enter the Log Analytics workspace details for the application. 
 .. Select the subscription ID, the resource group, and the Log Analytics workspace. 
 
-.Authenticate Microsoft Sentinel in Ransomware Resilience
+== Authenticate Microsoft Sentinel in Ransomware Resilience
 
 For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternatively, you can perform a manual deployment where you deploy resources based on a provided ARM template.
 

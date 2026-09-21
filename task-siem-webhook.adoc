@@ -1,15 +1,22 @@
-
-
-
+---
+sidebar: sidebar
+permalink: task-siem-webhook.html
+keywords: ransomware protection, SIEM, security event management system, orchestration, event management, webhook, third-party siem, other siem, palo alto, crowdstrike, ibm
+summary: Streamline threat analysis and event management in NetApp Ransomware resilience by configuring any SIEM system of your choice with webhooks. 
+---
 = Configure a SIEM in NetApp Ransomware Resilience using webhooks
 :icons: font
 :imagesdir: ./media/
 
-== Configure a SIEM with webhooks
+[.lead]
+NetApp Ransomware Resilience provides native support for multiple security information and event management (SIEM) systems. If your chosen SIEM system is not available, you can configure any other SIEM system for event management using webhooks. 
 
-Before creating the SIEM connection with Ransomware Resilience, you must have configured the SIEM on its own platform. Follow these steps to configure communication with Ransomware Resilience. 
+== Before you begin
 
-.Steps
+Before creating the SIEM connection with Ransomware Resilience, you must have configured the SIEM on its own platform. Once you've configure the SIEM, you can authenticate it in Ransomware Resilience. 
+
+== Authenticate a SIEM in Ransomware Resilience via webhook
+
 . In Ransomware Resilience, select *Settings*.
 . In the *SIEM* tile, select *Connect* then *Webhooks* if this is your first time configuring a SIEM. Otherwise, select *Manage*. On the overview page, select *+ Connect* then *Webhook*.
 . Provide the *Name* of the SIEM product and *URL* for the connection. You cannot use an encoded URL.
