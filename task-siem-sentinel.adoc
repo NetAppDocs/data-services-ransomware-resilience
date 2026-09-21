@@ -36,7 +36,7 @@ Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do th
 
 .Create a custom role in Microsoft Sentinel
 . In the Azure portal, navigate to *Subscription* > *Access control (IAM)*.
-. Create a custom role. For the *Custom role name*, enter "Ransomware Resilience Sentinel Configurator".
+. Create a custom role. For the *Custom role name*, enter "NetApp Ransomware Resilience Sentinel Configurator".
 . Copy the following JSON and paste it into the *JSON* tab. 
 +
 [source,json]
@@ -146,7 +146,7 @@ For manual deployment with an ARM template, skip this section.
 
 . In the Azure portal, select *Subscription* > *Access control (IAM)*.
 . Select *Add* > *Add role assignment*. 
-. For the *Privileged administrator roles* field, select the *Ransomware Resilience Sentinel Configurator* role you created earlier. 
+. For the *Privileged administrator roles* field, select the *NetApp Ransomware Resilience Sentinel Configurator* role you created earlier. 
 . Select *Next*. 
 . In the *Assign access to* field, select *User, group, or service principal*. 
 . Select *Select Members* then *NetApp Ransomware Resilience*. 
