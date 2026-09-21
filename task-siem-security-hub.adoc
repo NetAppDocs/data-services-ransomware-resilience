@@ -16,7 +16,7 @@ NetApp Ransomware Resilience provides native support for security information an
 Before you enable AWS Security Hub in Ransomware Resilience, you need to perform security configurations in AWS Security Hub:
 
 * Set up permissions in AWS Security Hub.
-* Set up the access key and secret key in AWS Security Hub for authentication. (These steps are not provided here.)
+* Set up the access key and secret key in AWS IAM settings for authentication. (These steps are not provided here.)
 
 == Set up permissions in AWS Security Hub
 

@@ -15,21 +15,6 @@ NetApp Ransomware Resilience provides native support for security information an
 
 Connecting Microsoft Sentinel requires performing certain steps in the Azure portal. 
 
-=== Before you begin
-
-Before you enable Microsoft Sentinel in Ransomware Resilience, you need to do the following high-level steps in Microsoft Sentinel: 
-
-* *Prerequisites*
-** Enable Microsoft Sentinel.
-** Create a custom role in Microsoft Sentinel.
-* *Registration*
-** Register Ransomware Resilience to receive events from Microsoft Sentinel.
-** Create a secret for the registration. 
-* *Permissions*
-** Assign permissions to the application. 
-* *Authentication*
-** Enter authentication credentials for the application. 
-
 === Enable Microsoft Sentinel
 
 .Steps

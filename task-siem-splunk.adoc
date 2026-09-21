@@ -9,8 +9,6 @@ summary: Streamline threat analysis and event management in NetApp Ransomware Re
 :imagesdir: ./media/
 
 [.lead]
-
-[.lead]
 NetApp Ransomware Resilience provides native support for security information and event management (SIEM) with Splunk Cloud and Splunk Enterprise. By connecting Ransomware Resilience to a Splunk SIEM, you can automatically send event data for threat analysis and detection to streamline ransomware protection and event management.
 
 == Configure Splunk Cloud and Splunk Enterprise for threat detection
