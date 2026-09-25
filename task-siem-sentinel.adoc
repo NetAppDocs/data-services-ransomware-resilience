@@ -128,7 +128,7 @@ TIP: A client secret lifespan is limited to two years (24 months) or less. Micro
 . Select *Add* to create your secret. 
 . Record the secret to use in a subsequent Authentication step. This is your only opportunity to view the secret; it is never displayed after you navigate away from the page. 
 
-== Authenticate Microsoft Sentinel in Ransomware Resilience
+== Add roles in Azure and authenticate Microsoft Sentinel in Ransomware Resilience
 
 For the Microsoft Sentinel SIEM, you can choose an automatic deployment where Ransomware Resilience deploys the resources based on permissions that you provide. Alternatively, you can perform a manual deployment where you deploy resources based on a provided ARM template. Both options require you to set permissions in the Azure portal then authenticate the connection in Ransomware Resilience, though the steps differ. Choose the workflow that best suits your needs.
 
