@@ -13,7 +13,6 @@ summary: Known limitations identify platforms, devices, or functions that are no
 Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 
 == Readiness drill reset option issue
-// check this
 
 If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, Ransomware Resilience sends an alert. If you recover the data using the "clone-to-volume" option and reset the drill, the reset operation fails.
 
@@ -34,6 +33,7 @@ The following limitations apply to Azure NetApp Files:
 * When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
 * It's recommended you not use link:reference-soar.html[SOAR playbooks] with Azure NetApp Files due to Azure NetApp Files APIs blocking automated actions. 
 * Some event data is not included in link:task-siem.html[SIEM reports] for Azure NetApp Files configurations. 
+* File-level restore is not available when you link:task-custom-restore.html[restore a workload] for Azure NetApp Files. 
 
 == Google Cloud NetApp Volumes limitations
 
