@@ -21,15 +21,17 @@ There are two approaches to configuring file extension lists:
 * *Block file extensions* - All file extensions included in the list will be blocked and marked as ransomware threats.
 * *Allow file extensions* - Only files with extensions from this list are permitted. Any file with an extension not on the list is blocked and considered a ransomware threat. 
 
+=== File extension blocking from ONTAP
+
+If you've set specific file extensions in ONTAP to be blocked, Ransomware Resilience automatically inherits that list. You can optionally override the ONTAP settings when you link:rp-use-protect.html[configure protection].
+
 === Default file extensions
 
 Ransomware Resilience provide a default list of blocked file extensions called "NetApp." By default, all workloads enabled to _block_ suspicious file extensions use this list, which contains more than 3,900 known malicious file extensions. You can modify this list or copy it to use as the basis for a custom list. 
 
 You can set a different list to be the default. After a list is set as the default, all workloads subsequently enabled for file blocking will use that list unless you manually select another list. 
 
-== Create file extensions list
-
-If you've set specific file extensions in ONTAP to be blocked, Ransomware Resilience automatically inherits that list. If you modify the list of blocked extensions in Ransomware Resilience, that overrides the setting in ONTAP. 
+== Create a file extensions list
 
 .Steps
 . In Ransomware Resilience, select **Settings**. 
