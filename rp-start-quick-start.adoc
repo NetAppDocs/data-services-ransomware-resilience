@@ -15,12 +15,10 @@ Use this quick start to set up NetApp Ransomware Resilience, discover workloads,
 
 Follow the links in each step for detailed information.
 
-
-
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Review prerequisites
 
 [role="quick-margin-para"]
-These tasks require the _Console admin_ role.
+The _Super admin_ or _Organization admin_ role is required to deploy a Console agent and assign permissions.
 
 [role="quick-margin-list"]
 * link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation[Ensure you've installed a Console agent^]
