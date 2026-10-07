@@ -36,17 +36,50 @@ Ensure each role is applied at the organization level.
 
 == Create a user activity agent 
 
-User activity agents are executable environments for link:#add-a-data-collector[data collectors], which share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
+User activity agents are executable environments for link:#add-a-data-collector[data collectors], which that share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
+
+[NOTE]
+After you create the tenant, you can't change the region. Tenant creation takes approximately five minutes and can't be cancelled once it's initiated. 
 
 .Steps
 
+You can create a user activity agent using a *Manual* configuration or an *Automatic* one. With the automatic configuration, you need to provide the Console agent, VM DNS name or IP address, and VM SSH Key so that Ransomware Resilience can create the tenant. With a manual configuration, Ransomware Resilience provides the commands to manually create the tenant. 
+
+[role="tabbed-block"]
+====
+.Manual
+--
 . If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity** tile, select **Activate**.
 +
 If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
-. Select a **Cloud provider** then a **Region**. Select **Next**. 
+. Select a **Cloud provider**, then a **Region**.
+. Select **Create tenant**.
++
+The tenant creation process takes approximately five minutes. After selecting *Create tenant*, you can select *Run in background* to return to the dashboard and continue with other operations. 
+. Enter a name for the *User activity agent name*.
+. Choose *Manual* as the configuration method. 
+. In the *Allow tenant* step, Ransomware Resilience provides the URL for the user activity agent. Copy and paste the URL to allow connections.
+. Open a terminal in your cloud environment to install the user activity agent. 
+.. Optionally, if you're using a proxy server, fill in your proxy server variable and run the export command shown. `export https_proxy='USER:PASSWORD@PROXY_SERVER:<port>'`. If the proxy server doesn't mandate authentication, omit the user and password fields. In this case, the command will resemble `export https_proxy='https://proxy.company.com:<port>'`.
+.. In the same terminal, copy then paste the installation command. The snippet is valid only for two hours and can only be used to install one user activity agent. 
++
+If you need to install additional user activity agents, repeat this process to generate a new installation snippet. 
+. Select *Next*.
+. Review the tenant and user activity agent details. If everything is correct, select *Activate* to complete the process. 
+--
+.Automatic
+--
+. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity** tile, select **Activate**.
++
+If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
+. Select a **Cloud provider** then a **Region**.
+. Select **Create tenant**. 
++
+The tenant creation process takes approximately five minutes. After selecting *Create tenant*, you can select *Run in background* to return to the dashboard and continue with other operations. 
+. Enter a name for the *User activity agent name*.
+. Choose *Automatic* as the configuration method. 
 . Provide the user activity agent details:
 +
-* **User activity agent name**
 * *Console agent* - The Console agent should be in the same network as the user activity agent and have SSH connectivity to the user activity agent's IP address.
 * *VM DNS name or IP address* 
 * *VM SSH Key* - Enter the SSH key using this format:
@@ -62,6 +95,8 @@ image:user-activity-agent.png[Screenshot of add activity agent interface.]
 . Select **Next**.
 . Review your settings. Select *Activate* to complete adding the user activity agent. 
 . Confirm the user activity agent was successfully created. In the User activity monitoring tile, a successful deployment displays as **Running**.
+--
+====
 
 .Result
 After the user activity agent is successfully created, return to the **Settings** menu then select **Manage** in the User activity monitoring tile. Select the **User activity agents** tab then select the user activity agent to view details about it, including data collectors and user directory connectors. 
@@ -119,7 +154,7 @@ Provide the attribute mapping details:
 * *User name* 
 * *Unix ID* (if you're using NFS)
 * If you select *Include optional attributes*, you can also add an email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
-Select *Advanced* to add an optional search query. 
+. Select *Advanced* to add an optional search query. 
 +
 . Select **Add**. 
 . Return to the user directory connectors tab to check the status of your user directory connector. If created successfully, the status of the user directory connector displays as *Running*. 
