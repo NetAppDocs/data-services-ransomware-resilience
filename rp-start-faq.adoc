@@ -28,6 +28,12 @@ You can access Ransomware Resilience from the NetApp Console. Ensure that you ha
 
 For more information, see link:rp-start-login.html[Access Ransomware Resilience] and link:rp-start-quick-start.html[Ransomware Resilience quick start guide].
 
+.What Console agent requirements exist for Ransomware Resilience? 
+
+link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Review and set the appropriate permissions for users.] Ensure at least one active Console agent in your Console organization is connected to a supported system. The Console agent must have the `cloudmanager-ransomware-protection` container in an active state.
+
+Additionally, there's a limit of 3,000 workloads per Console agent. You can file a request to extend this limit. 
+
 .Is Ransomware Resilience available in standard, restricted, and private modes?
 
 Ransomware Resilience is currently available in standard mode only.
@@ -48,7 +54,7 @@ After the free trial ends or the license or subscription expires, workloads rema
 * Delete resources such as policies
 * Run all scheduled operations created during the trial period or under the license
 
-To decommission Ransomware Resilience, submit a support request. The request must include your organization ID and note that you want to decomission the service.
+To decommission Ransomware Resilience, submit a support request. The request must include your organization ID and note that you want to decommission the service.
 
 == Access
 
@@ -113,7 +119,7 @@ In Ransomware Resilience, a workload shows a status of *protected* when it has a
 
 .What is an "at risk" workload?
 
-A workload must have a ransomware protection policy with encryption detection or user behavior detection enabled to be considered protected. Without at least one of these detection strategies, the workload is labeled at risk. If a workload has a backup or snapshot policy but doesn't include encryption detection or user behavior detection enabled, it will be considered at risk. 
+A workload must have a ransomware protection policy with encryption detection or user behavior detection enabled to be considered protected. Without at least one of these detection strategies, the workload is labeled at risk. If a workload has a backup or snapshot policy but doesn't have encryption detection or user behavior detection enabled, it will be considered at risk. 
 
 Ransomware Resilience also offers suspicious file extension detection. If suspicious file extension detection is the only detection policy enabled, the workload will be labeled at risk. 
 
@@ -158,15 +164,15 @@ Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP. It also di
 
 .Is Ransomware Resilience aware of policies already made in Backup and Recovery?
 
-Yes, if you have workloads managed in Backup and Recovery, the policies managed by those products are brought into Ransomware Resilience.
+Yes, if you have workloads managed in Backup and Recovery, those policies are brought into Ransomware Resilience.
 
 .Can you modify policies carried over from NetApp Backup and Recovery?
 
 No, you cannot modify policies managed by Backup and Recovery from Ransomware Resilience. You manage any changes to those policies in Backup and Recovery.
 
-.If policies exist from ONTAP (such as ARP, FPolicy, and snapshots) are those changed in Ransomware Resilience?
+.If policies exist from ONTAP (such as ARP, FPolicy, and snapshots), does Ransomware Resilience change them?
 
-No. Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP.
+Ransomware Resilience does not modify any existing detection policies (ARP, FPolicy settings) from ONTAP. If you modify any settings in Ransomware Resilience, you can override the ONTAP settings. 
 
 .What happens if you add new policies in Backup and Recovery after signing up for Ransomware Resilience?
 
