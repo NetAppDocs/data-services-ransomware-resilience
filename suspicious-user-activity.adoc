@@ -32,8 +32,9 @@ Ensure each role is applied at the organization level.
 
 === Considerations for Data Infrastructure Insights (DII) Workload Security users
 
-* include::_include/workload-security.adoc[]
-* include::_include/workload-security-credentials.adoc[]
+include::_include/workload-security.adoc[]
+
+include::_include/workload-security-credentials.adoc[]
 
 == Create a user activity agent 
 
