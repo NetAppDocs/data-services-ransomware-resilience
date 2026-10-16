@@ -80,11 +80,23 @@ You can access the NetApp Console with any modern web browser.
 
 Yes, Ransomware Resilience discovers snapshot schedules set in ONTAP.
 
+.Does the Ransomware Resilience license include additional NetApp products?
+
+No, the Ransomware Resilience license does not include additional NetApp products.
+
 .How does Ransomware Resilience interact with NetApp Backup and Recovery?
 
-Ransomware Resilience works with Backup and Recovery to discover and set snapshot and backup policies for file share workloads. Ransomware Resilience also works with Backup and Recovery to perform file- and workload-consistent recovery.
+If you have an active Backup and Recovery license and Ransomware Resilience, Ransomware Resilience discovers snapshot and backup policies set in Backup and Recovery. You can't edit Backup and Recovery policies in Ransomware Resilience, but you can replace them.
 
-For licensing and billing, Ransomware Resilience can integrate with Backup and Recovery even if you don't have a separate license for Backup and Recovery. If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
+Ransomware Resilience also works with Backup and Recovery to perform file- and workload-consistent recovery. For workloads discovered and protected by both Ransomware Resilience and Backup and Recovery, you can perform recovery from either service. 
+
+If you have both Backup and Recovery and Ransomware Resilience, any common data protected by both products is billed by Ransomware Resilience only.
+
+.What do I need to know if I've previously enabled user activity detection through Data Infrastructure Insights Workload Security?
+
+include::_include/workload-security.adoc[]
+
+include::_include/workload-security-credentials.adoc[]
 
 //*How is Ransomware Resilience different from Cloud Insights Storage Workload Security (CISWS)?*
 
