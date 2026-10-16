@@ -88,7 +88,7 @@ If you have both Backup and Recovery and Ransomware Resilience, any common data 
 
 .What do I need to know if I've previously enabled user activity detection through Data Infrastructure Insights Workload Security?
 
-include::_include/workload-security-credentials.adoc[]
+include::_include/workload-security.adoc[]
 
 include::_include/workload-security-credentials.adoc[]
 
