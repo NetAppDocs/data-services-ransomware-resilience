@@ -19,10 +19,6 @@ A user activity agent hosts a data collector and user directory connector, which
 
 The user activity agent, data collector, and user directory connector can all be managed from the Ransomware Resilience settings dashboard.  
 
-[NOTE]
-include::_include/workload-security.adoc[]
-
-
 If you're not using DII, proceed with the configuration instructions here. 
 
 == Before you begin
@@ -33,6 +29,11 @@ If you're not using DII, proceed with the configuration instructions here.
 To activate user behavior detection, you need the **Organization admin role**. For subsequent user behavior detection configurations, you need the **Ransomware Resilience user behavior admin role**. link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-ransomware-roles.html[Learn about Ransomware Resilience roles for NetApp Console^]. 
 
 Ensure each role is applied at the organization level.
+
+=== Considerations for Data Infrastructure Insights (DII) Workload Security users
+
+* include::_include/workload-security.adoc[]
+* include::_include/workload-security-credentials.adoc[]
 
 == Create a user activity agent 
 
