@@ -15,6 +15,12 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
+=== MetroCluster support
+
+Ransomware Resilience now supports MetroCluster, enabling ransomware protection, detection, and recovery for mirrored MetroCluster configurations. When enabling ransomware protection on MetroCluster configurations, both systems in the MetroCluster pair must be added to the Console. When you discover and enable protection on one side of the pair, it's automatically enabled on the other side.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-start-discover.html#metrocluster-discovery[MetroCluster discovery].
+
 == 16 September 2026
 include::_whatsnew/2026-09-16.adoc[]
 
