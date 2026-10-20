@@ -20,7 +20,7 @@ Automated responses are supported for encryption (user behavior), data breach, a
 == Before you begin
 
 * If the alert is triggered by suspicious user behavior, you can only take a snapshot. Blocking a user isn't available as an automated response to suspicious user behavior. 
-* When you configure automated responses for MetroCluster configurations, only select one system in the MetroCluster pair. Automated responses are automatically applied to all systems in the configuraiton. 
+* When you configure automated responses for MetroCluster configurations, only select one system in the MetroCluster pair. Automated responses are automatically applied to all systems in the configuration. 
 
 == Create an automated response
 
