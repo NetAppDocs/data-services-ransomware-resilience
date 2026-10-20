@@ -41,6 +41,7 @@ The following limitations apply to Google Cloud NetApp Volumes:
 
 * Currently, you can only apply encryption- and FPolicy-based protection strategies to Google Cloud NetApp Volumes workloads. You can't apply user behavior protection strategies.
 * Protection strategies with replication aren't currently supported for Google Cloud NetApp Volumes.
+* Support for the Flex service levels of Google Cloud NetApp Volumes is currently in preview. 
 
 == SAN storage limitations 
 
