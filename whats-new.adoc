@@ -15,6 +15,9 @@ summary: Learn what's new in NetApp Ransomware Resilience.
 [.lead]
 Learn what's new in NetApp Ransomware Resilience.
 
+== 20 October 2026
+include::_whatsnew/2026-10-20.adoc[]
+
 == 16 September 2026
 include::_whatsnew/2026-09-16.adoc[]
 
