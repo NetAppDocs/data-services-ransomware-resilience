@@ -208,7 +208,7 @@ The process for creating an isolated recovery room differs if the environment is
 +
 [NOTE]
 For IREs deployed to Amazon FSx for NetApp ONTAP, you don't need to provide this information.
-. . For each system that you've added, select *Edit storage VM*. In the pop-up, enter the *Storage VM IP address* and *Storage VM subnet mask*. For the *Broadcast domain*, choose default or management. You can optionally enter a *Storage VM gateway*. 
+. For each system that you've added other than Amazon FSx for NetApp ONTAP, select *Edit storage VM*. In the pop-up, enter the *Storage VM IP address* and *Storage VM subnet mask*. For the *Broadcast domain*, choose default or management. You can optionally enter a *Storage VM gateway*.
 +
 image::clean-restore-systems.png[Screenshot of systems selection interface.]
 . Select *Next*.
