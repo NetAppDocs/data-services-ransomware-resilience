@@ -10,7 +10,7 @@ summary: You can protect workloads against ransomware attacks by assigning polic
 :imagesdir: ./media/
 
 [.lead]
-Ransomware protection strategies are a key feature of NetApp Ransomware Resilience: they support detection, protection, and replication. Protection strategies are an essential piece of your cybersecurity posture.
+Ransomware protection strategies are a key feature of NetApp Ransomware Resilience: they support detection, protection, and replication. Enable a ransomware protection strategy to detect ransomware attacks and ensure you have a protection baseline for recovery. 
 
 include::_include/console-role-admin.adoc[]
 
