@@ -4,6 +4,12 @@ Ransomware Resilience now provides an enhanced isolated recovery environment con
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
 
+=== Enhanced workflow for enabling user activity monitoring
+
+Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, that check is now skipped if a data collector exists for the storage VM and is in the "running" state, accelerating the protection workflow. 
+
+For more information, see link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[protect workloads^].
+
 === Google Cloud NetApp Volumes Flex service level generally available
 
 Support for the Flex service level from Google Cloud NetApp Volumes in Ransomware Resilience is now generally available (GA).
