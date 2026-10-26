@@ -240,7 +240,7 @@ Ransomware Resilience tests the connection after you select add, which can take 
 Each system you select must have an assigned IP address. You can select primary or secondary systems. Secondary systems can be used for analysis and recovery if the primary system has no unencrypted snapshots or if it's unavailable.
 . For each system that you've added, select *Edit storage VM*. In the pop-up, enter the *Storage VM IP address* and *Storage VM subnet mask*. For the *Broadcast domain*, choose default or management. You can optionally enter a *Storage VM gateway*. 
 . Select *Next*. 
-. Select the Console agent from the dropdown menu that's deployed in the IRE.
+. Select the *Console agent* from the dropdown menu that's deployed in the IRE.
 . Provide the credentials to authenticate the vCenter server: *IP address or full-qualified domain name (FQDN)*, *Port*, *User name*, and *Password*.
 . Select **Authenticate** to confirm the credentials. Wait until the UI confirms your credentials before proceeding.
 . Expand the *Clean room compute section*. 
@@ -252,6 +252,8 @@ Each system you select must have an assigned IP address. You can select primary 
 For the Linux VM that Ransomware Resilience uses to scan for ransomware, select the VM from the dropdown menu then enter the *User name* and *Password* for the VM.
 +
 For the Windows VM that's used for scanning, select the VM from the dropdown menu then enter the *User name* and *Password* for the VM.
++
+image::clean-restore-compute.png[Screenshot of the clean restore compute configuration step.]
 . Select *Next* to review the configuration.
 . Select **Add** to create the IRE. Ransomware Resilience tests the connection after you select add; this process can take a few minutes. The IRE has been deployed successfully when its status displays as "deployed."
 
