@@ -29,6 +29,7 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
   * **Data collector** - Component that collects user activity data from ONTAP systems and sends it for analysis. Created automatically when enabling protection strategies with user behavior detection.
   * **User directory connector** - Component that connects to directory services (LDAP) to map user IDs to usernames for user activity tracking and alerting.
 * **Console agent** - NetApp component that ensures connectivity between on-premises storage systems and NetApp data services in the cloud.
+- **MetroCluster** is a configuration available for ONTAP where two physically separate clusters are mirrored. The clusters synchronously replicate data to one another.
 
 ## Typical user workflows
 
