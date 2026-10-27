@@ -83,7 +83,7 @@ Snapshot locking creates immutable storage by locking the snapshot copies on pri
 Snapshot copy locking is available with ONTAP 9.12.1 and later. To learn more about SnapLock, refer to link:https://docs.netapp.com/us-en/ontap/snaplock/index.html[ONTAP documentation for SnapLock^].
 .. If you are configuring your own snapshot settings, set the snapshot schedule options. Choose whether to take snapshots at a frequency of minutes, hours, days, weeks, or months. For all options but daily, choose what time of day, week, or month to take the snapshots. Also, choose how many copies of each snapshot type to keep in the *Retention* field.
 +
-image::add-policy-snapshot.png[Screenshot of the snapshot policy options.]
+image:add-policy-snapshot.png[Screenshot of the snapshot policy options.]
 . For on-premises workloads, you can optionally set a *Replication policy* to replicate the workload to ONTAP storage. 
 +
 To import a system-defined policy, choose the *Select* radio button then choose the link:concept-strategy.html#predefined-policies[predefined policy] from the dropdown menu.
