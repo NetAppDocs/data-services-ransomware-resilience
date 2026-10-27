@@ -74,7 +74,7 @@ image:screen-protection-strategy-add.png[Add strategy page showing the snapshot 
 * *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
 +
 If you want to change the blocked file extensions, edit them in System Manager. 
-
++
 [NOTE]
 You can choose any combination of the detection policies. The detection policy must include either encryption detection or suspicious user behavior detection. 
 
