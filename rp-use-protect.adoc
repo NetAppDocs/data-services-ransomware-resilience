@@ -44,7 +44,7 @@ The detection policy does not change the policies managed in other products.
 +
 The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
 
-=== Create a ransomware protection strategy (if you have no snapshot or backup policies) [[steps]]
+=== Create a ransomware protection strategy (if you have no snapshot or backup policies)
 
 If snapshot or backup policies do not exist on the workload, you can create a ransomware protection strategy, which can include the following policies that you create in Ransomware Resilience: 
 
@@ -69,9 +69,9 @@ image:screen-protection-strategy-add.png[Add strategy page showing the snapshot 
 . Optionally, choose an existing protection strategy to use as the basis for the new strategy. In the *Copy from existing Ransomware Resilience strategy*, choose *Select*. Select the existing strategy then *Copy*. 
 . For each item, select the *Down arrow*. 
 . Choose the *Detection policy* settings: 
-* **Encryption detection*: Enable Ransomware Resilience to detect encryption-based attacks. 
+* *Encryption detection*: Enable Ransomware Resilience to detect encryption-based attacks. 
 * *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events such as data breaches or data destruction. 
-** *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
+* *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
 +
 If you want to change the blocked file extensions, edit them in System Manager. 
 

@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: task-strategy.html
+permalink: concept-strategy.html
 keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware
 summary: Learn about ransomware protection strategies in NetApp Ransomware Resilience. Protection strategies enable detection as well as snapshots, backup, and replication to create a baseline for recovery.
 ---

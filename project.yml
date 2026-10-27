@@ -45,7 +45,7 @@ sidebar:
             - title: Configure backup destinations
               url: /task-backup-destination.html
             - title: Learn about protection strategies
-              url: concept-strategy.html
+              url: /concept-strategy.html
             - title: Protect workloads
               url: /rp-use-protect.html
             - title: Configure user activity detection
