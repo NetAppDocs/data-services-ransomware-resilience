@@ -186,8 +186,6 @@ You can replace the existing policy with a different one.
 // . From the Ransomware Resilience menu, select *Protection*.
 
 // . From the Protection page, select *Manage protection strategies*. 
-// +
-// image:screen-protection-strategy-list.png[Ransomware protection strategies screen showing a list of strategies] 
 // . On the Ransomware protection strategies page in the Protected workloads column, select the down arrow at the end of the row. 
 
 == Delete a ransomware protection strategy

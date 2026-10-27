@@ -8,7 +8,7 @@ For more information, see link:https://docs.netapp.com/us-en/data-services-ranso
 
 Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, that check is now skipped if a data collector exists for the storage VM and is in the "running" state, accelerating the protection workflow. 
 
-For more information, see link:link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[protect workloads^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[protect workloads^].
 
 === Google Cloud NetApp Volumes Flex service level generally available
 
