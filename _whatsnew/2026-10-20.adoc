@@ -4,7 +4,7 @@ Ransomware Resilience now provides an enhanced isolated recovery environment con
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
 
-=== Enhanced workflow for enabling user activity monitoring
+=== Improved workflow for enabling user activity monitoring
 
 Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, that check is now skipped if a data collector exists for the storage VM and is in the "running" state, accelerating the protection workflow. 
 
