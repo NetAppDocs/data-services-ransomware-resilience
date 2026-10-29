@@ -1,4 +1,4 @@
-=== Enhanced support for clean restores
+=== Clean restore support for suspicious user behavior and user-based encryption attacks
 
 Clean restores are now available for recovery after suspicious user behavior and user-based encryption attacks. This enhancement adds to the existing support for encryption (entropy)-based attacks. This enhanced capability enables you to take advantage of clean restore's guided approach, identifying optimal restore points to minimize data loss and accelerate recovery. 
 

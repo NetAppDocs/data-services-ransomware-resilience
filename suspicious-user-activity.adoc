@@ -157,7 +157,6 @@ Provide the attribute mapping details:
 * *Unix ID* (if you're using NFS)
 * If you select *Include optional attributes*, you can also add an email address, telephone number, role, state, country, department, photo, manager DN, or groups. 
 . Select *Advanced* to add an optional search query. 
-+
 . Select **Add**. 
 . Return to the user directory connectors tab to check the status of your user directory connector. If created successfully, the status of the user directory connector displays as *Running*. 
 
