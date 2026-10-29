@@ -1,8 +1,14 @@
-=== New manual user activity agent creation workflow
+=== Enhanced isolated recovery environment configuration
 
-Ransomware Resilience now provides a manual user activity agent creation workflow, enabling more control in how you activate your user activity agent on your VM. With this new workflow, you can install the user activity agent directly and configure proxy settings without providing VM SSH keys. 
+Ransomware Resilience now provides an enhanced isolated recovery environment configuration workflow. The new workflow clarifies and simplifies the process to set-up an isolate recovery environment for the cloud or on-premises environments. 
 
-For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[Create a user activity agent^].
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
+
+=== Enhanced workflow for enabling user activity monitoring
+
+Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, that check is now skipped if a data collector exists for the storage VM and is in the "running" state, accelerating the protection workflow. 
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[protect workloads^].
 
 === Google Cloud NetApp Volumes Flex service level generally available
 
