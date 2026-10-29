@@ -1,5 +1,5 @@
-== New manual user activity agent creation workflow
+== New manual workflow for creating a user activity agent
 
-Ransomware Resilience now provides a manual user activity agent creation workflow, enabling more control in how you activate your user activity agent on your VM. With this new workflow, you can install the user activity agent directly and configure proxy settings without providing VM SSH keys. 
+Ransomware Resilience now provides a manual user activity agent creation workflow, enabling more control in how you create your user activity agent on your VM. With this new workflow, you can install the user activity agent directly and configure proxy settings without providing VM SSH keys. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[Create a user activity agent^].

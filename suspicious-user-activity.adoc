@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: suspicious-user-activity.html
-keywords: data breach detection, data breach, user activity, suspicious, anomalous, 
+keywords: data breach detection, data breach, user activity, suspicious, anomalous behavior, user activity monitoring
 summary: User activity detection in Ransomware Resilience enables you to detect user activity that could represent a potential threat. 
 ---
 = Configure user activity detection in NetApp Ransomware Resilience
@@ -19,7 +19,7 @@ A user activity agent hosts a data collector and user directory connector, which
 
 The user activity agent, data collector, and user directory connector can all be managed from the Ransomware Resilience settings dashboard.  
 
-If you're not using DII, proceed with the configuration instructions here. 
+If you're not using NetApp Data Infrastructure Insights (DII), proceed with the configuration instructions here. 
 
 == Before you begin
 
@@ -38,10 +38,10 @@ include::_include/workload-security-credentials.adoc[]
 
 == Create a user activity agent 
 
-User activity agents are executable environments for link:#add-a-data-collector[data collectors], which that share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
+User activity agents are executable environments for link:#add-a-data-collector[data collectors], which share user activity events with Ransomware Resilience. You must create at least one user activity agent to enable user activity detection.
 
 [NOTE]
-After you create the tenant, you can't change the region. Tenant creation takes approximately five minutes and can't be cancelled once it's initiated. 
+After you create the tenant, you can't change the region. Tenant creation takes approximately five minutes and can't be canceled once it's initiated. 
 
 .Steps
 
@@ -51,14 +51,14 @@ You can create a user activity agent using a *Manual* configuration or an *Autom
 ====
 .Manual
 --
-. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity** tile, select **Activate**.
+. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity monitoring** tile, select **Activate**.
 +
-If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
+If you're adding an additional user activity agent, go to *Settings*, locate the **User activity monitoring** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
 . Select a **Cloud provider**, then a **Region**.
 . Select **Create tenant**.
 +
 The tenant creation process takes approximately five minutes. After selecting *Create tenant*, you can select *Run in background* to return to the dashboard and continue with other operations. 
-. Enter a name for the *User activity agent name*.
+. Enter the *User activity agent name*.
 . Choose *Manual* as the configuration method. 
 . In the *Allow tenant* step, Ransomware Resilience provides the URL for the user activity agent. Copy and paste the URL to allow connections.
 . Open a terminal in your cloud environment to install the user activity agent. 
@@ -71,9 +71,9 @@ If you need to install additional user activity agents, repeat this process to g
 --
 .Automatic
 --
-. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity** tile, select **Activate**.
+. If this is your first time creating a user activity agent, go to the **Dashboard**. In the **User activity monitoring** tile, select **Activate**.
 +
-If you're adding an additional user activity agent, go to *Settings*, locate the **User activity** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
+If you're adding an additional user activity agent, go to *Settings*, locate the **User activity monitoring** tile, then select **Manage**. On the User activity screen, select the **User activity agents** tab then **Add**.
 . Select a **Cloud provider** then a **Region**.
 . Select **Create tenant**. 
 +
@@ -138,7 +138,7 @@ To map user IDs to usernames, you must create a user directory connector.
 | Field | Description 
 | *Name* | Enter a unique name for the user directory connector
 | *User directory type* | The directory type
-| *Server IP address or domain name* | The IP address or Fully-Qualified Domain Name (FQDN) of the server hosting the connection 
+| *Server IP address or domain name* | The IP address or Fully Qualified Domain Name (FQDN) of the server hosting the connection 
 | *Forest name or search name* 
 a| 	You can specify the forest level of the directory structure as the direct domain name (for example `unit.company.com`) or a set of relative distinguished names (for example: `DC=unit,DC=company,DC=com`). You can also enter an `OU` to filter by an organizational unit or a `CN` to limit to a specific user (for example: `CN=user,OU=engineering,DC=unit,DC=company,DC=com`).
 | *BIND DN* | The BIND DN is a user account permitted to search the directory, such as user@domain.com. The user requires the Domain Read Only permission. 
@@ -182,7 +182,7 @@ Provide the attribute mapping details:
 
 After you configure user activity detection, you can monitor events in the alerts page. For more information, see link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[Detect malicious activity and suspicious user behavior].
 
-You can also link:task-automate-user-activity.html[Automate responses to user activity events].
+You can also link:task-automate-user-activity.html[automate responses to user activity events].
 
 == Next steps 
 
