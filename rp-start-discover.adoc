@@ -23,7 +23,9 @@ include::_include/console-role-admin.adoc[]
 
 == MetroCluster discovery
 
-Ransomware Resilience automatically loads MetroCluster configuraitons for discovery. You must have added both systems in the MetroCluster pair to the Console to successfully perform discovery. When you select one system in the MetroCluster pair, discovery is automatically performed for the full MetroCluster configuration. 
+Ransomware Resilience automatically loads MetroCluster configurations for discovery. You must have added both systems in the MetroCluster pair to the Console to successfully perform discovery.
+
+If both systems in the MetroCluster pair have been successfully added to the Console organization, both systems will be visible in the discovery selection. You only need to select one system for discovery; the mirrored pair will automatically be added. 
 
 [TIP]
 MetroCluster systems are noted with a **+1** in the Discovery dashboard. Hover over the **+1** to view all systems in the pair. 
