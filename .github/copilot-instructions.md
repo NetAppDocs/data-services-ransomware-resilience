@@ -30,6 +30,7 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
   * **User directory connector** - Component that connects to directory services (LDAP) to map user IDs to usernames for user activity tracking and alerting.
 * **Console agent** - NetApp component that ensures connectivity between on-premises storage systems and NetApp data services in the cloud.
 - **MetroCluster** is a configuration available for ONTAP where two physically separate clusters are mirrored. The clusters synchronously replicate data to one another.
+* **NetApp Backup and Recovery** - A Console data service used for backup and recovery that shares some data with Ransomware Resilience. In the first instance in a topic, refer to it as "NetApp Backup and Recovery". Subsequent mentions can be "Backup and Recovery"; "and" should always be spelled out. Don't use an ampersand or other symbol.
 
 ## Typical user workflows
 

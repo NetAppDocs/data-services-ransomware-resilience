@@ -1,0 +1,106 @@
+---
+sidebar: sidebar
+permalink: concept-strategy.html
+keywords: ransomware protection, protect against ransomware attacks, anti-ransomware policies, detection, protection, policy, malware
+summary: Learn about ransomware protection strategies in NetApp Ransomware Resilience. Protection strategies enable detection as well as snapshots, backup, and replication to create a baseline for recovery.
+---
+= Learn about protection strategies in NetApp Ransomware Resilience
+:hardbreaks:
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+In NetApp Ransomware Resilience, protection strategies are an essential element of your ransomware defense posture. Protection strategies encompass _detection_, _protection_, and _replication_, enabling you to detect ransomware attacks, protect against them, and establish a baseline for recovery. 
+
+== Protection strategy elements
+
+Protection strategies consist of three elements: detection, protection, and replication. 
+
+- **Detection policies** identify ransomware threats. You have three options for detection:
++
+* Encryption detection
+* Suspicious user activity 
+* Block suspicious file extensions
++
+Your detection policy can include all three options or a combination. It must include either encryption detection or link:suspicious-user-activity.html[suspicious user activity (which requires additional configuration)].
+
+- **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
++
+If you're using other NetApp products to protect your workload, Ransomware Resilience discovers those and provides the option to either:
++
+* Use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
++
+* Use Ransomware Resilience to manage detection, snapshots, and backups.
+
+- **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
++
+Currently, you can only replicate snapshots to on-premises ONTAP storage.
+
+[NOTE]
+If you're configuring protection strategies for Amazon FSx for NetApp ONTAP or Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
+
+[TIP]
+For enhanced management and protection of your data estate, you can link:task-protection-group.html[group workloads] to collectively protect volumes under one strategy. 
+
+== Protection policies with other NetApp-managed services
+
+Beyond Ransomware Resilience, you can use NetApp Backup and Recovery to manage protection for file shares.
+
+Protection information from Backup and Recovery services appears in Ransomware Resilience. You can add a ransomware detection policy to an existing Backup and Recovery policy. You can also add backup policies through Ransomware Resilience, which replaces the existing protection policies from Backup and Recovery. 
+
+If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
+
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
+
+=== Protection policies for workloads not protected by NetApp applications
+
+If your workload isn't managed by Backup and Recovery or Ransomware Resilience, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
+ 
+== Predefined policies
+
+You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance. 
+
+[NOTE]
+The **Encryption user extension** policy is the only predefined policy that supports suspicious user activity detection. +
+The **Critical replication policy** is the only predefined policy that supports replicating snapshots to ONTAP. 
+
+[options="header",cols="10,15a,20,15,15,15" width="100%"]
+|===
+| Policy level
+| Snapshot
+| Frequency
+| Retention (days)
+| Number of snapshot copies
+| Maximum number of snapshot copies
+
+.4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+.4+| *Important workload policy* | Half hourly | Every 30 minutes | 3 | 144 | 165 
+ | Daily | Every 1 day | 14 | 14 | 165 
+ | Weekly | Every 1 week | 35 | 5 | 165 
+ | Monthly | Every 30 days | 60 | 2 | 165 
+
+
+.4+| *Standard workload policy* | Half hourly | Every 30 minutes | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93 
+
+.4+| *Encryption user extension* | Half hourly | Every 30 minutes | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93
+
+ .4+| *Critical replication policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+|===
+
+== Next steps
+
+* link:rp-use-protect.html[Protect workloads in Ransomware Resilience]
