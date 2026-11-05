@@ -30,6 +30,7 @@ This repository documents NetApp Ransomware Resilience, a data protection servic
   * **User directory connector** - Component that connects to directory services (LDAP) to map user IDs to usernames for user activity tracking and alerting.
 * **Console agent** - NetApp component that ensures connectivity between on-premises storage systems and NetApp data services in the cloud.
 * **FPolicy** - A file access notification framework that allows administrators to monitor file access for SMB and NFS v3, v4.0. The technology exists in Ransomware Resilience, but the UI never refers to FPolicy. Instead, it is referenced with terms alluding to file extensions, blocked file extensions, and suspicious file extensions. It's acceptable to use this term in explanatory contexts because users of the service will know it from ONTAP; it should not appear in reference to the UI.
+* **NetApp Backup and Recovery** - A Console data service used for backup and recovery that shares some data with Ransomware Resilience. In the first instance in a topic, refer to it as "NetApp Backup and Recovery". Subsequent mentions can be "Backup and Recovery"; "and" should always be spelled out. Don't use an ampersand or other symbol.
 
 ## Typical user workflows
 
