@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-clean-restore.html
 keywords: clean room, clean restore, secure recovery, restore, isolated recovery environment
-summary: Before conducting a clean restore in NetApp Ransomware Resilience, you must create an isolated recovery environment to sequester and clean the environment.
+summary: "Create an isolated recovery environment in NetApp Ransomware Resilience to sequester and clean workloads, review supported configurations, and prepare for a clean restore."
 ---
 = Configure the environment for a clean restore in NetApp Ransomware Resilience
 :hardbreaks:
@@ -71,7 +71,7 @@ include::_include/clean-restore-considerations.adoc[]
 
 === Additional considerations for on-premises environments
 
-If you're deploying an on-premises IRE, when a Windows VM is cloned for the recovery analysis in the clean restore, the cloned VM retains the same configuration as the source. This can cause conflicts:
+If you're deploying an on-premises IRE, when a Windows VM is cloned for the recovery analysis in the clean restore, the cloned VM retains the same configuration as the source. This duplication can cause conflicts:
 
 * Using the same security identifier (SID) results in authentication and security conflicts.
 * Using the same computer name (CN) causes network conflicts.
@@ -81,7 +81,7 @@ To avoid these conflicts, Ransomware Resilience performs sysprep on the cloned V
 
 === Secondary sources
 
-When you create the IRE, you have the option of adding a secondary source.
+When you create the IRE, you can add a secondary source.
 
 If the primary source is unavailable and you've configured a secondary source, data will be restored to the secondary source. 
 
@@ -100,7 +100,7 @@ Third-party charges can include creation and deployment of compute instances and
 
 == Prerequisites
 
-Ensure you've completed the prerequisites for your chosen clean restore deployment type. Select the tab for your chosen IRE configuration.
+Confirm you've completed the prerequisites for your chosen clean restore deployment type. Select the tab for your chosen IRE configuration.
 
 [NOTE]
 When you create the IRE, you must add every system (primary or secondary) you want to use for analysis during the system selection step.
@@ -161,7 +161,7 @@ image:diagram-clean-recovery-on-prem.png[Diagram of on-premises to on-premises c
 ** VMware Tools must be installed and running.
 ** WinRM must be enabled.
 ** The IP must be configured.
-** Ensure you have the appropriate license to allow cloning of base VMs.
+** You must have the appropriate license to allow cloning of base VMs.
 ** The VM must be powered on.
 
 .Network
@@ -193,6 +193,9 @@ a|
 Before conducting a clean restore, you must create an isolated recovery environment.
 
 The process for creating an isolated recovery environment differs if the environment is in the cloud or on-premises. Ensure you follow the instructions for the correct location.
+
+[TIP]
+link:https://www.netapp.com/video/6Vj0Ijo3mno/netapp-ransomware-resilience-clean-restore/[Watch a video guiding you through isolated recovery deployment.^]
 
 [role="tabbed-block"]
 ====
@@ -272,9 +275,13 @@ If you need to change any details of the IRE, select *Settings* from the Ransomw
 You can't delete an IRE with an active restore operation; you can cancel the restore operation or wait until the restore completes then delete the IRE.
 
 [IMPORTANT]
-If you delete the IRE, it also deletes the clean room SVM and the metadata volume. Once these assets have been deleted, you are no longer able to generate reports for the clean restore.
+If you delete the IRE, it also deletes the clean room SVM and the metadata volume. Once these assets have been deleted, you can no longer generate reports for the clean restore.
 
 . Go to **Settings**.
 . In the Isolation cleaning and recovery card, select **Manage**.
 . Identify the clean room you want to delete. Select the action menu (`...`) for the IRE then **Delete**.
 . In the dialog, select **Delete** to confirm the operation.
+
+== More information
+
+* link:https://www.youtube.com/watch?v=6Vj0Ijo3mno&t=6s[VIDEO: Isolated recovery environment deployment]

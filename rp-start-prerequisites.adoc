@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-prerequisites.html
 keywords: bluexp ransomware protection, ransomware protection prerequisites, resilience
-summary: Get started with NetApp Ransomware Resilience by verifying support for your environment, network access, login, and web browser.
+summary: Verify the system, NetApp Console, ONTAP, backup, and user behavior detection requirements before you deploy NetApp Ransomware Resilience.
 ---
 = NetApp Ransomware Resilience prerequisites
 :hardbreaks:
@@ -10,13 +10,13 @@ summary: Get started with NetApp Ransomware Resilience by verifying support for 
 :imagesdir: ./media/get-started/
 
 [.lead]
-Before you deploy NetApp Ransomware Resilience, verify that your environment, network access, and browser meet the requirements.
+Before you deploy NetApp Ransomware Resilience, verify that your systems, NetApp Console configuration, ONTAP version, and backup targets meet the requirements.
 
 Review the following requirements.
 
 == Supported systems
 
-Ensure you're using a supported system:
+Confirm that you're using a supported system:
 
 include::_include/supported-systems.adoc[]
 
@@ -29,12 +29,12 @@ Your NetApp Console configuration requires:
 * A Console organization and system with at least one active Console agent connecting to a link:concept-ransomware-resilience.html#supported-backup-targets-systems-and-workload-data-sources[supported system].
 ** If your on-premises ONTAP clusters or Cloud Volumes ONTAP systems are not set up in the Console, see link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html[Learn how to configure a Console agent^] and link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html[standard Console requirements^].
 +
-NOTE: If you have multiple Console agents in a single Console organization, Ransomware Resilience will scan ONTAP resources across all Console agents beyond the one that is currently selected in the Console UI.
+NOTE: If you have multiple Console agents in a single Console organization, Ransomware Resilience scans ONTAP resources across all Console agents, not only the one that is currently selected in the Console UI.
 
 * The Console agent must have the `cloudmanager-ransomware-protection` container in an active state.
 * There's a limit of 3,000 workloads per Console agent. You can file a request to extend this limit. 
 
-* For ONTAP or Cloud Volumes ONTAP clusters, Ransomware Resilience requires ONTAP version 9.11.1 or greater.
+* For ONTAP or Cloud Volumes ONTAP clusters, Ransomware Resilience requires ONTAP version 9.11.1 or later.
 [NOTE]
 To use Ransomware Resilience on SAN workloads, you must be running ONTAP 9.17.1 or later.
 
@@ -60,11 +60,11 @@ You can link:task-backup-destination.html[configure a backup destination in Rans
 
 == User behavior detection requirements
 
-For Ransomware Resilience to provide alerts about user behavior, you must configure a user activity agent. To install a user activity agent, ensure your system meets link:reference-user-activity-requirements.html[the requirements].
+For Ransomware Resilience to provide alerts about user behavior, you must configure a user activity agent. To install a user activity agent, confirm that your system meets link:reference-user-activity-requirements.html[the requirements].
 
 == Clean restore prerequisites
 
-Ransomware Resilience provides clean restores, which offer a guided recovery process that discovers optimal recovery pathways. To use clean restore, link:task-clean-restore.html[ensure you meet the prerequisites].
+Ransomware Resilience provides clean restores, which offer a guided recovery process that discovers optimal recovery pathways. To use clean restore, link:task-clean-restore.html[confirm that you meet the prerequisites].
 
 == Update non-admin user permissions in an ONTAP system
 

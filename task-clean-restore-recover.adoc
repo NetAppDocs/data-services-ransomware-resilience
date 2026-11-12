@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: task-clean-restore-recover.html
 keywords: clean room, clean restore, secure recovery, recover, isolated recovery environment, ire
-summary: Ransomware Resilience enables you to control and sanitize your workloads with clean restore. 
+summary: "Recover workloads after a ransomware attack by using clean restore to analyze snapshots, remove malware, and restore data to the original or an alternate location."
 ---
 = Recover workloads with clean restore in NetApp Ransomware Resilience
 :hardbreaks:
@@ -12,7 +12,7 @@ summary: Ransomware Resilience enables you to control and sanitize your workload
 :imagesdir: ./media/
 
 [.lead]
-With NetApp Ransomware Resilience, you can perform a guided recovery after an encryption-based ransomware attack using a clean restore. The clean restore identifies optimized recovery paths to minimize data loss and return your workloads online in the shortest amount of time possible.
+With NetApp Ransomware Resilience, you can perform a guided recovery after an encryption-based ransomware attack by using a clean restore. The clean restore identifies optimized recovery paths to minimize data loss and bring your workloads back online as quickly as possible.
 
 == Before you begin
 
@@ -26,7 +26,7 @@ include::_include/clean-restore-considerations.adoc[]
 
 === Considerations for restoring to an alternate location 
 
-When you restore a volume using clean restore, you have the option of restoring to an alternate location managed by the same Console agent. The new location can be on the same or different system, storage VM, or aggregate. When you restore to an alternate location:
+When you restore a volume using clean restore, you can restore to an alternate location managed by the same Console agent. The new location can be on the same or a different system, storage VM, or aggregate. When you restore to an alternate location:
 
 * ARP is automatically enabled on the new volume.
 * The junction path is set based on the name you provide. For example: `<Data LIF IP address of destination storage VM>:<new volume name>`.
@@ -39,25 +39,25 @@ When you restore a volume using clean restore, you have the option of restoring 
 . In the Restore Type options, select **Clean restore** then **Next**. 
 . Select the isolated recovery environment you want to use then **Next**. 
 . Review the isolated recovery environment, confirming it's the correct location. Select **Restore**. 
-. Ransomware Resilience performs the necessary configuration. Once the set up completes successfully, Ransomware Resilience updates the status. To proceed, select **Next**. 
+. Ransomware Resilience performs the necessary configuration. After the setup completes successfully, Ransomware Resilience updates the status. To proceed, select **Next**. 
 . After the setup completes, select **Run analysis**. Ransomware Resilience searches for the most recent unimpacted snapshot.
 +
 image:screenshot-clean-room-analysis.png[Screenshot of the clean restore analysis step.]
 +
-While the analysis runs, you can select **Stop**. Stopping the analysis requires the clean restore process to be started anew. 
+While the analysis runs, you can select **Stop**. If you stop the analysis, you must start the clean restore process again. 
 . After the analysis completes, select **Next** to plan your recovery. Ransomware Resilience presents two options: **Least data loss** and **Latest unimpacted restore point**. Select either option, and optionally look at individual file data for either restore point. 
 +
 To view granular file event data, select a file to analyze its encryption status and metadata: when it was created, modified, or deleted, and what restore point corresponds to what action. 
 +
 image:clean-restore-plan.png[Screenshot of the clean restore plan step.]
-. After you choose your restore point, select **Create restore point**. Ransomware Resilience begins a series of jobs to create the restore point. Once this process completes, select **Next**.
+. After you choose your restore point, select **Create restore point**. Ransomware Resilience begins a series of jobs to create the restore point. After this process completes, select **Next**.
 . Select **Start cleaning** to begin cleaning malware from the files. 
-. Once the cleaning completes, select **Next**. 
+. After the cleaning completes, select **Next**. 
 . Choose the recovery destination:
 * Select **Primary (original)** to restore to the original destination.
 +
 If the primary location is unavailable and link:task-clean-restore.html#secondary-sources[you've configured a secondary source], you can instead restore to the **Secondary** source. 
-* Select **Alternate** to restore to a new volume. Choose the **System**, **Storage VM**, and **Aggregate** for the new volume then provide a **New volume name**. 
+* Select **Alternate** to restore to a new volume. Choose the **System**, **Storage VM**, and **Aggregate** for the new volume, then provide a **New volume name**. 
 +
 image:alternate-recovery-destination.png[Screenshot of alternate recovery destination]
 
