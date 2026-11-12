@@ -2,15 +2,15 @@
 sidebar: sidebar
 permalink: task-custom-restore.html
 keywords: ransomware protection recovery, recover from a ransomware attack, recovery point, RPA
-summary: After an attack, NetApp Ransomware Resilience verifies that the backup data on secondary storage is clean, recommends a recovery point actual (RPA), and orchestrates the workflow for a crash-resistant recovery. 
+summary: "Restore workloads after a ransomware attack by using the recommended or a preferred restore point at the volume, file, or VM level, without cleaning the files first."
 ---
-= Recover from a ransomware attack with a custom restore in NetApp Ransomware Resilience
+= Recover workloads with a custom restore in NetApp Ransomware Resilience
 :hardbreaks:
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-With Ransomware Resilience, storage administrators can determine how best to restore workloads either from the recommended restore point or the preferred restore point.  
+Recover your workloads after a ransomware attack by using a custom restore in NetApp Ransomware Resilience. Select the recommended restore point or a preferred restore point to restore data without cleaning the files first.
 
 [TIP]
 Ransomware Resilience also supports a xref:task-clean-restore.html[clean restore option], which provides guided recovery and advanced capabilities to ensure only clean and unencrypted data is recovered. 
@@ -23,7 +23,7 @@ Organization admin, Folder or project admin, or Ransomware protection admin. lin
 The security storage admin can recover data at different levels: 
 
 * Recover all volumes 
-* Recover a file share at the volume level, directory, or file level. 
+* Recover a file share at the volume, directory, or file level. 
 * Recover from a datastore at a VM level.
 
 The process differs depending on the workload type. 
@@ -149,7 +149,7 @@ TIP: The new volume name appears as the original volume name + backup name + bac
 
 === Restore a workload at the file level
 
-Before you restore a workload at the file level, you can view a list of impacted files. You can access the Alerts page to download a list of impacted files. Then use the Recovery page to upload the list and choose which files to restore. 
+Before you restore a workload at the file level, you can download a list of impacted files from the Alerts page. Use the Recovery page to upload the list and choose which files to restore. 
 
 You can restore a workload at the file level to the same or different system.
 
@@ -194,17 +194,17 @@ image:screen-recovery-app-by-file-upload-csv.png[Upload CSV file that lists the 
 +
 image:screen-recovery-app-by-file-select-files.png[Select files manually to restore]
 +
-NOTE: If any files cannot be restored using the selected restore point, a message appears indicating the number of files that cannot be restored and lets you download the list of those files by selecting *Download list of impacted files*. 
+NOTE: If any files can't be restored with the selected restore point, a message indicates how many files can't be restored. To download the list of those files, select *Download list of impacted files*. 
 . *Destination*: Select the down arrow next to Destination to see details.
 .. Choose where to restore the data: original source location or an alternate location that you can specify. 
 + 
-TIP: While the original files or directory will be overwritten by the restored data, the original file and folder names will remain the same unless you specify new names. 
+TIP: The restored data overwrites the original files or directory, but the original file and folder names remain the same unless you specify new names. 
 .. Select the system. 
 .. Select the Storage VM. 
 .. Optionally, enter the path. 
 +
 TIP: If you don't specify a path for the restore, the files will be restored to a new volume at the top-level directory.
-.. Select whether you want the names of the restored files or directory to be the same names as the current location or different names. 
+.. Select whether to keep the current names or use different names for the restored files or directory. 
 //. *Quarantine location*: Optionally, select where you want to store potentially infected data before you initiate the restore process for further analysis post recovery. 
 . Select *Next*.
 . Review your selections. 
@@ -247,7 +247,7 @@ TIP: If you don't specify a path for the restore, the files will be restored to 
 
 === Restore a VM file share at the VM level
 
-On the Recovery page after you selected a VM to restore, continue with these steps. 
+On the Recovery page, after you select a VM to restore, continue with these steps. 
 
 . *Source*: Select the down arrow next to Source to see details. 
 +

@@ -10,7 +10,7 @@ summary: Known limitations identify platforms, devices, or functions that are no
 :imagesdir: ./media/
 
 [.lead]
-Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
+Known limitations identify the platforms, devices, and functions that NetApp Ransomware Resilience doesn't support or that don't interoperate correctly with it. Review the limitations that apply to your environment.
 
 == Readiness drill reset option issue
 
@@ -20,7 +20,7 @@ If you select an ONTAP 9.11.1 volume for the ransomware attack readiness drill, 
 
 The following limitations apply to Amazon FSx for ONTAP:
 
-* Backup policies aren't supported for Amazon FSx for ONTAP. In this environment, you should perform backup operations using Amazon FSx backups. You can restore these workloads using Ransomware Resilience. 
+* Backup policies aren't supported for Amazon FSx for ONTAP. In this environment, use Amazon FSx backups to perform backup operations. You can restore these workloads using Ransomware Resilience. 
 * Restore operations are performed from snapshots only.
 
 == Azure NetApp Files limitations
@@ -31,7 +31,7 @@ The following limitations apply to Azure NetApp Files:
 * Ransomware protection strategies with replication aren't supported for Azure NetApp Files. 
 * Azure NetApp Files doesn't support FPolicy or user behavior detection. Azure NetApp Files also doesn't support entropy forensics. 
 * When selecting a protection strategy, ensure that its snapshot schedule is compatible with Azure NetApp Files. The most frequent snapshot schedule available in Azure NetApp Files is hourly. 
-* It's recommended you not use link:reference-soar.html[SOAR playbooks] with Azure NetApp Files due to Azure NetApp Files APIs blocking automated actions. 
+* Avoid using link:reference-soar.html[SOAR playbooks] with Azure NetApp Files because Azure NetApp Files APIs block automated actions. 
 * Some event data is not included in link:task-siem.html[SIEM reports] for Azure NetApp Files configurations. 
 * File-level restore is not available when you link:task-custom-restore.html[restore a workload] for Azure NetApp Files. 
 
@@ -51,4 +51,4 @@ The following limitations apply to SAN (block storage) workloads:
 
 == Multi-admin verification
 
-Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], you won't be able to enable protection, conduct a readiness drill, or perform any restore operations. You should disable multi-admin verification before attempting any of these operations. 
+Multi-admin verification is not supported in Ransomware Resilience or the NetApp Console. If you've configured link:https://docs.netapp.com/us-en/ontap/multi-admin-verify/[multi-admin verification in ONTAP^], you won't be able to enable protection, conduct a readiness drill, or perform any restore operations. Disable multi-admin verification before you attempt any of these operations. 
