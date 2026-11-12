@@ -2,7 +2,7 @@
 sidebar: sidebar
 permalink: rp-start-simulate.html
 keywords: ransomware protection alert, ransomware protection attack, detect ransomware alert, simulate, readiness drill, practice, ransomware attack, ransomware attack response, ransomware attack readiness drill
-summary: Conduct a ransomware readiness drill by simulating a ransomware attack on a sample workload. Then, investigate the simulated attack and recover the sample workload. You can run a ransomware readiness drill multiple times. 
+summary: "Simulate a ransomware attack on a sample workload to run a readiness drill, then investigate the simulated attack and recover the workload."
 ---
 = Conduct a ransomware attack readiness drill in NetApp Ransomware Resilience
 :hardbreaks:
@@ -92,10 +92,10 @@ When reviewing the incident, consider:
 If the severity indicates that a user is suspected of malicious activity, review the user name. You can also link:rp-use-alert.html#detect-malicious-activity-and-anomalous-user-behavior[block the user.]
 
 * Review the file activity and suspected processes: 
-** Look at the incoming detected data compared to the expected data. 
-** Look at the creation rate of files that is detected compared to the expected rate.
-** Look at the file renaming rate that is detected compared to the expected rate.
-** Look at the deletion rate compared to the expected rate.
+** Compare the incoming detected data to the expected data. 
+** Compare the detected file creation rate to the expected rate.
+** Compare the detected file renaming rate to the expected rate.
+** Compare the deletion rate to the expected rate.
 
 * Look at the list of impacted files. Look at the extensions that might be causing the attack. 
 * Determine the impact and breadth of the attack by reviewing the number of impacted files and directories.

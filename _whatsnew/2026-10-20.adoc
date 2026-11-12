@@ -1,12 +1,12 @@
 === Enhanced isolated recovery environment configuration
 
-Ransomware Resilience now provides an enhanced isolated recovery environment configuration workflow. The new workflow clarifies and simplifies the process to set-up an isolate recovery environment for the cloud or on-premises environments. 
+Ransomware Resilience now provides an enhanced isolated recovery environment configuration workflow. The new workflow clarifies and simplifies the process to set up an isolated recovery environment for cloud or on-premises environments. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-clean-restore.html[Create an isolated recovery environment for a clean restore^].
 
 === Improved workflow for enabling user activity monitoring
 
-Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, that check is now skipped if a data collector exists for the storage VM and is in the "running" state, accelerating the protection workflow. 
+Ransomware Resilience has improved the workflow for enabling user activity monitoring. Previously, Ransomware Resilience tested the connection of the data collector every time you enabled a ransomware protection strategy with user activity monitoring on a workload. With that update, Ransomware Resilience now skips that check if a data collector exists for the storage VM and is in the "running" state, which accelerates the protection workflow. 
 
 For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-use-protect.html[protect workloads^].
 

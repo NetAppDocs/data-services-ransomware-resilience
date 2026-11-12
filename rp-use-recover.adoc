@@ -16,7 +16,7 @@ After a workload is marked *Restore needed*, NetApp Ransomware Resilience recomm
 +
 You can restore the workload by selecting all volumes, specific volumes, or specific files.
 
-TIP: Workload recovery can impact running workloads. You should coordinate recovery processes with the appropriate stakeholders.
+TIP: Workload recovery can affect running workloads. Coordinate recovery processes with the appropriate stakeholders.
 
 A workload can have one of the following restore statuses:
 
