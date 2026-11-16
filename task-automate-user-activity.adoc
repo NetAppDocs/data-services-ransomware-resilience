@@ -17,8 +17,10 @@ With NetApp Ransomware Resilience, you can automate responses to link:concept-us
 
 Automated responses are supported for encryption (user behavior), data breach, and data destruction events. You must have link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/suspicious-user-activity.html#create-a-user-activity-agent[configured a user activity agent, enabled a policy with user activity detection, and created a user directory connector] before creating an automated response. When an automated response is triggered, Ransomware Resilience sends an email alert. 
 
-[NOTE]
-If the alert is triggered by suspicious user behavior, you can only take a snapshot. Blocking a user isn't available as an automated response to suspicious user behavior. 
+== Before you begin
+
+* If the alert is triggered by suspicious user behavior, you can only take a snapshot. Blocking a user isn't available as an automated response to suspicious user behavior. 
+* When you configure automated responses for MetroCluster configurations, only select one workload in the MetroCluster pair. Automated responses are automatically applied across the MetroCluster configuration.
 
 == Create an automated response
 
