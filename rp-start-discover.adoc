@@ -21,6 +21,15 @@ Ransomware Resilience checks your current backup protection, snapshot copies, an
 
 include::_include/console-role-admin.adoc[]
 
+== MetroCluster discovery
+
+Ransomware Resilience automatically loads MetroCluster configurations for discovery. You must have added both systems in the MetroCluster pair to the Console to successfully perform discovery.
+
+If both systems in the MetroCluster pair have been successfully added to the Console organization, both systems will be visible in the discovery selection. You only need to select one system for discovery; the mirrored pair will automatically be added. 
+
+[TIP]
+MetroCluster systems are noted with a **+1** in the Discovery dashboard. Hover over the **+1** to view all systems in the pair. 
+
 == Select workloads to discover
 
 Within each Console agent, select the systems where you want to discover workloads.

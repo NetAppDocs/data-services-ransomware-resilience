@@ -16,6 +16,92 @@ include::_include/console-role-admin.adoc[]
 
 == Before you begin
 
+Ransomware protection strategies encompass _detection_, _protection_, and _replication_ policies.
+
+- **Detection policies** identify ransomware threats. Your detection policy can include all three styles of detection or a combination. It must include either encryption detection or link:suspicious-user-activity.html[suspicious user activity (which requires additional configurations)].
++
+* Encryption detection
+* Suspicious user activity 
+* Block suspicious file extensions
++
+When you enable detection with block suspicious file extensions, hover over the tooltip then select **Manage** to link:task-file-extensions.html[choose a custom list of blocked file extensions].
+
+- **Protection policies** include snapshot and backup policies. Detection and snapshot policies are required in a protection strategy. Backup policies are optional.
++
+If you're using other NetApp products to protect your workload, Ransomware Resilience discovers those and provides the option to either:
++
+* use a ransomware detection policy and continue to use the snapshot and backup policies created by other NetApp tools, or
++
+* use Ransomware Resilience to manage detection, snapshots, and backups.
+
+- **Replication policies** enable you to replicate snapshots from Ransomware Resilience to a secondary site. Replication schedules can be set to hourly, daily, weekly, or monthly frequencies. 
++
+Currently, you can only replicate snapshots to on-premises ONTAP storage.
+
+[NOTE]
+If you're configuring protection strategies for Amazon FSx for NetApp ONTAP and Azure NetApp Files, consult link:rp-reference-limitations.html[the limitations for each service].
+
+[TIP]
+For enhanced management and protection of your data estate, you can create link:task-protection-group.html[group workloads] to collectively protect volumes under one strategy. 
+
+=== Protection policies with other NetApp-managed services [[services]]
+
+Beyond Ransomware Resilience, you can use NetApp Backup and Recovery to manage protection for file shares and VM file shares.
+
+Protection information from Backup and Recovery services appears in Ransomware Resilience. You can add detection policies to these services with Ransomware Resilience. Adding a protection policy with Ransomware Resilience replaces the existing protection policies.
+
+If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
+
+NOTE: Backup destinations are not available for workloads in Amazon FSx for NetApp ONTAP or Azure NetApp Files. Perform backup operations using the FSx for ONTAP backup service. You set backup policies for workloads in FSx for ONTAP in AWS, not in Ransomware Resilience. The backup policies appear in Ransomware Resilience and remain unchanged from AWS. 
+
+==== Protection policies for workloads not protected by NetApp applications
+
+If your workload isn't managed by Backup and Recovery or Ransomware Resilience, it may have snapshots taken as part of ONTAP or other products. If ONTAP FPolicy protection is in place, you can change the FPolicy protection using ONTAP. 
+ 
+=== Predefined detection policies [[predefined]]
+
+You can choose one of the following Ransomware Resilience predefined policies, which are aligned with workload importance. 
+
+[NOTE]
+The **Encryption user extension** policy is the only predefined policy that supports suspicious user behavior detection. +
+The **Critical replication policy** is the only predefined policy that supports replicating snapshots to ONTAP. 
+
+[cols=6*,options="header",cols="10,15a,20,15,15,15" width="100%"]
+|===
+| Policy level
+| Snapshot
+| Frequency
+| Retention (days)
+| Number of snapshot copies
+| Maximum number of snapshot copies
+
+.4+| *Critical workload policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+.4+| *Important workload policy* | Quarter hourly | Every 30 mins | 3 | 144 | 165 
+ | Daily | Every 1 day | 14 | 14 | 165 
+ | Weekly | Every 1 week | 35 | 5 | 165 
+ | Monthly | Every 30 days | 60 | 2 | 165 
+
+
+.4+| *Standard workload policy* | Quarter hourly | Every 30 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93 
+
+.4+| *Encryption user extension* | Quarter hourly | Every 30 min | 3| 72 | 93 
+ | Daily | Every 1 day | 14 | 14 | 93  
+ | Weekly | Every 1 week | 35 | 5  | 93 
+ | Monthly | Every 30 days | 60 | 2 | 93
+
+ .4+| *Critical replication policy* | Quarter hourly | Every 15 min | 3 | 288 | 309 
+ | Daily  | Every 1 day | 14 | 14 | 309 
+ | Weekly | Every 1 week | 35 | 5 | 309 
+ | Monthly | Every 30 days | 60 | 2 | 309 
+
+|===
 If you intend to create a protection policy with suspicious user behavior detection, ensure you've link:suspicious-user-activity.html[performed the necessary setup] for user activity monitoring. 
 
 == Add a ransomware protection strategy
@@ -42,7 +128,13 @@ The ransomware protection strategy includes:
 +
 The detection policy does not change the policies managed in other products.
 +
-The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services. Learn more about link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^], link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^], and link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^].
+The detection policy enables Autonomous Ransomware Protection and FPolicy protection if they are already activated in other services.
+
+Learn more about:
+
+* link:https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html[Autonomous Ransomware Protection^]
+* link:https://docs.netapp.com/us-en/data-services-backup-recovery/index.html[Backup and Recovery^]
+* link:https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html[ONTAP FPolicy^] 
 
 === Create a ransomware protection strategy (if you have no snapshot or backup policies)
 
@@ -69,8 +161,8 @@ image:screen-protection-strategy-add.png[Add strategy page showing the snapshot 
 * *Suspicious user behavior detection*: Enable user behavior detection to transmit user activity events to Ransomware Resilience and detect suspicious events such as data breaches or data destruction. 
 * *Block file extensions*: Enable Ransomware Resilience to block known suspicious file extensions.
 +
-If you want to change the blocked file extensions, edit them in System Manager. 
-+
+You can use a default list of blocked file extensions or create a link:task-file-extensions.html[customized list]. 
+
 [NOTE]
 You can choose any combination of the detection policies. The detection policy must include either encryption detection or suspicious user behavior detection. 
 . Set the *Snapshot policy*. To import snapshots settings from a link:concept-strategy.html#predefined-policies[predefined policy], choose the *Select* radio button then choose the policy from the dropdown. No other snapshot configurations are required if you import a policy.
@@ -118,6 +210,8 @@ image:screen-protection.png[Manage strategy page]
 * *Encryption detection*
 * *Suspicious user behavior detection*
 * *Block suspicious file extensions* 
++
+include::_include/block-file-extensions.adoc[]
 . Select **Next**.
 . If you selected *Suspicious user behavior detection* as a detection setting, select the user activity agent or link:suspicious-user-activity.html#create-a-user-activity-agent[or create one].
 + 
@@ -139,7 +233,10 @@ image:screen-protection.png[Manage strategy page]
 . From the Protection page, select a workload then select *Protect*. 
 . Ransomware Resilience detects if there are existing active Backup and Recovery policies. To replace the existing policies, select the **Replace existing policies** box. When you select the box, Ransomware Resilience replaces the list of detection policies with detection policies. 
 
-. Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>. Select **Next**. 
+. Choose a protection policy. If no protection policy exists, select **Add** to create a new policy. For information about creating a policy, see <<steps, Create a protection policy>>.
++
+include::_include/block-file-extensions.adoc[]
+. Select **Next**. 
 . If your strategy includes replication, select the **Destination system** and **Destination storage VM**. Select **Next**. 
 . Select a backup destination or create a new one. Select **Next**. 
 .. If your protection strategy includes user behavior detection, select a *User activity agent* in your environment to host the new data collectors. Ransomware Resilience creates the data collector automatically to transmit user activity events to Ransomware Resilience to detect anomalous user behavior.
@@ -199,7 +296,9 @@ You can delete a protection strategy that is not currently associated with any w
 
 == Next steps
 
+* link:task-file-extensions.html[Manage blocked or allowed file extensions]
+* link:suspicious-user-activity.html[Configure user activity detection]
+* link:rp-use-alert.html[Respond to ransomware alerts]
 * link:concept-strategy.html[Learn about protection strategies]
 * link:task-protection-group.html[Manage protection groups]
 * link:task-backup-destination.html[Manage backup destinations]
-* link:suspicious-user-activity.html[Configure user activity detection]
