@@ -49,7 +49,7 @@ The following limitations apply to SAN (block storage) workloads:
 * When Ransomware Resilience generates warnings for SAN workloads, those warnings are based only on high entropy. 
 * SAN workloads can only be restored using a link:task-custom-restore.html[custom restore]. Clean restore isn't currently available for SAN workloads.  
 
-== MetroCluster liimtations
+== MetroCluster limitations
 
 * Clean restore isn't currently supported for MetroCluster workloads. 
 
