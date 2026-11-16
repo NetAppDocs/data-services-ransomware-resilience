@@ -1,0 +1,5 @@
+=== Managed blocked file extensions
+
+Ransomware Resilience now provides the capability to customize the list of allowed or blocked file extensions on a workload when you've enabled the *Block suspicious file extensions* protection option. With this enhancement, you can configure the workload to only allow specific file types on the storage VM (SVM) or to block specific file extensions. If you migrate an existing workload using FPolicy to block suspicious file extensions with Ransomware Resilience, it defaults to use a more curated list of extensions, though you can customize the list. This enhancement supports more granular control over the file extension option and also allows you to create different lists for different SVMs.
+
+For more information, see link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/task-file-extensions.html[Manage blocked file extensions in Ransomware Resilience].
