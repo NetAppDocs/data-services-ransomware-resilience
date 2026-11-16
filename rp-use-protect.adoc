@@ -296,13 +296,9 @@ You can delete a protection strategy that is not currently associated with any w
 
 == Next steps
 
-<<<<<<< HEAD
 * link:task-file-extensions.html[Manage blocked or allowed file extensions]
 * link:suspicious-user-activity.html[Configure user activity detection]
 * link:rp-use-alert.html[Respond to ransomware alerts]
-=======
 * link:concept-strategy.html[Learn about protection strategies]
 * link:task-protection-group.html[Manage protection groups]
 * link:task-backup-destination.html[Manage backup destinations]
-* link:suspicious-user-activity.html[Configure user activity detection]
->>>>>>> 3eb842b9584c27afc80d6cea5b83742813cc96dc

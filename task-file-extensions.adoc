@@ -12,7 +12,7 @@ summary: Configure lists of supported or blocked file extensions in NetApp Ranso
 [.lead]
 NetApp Ransomware Resilience supports configuring a protection strategy that blocks suspicious file extensions. Ransomware Resilience provides a default list of known suspicious file extensions to block to prevent ransomware attacks. You can customize the list of file extensions, adding or removing entries as needed.
 
-When you configure protection with suspicious file extension blocking, it's set at the workload level. You can customize which file extensions at the storage VM (SVM) level, meaning different SVMs in the same workload can use different lists.  
+When you configure protection with suspicious file extension blocking, it's set at the workload level. You can, however, customize which file extensions at the storage VM (SVM) level, meaning different SVMs in the same workload can use different lists.  
 
 == How file extension blocking works
 
@@ -23,7 +23,7 @@ There are two approaches to configuring file extension lists:
 
 === File extension blocking from ONTAP
 
-If you've set specific file extensions in ONTAP to be blocked, Ransomware Resilience automatically inherits that list. You can optionally override the ONTAP settings when you link:rp-use-protect.html[configure protection].
+If you've set specific file extensions in ONTAP to be blocked, Ransomware Resilience recognizes those settings. If you configure link:rp-use-protect.html[configure protection] in Ransomware Resilience to block suspicious file extensions, Ransomware Resilience will transition to use a default, more curated list of file extensions, unless you've configured a different default. 
 
 === Default file extensions
 
