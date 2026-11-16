@@ -54,8 +54,8 @@ If you're configuring an IRE with the source in Amazon FSx for NetApp ONTAP, ski
 
 .Virtual private cloud (VPC)
 * For the IRE, provision a VPC within the IP address range of your production environment. The IP address should not conflict with any existing IP addresses. 
-** The VPC should have a minimum capacity of 64 IP address (a /26 netmask). 
-** The VPC must allow public internet access. Otherwise, the Console agent won't work 
+** The VPC should have a minimum capacity of 64 IP addresses (a /26 netmask). 
+** The VPC must allow public internet access. Otherwise, the Console agent won't work. 
 
 .Cloud permissions
 * Ransomware Resilience needs the AWS access key and secret with correct IAM permissions to conduct the clean restore in an AWS environment. link:https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_create.html[Create an IAM policy in AWS^] with the following permissions, then attach the policy to a newly created user. After you've created the user, generate the IAM credentials and supply it to the clean restore. 

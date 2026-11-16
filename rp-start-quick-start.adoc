@@ -11,7 +11,7 @@ summary: Get started with NetApp Ransomware Resilience in a few steps.
 :imagesdir: ./media/
 
 [.lead]
-Set up NetApp Ransomware Resilience, discover workloads, and configure protection to defend workloads against ransomware attacks.
+Set up NetApp Ransomware Resilience, discover workloads, and configure protection to defend them against ransomware attacks.
 
 Follow the links in each step for detailed information.
 
