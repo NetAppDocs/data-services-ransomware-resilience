@@ -2,3 +2,4 @@
 * If the isolated recovery environment doesn't have capacity for a new operation, the operation is queued until capacity is available. 
 ** You can monitor the status of active and queued clean restore operations at any time in the Ransomware Resilience Recovery dashboard. 
 * When you initiate a clean restore, the original volume is unmounted, which can disrupt IO access. 
+* Clean restore isn't currently supported for MetroCluster or SAN workloads. 
