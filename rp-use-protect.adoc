@@ -46,9 +46,9 @@ For enhanced management and protection of your data estate, you can create link:
 
 === Protection policies with other NetApp-managed services [[services]]
 
-Beyond Ransomware Resilience, you can use NetApp Backup and Recovery to manage protection for file shares, VM file shares.
+Beyond Ransomware Resilience, you can use NetApp Backup and Recovery to manage protection for file shares and VM file shares.
 
-Protection information from Backup & Recovery services appears in Ransomware Resilience. You can add detection policies to these services with Ransomware Resilience. Adding a protection policy with Ransomware Resilience replaces the existing protection policies. 
+Protection information from Backup and Recovery services appears in Ransomware Resilience. You can add detection policies to these services with Ransomware Resilience. Adding a protection policy with Ransomware Resilience replaces the existing protection policies.
 
 If a ransomware detection policy is being managed by Autonomous Ransomware Protection (ARP or ARP/AI, depending on the ONTAP version) and FPolicy in ONTAP, those workloads are protected and will continue to be managed by ARP and FPolicy. 
 
