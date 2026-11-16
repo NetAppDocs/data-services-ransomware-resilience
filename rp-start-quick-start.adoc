@@ -11,7 +11,7 @@ summary: Get started with NetApp Ransomware Resilience in a few steps.
 :imagesdir: ./media/
 
 [.lead]
-Use this quick start to set up NetApp Ransomware Resilience, discover workloads, and configure protection.
+Set up NetApp Ransomware Resilience, discover workloads, and configure protection to defend them against ransomware attacks.
 
 Follow the links in each step for detailed information.
 
@@ -21,8 +21,8 @@ Follow the links in each step for detailed information.
 The _Super admin_ or _Organization admin_ role is required to deploy a Console agent and assign permissions.
 
 [role="quick-margin-list"]
-* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation[Ensure you've installed a Console agent^]
-* link:rp-start-prerequisites.html[Ensure your system meets the requirements]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#agent-installation[Confirm you've installed a Console agent^]
+* link:rp-start-prerequisites.html[Confirm your system meets the requirements]
 ** Review the requirements for link:reference-user-activity-requirements.html[detecting suspicious user behavior] and link:task-clean-restore.html[clean restores].
 * link:https://docs.netapp.com/us-en/data-services-ransomware-resilience/rp-reference-roles.html[Review Ransomware Resilience user roles and assign permissions to users who access the service^]
 * link:rp-start-licenses.html[Set up licensing]
