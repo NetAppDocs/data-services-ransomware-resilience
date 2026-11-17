@@ -29,7 +29,7 @@ The default list Ransomware Resilience provides is a more curated list of malwar
 
 === Default file extensions
 
-Ransomware Resilience provides a default list of blocked file extensions called "NetApp." When you enable suspicious file extension detection, Ransomware Resilience will _block_ known suspicious malware, ransomware-created extensions. You can modify this list or copy it to use as the basis for a custom list. 
+Ransomware Resilience provides a default list of blocked file extensions called "NetApp." When this list is selected for suspicious file extension blocking, Ransomware Resilience blocks files with extensions on the list. You can modify this list or copy it to use as the basis for a custom list. You can <<default,also set a different default list>>.
 
 You can set a different list to be the default. After a list is set as the default, all workloads subsequently enabled for file blocking will use that list unless you manually select another list. 
 
@@ -86,6 +86,7 @@ You can modify the contents of the file extension list at any time. You can dele
 Alternately, select the action menu at the end of the row for the individual file extension you want to remove then *Remove*.
 . Select *Save* to modify the list.
 
+[[default]]
 .Set a file extension list as the default
 . In Ransomware Resilience, select **Settings**. 
 . Under the File extensions heading, select **Manage**.
