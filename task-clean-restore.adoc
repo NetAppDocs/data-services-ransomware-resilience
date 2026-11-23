@@ -39,7 +39,6 @@ You can also view file histories in the planning step to see when ransomware eve
 
 * You can only create one IRE per Ransomware Resilience account. Each IRE can have three clean rooms.
 * Clean restore is currently only supported for NAS file shares (NFS/CIFS).
-* With a clean restore, you can only restore to the source environment. 
 * You can create an IRE in the cloud or on-premises. Currently, the following configurations are supported:
 +
 [%header]
