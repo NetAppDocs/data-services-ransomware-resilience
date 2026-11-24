@@ -17,7 +17,7 @@ NetApp Ransomware Resilience user behavior detection enables you to respond to u
 To enable user behavior detection, you must create an executable environment for data collectors, which share user activity events with Ransomware Resilience. 
 
 [NOTE]
-The regional deployment of the user activity agent has no impact on the Console agent. Console agent deployment is independent of these regions.  
+The regional deployment of the tenant has no impact on the Console agent. Console agent deployment is independent of these regions.  
 
 The tenant can be deployed in AWS and Azure in the following regions:
 
