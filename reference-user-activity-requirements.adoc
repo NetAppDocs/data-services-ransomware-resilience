@@ -10,12 +10,12 @@ summary: Before creating a user activity agent, you must ensure you meet the out
 :imagesdir: ./media/
 
 [.lead]
-NetApp Ransomware Resilience user behavior detection enables you to respond to user-level ransomware events. You must create a tenant and a set of agents to enable user behavior detection. Before enabling detection, you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events.
+NetApp Ransomware Resilience user activity detection enables you to respond to user-level ransomware events. You must create a tenant and a set of agents to enable user activity detection. Before enabling detection, you must ensure you meet the outlined operating system, server, and network requirements so that Ransomware Resilience can properly detect and report events.
 
-== Cloud provider support 
+== User activity tenant
 
-To enable user behavior detection, you must create an executable environment for data collectors, which share user activity events with Ransomware Resilience. 
-
+To enable user activity detection, a tenant is setup that allows user activity events to be shared with Ransomware Resilience. You can select the region and cloud provider where you want Ransomware Resilience to deploy the tenant.
+ 
 [NOTE]
 The regional deployment of the tenant has no impact on the Console agent. Console agent deployment is independent of these regions.  
 
@@ -32,7 +32,13 @@ a|
 | Azure | East US
 |===
 
-== Operating system requirements
+== User activity agent requirements
+
+After tenant creation, you must create a user activity agent to enable user activity detection. The user activity agent is not the Console agent; the user activity agent needs to be deployed as a separate compute instance. 
+
+Ensure your user activity agent meets the following requirements and adheres to the recommendations. 
+
+=== Operating system requirements
 
 Suspicious user behavior detection is supported with the following operating systems:
 
@@ -55,7 +61,7 @@ The machine you use for the user activity agent should not be running other appl
 
 The `unzip` command is required for installation. The `sudo su -` command is required for installation, running scripts, and uninstallation.
 
-== Server requirements
+=== Server requirements
 
 The server must meet the following minimum requirements:
 
@@ -63,14 +69,14 @@ The server must meet the following minimum requirements:
 * **RAM**: 16 GB RAM
 * **Disk space**: 36 GB free
 
-=== Server recommendations
+==== Server recommendations
 
 * Allocate extra disk space to allow for the creation of the file system. Ensure that there is at least 35 GB of free space in the file system. +
 If `/opt` is a mounted folder from NAS storage, local users must have access to this folder. User activity agent creation can fail if local users don't have the necessary permissions. 
 * Install the user activity agent on a system separate from your Ransomware Resilience environment. If you do install the agent and Ransomware Resilience on the same machine, allow for 50 to 55 GB of disk space. For Linux, allocate 25 to 30 GB of space to `/opt/netapp` and 25 GB to `/var/log/netapp`.
 * It's recommended you synchronize the time on both the ONTAP system and the user activity agent machine using Network Time Protocol (NTP) or Simple Network Time Protocol (SNTP).
 
-=== Sizing recommendations 
+==== Sizing recommendations
 
 When collecting user events, ensure the machine hosting the user activity agent is sized to accommodate your event rate. This means ensuring you have enough data collectors and enough CPU and RAM on the machine hosting the user activity agent to handle the number of events per second. To increase the number of data collectors, you might need to increase the RAM or CPU capacity. Ransomware Resilience supports up to 50 data collectors per user activity agent. 
 
@@ -91,7 +97,7 @@ Where E is the sum of all events per second across all data collectors:
 E + (0.3 x E) < 20,000 events/second
 ----
 
-.Calculate the event data rate in Ransomware Resilience. 
+.Calculate the event data rate in Ransomware Resilience
 [%collapsible]
 ====
 Ransomware Resilience provides a script you can run on your system to calculate the event data rate. By default, the script runs for a maximum of five SVMs. If your environment includes more than five SVMs, you can modify the script accordingly. Regardless of the number of SVMs, the script takes approximately five minutes to get an average event rate reading. Before running the script, you must have:
@@ -101,7 +107,7 @@ Ransomware Resilience provides a script you can run on your system to calculate 
 * The cluster admin username and password
 * Installed `sshpass` on the Linux machine (you can install using the command `sudo yum install -y sshpass`)
 
-.Steps 
+.Steps
 . From the machine hosting the user activity agent, run the script as an admin: `/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh`
 . When prompted, provide the cluster IP address, the admin username, and the admin password. 
 . The script takes approximately five minutes to run. When it completes, the command line displays the event rate, for example "Svm svm_rate is generating 100 events/sec."
@@ -110,7 +116,7 @@ Use the event rate to calculate your sizing.
 
 ====
 
-== Cloud network access rules
+=== Cloud network access rules
 
 Review the cloud network access rules for your relevant geography (Asia Pacific, Europe, or United States). 
 
@@ -120,7 +126,7 @@ During the initial installation, replace the `<site_name>` with a wildcard (`*`)
 [NOTE]
 The user activity agent uses NetApp Data Infrastructure Insights technology, hence the use of `cloudinsights` endpoints. For more information, see link:concept-user-behavior.html#user-activity-forensics[Ransomware Resilience and Data Infrastructure Insights].
 
-=== APAC-based user activity agent deployments
+==== Asia Pacific-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -134,7 +140,7 @@ a|
 |Access to Ransomware Resilience
 |===
 
-=== Europe-based user activity agent deployments
+==== Europe-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -148,7 +154,7 @@ a|
 
 |===
 
-=== US-based user activity agent deployments
+==== US-based user activity agent deployments
 
 [cols="1,1,1,3,1",options="header"]
 |===
@@ -162,7 +168,7 @@ a|
 |Access to Ransomware Resilience
 |===
 
-== In-network rules
+=== In-network rules
 
 [cols=5*,options="header"]
 |===
